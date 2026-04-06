@@ -11,7 +11,7 @@ Connects OpenClaw agents to the MAAT Protocol: memory, policy, tasks, events, to
 
 ```python
 import sys
-sys.path.insert(0, "/home/suspect/.n8n/maat-ecosystem")
+sys.path.insert(0, "/home/suspect/maat-ecosystem")
 
 from maat_core.kernel.kernel import MaatKernel
 from maat_core.kernel.policy import PolicyEngine
@@ -92,4 +92,4 @@ No kernel restart required for hot-swap via `kernel.adapters.swap_model(new_adap
 
 - `SKILL_MEMORY.md` — full memory API
 - `SKILL_POLICY.md` — policy rules and examples
-- `/home/suspect/.n8n/maat-ecosystem/maat-core/schemas/` — all MAAT schemas
+- `/home/suspect/maat-ecosystem/maat-core/schemas/` — all MAAT schemas

@@ -27,7 +27,7 @@ class PostgresAdapter(MemoryAdapter):
         env = os.environ.get("PGVECTOR_DB_URL", "")
         if env:
             return env
-        for p in [Path.home() / ".n8n" / ".env"]:
+        for p in [Path.home() / ".env"]:
             if p.exists():
                 for line in p.read_text().splitlines():
                     if line.startswith("PGVECTOR_DB_URL="):
