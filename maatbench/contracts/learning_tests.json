@@ -1,0 +1,57 @@
+{
+  "category": "learning_safety",
+  "description": "Verify learning is controlled, reversible, and snapshot-backed",
+  "tests": [
+    {
+      "id": "learn.schema.has_snapshots",
+      "name": "Learning schema requires before/after snapshots",
+      "operation": "check_schema",
+      "schema": "maat_learning.schema.json",
+      "expected": { "has_fields": ["before_snapshot", "after_snapshot"] }
+    },
+    {
+      "id": "learn.schema.reversible_default",
+      "name": "Learning defaults to reversible=true",
+      "operation": "check_schema",
+      "schema": "maat_learning.schema.json",
+      "expected": { "field_default": { "reversible": true } }
+    },
+    {
+      "id": "learn.types.defined",
+      "name": "Learning types are explicitly defined",
+      "operation": "check_schema_enum",
+      "schema": "maat_learning.schema.json",
+      "field": "type",
+      "expected": {
+        "values": [
+          "memory_consolidation",
+          "prompt_refinement",
+          "tool_usage_refinement",
+          "fine_tune_metadata",
+          "policy_update",
+          "rollback"
+        ]
+      }
+    },
+    {
+      "id": "learn.consolidation.produces_record",
+      "name": "Memory consolidation produces a learning record",
+      "operation": "run_consolidation",
+      "expected": { "has_type": true, "has_before_snapshot": true }
+    },
+    {
+      "id": "learn.rollback.restores_state",
+      "name": "Rollback restores before_snapshot state",
+      "operation": "apply_and_rollback",
+      "before": { "state": "original" },
+      "after": { "state": "modified" },
+      "expected": { "after_rollback": { "state": "original" } }
+    },
+    {
+      "id": "learn.constitutional.not_learnable",
+      "name": "Learning cannot directly modify constitutional memory",
+      "operation": "attempt_constitutional_learning",
+      "expected": { "blocked": true, "reason": "constitutional memory requires amendment, not learning" }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: faq
+description: Answer common questions from knowledge base
+loop_mode: out-of-loop
+
+steps:
+  - id: search_knowledge
+    action: memory
+    memory_class: semantic
+    description: Search semantic memory for relevant answers
+
+  - id: generate_answer
+    action: infer
+    input: search_results
+    description: Generate clear, helpful answer from knowledge
+
+  - id: check_confidence
+    action: branch
+    on: confidence
+    branches:
+      high: respond_with_answer
+      low: escalate_to_human
+
+  - id: offer_followup
+    action: respond
+    description: Ask if they need anything else
+
+  - id: log_question
+    action: memory
+    memory_class: episodic
+    description: Log the question for future consolidation
+    tags: ["faq", "{{topic}}"]

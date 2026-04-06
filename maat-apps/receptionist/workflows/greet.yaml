@@ -1,0 +1,36 @@
+name: greet
+description: Initial greeting and intent detection
+loop_mode: out-of-loop
+
+steps:
+  - id: detect_language
+    action: infer
+    description: Detect visitor language from initial message
+    output: language
+
+  - id: greet_visitor
+    action: respond
+    description: Warm greeting in detected language
+    input: language
+    output: greeting
+
+  - id: identify_intent
+    action: classify
+    description: What does the visitor need?
+    intents:
+      - appointment
+      - question
+      - complaint
+      - transfer
+      - just_browsing
+    output: intent
+
+  - id: route
+    action: branch
+    on: intent
+    branches:
+      appointment: workflow:book
+      question: workflow:faq
+      complaint: escalate
+      transfer: workflow:route
+      just_browsing: respond_friendly

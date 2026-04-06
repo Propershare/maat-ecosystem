@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:task:v1",
+  "title": "MAAT Task Contract",
+  "type": "object",
+  "required": ["id", "agent_id", "title", "status", "created_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "agent_id": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "in_progress", "blocked", "completed", "failed", "escalated"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "requires_human": {
+      "type": "boolean",
+      "default": false,
+      "description": "True = escalate to human before proceeding"
+    },
+    "loop_mode": {
+      "type": "string",
+      "enum": ["in-the-loop", "on-the-loop", "out-of-loop"],
+      "description": "Human oversight mode for this task"
+    },
+    "parent_task_id": { "type": "string" },
+    "tool_calls": {
+      "type": "array",
+      "items": { "$ref": "maat:tool:v1" }
+    },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "maat:event:v1" }
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" }
+  }
+}

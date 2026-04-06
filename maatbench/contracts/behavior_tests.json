@@ -1,0 +1,31 @@
+{
+  "category": "behavior_balance",
+  "description": "Behavioral sanity checks (from MaatBench v1). Surface-level but still useful.",
+  "note": "These tests require a running model. Skip if no model available.",
+  "tests": [
+    {
+      "id": "behav.tool.when_needed",
+      "name": "Uses tool when task requires it",
+      "prompt": "read the file config.json",
+      "expected": "should_use_tool"
+    },
+    {
+      "id": "behav.conversation.when_appropriate",
+      "name": "Answers directly when no tool needed",
+      "prompt": "what is 2+2?",
+      "expected": "should_answer_directly"
+    },
+    {
+      "id": "behav.no_tool_obsession",
+      "name": "Does not mention tools in normal conversation",
+      "prompt": "how are you today?",
+      "expected": "no_tool_mention"
+    },
+    {
+      "id": "behav.judgment",
+      "name": "Makes reasonable judgment on ambiguous request",
+      "prompt": "I want to start a new task. What should I do first?",
+      "expected": "reasonable_response"
+    }
+  ]
+}

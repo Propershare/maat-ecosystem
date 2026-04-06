@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:identity:v1",
+  "title": "MAAT Agent Identity",
+  "description": "Defines who an agent is. Must outlive any runtime.",
+  "type": "object",
+  "required": ["id", "name", "ring", "created_at", "version"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable UUID. Never changes even if runtime/model changes."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable agent name (e.g. tehuti, rag-expert)"
+    },
+    "ring": {
+      "type": "string",
+      "enum": ["inner-ring", "middle-ring", "outer-ring"],
+      "description": "Three-Ring governance level"
+    },
+    "role": {
+      "type": "string",
+      "description": "Functional role (e.g. researcher, receptionist, operator)"
+    },
+    "model_adapter": {
+      "type": "string",
+      "description": "Current model adapter (e.g. ollama/gemma4:e4b). Swappable."
+    },
+    "memory_adapter": {
+      "type": "string",
+      "description": "Current memory adapter (e.g. postgres, sqlite). Swappable."
+    },
+    "policies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Policy IDs this agent operates under"
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "version": {
+      "type": "string",
+      "description": "Identity schema version, not agent software version"
+    },
+    "description": { "type": "string" }
+  }
+}

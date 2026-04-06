@@ -1,0 +1,37 @@
+{
+  "id": "receptionist-policy-v1",
+  "name": "Receptionist Policy",
+  "version": "1",
+  "rules": [
+    {
+      "id": "rec-no-delete",
+      "when": { "action": "memory.delete" },
+      "then": "deny",
+      "reason": "Receptionists cannot delete memories"
+    },
+    {
+      "id": "rec-no-execute",
+      "when": { "action": "execute" },
+      "then": "deny",
+      "reason": "Receptionists cannot execute system commands"
+    },
+    {
+      "id": "rec-allow-read",
+      "when": { "action": "memory.read" },
+      "then": "allow",
+      "reason": "Receptionists can read memory for context"
+    },
+    {
+      "id": "rec-allow-tools",
+      "when": { "action": "tool.calendar" },
+      "then": "allow",
+      "reason": "Receptionists can use calendar tools"
+    },
+    {
+      "id": "rec-escalate-sensitive",
+      "when": { "action": "tool.email", "resource": "external*" },
+      "then": "escalate",
+      "reason": "External emails require approval"
+    }
+  ]
+}

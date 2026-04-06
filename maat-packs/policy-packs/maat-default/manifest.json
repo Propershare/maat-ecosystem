@@ -1,0 +1,7 @@
+{
+  "name": "maat-default-policy",
+  "version": "1.0.0",
+  "description": "Default MAAT policy: Three-Ring governance, fail-closed, basic safety",
+  "type": "policy-pack",
+  "files": ["policy.json"]
+}

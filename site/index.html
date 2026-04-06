@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAAT Ecosystem — A Constitutional Ecology for Evolving AI Systems</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --bg2: #12121a;
+  --bg3: #1a1a25;
+  --gold: #c9a84c;
+  --gold-dim: #8a7235;
+  --gold-bright: #e6c55a;
+  --text: #d4d4d8;
+  --text-dim: #8888a0;
+  --text-bright: #f0f0f5;
+  --accent: #c9a84c;
+  --green: #4ade80;
+  --red: #f87171;
+  --blue: #60a5fa;
+  --border: #2a2a3a;
+  --font: 'Georgia', 'Times New Roman', serif;
+  --mono: 'Courier New', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-bright); }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--gold);
+  letter-spacing: 3px;
+}
+
+nav .links { display: flex; gap: 24px; flex-wrap: wrap; }
+nav .links a { color: var(--text-dim); font-size: 14px; font-family: sans-serif; }
+nav .links a:hover { color: var(--gold); }
+
+/* ─── HERO ─── */
+.hero {
+  padding: 160px 0 100px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '𓂀';
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  opacity: 0.15;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--gold);
+  letter-spacing: 6px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.hero .tagline {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.hero .desc {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero .desc strong { color: var(--text-bright); }
+
+/* ─── SECTIONS ─── */
+section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+section .subtitle {
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+/* ─── ARCHITECTURE STACK ─── */
+.stack {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.stack-layer {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 24px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.3s;
+}
+
+.stack-layer:hover {
+  border-color: var(--gold-dim);
+}
+
+.stack-layer .name {
+  font-family: var(--mono);
+  font-size: 15px;
+  color: var(--text-bright);
+}
+
+.stack-layer .role {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-family: sans-serif;
+}
+
+.stack-arrow {
+  text-align: center;
+  color: var(--gold-dim);
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+/* ─── PILLARS GRID ─── */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pillar {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px;
+  transition: border-color 0.3s;
+}
+
+.pillar:hover { border-color: var(--gold-dim); }
+
+.pillar .num {
+  font-family: var(--mono);
+  color: var(--gold-dim);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.pillar h3 {
+  color: var(--text-bright);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.pillar p {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ─── SACRED / REPLACEABLE ─── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 700px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+.col-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.col-card.sacred { border-top: 3px solid var(--gold); }
+.col-card.replaceable { border-top: 3px solid var(--blue); }
+
+.col-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.col-card.sacred h3 { color: var(--gold); }
+.col-card.replaceable h3 { color: var(--blue); }
+
+.col-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.93rem;
+  font-family: var(--mono);
+  color: var(--text-dim);
+}
+
+.col-card li:last-child { border-bottom: none; }
+
+.col-card li::before {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.sacred li::before { content: '◆'; color: var(--gold-dim); }
+.replaceable li::before { content: '○'; color: var(--blue); }
+
+/* ─── QUESTIONS ─── */
+.questions {
+  max-width: 700px;
+}
+
+.question {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.question:last-child { border-bottom: none; }
+
+.q-num {
+  font-family: var(--mono);
+  color: var(--gold-dim);
+  font-size: 14px;
+  min-width: 28px;
+}
+
+.q-text {
+  color: var(--text-bright);
+  font-size: 1rem;
+}
+
+.q-answer {
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* ─── APPS ─── */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.app-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  transition: border-color 0.3s;
+}
+
+.app-card:hover { border-color: var(--gold-dim); }
+
+.app-card .type {
+  font-family: sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-dim);
+  margin-bottom: 8px;
+}
+
+.app-card h4 {
+  color: var(--text-bright);
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.app-card p {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.app-card .ring {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-top: 10px;
+  background: var(--bg3);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
+/* ─── BENCH ─── */
+.bench-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.bench-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.bench-card h4 {
+  color: var(--green);
+  font-weight: normal;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.bench-card p {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.bench-score {
+  text-align: center;
+  padding: 32px;
+  background: var(--bg2);
+  border: 1px solid var(--gold-dim);
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bench-score .number {
+  font-size: 3rem;
+  color: var(--gold);
+  font-family: var(--mono);
+}
+
+.bench-score .label {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ─── DOCTRINE ─── */
+.doctrine-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.doctrine-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold-dim);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.doctrine-item h4 {
+  color: var(--gold);
+  font-weight: normal;
+  margin-bottom: 8px;
+  font-family: var(--mono);
+}
+
+.doctrine-item p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ─── PHILOSOPHY ─── */
+.principles {
+  max-width: 700px;
+}
+
+.principle {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.principle:last-child { border-bottom: none; }
+
+.principle q {
+  font-size: 1.1rem;
+  color: var(--text-bright);
+  font-style: italic;
+  quotes: '"' '"';
+}
+
+.principle q::before { content: open-quote; color: var(--gold-dim); }
+.principle q::after { content: close-quote; color: var(--gold-dim); }
+
+/* ─── FOOTER ─── */
+footer {
+  padding: 60px 0 80px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+footer .maat-values {
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+footer .closing {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+footer .glyph {
+  font-size: 32px;
+  opacity: 0.2;
+  margin-top: 24px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 600px) {
+  nav .links { display: none; }
+  .hero { padding: 120px 0 60px; }
+  section { padding: 50px 0; }
+  .stack-layer { flex-direction: column; gap: 4px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="logo">MAAT</div>
+    <div class="links">
+      <a href="#architecture">Architecture</a>
+      <a href="#pillars">Pillars</a>
+      <a href="#sacred">Sacred</a>
+      <a href="#questions">Questions</a>
+      <a href="#apps">Apps</a>
+      <a href="#bench">Bench</a>
+      <a href="#doctrine">Doctrine</a>
+      <a href="#philosophy">Philosophy</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>MAAT ECOSYSTEM</h1>
+    <div class="tagline">A constitutional ecology for evolving AI systems</div>
+    <div class="desc">
+      <strong>MAAT is a local-first AI operating ecosystem</strong> where agents, memory, policies, and tools can evolve without forcing users to start over.
+      <br><br>
+      Apps are downloadable roles. Packs are modular upgrades. Studio lets you inspect, govern, and replay what the agents do.
+      <br><br>
+      Not a repo. An ecology.
+    </div>
+  </div>
+</div>
+
+<!-- ARCHITECTURE -->
+<section id="architecture">
+  <div class="container">
+    <h2>Architecture</h2>
+    <div class="subtitle">Build around contracts, not components.</div>
+    <div class="stack">
+      <div class="stack-layer"><span class="name">SCHEMAS</span><span class="role">permanent, sacred</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">KERNEL</span><span class="role">tiny, 8 jobs only</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">ADAPTERS</span><span class="role">swappable backends</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">APPS + PACKS</span><span class="role">downloadable roles + upgrades</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">STUDIO</span><span class="role">observe, govern, replay</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">CLI</span><span class="role">operator control</span></div>
+      <div class="stack-arrow">↓</div>
+      <div class="stack-layer"><span class="name">MAATBENCH</span><span class="role">49 tests, verified claims</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 PILLARS -->
+<section id="pillars">
+  <div class="container">
+    <h2>The Seven Pillars</h2>
+    <div class="subtitle">The structural foundation of the ecosystem.</div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">01</div>
+        <h3>MAAT Core</h3>
+        <p>Schemas + kernel. The constitutional layer. 7 JSON schemas define identity, memory, task, policy, event, tool, and learning. The kernel has exactly 8 jobs. Nothing more.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">02</div>
+        <h3>MAAT Memory</h3>
+        <p>Five real memory classes: episodic, semantic, constitutional, task, working. Constitutional memory is append-only, versioned, and never silently overwritten. Consolidation promotes episodic to semantic.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">03</div>
+        <h3>MAAT Policy</h3>
+        <p>Machine-readable moral and operational constitution. Five outcomes: allow, deny, escalate, require_approval, log. Three-Ring governance. Fail-closed. Prompts are sand. Policies are stone.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">04</div>
+        <h3>MAAT Tools</h3>
+        <p>Every action through a standard contract. Tools declare their name, parameters, required ring, and reversibility. Ring-based access control enforced by the policy engine.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">05</div>
+        <h3>MAAT Learning</h3>
+        <p>Controlled adaptation. Always reversible. Snapshots are mandatory. If learning corrupts the system, rollback restores prior state. Rolling back is the system working correctly.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">06</div>
+        <h3>MAAT Runtime</h3>
+        <p>Kernel + adapters + event bus. Single or multi-agent. Events are the nervous system — not logs, not print statements. Every meaningful action emits a structured event.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">07</div>
+        <h3>MAAT Commons</h3>
+        <p>Apps, packs, policies, skills — the downloadable ecosystem. Install a policy pack, swap a tool pack, download a role. Without ripping open the engine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SACRED VS REPLACEABLE -->
+<section id="sacred">
+  <div class="container">
+    <h2>Sacred vs Replaceable</h2>
+    <div class="subtitle">If you cannot tell which side something falls on, it is replaceable.</div>
+    <div class="two-col">
+      <div class="col-card sacred">
+        <h3>◆ Sacred</h3>
+        <ul>
+          <li>Identity schema</li>
+          <li>Memory class definitions (5 classes)</li>
+          <li>Policy semantics (5 outcomes)</li>
+          <li>Event taxonomy (namespaced)</li>
+          <li>Task lifecycle states (6 states)</li>
+          <li>Tool contract shape</li>
+          <li>Three-Ring governance</li>
+          <li>Constitutional memory: append-only</li>
+          <li>Learning: always reversible</li>
+          <li>Events: append-only log</li>
+        </ul>
+      </div>
+      <div class="col-card replaceable">
+        <h3>○ Replaceable</h3>
+        <ul>
+          <li>Model provider (Ollama, OpenAI, Anthropic, vLLM, Groq)</li>
+          <li>Vector DB (pgvector, Qdrant, Chroma, Pinecone)</li>
+          <li>SQL backend (PostgreSQL, SQLite, DuckDB)</li>
+          <li>Tool transport (MCP, REST, gRPC, native)</li>
+          <li>Embedding model (nomic, OpenAI, Cohere)</li>
+          <li>CLI framework (argparse, Click, Typer)</li>
+          <li>UI framework (Flask, React, htmx, terminal)</li>
+          <li>Agent runtime (OpenClaw, LangChain, CrewAI, AutoGen)</li>
+          <li>Messaging transport (Telegram, Discord, WhatsApp)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 QUESTIONS -->
+<section id="questions">
+  <div class="container">
+    <h2>The Nine Questions</h2>
+    <div class="subtitle">Every MAAT agent can answer these.</div>
+    <div class="questions">
+      <div class="question">
+        <span class="q-num">01</span>
+        <div>
+          <div class="q-text">Who am I?</div>
+          <div class="q-answer">→ Identity schema + IdentityStore</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">02</span>
+        <div>
+          <div class="q-text">What am I allowed to do?</div>
+          <div class="q-answer">→ PolicyEngine + Three-Ring governance</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">03</span>
+        <div>
+          <div class="q-text">What do I remember?</div>
+          <div class="q-answer">→ Memory classes + MemoryAdapter</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">04</span>
+        <div>
+          <div class="q-text">What tools can I use?</div>
+          <div class="q-answer">→ Tool contract + ring-based access</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">05</span>
+        <div>
+          <div class="q-text">What tasks exist?</div>
+          <div class="q-answer">→ Task lifecycle (6 states)</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">06</span>
+        <div>
+          <div class="q-text">What events have occurred?</div>
+          <div class="q-answer">→ EventBus + append-only log</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">07</span>
+        <div>
+          <div class="q-text">What can I learn?</div>
+          <div class="q-answer">→ Learning contract (always reversible)</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">08</span>
+        <div>
+          <div class="q-text">What requires escalation?</div>
+          <div class="q-answer">→ Policy escalation rules</div>
+        </div>
+      </div>
+      <div class="question">
+        <span class="q-num">09</span>
+        <div>
+          <div class="q-text">What part of me can be swapped?</div>
+          <div class="q-answer">→ Everything in maat-adapters/</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS & PACKS -->
+<section id="apps">
+  <div class="container">
+    <h2>Apps &amp; Packs</h2>
+    <div class="subtitle">Downloadable roles, modular capabilities. Install without ripping open the engine.</div>
+
+    <h3 style="color: var(--text-bright); font-weight: normal; margin-bottom: 16px; font-size: 1rem; letter-spacing: 1px;">APPS — Downloadable Roles</h3>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Receptionist</h4>
+        <p>Front-desk agent. Greets, routes inquiries, books appointments, answers FAQs. 4 workflows, full policy, system prompt.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Researcher</h4>
+        <p>Deep research agent. Web search, document analysis, citation, summarization, fact-checking.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Operator</h4>
+        <p>System operations agent. Infrastructure management, deployment, monitoring, maintenance.</p>
+        <span class="ring">outer-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Teacher</h4>
+        <p>Teaching agent. Tutoring, curriculum creation, progress tracking, quiz generation.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+    </div>
+
+    <h3 style="color: var(--text-bright); font-weight: normal; margin-bottom: 16px; font-size: 1rem; letter-spacing: 1px;">PACKS — Modular Capabilities</h3>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="type">Policy Pack</div>
+        <h4>maat-default</h4>
+        <p>The constitutional default. Three-Ring governance, fail-closed, basic safety.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Policy Pack</div>
+        <h4>strict-safety</h4>
+        <p>Maximum restriction. No network, no external comms, human-in-the-loop for all execution.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Tool Pack</div>
+        <h4>filesystem</h4>
+        <p>File system tools: read, write, list, search. Ring-level access control on each operation.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Agent Pack</div>
+        <h4>tehuti</h4>
+        <p>Scribe and keeper of wisdom. The default MAAT operator agent. Outer-ring, full authority.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Learning Pack</div>
+        <h4>self-improve</h4>
+        <p>Memory consolidation, prompt refinement, tool usage analysis. Daily/weekly schedule. Rollback support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAATBENCH -->
+<section id="bench">
+  <div class="container">
+    <h2>MaatBench</h2>
+    <div class="subtitle">System-level verification. Not "does it answer well?" but "does it preserve its guarantees?"</div>
+
+    <div class="bench-grid">
+      <div class="bench-card">
+        <h4>✅ Contract Integrity</h4>
+        <p>All 7 schemas valid. Required fields present. Enums correct. Memory defines 5 classes. Tasks define 6 states. Identity defines 3 rings.</p>
+      </div>
+      <div class="bench-card">
+        <h4>✅ Policy Fidelity</h4>
+        <p>Inner-ring denied execution. Outer-ring allowed. Unknown agents fail-closed. Custom deny rules enforced. Escalation triggered. Log doesn't terminate evaluation.</p>
+      </div>
+      <div class="bench-card">
+        <h4>✅ Memory Fidelity</h4>
+        <p>Attribution present on every entry. Constitutional marked non-reversible. Amendments preserve original in audit trail. Rollback works for reversible classes.</p>
+      </div>
+      <div class="bench-card">
+        <h4>✅ Event Fidelity</h4>
+        <p>Emission, exact subscription, wildcard, domain-level filtering all work. Events persist to JSONL. Session replay reconstructs from log. Order preserved.</p>
+      </div>
+      <div class="bench-card">
+        <h4>✅ Portability</h4>
+        <p>Identity survives export/import. Memory survives backend swap. Policy evaluation consistent after save/load. Event logs portable JSONL.</p>
+      </div>
+      <div class="bench-card">
+        <h4>✅ Learning Safety</h4>
+        <p>Before/after snapshots required. Reversible by default. Learning types explicitly defined. Rollback restores state. Constitutional memory protected from learning override.</p>
+      </div>
+    </div>
+
+    <div class="bench-score">
+      <div class="number">49/49</div>
+      <div class="label">Tests Passed · MAAT Score: 100%</div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTRINE -->
+<section id="doctrine">
+  <div class="container">
+    <h2>Doctrine</h2>
+    <div class="subtitle">Five documents that define the rules of the ecosystem.</div>
+    <div class="doctrine-list">
+      <div class="doctrine-item">
+        <h4>CONSTITUTION.md</h4>
+        <p>What is sacred and what is replaceable. The amendment process. If you cannot tell which side something falls on, it is replaceable.</p>
+      </div>
+      <div class="doctrine-item">
+        <h4>PORTABILITY.md</h4>
+        <p>The migration guarantee. Identity survives runtime changes. Memory survives backend changes. Policies survive UI changes. The 9-question compliance test.</p>
+      </div>
+      <div class="doctrine-item">
+        <h4>EVENTS.md</h4>
+        <p>Canonical event taxonomy. 40+ typed events across 10 domains. Events are the nervous system — not logs, not print statements. Append-only.</p>
+      </div>
+      <div class="doctrine-item">
+        <h4>POLICY.md</h4>
+        <p>5 outcomes. Evaluation order. Three-Ring governance. Fail-closed. Escalation paths. Policy vs prompts: prompts are sand, policies are stone.</p>
+      </div>
+      <div class="doctrine-item">
+        <h4>LEARNING.md</h4>
+        <p>Learning must be reversible. Snapshots mandatory. The observe→propose→approve→apply→verify→rollback loop. Rolling back is not failure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <h2>Philosophy</h2>
+    <div class="subtitle">Built on stable meaning, not new tech.</div>
+    <div class="principles">
+      <div class="principle">
+        <q>The contracts are at the center, not the tech.</q>
+      </div>
+      <div class="principle">
+        <q>Prompts are sand. Policies are stone.</q>
+      </div>
+      <div class="principle">
+        <q>Constitutional memory is never silently overwritten. It is amended through traceable versioning.</q>
+      </div>
+      <div class="principle">
+        <q>If learning is not reversible, the system becomes self-corrupting.</q>
+      </div>
+      <div class="principle">
+        <q>Identity must outlive implementation.</q>
+      </div>
+      <div class="principle">
+        <q>If it happened and no event was emitted, it didn't happen.</q>
+      </div>
+      <div class="principle">
+        <q>Apps should be manifests, workflows, and policies — not secret business logic that bypasses the core.</q>
+      </div>
+      <div class="principle">
+        <q>Rolling back is not failure. Rolling back is the system working correctly.</q>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="maat-values">Truth · Balance · Order · Justice · Self-Reflection</div>
+    <div class="closing">Built to outlast any single model, runtime, or technology.</div>
+    <div class="glyph">𓂀</div>
+  </div>
+</footer>
+
+</body>
+</html>

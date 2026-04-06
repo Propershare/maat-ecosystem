@@ -1,0 +1,27 @@
+research:
+  description: Deep research on a topic
+  steps:
+    - clarify_question
+    - search_existing_memory
+    - web_search_multiple_sources
+    - cross_reference
+    - synthesize_findings
+    - store_in_semantic_memory
+    - present_with_citations
+
+summarize:
+  description: Summarize a document or topic
+  steps:
+    - load_source
+    - extract_key_points
+    - generate_summary
+    - store_summary
+
+fact_check:
+  description: Verify claims
+  steps:
+    - extract_claims
+    - search_for_evidence
+    - evaluate_evidence
+    - rate_confidence
+    - present_findings

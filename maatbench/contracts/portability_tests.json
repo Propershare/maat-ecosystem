@@ -1,0 +1,72 @@
+{
+  "category": "portability",
+  "description": "Verify identity, memory, and policy survive adapter swaps",
+  "tests": [
+    {
+      "id": "port.identity.survives_export_import",
+      "name": "Identity survives export/import cycle",
+      "operation": "export_import_identity",
+      "identity": {
+        "id": "port-test-1",
+        "name": "portable-agent",
+        "ring": "middle-ring",
+        "role": "tester"
+      },
+      "expected": { "fields_preserved": ["id", "name", "ring", "role"] }
+    },
+    {
+      "id": "port.memory.survives_backend_swap",
+      "name": "Memory content survives backend swap (postgres → sqlite)",
+      "operation": "write_swap_read",
+      "backends": ["sqlite_a", "sqlite_b"],
+      "entry": {
+        "agent_id": "port-test",
+        "memory_class": "semantic",
+        "content": "This must survive the swap"
+      },
+      "expected": { "content_preserved": true, "class_preserved": true }
+    },
+    {
+      "id": "port.policy.survives_reload",
+      "name": "Policy rules survive save/load cycle",
+      "operation": "save_load_policy",
+      "policy": {
+        "id": "port-policy",
+        "name": "Portable Policy",
+        "version": "1",
+        "rules": [
+          { "id": "r1", "when": { "action": "execute" }, "then": "deny", "reason": "test" }
+        ]
+      },
+      "expected": { "rules_count_preserved": true, "evaluation_same": true }
+    },
+    {
+      "id": "port.events.log_portable",
+      "name": "Event log is valid JSONL that can be read anywhere",
+      "operation": "write_read_events",
+      "events": [
+        { "type": "task.created", "payload": { "id": "1" } },
+        { "type": "task.completed", "payload": { "id": "1" } }
+      ],
+      "expected": { "all_parseable": true, "count_matches": true }
+    },
+    {
+      "id": "port.migration.full_export",
+      "name": "Full migration export contains identity + memory + policy + events",
+      "operation": "full_export",
+      "expected": {
+        "has_identities": true,
+        "has_events": true,
+        "format": "json"
+      }
+    },
+    {
+      "id": "port.embedding.model_stored",
+      "name": "Memory schema supports embedding_model field for re-embedding",
+      "operation": "check_schema_field",
+      "schema": "maat_memory.schema.json",
+      "field": "embedding_model",
+      "expected": { "field_exists": true }
+    }
+  ]
+}
