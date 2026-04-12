@@ -1,0 +1,324 @@
+#!/usr/bin/env python3
+"""
+maat — the MAAT ecosystem CLI
+
+Usage:
+    maat status          Show running agents and adapters
+    maat start           Start the kernel with default config
+    maat identity list   List registered agent identities
+    maat identity show   Show a specific agent identity
+    maat memory search   Search memory
+    maat memory write    Write a memory entry
+    maat policy check    Check a policy evaluation
+    maat events tail     Tail the event log
+    maat apps list       List installed app packs
+    maat apps install    Install an app pack
+    maat packs list      List available packs
+    maat migrate         Export identity + memory for migration
+"""
+
+import sys
+import os
+import json
+import argparse
+from pathlib import Path
+from datetime import datetime, timezone
+
+# Resolve ecosystem root
+ECOSYSTEM_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ECOSYSTEM_ROOT))
+
+MAAT_HOME = Path.home() / ".maat"
+MAAT_HOME.mkdir(parents=True, exist_ok=True)
+
+
+def cmd_status(args):
+    """Show ecosystem status."""
+    identities = MAAT_HOME / "identities.json"
+    events_log = MAAT_HOME / "events.jsonl"
+    config_path = ECOSYSTEM_ROOT / "maat-core" / "config.yaml"
+
+    print("🏛️  MAAT Ecosystem Status\n")
+
+    # Config
+    if config_path.exists():
+        print(f"  Config:     {config_path}")
+    else:
+        print("  Config:     ❌ Not found")
+
+    # Identities
+    if identities.exists():
+        try:
+            agents = json.loads(identities.read_text())
+            print(f"  Agents:     {len(agents)} registered")
+            for aid, agent in agents.items():
+                ring = agent.get("ring", "?")
+                name = agent.get("name", "unnamed")
+                print(f"              - {name} ({ring})")
+        except Exception:
+            print("  Agents:     ⚠️  Could not read identities")
+    else:
+        print("  Agents:     None registered yet")
+
+    # Events
+    if events_log.exists():
+        lines = events_log.read_text().strip().split("\n")
+        print(f"  Events:     {len(lines)} total")
+        if lines and lines[-1]:
+            try:
+                last = json.loads(lines[-1])
+                print(f"  Last event: {last.get('type', '?')} @ {last.get('timestamp', '?')}")
+            except Exception:
+                pass
+    else:
+        print("  Events:     No event log yet")
+
+    # Adapters from config
+    if config_path.exists():
+        try:
+            import yaml
+            cfg = yaml.safe_load(config_path.read_text())
+            adapters = cfg.get("adapters", {})
+            print(f"\n  Model:      {adapters.get('model', 'not set')}")
+            print(f"  Memory:     {adapters.get('memory', 'not set')}")
+            print(f"  Tools:      {adapters.get('tools', 'not set')}")
+        except ImportError:
+            print("\n  (install pyyaml for full adapter info)")
+        except Exception:
+            pass
+
+    # Apps
+    apps_dir = ECOSYSTEM_ROOT / "maat-apps"
+    if apps_dir.exists():
+        apps = [d.name for d in apps_dir.iterdir() if d.is_dir() and (d / "manifest.json").exists()]
+        print(f"\n  Apps:       {len(apps)} installed")
+        for a in apps:
+            print(f"              - {a}")
+    else:
+        print("\n  Apps:       None")
+
+    # Packs
+    packs_dir = ECOSYSTEM_ROOT / "maat-packs"
+    if packs_dir.exists():
+        for pack_type in ["policy-packs", "tool-packs", "agent-packs", "learning-packs"]:
+            p = packs_dir / pack_type
+            if p.exists():
+                packs = [d.name for d in p.iterdir() if d.is_dir()]
+                if packs:
+                    print(f"  {pack_type}: {', '.join(packs)}")
+
+    print()
+
+
+def cmd_identity_list(args):
+    """List registered identities."""
+    identities = MAAT_HOME / "identities.json"
+    if not identities.exists():
+        print("No agents registered yet.")
+        return
+    agents = json.loads(identities.read_text())
+    for aid, agent in agents.items():
+        print(f"  {agent.get('name', 'unnamed'):20s}  ring={agent.get('ring', '?'):15s}  id={aid}")
+
+
+def cmd_identity_show(args):
+    """Show a specific identity."""
+    identities = MAAT_HOME / "identities.json"
+    if not identities.exists():
+        print("No agents registered yet.")
+        return
+    agents = json.loads(identities.read_text())
+    for aid, agent in agents.items():
+        if agent.get("name") == args.name or aid == args.name:
+            print(json.dumps(agent, indent=2))
+            return
+    print(f"Agent '{args.name}' not found.")
+
+
+def cmd_memory_search(args):
+    """Search memory."""
+    try:
+        from maat_adapters.memory.sqlite import SQLiteAdapter
+        mem = SQLiteAdapter({"path": str(MAAT_HOME / "memory.db")})
+        results = mem.search(args.query, limit=args.limit)
+        if not results:
+            print("No memories found.")
+            return
+        for r in results:
+            print(f"  [{r.get('memory_class', '?')}] {r.get('content', '')[:120]}")
+            print(f"    @ {r.get('timestamp', '?')}\n")
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+def cmd_memory_write(args):
+    """Write a memory entry."""
+    import uuid
+    try:
+        from maat_adapters.memory.sqlite import SQLiteAdapter
+        mem = SQLiteAdapter({"path": str(MAAT_HOME / "memory.db")})
+        mem.write({
+            "id": str(uuid.uuid4()),
+            "agent_id": args.agent or "cli-user",
+            "memory_class": args.type or "episodic",
+            "content": args.content,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        })
+        print("✓ Memory written.")
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+def cmd_events_tail(args):
+    """Tail the event log."""
+    events_log = MAAT_HOME / "events.jsonl"
+    if not events_log.exists():
+        print("No events yet.")
+        return
+    lines = events_log.read_text().strip().split("\n")
+    tail = lines[-(args.lines):]
+    for line in tail:
+        try:
+            e = json.loads(line)
+            sev = e.get("severity", "info")
+            print(f"  [{sev:8s}] {e.get('type', '?'):30s}  {e.get('timestamp', '')}")
+        except Exception:
+            pass
+
+
+def cmd_policy_check(args):
+    """Check a policy evaluation."""
+    try:
+        from maat_core.kernel.policy import PolicyEngine
+        policy = PolicyEngine()
+        policy.register_agent(args.agent, args.ring)
+        result = policy.evaluate(args.agent, args.action, args.resource or "")
+        emoji = "✅" if result["allowed"] else "❌"
+        print(f"  {emoji} {result['reason']}")
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+def cmd_apps_list(args):
+    """List installed apps."""
+    apps_dir = ECOSYSTEM_ROOT / "maat-apps"
+    if not apps_dir.exists():
+        print("No apps directory.")
+        return
+    for d in sorted(apps_dir.iterdir()):
+        manifest = d / "manifest.json"
+        if manifest.exists():
+            m = json.loads(manifest.read_text())
+            print(f"  {m.get('name', d.name):20s}  {m.get('description', '')}")
+
+
+def cmd_migrate(args):
+    """Export identity + memory for migration."""
+    export = {"exported_at": datetime.now(timezone.utc).isoformat()}
+
+    identities = MAAT_HOME / "identities.json"
+    if identities.exists():
+        export["identities"] = json.loads(identities.read_text())
+
+    events_log = MAAT_HOME / "events.jsonl"
+    if events_log.exists():
+        export["event_count"] = len(events_log.read_text().strip().split("\n"))
+
+    out_path = Path(args.output or "maat-export.json")
+    out_path.write_text(json.dumps(export, indent=2))
+    print(f"✓ Exported to {out_path}")
+    print(f"  Identities: {len(export.get('identities', {}))}")
+    print(f"  Events:     {export.get('event_count', 0)}")
+    print("\n  Identity outlives implementation. 🏛️")
+
+
+def main():
+    parser = argparse.ArgumentParser(prog="maat", description="MAAT Ecosystem CLI")
+    sub = parser.add_subparsers(dest="command")
+
+    # status
+    sub.add_parser("status", help="Show ecosystem status")
+
+    # identity
+    id_parser = sub.add_parser("identity", help="Manage identities")
+    id_sub = id_parser.add_subparsers(dest="id_cmd")
+    id_sub.add_parser("list", help="List agents")
+    id_show = id_sub.add_parser("show", help="Show agent")
+    id_show.add_argument("name", help="Agent name or ID")
+
+    # memory
+    mem_parser = sub.add_parser("memory", help="Memory operations")
+    mem_sub = mem_parser.add_subparsers(dest="mem_cmd")
+    mem_search = mem_sub.add_parser("search", help="Search memory")
+    mem_search.add_argument("query", help="Search query")
+    mem_search.add_argument("-n", "--limit", type=int, default=5)
+    mem_write = mem_sub.add_parser("write", help="Write memory")
+    mem_write.add_argument("content", help="Memory content")
+    mem_write.add_argument("--agent", default="cli-user")
+    mem_write.add_argument("--type", default="episodic")
+
+    # policy
+    pol_parser = sub.add_parser("policy", help="Policy check")
+    pol_sub = pol_parser.add_subparsers(dest="pol_cmd")
+    pol_check = pol_sub.add_parser("check", help="Check policy")
+    pol_check.add_argument("agent", help="Agent ID")
+    pol_check.add_argument("action", help="Action to check")
+    pol_check.add_argument("--ring", default="inner-ring")
+    pol_check.add_argument("--resource", default="")
+
+    # events
+    evt_parser = sub.add_parser("events", help="Event log")
+    evt_sub = evt_parser.add_subparsers(dest="evt_cmd")
+    evt_tail = evt_sub.add_parser("tail", help="Tail events")
+    evt_tail.add_argument("-n", "--lines", type=int, default=20)
+
+    # apps
+    apps_parser = sub.add_parser("apps", help="App packs")
+    apps_sub = apps_parser.add_subparsers(dest="apps_cmd")
+    apps_sub.add_parser("list", help="List installed apps")
+
+    # migrate
+    mig_parser = sub.add_parser("migrate", help="Export for migration")
+    mig_parser.add_argument("-o", "--output", default="maat-export.json")
+
+    args = parser.parse_args()
+
+    if args.command == "status":
+        cmd_status(args)
+    elif args.command == "identity":
+        if args.id_cmd == "list":
+            cmd_identity_list(args)
+        elif args.id_cmd == "show":
+            cmd_identity_show(args)
+        else:
+            id_parser.print_help()
+    elif args.command == "memory":
+        if args.mem_cmd == "search":
+            cmd_memory_search(args)
+        elif args.mem_cmd == "write":
+            cmd_memory_write(args)
+        else:
+            mem_parser.print_help()
+    elif args.command == "policy":
+        if args.pol_cmd == "check":
+            cmd_policy_check(args)
+        else:
+            pol_parser.print_help()
+    elif args.command == "events":
+        if args.evt_cmd == "tail":
+            cmd_events_tail(args)
+        else:
+            evt_parser.print_help()
+    elif args.command == "apps":
+        if args.apps_cmd == "list":
+            cmd_apps_list(args)
+        else:
+            apps_parser.print_help()
+    elif args.command == "migrate":
+        cmd_migrate(args)
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

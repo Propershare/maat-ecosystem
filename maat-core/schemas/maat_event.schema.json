@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:event:v1",
+  "title": "MAAT Event Contract",
+  "description": "Every significant action emits an event. Event-first architecture.",
+  "type": "object",
+  "required": ["id", "type", "agent_id", "timestamp"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "description": "Namespaced event type",
+      "examples": [
+        "agent.started", "agent.stopped",
+        "memory.written", "memory.retrieved", "memory.consolidated",
+        "task.created", "task.completed", "task.failed", "task.escalated",
+        "tool.called", "tool.denied", "tool.failed",
+        "policy.evaluated", "policy.violated",
+        "model.changed", "adapter.swapped",
+        "learning.cycle_complete", "learning.rollback",
+        "human.approval_requested", "human.approved", "human.rejected"
+      ]
+    },
+    "agent_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "payload": {
+      "type": "object",
+      "description": "Event-specific data"
+    },
+    "task_id": { "type": "string" },
+    "session_id": { "type": "string" },
+    "severity": {
+      "type": "string",
+      "enum": ["debug", "info", "warning", "error", "critical"]
+    }
+  }
+}

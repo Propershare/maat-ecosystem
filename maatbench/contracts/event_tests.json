@@ -1,0 +1,76 @@
+{
+  "category": "event_fidelity",
+  "description": "Verify event system emits correct events, maintains taxonomy, and supports replay",
+  "tests": [
+    {
+      "id": "event.emit.basic",
+      "name": "EventBus can emit and receive events",
+      "operation": "emit_and_capture",
+      "event_type": "test.basic",
+      "payload": { "key": "value" },
+      "expected": { "received": true }
+    },
+    {
+      "id": "event.subscribe.exact",
+      "name": "Exact type subscription receives correct events only",
+      "operation": "subscribe_and_filter",
+      "subscribe_to": "memory.written",
+      "emit_events": ["memory.written", "memory.deleted", "task.created"],
+      "expected": { "received_count": 1 }
+    },
+    {
+      "id": "event.subscribe.wildcard",
+      "name": "Wildcard subscription receives all events",
+      "operation": "subscribe_and_filter",
+      "subscribe_to": "*",
+      "emit_events": ["memory.written", "task.created", "tool.called"],
+      "expected": { "received_count": 3 }
+    },
+    {
+      "id": "event.subscribe.domain",
+      "name": "Domain subscription receives all events in domain",
+      "operation": "subscribe_and_filter",
+      "subscribe_to": "memory.*",
+      "emit_events": ["memory.written", "memory.deleted", "task.created"],
+      "expected": { "received_count": 2 }
+    },
+    {
+      "id": "event.persistence.jsonl",
+      "name": "Events persist to JSONL log file",
+      "operation": "emit_and_check_log",
+      "event_type": "test.persistence",
+      "expected": { "in_log_file": true }
+    },
+    {
+      "id": "event.structure.required_fields",
+      "name": "Emitted events have required fields",
+      "operation": "emit_and_validate",
+      "event_type": "test.structure",
+      "expected": {
+        "has_fields": ["id", "type", "timestamp", "severity", "payload"]
+      }
+    },
+    {
+      "id": "event.taxonomy.canonical",
+      "name": "Canonical events are recognized",
+      "operation": "check_canonical",
+      "event_types": [
+        "agent.registered", "memory.written", "task.created",
+        "tool.called", "policy.evaluated", "learning.proposed"
+      ],
+      "expected": { "all_canonical": true }
+    },
+    {
+      "id": "event.replay.session",
+      "name": "Session can be reconstructed from event log",
+      "operation": "emit_session_and_replay",
+      "events": [
+        { "type": "agent.started", "payload": { "agent_id": "test" } },
+        { "type": "task.created", "payload": { "task_id": "t1" } },
+        { "type": "memory.written", "payload": { "agent_id": "test" } },
+        { "type": "task.completed", "payload": { "task_id": "t1" } }
+      ],
+      "expected": { "replay_count": 4, "order_preserved": true }
+    }
+  ]
+}

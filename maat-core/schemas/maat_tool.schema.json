@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:tool:v1",
+  "title": "MAAT Tool Contract",
+  "description": "Defines what a tool is. Transport (MCP, native, REST) is an adapter concern.",
+  "type": "object",
+  "required": ["id", "name", "description", "parameters", "required_ring"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "parameters": {
+      "type": "object",
+      "description": "JSON Schema for tool parameters"
+    },
+    "returns": {
+      "type": "object",
+      "description": "JSON Schema for return value"
+    },
+    "required_ring": {
+      "type": "string",
+      "enum": ["inner-ring", "middle-ring", "outer-ring"],
+      "description": "Minimum ring level to call this tool"
+    },
+    "requires_approval": {
+      "type": "boolean",
+      "default": false
+    },
+    "reversible": {
+      "type": "boolean",
+      "description": "Can the tool's action be undone?"
+    },
+    "adapter": {
+      "type": "string",
+      "description": "Which adapter handles this tool (e.g. mcp, native, rest)"
+    }
+  }
+}

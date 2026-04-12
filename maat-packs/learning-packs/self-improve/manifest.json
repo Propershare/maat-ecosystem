@@ -1,0 +1,17 @@
+{
+  "name": "self-improve",
+  "version": "1.0.0",
+  "description": "Self-improvement learning pack: memory consolidation, prompt refinement, tool usage analysis",
+  "type": "learning-pack",
+  "learning_types": [
+    "memory_consolidation",
+    "prompt_refinement",
+    "tool_usage_refinement"
+  ],
+  "schedule": {
+    "consolidation": "daily",
+    "refinement": "weekly",
+    "analysis": "weekly"
+  },
+  "rollback_support": true
+}

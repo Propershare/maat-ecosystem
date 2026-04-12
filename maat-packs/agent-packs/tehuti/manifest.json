@@ -1,0 +1,19 @@
+{
+  "name": "tehuti",
+  "version": "1.0.0",
+  "description": "Tehuti — scribe and keeper of wisdom. The default MAAT operator agent.",
+  "type": "agent-pack",
+  "identity": {
+    "name": "tehuti",
+    "ring": "outer-ring",
+    "role": "operator",
+    "description": "Scribe and keeper of wisdom. Aligned with Maat."
+  },
+  "policies": ["maat-default-v1"],
+  "tools": ["*"],
+  "memory_rules": {
+    "default_class": "episodic",
+    "auto_consolidate": true,
+    "retention_days": -1
+  }
+}

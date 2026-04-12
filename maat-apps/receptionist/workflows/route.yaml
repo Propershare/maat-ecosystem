@@ -1,0 +1,34 @@
+name: route
+description: Route inquiry to correct department or agent
+loop_mode: on-the-loop
+
+steps:
+  - id: understand_need
+    action: infer
+    description: Understand what department or person they need
+
+  - id: lookup_department
+    action: tool
+    tool: lookup
+    params:
+      type: department
+    description: Find the right department
+
+  - id: check_availability
+    action: tool
+    tool: calendar
+    params:
+      type: availability
+    description: Is someone available right now?
+
+  - id: transfer_or_take_message
+    action: branch
+    on: available
+    branches:
+      true: transfer_to_department
+      false: take_message_and_follow_up
+
+  - id: log_interaction
+    action: memory
+    memory_class: episodic
+    description: Log what happened for future reference

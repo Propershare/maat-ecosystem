@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:memory:v1",
+  "title": "MAAT Memory Contract",
+  "description": "Defines what a memory entry is. Backend is swappable.",
+  "type": "object",
+  "required": ["id", "agent_id", "memory_class", "content", "timestamp"],
+  "properties": {
+    "id": { "type": "string" },
+    "agent_id": { "type": "string", "description": "Agent identity ID (not name)" },
+    "memory_class": {
+      "type": "string",
+      "enum": ["episodic", "semantic", "constitutional", "task", "working"],
+      "description": "episodic=past events, semantic=facts/knowledge, constitutional=identity/values, task=todo/decisions, working=current session"
+    },
+    "content": { "type": "string" },
+    "summary": { "type": "string" },
+    "source": { "type": "string", "description": "Where this memory came from" },
+    "embedding_model": { "type": "string", "description": "Model used to embed. Stored for migration." },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "expires_at": { "type": "string", "format": "date-time", "description": "Optional TTL" },
+    "reversible": {
+      "type": "boolean",
+      "default": true,
+      "description": "Can this memory be rolled back? False only for constitutional memories."
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "category": "policy_fidelity",
+  "description": "Verify policy engine enforces rules correctly under adversarial input",
+  "tests": [
+    {
+      "id": "policy.deny.inner_ring_execute",
+      "name": "Inner-ring agent cannot execute",
+      "agent_id": "test-inner",
+      "agent_ring": "inner-ring",
+      "action": "execute",
+      "resource": "ls -la",
+      "expected": { "allowed": false }
+    },
+    {
+      "id": "policy.deny.inner_ring_tool",
+      "name": "Inner-ring agent cannot use tools (default)",
+      "agent_id": "test-inner",
+      "agent_ring": "inner-ring",
+      "action": "tool.web_search",
+      "expected": { "allowed": false }
+    },
+    {
+      "id": "policy.allow.inner_ring_read",
+      "name": "Inner-ring agent can read",
+      "agent_id": "test-inner",
+      "agent_ring": "inner-ring",
+      "action": "read",
+      "expected": { "allowed": true }
+    },
+    {
+      "id": "policy.allow.outer_ring_execute",
+      "name": "Outer-ring agent can execute",
+      "agent_id": "test-outer",
+      "agent_ring": "outer-ring",
+      "action": "execute",
+      "expected": { "allowed": true }
+    },
+    {
+      "id": "policy.allow.middle_ring_memory_write",
+      "name": "Middle-ring agent can write memory",
+      "agent_id": "test-middle",
+      "agent_ring": "middle-ring",
+      "action": "memory.write",
+      "expected": { "allowed": true }
+    },
+    {
+      "id": "policy.deny.middle_ring_execute",
+      "name": "Middle-ring agent cannot execute",
+      "agent_id": "test-middle",
+      "agent_ring": "middle-ring",
+      "action": "execute",
+      "expected": { "allowed": false }
+    },
+    {
+      "id": "policy.deny.unknown_agent",
+      "name": "Unknown agent defaults to inner-ring (fail-closed)",
+      "agent_id": "totally-unknown-agent",
+      "agent_ring": null,
+      "action": "execute",
+      "expected": { "allowed": false }
+    },
+    {
+      "id": "policy.custom.deny_rm_rf",
+      "name": "Custom policy denies rm -rf",
+      "policy": {
+        "id": "test-policy",
+        "name": "Test",
+        "version": "1",
+        "rules": [
+          {
+            "id": "deny-rm",
+            "when": { "action": "execute", "resource": "rm -rf*" },
+            "then": "deny",
+            "reason": "Destructive"
+          }
+        ]
+      },
+      "agent_id": "test-outer",
+      "agent_ring": "outer-ring",
+      "action": "execute",
+      "resource": "rm -rf /tmp",
+      "expected": { "allowed": false }
+    },
+    {
+      "id": "policy.custom.escalate",
+      "name": "Custom policy triggers escalation",
+      "policy": {
+        "id": "test-escalate",
+        "name": "Test",
+        "version": "1",
+        "rules": [
+          {
+            "id": "escalate-deploy",
+            "when": { "action": "tool.deploy" },
+            "then": "escalate",
+            "reason": "Deploy needs approval"
+          }
+        ]
+      },
+      "agent_id": "test-outer",
+      "agent_ring": "outer-ring",
+      "action": "tool.deploy",
+      "expected": { "allowed": false, "escalate": true }
+    },
+    {
+      "id": "policy.custom.log_continues",
+      "name": "Log rule does not terminate evaluation",
+      "policy": {
+        "id": "test-log",
+        "name": "Test",
+        "version": "1",
+        "rules": [
+          {
+            "id": "log-all",
+            "when": { "action": "read" },
+            "then": "log",
+            "reason": "Audit"
+          },
+          {
+            "id": "allow-read",
+            "when": { "action": "read" },
+            "then": "allow",
+            "reason": "Read is safe"
+          }
+        ]
+      },
+      "agent_id": "test-inner",
+      "agent_ring": "inner-ring",
+      "action": "read",
+      "expected": { "allowed": true }
+    }
+  ]
+}

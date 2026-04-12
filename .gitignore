@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# Generator scripts (not part of the ecosystem itself)
+generate*.py
+
+# Symlinks (created at runtime for Python imports)
+maat_core
+maat_adapters
+maat_memory
+maat_packs
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.bak
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+/tmp_test_*
+*.db

@@ -1,0 +1,37 @@
+{
+  "id": "researcher-policy-v1",
+  "name": "Researcher Policy",
+  "version": "1",
+  "rules": [
+    {
+      "id": "res-allow-search",
+      "when": { "action": "tool.web_search" },
+      "then": "allow",
+      "reason": "Researchers can search the web"
+    },
+    {
+      "id": "res-allow-read",
+      "when": { "action": "tool.read_document" },
+      "then": "allow",
+      "reason": "Researchers can read documents"
+    },
+    {
+      "id": "res-allow-memory",
+      "when": { "action": "memory.*" },
+      "then": "allow",
+      "reason": "Researchers have full memory access"
+    },
+    {
+      "id": "res-no-execute",
+      "when": { "action": "execute" },
+      "then": "deny",
+      "reason": "Researchers cannot execute system commands"
+    },
+    {
+      "id": "res-escalate-publish",
+      "when": { "action": "tool.publish" },
+      "then": "escalate",
+      "reason": "Publishing requires human approval"
+    }
+  ]
+}

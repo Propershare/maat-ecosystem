@@ -1,0 +1,36 @@
+# MAAT Ecosystem Config
+# This is the kernel config. Adapters are swappable here.
+
+agent:
+  name: tehuti
+  ring: outer-ring
+
+adapters:
+  # Swap these without touching any kernel code
+  model: maat_adapters.models.ollama.OllamaAdapter
+  model_config:
+    host: http://localhost:11434
+    model: gemma4:e4b
+    embed_model: nomic-embed-text
+
+  memory: maat_adapters.memory.postgres.PostgresAdapter
+  memory_config:
+    url: ""  # auto-resolved from PGVECTOR_DB_URL
+
+  tools: maat_adapters.tools.mcp.MCPAdapter
+  tool_config:
+    servers:
+      - name: maat-core
+        url: http://localhost:8014
+      - name: maat-research
+        url: http://localhost:8012
+      - name: maat-memory
+        url: http://localhost:8018
+
+policies: []  # Load policy docs here
+
+identity_store:
+  path: ~/.maat/identities.json
+
+events:
+  log_path: ~/.maat/events.jsonl  # Set to null to disable persistence

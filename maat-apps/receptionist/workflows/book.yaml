@@ -1,0 +1,46 @@
+name: book
+description: Book an appointment
+loop_mode: on-the-loop
+
+steps:
+  - id: collect_details
+    action: conversation
+    collect:
+      - name
+      - preferred_date
+      - preferred_time
+      - reason
+    description: Gather booking details conversationally
+
+  - id: check_availability
+    action: tool
+    tool: calendar
+    params:
+      type: slots
+      date: "{{preferred_date}}"
+    description: Check available slots
+
+  - id: propose_time
+    action: respond
+    description: Offer available times, negotiate if needed
+
+  - id: confirm_booking
+    action: tool
+    tool: calendar
+    params:
+      type: create_event
+    description: Create the calendar event
+    requires_confirmation: true
+
+  - id: send_confirmation
+    action: tool
+    tool: email
+    params:
+      type: booking_confirmation
+    description: Send confirmation to visitor
+    loop_mode: in-the-loop  # External email requires approval
+
+  - id: log_booking
+    action: memory
+    memory_class: task
+    description: Log the booking as a completed task

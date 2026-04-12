@@ -1,0 +1,81 @@
+{
+  "category": "contract_integrity",
+  "description": "Validate all MAAT schemas are syntactically correct and structurally sound",
+  "tests": [
+    {
+      "id": "schema.identity.valid",
+      "name": "Identity schema is valid JSON Schema",
+      "schema": "maat_identity.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_id_field"]
+    },
+    {
+      "id": "schema.memory.valid",
+      "name": "Memory schema is valid JSON Schema",
+      "schema": "maat_memory.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_memory_classes"]
+    },
+    {
+      "id": "schema.task.valid",
+      "name": "Task schema is valid JSON Schema",
+      "schema": "maat_task.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_task_states"]
+    },
+    {
+      "id": "schema.policy.valid",
+      "name": "Policy schema is valid JSON Schema",
+      "schema": "maat_policy.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_rules_array"]
+    },
+    {
+      "id": "schema.event.valid",
+      "name": "Event schema is valid JSON Schema",
+      "schema": "maat_event.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_event_type"]
+    },
+    {
+      "id": "schema.tool.valid",
+      "name": "Tool schema is valid JSON Schema",
+      "schema": "maat_tool.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_ring_field"]
+    },
+    {
+      "id": "schema.learning.valid",
+      "name": "Learning schema is valid JSON Schema",
+      "schema": "maat_learning.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_snapshot_fields"]
+    },
+    {
+      "id": "schema.identity.required_fields",
+      "name": "Identity requires id, name, ring, created_at, version",
+      "schema": "maat_identity.schema.json",
+      "expected_required": ["id", "name", "ring", "created_at", "version"]
+    },
+    {
+      "id": "schema.memory.classes",
+      "name": "Memory defines exactly 5 classes",
+      "schema": "maat_memory.schema.json",
+      "expected_enum": {
+        "field": "memory_class",
+        "values": ["episodic", "semantic", "constitutional", "task", "working"]
+      }
+    },
+    {
+      "id": "schema.task.states",
+      "name": "Task defines exactly 6 lifecycle states",
+      "schema": "maat_task.schema.json",
+      "expected_enum": {
+        "field": "status",
+        "values": ["pending", "in_progress", "blocked", "completed", "failed", "escalated"]
+      }
+    },
+    {
+      "id": "schema.identity.ring_values",
+      "name": "Identity defines exactly 3 rings",
+      "schema": "maat_identity.schema.json",
+      "expected_enum": {
+        "field": "ring",
+        "values": ["inner-ring", "middle-ring", "outer-ring"]
+      }
+    }
+  ]
+}
