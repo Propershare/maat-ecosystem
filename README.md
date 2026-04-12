@@ -2,6 +2,8 @@
 
 **What this is:** A monorepo for Maat-aligned AI infrastructure: constitutional schemas, Guard/Sentinel, agents, MCP, and operator docs. It is a **lab tree**, not a single installable product.
 
+**Public state (be explicit):** This repository currently holds the **canonical documentation** and an **evolving lab workspace** on `main`. Many **runtime organs** (e.g. `tehuti-guard/`, `maat-runtime/`, full MCP stacks) may still be **local or untracked** until they are ready to ship with **stable paths and contracts**. What is pushed today is **doctrine and operator entry** — not the whole machine. **Runtime proof** (e.g. one live `POST /decision` path with joinable `correlation_id`) is the next **evidence-bearing** milestone, not another broad doc-only pass.
+
 ## One truth (canonical Ka-body)
 
 The **canonical MAAT Ka-body** (organs, `MANIFEST.ka`, soul, skeleton schemas, MaatBench) lives here:
