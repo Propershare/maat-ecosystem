@@ -1,5 +1,7 @@
 # MAAT Ecosystem
 
+**Canonical Ka-body in the Tehuti Lab monorepo.** If the repo root also contains a legacy standalone layout (`maatbench/`, `maat-core/` at root), treat **`maat-ecosystem/`** here as **one truth** for organs, `MANIFEST.ka`, and current MaatBench — see [`../README.md`](../README.md) and [`../archive/README.md`](../archive/README.md).
+
 **Ka Architecture — Bodies, not machines. Souls, not configs.**
 
 A Kemetic framework for building living intelligent systems with moral governance at their core. Every agent is a body with nine organs, a soul that boots first, and an immune system that heals itself.

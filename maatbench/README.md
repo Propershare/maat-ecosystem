@@ -1,3 +1,11 @@
+# MaatBench v2 (legacy root copy)
+
+> **Deprecated path.** Canonical bench + contracts for the **Ka-body** live under **[`../maat-ecosystem/maatbench/`](../maat-ecosystem/maatbench/)**.  
+> This **root-level** `maatbench/` exists from an older standalone repo merge — **do not** diverge it with new suites; add work under `maat-ecosystem/maatbench/` instead.  
+> See [`../archive/README.md`](../archive/README.md).
+
+---
+
 # MaatBench v2
 
 **System-level verification for the MAAT ecosystem.**
