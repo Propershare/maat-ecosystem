@@ -1,0 +1,25 @@
+{
+  "id": "test-policy-v1",
+  "name": "Test Policy",
+  "version": "1",
+  "rules": [
+    {
+      "id": "test-deny-rm",
+      "when": { "action": "execute", "resource": "rm -rf*" },
+      "then": "deny",
+      "reason": "Destructive command"
+    },
+    {
+      "id": "test-escalate-deploy",
+      "when": { "action": "tool.deploy" },
+      "then": "escalate",
+      "reason": "Deploy requires approval"
+    },
+    {
+      "id": "test-log-reads",
+      "when": { "action": "read" },
+      "then": "log",
+      "reason": "Audit trail"
+    }
+  ]
+}

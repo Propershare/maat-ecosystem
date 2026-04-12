@@ -1,0 +1,11 @@
+{
+  "name": "strict-safety",
+  "version": "1.0.0",
+  "description": "Strict safety policy: no network, no external comms, human-in-the-loop for all execution. Install to lock down any MAAT agent.",
+  "type": "policy-pack",
+  "inherits": ["maat-default-v1"],
+  "install": "Copy policy.json to your active policies directory or add to config.yaml policies list.",
+  "uninstall": "Remove from config.yaml policies list. Agent reverts to inherited policies.",
+  "compatible_rings": ["inner-ring", "middle-ring", "outer-ring"],
+  "files": ["policy.json", "README.md"]
+}

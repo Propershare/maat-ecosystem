@@ -1,0 +1,175 @@
+# MANIFEST.ka — The DNA
+# Machine-readable body map. Agent reads this FIRST.
+
+kind: ka-body
+version: 1.0.0
+name: maat-ecosystem
+purpose: "Restore Maat through truth, balance, and order"
+attribution:
+  methodology: "KA2 Methodology by Dr. Tdka Kilimanjaro"
+  institution: "University of KMT"
+  url: "https://universityofkmt.myshopify.com"
+
+organs:
+  soul:
+    path: soul/
+    role: Identity, governance, and moral constitution
+    read_first: constitution.md
+    capabilities: [identify, govern, constrain]
+    files:
+      - constitution.md    # The 42 Laws — non-negotiable
+      - sacred.md          # Immutable principles
+      - identity.py        # Identity logic
+      - policy.py          # Policy enforcement
+      - policies/          # Behavioral rule sets
+
+  brain:
+    path: brain/
+    role: Reasoning, model access, and learning
+    capabilities: [think, decide, learn, adapt]
+    files:
+      - reasoning/kernel.py    # Core decision engine
+      - reasoning/registry.py  # Component registry
+      - models/ollama.py       # Local model adapter
+      - models/openai_compat.py # API model adapter
+      - learning/LEARNING.md   # What the system has learned
+      - config.yaml            # Runtime configuration
+
+  memory:
+    path: memory/
+    role: Persistence, recall, and pattern recognition
+    capabilities: [store, retrieve, forget, pattern, consolidate]
+    subsystems:
+      episodic:  "What happened — events, conversations"
+      semantic:  "What I know — facts, relationships"
+      patterns:  "What I've noticed — recurring themes"
+      task:      "What I'm doing — active work, queues"
+
+  hands:
+    path: hands/
+    role: Action, tool use, and external interaction
+    capabilities: [call_tool, run_skill, connect_mcp, run_app]
+    subsystems:
+      tools:  "Individual tool definitions and adapters"
+      skills: "Composed multi-tool capabilities"
+      mcps:   "MCP server connections"
+      apps:   "Full workflow applications (operator, receptionist, researcher, teacher)"
+
+  senses:
+    path: senses/
+    role: Perception, event handling, and triggers
+    capabilities: [listen, watch, trigger, sense]
+    subsystems:
+      inputs:   "Inbound channels (chat, API, webhook)"
+      watchers: "Monitors (file changes, schedules, events)"
+      triggers: "What wakes the system up"
+
+  voice:
+    path: voice/
+    role: Communication, output, and UI
+    capabilities: [speak, format, deliver, display]
+    subsystems:
+      outputs:   "Outbound channels and dashboard"
+      templates: "Response patterns and formats"
+
+  ka:
+    path: ka/
+    role: Life force — health monitoring and self-healing
+    capabilities: [sense_pain, heal, escalate, remember_pain]
+    subsystems:
+      health:  "Current state of every organ"
+      healing: "Auto-retry, reconnect, fallback rules"
+      pain:    "Error patterns, what's hurting"
+
+  skeleton:
+    path: skeleton/
+    role: Structure, contracts, and interfaces
+    capabilities: [validate, enforce_schema, define_interface]
+    subsystems:
+      schemas:    "Data contracts (JSON Schema)"
+      interfaces: "How organs talk to each other"
+      ports:      "External connection definitions"
+
+  blood:
+    path: blood/
+    role: Inter-organ communication and shared resources
+    capabilities: [flow, share, distribute]
+    subsystems:
+      events:    "Event bus definitions"
+      state:     "Shared state store"
+      contracts: "Inter-organ agreements"
+      packs:     "Shareable organ extensions (agent, policy, tool, learning packs)"
+
+boot_sequence:
+  1: "Read soul/constitution.md — know your laws"
+  2: "Load soul/identity — know who you are"
+  3: "Load memory/ — know what you remember"
+  4: "Check ka/health/ — are all organs alive"
+  5: "Activate senses/ — start perceiving"
+  6: "Ready — awaiting input"
+
+# Reference network map — Tehuti Lab body. Protocol + primary organ; see docs/ka-audit-2026-04-06.md.
+network:
+  host_example: staydangerous
+  plane_doc: "docs/MAAT-NETWORK-PLANE.md"
+  note: "Agents on the LAN: GET http://<server-primary-lan-ip>:8010/manifest (Ka discovery) for live organs.*.endpoint — do not guess. Hostname staydangerous is human-friendly; manifest uses detected LAN IP. gitMaat persistence = PostgreSQL maat_memory:5432 via PGVECTOR_DB_URL (docs/GITMAAT-CONNECT.md). Bearer auth on organ MCPs when deployed. Transport today is often Wi-Fi LAN (Ethernet not everywhere); admin plane is SSH; optional VPN later — see plane_doc."
+  discovery:
+    port: 8010
+    protocol: http
+    service: ka-discovery
+    organ: ka
+  services:
+    - port: 8014
+      protocol: mcp
+      service: tehuti-core
+      organs: [brain, hands, memory]
+      note: "Reference body fuses reasoning + tools + legacy memory paths; splittable in other bodies."
+    - port: 8015
+      protocol: mcp
+      service: n8n
+      organ: blood
+      role: "Workflows / event-shaped circulation"
+    - port: 8016
+      protocol: mcp
+      service: filesystem
+      organ: hands
+    - port: 8017
+      protocol: mcp
+      service: postgres
+      organ: skeleton
+    - port: 8018
+      protocol: mcp
+      service: memory-kv
+      organ: memory
+      role: "Key-value / lightweight memory MCP"
+    - port: 8019
+      protocol: mcp
+      service: comfyui
+      organ: hands
+    - port: 8020
+      protocol: mcp
+      service: maatlangchain-pipeline
+      organ: blood
+      role: "RAG / embedding pipeline"
+    - port: 8022
+      protocol: mcp
+      service: maat-memory
+      organ: memory
+  senses_unmapped:
+    organ: senses
+    note: "No dedicated Senses MCP in this reference map; inputs via gateways, webhooks, apps — see ka-audit."
+
+external:
+  maatbench:
+    path: maatbench/
+    role: "The doctor — tests and scores Ka bodies"
+    note: "Not an organ. Tests organs."
+  maat-cli:
+    path: maat-cli/
+    role: "Entry point — command line interface"
+  docs:
+    path: docs/
+    role: "Human-readable documentation"
+  site:
+    path: site/
+    role: "Public-facing website"

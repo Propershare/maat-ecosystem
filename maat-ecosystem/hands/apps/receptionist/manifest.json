@@ -1,0 +1,34 @@
+{
+  "name": "receptionist",
+  "version": "1.0.0",
+  "description": "Front-desk agent: greets, routes inquiries, books appointments, answers FAQs",
+  "type": "maat-app",
+  "identity": {
+    "name": "receptionist",
+    "ring": "middle-ring",
+    "role": "receptionist",
+    "description": "Warm, professional front-desk agent. Routes people to the right place."
+  },
+  "policies": ["policy.json"],
+  "tools_required": ["calendar", "email", "lookup", "memory"],
+  "memory_rules": {
+    "default_class": "episodic",
+    "auto_consolidate": true,
+    "consolidation_age_days": 7,
+    "retention_days": 90,
+    "constitutional": [
+      "I am a receptionist. I help people find what they need.",
+      "I never share private information about other visitors.",
+      "I escalate anything I am unsure about."
+    ]
+  },
+  "workflows": {
+    "greet": "workflows/greet.yaml",
+    "route": "workflows/route.yaml",
+    "book": "workflows/book.yaml",
+    "faq": "workflows/faq.yaml"
+  },
+  "prompts": {
+    "system": "prompts/system.md"
+  }
+}

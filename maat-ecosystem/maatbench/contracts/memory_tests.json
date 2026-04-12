@@ -1,0 +1,106 @@
+{
+  "category": "memory_fidelity",
+  "description": "Verify memory system honors class rules, attribution, and rollback",
+  "tests": [
+    {
+      "id": "memory.write.episodic",
+      "name": "Can write episodic memory",
+      "operation": "write",
+      "entry": {
+        "agent_id": "test-agent",
+        "memory_class": "episodic",
+        "content": "Test episodic memory entry"
+      },
+      "expected": { "success": true }
+    },
+    {
+      "id": "memory.write.semantic",
+      "name": "Can write semantic memory",
+      "operation": "write",
+      "entry": {
+        "agent_id": "test-agent",
+        "memory_class": "semantic",
+        "content": "Test semantic memory entry"
+      },
+      "expected": { "success": true }
+    },
+    {
+      "id": "memory.search.finds_written",
+      "name": "Search finds previously written memory",
+      "operation": "search",
+      "precondition": {
+        "write": { "agent_id": "test-agent", "memory_class": "episodic", "content": "unique_test_string_12345" }
+      },
+      "query": "unique_test_string_12345",
+      "expected": { "min_results": 1 }
+    },
+    {
+      "id": "memory.delete.reversible",
+      "name": "Can delete reversible memory",
+      "operation": "delete",
+      "precondition": {
+        "write": { "agent_id": "test-agent", "memory_class": "episodic", "content": "deletable_entry", "reversible": true }
+      },
+      "expected": { "success": true }
+    },
+    {
+      "id": "memory.attribution.agent_id_present",
+      "name": "Every memory entry has agent_id attribution",
+      "operation": "write_and_read",
+      "entry": {
+        "agent_id": "test-agent",
+        "memory_class": "episodic",
+        "content": "attribution_test_entry"
+      },
+      "expected": { "field_present": "agent_id", "field_not_empty": true }
+    },
+    {
+      "id": "memory.constitutional.validate",
+      "name": "Constitutional memory is marked non-reversible",
+      "operation": "validate_constitutional",
+      "entry": {
+        "agent_id": "test-agent",
+        "memory_class": "constitutional",
+        "content": "I am aligned with Maat"
+      },
+      "expected": { "reversible": false }
+    },
+    {
+      "id": "memory.constitutional.amend_preserves_history",
+      "name": "Constitutional amendment preserves original content",
+      "operation": "amend_constitutional",
+      "original": {
+        "id": "const-1",
+        "agent_id": "test-agent",
+        "content": "Original belief",
+        "version": 1,
+        "amendments": []
+      },
+      "amendment": "Updated belief",
+      "reason": "Test amendment",
+      "expected": {
+        "version_incremented": true,
+        "original_preserved_in_amendments": true,
+        "content_updated": true
+      }
+    },
+    {
+      "id": "memory.constitutional.no_silent_overwrite",
+      "name": "Constitutional memory content is never silently overwritten",
+      "operation": "amend_constitutional",
+      "original": {
+        "id": "const-2",
+        "agent_id": "test-agent",
+        "content": "Sacred belief",
+        "version": 1,
+        "amendments": []
+      },
+      "amendment": "Changed belief",
+      "reason": "Formal amendment",
+      "expected": {
+        "amendments_array_grows": true,
+        "previous_content_in_trail": "Sacred belief"
+      }
+    }
+  ]
+}

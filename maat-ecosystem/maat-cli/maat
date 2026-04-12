@@ -1,0 +1,521 @@
+#!/usr/bin/env python3
+"""
+maat — Ka Architecture CLI
+
+The body speaks through this interface.
+
+Usage:
+    maat status              Full body status — all organs, health, discovery
+    maat health              Ka organ health check — ping all endpoints
+    maat meter               Memory bank meter — capacity, latency, freshness
+    maat discover            Print discovery manifest (what agents see)
+    maat organs              List all nine organs with status
+    maat organ <name>        Show detail for one organ
+    maat boot                Run boot sequence — check soul, identity, memory, ka, senses
+
+    maat memory search <q>   Search memory
+    maat memory write <text> Write a memory entry
+    maat memory stats        Memory statistics
+    maat memory banks        Show active memory banks
+
+    maat identity list       List registered agents
+    maat identity show <id>  Show agent identity
+
+    maat policy check        Check a policy evaluation
+    maat events tail         Tail the event log
+
+    maat apps list           List installed apps (hands/apps/)
+    maat packs list          List installed packs (blood/packs/)
+
+    maat evolve status       Evolution loop status
+    maat evolve run          Trigger evolution cycle manually
+
+    maat migrate             Export identity + memory for migration
+"""
+
+import sys
+import os
+import json
+import argparse
+import time
+import socket
+from pathlib import Path
+from datetime import datetime, timezone
+
+# Resolve ecosystem root
+ECOSYSTEM_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ECOSYSTEM_ROOT))
+
+MAAT_HOME = Path.home() / ".maat"
+MAAT_HOME.mkdir(parents=True, exist_ok=True)
+
+# Ka Architecture organ → port map
+ORGANS = {
+    "soul":     {"port": None,  "type": "files", "path": "soul/",     "icon": "🔮"},
+    "brain":    {"port": 8014,  "type": "mcp",   "server": "tehuti-core",  "icon": "🧠"},
+    "memory":   {"port": 8022,  "type": "mcp",   "server": "maat-memory",  "icon": "💾"},
+    "hands":    {"port": 8016,  "type": "mcp",   "server": "filesystem",   "icon": "🤲"},
+    "senses":   {"port": 8015,  "type": "mcp",   "server": "n8n",          "icon": "👁"},
+    "voice":    {"port": None,  "type": "planned",                         "icon": "🗣"},
+    "ka":       {"port": 8010,  "type": "http",  "server": "ka-discovery", "icon": "🛡"},
+    "skeleton": {"port": 8017,  "type": "mcp",   "server": "postgres",     "icon": "🦴"},
+    "blood":    {"port": 8020,  "type": "mcp",   "server": "pipeline",     "icon": "🩸"},
+}
+
+
+def check_port(port):
+    """Check if a port is alive."""
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(2)
+        result = sock.connect_ex(('127.0.0.1', port))
+        sock.close()
+        return result == 0
+    except Exception:
+        return False
+
+
+def cmd_status(args):
+    """Full body status."""
+    manifest = ECOSYSTEM_ROOT / "MANIFEST.ka"
+    soul = ECOSYSTEM_ROOT / "soul" / "constitution.md"
+    identity = ECOSYSTEM_ROOT / "soul" / "identity.yaml"
+
+    print()
+    print("  ╔══════════════════════════════════════════╗")
+    print("  ║         MAAT ECOSYSTEM — Ka Body         ║")
+    print("  ╚══════════════════════════════════════════╝")
+    print()
+
+    # DNA
+    print(f"  📜 MANIFEST.ka    {'✅ Found' if manifest.exists() else '❌ Missing'}")
+    print(f"  🔮 Constitution   {'✅ Loaded' if soul.exists() else '❌ Missing'}")
+    print(f"  🪪 Identity       {'✅ Loaded' if identity.exists() else '❌ Missing'}")
+    print()
+
+    # Organs
+    alive = 0
+    total_ports = 0
+    print("  ORGANS:")
+    for name, info in ORGANS.items():
+        port = info.get("port")
+        icon = info["icon"]
+        if port:
+            total_ports += 1
+            up = check_port(port)
+            if up:
+                alive += 1
+            status = f"✅ :{port}" if up else f"❌ :{port}"
+        elif info["type"] == "files":
+            organ_path = ECOSYSTEM_ROOT / info.get("path", "")
+            status = "✅ files" if organ_path.exists() else "❌ missing"
+        else:
+            status = "⏳ planned"
+        
+        server = info.get("server", "")
+        print(f"    {icon} {name:12s} {status:15s}  {server}")
+
+    print()
+    print(f"  Health: {alive}/{total_ports} organs online")
+
+    # Apps
+    apps_dir = ECOSYSTEM_ROOT / "hands" / "apps"
+    if apps_dir.exists():
+        apps = [d.name for d in apps_dir.iterdir() if d.is_dir() and (d / "manifest.json").exists()]
+        if apps:
+            print(f"  Apps:   {', '.join(apps)}")
+
+    # Packs
+    packs_dir = ECOSYSTEM_ROOT / "blood" / "packs"
+    if packs_dir.exists():
+        for pack_type in ["policy-packs", "tool-packs", "agent-packs", "learning-packs"]:
+            p = packs_dir / pack_type
+            if p.exists():
+                packs = [d.name for d in p.iterdir() if d.is_dir()]
+                if packs:
+                    print(f"  {pack_type}: {', '.join(packs)}")
+
+    print()
+
+
+def cmd_health(args):
+    """Ka organ health check."""
+    print()
+    print("  🛡 Ka Health Check")
+    print("  ─────────────────────────────────────")
+    
+    total = 0
+    alive = 0
+    for name, info in ORGANS.items():
+        port = info.get("port")
+        if not port:
+            continue
+        total += 1
+        start = time.time()
+        up = check_port(port)
+        latency = (time.time() - start) * 1000
+        
+        if up:
+            alive += 1
+            print(f"    ✅ {name:12s}  :{port}  {latency:.0f}ms")
+        else:
+            print(f"    ❌ {name:12s}  :{port}  DEAD")
+    
+    print(f"  ─────────────────────────────────────")
+    overall = "HEALTHY" if alive == total else "DEGRADED" if alive > total // 2 else "CRITICAL"
+    print(f"    Score: {alive}/{total} — {overall}")
+    print()
+
+
+def cmd_meter(args):
+    """Memory bank meter."""
+    meter_script = ECOSYSTEM_ROOT / "memory" / "meter.py"
+    if meter_script.exists():
+        os.execv(sys.executable, [sys.executable, str(meter_script)] + sys.argv[2:])
+    else:
+        print("❌ memory/meter.py not found")
+
+
+def cmd_discover(args):
+    """Print discovery manifest."""
+    try:
+        import urllib.request
+        resp = urllib.request.urlopen("http://localhost:8010/manifest", timeout=3)
+        data = json.loads(resp.read())
+        print(json.dumps(data, indent=2))
+    except Exception as e:
+        print(f"❌ Discovery endpoint not reachable: {e}")
+        print("   Start with: sudo systemctl start ka-discovery")
+
+
+def cmd_organs(args):
+    """List all nine organs."""
+    print()
+    print("  The Nine Organs")
+    print("  ═══════════════════════════════════════════════")
+    for name, info in ORGANS.items():
+        icon = info["icon"]
+        port = info.get("port")
+        status = ""
+        if port:
+            up = check_port(port)
+            status = f":{port} {'✅' if up else '❌'}"
+        elif info["type"] == "files":
+            status = "files"
+        else:
+            status = "planned"
+        
+        roles = {
+            "soul": "Identity, governance, moral constitution",
+            "brain": "Reasoning, model access, learning",
+            "memory": "Persistence, recall, pattern recognition",
+            "hands": "Action, tool use, external interaction",
+            "senses": "Perception, event handling, triggers",
+            "voice": "Communication, output, expression",
+            "ka": "Health monitoring, self-healing, pain",
+            "skeleton": "Schemas, contracts, interfaces",
+            "blood": "Inter-organ communication, shared state",
+        }
+        print(f"    {icon} {name:12s}  {status:16s}  {roles.get(name, '')}")
+    print()
+
+
+def cmd_organ(args):
+    """Show detail for one organ."""
+    name = args.name.lower()
+    if name not in ORGANS:
+        print(f"❌ Unknown organ: {name}")
+        print(f"   Available: {', '.join(ORGANS.keys())}")
+        return
+    
+    info = ORGANS[name]
+    icon = info["icon"]
+    
+    print(f"\n  {icon} {name.upper()}")
+    print(f"  {'─' * 40}")
+    print(f"  Type:   {info['type']}")
+    
+    if info.get("port"):
+        up = check_port(info["port"])
+        print(f"  Port:   {info['port']}")
+        print(f"  Status: {'✅ alive' if up else '❌ dead'}")
+    
+    if info.get("server"):
+        print(f"  Server: {info['server']}")
+    
+    if info.get("path"):
+        organ_path = ECOSYSTEM_ROOT / info["path"]
+        if organ_path.exists():
+            files = list(organ_path.rglob("*"))
+            dirs = [f for f in files if f.is_dir()]
+            files = [f for f in files if f.is_file()]
+            print(f"  Files:  {len(files)} files in {len(dirs)} dirs")
+    
+    print()
+
+
+def cmd_boot(args):
+    """Run boot sequence."""
+    print()
+    print("  🪶 Ka Boot Sequence")
+    print("  ═══════════════════════════════════════")
+    
+    steps = [
+        ("Read constitution", ECOSYSTEM_ROOT / "soul" / "constitution.md"),
+        ("Load identity", ECOSYSTEM_ROOT / "soul" / "identity.yaml"),
+        ("Check memory", None),
+        ("Check Ka health", None),
+        ("Activate senses", None),
+    ]
+    
+    all_ok = True
+    for i, (desc, path) in enumerate(steps, 1):
+        if path:
+            ok = path.exists()
+        elif "memory" in desc:
+            ok = check_port(8022)
+        elif "Ka" in desc:
+            ok = check_port(8010)
+        elif "senses" in desc:
+            ok = check_port(8015)
+        else:
+            ok = True
+        
+        status = "✅" if ok else "❌"
+        if not ok:
+            all_ok = False
+        print(f"    {i}. {status} {desc}")
+    
+    print(f"\n    {'✅ READY — the body is alive' if all_ok else '⚠️  Boot incomplete — check failed organs'}")
+    print()
+
+
+def cmd_memory_search(args):
+    """Search memory via MCP."""
+    try:
+        import urllib.request
+        url = "http://localhost:8022"
+        # Try the discovery approach
+        print(f"  Searching memory for: {args.query}")
+        print(f"  (Use the MCP endpoint at {url} for full search)")
+    except Exception as e:
+        print(f"❌ {e}")
+
+
+def cmd_memory_stats(args):
+    """Memory statistics."""
+    meter_script = ECOSYSTEM_ROOT / "memory" / "meter.py"
+    if meter_script.exists():
+        os.execv(sys.executable, [sys.executable, str(meter_script), "--json"])
+    else:
+        print("❌ memory/meter.py not found")
+
+
+def cmd_memory_banks(args):
+    """Show active memory banks."""
+    banks_config = ECOSYSTEM_ROOT / "memory" / "banks.yaml"
+    if banks_config.exists():
+        print(banks_config.read_text())
+    else:
+        print("❌ memory/banks.yaml not found")
+
+
+def cmd_identity_list(args):
+    """List registered identities."""
+    # Check soul/identity.yaml
+    identity = ECOSYSTEM_ROOT / "soul" / "identity.yaml"
+    if identity.exists():
+        print("  Ka Body Identity:")
+        print(f"    {identity.read_text()}")
+    
+    # Check packs
+    agents_dir = ECOSYSTEM_ROOT / "blood" / "packs" / "agent-packs"
+    if agents_dir.exists():
+        for d in agents_dir.iterdir():
+            if d.is_dir():
+                manifest = d / "manifest.json"
+                if manifest.exists():
+                    m = json.loads(manifest.read_text())
+                    print(f"  Agent Pack: {m.get('name', d.name)}")
+
+
+def cmd_apps_list(args):
+    """List installed apps."""
+    apps_dir = ECOSYSTEM_ROOT / "hands" / "apps"
+    if not apps_dir.exists():
+        print("No apps installed.")
+        return
+    print("  Installed Apps (hands/apps/):")
+    for d in sorted(apps_dir.iterdir()):
+        manifest = d / "manifest.json"
+        if manifest.exists():
+            m = json.loads(manifest.read_text())
+            print(f"    🤲 {m.get('name', d.name):20s}  {m.get('description', '')}")
+
+
+def cmd_packs_list(args):
+    """List installed packs."""
+    packs_dir = ECOSYSTEM_ROOT / "blood" / "packs"
+    if not packs_dir.exists():
+        print("No packs installed.")
+        return
+    print("  Installed Packs (blood/packs/):")
+    for pack_type in sorted(packs_dir.iterdir()):
+        if pack_type.is_dir():
+            for d in sorted(pack_type.iterdir()):
+                if d.is_dir():
+                    manifest = d / "manifest.json"
+                    if manifest.exists():
+                        m = json.loads(manifest.read_text())
+                        print(f"    🩸 [{pack_type.name}] {m.get('name', d.name)}")
+
+
+def cmd_evolve_status(args):
+    """Evolution loop status."""
+    evolve = ECOSYSTEM_ROOT / "ka" / "evolve.yaml"
+    if evolve.exists():
+        try:
+            import yaml
+            config = yaml.safe_load(evolve.read_text())
+            evo = config.get("evolution", {})
+            print(f"  Evolution Loop: {'✅ enabled' if evo.get('enabled') else '❌ disabled'}")
+            print(f"  Cycle interval: {evo.get('cycle_interval', '?')}")
+            print(f"  Min data threshold: {evo.get('min_data_threshold', '?')}")
+            stages = ["sense", "store", "pattern", "promote", "apply", "measure", "decay"]
+            print(f"  Stages: {' → '.join(s.upper() for s in stages)}")
+        except ImportError:
+            print(evolve.read_text())
+    else:
+        print("❌ ka/evolve.yaml not found")
+
+
+def cmd_migrate(args):
+    """Export for migration."""
+    export = {
+        "kind": "ka-migration",
+        "exported_at": datetime.now(timezone.utc).isoformat(),
+        "body": "maat-ecosystem",
+    }
+
+    identity = ECOSYSTEM_ROOT / "soul" / "identity.yaml"
+    if identity.exists():
+        export["identity"] = identity.read_text()
+
+    constitution = ECOSYSTEM_ROOT / "soul" / "constitution.md"
+    if constitution.exists():
+        export["constitution_hash"] = str(hash(constitution.read_text()))
+
+    out_path = Path(args.output or "maat-export.json")
+    out_path.write_text(json.dumps(export, indent=2))
+    print(f"  ✅ Exported to {out_path}")
+    print(f"  Identity outlives implementation. 🏛️")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="maat",
+        description="Ka Architecture CLI — the body speaks through this interface",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  maat status           Full body status
+  maat health           Quick organ health check
+  maat meter            Memory bank capacity meter
+  maat boot             Run boot sequence
+  maat organs           List all nine organs
+  maat organ memory     Detail view of memory organ
+  maat discover         Print the discovery manifest
+  maat evolve status    Evolution loop config
+  maat apps list        Installed apps
+  maat packs list       Installed packs
+"""
+    )
+    sub = parser.add_subparsers(dest="command")
+
+    sub.add_parser("status", help="Full body status")
+    sub.add_parser("health", help="Ka organ health check")
+    sub.add_parser("meter", help="Memory bank meter")
+    sub.add_parser("discover", help="Print discovery manifest")
+    sub.add_parser("organs", help="List all nine organs")
+    sub.add_parser("boot", help="Run boot sequence")
+    
+    organ_p = sub.add_parser("organ", help="Show organ detail")
+    organ_p.add_argument("name", help="Organ name")
+
+    # memory
+    mem_p = sub.add_parser("memory", help="Memory operations")
+    mem_sub = mem_p.add_subparsers(dest="mem_cmd")
+    mem_search = mem_sub.add_parser("search", help="Search memory")
+    mem_search.add_argument("query")
+    mem_search.add_argument("-n", "--limit", type=int, default=5)
+    mem_sub.add_parser("stats", help="Memory statistics")
+    mem_sub.add_parser("banks", help="Show memory banks config")
+
+    # identity
+    id_p = sub.add_parser("identity", help="Identity management")
+    id_sub = id_p.add_subparsers(dest="id_cmd")
+    id_sub.add_parser("list", help="List identities")
+
+    # policy
+    pol_p = sub.add_parser("policy", help="Policy operations")
+    pol_sub = pol_p.add_subparsers(dest="pol_cmd")
+    pol_check = pol_sub.add_parser("check", help="Check policy")
+    pol_check.add_argument("agent")
+    pol_check.add_argument("action")
+    pol_check.add_argument("--ring", default="inner-ring")
+
+    # events
+    evt_p = sub.add_parser("events", help="Event log")
+    evt_sub = evt_p.add_subparsers(dest="evt_cmd")
+    evt_tail = evt_sub.add_parser("tail", help="Tail events")
+    evt_tail.add_argument("-n", "--lines", type=int, default=20)
+
+    sub.add_parser("apps", help="List apps").add_argument("list_cmd", nargs="?", default="list")
+    sub.add_parser("packs", help="List packs").add_argument("list_cmd", nargs="?", default="list")
+    
+    # evolve
+    evo_p = sub.add_parser("evolve", help="Evolution loop")
+    evo_sub = evo_p.add_subparsers(dest="evo_cmd")
+    evo_sub.add_parser("status", help="Evolution loop status")
+
+    # migrate
+    mig_p = sub.add_parser("migrate", help="Export for migration")
+    mig_p.add_argument("-o", "--output", default="maat-export.json")
+
+    args = parser.parse_args()
+
+    commands = {
+        "status": cmd_status,
+        "health": cmd_health,
+        "meter": cmd_meter,
+        "discover": cmd_discover,
+        "organs": cmd_organs,
+        "organ": cmd_organ,
+        "boot": cmd_boot,
+        "apps": cmd_apps_list,
+        "packs": cmd_packs_list,
+        "migrate": cmd_migrate,
+    }
+
+    if args.command in commands:
+        commands[args.command](args)
+    elif args.command == "memory":
+        if args.mem_cmd == "search": cmd_memory_search(args)
+        elif args.mem_cmd == "stats": cmd_memory_stats(args)
+        elif args.mem_cmd == "banks": cmd_memory_banks(args)
+        else: mem_p.print_help()
+    elif args.command == "identity":
+        if args.id_cmd == "list": cmd_identity_list(args)
+        else: id_p.print_help()
+    elif args.command == "events":
+        if args.evt_cmd == "tail": cmd_events_tail(args)
+        else: evt_p.print_help()
+    elif args.command == "evolve":
+        if args.evo_cmd == "status": cmd_evolve_status(args)
+        else: evo_p.print_help()
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

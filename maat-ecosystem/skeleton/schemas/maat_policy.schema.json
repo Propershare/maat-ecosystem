@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:policy:v1",
+  "title": "MAAT Policy Contract",
+  "description": "Machine-readable moral and operational constitution.",
+  "type": "object",
+  "required": ["id", "name", "version", "rules"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "when", "then"],
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "when": {
+            "type": "object",
+            "description": "Condition: action, resource, agent_ring, etc."
+          },
+          "then": {
+            "type": "string",
+            "enum": ["allow", "deny", "escalate", "log", "require_approval"]
+          },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "inherits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Policy IDs this policy extends"
+    }
+  }
+}

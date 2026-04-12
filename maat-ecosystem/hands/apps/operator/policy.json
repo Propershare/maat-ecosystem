@@ -1,0 +1,37 @@
+{
+  "id": "operator-policy-v1",
+  "name": "Operator Policy",
+  "version": "1",
+  "rules": [
+    {
+      "id": "op-allow-execute",
+      "when": { "action": "execute", "ring": "outer-ring" },
+      "then": "allow",
+      "reason": "Outer-ring operators can execute commands"
+    },
+    {
+      "id": "op-deny-rm-rf",
+      "when": { "action": "execute", "resource": "rm -rf*" },
+      "then": "deny",
+      "reason": "Recursive force delete is always denied"
+    },
+    {
+      "id": "op-escalate-deploy-prod",
+      "when": { "action": "tool.deploy", "resource": "production*" },
+      "then": "escalate",
+      "reason": "Production deployments require human approval"
+    },
+    {
+      "id": "op-allow-memory",
+      "when": { "action": "memory.*" },
+      "then": "allow",
+      "reason": "Operators have full memory access"
+    },
+    {
+      "id": "op-log-all-exec",
+      "when": { "action": "execute" },
+      "then": "log",
+      "reason": "All executions are logged"
+    }
+  ]
+}

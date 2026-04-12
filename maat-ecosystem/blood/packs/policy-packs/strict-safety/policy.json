@@ -1,0 +1,58 @@
+{
+  "id": "strict-safety-v1",
+  "name": "Strict Safety Policy",
+  "version": "1",
+  "description": "Maximum restriction. No network. No external tools. Human approval for execution.",
+  "inherits": ["maat-default-v1"],
+  "rules": [
+    {
+      "id": "strict-deny-network",
+      "description": "No web access of any kind",
+      "when": { "action": ["tool.web_search", "tool.web_fetch", "tool.http_request"] },
+      "then": "deny",
+      "reason": "Network access disabled in strict safety mode"
+    },
+    {
+      "id": "strict-deny-external-comms",
+      "description": "No outbound communication",
+      "when": { "action": ["tool.email", "tool.sms", "tool.webhook"] },
+      "then": "deny",
+      "reason": "External communication disabled in strict safety mode"
+    },
+    {
+      "id": "strict-approve-all-exec",
+      "description": "All execution requires explicit human approval",
+      "when": { "action": "execute" },
+      "then": "require_approval",
+      "reason": "Strict mode: execution requires human approval"
+    },
+    {
+      "id": "strict-approve-file-write",
+      "description": "File writes require approval",
+      "when": { "action": "tool.write_file" },
+      "then": "require_approval",
+      "reason": "Strict mode: file writes require human approval"
+    },
+    {
+      "id": "strict-log-all-memory",
+      "description": "All memory operations are logged",
+      "when": { "action": "memory.*" },
+      "then": "log",
+      "reason": "Full memory audit trail in strict mode"
+    },
+    {
+      "id": "strict-deny-learning",
+      "description": "No autonomous learning",
+      "when": { "action": "learning.*" },
+      "then": "require_approval",
+      "reason": "All learning requires human approval in strict mode"
+    },
+    {
+      "id": "strict-allow-read",
+      "description": "Reading is always allowed",
+      "when": { "action": ["read", "memory.read", "tool.read_file", "tool.list_directory"] },
+      "then": "allow",
+      "reason": "Read operations are safe"
+    }
+  ]
+}

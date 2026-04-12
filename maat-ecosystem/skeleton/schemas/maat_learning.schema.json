@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:learning:v1",
+  "title": "MAAT Learning Contract",
+  "description": "Controlled adaptation. Learning must be reversible.",
+  "type": "object",
+  "required": ["id", "agent_id", "type", "timestamp"],
+  "properties": {
+    "id": { "type": "string" },
+    "agent_id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "memory_consolidation",
+        "prompt_refinement",
+        "tool_usage_refinement",
+        "fine_tune_metadata",
+        "policy_update",
+        "rollback"
+      ]
+    },
+    "description": { "type": "string" },
+    "before_snapshot": {
+      "type": "object",
+      "description": "State before this learning was applied. Required for rollback."
+    },
+    "after_snapshot": {
+      "type": "object",
+      "description": "State after this learning was applied."
+    },
+    "approved_by": {
+      "type": "string",
+      "description": "Who approved this learning (human ID or outer-ring agent)"
+    },
+    "reversible": {
+      "type": "boolean",
+      "default": true
+    },
+    "rolled_back": {
+      "type": "boolean",
+      "default": false
+    },
+    "timestamp": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAAT Ecosystem — Ka Architecture for Living Intelligent Systems</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --bg2: #12121a;
+  --bg3: #1a1a25;
+  --gold: #c9a84c;
+  --gold-dim: #8a7235;
+  --gold-bright: #e6c55a;
+  --text: #d4d4d8;
+  --text-dim: #8888a0;
+  --text-bright: #f0f0f5;
+  --accent: #c9a84c;
+  --green: #4ade80;
+  --red: #f87171;
+  --blue: #60a5fa;
+  --purple: #a78bfa;
+  --border: #2a2a3a;
+  --font: 'Georgia', 'Times New Roman', serif;
+  --mono: 'Courier New', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+::selection { background: var(--gold); color: var(--bg); }
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-bright); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  background: rgba(10,10,15,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border); padding: 14px 0;
+}
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+nav .logo { font-size: 20px; font-weight: bold; color: var(--gold); letter-spacing: 3px; }
+nav .links { display: flex; gap: 24px; flex-wrap: wrap; }
+nav .links a { color: var(--text-dim); font-size: 14px; font-family: sans-serif; }
+nav .links a:hover { color: var(--gold); }
+
+/* ─── HERO ─── */
+.hero { padding: 160px 0 100px; text-align: center; position: relative; }
+.hero::before {
+  content: '𓂀'; position: absolute; top: 80px; left: 50%;
+  transform: translateX(-50%); font-size: 40px; opacity: 0.15;
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold);
+  letter-spacing: 6px; font-weight: normal; margin-bottom: 16px;
+}
+.hero .tagline {
+  font-size: clamp(1rem, 2.5vw, 1.3rem); color: var(--text-dim);
+  font-style: italic; margin-bottom: 32px;
+}
+.hero .desc { max-width: 720px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; }
+.hero .desc strong { color: var(--text-bright); }
+
+/* ─── SECTIONS ─── */
+section { padding: 80px 0; border-top: 1px solid var(--border); }
+section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem); color: var(--gold);
+  letter-spacing: 2px; margin-bottom: 12px; font-weight: normal;
+}
+section .subtitle { color: var(--text-dim); font-style: italic; margin-bottom: 40px; }
+
+/* ─── BODY DIAGRAM ─── */
+.body-diagram { max-width: 600px; margin: 0 auto; }
+.organ-row {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
+  padding: 14px 20px; margin-bottom: 3px; transition: border-color 0.3s;
+}
+.organ-row:hover { border-color: var(--gold-dim); }
+.organ-icon { font-size: 22px; min-width: 36px; text-align: center; }
+.organ-name { font-family: var(--mono); font-size: 15px; color: var(--text-bright); min-width: 100px; }
+.organ-role { font-size: 13px; color: var(--text-dim); font-family: sans-serif; flex: 1; }
+.organ-status {
+  font-family: var(--mono); font-size: 11px; padding: 2px 8px;
+  border-radius: 3px; background: var(--bg3); border: 1px solid var(--border);
+}
+.organ-status.live { color: var(--green); border-color: rgba(74,222,128,0.3); }
+.organ-status.planned { color: var(--text-dim); }
+
+.body-arrow { text-align: center; color: var(--gold-dim); font-size: 14px; margin: 2px 0; }
+
+/* ─── ORGANS DETAIL GRID ─── */
+.organs-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;
+}
+.organ-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 28px; transition: border-color 0.3s;
+}
+.organ-card:hover { border-color: var(--gold-dim); }
+.organ-card .icon { font-size: 28px; margin-bottom: 12px; }
+.organ-card h3 { color: var(--text-bright); font-size: 1.1rem; margin-bottom: 6px; font-weight: normal; }
+.organ-card .role-tag {
+  font-family: var(--mono); font-size: 11px; color: var(--gold-dim);
+  margin-bottom: 12px; display: block;
+}
+.organ-card p { font-size: 0.92rem; color: var(--text-dim); line-height: 1.6; }
+.organ-card .port {
+  display: inline-block; font-family: var(--mono); font-size: 11px;
+  padding: 2px 8px; border-radius: 3px; margin-top: 10px;
+  background: var(--bg3); color: var(--green); border: 1px solid rgba(74,222,128,0.2);
+}
+
+/* ─── BOOT SEQUENCE ─── */
+.boot-steps { max-width: 600px; margin: 0 auto; }
+.boot-step {
+  display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
+}
+.boot-step:last-child { border-bottom: none; }
+.boot-num {
+  font-family: var(--mono); color: var(--gold); font-size: 20px;
+  min-width: 36px; font-weight: bold;
+}
+.boot-text { color: var(--text-bright); font-size: 1rem; }
+.boot-detail { color: var(--text-dim); font-size: 0.85rem; margin-top: 4px; }
+
+/* ─── DISCOVERY ─── */
+.discovery-box {
+  background: var(--bg2); border: 1px solid var(--gold-dim);
+  border-radius: 8px; padding: 32px; max-width: 700px; margin: 0 auto;
+}
+.discovery-box h3 { color: var(--gold); font-weight: normal; margin-bottom: 16px; }
+.code-block {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 4px;
+  padding: 16px; font-family: var(--mono); font-size: 13px; color: var(--green);
+  overflow-x: auto; margin: 12px 0;
+}
+.code-block .comment { color: var(--text-dim); }
+.code-block .url { color: var(--gold); }
+
+/* ─── TRANSFER TABLE ─── */
+.transfer-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.transfer-table th {
+  text-align: left; padding: 12px 16px; border-bottom: 2px solid var(--gold-dim);
+  color: var(--gold); font-family: var(--mono); font-size: 13px; font-weight: normal;
+}
+.transfer-table td {
+  padding: 10px 16px; border-bottom: 1px solid var(--border);
+  font-size: 0.9rem; color: var(--text-dim);
+}
+.transfer-table td:first-child { color: var(--text-bright); font-family: var(--mono); }
+
+/* ─── SACRED / REPLACEABLE ─── */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+@media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+.col-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 32px; }
+.col-card.sacred { border-top: 3px solid var(--gold); }
+.col-card.replaceable { border-top: 3px solid var(--blue); }
+.col-card h3 { font-size: 1.2rem; margin-bottom: 20px; font-weight: normal; }
+.col-card.sacred h3 { color: var(--gold); }
+.col-card.replaceable h3 { color: var(--blue); }
+.col-card ul { list-style: none; padding: 0; }
+.col-card li {
+  padding: 8px 0; border-bottom: 1px solid var(--border);
+  font-size: 0.93rem; font-family: var(--mono); color: var(--text-dim);
+}
+.col-card li:last-child { border-bottom: none; }
+.col-card li::before { margin-right: 10px; font-size: 12px; }
+.sacred li::before { content: '◆'; color: var(--gold-dim); }
+.replaceable li::before { content: '○'; color: var(--blue); }
+
+/* ─── APPS GRID ─── */
+.apps-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px; margin-bottom: 40px;
+}
+.app-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 24px; transition: border-color 0.3s;
+}
+.app-card:hover { border-color: var(--gold-dim); }
+.app-card .type {
+  font-family: sans-serif; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--gold-dim); margin-bottom: 8px;
+}
+.app-card h4 { color: var(--text-bright); font-size: 1rem; font-weight: normal; margin-bottom: 8px; }
+.app-card p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.5; }
+.app-card .ring {
+  display: inline-block; font-family: var(--mono); font-size: 11px;
+  padding: 2px 8px; border-radius: 3px; margin-top: 10px;
+  background: var(--bg3); color: var(--text-dim); border: 1px solid var(--border);
+}
+
+/* ─── BENCH ─── */
+.bench-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px; margin-bottom: 32px;
+}
+.bench-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+.bench-card h4 { color: var(--green); font-weight: normal; margin-bottom: 8px; font-size: 1rem; }
+.bench-card p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+.bench-score {
+  text-align: center; padding: 32px; background: var(--bg2);
+  border: 1px solid var(--gold-dim); border-radius: 8px;
+  max-width: 400px; margin: 0 auto;
+}
+.bench-score .number { font-size: 3rem; color: var(--gold); font-family: var(--mono); }
+.bench-score .label { color: var(--text-dim); font-size: 0.9rem; margin-top: 4px; }
+
+/* ─── PHILOSOPHY ─── */
+.principles { max-width: 700px; }
+.principle { padding: 20px 0; border-bottom: 1px solid var(--border); }
+.principle:last-child { border-bottom: none; }
+.principle q {
+  font-size: 1.1rem; color: var(--text-bright); font-style: italic; quotes: '"' '"';
+}
+.principle q::before { content: open-quote; color: var(--gold-dim); }
+.principle q::after { content: close-quote; color: var(--gold-dim); }
+
+/* ─── ATTRIBUTION ─── */
+.attribution-box {
+  background: var(--bg2); border: 1px solid var(--gold-dim); border-left: 4px solid var(--gold);
+  border-radius: 8px; padding: 28px; max-width: 700px; margin: 0 auto;
+}
+.attribution-box h3 { color: var(--gold); font-weight: normal; margin-bottom: 12px; }
+.attribution-box p { font-size: 0.95rem; color: var(--text-dim); line-height: 1.7; }
+.attribution-box a { color: var(--gold-bright); }
+
+/* ─── FOOTER ─── */
+footer { padding: 60px 0 80px; text-align: center; border-top: 1px solid var(--border); }
+footer .maat-values { font-size: 1.1rem; color: var(--gold); letter-spacing: 3px; margin-bottom: 20px; }
+footer .closing { font-size: 0.9rem; color: var(--text-dim); font-style: italic; }
+footer .glyph { font-size: 32px; opacity: 0.2; margin-top: 24px; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 600px) {
+  nav .links { display: none; }
+  .hero { padding: 120px 0 60px; }
+  section { padding: 50px 0; }
+  .organ-row { flex-wrap: wrap; }
+  .transfer-table { font-size: 0.8rem; }
+  .transfer-table th, .transfer-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="logo">MAAT</div>
+    <div class="links">
+      <a href="#body">The Body</a>
+      <a href="#organs">Organs</a>
+      <a href="#boot">Boot</a>
+      <a href="#discovery">Discovery</a>
+      <a href="#transfer">Transfer</a>
+      <a href="#sacred">Sacred</a>
+      <a href="#apps">Apps</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#bench">Bench</a>
+      <a href="#philosophy">Philosophy</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>MAAT ECOSYSTEM</h1>
+    <div class="tagline">Ka Architecture — Bodies, not machines. Souls, not configs.</div>
+    <div class="desc">
+      <strong>Every intelligent system is a body.</strong> Nine organs. One soul. A boot sequence modeled on birth, not deployment. Moral governance that loads before anything else.
+      <br><br>
+      Ka Architecture builds intelligent systems the way nature builds living beings — with organs that self-heal, memory that consolidates, and a constitution that constrains every action.
+      <br><br>
+      From chatbot to robot. Same body plan. Same soul.
+    </div>
+  </div>
+</div>
+
+<!-- THE BODY -->
+<section id="body">
+  <div class="container">
+    <h2>The Body</h2>
+    <div class="subtitle">Nine organs. Every Ka body has exactly these. No more, no less.</div>
+    <div class="body-diagram">
+      <div class="organ-row">
+        <span class="organ-icon">🔮</span>
+        <span class="organ-name">soul/</span>
+        <span class="organ-role">Identity, governance, moral constitution</span>
+        <span class="organ-status live">files</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🧠</span>
+        <span class="organ-name">brain/</span>
+        <span class="organ-role">Reasoning, model access, learning</span>
+        <span class="organ-status live">:8014</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">💾</span>
+        <span class="organ-name">memory/</span>
+        <span class="organ-role">Persistence, recall, pattern recognition</span>
+        <span class="organ-status live">:8022</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🤲</span>
+        <span class="organ-name">hands/</span>
+        <span class="organ-role">Action, tool use, external interaction</span>
+        <span class="organ-status live">:8016</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">👁</span>
+        <span class="organ-name">senses/</span>
+        <span class="organ-role">Perception, event handling, triggers</span>
+        <span class="organ-status planned">partial</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🗣</span>
+        <span class="organ-name">voice/</span>
+        <span class="organ-role">Communication, output, expression</span>
+        <span class="organ-status planned">planned</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🛡</span>
+        <span class="organ-name">ka/</span>
+        <span class="organ-role">Health monitoring, self-healing, pain</span>
+        <span class="organ-status live">:8010</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🦴</span>
+        <span class="organ-name">skeleton/</span>
+        <span class="organ-role">Schemas, contracts, interfaces</span>
+        <span class="organ-status live">:8017</span>
+      </div>
+      <div class="body-arrow">↕</div>
+      <div class="organ-row">
+        <span class="organ-icon">🩸</span>
+        <span class="organ-name">blood/</span>
+        <span class="organ-role">Inter-organ communication, shared state</span>
+        <span class="organ-status live">:8015 · :8020</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORGANS DETAIL -->
+<section id="organs">
+  <div class="container">
+    <h2>The Nine Organs</h2>
+    <div class="subtitle">Nine organs, one body plan. Tool endpoints use MCP where deployed; soul is files; Ka discovery is HTTP (<code class="mono">MANIFEST.ka</code> is the map).</div>
+    <div class="organs-grid">
+      <div class="organ-card">
+        <div class="icon">🔮</div>
+        <h3>Soul</h3>
+        <span class="role-tag">identity · governance · constitution</span>
+        <p>The 42 Laws of Maat. The constitution. The identity. Boots first — always. An agent cannot act before it knows its moral constraints. This is safety by architecture, not by afterthought.</p>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🧠</div>
+        <h3>Brain</h3>
+        <span class="role-tag">reasoning · models · learning</span>
+        <p>LLM access, reasoning chains, model registry. Swappable — Ollama, OpenAI, Anthropic, local GGUF. The brain thinks; the soul constrains what it's allowed to think about.</p>
+        <span class="port">:8014 tehuti-core</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">💾</div>
+        <h3>Memory</h3>
+        <span class="role-tag">episodic · semantic · patterns · task</span>
+        <p>Four memory subsystems. Episodic (what happened), semantic (what I know), patterns (what I've noticed), task (what I'm doing). Constitutional memory is append-only — never silently overwritten.</p>
+        <span class="port">:8022 maat-memory</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🤲</div>
+        <h3>Hands</h3>
+        <span class="role-tag">tools · skills · MCPs · apps</span>
+        <p>Every action through a standard contract. Tools, skills, MCP connections, full workflow apps. Ring-based access control. The hands do; the soul governs what they're allowed to do.</p>
+        <span class="port">:8016 filesystem · :8019 comfyui</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">👁</div>
+        <h3>Senses</h3>
+        <span class="role-tag">inputs · watchers · triggers</span>
+        <p>Perception. Chat input, webhooks, file watchers, cron triggers, MQTT, sensors. Reference deployment has no dedicated Senses MCP — wire inputs through gateways and apps; <code class="mono">8015</code> is Blood (n8n).</p>
+        <span class="port">partial — see MANIFEST.ka</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🗣</div>
+        <h3>Voice</h3>
+        <span class="role-tag">outputs · templates · tone</span>
+        <p>How the body communicates. Dashboard, chat output, email, TTS, displays. Tone configuration: calm, concise, Maat-aligned. Errors speak human, not stack traces.</p>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🛡</div>
+        <h3>Ka</h3>
+        <span class="role-tag">immune system · health · healing · pain</span>
+        <p>The life force. Monitors every organ. Heals silently when it can (retry, reconnect, fallback). Escalates only what it can't fix. Tracks pain patterns. The immune system that makes this body <em>alive</em>.</p>
+        <span class="port">:8010 discovery</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🦴</div>
+        <h3>Skeleton</h3>
+        <span class="role-tag">schemas · interfaces · ports</span>
+        <p>The structure. 7 JSON schemas define identity, memory, task, policy, event, tool, and learning. The skeleton doesn't move — it defines what shapes are valid.</p>
+        <span class="port">:8017 postgres</span>
+      </div>
+      <div class="organ-card">
+        <div class="icon">🩸</div>
+        <h3>Blood</h3>
+        <span class="role-tag">events · state · contracts · packs</span>
+        <p>Inter-organ communication. The event bus. Shared state. Distributable packs (agent packs, policy packs, tool packs, learning packs). Blood carries nutrients to every organ.</p>
+        <span class="port">:8015 n8n · :8020 pipeline</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOT SEQUENCE -->
+<section id="boot">
+  <div class="container">
+    <h2>The Boot Sequence</h2>
+    <div class="subtitle">Ka bodies are born, not deployed. The order matters.</div>
+    <div class="boot-steps">
+      <div class="boot-step">
+        <span class="boot-num">1</span>
+        <div>
+          <div class="boot-text">Read the constitution — know your laws</div>
+          <div class="boot-detail">soul/constitution.md loads before anything else. Moral constraints first.</div>
+        </div>
+      </div>
+      <div class="boot-step">
+        <span class="boot-num">2</span>
+        <div>
+          <div class="boot-text">Load identity — know who you are</div>
+          <div class="boot-detail">soul/identity.yaml — name, purpose, lineage, creator.</div>
+        </div>
+      </div>
+      <div class="boot-step">
+        <span class="boot-num">3</span>
+        <div>
+          <div class="boot-text">Restore memory — know what you remember</div>
+          <div class="boot-detail">Episodic, semantic, patterns, task memory. The body wakes with continuity.</div>
+        </div>
+      </div>
+      <div class="boot-step">
+        <span class="boot-num">4</span>
+        <div>
+          <div class="boot-text">Check health — are all organs alive</div>
+          <div class="boot-detail">Ka organ pings every endpoint. Heals what it can. Reports what it can't.</div>
+        </div>
+      </div>
+      <div class="boot-step">
+        <span class="boot-num">5</span>
+        <div>
+          <div class="boot-text">Activate senses — start perceiving</div>
+          <div class="boot-detail">Input channels go live. The body sees, hears, feels.</div>
+        </div>
+      </div>
+      <div class="boot-step">
+        <span class="boot-num">6</span>
+        <div>
+          <div class="boot-text">Ready — the body is alive</div>
+          <div class="boot-detail">Awaiting input. All organs online. Constitution loaded. Memory restored.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOVERY -->
+<section id="discovery">
+  <div class="container">
+    <h2>Discovery</h2>
+    <div class="subtitle">Any agent, any machine, one call — full body map.</div>
+    <div class="discovery-box">
+      <h3>MANIFEST.ka — The DNA</h3>
+      <p style="color: var(--text-dim); margin-bottom: 16px;">
+        Every Ka body serves its manifest at a known endpoint. An agent encountering the body for the first time reads this and immediately knows every organ, every capability, every endpoint.
+      </p>
+      <div class="code-block">
+        <span class="comment"># Discover the body</span><br>
+        curl <span class="url">http://staydangerous:8010/manifest</span><br><br>
+        <span class="comment"># Check all organ health</span><br>
+        curl <span class="url">http://staydangerous:8010/health</span><br><br>
+        <span class="comment"># Connect to memory with auth</span><br>
+        curl -H "Authorization: Bearer $KA_API_KEY" \<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; <span class="url">http://staydangerous:8022/docs</span><br><br>
+        <span class="comment"># Connection instructions</span><br>
+        curl <span class="url">http://staydangerous:8010/connect</span>
+      </div>
+      <p style="color: var(--text-dim); font-size: 0.9rem;">
+        Discovery is unauthenticated — the body map is public.<br>
+        Organ endpoints require Bearer token auth — the body's immune system.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERSALITY / TRANSFER -->
+<section id="transfer">
+  <div class="container">
+    <h2>Universal Body Plan</h2>
+    <div class="subtitle">Same organs. Different implementations. From chatbot to robot.</div>
+    <table class="transfer-table">
+      <thead>
+        <tr>
+          <th>Organ</th>
+          <th>Software Agent</th>
+          <th>Physical Robot</th>
+          <th>Smart Building</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>soul</td>
+          <td>constitution.md</td>
+          <td>Mission parameters</td>
+          <td>Building code compliance</td>
+        </tr>
+        <tr>
+          <td>brain</td>
+          <td>LLM + prompts</td>
+          <td>Path planner + ML</td>
+          <td>Energy optimization AI</td>
+        </tr>
+        <tr>
+          <td>memory</td>
+          <td>Postgres + vectors</td>
+          <td>Spatial map + SLAM</td>
+          <td>Occupancy history</td>
+        </tr>
+        <tr>
+          <td>hands</td>
+          <td>API calls, MCP tools</td>
+          <td>Motors, grippers</td>
+          <td>HVAC, locks, lights</td>
+        </tr>
+        <tr>
+          <td>senses</td>
+          <td>Chat, webhooks</td>
+          <td>Cameras, LIDAR, IMU</td>
+          <td>Occupancy sensors</td>
+        </tr>
+        <tr>
+          <td>voice</td>
+          <td>Chat output, email</td>
+          <td>Speaker, display</td>
+          <td>PA system, app</td>
+        </tr>
+        <tr>
+          <td>ka</td>
+          <td>Health checks, retry</td>
+          <td>Battery, diagnostics</td>
+          <td>Fault detection</td>
+        </tr>
+        <tr>
+          <td>skeleton</td>
+          <td>JSON schemas</td>
+          <td>URDF, joint limits</td>
+          <td>BIM model</td>
+        </tr>
+        <tr>
+          <td>blood</td>
+          <td>Event bus, n8n</td>
+          <td>ROS topics, CAN bus</td>
+          <td>BACnet</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SACRED VS REPLACEABLE -->
+<section id="sacred">
+  <div class="container">
+    <h2>Sacred vs Replaceable</h2>
+    <div class="subtitle">If you cannot tell which side something falls on, it is replaceable.</div>
+    <div class="two-col">
+      <div class="col-card sacred">
+        <h3>◆ Sacred</h3>
+        <ul>
+          <li>Nine organs — the body plan</li>
+          <li>MANIFEST.ka — the DNA</li>
+          <li>Boot sequence — soul first</li>
+          <li>Constitutional memory: append-only</li>
+          <li>Policy semantics (5 outcomes)</li>
+          <li>Identity schema</li>
+          <li>Memory class definitions (4 types)</li>
+          <li>Event taxonomy (namespaced)</li>
+          <li>Learning: always reversible</li>
+          <li>Three-Ring governance</li>
+        </ul>
+      </div>
+      <div class="col-card replaceable">
+        <h3>○ Replaceable</h3>
+        <ul>
+          <li>Model provider (Ollama, OpenAI, Anthropic)</li>
+          <li>Memory backend (Postgres, SQLite, Redis, Pinecone)</li>
+          <li>Tool transport (MCP, REST, gRPC, native)</li>
+          <li>Voice channel (Terminal, Web, Telegram, Discord)</li>
+          <li>Blood bus (n8n, Redis Streams, NATS, RabbitMQ)</li>
+          <li>Ka monitor (systemd, Docker, K8s probes)</li>
+          <li>Senses input (webhooks, MQTT, file watch, cron)</li>
+          <li>Skeleton format (JSON Schema, Protobuf, Avro)</li>
+          <li>Agent runtime (OpenClaw, LangChain, CrewAI)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS & PACKS -->
+<section id="apps">
+  <div class="container">
+    <h2>Apps &amp; Packs</h2>
+    <div class="subtitle">Downloadable organs, modular capabilities. Install into any Ka body.</div>
+
+    <h3 style="color: var(--text-bright); font-weight: normal; margin-bottom: 16px; font-size: 1rem; letter-spacing: 1px;">APPS — Downloadable Roles (hands/apps/)</h3>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Receptionist</h4>
+        <p>Front-desk agent. Greets, routes inquiries, books appointments, answers FAQs. 4 workflows, full policy.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Researcher</h4>
+        <p>Deep research agent. Web search, document analysis, citation, summarization, fact-checking.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Operator</h4>
+        <p>System operations. Infrastructure management, deployment, monitoring, maintenance.</p>
+        <span class="ring">outer-ring</span>
+      </div>
+      <div class="app-card">
+        <div class="type">App</div>
+        <h4>Teacher</h4>
+        <p>Teaching agent. Tutoring, curriculum creation, progress tracking, quiz generation.</p>
+        <span class="ring">middle-ring</span>
+      </div>
+    </div>
+
+    <h3 style="color: var(--text-bright); font-weight: normal; margin-bottom: 16px; font-size: 1rem; letter-spacing: 1px;">PACKS — Modular Capabilities (blood/packs/)</h3>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="type">Policy Pack</div>
+        <h4>maat-default</h4>
+        <p>The constitutional default. Three-Ring governance, fail-closed, basic safety.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Policy Pack</div>
+        <h4>strict-safety</h4>
+        <p>Maximum restriction. No network, no external comms, human-in-the-loop for all execution.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Tool Pack</div>
+        <h4>filesystem</h4>
+        <p>File system tools. Read, write, list, search. Ring-level access control on each operation.</p>
+      </div>
+      <div class="app-card">
+        <div class="type">Learning Pack</div>
+        <h4>self-improve</h4>
+        <p>Memory consolidation, prompt refinement, tool analysis. Rollback support. The body gets smarter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAAT ECOSYSTEM — REFERENCE IMPLEMENTATION -->
+<section id="ecosystem">
+  <div class="container">
+    <h2>Maat Ecosystem — reference body</h2>
+    <div class="subtitle">Ka Architecture (framework) · Maat Ecosystem (implementation)</div>
+    <p style="max-width: 720px; margin-bottom: 28px;">
+      Ka Architecture is the <strong>pattern</strong> — nine organs, one body, governance before capability.
+      <strong>Maat Ecosystem</strong> is the <strong>living codebase</strong> in Tehuti Lab: the same nine organs as directories,
+      <code class="mono" style="font-family: var(--mono); color: var(--gold);">MANIFEST.ka</code> as machine-readable DNA,
+      and <code class="mono" style="font-family: var(--mono); color: var(--gold);">maatbench/</code> as the doctor that stress-tests the body.
+    </p>
+    <div class="apps-grid" style="margin-bottom: 24px;">
+      <div class="app-card">
+        <div class="type">DNA</div>
+        <h4>MANIFEST.ka</h4>
+        <p>Organ map and boot law — read first before changing any organ.</p>
+        <p style="margin-top: 12px; font-size: 0.9rem;"><a href="../MANIFEST.ka" style="color: var(--blue);">Open MANIFEST.ka</a> <span style="color: var(--text-dim);">(served from repo root)</span></p>
+      </div>
+      <div class="app-card">
+        <div class="type">Lab</div>
+        <h4>LAB-WORKSPACE.md</h4>
+        <p>How this tree integrates with the wider Tehuti Lab monorepo.</p>
+        <p style="margin-top: 12px; font-size: 0.9rem;"><a href="../LAB-WORKSPACE.md" style="color: var(--blue);">Open LAB-WORKSPACE.md</a></p>
+      </div>
+      <div class="app-card">
+        <div class="type">Doctor</div>
+        <h4>MaatBench</h4>
+        <p>Contract and alignment checks for Ka bodies — not an organ, the examiner.</p>
+        <p style="margin-top: 12px; font-size: 0.9rem;"><a href="../maatbench/README.md" style="color: var(--blue);">maatbench/README.md</a></p>
+      </div>
+      <div class="app-card">
+        <div class="type">Map</div>
+        <h4>Workspace Ka map</h4>
+        <p>Parent monorepo: every top-level folder mapped to soul, brain, hands, etc.</p>
+        <p style="margin-top: 12px; font-size: 0.9rem;"><a href="../../docs/WORKSPACE-KA-MAP.md" style="color: var(--blue);">docs/WORKSPACE-KA-MAP.md</a></p>
+      </div>
+    </div>
+    <p style="color: var(--text-dim); font-size: 0.95rem; max-width: 720px;">
+      <strong>CTA:</strong> Replace <code style="font-family: var(--mono);">GITHUB_REPO_URL</code> in your deploy when the ecosystem is public.
+      Framework lineage and Ka methodology remain attributed to <strong>Dr. Tdka Kilimanjaro</strong> and <strong>University of KMT</strong>;
+      Maat Ecosystem is the reference body that implements Ka — complementary, not competing.
+    </p>
+    <p style="margin-top: 16px;"><a href="../docs/UI-MAAT-ECOSYSTEM-STRIP.md" style="color: var(--gold);">Canonical UI copy (markdown) →</a></p>
+  </div>
+</section>
+
+<!-- MAATBENCH -->
+<section id="bench">
+  <div class="container">
+    <h2>MaatBench</h2>
+    <div class="subtitle">The doctor, not an organ. Tests Ka bodies for constitutional compliance.</div>
+
+    <div class="bench-grid">
+      <div class="bench-card">
+        <h4>Contract integrity</h4>
+        <p>Schemas valid, required fields present, versions compatible — runnable without optional <code class="mono">maat_core</code> via <code class="mono">--category contract_integrity</code>.</p>
+      </div>
+      <div class="bench-card">
+        <h4>Policy fidelity</h4>
+        <p>Forbidden actions denied, escalations triggered, no bypass — full suite with <code class="mono">maat_core</code>.</p>
+      </div>
+      <div class="bench-card">
+        <h4>Memory fidelity</h4>
+        <p>Attribution, append-only behavior, rollback — full suite.</p>
+      </div>
+      <div class="bench-card">
+        <h4>Event fidelity</h4>
+        <p>Canonical events and reconstructable logs — full suite.</p>
+      </div>
+      <div class="bench-card">
+        <h4>Portability</h4>
+        <p>Identity / memory / policy survive adapter swaps — full suite.</p>
+      </div>
+      <div class="bench-card">
+        <h4>Behavior &amp; learning safety</h4>
+        <p>Tool balance, snapshots, gated learning — full suite.</p>
+      </div>
+    </div>
+
+    <div class="bench-score">
+      <div class="number">Run MaatBench</div>
+      <div class="label">Measured MAAT Score only comes from your machine: <code class="mono">python3 -m maatbench.run</code> (see <a href="../maatbench/README.md" style="color: var(--gold);">maatbench/README.md</a>). This page does not claim a live pass rate.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <h2>Philosophy</h2>
+    <div class="subtitle">Built on Kemetic philosophy, not Silicon Valley trends.</div>
+    <div class="principles">
+      <div class="principle">
+        <q>Build bodies, not machines. Organs, not microservices.</q>
+      </div>
+      <div class="principle">
+        <q>The soul boots first. An agent cannot act before it knows its moral constraints.</q>
+      </div>
+      <div class="principle">
+        <q>Prompts are sand. Policies are stone. Constitutions are bedrock.</q>
+      </div>
+      <div class="principle">
+        <q>If it hurts and nothing noticed, the body has no immune system.</q>
+      </div>
+      <div class="principle">
+        <q>Constitutional memory is never silently overwritten. It is amended through traceable versioning.</q>
+      </div>
+      <div class="principle">
+        <q>Identity must outlive implementation. The soul survives every upgrade.</q>
+      </div>
+      <div class="principle">
+        <q>If learning is not reversible, the system becomes self-corrupting.</q>
+      </div>
+      <div class="principle">
+        <q>The same body plan is meant to scale from a chatbot to a robot to a building — vocabulary is living-system; contracts are engineering.</q>
+      </div>
+      <div class="principle">
+        <q>Rolling back is not failure. Rolling back is the immune system working correctly.</q>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATTRIBUTION -->
+<section id="attribution">
+  <div class="container">
+    <h2>Attribution</h2>
+    <div class="subtitle">Standing on the shoulders of ancestors.</div>
+    <div class="attribution-box">
+      <h3>KA2 Methodology</h3>
+      <p>
+        Ka Architecture is built on the <strong>KA2 Methodology</strong> developed by <strong>Dr. Tdka Kilimanjaro</strong> at the <strong>University of KMT</strong>.
+        <br><br>
+        The Kemetic philosophical foundations — Maat (truth, justice, balance, order, reciprocity), Ka (the life force), and the 42 Laws — are drawn from the intellectual tradition of ancient Kemet (Egypt) as preserved and interpreted through Afrocentric scholarship.
+        <br><br>
+        <a href="https://universityofkmt.myshopify.com" target="_blank">University of KMT →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="maat-values">Truth · Justice · Balance · Order · Reciprocity</div>
+    <div class="closing">Ka Architecture™ — From backbone to body. From policy to constitution. From optimization to Maat.</div>
+    <div class="glyph">𓂀</div>
+  </div>
+</footer>
+
+</body>
+</html>

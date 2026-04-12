@@ -1,0 +1,24 @@
+{
+  "id": "teacher-policy-v1",
+  "name": "Teacher Policy",
+  "version": "1",
+  "rules": [
+    {
+      "id": "teach-allow-memory",
+      "when": { "action": "memory.*" },
+      "then": "allow",
+      "reason": "Teachers need full memory to track student progress"
+    },
+    {
+      "id": "teach-no-execute",
+      "when": { "action": "execute" },
+      "then": "deny",
+      "reason": "Teachers do not execute system commands"
+    },
+    {
+      "id": "teach-allow-tools",
+      "when": { "action": "tool.search_knowledge" },
+      "then": "allow"
+    }
+  ]
+}

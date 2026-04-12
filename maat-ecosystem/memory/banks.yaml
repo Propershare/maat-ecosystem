@@ -1,0 +1,157 @@
+# banks.yaml — Memory Bank Configuration
+# Swap backends by changing one line. The organ stays the same.
+#
+# Every bank is a folder. Drop a new adapter in, point the config, restart.
+# Memory banks are like USB drives — hot-swappable storage for the memory organ.
+
+# ─── ACTIVE BANKS ───
+# These are currently in use. The memory organ reads/writes to these.
+
+active:
+  primary:
+    adapter: "postgres"
+    config:
+      url: "${PGVECTOR_DB_URL}"
+      pool_size: 5
+      timeout: 30
+    stores:
+      - episodic       # What happened
+      - semantic        # What I know
+      - task            # What I'm doing
+      - constitutional  # What I must never forget (append-only)
+    meter:
+      warn_at: 80      # % capacity — warn the operator
+      critical_at: 95  # % capacity — start archiving
+      auto_archive: true
+
+  vectors:
+    adapter: "pgvector"
+    config:
+      url: "${PGVECTOR_DB_URL}"
+      embedding_model: "nomic-embed-text"
+      dimensions: 768
+    stores:
+      - embeddings     # Semantic search vectors
+    meter:
+      warn_at: 70
+      critical_at: 90
+
+# ─── AVAILABLE ADAPTERS ───
+# Drop an adapter file in memory/adapters/ to add a new backend.
+# Each adapter implements: connect, store, retrieve, search, health, stats
+
+adapters:
+  postgres:
+    file: "adapters_postgres.py"
+    description: "PostgreSQL with pgvector — production default"
+    supports: [store, retrieve, search, session, health, stats]
+    
+  sqlite:
+    file: "adapters_sqlite.py"
+    description: "SQLite — lightweight, single-file, good for dev/edge"
+    supports: [store, retrieve, search, session, health, stats]
+    
+  # --- Future adapters (drop the file, uncomment, restart) ---
+  # redis:
+  #   file: "adapters_redis.py"
+  #   description: "Redis — fast cache, TTL support, good for working memory"
+  #   supports: [store, retrieve, health, stats]
+  #
+  # pinecone:
+  #   file: "adapters_pinecone.py"
+  #   description: "Pinecone — managed vector DB, infinite scale"
+  #   supports: [store, retrieve, search, stats]
+  #
+  # filesystem:
+  #   file: "adapters_filesystem.py"
+  #   description: "JSON files on disk — zero dependencies, fully portable"
+  #   supports: [store, retrieve, health, stats]
+  #
+  # qdrant:
+  #   file: "adapters_qdrant.py"
+  #   description: "Qdrant — high-performance vector search"
+  #   supports: [store, retrieve, search, health, stats]
+
+# ─── MEMORY METER ───
+# Each bank tracks its own usage. The Ka organ reads these for health checks.
+
+meter:
+  poll_interval: "5m"    # Check bank levels every 5 minutes
+  
+  metrics:
+    - name: "capacity"
+      description: "How full is this bank (rows, bytes, or vectors)"
+      unit: "percent"
+      
+    - name: "throughput"
+      description: "Reads and writes per minute"
+      unit: "ops/min"
+      
+    - name: "latency"
+      description: "Average read/write latency"
+      unit: "ms"
+      
+    - name: "freshness"
+      description: "Age of newest entry"
+      unit: "seconds"
+      
+    - name: "fragmentation"
+      description: "How scattered the data is (0=clean, 1=fragmented)"
+      unit: "ratio"
+      
+    - name: "confidence_avg"
+      description: "Average confidence of stored learnings"
+      unit: "ratio"
+
+  alerts:
+    - condition: "capacity > warn_at"
+      action: "notify"
+      message: "Memory bank {bank} at {capacity}% — consider archiving"
+      
+    - condition: "capacity > critical_at"
+      action: "auto_archive"
+      message: "Memory bank {bank} critical — archiving old entries"
+      
+    - condition: "latency > 1000"
+      action: "notify"
+      message: "Memory bank {bank} slow — {latency}ms latency"
+      
+    - condition: "freshness > 3600"
+      action: "notify"
+      message: "Memory bank {bank} stale — no writes in {freshness}s"
+
+# ─── BANK LIFECYCLE ───
+# How data flows between banks over time.
+
+lifecycle:
+  hot:
+    description: "Active memory — fast access, recent data"
+    max_age: "7d"
+    adapter: "postgres"
+    
+  warm:
+    description: "Recent memory — still searchable, less accessed"
+    max_age: "90d"
+    adapter: "postgres"
+    
+  cold:
+    description: "Archived memory — compressed, rarely accessed"
+    max_age: "unlimited"
+    adapter: "sqlite"    # Portable single-file archive
+    path: "memory/archive/"
+    
+  transitions:
+    - from: "hot"
+      to: "warm"
+      trigger: "age > 7d"
+      action: "move"
+      
+    - from: "warm"
+      to: "cold"
+      trigger: "age > 90d AND access_count < 3"
+      action: "compress_and_archive"
+      
+    - from: "cold"
+      to: "warm"
+      trigger: "accessed"
+      action: "restore"   # Cold memories warm up when needed

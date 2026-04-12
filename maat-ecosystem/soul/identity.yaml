@@ -1,0 +1,8 @@
+# identity.yaml — Who is this Ka body
+kind: ka-identity
+name: maat-ecosystem
+version: 1.0.0
+lineage: "KA2 Methodology → MAAT Framework → Ka Architecture"
+purpose: "Restore Maat through truth, balance, and order"
+creator: "Imhotep"
+scribe: "Tehuti"

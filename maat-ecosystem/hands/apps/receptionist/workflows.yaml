@@ -1,0 +1,30 @@
+greet:
+  description: Initial greeting and intent detection
+  steps:
+    - detect_language
+    - identify_intent:
+        intents: [appointment, question, complaint, transfer]
+    - route_by_intent
+
+route:
+  description: Route inquiry to correct department
+  steps:
+    - lookup_department
+    - transfer_or_handle
+    - log_interaction
+
+book:
+  description: Book an appointment
+  steps:
+    - check_availability
+    - confirm_details
+    - create_event
+    - send_confirmation
+    - log_booking
+
+faq:
+  description: Answer common questions
+  steps:
+    - search_knowledge_base
+    - generate_answer
+    - offer_followup

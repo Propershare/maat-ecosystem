@@ -1,0 +1,18 @@
+{
+  "name": "teacher",
+  "version": "1.0.0",
+  "description": "Teaching agent: tutors, explains, creates curricula, tracks student progress",
+  "identity": {
+    "name": "teacher",
+    "ring": "middle-ring",
+    "role": "teacher"
+  },
+  "policies": ["maat-apps/teacher/policy.json"],
+  "tools": ["search_knowledge", "create_quiz", "track_progress"],
+  "memory_rules": {
+    "default_class": "episodic",
+    "auto_consolidate": true,
+    "retention_days": 365
+  },
+  "workflows": ["teach", "assess", "review"]
+}

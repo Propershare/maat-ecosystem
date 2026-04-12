@@ -1,0 +1,76 @@
+# evolve.yaml — The Evolution Loop
+# Every Ka body gets smarter over time. This config drives the cycle.
+#
+# The loop: SENSE → STORE → PATTERN → PROMOTE → APPLY → MEASURE → DECAY
+#
+# Drop this file in any Ka body's ka/ folder. The loop adapts to what's there.
+
+evolution:
+  enabled: true
+  cycle_interval: "6h"        # Run the full loop every 6 hours
+  min_data_threshold: 10      # Need at least 10 new entries before cycling
+
+  # ─── STAGE 1: SENSE ───
+  # Collect raw experience from all organs
+  sense:
+    sources:
+      - organ: memory
+        type: conversations
+        window: "24h"           # Look at last 24h of conversations
+      - organ: memory
+        type: errors
+        window: "48h"           # Errors get a longer lookback
+      - organ: ka
+        type: pain
+        window: "7d"            # Pain patterns over a week
+      - organ: brain
+        type: decisions
+        window: "24h"
+
+  # ─── STAGE 2: STORE ───
+  # Raw experience goes to episodic memory (already happening via maat-memory)
+  store:
+    target: "memory/episodic"
+    retention: "90d"            # Keep raw episodes for 90 days
+    overflow: "archive"         # Archive to cold storage, don't delete
+
+  # ─── STAGE 3: PATTERN ───
+  # Consolidator finds clusters and recurring themes
+  pattern:
+    engine: "memory/patterns/consolidator.py"
+    min_confidence: 0.6         # Minimum confidence to surface a pattern
+    cluster_threshold: 3        # Need 3+ similar events to form a pattern
+    output: "memory/patterns/"
+
+  # ─── STAGE 4: PROMOTE ───
+  # High-confidence patterns become learnings
+  promote:
+    confidence_threshold: 0.8   # Only promote if confidence ≥ 0.8
+    requires_approval: false    # Auto-promote (set true for human-in-loop)
+    target: "memory/semantic"   # Promoted insights go to semantic memory
+    notify: true                # Tell the operator what was promoted
+
+  # ─── STAGE 5: APPLY ───
+  # Learnings feed back into brain decisions
+  apply:
+    inject_to: "brain/reasoning"
+    method: "context"           # Inject as context, not as hard rules
+    max_learnings_per_turn: 5   # Don't overwhelm reasoning with too many
+
+  # ─── STAGE 6: MEASURE ───
+  # Track if applied learnings actually helped
+  measure:
+    track: true
+    success_signal: "positive_feedback"  # How we know it worked
+    failure_signal: "error_after_apply"  # How we know it didn't
+    min_samples: 5              # Need 5 uses before judging
+
+  # ─── STAGE 7: DECAY ───
+  # Low-value learnings fade; high-value ones strengthen
+  decay:
+    enabled: true
+    decay_rate: 0.05            # Lose 5% confidence per cycle if unused
+    floor: 0.1                  # Never decay below 0.1 (keep a trace)
+    strengthen_rate: 0.1        # Gain 10% confidence when successfully used
+    archive_threshold: 0.2      # Archive (don't delete) if below 0.2
+    archive_to: "memory/patterns/archive/"

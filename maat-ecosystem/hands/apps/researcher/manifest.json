@@ -1,0 +1,18 @@
+{
+  "name": "researcher",
+  "version": "1.0.0",
+  "description": "Deep research agent: web search, document analysis, citation, summarization",
+  "identity": {
+    "name": "researcher",
+    "ring": "middle-ring",
+    "role": "researcher"
+  },
+  "policies": ["maat-apps/researcher/policy.json"],
+  "tools": ["web_search", "read_document", "summarize", "cite"],
+  "memory_rules": {
+    "default_class": "semantic",
+    "auto_consolidate": true,
+    "retention_days": 365
+  },
+  "workflows": ["research", "summarize", "fact_check"]
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:tehuti_sentinel_case:v1",
+  "title": "Tehuti Sentinel — runtime judgment case",
+  "description": "Labeled unit for the Tehuti Sentinel office: narrow runtime classification + audit trail. Model implementation (e.g. Gemma e2b, later Mythos-side verifier) is replaceable — this names the role, not the engine. v1 is a starting contract; revise when real cases demand it (multi-reason, conditional vs escalate, classifier vs enforcement split).",
+  "type": "object",
+  "required": ["id", "surface", "input", "context", "label"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semantic version of this object shape (not the JSON Schema file).",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^guard_case_[a-z0-9_]+$",
+      "description": "Stable id (prefix kept for guard_cases/ filenames)."
+    },
+    "surface": {
+      "type": "string",
+      "enum": [
+        "tool_call",
+        "memory_write",
+        "retrieval",
+        "shell_execution",
+        "scope_drift",
+        "escalation",
+        "plugin_or_mcp",
+        "other"
+      ],
+      "description": "Runtime zone — diversify coverage across surfaces, not just row count."
+    },
+    "input": {
+      "type": "object",
+      "required": ["payload"],
+      "additionalProperties": false,
+      "properties": {
+        "user_request": { "type": "string" },
+        "agent_plan": { "type": "string" },
+        "payload": {
+          "type": "object",
+          "description": "Tool payload, command, memory blob ref, etc."
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_role": { "type": "string" },
+        "policy_version": { "type": "string" },
+        "memory_state": { "type": "string" },
+        "retrieval_source": { "type": "string" },
+        "correlation_id": { "type": "string", "format": "uuid" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "description": "What the judgment relied on — provenance for audits and training.",
+      "additionalProperties": false,
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "policy",
+            "user_intent",
+            "runtime_trace",
+            "retrieval_content",
+            "memory_record",
+            "tool_payload"
+          ]
+        },
+        "source_ref": {
+          "type": "string",
+          "description": "Path, event id, row id, URI fragment — stable pointer when possible."
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "label": {
+      "type": "object",
+      "required": ["decision", "reason_code"],
+      "additionalProperties": false,
+      "properties": {
+        "decision": {
+          "type": "string",
+          "enum": ["allow", "deny", "escalate", "conditional"],
+          "description": "Primary class. If conditional vs escalate blurs in practice, document distinction in outcome.notes until schema v2."
+        },
+        "reason_code": {
+          "type": "string",
+          "enum": [
+            "safe",
+            "scope_violation",
+            "injection_risk",
+            "insufficient_provenance",
+            "excessive_authority",
+            "retrieval_contamination",
+            "memory_policy_violation",
+            "constitutional_path",
+            "requires_human",
+            "other"
+          ]
+        },
+        "additional_reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "safe",
+              "scope_violation",
+              "injection_risk",
+              "insufficient_provenance",
+              "excessive_authority",
+              "retrieval_contamination",
+              "memory_policy_violation",
+              "constitutional_path",
+              "requires_human",
+              "other"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 8,
+          "description": "Optional when multiple simultaneous reasons apply."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "justification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "maat_principle": {
+          "type": "string",
+          "enum": ["truth", "order", "balance", "justice", "accountability", "reciprocity"]
+        },
+        "explanation": { "type": "string" }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human_override": { "type": "boolean" },
+        "final_action": {
+          "type": "string",
+          "description": "What actually happened after rules/engine (may differ from classifier suggestion)."
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

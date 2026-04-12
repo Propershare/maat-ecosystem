@@ -1,0 +1,32 @@
+{
+  "name": "filesystem-tools",
+  "version": "1.0.0",
+  "description": "File system tools: read, write, list, search files",
+  "type": "tool-pack",
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read a file's contents",
+      "required_ring": "middle-ring",
+      "reversible": false
+    },
+    {
+      "name": "write_file",
+      "description": "Write content to a file",
+      "required_ring": "outer-ring",
+      "reversible": true
+    },
+    {
+      "name": "list_directory",
+      "description": "List directory contents",
+      "required_ring": "inner-ring",
+      "reversible": false
+    },
+    {
+      "name": "search_files",
+      "description": "Search for files by pattern",
+      "required_ring": "inner-ring",
+      "reversible": false
+    }
+  ]
+}

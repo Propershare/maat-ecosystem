@@ -1,0 +1,38 @@
+{
+  "id": "maat-default-v1",
+  "name": "MAAT Default Policy",
+  "version": "1",
+  "description": "The constitutional default. Fail-closed. Three-Ring.",
+  "rules": [
+    {
+      "id": "default-deny-unknown",
+      "when": { "ring": "inner-ring", "action": "execute" },
+      "then": "deny",
+      "reason": "Inner-ring agents cannot execute"
+    },
+    {
+      "id": "default-deny-delete-constitutional",
+      "when": { "action": "memory.delete", "resource": "constitutional*" },
+      "then": "deny",
+      "reason": "Constitutional memories cannot be deleted"
+    },
+    {
+      "id": "default-escalate-unknown-tool",
+      "when": { "ring": "inner-ring", "action": "tool.*" },
+      "then": "escalate",
+      "reason": "Inner-ring tool use requires approval"
+    },
+    {
+      "id": "default-log-all-memory-writes",
+      "when": { "action": "memory.write" },
+      "then": "log",
+      "reason": "All memory writes are auditable"
+    },
+    {
+      "id": "default-outer-allow",
+      "when": { "ring": "outer-ring" },
+      "then": "allow",
+      "reason": "Outer-ring has full authority"
+    }
+  ]
+}

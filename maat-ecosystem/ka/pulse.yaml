@@ -1,0 +1,46 @@
+# pulse.yaml — Ka heartbeat configuration
+# The life force monitors all organs
+
+pulse:
+  interval_seconds: 30
+  escalation_threshold: 3  # consecutive failures before alerting
+
+organs:
+  soul:
+    check: "constitution.md exists and is non-empty"
+    severity: critical  # no soul = no operation
+  brain:
+    check: "at least one model reachable"
+    severity: critical
+    fallback: "try next model in chain"
+  memory:
+    check: "storage backend responds"
+    severity: warning
+    fallback: "use in-memory cache"
+  hands:
+    check: "tool registry loads"
+    severity: warning
+  senses:
+    check: "input channels active"
+    severity: critical
+  voice:
+    check: "output channels active"
+    severity: warning
+    fallback: "buffer messages for retry"
+  skeleton:
+    check: "schemas parseable"
+    severity: warning
+
+healing_rules:
+  - trigger: "brain.model.unreachable"
+    action: "try next model in fallback chain"
+    max_retries: 3
+  - trigger: "hands.mcp.disconnected"
+    action: "reconnect with exponential backoff"
+    max_retries: 5
+  - trigger: "memory.storage.timeout"
+    action: "switch to sqlite fallback"
+    max_retries: 2
+  - trigger: "senses.input.dropped"
+    action: "re-establish connection"
+    max_retries: 3
