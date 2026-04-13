@@ -11,6 +11,17 @@ Single source of truth for **which repo is which**. Names are easy to confuse; t
 | **MaatLangChain** | Spine: agents, RAG, **`maat_memory/`** (gitMaat) | `maatlangchain/` | Coordination + PostgreSQL memory |
 | **maat-forge** (skeleton) | Autonomous local worker: schedules, job loops, bounded experiments, reports to gitMaat — **not** a substitute for `maat-runtime` | `maat-forge/` (lab root) — see [`MAAT-FORGE.md`](MAAT-FORGE.md) | First job: `jobs/first-bounded-loop.mjs` |
 | **maat-control-plane** | Python **`maat`** CLI — **`doctor`** implemented (manifest/profile, paths, gateway, stack, DB, MCP ports, safety); `setup` / `enroll` / repair TBD | [`maat-control-plane/`](../maat-control-plane/) — [`MAAT-LAB-CONTROL-PLANE.md`](MAAT-LAB-CONTROL-PLANE.md) | `pip install -e ./maat-control-plane` |
+| **Tehuti Guard (two products)** | **(A)** GitHub [**Propershare/tehuti-guard**](https://github.com/Propershare/tehuti-guard) — npm **MCP security proxy** (stdio wrapper). **(B)** Lab **`tehuti-guard/guard/`** — Python **`tehuti-guard-api`** HTTP **:8013** decision API. | `tehuti-guard/` (lab) vs clone of GitHub for npm | See [`TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md) |
+
+## Lab filesystem layout (canonical paths)
+
+| Path | Truth |
+|------|--------|
+| **Ka MCP spine (code on disk)** | **`maat-ecosystem/mcp-servers/`** — Ka discovery, Tehuti Core, Maat Memory, pipeline, … |
+| **Lab root compatibility** | **`mcp-servers/`** → symlink to the row above — systemd/scripts unchanged. |
+| **Workflow apps** | Prefer **`maat-ecosystem/hands/apps/`**; **`maat-apps/`** at lab root is **duplicate / legacy** — consolidate when editing (see [`LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md)). |
+
+**Full tree + tech stack (GitHub / operators):** [`LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md).
 
 ## Default ports (lab network identity)
 
@@ -32,6 +43,7 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 - **“MAAT Core” (constitutional layer)** → truth in `maat-ecosystem/skeleton/`, `soul/`, contracts — **not** the same as the **`maat-runtime`** folder name.
 - **Legacy path `maat-ecosystem/.../maat-core/schemas`** in some runners and docs refers to an **old on-disk layout** for schemas; canonical schemas live under **`maat-ecosystem/skeleton/schemas/`**. That legacy string is **not** the Git repo `maat-runtime`.
 - **MCP organ labels** (e.g. Tehuti Core on **8014**) may appear as `maat-core` in older configs; the **service** is Tehuti Core / brain — see [`docs/GITMAAT-CONNECT.md`](GITMAAT-CONNECT.md) and Ka discovery **8010**.
+- **`tehuti-guard` on npm** (MCP proxy) vs **`tehuti-guard/guard/`** (Python `:8013` API) vs lab **`@tehuti-lab/guard-ldap-helpers`** — see [`TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md).
 
 ## See also
 
@@ -49,3 +61,5 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 - [`docs/WORKSPACE-KA-MAP.md`](WORKSPACE-KA-MAP.md) — organs ↔ folders
 - [`docs/MAAT-FRAMEWORK-REPORT.md`](MAAT-FRAMEWORK-REPORT.md) — five-layer architecture
 - [`docs/TEHUTI-LAB-TREE.md`](TEHUTI-LAB-TREE.md) — visual tree of `~/.n8n`.
+- [`docs/LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md) — **canonical** folder tree, symlinks, tech stack, `maat-apps` vs `hands/apps`.
+- [`docs/TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md) — npm MCP repo vs Python Guard API vs lab package name.

@@ -2,7 +2,7 @@
 
 **Purpose:** One page for **what exists**, **who calls whom**, **what is authoritative**, and **what happens when something is down** — without tribal knowledge.
 
-**See also:** [`ENDPOINTS-AND-DECISIONS.md`](ENDPOINTS-AND-DECISIONS.md) (exact HTTP), [`FIRST-RUN.md`](FIRST-RUN.md) (bootstrap order), [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md) (repo names).
+**See also:** [`ENDPOINTS-AND-DECISIONS.md`](ENDPOINTS-AND-DECISIONS.md) (exact HTTP), [`FIRST-RUN.md`](FIRST-RUN.md) (bootstrap order), [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md) (repo names), [`LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md) (folder tree + tech stack).
 
 ---
 
@@ -18,7 +18,7 @@
 | **Guard adapters** | Local interceptors (e.g. `classifyToolCall` in maat-immune) — **deterministic**; may or may not call Guard HTTP yet | `maat-runtime/.../maat-immune/` |
 | **Maat Memory / gitMaat** | Durable coordination + optional governance rows | `maatlangchain/maat_memory/` |
 | **PostgreSQL** | When enabled: `maat_governance_events` for Guard/Sentinel logging | env `PGVECTOR_DB_URL` / `.env` |
-| **MCP servers / tool providers** | External capabilities (filesystem, memory, ComfyUI, …) | `mcp-servers/`, Ka discovery **8010** |
+| **MCP servers / tool providers** | External capabilities (filesystem, memory, ComfyUI, …) | `maat-ecosystem/mcp-servers/` (root `mcp-servers` → symlink), Ka discovery **8010** |
 | **Ka discovery** | HTTP manifest of organ endpoints (`GET /manifest`) | port **8010** |
 
 **Authoritative for “final wire decision” on a protected action:** **Tehuti Guard v1** response from `POST /decision` (when integrated). **maat-sentinel** is authoritative for **machine posture** (`unified_view`) and feeds Guard; it is **not** the same as the Guard’s `POST /decision` JSON (Guard **consumes** Sentinel).

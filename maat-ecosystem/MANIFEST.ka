@@ -112,13 +112,19 @@ boot_sequence:
 network:
   host_example: staydangerous
   plane_doc: "docs/MAAT-NETWORK-PLANE.md"
-  note: "Agents on the LAN: GET http://<server-primary-lan-ip>:8010/manifest (Ka discovery) for live organs.*.endpoint — do not guess. Hostname staydangerous is human-friendly; manifest uses detected LAN IP. gitMaat persistence = PostgreSQL maat_memory:5432 via PGVECTOR_DB_URL (docs/GITMAAT-CONNECT.md). Bearer auth on organ MCPs when deployed. Transport today is often Wi-Fi LAN (Ethernet not everywhere); admin plane is SSH; optional VPN later — see plane_doc."
+  note: "Agents on the LAN: GET http://<server-primary-lan-ip>:8010/manifest (Ka discovery) for live organs.*.endpoint — do not guess. Hostname staydangerous is human-friendly; manifest uses detected LAN IP. gitMaat persistence = PostgreSQL maat_memory:5432 via PGVECTOR_DB_URL (docs/GITMAAT-CONNECT.md). Bearer auth on organ MCPs when deployed. Primary operator channel stack: OpenClaw gateway (openclaw/, workspace ~/.n8n) — not n8n. n8n ports in this map are optional/legacy where still deployed. Tehuti Guard (8013) source: lab root tehuti-guard/ — not under maat-ecosystem/mcp-servers/. Transport today is often Wi-Fi LAN (Ethernet not everywhere); admin plane is SSH; optional VPN later — see plane_doc."
   discovery:
     port: 8010
     protocol: http
     service: ka-discovery
     organ: ka
   services:
+    - port: 8013
+      protocol: http
+      service: tehuti-guard
+      organ: soul
+      role: "Policy enforcement — POST /decision (identity, contract, risk)"
+      source: "tehuti-guard/guard/ at lab root — sibling of maat-ecosystem/, not inside mcp-servers/"
     - port: 8014
       protocol: mcp
       service: tehuti-core

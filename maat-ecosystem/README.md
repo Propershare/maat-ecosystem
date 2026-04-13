@@ -36,6 +36,7 @@ Sacred contracts and doctrine — **not** MCP transport, not client UIs:
 ```
 maat-ecosystem/
 ├── MANIFEST.ka           ← DNA — machine-readable body map
+├── mcp-servers/          ← Runnable MCP / HTTP organ processes (Ka discovery, Tehuti Core, Maat Memory, …) — canonical; lab root `mcp-servers` → symlink here
 ├── soul/                 ← Identity, constitution, governance
 │   ├── constitution.md   ← The 42 Laws (boots first)
 │   ├── identity.yaml     ← Who this body is
@@ -55,8 +56,8 @@ maat-ecosystem/
 ├── hands/                ← Action, tool use, interaction
 │   ├── tools/            ← Individual tool definitions
 │   ├── skills/           ← Composed multi-tool capabilities
-│   ├── mcps/             ← MCP server connections
-│   └── apps/             ← Full workflow apps
+│   ├── mcps/             ← MCP client adapters (not the daemon tree — see ../mcp-servers/)
+│   └── apps/             ← Full workflow apps (canonical for Ka-body; root `maat-apps/` duplicates some manifests — see `docs/LAB-CANONICAL-TREE-AND-STACK.md`)
 │       ├── operator/
 │       ├── receptionist/
 │       ├── researcher/
@@ -88,6 +89,8 @@ maat-ecosystem/
 └── site/                 ← Public website
 ```
 
+**Whole-lab folder map + tech stack (monorepo root):** [`docs/LAB-CANONICAL-TREE-AND-STACK.md`](../docs/LAB-CANONICAL-TREE-AND-STACK.md) · Visual tree: [`docs/TEHUTI-LAB-TREE.md`](../docs/TEHUTI-LAB-TREE.md).
+
 ## Boot Sequence
 
 Ka bodies are born, not deployed:
@@ -108,6 +111,7 @@ Canonical map is **`MANIFEST.ka` → `network:`** (this table mirrors it for hum
 | Port | Protocol | Primary organ | Server / role |
 |------|----------|---------------|---------------|
 | 8010 | HTTP | Ka | Ka Discovery — body map & health |
+| 8013 | HTTP | Soul / policy | **Tehuti Guard** — `POST /decision`; code at **lab root** `tehuti-guard/` (not under `mcp-servers/`) |
 | 8014 | MCP | Brain (+ Hands + Memory paths) | Tehuti Core — reference body fuses these; see audit |
 | 8015 | MCP | Blood | n8n MCP — workflows / event-shaped circulation |
 | 8016 | MCP | Hands (files) | Filesystem MCP |

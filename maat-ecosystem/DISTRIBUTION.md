@@ -12,7 +12,7 @@
 |--------------------------------|-------------------------------------|
 | `MANIFEST.ka`, organ layout, `soul/` | Ka Discovery **8010**, organ MCP processes |
 | `skeleton/schemas/`, bench contracts | PostgreSQL, Ollama, n8n, OpenClaw, etc. |
-| `maatbench/` (verification runner) | `maatlangchain/`, `mcp-servers/`, `maat-runtime/` |
+| `maatbench/` (verification runner) | `maatlangchain/`, `maat-ecosystem/mcp-servers/` (root `mcp-servers` → symlink), `maat-runtime/` |
 | Docs, `site/` | Network URLs, API keys, systemd units |
 
 So: **package = portable doctrine + contracts + tests.**  
@@ -107,7 +107,7 @@ flowchart LR
     ME2[maat-ecosystem]
     MC[maat_core]
     ML[maatlangchain]
-    MCP[mcp-servers]
+    MCP[maat-ecosystem/mcp-servers]
     MR[maat-runtime]
     OG[openclaw]
     ME2 --- MC
