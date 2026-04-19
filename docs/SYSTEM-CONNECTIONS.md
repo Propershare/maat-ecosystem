@@ -14,7 +14,8 @@
 | **Maat-runtime** (coding agent, extensions) | Node-side execution: tools, **maat-immune** local gate | `maat-runtime/` |
 | **Hermes-agent** (optional) | Agent experiments / skills — **not** the same as maat-sentinel HTTP | `hermes-agent/` |
 | **maat-sentinel** | Live awareness: JSONL + `unified_view` per `machine_id`; HTTP **4242** | `maat-sentinel/` |
-| **Tehuti Guard v1** | HTTP **8013** — `POST /decision` uses Sentinel view + rules | `tehuti-guard/guard/` |
+| **Tehuti Guard (Python decision API, lab)** | HTTP **8013** — `POST /decision` uses Sentinel view + rules | `tehuti-guard/guard/` |
+| **Tehuti Core (brain service)** | MCP/OpenAPI **8014** — coordination + tool gateway (legacy label `maat-core` may appear in older configs) | `maat-ecosystem/mcp-servers/` |
 | **Guard adapters** | Local interceptors (e.g. `classifyToolCall` in maat-immune) — **deterministic**; may or may not call Guard HTTP yet | `maat-runtime/.../maat-immune/` |
 | **Maat Memory / gitMaat** | Durable coordination + optional governance rows | `maatlangchain/maat_memory/` |
 | **PostgreSQL** | When enabled: `maat_governance_events` for Guard/Sentinel logging | env `PGVECTOR_DB_URL` / `.env` |
