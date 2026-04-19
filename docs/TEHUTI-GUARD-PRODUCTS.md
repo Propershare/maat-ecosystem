@@ -9,7 +9,7 @@ There are **two different products** that share similar names. This doc prevents
 | **What** | MCP **security proxy** (fork lineage from ContextGuard): wraps stdio MCP servers, prompt-injection / path / rate limits. |
 | **Install** | `npm install -g tehuti-guard` (when published) — see **upstream repo README**, not this monorepo. |
 | **Repo** | https://github.com/Propershare/tehuti-guard |
-| **In this lab** | **Not** fully vendored as the main tree under `tehuti-guard/` — the lab folder is **different** (see §2). |
+| **In this lab** | The **npm MCP** product is still developed from a **separate clone** of that repo. The lab tree under **`tehuti-guard/`** in **maat-ecosystem** is **not** that npm package — it holds the Python decision API + private TS helpers (see §2 and **Canonical layout** below). |
 
 Use this when you want **Claude / Open WebUI / MCP client** → **wraps** your MCP server command.
 
@@ -23,6 +23,14 @@ Use this when you want **Claude / Open WebUI / MCP client** → **wraps** your M
 | **`tehuti-guard/`** (root `package.json`) | **Private** TypeScript helpers (LDAP / three-ring tests). **Not** the npm MCP proxy. | **Do not** publish as `tehuti-guard` on npm — that name is reserved for the GitHub repo. |
 
 **Canonical operator doc for the Python API:** [`tehuti-guard/guard/README.md`](../tehuti-guard/guard/README.md).
+
+### Canonical layout (monorepo vs standalone MCP repo)
+
+**Decision (Option A):** The directory **`tehuti-guard/`** at the **maat-ecosystem / lab root** is **versioned in this monorepo**. It is **not** a nested git checkout of `Propershare/tehuti-guard`. That keeps the Python **`POST /decision`** surface and lab helpers in one place with [`scripts/guard_adapter_e2e_demo.py`](../scripts/guard_adapter_e2e_demo.py) and operator docs.
+
+**Standalone repo** https://github.com/Propershare/tehuti-guard remains the intended home for the **publishable npm MCP proxy** — work there in a **dedicated clone** when shipping that product.
+
+**Backup:** Before removing the nested `.git`, a snapshot was stored under `backups/tehuti-guard-pre-monorepo-*` (bundle + tree tarball + patches). Retain until you no longer need rollback.
 
 ---
 
@@ -41,7 +49,7 @@ Discovery lists **`organs.policy`** on **`GET :8010/manifest`** — see [`LAB-CA
 
 ### npm (MCP proxy product)
 
-1. Work in a **clone** of https://github.com/Propershare/tehuti-guard (not the lab monorepo `tehuti-guard/` folder as your only source).
+1. Work in a **clone** of https://github.com/Propershare/tehuti-guard. The **`tehuti-guard/`** tree **inside maat-ecosystem** is the **lab** layout (Python API + helpers), not a substitute for the npm package source — use a separate clone for MCP releases.
 2. Follow that repo’s **`package.json`**, `pnpm`/npm scripts, and **GitHub Actions** if any.
 3. `npm login` → `npm publish` (or org-scoped publish per `package.json`).
 

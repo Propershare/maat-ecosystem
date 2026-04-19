@@ -1,0 +1,18 @@
+{
+  "name": "@tehuti-lab/guard-ldap-helpers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lab-only TypeScript helpers (LDAP / three-ring). NOT npm tehuti-guard (MCP proxy) — see https://github.com/Propershare/tehuti-guard and docs/TEHUTI-GUARD-PRODUCTS.md",
+  "main": "dist/ldap-policy.js",
+  "types": "dist/ldap-policy.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

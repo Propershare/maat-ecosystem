@@ -63,3 +63,9 @@ Thumbs.db
 /SOUL.md
 tehuti-lab-webui-venv/
 tehuti-lab-webui-venv.backup.*/
+
+# tehuti-guard (vendored in monorepo — no nested node_modules)
+tehuti-guard/node_modules/
+
+# Pre-migration nested-repo backups (bundles/tarballs; see docs/TEHUTI-GUARD-PRODUCTS.md)
+backups/tehuti-guard-pre-monorepo-*/
