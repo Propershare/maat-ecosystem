@@ -56,13 +56,14 @@
 
 ---
 
-## 6. Runtime — one end-to-end path (open)
+## 6. Runtime — one end-to-end path (reference implementation)
 
 | Status | Action |
 |--------|--------|
-| **Open** | One path: **adapter → `POST /decision` → enforce → log `correlation_id`** (tool call *or* shell — pick one). |
+| **Reference** | **Lab script:** [`scripts/guard_adapter_e2e_demo.py`](../scripts/guard_adapter_e2e_demo.py) — **adapter envelope → `POST /decision` → enforce → JSONL** with joinable **`correlation_id`** (see [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md) *Guard* section). |
+| **Open (product-scale)** | Same loop from a **real** tool/shell/channel surface (e.g. OpenClaw) with production logging — not required to supersede the reference script. |
 
-**Goal:** Prove the loop once.
+**Goal:** Prove the loop once — **done** for the narrow HTTP adapter + log join; **open** for full product wiring.
 
 ---
 
@@ -79,7 +80,7 @@
 - One repo truth (`maat-ecosystem/` + honest legacy note)  
 - One entry path (root README)  
 - One decision vocabulary (wire terms)  
-- One working runtime path (pending)  
+- One working runtime path (**reference:** `scripts/guard_adapter_e2e_demo.py` + [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md))  
 - One real user test (pending)  
 
 ---

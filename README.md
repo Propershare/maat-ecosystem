@@ -6,7 +6,7 @@
 
 **Operator connection loop** (Cursor vs OpenClaw vs `.env` vs MCP — where credentials go, verification, Telegram allowlist): **[`AGENTS.md`](AGENTS.md)** section *Credentials and connection loops*.
 
-**Runtime hookup** (one script + spine doc): [`docs/RUNTIME-HOOKUP.md`](docs/RUNTIME-HOOKUP.md), [`scripts/lab-runtime-check.sh`](scripts/lab-runtime-check.sh).
+**Runtime hookup** (scripts + spine doc): [`docs/RUNTIME-HOOKUP.md`](docs/RUNTIME-HOOKUP.md), [`scripts/lab-runtime-check.sh`](scripts/lab-runtime-check.sh) — when Tehuti Guard (**8013**) is up, the script smoke-tests **`POST /decision`** and **`correlation_id`** echo. **Adapter E2E proof** (envelope → decision → enforce → JSONL log): [`scripts/guard_adapter_e2e_demo.py`](scripts/guard_adapter_e2e_demo.py).
 
 **Terminal agents + memory (default posture):** [`docs/TERMINAL-MEMORY-DEFAULT.md`](docs/TERMINAL-MEMORY-DEFAULT.md) — Memory MCP + gitMaat are **required** for shell-capable agents unless explicitly disabled; see [`AGENTS.md`](AGENTS.md) *Default agent posture*.
 
@@ -34,6 +34,8 @@ After a Git merge, **root-level** folders such as `maatbench/`, `maat-core/`, `m
 | **Mapping the whole lab** | [`docs/SYSTEM-CONNECTIONS.md`](docs/SYSTEM-CONNECTIONS.md) |
 | **Canonical folder tree + tech stack (GitHub)** | [`docs/LAB-CANONICAL-TREE-AND-STACK.md`](docs/LAB-CANONICAL-TREE-AND-STACK.md) |
 | **Repo vs product names** | [`docs/MAAT-PRODUCT-MAP.md`](docs/MAAT-PRODUCT-MAP.md) |
+| **Git: avoid leaking secrets / personal files** | [`docs/PUSH-SAFETY.md`](docs/PUSH-SAFETY.md) |
+| **Disk / backup / cost of local memory** | [`docs/LAB-STORAGE-AND-BACKUP.md`](docs/LAB-STORAGE-AND-BACKUP.md), [`scripts/lab-storage-audit.sh`](scripts/lab-storage-audit.sh) |
 
 **Agent-assisted setup:** [`docs/SETUP-WITH-AGENT.md`](docs/SETUP-WITH-AGENT.md)
 

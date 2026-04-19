@@ -21,6 +21,8 @@ maat_packs
 
 # Logs
 *.log
+# Adapter E2E demo output (see scripts/guard_adapter_e2e_demo.py)
+logs/guard_adapter_e2e.jsonl
 
 # Temp
 *.tmp
@@ -39,3 +41,25 @@ Thumbs.db
 # Test artifacts
 /tmp_test_*
 *.db
+
+# Tehuti corpora (see data/tehuti/README.txt)
+/data/tehuti/pdf-library/
+/data/tehuti/archives/
+
+# Retrieval pack extracted content — derivable from pack source archives;
+# keep manifests, scripts, README; ignore bulk documents/
+/data/retrieval_packs/*/documents/
+
+# Push safety — see docs/PUSH-SAFETY.md
+.env
+.env.*
+!.env.example
+.webui_secret_key
+.ka-auth
+/MEMORY.md
+/memory/
+/SSH-CREDENTIALS.md
+/USER.md
+/SOUL.md
+tehuti-lab-webui-venv/
+tehuti-lab-webui-venv.backup.*/

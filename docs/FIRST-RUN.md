@@ -84,13 +84,15 @@ There is **no** special registration handshake between OpenClaw and Guard in the
 - **Same `correlation_id`** you sent is **echoed** (or generated once).  
 - **Forge** (if used): `POST /decision` preflight succeeds when policy allows — see [`maat-forge/README.md`](../maat-forge/README.md).
 
+**Automated smoke (while Guard is running):** From the lab root, `./scripts/lab-runtime-check.sh` performs the same class of **`POST /decision`** check when **8013** `/health` is **2xx** (see [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md) *Guard evidence*). Use `LAB_SKIP_GUARD_DECISION=1` to disable only that POST step.
+
 ---
 
 ## 4. Only then enable high-impact routes
 
 After the loop above:
 
-1. Wire **one** adapter path to **normalize** tool calls into the envelope and call **`POST /decision`**.  
+1. Wire **one** adapter path to **normalize** tool calls into the envelope and call **`POST /decision`**. **Reference (lab):** [`scripts/guard_adapter_e2e_demo.py`](../scripts/guard_adapter_e2e_demo.py) — envelope, POST, enforce, JSONL log with **`correlation_id`** (see [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md)).  
 2. Enforce **`decision`** without downgrade — see [`TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md`](TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md) §6.  
 3. Turn on **`TEHUTI_GUARD_MEMORY=1`** only when Postgres is ready so joins hit **governance** rows.
 
