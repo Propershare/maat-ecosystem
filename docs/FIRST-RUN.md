@@ -13,7 +13,7 @@
 | Component | First-call behavior |
 |-----------|---------------------|
 | **maat-sentinel** | Creates/uses state under `MAAT_SENTINEL_STATE_DIR` (default `~/.maat/sentinel/`). HTTP `/status/<id>` may return empty/minimal view until ingest. |
-| **Tehuti Guard** | No database required. **Correlation id:** if you omit it, Guard **generates** a UUID and **echoes** it on the response. |
+| **Tehuti Guard (Python decision API, lab)** | No database required. **Correlation id:** if you omit it, Guard **generates** a UUID and **echoes** it on the response. |
 | **OpenClaw gateway** | **Does not** auto-configure Guard URLs for tool calls. **maat-immune** is **local** unless you add HTTP client wiring. |
 
 There is **no** special registration handshake between OpenClaw and Guard in the **stock** tree — document your fork if you add one.

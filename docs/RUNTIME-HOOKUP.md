@@ -6,9 +6,9 @@ This ties together the connectivity freeze, gitMaat, and operator surfaces. **No
 
 | Surface | Connected means | See |
 |--------|-----------------|-----|
-| **Telegram** | Telegram → OpenClaw gateway; channel policy matches your allowlist | [`AGENTS.md`](../AGENTS.md) (*Credentials and connection loops*) |
+| **Telegram** | Telegram → OpenClaw gateway; channel policy matches your allowlist | Repo overview: [`README.md`](../README.md). Local-only operator notes may exist in `AGENTS.md` on disk. |
 | **Cursor** | This lab root is the opened workspace; MCP points at live organs (discovery / memory) | `docs/GITMAAT-CONNECT.md`, Cursor **Settings → MCP** |
-| **OpenClaw** | `agents.defaults.workspace` is this lab root; gateway process up (default **18790**) | [`AGENTS.md`](../AGENTS.md) |
+| **OpenClaw** | `agents.defaults.workspace` is this lab root; gateway process up (default **18790**) | Repo overview: [`README.md`](../README.md) (and `docs/GITMAAT-CONNECT.md`). Local-only operator notes may exist in `AGENTS.md` on disk. |
 | **MCP / Ka spine** | **8010** manifest, **8014** Tehuti Core, **8022** Maat Memory MCP respond | [`docs/MAAT-ECOSYSTEM-CONNECTIVITY-FREEZE.md`](MAAT-ECOSYSTEM-CONNECTIVITY-FREEZE.md) §3 |
 | **Postgres / gitMaat** | `PGVECTOR_DB_URL` (or equivalent) is loaded where scripts and MCP run; DB reachable | [`docs/GITMAAT-CONNECT.md`](GITMAAT-CONNECT.md) |
 
@@ -26,7 +26,7 @@ LAB_HOST=192.168.4.21 ./scripts/lab-runtime-check.sh
 
 The script reports **PASS/FAIL** for discovery (8010), Tehuti Core (8014), Maat Memory MCP (8022), and optional Guard (8013), Sentinel (4242), gateway (18790), and Postgres. **Critical** failures are 8010 + 8014 + 8022; exit code **2** if any of those fail.
 
-**Guard evidence (when 8013 is up):** If `GET /health` on **8013** returns **2xx**, the script also sends a **low-risk** `POST /decision` (same envelope class as [`FIRST-RUN.md`](FIRST-RUN.md) §2) with header **`X-Correlation-ID`**, then asserts **HTTP 200**, a non-empty string **`decision`**, and **`correlation_id`** echoed to that value (requires **`python3`** on the host). Set **`LAB_SKIP_GUARD_DECISION=1`** to skip this smoke test. Optional **`LAB_GUARD_CORRELATION_ID`** fixes the correlation string for your own log joins while testing.
+**Tehuti Guard (Python decision API, lab) evidence (when 8013 is up):** If `GET /health` on **8013** returns **2xx**, the script also sends a **low-risk** `POST /decision` (same envelope class as [`FIRST-RUN.md`](FIRST-RUN.md) §2) with header **`X-Correlation-ID`**, then asserts **HTTP 200**, a non-empty string **`decision`**, and **`correlation_id`** echoed to that value (requires **`python3`** on the host). Set **`LAB_SKIP_GUARD_DECISION=1`** to skip this smoke test. Optional **`LAB_GUARD_CORRELATION_ID`** fixes the correlation string for your own log joins while testing.
 
 ## OpenClaw → organs (HTTP MCP)
 
