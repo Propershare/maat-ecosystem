@@ -31,7 +31,7 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 |------|---------|
 | **4242** | **maat-sentinel** HTTP API (live awareness, `GET /status/<machine_id>`, etc.) |
 | **8013** | **Tehuti Guard (Python decision API, lab)** decision API (`POST /decision`) — [`tehuti-guard/guard/`](../tehuti-guard/guard/) |
-| **8014** | Tehuti Core (brain / policy surface) |
+| **8014** | **Tehuti Core (brain service)** (aka legacy label `maat-core`) — MCP/OpenAPI surface for coordination and tools |
 | **8022** | Maat Memory MCP |
 
 **Sentinel override:** `MAAT_SENTINEL_PORT` or `maat-sentinel serve --port` (never hard-lock a port in docs only).
@@ -40,9 +40,10 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 
 ## Related naming (do not mix)
 
-- **“MAAT Core” (constitutional layer)** → truth in `maat-ecosystem/skeleton/`, `soul/`, contracts — **not** the same as the **`maat-runtime`** folder name.
+- **MAAT Core (constitutional layer)** → truth in `maat-ecosystem/skeleton/`, `soul/`, contracts — **not** the same as **Tehuti Core (brain service)** on **8014** and **not** the same as the **`maat_core/`** module.
+- **`maat_core` (Python module, underscore)** → a **path locator** / schema resolver module; it is not the TypeScript runtime and it is not the running brain service.
 - **Legacy path `maat-ecosystem/.../maat-core/schemas`** in some runners and docs refers to an **old on-disk layout** for schemas; canonical schemas live under **`maat-ecosystem/skeleton/schemas/`**. That legacy string is **not** the Git repo `maat-runtime`.
-- **MCP organ labels** (e.g. Tehuti Core on **8014**) may appear as `maat-core` in older configs; the **service** is Tehuti Core / brain — see [`docs/GITMAAT-CONNECT.md`](GITMAAT-CONNECT.md) and Ka discovery **8010**.
+- **Tehuti Core (brain service)** on **8014** may appear as `maat-core` in older configs and organ labels; treat `maat-core` as a **legacy label** for the **Tehuti Core** service where seen.
 - **`tehuti-guard` on npm** (MCP proxy) vs **`tehuti-guard/guard/`** (Python `:8013` API) vs lab **`@tehuti-lab/guard-ldap-helpers`** — see [`TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md).
 
 ## See also
