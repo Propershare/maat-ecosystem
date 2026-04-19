@@ -36,7 +36,7 @@ def _default_envelope(correlation_id: str) -> dict:
     actor_id = os.environ.get("GUARD_DEMO_ACTOR_ID", "guard_adapter_e2e_demo")
     return {
         "correlation_id": correlation_id,
-        "machine_id": os.environ.get("GUARD_DEMO_MACHINE_ID", "workstation-01"),
+        "machine_id": os.environ.get("GUARD_DEMO_MACHINE_ID", "staydangerous"),
         "actor": {"id": actor_id, "role": "agent"},
         "action": {
             "kind": "read",

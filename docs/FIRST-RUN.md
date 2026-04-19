@@ -44,20 +44,20 @@ There is **no** special registration handshake between OpenClaw and Guard in the
    curl -s http://127.0.0.1:4242/machines
    ```
 
-4. **Sample `/decision`** (low-risk envelope to get an **`allow`** or **`review`** depending on posture):
+4. **Sample `/decision`** (low-risk envelope to get an **`allow`** or **`review`** depending on posture). **Identity for this lab (Imhotep / `staydangerous`):** `machine_id` **`staydangerous`**, actor **`cursor_staydangerous`** — same host label as [`MAAT-ECOSYSTEM-CONNECTIVITY-FREEZE.md`](MAAT-ECOSYSTEM-CONNECTIVITY-FREEZE.md) §2 and `get_unique_agent_id("cursor")` in [`.cursorrules`](../.cursorrules). If Sentinel/your runtime registers a different `machine_id`, use that instead.
 
    ```bash
    curl -s -X POST http://127.0.0.1:8013/decision \
      -H 'Content-Type: application/json' \
-     -H 'X-Correlation-ID: first-run-test-001' \
+     -H 'X-Correlation-ID: first-run-staydangerous-001' \
      -d '{
-       "machine_id": "workstation-01",
-       "actor": {"id": "test", "role": "agent"},
-       "action": {"kind": "read", "resource": "/tmp/x", "risk": "low"}
+       "machine_id": "staydangerous",
+       "actor": {"id": "cursor_staydangerous", "role": "agent"},
+       "action": {"kind": "read", "resource": "/tmp/.first-run-staydangerous", "risk": "low"}
      }'
    ```
 
-5. **Confirm:** Response JSON includes **`correlation_id": "first-run-test-001"`** (or your body field) and a **`decision`** string from the [canonical set](ENDPOINTS-AND-DECISIONS.md#1-canonical-decision-vocabulary-read-this-first).
+5. **Confirm:** Response JSON includes **`correlation_id": "first-run-staydangerous-001"`** (or your body field) and a **`decision`** string from the [canonical set](ENDPOINTS-AND-DECISIONS.md#1-canonical-decision-vocabulary-read-this-first).
 
 6. **Optional: explain** (same body, diagnostic)
 
@@ -66,9 +66,9 @@ There is **no** special registration handshake between OpenClaw and Guard in the
      -H 'Content-Type: application/json' \
      -d @- <<'EOF'
    {
-     "machine_id": "workstation-01",
-     "actor": {"id": "test", "role": "agent"},
-     "action": {"kind": "read", "resource": "/tmp/x", "risk": "low"}
+     "machine_id": "staydangerous",
+     "actor": {"id": "cursor_staydangerous", "role": "agent"},
+     "action": {"kind": "read", "resource": "/tmp/.first-run-staydangerous", "risk": "low"}
    }
    EOF
    ```

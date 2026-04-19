@@ -52,7 +52,7 @@
 
 ```json
 {
-  "machine_id": "workstation-01",
+  "machine_id": "staydangerous",
   "actor": { "id": "cursor_staydangerous", "role": "agent" },
   "action": {
     "kind": "write",
