@@ -59,5 +59,5 @@ Exits **non-zero** if **staged** files look dangerous (e.g. `.env`, private key 
 
 ## See also
 
-- [`AGENTS.md`](../AGENTS.md) — workspace home; session reads.
-- [`README.md`](../README.md) — lab overview.
+- [`README.md`](../README.md) — repo entry points and governance context (public on GitHub).
+- Local operator guidance may also exist in **`AGENTS.md`** at the lab root when present on disk; it is not required to exist in the remote.
