@@ -72,5 +72,6 @@ Some third-party audits conflate **GitHub `Propershare/tehuti-guard`** (npm MCP 
 
 ## See also
 
+- MAAT Audit — Tehuti Guard repo structure repair — [`MAAT-AUDIT-TEHUTI-GUARD-REPO-STRUCTURE.md`](MAAT-AUDIT-TEHUTI-GUARD-REPO-STRUCTURE.md)
 - [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md) — product names
 - [`GITHUB-REPO-MAP.md`](GITHUB-REPO-MAP.md) — federation
