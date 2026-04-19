@@ -2,6 +2,8 @@
 
 **Purpose:** One page for **what exists**, **who calls whom**, **what is authoritative**, and **what happens when something is down** — without tribal knowledge.
 
+**Maturity:** Maps the **lab stack** and **documented HTTP contracts**. A row here means **knowable and testable in the lab**, not “production-hardened integration shipped everywhere” unless your deployment explicitly adds that layer.
+
 **See also:** [`ENDPOINTS-AND-DECISIONS.md`](ENDPOINTS-AND-DECISIONS.md) (exact HTTP), [`FIRST-RUN.md`](FIRST-RUN.md) (bootstrap order), [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md) (repo names), [`LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md) (folder tree + tech stack).
 
 ---
@@ -22,7 +24,7 @@
 | **MCP servers / tool providers** | External capabilities (filesystem, memory, ComfyUI, …) | `maat-ecosystem/mcp-servers/` (root `mcp-servers` → symlink), Ka discovery **8010** |
 | **Ka discovery** | HTTP manifest of organ endpoints (`GET /manifest`) | port **8010** |
 
-**Authoritative for “final wire decision” on a protected action:** **Tehuti Guard v1** response from `POST /decision` (when integrated). **maat-sentinel** is authoritative for **machine posture** (`unified_view`) and feeds Guard; it is **not** the same as the Guard’s `POST /decision` JSON (Guard **consumes** Sentinel).
+**Authoritative for “final wire decision” on a protected action:** **Tehuti Guard (Python decision API, lab)** response from `POST /decision` **when that client actually calls Guard HTTP** (stock trees often do **not**). **maat-sentinel** is authoritative for **machine posture** (`unified_view`) and feeds Guard; it is **not** the same as the Guard’s `POST /decision` JSON (Guard **consumes** Sentinel).
 
 ---
 

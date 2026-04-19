@@ -2,6 +2,8 @@
 
 **Purpose:** Plain tables for **Guard v1** and **maat-sentinel** HTTP — request/response shape, **canonical decision vocabulary**, failure behavior, and BYO notes. **No philosophy** — integration facts.
 
+**Maturity:** Describes **wire contract** (shapes, vocabulary, defaults). A documented endpoint here is **not** automatically **production-hardened** (auth, rate limits, HA) — see §3 for the minimal server’s limits.
+
 **Companion:** [`FIRST-RUN.md`](FIRST-RUN.md) (curl order), [`SYSTEM-CONNECTIONS.md`](SYSTEM-CONNECTIONS.md) (who calls whom).
 
 ---
@@ -33,6 +35,8 @@
 ---
 
 ## 3. Tehuti Guard (Python decision API, lab) — `http://127.0.0.1:8013` default
+
+**Maturity:** **Lab-oriented wire contract** — the default Python server uses **`ThreadingHTTPServer`**; timeouts/retries are **client-side** (see “Timeouts / retries” below). **Not** a claim of production-grade edge hardening unless you add a reverse proxy, auth, or a different deployment.
 
 | Endpoint | Caller | Purpose | Required fields | Response shape | Rate limit | Auth | Failure / idempotency |
 |----------|--------|---------|-----------------|----------------|------------|------|------------------------|
@@ -101,6 +105,8 @@ See [`maat-sentinel/README.md`](../maat-sentinel/README.md).
 ---
 
 ## 5. Gateway / OpenClaw (honest status)
+
+**Maturity:** **Stock-tree / lab** answers — what is **not** wired by default in this repo’s documented paths.
 
 | Question | Answer today |
 |------------|----------------|
