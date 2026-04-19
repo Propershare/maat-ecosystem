@@ -11,7 +11,7 @@ Single source of truth for **which repo is which**. Names are easy to confuse; t
 | **MaatLangChain** | Spine: agents, RAG, **`maat_memory/`** (gitMaat) | `maatlangchain/` | Coordination + PostgreSQL memory |
 | **maat-forge** (skeleton) | Autonomous local worker: schedules, job loops, bounded experiments, reports to gitMaat — **not** a substitute for `maat-runtime` | `maat-forge/` (lab root) — see [`MAAT-FORGE.md`](MAAT-FORGE.md) | First job: `jobs/first-bounded-loop.mjs` |
 | **maat-control-plane** | Python **`maat`** CLI — **`doctor`** implemented (manifest/profile, paths, gateway, stack, DB, MCP ports, safety); `setup` / `enroll` / repair TBD | [`maat-control-plane/`](../maat-control-plane/) — [`MAAT-LAB-CONTROL-PLANE.md`](MAAT-LAB-CONTROL-PLANE.md) | `pip install -e ./maat-control-plane` |
-| **Tehuti Guard (two products)** | **(A)** GitHub [**Propershare/tehuti-guard**](https://github.com/Propershare/tehuti-guard) — npm **MCP security proxy** (stdio wrapper). **(B)** Lab **`tehuti-guard/guard/`** — Python **`tehuti-guard-api`** HTTP **:8013** decision API. | `tehuti-guard/` (lab) vs clone of GitHub for npm | See [`TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md) |
+| **Tehuti Guard (two products)** | **Tehuti Guard (npm MCP proxy)**: GitHub [**Propershare/tehuti-guard**](https://github.com/Propershare/tehuti-guard) — installable MCP security proxy (stdio wrapper). **Tehuti Guard (Python decision API, lab)**: **`tehuti-guard/guard/`** — Python **`tehuti-guard-api`** HTTP **:8013** decision API. | `tehuti-guard/` (lab) vs clone of GitHub for npm | See [`TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md) |
 
 ## Lab filesystem layout (canonical paths)
 
@@ -30,7 +30,7 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 | Port | Service |
 |------|---------|
 | **4242** | **maat-sentinel** HTTP API (live awareness, `GET /status/<machine_id>`, etc.) |
-| **8013** | **Tehuti Guard v1** decision API (`POST /decision`) — [`tehuti-guard/guard/`](../tehuti-guard/guard/) |
+| **8013** | **Tehuti Guard (Python decision API, lab)** decision API (`POST /decision`) — [`tehuti-guard/guard/`](../tehuti-guard/guard/) |
 | **8014** | Tehuti Core (brain / policy surface) |
 | **8022** | Maat Memory MCP |
 

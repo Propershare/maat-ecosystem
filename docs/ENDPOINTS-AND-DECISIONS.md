@@ -32,7 +32,7 @@
 
 ---
 
-## 3. Tehuti Guard v1 (Python) — `http://127.0.0.1:8013` default
+## 3. Tehuti Guard (Python decision API, lab) — `http://127.0.0.1:8013` default
 
 | Endpoint | Caller | Purpose | Required fields | Response shape | Rate limit | Auth | Failure / idempotency |
 |----------|--------|---------|-----------------|----------------|------------|------|------------------------|
@@ -104,7 +104,7 @@ See [`maat-sentinel/README.md`](../maat-sentinel/README.md).
 
 | Question | Answer today |
 |------------|----------------|
-| Dedicated “Guard registration” endpoint on OpenClaw? | **Not documented** as a first-class handshake. Gateway uses **workspace** config; see [`AGENTS.md`](../AGENTS.md). |
+| Dedicated “Guard registration” endpoint on OpenClaw? | **Not documented** as a first-class handshake. Gateway uses **workspace** config (repo-level: [`README.md`](../README.md); see also `docs/GITMAAT-CONNECT.md`). |
 | Gateway discovers Sentinel via Ka **8010** automatically for Guard? | **No** — Guard uses **`TEHUTI_GUARD_SENTINEL_URL`** (default `http://127.0.0.1:4242`). |
 | First tool call → policy load? | **maat-immune** loads rules from **code** and env; **no** automatic HTTP Guard call on first tool. |
 
