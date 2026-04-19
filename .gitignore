@@ -9,6 +9,7 @@ build/
 # Virtual environments
 .venv/
 venv/
+.venvs/
 
 # Generator scripts (not part of the ecosystem itself)
 generate*.py
@@ -41,6 +42,21 @@ Thumbs.db
 # Test artifacts
 /tmp_test_*
 *.db
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JS package trees (lockfiles stay tracked; see docs/PUSH-SAFETY.md)
+node_modules/
+.pnpm-store/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Regenerable ML/tooling caches
+unsloth_compiled_cache/
 
 # Tehuti corpora (see data/tehuti/README.txt)
 /data/tehuti/pdf-library/
@@ -64,8 +80,6 @@ Thumbs.db
 tehuti-lab-webui-venv/
 tehuti-lab-webui-venv.backup.*/
 
-# tehuti-guard (vendored in monorepo — no nested node_modules)
-tehuti-guard/node_modules/
-
-# Pre-migration nested-repo backups (bundles/tarballs; see docs/TEHUTI-GUARD-PRODUCTS.md)
-backups/tehuti-guard-pre-monorepo-*/
+# Machine-local backup trees at lab root (bundles, tarballs, snapshots)
+# Pre-migration nested-repo backups: TEHUTI-GUARD-PRODUCTS.md / MAAT-AUDIT-TEHUTI-GUARD-REPO-STRUCTURE.md
+/backups/
