@@ -1,0 +1,120 @@
+# MAAT Gateway Registry
+#
+# Canonical list of expert gateways. Adding a gateway = adding an entry here
+# (plus a retrieval pack, if any) — never a router-code edit, per
+# docs/MAAT-EVOLUTION-LANES.md.
+#
+# Each entry:
+#   id                          - stable identifier; matches OpenClaw preset id
+#   description                 - one-line description
+#   default_expert              - matches an EXPERTS[*].name in gemma4-toolshim/swarm/expert_config.py
+#   archivist_schema            - contract version produced by the gateway
+#   research_type_default       - one of maat.archivist_record.v1 research_type values
+#   level_of_analysis_default   - cell | group | institution | system
+#   model                       - Ollama / provider id used as starting point (may be swapped by Lane 5)
+#   retrieval_packs             - list of pack ids under data/retrieval_packs/
+#   tools                       - allowlist (Guard enforces; registry declares intent)
+#   preset_file                 - OpenClaw preset fragment, relative to lab root
+#   ka_discovery_organ          - optional organ name on Ka Discovery manifest
+#
+gateways:
+  - id: ka2-research
+    description: KA2-grounded research gateway (10-step method, Maat scorecard).
+    default_expert: scout
+    archivist_schema: maat.archivist_record.v1
+    research_type_default: historical
+    level_of_analysis_default: system
+    model: ollama/gemma4:e4b
+    retrieval_packs:
+      - ukmt-rbg
+    tools:
+      - read_file
+      - search_files
+      - grep
+      - glob
+      - query_gitmaat
+      - log_gitmaat_task
+      - log_gitmaat_change
+      - log_gitmaat_decision
+      - log_gitmaat_learning
+    preset_file: openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5
+    ka_discovery_organ: brain
+
+  - id: scout
+    description: Maat triad - Scout. Finds and gathers raw material.
+    default_expert: scout
+    archivist_schema: maat.archivist_record.v1
+    research_type_default: descriptive
+    level_of_analysis_default: institution
+    model: ollama/gemma4:e4b
+    retrieval_packs: []
+    tools:
+      - read_file
+      - read_multiple_files
+      - search_files
+      - list_directory
+      - grep
+      - glob
+      - query_gitmaat
+    preset_file: openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5
+    ka_discovery_organ: senses
+
+  - id: analyst
+    description: Maat triad - Analyst. Consumes scout output, produces judgment.
+    default_expert: analyst
+    archivist_schema: maat.archivist_record.v1
+    research_type_default: theoretical
+    level_of_analysis_default: system
+    model: ollama/gemma4:e4b
+    retrieval_packs: []
+    tools:
+      - read_file
+      - grep
+      - glob
+      - query_gitmaat
+      - run_python_code
+    preset_file: openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5
+    ka_discovery_organ: brain
+
+  - id: archivist
+    description: Maat triad - Archivist. Persists structured records to gitMaat.
+    default_expert: archivist
+    archivist_schema: maat.archivist_record.v1
+    research_type_default: descriptive
+    level_of_analysis_default: system
+    model: ollama/gemma4:e4b
+    retrieval_packs: []
+    tools:
+      - log_gitmaat_task
+      - log_gitmaat_change
+      - log_gitmaat_decision
+      - log_gitmaat_learning
+      - query_gitmaat
+      - read_file
+    preset_file: openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5
+    ka_discovery_organ: memory
+
+  - id: fl-trust-law
+    description: Florida Trust Law RAG - Active retrieval pack covering FL Statutes Ch. 731-736, court rules, and 30+ case law opinions.
+    status: active
+    promoted_at: 2026-05-09
+    guard_contract: workflows/domain/trust/fl-trust-law/contracts/guard-contract.yaml
+    default_expert: rag-expert
+    archivist_schema: maat.archivist_record.v1
+    research_type_default: applied
+    level_of_analysis_default: institution
+    model: ollama/gemma4:e4b
+    retrieval_packs:
+      - fl-trust-law
+    tools:
+      - query_gitmaat
+      - query_florida_trust_law
+      - read_file
+      - search_files
+      - read_multiple_files
+      - log_gitmaat_task
+      - log_gitmaat_change
+      - log_gitmaat_decision
+      - log_gitmaat_learning
+    preset_file: openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5
+    ka_discovery_organ: knowledge

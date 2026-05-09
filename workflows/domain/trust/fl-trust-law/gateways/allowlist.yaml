@@ -1,0 +1,27 @@
+# fl-trust-law gateway allowlist
+# Controls which tools/agents may access this pack
+pack_id: fl-trust-law
+status: active
+promoted_at: "2026-05-09T04:15:00Z"
+promoted_by: Imhotep
+
+allowed_tools:
+  - query_florida_trust_law
+  - query_gitmaat
+  - read
+  - search
+
+allowed_agents:
+  - tehuti-core
+  - scout
+  - analyst
+  - archivist
+
+blocked_tools:
+  - execute_command  # no shell access for legal queries
+  - log_gitmaat_change  # legal pack writes go through forge, not direct
+
+notes: |
+  Tehuti Guard three-ring governance not yet implemented.
+  Current scope check is heuristic in query_rag.py.
+  Pending: formal guard integration, Maatbench suite.
