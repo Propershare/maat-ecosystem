@@ -159,8 +159,11 @@ export function enforceLDAPPolicy(
  */
 export async function queryLDAPUserGroups(uid: string): Promise<string[]> {
   try {
-    // Dynamic import to avoid requiring ldapjs at module load time
-    const ldap = await import('ldapjs');
+    // Dynamic import to avoid requiring ldapjs at module load time.
+    // Indirection through a variable keeps ldapjs an OPTIONAL peer: TS does not
+    // statically resolve the module, so the lab helpers build without it installed.
+    const ldapModuleName = 'ldapjs';
+    const ldap: any = await import(ldapModuleName);
     
     // LDAP server configuration from environment
     const LDAP_HOST = process.env.LDAP_HOST || '127.0.0.1';
@@ -176,7 +179,7 @@ export async function queryLDAPUserGroups(uid: string): Promise<string[]> {
     
     return new Promise((resolve, reject) => {
       // Bind as admin
-      client.bind(LDAP_ADMIN, LDAP_PASSWORD, (err) => {
+      client.bind(LDAP_ADMIN, LDAP_PASSWORD, (err: any) => {
         if (err) {
           client.unbind();
           reject(new Error(`LDAP bind failed: ${err.message}`));
@@ -192,16 +195,16 @@ export async function queryLDAPUserGroups(uid: string): Promise<string[]> {
         
         const groups: string[] = [];
         
-        client.search(`ou=users,${LDAP_BASE}`, searchOptions, (err, res) => {
+        client.search(`ou=users,${LDAP_BASE}`, searchOptions, (err: any, res: any) => {
           if (err) {
             client.unbind();
             reject(new Error(`LDAP search failed: ${err.message}`));
             return;
           }
           
-          res.on('searchEntry', (entry) => {
+          res.on('searchEntry', (entry: any) => {
             // Extract groups from memberOf attribute
-            const memberOf = entry.attributes.find(attr => attr.type === 'memberOf');
+            const memberOf = entry.attributes.find((attr: any) => attr.type === 'memberOf');
             if (memberOf && memberOf.vals) {
               for (const groupDn of memberOf.vals) {
                 // Extract CN from DN (e.g., "cn=outer-ring,ou=groups,dc=tehuti,dc=lab" -> "outer-ring")
@@ -213,7 +216,7 @@ export async function queryLDAPUserGroups(uid: string): Promise<string[]> {
             }
             
             // Also check maatRole attribute
-            const maatRole = entry.attributes.find(attr => attr.type === 'maatRole');
+            const maatRole = entry.attributes.find((attr: any) => attr.type === 'maatRole');
             if (maatRole && maatRole.vals && maatRole.vals.length > 0) {
               // maatRole can be inner-ring, middle-ring, or outer-ring
               const role = maatRole.vals[0];
@@ -223,7 +226,7 @@ export async function queryLDAPUserGroups(uid: string): Promise<string[]> {
             }
           });
           
-          res.on('error', (err) => {
+          res.on('error', (err: any) => {
             client.unbind();
             reject(new Error(`LDAP search error: ${err.message}`));
           });
