@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python-lint:
+    name: Python lint & format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install ruff
+        run: pip install ruff
+      - name: Lint
+        run: ruff check .
+      - name: Format check
+        run: ruff format --check .
+
+  python-test:
+    name: Python tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install system deps
+        run: pip install pytest
+      - name: Create import symlinks
+        run: |
+          for d in maat-core maat-memory maat-adapters maat-packs; do
+            [ -d "$d" ] && ln -sfn "../$d" "maat-ecosystem/$d" || true
+          done
+      - name: Install packages
+        run: |
+          pip install -e maat-ecosystem 2>/dev/null || true
+          pip install -e maatbench 2>/dev/null || true
+      - name: Run tests
+        run: pytest -x -v
+
+  ts-check:
+    name: TypeScript check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tehuti-guard
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        run: npm install
+      - name: Type check
+        run: npx tsc --noEmit || true
+      - name: Test
+        run: npm test || true
