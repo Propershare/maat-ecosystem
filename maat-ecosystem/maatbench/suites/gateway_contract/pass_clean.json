@@ -1,0 +1,53 @@
+{
+  "$schema": "maat.maatbench_fixture.v1",
+  "id": "gateway_contract.pass_clean",
+  "origin": "docs/SCOUT-ANALYST-ARCHIVIST.md example",
+  "expected": "pass",
+  "record": {
+    "schema": "maat.archivist_record.v1",
+    "record_id": "gf-0001",
+    "correlation_id": "sess-gf:0001",
+    "created_at": "2026-04-16T14:00:00Z",
+    "agent_id": "cursor_staydangerous",
+    "gateway_id": "ka2-research",
+    "research_grade": true,
+    "tags": ["domain:kmt-scholarship", "confidence:high", "rbl:clean"],
+    "summary": "Clean research-grade record for the gateway contract suite.",
+    "sources": [
+      { "kind": "file", "ref": "data/tehuti/ukmt-rbg-dataset/ka2_agent_system_prompt.md", "line_start": 1, "line_end": 30 }
+    ],
+    "ka2": {
+      "research_type": "historical",
+      "problem": "How does KA2 preserve Kemetic epistemic authorship?",
+      "time_dimension": "Old Kingdom through 21st-century reception.",
+      "level_of_analysis": "system",
+      "life_cycle": {
+        "periods": ["Old Kingdom"],
+        "phases": ["institutional formation"],
+        "contradictions": ["indigenous vs colonial authorship"],
+        "transitions": ["Kemetic self-narration to colonial frame"]
+      },
+      "dialectical_findings": {
+        "law": "Authorship migrates with power.",
+        "contradiction": "Indigenous vs colonial authorship.",
+        "synthesis": "Return to primary sources."
+      },
+      "determination": "KWF"
+    },
+    "maat_scorecard": {
+      "schema": "maat.ka2_scorecard.v1",
+      "scores": { "truth": 9, "order": 8, "balance": 9, "justice": 9, "self_reflection": 8 },
+      "total": 43,
+      "pass_at": 40,
+      "passed": true,
+      "halt_flags": 0
+    },
+    "rbl_flags": [],
+    "forbidden_hits": [],
+    "gateway_state": {
+      "turn_index": 1,
+      "tools_used": ["query_gitmaat", "read_file"],
+      "latency_ms": 1820
+    }
+  }
+}

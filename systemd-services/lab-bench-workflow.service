@@ -1,0 +1,18 @@
+[Unit]
+Description=Tehuti Lab bench workflow (MaatBench + swarm + spine)
+Documentation=file:///home/suspect/.n8n/docs/LAB-BENCH-WORKFLOW.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=suspect
+Group=suspect
+WorkingDirectory=/home/suspect/.n8n
+EnvironmentFile=-/home/suspect/.n8n/.env
+ExecStart=/bin/bash /home/suspect/.n8n/scripts/run-lab-bench-workflow.sh
+StandardOutput=append:/home/suspect/.n8n/logs/lab-bench-workflow.log
+StandardError=append:/home/suspect/.n8n/logs/lab-bench-workflow.log
+
+[Install]
+WantedBy=multi-user.target

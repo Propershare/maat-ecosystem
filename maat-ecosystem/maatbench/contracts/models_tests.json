@@ -1,0 +1,19 @@
+{
+  "category": "models",
+  "status": "stub_unimplemented",
+  "description": "MaatBench `models` suite (spec MAATBENCH-v2 \u00a74): instruction fidelity, calibrated confidence, source humility, injection/insult resistance, tone translation, clean refusal, small-model usefulness \u2014 NOT 'prettiest essay'. Requires a running Ollama model, so it is NOT wired into run.py CATEGORIES yet (mirrors behavior_balance being model-gated).",
+  "note": "Seed scenarios + rubrics are authored and iterated in the Tehuti-Dataset repo during the v8 cycle, then migrated here once a runner+scorer is built. Scoring approach (deterministic-only vs hybrid LLM MAAT_JUDGE) is intentionally DEFERRED_UNTIL_V8 per the verification decision on 2026-06-03.",
+  "seed_source": {
+    "repo": "Tehuti-Dataset",
+    "path": "eval/maatbench_models_seed.json",
+    "lived_truth_basis": "eval/results/tehuti-scholar_v7_20260602_224155.json (real v7 failure modes: invented 'Zep-tepi Green God' deity, softened Maat-goddess correction, 83.8% safety leakage, 62.5% teaching depth)",
+    "principles_ref": "Tehuti-Dataset/MAAT_CONSTITUTION.md (10 principles)"
+  },
+  "axes": ["intelligence", "safety", "governance", "auditability"],
+  "migration": {
+    "target_dir": "maat-ecosystem/maatbench/suites/models/",
+    "runner_todo": "runners/model_runner.py \u2014 chat each scenario against an Ollama model, apply deterministic hard-fail gates, then (optional) MAAT_JUDGE per principle; emit score_category-compatible {passed, ...} results.",
+    "register_when_built": "Add 'models': ('models_tests.json', run_model_tests) to run.py CATEGORIES (guarded behind a --model flag, like behavior_balance)."
+  },
+  "tests": []
+}

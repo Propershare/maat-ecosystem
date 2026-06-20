@@ -148,7 +148,9 @@ def run_portability_tests(test_defs: list[dict]) -> list[dict]:
                 notes.append("Full export test — structure validated by other tests")
 
             elif op == "check_schema_field":
-                schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
+                schema_path = ECOSYSTEM / "skeleton" / "schemas" / test["schema"]
+                if not schema_path.is_file():
+                    schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
                 schema = json.loads(schema_path.read_text())
                 field = test["field"]
                 if field in schema.get("properties", {}):

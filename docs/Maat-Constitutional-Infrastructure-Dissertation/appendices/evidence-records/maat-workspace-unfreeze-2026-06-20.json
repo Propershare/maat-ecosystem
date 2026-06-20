@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "Maat Workspace Unfreeze",
+  "unfreeze_id": "unfreeze-2026-06-20-staydangerous",
+  "timestamp": "2026-06-20T14:54:47+00:00",
+  "supersedes_freeze": "freeze-2026-06-20-staydangerous",
+  "machine_id": "staydangerous",
+  "unfreeze_conditions_met": {
+    "maatbench_committed": "848e4c3",
+    "guard_live": true,
+    "sentinel_live": true,
+    "bench_rerun": true,
+    "canonical_evidence_record": "maatbench-evidence-record-2026-06-20-bench-20260620T145446Z-979972.json"
+  },
+  "evidence_at_unfreeze": {
+    "run_id": "bench-20260620T145446Z-979972",
+    "pytest_passed": 81,
+    "maatbench_passed": 68,
+    "maatbench_categories": 9,
+    "services_all_up": [
+      "8010",
+      "8014",
+      "8022",
+      "8013",
+      "4242",
+      "18790",
+      "8040",
+      "11434",
+      "5432"
+    ],
+    "optional_skipped": ["live_model_tier"],
+    "report_hash": "d09669b19656595dbe6aa04a31de3c471a4f932521ee5f7edc6cce197cf2a211",
+    "workflow_status": "ok"
+  },
+  "remaining_gaps": [
+    "triad_live category not yet implemented",
+    "reciprocity MaatBench category pending",
+    "LAB_BENCH_LIVE=0 on unfreeze run",
+    "MaatBench standalone repo cutover pending",
+    "ka-education display-only (last priority)"
+  ],
+  "audit_verdict": "unfrozen_operational",
+  "dissertation_line": "On 2026-06-20 after unfreeze, staydangerous passed 68/68 MaatBench contract tests and 81/81 swarm pytest tests with Guard (8013), Sentinel (4242), OpenClaw (18790), and MAAT Gateway (8040) all reachable; only live_model_tier intentionally skipped."
+}
