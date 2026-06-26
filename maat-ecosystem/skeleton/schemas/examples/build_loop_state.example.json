@@ -1,0 +1,39 @@
+{
+  "schema": "maat.build_loop_state.v1",
+  "record_id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+  "created_at": "2026-06-26T14:30:00Z",
+  "agent_id": "cursor_staydangerous",
+  "correlation_id": "loop-48h-001",
+  "phase": "watch_confusion",
+  "product_name": "daily-briefing-agent",
+  "artifacts": {
+    "repo_path": "scratch/daily-briefing",
+    "landing_page_url": "https://example.com/daily-briefing",
+    "demo_video_url": "https://example.com/demo.mp4"
+  },
+  "exposure": {
+    "audience_size": 120,
+    "channels": ["x", "discord"],
+    "clips_posted": 3,
+    "posts_made": 3,
+    "dms_sent": 2
+  },
+  "confusion_signals": [
+    {
+      "signal": "unclear value prop",
+      "source": "dm",
+      "verbatim": "Is this just another ChatGPT wrapper?"
+    },
+    {
+      "signal": "missing trust hook",
+      "source": "comment",
+      "verbatim": "How do I know it won't email my boss?"
+    }
+  ],
+  "story_revision": {
+    "before": "AI daily briefing from your calendar",
+    "after": "Governed local briefing agent — sources shown, approval before any send",
+    "rationale": "Confusion clustered on trust and send gates, not calendar features."
+  },
+  "tags": ["loop:48h", "phase:watch_confusion"]
+}

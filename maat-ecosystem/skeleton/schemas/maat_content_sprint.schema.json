@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:content_sprint:v1",
+  "title": "MAAT Content Sprint Contract",
+  "description": "Curator 7-day sprint: timeline chaos to POV to short-form content draft.",
+  "type": "object",
+  "required": [
+    "schema",
+    "record_id",
+    "created_at",
+    "agent_id",
+    "saw",
+    "most_people_think",
+    "i_think_it_means",
+    "heres_the_move"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.content_sprint.v1"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    },
+    "timeline_source": {
+      "type": "string",
+      "description": "What triggered the sprint (demo, launch, pricing change, etc.)."
+    },
+    "saw": {
+      "type": "string",
+      "description": "I saw this ..."
+    },
+    "most_people_think": {
+      "type": "string",
+      "description": "Most people think ..."
+    },
+    "i_think_it_means": {
+      "type": "string",
+      "description": "I think it means ..."
+    },
+    "heres_the_move": {
+      "type": "string",
+      "description": "Here is the move ..."
+    },
+    "draft_clip": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hook": { "type": "string" },
+        "body": { "type": "string" },
+        "cta": { "type": "string" },
+        "duration_seconds": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "external_publish": {
+      "type": "boolean",
+      "default": false,
+      "description": "True only after explicit human approval."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

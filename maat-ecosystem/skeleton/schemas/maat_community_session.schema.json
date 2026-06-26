@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:community_session:v1",
+  "title": "MAAT Community Session Contract",
+  "description": "IRL community session: small room, sharp question, structured recap.",
+  "type": "object",
+  "required": [
+    "schema",
+    "record_id",
+    "created_at",
+    "agent_id",
+    "sharp_question",
+    "recap"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.community_session.v1"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "attendee_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "attendees": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional names or roles; keep minimal for privacy."
+    },
+    "sharp_question": {
+      "type": "string",
+      "description": "The one question the room explored."
+    },
+    "recap": {
+      "type": "object",
+      "required": ["best_ideas", "follow_up"],
+      "additionalProperties": false,
+      "properties": {
+        "best_ideas": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "best_quotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "follow_up": {
+          "type": "string",
+          "description": "One concrete follow-up action."
+        }
+      }
+    },
+    "external_send": {
+      "type": "boolean",
+      "default": false,
+      "description": "True only after explicit human approval to send recap."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
