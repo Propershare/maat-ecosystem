@@ -1,9 +1,20 @@
 # FVG Edge Scan — 2026-06-29
-timestamp: 2026-06-29T14:56:33.905324+00:00
+timestamp: 2026-06-29T20:15:32.751659+00:00
 source: fvg-edge-pipeline
 
-No setups found in latest scan.
+Setups found: 15
 
-Alpaca Account: $80,879.95 equity | $300,488.85 BP | $92,395.41 cash | PnL: $+0.00
+- 🐂 VTI: bullish @ $367.12 (yard +0.50%) sweep=✅ retest=6x target=$368.19
+- 🐂 XLY: bullish @ $117.10 (yard +0.91%) sweep=✅ retest=4x target=$118.34
+- 🐂 MA: bullish @ $509.64 (yard +0.70%) sweep=✅ retest=2x target=$520.89
+- 🐻 XLB: bearish @ $50.66 (yard -0.74%) sweep=✅ retest=2x target=$47.92
+- 🐂 QQQ: bullish @ $724.03 (yard +0.78%) sweep=✅ retest=1x target=$734.39
+- 🐂 SPY: bullish @ $740.85 (yard +0.43%) sweep=✅ retest=1x target=$743.13
+- 🐂 AMZN: bullish @ $240.12 (yard +1.60%) sweep=✅ retest=1x target=$261.00
+- 🐂 TSLA: bullish @ $411.79 (yard +3.63%) sweep=✅ retest=1x target=$434.04
+- 🐂 VOO: bullish @ $680.96 (yard +0.43%) sweep=✅ retest=0x target=$685.00
+- 🐂 NQ=F: bullish @ $30024.25 (yard +0.39%) sweep=✅ retest=0x target=$30077.50
+
+Alpaca Account: $80,452.63 equity | $297,924.96 BP | $92,395.41 cash | PnL: $+0.00
 Open positions: 1
-  TSLA: short -29 @ $410.37 → $397.12 (PnL: $+384.25)
+  TSLA: short -29 @ $410.37 → $411.82 (PnL: $-42.05)
