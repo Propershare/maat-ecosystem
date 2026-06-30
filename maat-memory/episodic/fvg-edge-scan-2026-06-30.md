@@ -1,5 +1,5 @@
 # FVG Edge Scan — 2026-06-30
-timestamp: 2026-06-30T13:15:40.521975+00:00
+timestamp: 2026-06-30T14:04:08.595737+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
@@ -15,6 +15,4 @@ Setups found: 15
 - 🐂 TSLA: bullish @ $411.79 (yard +3.63%) sweep=✅ retest=1x target=$434.04
 - 🐂 VOO: bullish @ $680.96 (yard +0.43%) sweep=✅ retest=0x target=$685.00
 
-Alpaca Account: $80,610.97 equity | $298,875.00 BP | $92,395.41 cash | PnL: $+0.00
-Open positions: 1
-  TSLA: short -29 @ $410.37 → $406.36 (PnL: $+116.29)
+Alpaca Account: $80,529.16 equity | $322,116.64 BP | $80,529.16 cash | PnL: $+0.00
