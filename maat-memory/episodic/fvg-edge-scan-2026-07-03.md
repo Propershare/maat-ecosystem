@@ -1,5 +1,5 @@
 # FVG Edge Scan — 2026-07-03
-timestamp: 2026-07-03T04:51:41.738300+00:00
+timestamp: 2026-07-03T08:55:02.600286+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
@@ -15,6 +15,6 @@ Setups found: 15
 - 🐂 PLTR: bullish @ $129.15 (yard +0.36%) sweep=✅ retest=1x target=$140.71
 - 🐂 LOW: bullish @ $227.34 (yard +1.45%) sweep=✅ retest=2x target=$230.51
 
-Alpaca Account: $80,835.23 equity | $308,891.82 BP | $92,876.15 cash | PnL: $+0.00
+Alpaca Account: $80,835.20 equity | $308,891.70 BP | $92,876.12 cash | PnL: $+0.00
 Open positions: 1
   JPM: short -36 @ $334.69 → $334.47 (PnL: $+7.78)
