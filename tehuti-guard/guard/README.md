@@ -34,6 +34,7 @@ pip install -e .
 | GET | `/rules` | Machine-readable rule catalog (aligned with `evaluate()`; for operators / Studio) |
 | POST | `/decision` | JSON decision envelope |
 | POST | `/explain` | Same body as `/decision`; returns `explanation_id` (deterministic `sha256:…`), `decision`, `reason`, `matched_rules`, `severity`, `tags` (plus `policy_version`) |
+| POST | `/compile-decision` | v2 MVP: compile raw model/action output into a covenant record, then enforce the resulting decision |
 
 ### POST `/decision` body
 
@@ -49,7 +50,7 @@ pip install -e .
 }
 ```
 
-`risk`: `low` | `medium` | `high` | `protected`  
+`risk`: `low` | `medium` | `high` | `protected`
 `kind`: e.g. `read`, `write`, `execute`, `deploy`, `delete`
 
 ### Response
@@ -70,6 +71,35 @@ pip install -e .
 ```
 
 `matched_rules` and `explanation_id` match **`POST /explain`** (same `compute_explanation_id` as explain), so Forge and memory can correlate without calling `/explain` at runtime.
+
+### POST `/compile-decision` body
+
+`/compile-decision` accepts the normal `/decision` envelope plus raw model
+output or a candidate covenant record:
+
+```json
+{
+  "machine_id": "staydangerous",
+  "actor": { "id": "cursor_staydangerous", "role": "agent" },
+  "action": {
+    "kind": "execute",
+    "resource": "rm -rf /",
+    "risk": "high",
+    "metadata": { "category": "action_discernment" }
+  },
+  "raw_model_output": "{\"decision\":\"allow\",\"reason\":\"User asked.\"}"
+}
+```
+
+Response includes the normal Guard decision fields plus:
+
+- `compiler_result` — full MaatBench compiler payload
+- `evidence.compiler_enforced` — enforced covenant record used for action gating
+- `evidence.repairs`, `evidence.interventions`, `evidence.repair_burden_score`
+- `evidence.human_review_required`, `evidence.review_reason`
+
+This endpoint is the v2 vertical slice: model drafts, compiler governs record,
+Guard enforces action.
 
 ### POST `/explain` body
 
@@ -112,11 +142,30 @@ python3 scripts/guard_adapter_e2e_demo.py
 
 Expected: HTTP **200**, JSON with **`decision`**, **`correlation_id`** echoed, and a line appended to **`logs/guard_adapter_e2e.jsonl`** with the same **`correlation_id`** plus **`enforce.simulated_action_executed`** (true only when **`decision`** is **`allow`**). Dry-run envelope only: `python3 scripts/guard_adapter_e2e_demo.py --dry-run`.
 
+### MAAT Runtime Guard v2 demo
+
+From the lab root:
+
+```bash
+python3 scripts/maat_runtime_guard_v2_demo.py
+```
+
+This local demo does not require a running HTTP server. It compiles fixed raw
+model/action drafts, maps them through Guard v2 enforcement rules, and appends
+joinable evidence to `logs/maat_runtime_guard_v2_demo.jsonl`.
+
+To call a live Guard API instead:
+
+```bash
+python3 scripts/maat_runtime_guard_v2_demo.py --http --guard-url http://127.0.0.1:8013
+```
+
 ## Known limitations
 
 - **Sentinel optional for smoke:** If **`GET /status/<machine_id>`** fails, Guard still answers but may return **`review`** / sentinel-unreachable rules— the demo may not show **`allow`** until Sentinel is healthy for that `machine_id`.
 - **PostgreSQL governance rows** (`TEHUTI_GUARD_MEMORY=1`) are optional; the reference adapter proof uses **file JSONL** join first.
 - **ThreadingHTTPServer** handler has no built-in request timeout—clients should set their own (the lab demo script uses a 15s read timeout).
+- **MaatBench compiler path:** `/compile-decision` imports the local MaatBench build from `/mnt/ai_models/maatbench` in this lab. Package this dependency before treating v2 as a portable release.
 
 ## Doctrine
 

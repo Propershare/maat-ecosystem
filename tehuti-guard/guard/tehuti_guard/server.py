@@ -1,3 +1,4 @@
+# flake8: noqa: E501
 """Minimal HTTP: POST /decision, POST /explain, GET /health, …"""
 
 from __future__ import annotations
@@ -9,10 +10,16 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from typing import Any
 
 from tehuti_guard import POLICY_VERSION, __version__
+from tehuti_guard.covenant_adapter import compile_request
+from tehuti_guard.memory_sink import (
+    log_compile_decision_row,
+    log_guard_decision_row,
+    log_guard_explanation_row,
+)
 from tehuti_guard.models import DecisionRequest
-from tehuti_guard.memory_sink import log_guard_decision_row, log_guard_explanation_row
 from tehuti_guard.rules import (
     compute_explanation_id,
+    evaluate_compiler_with_rules,
     evaluate_with_rules,
     explain_envelope,
     policy_rules_document,
@@ -61,7 +68,7 @@ class GuardHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         path = self.path.split("?", 1)[0].rstrip("/") or "/"
-        if path not in ("/decision", "/explain"):
+        if path not in ("/decision", "/explain", "/compile-decision"):
             _json(self, 404, {"error": "not_found"})
             return
         data = _read_json(self)
@@ -70,9 +77,7 @@ class GuardHandler(BaseHTTPRequestHandler):
             return
         cid = (data.get("correlation_id") or "").strip() or None
         if not cid:
-            hdr = self.headers.get("X-Correlation-ID") or self.headers.get(
-                "x-correlation-id"
-            )
+            hdr = self.headers.get("X-Correlation-ID") or self.headers.get("x-correlation-id")
             if hdr:
                 cid = hdr.strip()
         if not cid:
@@ -85,6 +90,46 @@ class GuardHandler(BaseHTTPRequestHandler):
             return
 
         view = fetch_unified_view(req.machine_id)
+        if path == "/compile-decision":
+            try:
+                compiler_result = compile_request(req)
+            except Exception as e:
+                _json(
+                    self,
+                    500,
+                    {
+                        "error": "compile_failed",
+                        "message": str(e),
+                        "correlation_id": cid,
+                        "policy_version": POLICY_VERSION,
+                    },
+                )
+                return
+            result, matched_rules = evaluate_compiler_with_rules(
+                req,
+                view,
+                compiler_result,
+            )
+            explanation_id = compute_explanation_id(req, matched_rules)
+            out = {
+                **result.to_dict(),
+                "matched_rules": matched_rules,
+                "explanation_id": explanation_id,
+                "policy_version": POLICY_VERSION,
+                "sentinel_url": default_sentinel_base(),
+                "correlation_id": cid,
+                "compiler_result": compiler_result,
+            }
+            if os.environ.get("TEHUTI_GUARD_INCLUDE_SENTINEL_VIEW", "").lower() in (
+                "1",
+                "true",
+                "yes",
+            ):
+                out["sentinel_view"] = view
+            log_compile_decision_row(data, out)
+            _json(self, 200, out)
+            return
+
         if path == "/explain":
             out: dict[str, Any] = {
                 **explain_envelope(req, view),
@@ -134,7 +179,8 @@ def run_server(host: str, port: int) -> None:
     import sys
 
     print(
-        f"tehuti-guard-api http://{host}:{port}  POST /decision /explain  "
+        f"tehuti-guard-api http://{host}:{port}  "
+        f"POST /decision /explain /compile-decision  "
         f"GET /health /policy-version /rules",
         file=sys.stderr,
     )

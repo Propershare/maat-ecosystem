@@ -7,6 +7,9 @@ This artifact defines how Tehuti Guard should evolve after the MaatBench
 decision doctrine should be rebuilt around MAAT Runtime covenant records and
 MaatBench validation.
 
+**MVP status:** initial vertical slice implemented in the lab Python Guard API
+as `POST /compile-decision`, backed by the local MaatBench covenant compiler.
+
 The short version:
 
 > The fork proves tools can be intercepted. MaatBench defines what must happen
@@ -74,6 +77,17 @@ Evidence record is preserved with correlation_id
 ```
 
 MAAT Runtime owns record compilation. Tehuti Guard owns action enforcement.
+
+The first implementation keeps both roles inside the Python Guard process for a
+repeatable lab proof:
+
+- `tehuti_guard.covenant_adapter.compile_request()` imports the local
+  MaatBench compiler and builds the governed record.
+- `tehuti_guard.rules.evaluate_compiler_with_rules()` maps compiler evidence to
+  `allow`, `review`, or `deny`.
+- `POST /compile-decision` exposes the combined compile/enforce surface.
+- `scripts/maat_runtime_guard_v2_demo.py` proves the loop without requiring a
+  live model.
 
 ## Covenant Record Schema
 
@@ -170,14 +184,19 @@ Tehuti Guard v2 should be validated against MaatBench-style gates:
 
 ## Migration Plan
 
-1. Freeze this v2 doctrine as product spec.
+1. Freeze this v2 doctrine as product spec. **Done.**
 2. Keep v1 Guard scaffolding for MCP interception and HTTP decision envelopes.
+   **Done for the Python API.**
 3. Add a MAAT Runtime adapter that submits raw model/action context for covenant
-   compilation.
-4. Add covenant-record enforcement to the Guard decision path.
-5. Preserve v1 deterministic blocks as pre-checks and hard denies.
-6. Add evidence logging with `correlation_id` joins.
-7. Run MaatBench smoke gates before claiming v2 readiness.
+   compilation. **Done as `covenant_adapter.py`.**
+4. Add covenant-record enforcement to the Guard decision path. **Done for
+   `POST /compile-decision`.**
+5. Preserve v1 deterministic blocks as pre-checks and hard denies. **In
+   progress; v1 `/decision` remains unchanged.**
+6. Add evidence logging with `correlation_id` joins. **Done for optional
+   gitMaat governance rows.**
+7. Run MaatBench smoke gates before claiming v2 readiness. **Available through
+   unit tests and `scripts/maat_runtime_guard_v2_demo.py`.**
 8. Only then package the standalone npm MCP proxy or Python decision API as a
    v2 product.
 

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import sys
 
 from tehuti_guard import __version__
 from tehuti_guard.server import default_port, run_server

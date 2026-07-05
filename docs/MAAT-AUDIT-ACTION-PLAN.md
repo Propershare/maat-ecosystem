@@ -77,18 +77,19 @@
 
 ## Final state target
 
-- One repo truth (`maat-ecosystem/` + honest legacy note)  
-- One entry path (root README)  
-- One decision vocabulary (wire terms)  
-- One working runtime path (**reference:** `scripts/guard_adapter_e2e_demo.py` + [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md))  
-- One real user test (pending)  
+- One repo truth (`maat-ecosystem/` + honest legacy note)
+- One entry path (root README)
+- One decision vocabulary (wire terms)
+- One working runtime path (**reference:** `scripts/guard_adapter_e2e_demo.py` + [`RUNTIME-HOOKUP.md`](RUNTIME-HOOKUP.md))
+- One real user test (pending)
 
 ---
 
 ## Related
 
-- [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md)  
-- [`TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md`](TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md)  
+- [`MAAT-WORKSPACE-AUDIT-2026-07-04.md`](MAAT-WORKSPACE-AUDIT-2026-07-04.md) — full workspace audit (research, runtime, Guard v2, risks)
+- [`MAAT-PRODUCT-MAP.md`](MAAT-PRODUCT-MAP.md)
+- [`TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md`](TEHUTI-SENTINEL-GUARD-ADAPTER-CONTRACT.md)
 
 ### Guard structure reference
 
