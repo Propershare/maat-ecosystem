@@ -19,7 +19,12 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-GUARD_SRC = ROOT / "tehuti-guard" / "guard"
+_guard_root = os.environ.get("TEHUTI_GUARD_ROOT", "").strip()
+if _guard_root:
+    GUARD_SRC = Path(_guard_root) / "packages" / "decision-api"
+else:
+    # Legacy embedded lab path (deprecated — set TEHUTI_GUARD_ROOT)
+    GUARD_SRC = ROOT / "tehuti-guard" / "guard"
 if str(GUARD_SRC) not in sys.path:
     sys.path.insert(0, str(GUARD_SRC))
 

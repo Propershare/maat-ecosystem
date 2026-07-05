@@ -8,6 +8,7 @@ enforcement.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -15,18 +16,50 @@ from typing import Any
 from tehuti_guard.models import DecisionRequest
 
 
+def _maatbench_candidates() -> list[Path]:
+    """Resolve MaatBench install locations for covenant compilation."""
+    out: list[Path] = []
+    env = os.environ.get("MAATBENCH_PATH", "").strip()
+    if env:
+        out.append(Path(env))
+    ws = os.environ.get("MAAT_WORKSPACE_ROOT", "").strip()
+    if ws:
+        root = Path(ws)
+        out.extend(
+            [
+                root / ".." / "ai_models" / "maatbench",
+                root / "maat-ecosystem" / "maatbench",
+            ]
+        )
+    out.extend(
+        [
+            Path("/mnt/ai_models/maatbench"),
+            Path(__file__).resolve().parents[4] / "maatbench",
+        ]
+    )
+    seen: set[str] = set()
+    unique: list[Path] = []
+    for candidate in out:
+        key = str(candidate.resolve()) if candidate.exists() else str(candidate)
+        if key not in seen:
+            seen.add(key)
+            unique.append(candidate)
+    return unique
+
+
 def _ensure_maatbench_path() -> None:
-    """Make the local MaatBench build importable in the lab workspace."""
-    candidates = [
-        Path("/mnt/ai_models/maatbench"),
-        Path(__file__).resolve().parents[4] / "maatbench",
-    ]
-    for candidate in candidates:
+    """Make the MaatBench covenant compiler importable."""
+    for candidate in _maatbench_candidates():
         if (candidate / "maatbench" / "covenant_compiler.py").is_file():
-            raw = str(candidate)
+            raw = str(candidate.resolve())
             if raw not in sys.path:
                 sys.path.insert(0, raw)
             return
+    tried = ", ".join(str(p) for p in _maatbench_candidates())
+    raise RuntimeError(
+        "MaatBench covenant compiler not found. Set MAATBENCH_PATH to the "
+        f"directory containing maatbench/covenant_compiler.py. Tried: {tried}"
+    )
 
 
 def _raw_payload(req: DecisionRequest) -> str:
