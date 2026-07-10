@@ -1,0 +1,30 @@
+{
+  "category": "gateway_policy",
+  "description": "Lived-truth Guard round-trip. Each test points at a guard_cases/ file at the lab root and asserts the shim-level guard_validator (gemma4-toolshim/swarm/guard_validator.py) can round-trip the case without crashing, and that the resulting decision is one of {allow, review, deny}. Full semantic policy enforcement (e.g. retrieval-source allowlisting) is the Tehuti Guard HTTP service's job and is covered by guard_cases/ tests inside tehuti-guard/.",
+  "tests": [
+    {
+      "id": "gateway.policy.retrieval_001",
+      "name": "Retrieval on unverified collection - round-trips",
+      "guard_case": "guard_case_retrieval_001.json",
+      "expected_bucket": "any"
+    },
+    {
+      "id": "gateway.policy.retrieval_002",
+      "name": "Retrieval case 2 traces to guard_cases",
+      "guard_case": "guard_case_retrieval_002.json",
+      "expected_bucket": "any"
+    },
+    {
+      "id": "gateway.policy.shell_execution_001",
+      "name": "Shell execution case 1",
+      "guard_case": "guard_case_shell_execution_001.json",
+      "expected_bucket": "any"
+    },
+    {
+      "id": "gateway.policy.memory_write_001",
+      "name": "Memory write case 1",
+      "guard_case": "guard_case_memory_write_001.json",
+      "expected_bucket": "any"
+    }
+  ]
+}

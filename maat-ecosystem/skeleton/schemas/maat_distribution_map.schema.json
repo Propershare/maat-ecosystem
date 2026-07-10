@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:distribution_map:v1",
+  "title": "MAAT Distribution Map Contract",
+  "description": "Pre-build distribution map: where attention lives, buyer language, pain sentence, and hooks. Used by maat-runtime compounding-stack skills.",
+  "type": "object",
+  "required": [
+    "schema",
+    "record_id",
+    "created_at",
+    "agent_id",
+    "niche",
+    "attention_pools",
+    "buyer_words",
+    "pain_sentence",
+    "hooks"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.distribution_map.v1"
+    },
+    "record_id": {
+      "type": "string",
+      "description": "UUID or monotonic id unique to this record."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Agent that produced the map, e.g. cursor_staydangerous."
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Optional session or loop correlation id."
+    },
+    "niche": {
+      "type": "string",
+      "description": "Target niche or audience segment."
+    },
+    "attention_pools": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "kind": {
+            "type": "string",
+            "enum": ["newsletter", "creator", "community", "search_term", "other"]
+          },
+          "url": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "buyer_words": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "Language stolen from the market."
+    },
+    "pain_sentence": {
+      "type": "string",
+      "description": "I know I should ... but I never ..."
+    },
+    "hooks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["angle", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "angle": {
+            "type": "string",
+            "enum": ["curiosity", "fear", "status", "money", "other"]
+          },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

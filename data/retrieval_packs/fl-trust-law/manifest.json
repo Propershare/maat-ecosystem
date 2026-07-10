@@ -1,0 +1,45 @@
+{
+  "schema": "maat.retrieval_pack.v1",
+  "id": "fl-trust-law",
+  "version": "0.1.0",
+  "description": "Florida trust law corpus - public case law, statutes, and procedural rules. Active retrieval pack.",
+  "owner": "tehuti-lab",
+  "research_type_default": "applied",
+  "level_of_analysis_default": "institution",
+  "license": "Public domain (US federal / state case law, statutes, court rules). Secondary commentary in documents/ may carry separate rights; treat as reference-only.",
+  "content_warnings": [
+    "Legal material is jurisdictionally narrow (Florida). Do not generalize to other states.",
+    "Agents must not issue legal advice. This pack supports research and citation only."
+  ],
+  "source": {
+    "type": "folder_or_rar",
+    "path": "Legal_AI_FL.rar",
+    "folder_path": "Legal_AI_FL",
+    "relative_to": "lab_root",
+    "install": "scripts/install.sh",
+    "notes": "install.sh prefers lab-root folder Legal_AI_FL/ when law_data_clean exists; else extracts path (Legal_AI_FL.rar)."
+  },
+  "layout": {
+    "documents_root": "documents",
+    "primary_collection": "documents/law_data_clean",
+    "subcollections": {
+      "cases": "documents/law_data_clean/fl_cases",
+      "statutes": "documents/law_data_clean/fl_statutes",
+      "rules": "documents/law_data_clean/fl_rules"
+    }
+  },
+  "aggregate_sha256": "aa9dd4e90ce1576e00ececb6c58ce9d545c2048f9917d791fd428ed73770f2f7",
+  "bound_gateways": [
+    "fl-trust-law"
+  ],
+  "rbl_flags_on_scope_drift": true,
+  "notes": "Scope drift = queries that are not about Florida trust/probate law. The bound gateway's Archivist role should emit an RBL flag in that case. Promoted to active 2026-05-09. Guard contract at workflows/domain/trust/fl-trust-law/contracts/guard-contract.yaml.",
+  "index_built": true,
+  "embedding_model": "nomic-embed-text",
+  "num_chunks": 2462,
+  "embedding_dim": 768,
+  "last_built": "2026-05-07T15:05:57.858029",
+  "status": "active",
+  "promoted_at": "2026-05-09T04:15:00Z",
+  "promoted_by": "Imhotep"
+}

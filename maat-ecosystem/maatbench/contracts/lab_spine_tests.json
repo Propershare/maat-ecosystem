@@ -1,0 +1,70 @@
+{
+  "category": "lab_spine",
+  "description": "Multi-agent lab spine: OpenClaw, MAAT Gateway, Hermes skills, registry triad",
+  "tests": [
+    {
+      "id": "spine.agents_md",
+      "name": "Lab AGENTS.md exists at workspace root",
+      "operation": "file_exists",
+      "path": "AGENTS.md"
+    },
+    {
+      "id": "spine.gateway_registry",
+      "name": "Gateway registry declares scout, analyst, archivist",
+      "operation": "registry_gateways",
+      "registry": "maat-ecosystem/skeleton/gateways/registry.yaml",
+      "gateway_ids": ["scout", "analyst", "archivist", "ka2-research"]
+    },
+    {
+      "id": "spine.expert_triad",
+      "name": "Swarm expert_config defines scout, analyst, archivist roles",
+      "operation": "expert_roles",
+      "roles": ["scout", "analyst", "archivist"]
+    },
+    {
+      "id": "spine.openclaw_config",
+      "name": "OpenClaw config workspace points at lab root",
+      "operation": "openclaw_workspace",
+      "optional": true
+    },
+    {
+      "id": "spine.openclaw_gateway",
+      "name": "OpenClaw gateway HTTP reachable",
+      "operation": "http_health",
+      "url": "http://127.0.0.1:18790/",
+      "optional": true
+    },
+    {
+      "id": "spine.maat_gateway",
+      "name": "MAAT Gateway HTTP /health reachable",
+      "operation": "http_health",
+      "url": "http://127.0.0.1:8040/health",
+      "optional": true
+    },
+    {
+      "id": "spine.ka_discovery",
+      "name": "Ka discovery manifest reachable",
+      "operation": "http_health",
+      "url": "http://127.0.0.1:8010/manifest",
+      "optional": true
+    },
+    {
+      "id": "spine.hermes_skills",
+      "name": "Hermes research skills tree present",
+      "operation": "hermes_skills",
+      "optional": true
+    },
+    {
+      "id": "spine.agent_skills_symlink",
+      "name": "Lab agent-skills directory exists",
+      "operation": "file_exists",
+      "path": "agent-skills/skills"
+    },
+    {
+      "id": "spine.openclaw_preset_ka2",
+      "name": "KA2 research OpenClaw preset present",
+      "operation": "file_exists",
+      "path": "openclaw/presets/ka2-research/openclaw.agents.ka2-research.json5"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "maat.maatbench_fixture.v1",
+  "id": "gateway_contract.fail_missing_ka2",
+  "origin": "synthesized from observed regression on research-grade turns lacking KA2 header",
+  "expected": "fail",
+  "expected_errors_contain": ["research_grade=true requires ka2 header"],
+  "record": {
+    "schema": "maat.archivist_record.v1",
+    "record_id": "gf-0002",
+    "correlation_id": "sess-gf:0002",
+    "created_at": "2026-04-16T14:05:00Z",
+    "agent_id": "cursor_staydangerous",
+    "gateway_id": "ka2-research",
+    "research_grade": true,
+    "tags": ["domain:x"],
+    "summary": "Research-grade turn, but method header missing.",
+    "sources": [{ "kind": "file", "ref": "/tmp/x.md" }],
+    "rbl_flags": [],
+    "forbidden_hits": []
+  }
+}

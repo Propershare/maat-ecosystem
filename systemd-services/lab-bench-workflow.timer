@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Tehuti Lab bench workflow
+Requires=lab-bench-workflow.service
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

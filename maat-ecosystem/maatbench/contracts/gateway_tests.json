@@ -1,0 +1,32 @@
+{
+  "category": "gateway_contract",
+  "description": "Validate archivist records against maat.archivist_record.v1 + KA2 Maat scorecard contract. Fixtures live under ../suites/gateway_contract/.",
+  "fixture_dir": "gateway_contract",
+  "tests": [
+    {
+      "id": "gateway.contract.pass_clean",
+      "name": "Clean research-grade record validates",
+      "fixture": "pass_clean.json"
+    },
+    {
+      "id": "gateway.contract.fail_missing_ka2",
+      "name": "Research-grade record without ka2 header fails with named error",
+      "fixture": "fail_missing_ka2.json"
+    },
+    {
+      "id": "gateway.contract.fail_scorecard_math",
+      "name": "Scorecard self-math mismatch is caught",
+      "fixture": "fail_scorecard_math.json"
+    },
+    {
+      "id": "gateway.contract.fail_pass_at_sabotage",
+      "name": "pass_at below constitutional 40 is rejected",
+      "fixture": "fail_pass_at_sabotage.json"
+    },
+    {
+      "id": "gateway.contract.pass_fl_pack",
+      "name": "fl-trust-law gateway turn citing pack-scoped FL case law validates",
+      "fixture": "pass_fl_pack.json"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "maat.maatbench_fixture.v1",
+  "id": "gateway_contract.fail_pass_at_sabotage",
+  "origin": "red-team fixture - attempt to lower pass_at at runtime",
+  "expected": "fail",
+  "expected_errors_contain": ["pass_at is sacred"],
+  "record": {
+    "schema": "maat.archivist_record.v1",
+    "record_id": "gf-0004",
+    "correlation_id": "sess-gf:0004",
+    "created_at": "2026-04-16T14:12:00Z",
+    "agent_id": "cursor_staydangerous",
+    "gateway_id": "ka2-research",
+    "research_grade": true,
+    "tags": ["domain:x"],
+    "summary": "Attempted to relax pass_at.",
+    "sources": [{ "kind": "file", "ref": "/tmp/x.md" }],
+    "ka2": {
+      "research_type": "historical",
+      "problem": "x",
+      "time_dimension": "y",
+      "level_of_analysis": "system",
+      "life_cycle": {"contradictions": ["a"]}
+    },
+    "maat_scorecard": {
+      "schema": "maat.ka2_scorecard.v1",
+      "scores": { "truth": 6, "order": 6, "balance": 6, "justice": 6, "self_reflection": 6 },
+      "total": 30,
+      "pass_at": 25,
+      "passed": true,
+      "halt_flags": 0
+    },
+    "rbl_flags": [],
+    "forbidden_hits": []
+  }
+}

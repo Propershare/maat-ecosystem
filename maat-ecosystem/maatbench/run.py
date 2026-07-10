@@ -15,11 +15,15 @@ import json
 import argparse
 from pathlib import Path
 
-# Ensure ecosystem is importable
+# Ensure ecosystem + lab packages are importable
 BENCH_DIR = Path(__file__).resolve().parent
 ECOSYSTEM = BENCH_DIR.parent
 sys.path.insert(0, str(ECOSYSTEM))
 sys.path.insert(0, str(BENCH_DIR.parent))
+
+from maatbench.bootstrap import bootstrap
+
+bootstrap()
 
 from maatbench.scorers.scorer import score_category, score_overall
 from maatbench.reports.reporter import generate_text_report, generate_json_report, save_report
@@ -56,6 +60,18 @@ def _runner_for(category: str):
         from maatbench.runners.learning_runner import run_learning_tests
 
         return run_learning_tests
+    if category == "gateway_contract":
+        from maatbench.runners.gateway_runner import run_gateway_contract_tests
+
+        return run_gateway_contract_tests
+    if category == "gateway_policy":
+        from maatbench.runners.gateway_runner import run_gateway_policy_tests
+
+        return run_gateway_policy_tests
+    if category == "lab_spine":
+        from maatbench.runners.lab_spine_runner import run_lab_spine_tests
+
+        return run_lab_spine_tests
     raise ValueError(f"unknown category: {category}")
 
 
@@ -66,6 +82,9 @@ CATEGORIES = {
     "event_fidelity": "event_tests.json",
     "portability": "portability_tests.json",
     "learning_safety": "learning_tests.json",
+    "gateway_contract": "gateway_tests.json",
+    "gateway_policy": "gateway_policy_tests.json",
+    "lab_spine": "lab_spine_tests.json",
     # behavior_balance requires a running model — skip by default
 }
 

@@ -1,0 +1,63 @@
+name: tehuti-guard-ci
+
+# Connects Tehuti Guard to the repo for testing: every PR / push that touches
+# tehuti-guard/ builds and tests BOTH halves (Python decision API + TS helpers).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tehuti-guard/**"
+      - ".github/workflows/tehuti-guard-ci.yml"
+  pull_request:
+    paths:
+      - "tehuti-guard/**"
+      - ".github/workflows/tehuti-guard-ci.yml"
+  workflow_dispatch: {}
+
+jobs:
+  python-decision-api:
+    name: Python decision API (guard/)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install (editable)
+        working-directory: tehuti-guard/guard
+        run: python -m pip install -e .
+      - name: Rule unit tests (no network)
+        working-directory: tehuti-guard/guard
+        run: PYTHONPATH="$PWD" python -m unittest discover -s tests -v
+      - name: Import + CLI smoke
+        working-directory: tehuti-guard/guard
+        run: |
+          PYTHONPATH="$PWD" python -c "import tehuti_guard.server, tehuti_guard.cli; print('guard import OK', tehuti_guard.__version__)"
+          tehuti-guard-serve --version
+
+  ts-lab-helpers:
+    name: TS lab helpers (src/)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          cache-dependency-path: tehuti-guard/pnpm-lock.yaml
+      - name: Install
+        working-directory: tehuti-guard
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        working-directory: tehuti-guard
+        run: pnpm build
+      - name: Test
+        working-directory: tehuti-guard
+        run: pnpm test

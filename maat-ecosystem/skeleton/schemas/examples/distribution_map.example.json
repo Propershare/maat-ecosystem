@@ -1,0 +1,38 @@
+{
+  "schema": "maat.distribution_map.v1",
+  "record_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "created_at": "2026-06-26T12:00:00Z",
+  "agent_id": "cursor_staydangerous",
+  "correlation_id": "loop-48h-001",
+  "niche": "developers running local AI agents with governance",
+  "attention_pools": [
+    {
+      "name": "LocalLLaMA",
+      "kind": "community",
+      "url": "https://reddit.com/r/LocalLLaMA",
+      "notes": "High signal on Ollama and agent tooling"
+    },
+    {
+      "name": "agent memory governance",
+      "kind": "search_term"
+    }
+  ],
+  "buyer_words": [
+    "approval before send",
+    "local agents",
+    "governed runtime",
+    "private docs"
+  ],
+  "pain_sentence": "I know I should run agents locally with policy and memory, but I never trust them with my files or channels.",
+  "hooks": [
+    {
+      "angle": "fear",
+      "text": "Your agent can post to Slack before you see the draft. Mine cannot."
+    },
+    {
+      "angle": "curiosity",
+      "text": "What if your coding agent had an immune system?"
+    }
+  ],
+  "tags": ["domain:maat-runtime", "phase:pre-build"]
+}

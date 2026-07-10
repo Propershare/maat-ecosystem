@@ -1,0 +1,54 @@
+# fl-trust-law — Tehuti Guard Contract
+# Three-ring governance for legal RAG queries
+#
+# Ring 1 (Safety): Block out-of-scope queries
+# Ring 2 (Policy): Ensure "research/citation only" framing
+# Ring 3 (Audit): Log all legal queries for compliance
+
+pack_id: fl-trust-law
+version: "0.1.0"
+bound_gateway: fl-trust-law
+
+scope:
+  in_scope_keywords:
+    - florida
+    - trust
+    - probate
+    - estate
+    - will
+    - fiduciary
+    - executor
+    - trustee
+    - beneficiary
+    - "probate code"
+    - "fl statute"
+    - "probate rule"
+    - testamentary
+    - intestate
+    - "living trust"
+  out_of_scope_keywords:
+    - "california law"
+    - "new york law"
+    - "texas law"
+    - "nevada law"
+    - "maryland law"
+    - "ohio law"
+    - "divorce"
+    - "criminal"
+    - "immigration"
+    - "corporate"
+    - "real estate purchase"
+    - "copyright"
+    - "patent"
+  max_negative_signals: 1  # fail on 2+ negative signals
+
+policy:
+  framing: "research_and_citation_only"
+  disclaimer_required: true
+  disclaimer_text: "This material is for research and citation purposes only. It does not constitute legal advice. Consult a licensed Florida attorney for legal guidance."
+
+audit:
+  log_queries: true
+  log_source: "maat_audit_log"
+  retention_days: 365
+  redact_pii: true
