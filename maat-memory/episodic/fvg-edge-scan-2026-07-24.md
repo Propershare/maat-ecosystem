@@ -1,19 +1,19 @@
 # FVG Edge Scan — 2026-07-24
-timestamp: 2026-07-24T16:00:21.632697+00:00
+timestamp: 2026-07-24T20:15:28.657184+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
 
-- 🐻 XLB: bearish @ $50.47 (yard -0.04%) sweep=✅ retest=4x target=$47.92
-- 🐻 MSFT: bearish @ $383.04 (yard -0.43%) sweep=✅ retest=4x target=N/A
-- 🐻 ES=F: bearish @ $7445.25 (yard -0.50%) sweep=✅ retest=8x target=$7337.75
-- 🐂 COST: neutral @ $933.72 (yard +0.03%) sweep=✅ retest=1x target=$935.00
-- 🐻 UNH: bearish @ $422.82 (yard -1.12%) sweep=✅ retest=1x target=$387.46
-- 🐻 IWM: bearish @ $291.05 (yard -0.83%) sweep=✅ retest=1x target=$285.15
-- 🐻 PANW: bearish @ $325.43 (yard -1.33%) sweep=✅ retest=0x target=$301.13
-- 🐻 AMD: bearish @ $526.38 (yard -3.61%) sweep=✅ retest=0x target=$344.96
-- 🐻 CRWD: bearish @ $182.51 (yard -1.59%) sweep=✅ retest=0x target=$176.21
-- 🐻 INTC: bearish @ $96.45 (yard -5.19%) sweep=✅ retest=0x target=$83.92
+- 🐻 SPY: bearish @ $738.86 (yard -0.56%) sweep=✅ retest=11x target=$697.80
+- 🐻 VOO: bearish @ $679.14 (yard -0.56%) sweep=✅ retest=9x target=$641.50
+- 🐻 VTI: bearish @ $364.82 (yard -0.54%) sweep=✅ retest=6x target=$344.22
+- 🐻 UPS: bearish @ $114.79 (yard -0.45%) sweep=✅ retest=2x target=$101.17
+- 🐻 MSFT: bearish @ $381.74 (yard -0.77%) sweep=✅ retest=4x target=N/A
+- 🐂 XLB: bullish @ $51.26 (yard +1.15%) sweep=✅ retest=3x target=$51.59
+- 🐂 XLP: bullish @ $84.11 (yard +0.65%) sweep=✅ retest=6x target=$83.26
+- 🐂 MCD: bullish @ $264.75 (yard +0.44%) sweep=✅ retest=2x target=$270.90
+- 🐂 BLK: bullish @ $1055.67 (yard +0.67%) sweep=✅ retest=3x target=$1069.14
+- 🐻 FDX: bearish @ $314.96 (yard -0.77%) sweep=✅ retest=0x target=$299.81
 
 Alpaca Account: $80,242.27 equity | $320,705.08 BP | $80,176.27 cash | PnL: $+0.00
 Open positions: 1
