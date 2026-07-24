@@ -1,11 +1,10 @@
 # FVG Edge Scan — 2026-07-24
-timestamp: 2026-07-24T05:10:46.117664+00:00
+timestamp: 2026-07-24T09:14:05.375807+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
 
-- 🐻 ES=F: bearish @ $7451.00 (yard -0.42%) sweep=✅ retest=8x target=$7337.75
-- 🐻 YM=F: bearish @ $51954.00 (yard -0.23%) sweep=✅ retest=6x target=$50988.00
+- 🐻 ES=F: bearish @ $7459.00 (yard -0.31%) sweep=✅ retest=8x target=$7337.75
 - 🐂 XLI: bullish @ $181.94 (yard +0.99%) sweep=✅ retest=5x target=$185.04
 - 🐂 XLU: bullish @ $46.18 (yard +0.36%) sweep=✅ retest=3x target=$46.36
 - 🐻 XLB: bearish @ $50.32 (yard -0.34%) sweep=✅ retest=4x target=$50.63
@@ -14,6 +13,7 @@ Setups found: 15
 - 🐂 XLV: bullish @ $161.41 (yard +0.70%) sweep=✅ retest=2x target=$164.02
 - 🐻 QCOM: bearish @ $171.20 (yard -1.24%) sweep=✅ retest=0x target=$156.37
 - 🐻 UNH: bearish @ $423.54 (yard -0.95%) sweep=✅ retest=1x target=$387.46
+- 🐂 SCHW: bullish @ $101.61 (yard +0.38%) sweep=✅ retest=0x target=$106.72
 
 Alpaca Account: $80,308.27 equity | $320,705.08 BP | $80,176.27 cash | PnL: $+0.00
 Open positions: 1
