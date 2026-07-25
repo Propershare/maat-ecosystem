@@ -1,20 +1,5 @@
-# FVG Edge Scan — 2026-07-24
-timestamp: 2026-07-24T20:15:32.136490+00:00
-source: fvg-edge-pipeline
+# Episodic Memory — 2026-07-24
+timestamp: 2026-07-24T20:21:51.347692+00:00
+source: hermes-agent-governance
 
-Setups found: 15
-
-- 🐻 SPY: bearish @ $738.86 (yard -0.56%) sweep=✅ retest=11x target=$697.80
-- 🐻 VOO: bearish @ $679.14 (yard -0.56%) sweep=✅ retest=9x target=$641.50
-- 🐻 VTI: bearish @ $364.82 (yard -0.54%) sweep=✅ retest=6x target=$344.22
-- 🐻 UPS: bearish @ $114.79 (yard -0.45%) sweep=✅ retest=2x target=$101.17
-- 🐻 MSFT: bearish @ $381.74 (yard -0.77%) sweep=✅ retest=4x target=N/A
-- 🐂 XLB: bullish @ $51.26 (yard +1.15%) sweep=✅ retest=3x target=$51.59
-- 🐂 XLP: bullish @ $84.11 (yard +0.65%) sweep=✅ retest=6x target=$83.26
-- 🐂 MCD: bullish @ $264.75 (yard +0.44%) sweep=✅ retest=2x target=$270.90
-- 🐂 BLK: bullish @ $1055.67 (yard +0.67%) sweep=✅ retest=3x target=$1069.14
-- 🐻 FDX: bearish @ $314.96 (yard -0.77%) sweep=✅ retest=0x target=$299.81
-
-Alpaca Account: $80,242.27 equity | $320,705.08 BP | $80,176.27 cash | PnL: $+0.00
-Open positions: 1
-  MDT260731P00080000: long 3 @ $0.63 → $0.22 (PnL: $-123.00)
+2026-07-24 — Hermes Agent governance alignment completed. Read MAAT Constitution, Three-Ring model, Learning Doctrine, Initiation, Truth & Verification, and app-level policies (receptionist, operator, researcher). Registered identity as middle-ring agent. Updated SOUL.md with governance constraints. Constitutional rules established: no live trading until verified win rate, capital preservation over profit, 50-yard line methodology is the framework. Policy rules: deny destructive fs, escalate external writes and system-modifying terminal, allow read-only ops. Learning Doctrine adopted with before/after snapshots and rollback. Event logging to ~/.maat/events.jsonl established.
