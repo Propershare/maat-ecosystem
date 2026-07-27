@@ -8,8 +8,6 @@ Registers tools:
   - maat_memory_read_episodic   — read recent episodic memories
   - maat_memory_read_semantic   — read semantic knowledge
   - maat_memory_commit          — commit and push to git
-  - maat_memory_read_artifacts  — read artifacts from lab brain Postgres
-  - maat_memory_write_artifact  — write artifact to lab brain Postgres
 
 Run:
   python3 maat_memory_mcp.py
@@ -54,29 +52,6 @@ def send_result(request_id: Any, result: Any):
         "id": request_id,
         "result": result,
     })
-
-
-# ── Lab Brain Postgres ────────────────────────────────────────────────────
-# Reads PGVECTOR_DB_URL from ~/.openclaw/.env (the lab's canonical env)
-LAB_ENV_PATH = os.path.expanduser("~/.openclaw/.env")
-PGVECTOR_URL = ""
-if os.path.exists(LAB_ENV_PATH):
-    with open(LAB_ENV_PATH) as f:
-        for line in f:
-            if line.startswith("PGVECTOR_DB_URL="):
-                PGVECTOR_URL = line.split("=", 1)[1].strip().strip("\"'")
-                break
-
-
-def _pg_connect():
-    """Connect to the lab brain Postgres. Returns None if unavailable."""
-    if not PGVECTOR_URL:
-        return None
-    try:
-        import psycopg2
-        return psycopg2.connect(PGVECTOR_URL)
-    except Exception:
-        return None
 
 
 # ── Tool Implementations ─────────────────────────────────────────────────
@@ -215,122 +190,6 @@ def tool_commit(args: dict) -> dict:
     }
 
 
-# ── Lab Brain Artifact Tools ──────────────────────────────────────────────
-
-
-def tool_read_artifacts(args: dict) -> dict:
-    """Read artifacts from the lab brain's maat_artifacts table."""
-    conn = _pg_connect()
-    if not conn:
-        return {"artifacts": [], "note": "lab brain Postgres unavailable"}
-
-    try:
-        cur = conn.cursor()
-        limit = int(args.get("limit", 50))
-        artifact_type = args.get("artifact_type", None)
-
-        if artifact_type:
-            cur.execute(
-                "SELECT id, uri, title, artifact_type, status, agent, "
-                "EXTRACT(EPOCH FROM produced_at)::bigint AS produced_epoch, "
-                "description "
-                "FROM maat_artifacts "
-                "WHERE artifact_type = %s "
-                "ORDER BY produced_at DESC LIMIT %s",
-                (artifact_type, limit),
-            )
-        else:
-            cur.execute(
-                "SELECT id, uri, title, artifact_type, status, agent, "
-                "EXTRACT(EPOCH FROM produced_at)::bigint AS produced_epoch, "
-                "description "
-                "FROM maat_artifacts "
-                "ORDER BY produced_at DESC LIMIT %s",
-                (limit,),
-            )
-
-        rows = []
-        for r in cur.fetchall():
-            rows.append({
-                "id": str(r[0]),
-                "uri": r[1] or "",
-                "title": r[2] or "",
-                "artifact_type": r[3] or "",
-                "status": r[4] or "",
-                "agent": r[5] or "",
-                "produced_at": r[6] or 0,
-                "description": r[7] or "",
-            })
-        cur.close()
-        conn.close()
-        return {"artifacts": rows}
-    except Exception as e:
-        return {"artifacts": [], "error": str(e)}
-
-
-def tool_write_artifact(args: dict) -> dict:
-    """Write an artifact to the lab brain's maat_artifacts table.
-
-    Creates a record in maat_artifacts and optionally stores content
-    in maat_artifact_objects.
-    """
-    conn = _pg_connect()
-    if not conn:
-        return {"error": "lab brain Postgres unavailable"}
-
-    try:
-        import uuid
-        import hashlib
-        cur = conn.cursor()
-        now = datetime.now(timezone.utc)
-        artifact_id = str(uuid.uuid4())
-
-        uri = args.get("uri", f"maat://artifact/{artifact_id}")
-        title = args.get("title", "")
-        artifact_type = args.get("artifact_type", "tool")
-        status = args.get("status", "active")
-        agent = args.get("agent", "hermes-mcp")
-        description = args.get("description", "")
-        content = args.get("content", None)
-        content_type = args.get("content_type", "text/plain")
-
-        cur.execute(
-            "INSERT INTO maat_artifacts "
-            "(id, uri, title, artifact_type, status, agent, produced_at, created_at, updated_at, description) "
-            "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-            (artifact_id, uri, title, artifact_type, status, agent,
-             now, now, now, description),
-        )
-
-        if content is not None:
-            content_bytes = content.encode("utf-8") if isinstance(content, str) else content
-            sha256 = hashlib.sha256(content_bytes).hexdigest()
-            slug = title.lower().replace(" ", "-").replace("/", "-")[:64] or artifact_id[:8]
-
-            cur.execute(
-                "INSERT INTO maat_artifact_objects "
-                "(slug, logical_path, content, content_type, byte_len, sha256, "
-                "machine_id, created_at, updated_at) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                (slug, args.get("logical_path", slug),
-                 content_bytes, content_type, len(content_bytes),
-                 sha256, agent, now, now),
-            )
-
-        conn.commit()
-        cur.close()
-        conn.close()
-        return {
-            "status": "created",
-            "id": artifact_id,
-            "uri": uri,
-            "title": title,
-            "artifact_type": artifact_type,
-        }
-    except Exception as e:
-        return {"error": str(e)}
-
-
 # ── Tool Registry ────────────────────────────────────────────────────────
 
 TOOLS = {
@@ -387,36 +246,6 @@ TOOLS = {
             },
         },
         "handler": tool_commit,
-    },
-    "maat_memory_read_artifacts": {
-        "description": "Read artifacts from the lab brain's maat_artifacts table. Returns artifact records with type, title, URI, and timestamp.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "limit": {"type": "integer", "description": "Max artifacts to return (default: 50)"},
-                "artifact_type": {"type": "string", "description": "Optional filter by artifact type (e.g. workflowware_package, guard_decision_receipt)"},
-            },
-        },
-        "handler": tool_read_artifacts,
-    },
-    "maat_memory_write_artifact": {
-        "description": "Write an artifact to the lab brain's maat_artifacts table. Creates a record and optionally stores content in maat_artifact_objects.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "uri": {"type": "string", "description": "Artifact URI (default: auto-generated maat://artifact/<uuid>)"},
-                "title": {"type": "string", "description": "Artifact title"},
-                "artifact_type": {"type": "string", "description": "Artifact type (e.g. workflowware_package, guard_decision_receipt, trade_log)"},
-                "status": {"type": "string", "description": "Status (default: active)"},
-                "agent": {"type": "string", "description": "Source agent identifier (default: hermes-mcp)"},
-                "description": {"type": "string", "description": "Artifact description"},
-                "content": {"type": "string", "description": "Optional file content to store in maat_artifact_objects"},
-                "content_type": {"type": "string", "description": "MIME type for content (default: text/plain)"},
-                "logical_path": {"type": "string", "description": "Logical file path for content storage"},
-            },
-            "required": ["title", "artifact_type"],
-        },
-        "handler": tool_write_artifact,
     },
 }
 
