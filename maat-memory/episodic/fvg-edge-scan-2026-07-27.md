@@ -1,20 +1,11 @@
 # FVG Edge Scan — 2026-07-27
-timestamp: 2026-07-27T04:03:34.199592+00:00
+timestamp: 2026-07-27T13:50:22.135760+00:00
 source: fvg-edge-pipeline
 
-Setups found: 15
+Setups found: 3
 
-- 🐻 SPY: bearish @ $738.86 (yard -0.56%) sweep=✅ retest=11x target=$697.80
-- 🐻 VOO: bearish @ $679.14 (yard -0.56%) sweep=✅ retest=9x target=$641.50
-- 🐻 VTI: bearish @ $364.82 (yard -0.54%) sweep=✅ retest=6x target=$344.22
-- 🐂 XLB: bullish @ $51.26 (yard +1.15%) sweep=✅ retest=3x target=$51.59
-- 🐻 UPS: bearish @ $114.79 (yard -0.45%) sweep=✅ retest=2x target=$101.17
-- 🐂 MCD: bullish @ $264.75 (yard +0.44%) sweep=✅ retest=2x target=$270.90
-- 🐂 BLK: bullish @ $1055.67 (yard +0.67%) sweep=✅ retest=3x target=$1069.14
-- 🐻 NVDA: bearish @ $206.96 (yard -2.31%) sweep=✅ retest=2x target=$183.96
-- 🐻 MSFT: bearish @ $381.74 (yard -0.77%) sweep=✅ retest=4x target=N/A
-- 🐂 ADBE: bullish @ $225.11 (yard +3.20%) sweep=✅ retest=2x target=$234.48
+- 🐂 YM=F: bullish @ $52735.00 (yard +0.34%) sweep=✅ retest=8x target=$52850.00
+- 🐻 AVGO: bearish @ $386.20 (yard -0.25%) sweep=✅ retest=1x target=$376.50
+- 🐂 PANW: neutral @ $331.22 (yard +0.43%) sweep=✅ retest=0x target=$333.02
 
-Alpaca Account: $80,242.27 equity | $320,705.08 BP | $80,176.27 cash | PnL: $+0.00
-Open positions: 1
-  MDT260731P00080000: long 3 @ $0.63 → $0.22 (PnL: $-123.00)
+Alpaca Account: $80,191.21 equity | $320,764.84 BP | $80,191.21 cash | PnL: $+0.00
