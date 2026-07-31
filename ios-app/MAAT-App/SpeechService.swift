@@ -7,7 +7,6 @@ import AVFoundation
 class SpeechService: NSObject {
     private let synthesizer = AVSpeechSynthesizer()
     private let audioEngine = AVAudioEngine()
-    private let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
     private var recognitionTask: SFSpeechRecognitionTask?
     private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
     
@@ -15,14 +14,26 @@ class SpeechService: NSObject {
     
     override init() {
         super.init()
-        // Request permissions on init
-        SFSpeechRecognizer.requestAuthorization { _ in }
-        AVAudioSession.sharedInstance().requestRecordPermission { _ in }
     }
     
     /// Start listening and return the transcribed text via callback
     func startListening(callback: @escaping (String) -> Void) {
         self.onResult = callback
+        
+        // Check permissions
+        SFSpeechRecognizer.requestAuthorization { status in
+            guard status == .authorized else {
+                callback("Speech recognition not authorized")
+                return
+            }
+        }
+        
+        AVAudioSession.sharedInstance().requestRecordPermission { granted in
+            guard granted else {
+                callback("Microphone not authorized")
+                return
+            }
+        }
         
         guard let recognizer = recognizer, recognizer.isAvailable else {
             callback("Speech recognition not available")
@@ -30,36 +41,49 @@ class SpeechService: NSObject {
         }
         
         let audioSession = AVAudioSession.sharedInstance()
-        try? audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
-        try? audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        do {
+            try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        } catch {
+            callback("Audio session error")
+            return
+        }
+        
+        // Create a NEW request each time (can't reuse)
+        let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        recognitionRequest.shouldReportPartialResults = false
         
         let inputNode = audioEngine.inputNode
-        recognitionRequest.shouldReportPartialResults = false
         
         recognitionTask = recognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
             if let result = result, result.isFinal {
                 callback(result.bestTranscription.formattedString)
                 self?.stopListening()
-            } else if let error = error {
+            } else if error != nil {
                 callback("")
                 self?.stopListening()
             }
         }
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { [weak self] buffer, _ in
-            self?.recognitionRequest.append(buffer)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
+            recognitionRequest.append(buffer)
         }
         
         audioEngine.prepare()
-        try? audioEngine.start()
+        do {
+            try audioEngine.start()
+        } catch {
+            callback("Could not start audio engine")
+        }
     }
     
     /// Stop listening
     func stopListening() {
-        audioEngine.stop()
+        if audioEngine.isRunning {
+            audioEngine.stop()
+        }
         audioEngine.inputNode.removeTap(onBus: 0)
-        recognitionRequest.endAudio()
         recognitionTask?.cancel()
         recognitionTask = nil
     }

@@ -10,7 +10,8 @@ let package = Package(
     dependencies: [
         // MLX Swift for on-device Gemma 4
         .package(url: "https://github.com/ml-explore/mlx-swift", branch: "main"),
-        // Meta glasses SDK placeholder
+        // Meta Wearables Device Access Toolkit for glasses
+        .package(url: "https://github.com/facebook/meta-wearables-dat-ios", from: "0.8.0"),
     ],
     targets: [
         .target(
@@ -19,6 +20,7 @@ let package = Package(
                 .product(name: "MLX", package: "mlx-swift"),
                 .product(name: "MLXNN", package: "mlx-swift"),
                 .product(name: "MLXOptimizers", package: "mlx-swift"),
+                .product(name: "MetaWearables", package: "meta-wearables-dat-ios"),
             ],
             resources: [
                 .process("Resources")

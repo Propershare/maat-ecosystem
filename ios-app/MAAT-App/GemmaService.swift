@@ -1,11 +1,8 @@
 import Foundation
-import MLX
-import MLXNN
 
 /// Service for running Gemma 4 on-device via MLX Swift
 /// All inference is local. No data leaves the phone.
 class GemmaService {
-    private var model: LLM?
     private let tradingPrompt: String
     private let guardianPrompt: String
     

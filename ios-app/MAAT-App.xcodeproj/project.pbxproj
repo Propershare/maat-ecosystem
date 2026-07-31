@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* MAATApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000010 /* MAATApp.swift */; };
+		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000011 /* ContentView.swift */; };
+		AA000003 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012 /* SpeechService.swift */; };
+		AA000004 /* GemmaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000013 /* GemmaService.swift */; };
+		AA000005 /* EncryptedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000014 /* EncryptedStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000010 /* MAATApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAATApp.swift; sourceTree = "<group>"; };
+		AA000011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000012 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		AA000013 /* GemmaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmaService.swift; sourceTree = "<group>"; };
+		AA000014 /* EncryptedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedStorage.swift; sourceTree = "<group>"; };
+		AA000020 /* MAAT-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAAT-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000050 = {
+			isa = PBXGroup;
+			children = (
+				AA000051 /* MAAT-App */,
+				AA000060 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000051 /* MAAT-App */ = {
+			isa = PBXGroup;
+			children = (
+				AA000010 /* MAATApp.swift */,
+				AA000011 /* ContentView.swift */,
+				AA000012 /* SpeechService.swift */,
+				AA000013 /* GemmaService.swift */,
+				AA000014 /* EncryptedStorage.swift */,
+				AA000030 /* Info.plist */,
+			);
+			path = "MAAT-App";
+			sourceTree = "<group>";
+		};
+		AA000060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000020 /* MAAT-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000070 /* MAAT-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000090 /* Build configuration list for PBXNativeTarget "MAAT-App" */;
+			buildPhases = (
+				AA000080 /* Sources */,
+				AA000040 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAAT-App";
+			productName = "MAAT-App";
+			productReference = AA000020 /* MAAT-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000100 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+			};
+			buildConfigurationList = AA000110 /* Build configuration list for PBXProject "MAAT-App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000050;
+			productRefGroup = AA000060 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000070 /* MAAT-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* MAATApp.swift in Sources */,
+				AA000002 /* ContentView.swift in Sources */,
+				AA000003 /* SpeechService.swift in Sources */,
+				AA000004 /* GemmaService.swift in Sources */,
+				AA000005 /* EncryptedStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 534MAB4288;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAAT-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MAAT;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 534MAB4288;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAAT-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MAAT;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA000130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000090 /* Build configuration list for PBXNativeTarget "MAAT-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000120 /* Debug */,
+				AA000121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000110 /* Build configuration list for PBXProject "MAAT-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000130 /* Debug */,
+				AA000131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA000100 /* Project object */;
+}

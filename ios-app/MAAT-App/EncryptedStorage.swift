@@ -75,11 +75,11 @@ class EncryptedStorage {
     
     func saveRecording(_ data: Data) -> String {
         let id = UUID().uuidString
-        let key = SymmetricKey(size: .bits256)
-        let sealedBox = try? AES.GCM.seal(data, using: key)
+        let storageKey = SymmetricKey(size: .bits256)
+        let sealedBox = try? AES.GCM.seal(data, using: storageKey)
         
         if let sealedData = sealedBox?.combined {
-            defaults.set(sealedData, forKey: key + "recording_" + id)
+            defaults.set(sealedData, forKey: "maat_recording_" + id)
             // Store key in Keychain (biometric-protected)
             // In production, use Keychain with kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
         }

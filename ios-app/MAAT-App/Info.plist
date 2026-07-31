@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.maat.app</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>MAAT</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>MAAT needs microphone access for voice commands through your Meta glasses.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>MAAT needs speech recognition to process your trading and guardian commands.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>MAAT needs camera access to analyze charts through your Meta glasses.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>MAAT needs photo access to analyze chart screenshots.</string>
+</dict>
+</plist>

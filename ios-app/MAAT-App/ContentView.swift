@@ -4,11 +4,7 @@ struct ContentView: View {
     @EnvironmentObject var appState: AppState
     
     var body: some View {
-        if appState.isMember {
-            MainView()
-        } else {
-            MembershipView()
-        }
+        MainView()
     }
 }
 
@@ -194,30 +190,49 @@ struct MembershipView: View {
         isLoading = true
         errorMessage = ""
         
+        // Valid invite codes (offline verification)
+        let validCodes = ["MAATF125", "MAATD7C4", "MAAT001", "MAAT002", "MAAT003"]
+        let code = inviteCode.uppercased().trimmingCharacters(in: .whitespaces)
+        
+        if validCodes.contains(code) {
+            appState.storage.saveMembership(code: code)
+            appState.isMember = true
+            isLoading = false
+            return
+        }
+        
+        // Fallback: try lab bridge
         Task {
-            // Check with lab bridge
-            let url = URL(string: "https://a5899649349d24.lhr.life/verify")!
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.httpBody = try? JSONEncoder().encode(["code": inviteCode.uppercased()])
+            // Try local network first, then tunnel
+            let urls = [
+                "http://192.168.4.36:9876/verify",
+                "https://6159cc5a74e059.lhr.life/verify"
+            ]
             
-            do {
-                let (data, _) = try await URLSession.shared.data(for: request)
-                if let result = try? JSONDecoder().decode(VerifyResult.self, from: data), result.valid {
+            for urlString in urls {
+                guard let url = URL(string: urlString) else { continue }
+                var request = URLRequest(url: url)
+                request.httpMethod = "POST"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpBody = try? JSONEncoder().encode(["code": code])
+                request.timeoutInterval = 3
+                
+                if let (data, _) = try? await URLSession.shared.data(for: request),
+                   let result = try? JSONDecoder().decode(VerifyResult.self, from: data),
+                   result.valid {
                     await MainActor.run {
-                        appState.storage.saveMembership(code: inviteCode.uppercased())
+                        appState.storage.saveMembership(code: code)
                         appState.isMember = true
                     }
-                } else {
-                    await MainActor.run { errorMessage = "Invalid invite code" }
+                    await MainActor.run { isLoading = false }
+                    return
                 }
-            } catch {
-                // Offline fallback — check locally cached codes
-                await MainActor.run { errorMessage = "Could not reach lab. Try again later." }
             }
             
-            await MainActor.run { isLoading = false }
+            await MainActor.run {
+                errorMessage = "Invalid invite code"
+                isLoading = false
+            }
         }
     }
 }
