@@ -102,14 +102,14 @@ class ProjectDiscovery:
         if api_dir.exists():
             for item in api_dir.iterdir():
                 if item.is_file() and item.suffix == ".py":
-                    components["files"].append(item.name)
-                    # Try to detect endpoints (simple heuristic)
-                    try:
-                        content = item.read_text()
-                        if "@app.post" in content or "@app.get" in content:
-                            components["endpoints"].append(item.name)
-                    except:
-                        pass
+                     components["files"].append(item.name)
+                     # Try to detect endpoints (simple heuristic)
+                     try:
+                         content = item.read_text()
+                         if "@app.post" in content or "@app.get" in content:
+                             components["endpoints"].append(item.name)
+                     except (UnicodeDecodeError, OSError):
+                         pass
         
         return components
     
@@ -217,7 +217,7 @@ class ProjectDiscovery:
                         patterns["imports"].append("typing")
                     if "import logging" in content:
                         patterns["imports"].append("logging")
-                except:
+                except (UnicodeDecodeError, OSError):
                     pass
         
         return patterns

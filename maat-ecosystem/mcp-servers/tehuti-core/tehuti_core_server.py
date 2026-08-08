@@ -171,7 +171,7 @@ async def run_python_code(
             # Clean up temp file
             try:
                 os.unlink(temp_file)
-            except:
+            except OSError:
                 pass
                 
     except Exception as e:
@@ -894,7 +894,7 @@ async def list_directory_with_sizes(
                     if size > 1024 * 1024:
                         size_str = f"{size / (1024 * 1024):.2f} MB"
                     items.append((item_type, item.name, size))
-                except:
+                except OSError:
                     items.append((item_type, item.name, 0))
             else:
                 items.append((item_type, item.name, 0))

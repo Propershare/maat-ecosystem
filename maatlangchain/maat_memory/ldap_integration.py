@@ -102,7 +102,7 @@ class LDAPIntegration:
                 try:
                     metadata_dict = json.loads(metadata)
                     return metadata_dict.get("groups", [])
-                except:
+                except (json.JSONDecodeError, ValueError):
                     pass
         
         return []
@@ -131,7 +131,7 @@ class LDAPIntegration:
                 import json
                 try:
                     context_data = json.loads(context_data)
-                except:
+                except (json.JSONDecodeError, ValueError):
                     context_data = []
             
             # Add LDAP user mapping
@@ -188,7 +188,7 @@ class LDAPIntegration:
                 import json
                 try:
                     context_data = json.loads(context_data)
-                except:
+                except (json.JSONDecodeError, ValueError):
                     return None
             
             if isinstance(context_data, list) and len(context_data) > 0:

@@ -175,7 +175,7 @@ class DocumentProcessor:
             if isinstance(page_num, str):
                 try:
                     page_num = int(page_num)
-                except:
+                except ValueError:
                     page_num = 0
             
             if page_num < self.skip_front_pages:

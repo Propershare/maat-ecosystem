@@ -31,7 +31,7 @@ try:
     for parent in site_packages.parents:
         try:
             os.chmod(parent, 0o755)
-        except:
+        except OSError:
             pass
     print("✅ Permissions fixed")
 except Exception as e:
