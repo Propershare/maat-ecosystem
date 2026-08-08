@@ -1,0 +1,63 @@
+# ─── Maat Agent Registry ───────────────────────────────────────────
+#
+# Every agent in the network is registered here.
+# This is the single source of truth for who can do what.
+#
+# To add a new agent:
+#   1. Copy any agent block below
+#   2. Change the name, description, and access
+#   3. That's it — the agent can now use gitMaat memory
+#
+# Access types:
+#   query           → Search memory
+#   log_task        → Log completed tasks
+#   log_decision    → Log decisions
+#   log_learning    → Log things learned
+#   log_change      → Log code/config changes
+#   "*"             → Full access (everything above)
+
+# ─── Endpoints ─────────────────────────────────────────────────────
+
+memory:
+  endpoint: http://localhost:8018
+  langchain: http://localhost:8020
+
+# ─── Agents ────────────────────────────────────────────────────────
+
+agents:
+
+  tehuti:
+    description: "Central orchestrator. Manages workflow, delegates tasks, talks to Imhotep."
+    access: ["*"]
+    context_limit: 10    # max results per memory query
+    model: "anthropic/claude-sonnet-4-6"
+
+  gemma4-rag-expert:
+    description: "Knowledge retrieval. Searches memory, synthesizes answers from documents."
+    access: ["query", "log_learning"]
+    context_limit: 20
+    model: "gemma4:e4b"
+
+  gemma4-code-expert:
+    description: "Code generation, debugging, file operations."
+    access: ["query", "log_task", "log_change"]
+    context_limit: 5
+    model: "gemma4:e4b"
+
+  gemma4-ops-expert:
+    description: "Infrastructure, deployments, system monitoring."
+    access: ["query", "log_task"]
+    context_limit: 5
+    model: "gemma4:e4b"
+
+  sentinel:
+    description: "TehutiGuard's eyes. Monitors system logs, detects anomalies, enforces governance."
+    access: ["query", "log_learning", "log_change"]
+    context_limit: 10
+    model: "gemma4:e2b"
+
+  n8n-workflows:
+    description: "Workflow automation. Legacy bridge for existing n8n integrations."
+    access: ["query", "log_task"]
+    context_limit: 3
+    model: null   # n8n doesn't use a model, it triggers workflows

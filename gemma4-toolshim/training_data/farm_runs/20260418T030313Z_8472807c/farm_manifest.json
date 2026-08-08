@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "files": [
+    "/home/suspect/.n8n/gemma4-toolshim/training_data/farm_runs/20260418T030313Z_8472807c/merged.jsonl"
+  ],
+  "profile": "/home/suspect/.n8n/gemma4-toolshim/farm/profile.full-expert.yaml"
+}

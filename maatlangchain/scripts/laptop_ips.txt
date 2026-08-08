@@ -1,0 +1,5 @@
+# Laptop IPs - Update these with actual IPs
+# Format: hostname=ip
+imhotep=192.168.4.25
+macdaddy=192.168.4.36
+imhotepjr=192.168.4.81

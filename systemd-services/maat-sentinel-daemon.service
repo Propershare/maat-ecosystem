@@ -1,0 +1,18 @@
+[Unit]
+Description=MAAT Sentinel daemon (session/turn watcher over archivist stream)
+Documentation=file:///home/suspect/.n8n/GATEWAYS.md
+After=network.target
+Wants=maat-gateway-server.service
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n
+ExecStart=/home/suspect/.n8n/scripts/start-sentinel-daemon.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/suspect/.n8n/logs/sentinel/daemon.log
+StandardError=append:/home/suspect/.n8n/logs/sentinel/daemon.err.log
+
+[Install]
+WantedBy=multi-user.target

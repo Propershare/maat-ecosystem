@@ -1,0 +1,3 @@
+file '/home/suspect/comfyui/output/blr_pip_education/pip_edu_01_hook_segment.mp4'
+file '/home/suspect/comfyui/output/blr_pip_education/pip_edu_02_maat_segment.mp4'
+file '/home/suspect/comfyui/output/blr_pip_education/pip_edu_03_sankofa_segment.mp4'

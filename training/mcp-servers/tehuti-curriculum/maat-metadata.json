@@ -1,0 +1,62 @@
+{
+  "server_id": "tehuti-curriculum",
+  "server_name": "Tehuti-Curriculum",
+  "version": "1.0",
+  "description": "Tehuti-Curriculum MCP Server",
+  "total_tools": 3,
+  "maat_principles": {
+    "truth": "Curriculum and learning path management",
+    "balance": "Balance structured learning with flexibility",
+    "order": "Organized curriculum structure",
+    "justice": "Proper attribution of learning resources",
+    "self_reflection": "Track learning progress and adapt"
+  },
+  "use_cases": [
+    "Manage curriculum",
+    "Track learning paths"
+  ],
+  "common_patterns": [
+    "List \u2192 Get \u2192 Apply"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_tehuti_curriculum_generate_curriculum_post",
+      "path": "/tehuti-curriculum/generate-curriculum",
+      "method": "POST",
+      "summary": "Tehuti-Curriculum/Generate-Curriculum",
+      "description": "Generate a curriculum based on learning objectives, target audience, and duration",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_curriculum_list_templates_post",
+      "path": "/tehuti-curriculum/list-templates",
+      "method": "POST",
+      "summary": "Tehuti-Curriculum/List-Templates",
+      "description": "List available curriculum templates",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_curriculum_get_template_post",
+      "path": "/tehuti-curriculum/get-template",
+      "method": "POST",
+      "summary": "Tehuti-Curriculum/Get-Template",
+      "description": "Get a curriculum template by ID",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

@@ -1,0 +1,98 @@
+Qwen3.6-35B-A3B (MoE) + llama.cpp — video-style flags
+=====================================================
+
+What is already on disk
+-----------------------
+  Model: /home/suspect/models/qwen-a3b-gguf/Qwen3.6-35B-A3B-Q4_K_M.gguf (~20 GiB)
+  Architecture in GGUF: qwen35moe (256 experts, 8 active) — matches the MoE story from the video.
+
+Official llama-server flags (same idea as the video)
+----------------------------------------------------
+  -ngl / --n-gpu-layers N     GPU layer budget (tune to VRAM)
+  -ncmoe / --n-cpu-moe N      Keep MoE experts for first N layers on CPU (video tuned this)
+  -cmoe / --cpu-moe           All MoE weights on CPU (extreme offload)
+  --no-mmap                   Load full file into RAM (avoids expert page-in stutter)
+  --mlock                     Pin weights; needs memlock ulimit + often IPC_LOCK (see docker script)
+  -ctk / --cache-type-k       KV cache type for K (e.g. q8_0, q4_0)
+  -ctv / --cache-type-v       KV cache type for V
+  -c / --ctx-size             Context window (VRAM grows with this)
+
+Paths on this machine
+---------------------
+  Prebuilt llama-server (Vulkan build, release b9049):
+    /home/suspect/.n8n/vendor/llama-cpp-prebuilt/llama-b9049/llama-server
+  Official CUDA Docker image (when GPU passthrough works):
+    ghcr.io/ggml-org/llama.cpp:server-cuda
+
+Blockers we hit here
+--------------------
+1) Snap Docker + nvidia-container-cli: "libnvidia-ml.so.1: cannot open shared object file"
+   Fix: use Docker Engine from apt (docker-ce) OR fix Snap + NVIDIA integration per Canonical docs.
+
+2) Source build with CUDA 11.5 toolking: ggml CUDA .cu compile failed (libstdc++/nvcc).
+   Fix: install CUDA 12.x toolkit (matches driver’s supported CUDA userland) and rebuild; or use Docker.
+
+3) Prebuilt Vulkan binary: no usable GPU because /usr/share/vulkan/icd.d/ had no ICD in this environment.
+   Fix on Ubuntu (NVIDIA proprietary): install nvidia Vulkan support, e.g.
+     sudo apt install nvidia-driver-535  (already have driver)
+     sudo apt install libvulkan1 vulkan-tools
+   If still empty, install the driver’s Vulkan ICD package for your series (often pulled in with meta).
+
+Recommended order
+-----------------
+  A) Fix Docker GPU OR install Vulkan ICD, then GPU-accelerate.
+  B) Until then, llama-server runs CPU-only (very slow for 35B-class).
+
+Scripts in this directory
+---------------------------
+  docker-run-server.sh   — video-style flags via official server-cuda image (needs working `docker run --gpus all`)
+  run-prebuilt-vulkan.sh — uses GitHub release b9049 binary + local libs; needs working Vulkan for GPU
+
+OpenClaw (no Docker)
+--------------------
+  Config: ~/.openclaw/openclaw.json
+
+  Custom provider IDs like `llamacpp` do NOT appear in the gateway model picker — only
+  built-in providers merge `models.providers.<id>.models` into the catalog.
+
+  Use the bundled LM Studio slot for any OpenAI-compatible local server (llama-server, etc.):
+    models.providers.lmstudio.baseUrl = http://127.0.0.1:9080/v1
+    api: "openai-completions"
+  Model ref:
+    lmstudio/Qwen3.6-35B-A3B-Q4_K_M
+
+  1) Start llama-server on port 9080 (see scripts in this directory).
+
+  2) Verify model id:
+       curl -s http://127.0.0.1:9080/v1/models
+     If the `id` differs, update both `models.providers.lmstudio.models[0].id` and
+     `agents.defaults.models` (key `lmstudio/<id>`).
+
+  3) Restart the OpenClaw gateway (so the catalog reloads), then:
+       openclaw models set lmstudio/Qwen3.6-35B-A3B-Q4_K_M
+
+  Note: `api: "openai-completions"` on a local `/v1` proxy is the supported OpenClaw pattern
+  (same idea as LM Studio in docs/concepts/model-providers.md). Tool calling may be weaker than
+  native Ollama API — see docs/providers/ollama.md “OpenAI-compatible mode” warnings.
+
+OpenClaw Gateway: “not responding” / Telegram
+--------------------------------------------
+  A) Context overflow (lmstudio + local llama-server):
+     OpenClaw enforces a prompt budget from models.providers.lmstudio.models[].contextWindow.
+     If that value is too small (e.g. 16384) you get:
+       Context overflow: prompt too large for the model (precheck)
+     Keep contextWindow in ~/.openclaw/openclaw.json at or above what you run on llama-server
+     (--ctx-size / -c). Example: 65536 in config ⇒ start llama-server with -c 65536 (VRAM allowing).
+
+  B) Telegram HTTP 409 Conflict (getUpdates):
+     Only ONE process may poll a given bot token. Stop duplicates:
+       pgrep -af 'openclaw|telegram'
+       systemctl list-units --type=service | rg -i openclaw
+       docker ps
+     Then stop the extra gateway / n8n telegram node / old SSH session still running openclaw gateway.
+
+  C) sendChatAction “Network request failed”: often follows 409 or flaky outbound DNS; fix A+B first.
+
+Hermes
+------
+  Point any OpenAI-compatible client at http://127.0.0.1:<PORT>/v1 if the integration supports it.

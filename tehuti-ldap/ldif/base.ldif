@@ -1,0 +1,48 @@
+# Base DN Structure for Tehuti Lab LDAP
+# Maat-Aligned Directory Structure
+
+# Base DN
+dn: dc=tehuti,dc=lab
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: Tehuti Lab
+dc: tehuti
+description: Tehuti Lab LDAP Directory - Maat-Aligned
+
+# Admin user
+dn: cn=admin,dc=tehuti,dc=lab
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword: {SSHA}CHANGE_ME_USE_GENERATE_SECURE_PASSWORD_SCRIPT  # MUST be changed - use scripts/generate-secure-password.sh
+
+# Users organizational unit
+dn: ou=users,dc=tehuti,dc=lab
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+description: All users
+
+# Groups organizational unit
+dn: ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+description: Maat-aligned groups
+
+# Workstations organizational unit
+dn: ou=workstations,dc=tehuti,dc=lab
+objectClass: top
+objectClass: organizationalUnit
+ou: workstations
+description: Workstation identities
+
+# Services organizational unit
+dn: ou=services,dc=tehuti,dc=lab
+objectClass: top
+objectClass: organizationalUnit
+ou: services
+description: Service accounts
+

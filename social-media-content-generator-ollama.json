@@ -1,0 +1,108 @@
+{
+  "name": "Social Media Content Generator (Ollama)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "social-media-generate",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "social-media-gen"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}"
+      },
+      "id": "webhook-response",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract input parameters\nconst topic = $input.item.json.body?.topic || $input.item.json.topic || 'AI and technology';\nconst platform = $input.item.json.body?.platform || $input.item.json.platform || 'twitter';\nconst tone = $input.item.json.body?.tone || $input.item.json.tone || 'professional';\nconst includeHashtags = $input.item.json.body?.includeHashtags !== false;\n\n// Platform-specific character limits and formatting\nconst platformConfig = {\n  twitter: { maxLength: 280, name: 'Twitter/X' },\n  linkedin: { maxLength: 3000, name: 'LinkedIn' },\n  instagram: { maxLength: 2200, name: 'Instagram' },\n  facebook: { maxLength: 5000, name: 'Facebook' },\n  tiktok: { maxLength: 2200, name: 'TikTok' }\n};\n\nconst config = platformConfig[platform.toLowerCase()] || platformConfig.twitter;\n\n// Create prompt for AI\nconst prompt = `Generate a ${tone} social media post for ${config.name} about: ${topic}\n\nRequirements:\n- Maximum ${config.maxLength} characters\n- Engaging and ${tone} tone\n- Include a clear call-to-action\n${includeHashtags ? '- Include 3-5 relevant hashtags at the end' : '- No hashtags'}\n- Platform: ${config.name}\n- Make it compelling and shareable\n\nFormat the response as JSON with:\n- \"content\": the post text\n- \"hashtags\": array of hashtags (if requested)\n- \"platform\": the platform name\n- \"characterCount\": character count of the content`;\n\nreturn {\n  json: {\n    topic,\n    platform,\n    tone,\n    includeHashtags,\n    prompt,\n    maxLength: config.maxLength,\n    platformName: config.name\n  }\n};"
+      },
+      "id": "prepare-prompt",
+      "name": "Prepare Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.prompt }}",
+        "options": {
+          "systemMessage": "You are an expert social media content creator. Generate engaging, platform-optimized social media posts that are authentic and compelling."
+        }
+      },
+      "id": "llm-chain",
+      "name": "Generate Content",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:latest",
+        "options": {
+          "temperature": 0.8,
+          "topP": 0.9
+        }
+      },
+      "id": "ollama-model",
+      "name": "Ollama Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [680, 500],
+      "credentials": {
+        "ollamaApi": {
+          "id": "xHuYe0MDGOs9IpBW",
+          "name": "Local Ollama service"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI response and format output\nconst aiResponse = $input.item.json.output || $input.item.json.text || '';\nconst originalInput = $('Prepare Prompt').item.json;\n\n// Try to parse JSON from response\nlet content, hashtags, characterCount;\n\ntry {\n  // Extract JSON if wrapped in markdown code blocks\n  const jsonMatch = aiResponse.match(/```json\\s*([\\s\\S]*?)\\s*```/) || \n                    aiResponse.match(/```\\s*([\\s\\S]*?)\\s*```/) ||\n                    aiResponse.match(/\\{[\\s\\S]*\\}/);\n  \n  if (jsonMatch) {\n    const parsed = JSON.parse(jsonMatch[1] || jsonMatch[0]);\n    content = parsed.content || parsed.text || aiResponse;\n    hashtags = parsed.hashtags || [];\n    characterCount = parsed.characterCount || content.length;\n  } else {\n    content = aiResponse.trim();\n    hashtags = [];\n    characterCount = content.length;\n  }\n} catch (e) {\n  // If not JSON, use response as-is\n  content = aiResponse.trim();\n  hashtags = [];\n  characterCount = content.length;\n}\n\n// Add hashtags if requested and not already included\nif (originalInput.includeHashtags && hashtags.length > 0) {\n  const hashtagString = hashtags.map(h => h.startsWith('#') ? h : '#' + h).join(' ');\n  if (!content.includes(hashtagString)) {\n    content = content + '\\n\\n' + hashtagString;\n  }\n}\n\n// Ensure content doesn't exceed platform limit\nif (content.length > originalInput.maxLength) {\n  content = content.substring(0, originalInput.maxLength - 3) + '...';\n}\n\nreturn {\n  json: {\n    content: content.trim(),\n    hashtags: hashtags,\n    platform: originalInput.platformName,\n    topic: originalInput.topic,\n    tone: originalInput.tone,\n    characterCount: content.length,\n    maxLength: originalInput.maxLength,\n    timestamp: new Date().toISOString(),\n    readyToPost: content.length > 0 && content.length <= originalInput.maxLength\n  }\n};"
+      },
+      "id": "format-output",
+      "name": "Format Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [[{ "node": "Prepare Prompt", "type": "main", "index": 0 }]]
+    },
+    "Prepare Prompt": {
+      "main": [[{ "node": "Generate Content", "type": "main", "index": 0 }]]
+    },
+    "Ollama Model": {
+      "ai_languageModel": [[{ "node": "Generate Content", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Generate Content": {
+      "main": [[{ "node": "Format Output", "type": "main", "index": 0 }]]
+    },
+    "Format Output": {
+      "main": [[{ "node": "Webhook Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["social-media", "ai", "ollama", "content-generation"]
+}
+
+

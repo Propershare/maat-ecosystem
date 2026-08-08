@@ -1,0 +1,371 @@
+// Ka Education Body — Phase 1+ schema
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum StageCode {
+  PRE_K
+  PRIMARY
+  LOWER_SECONDARY
+  UPPER_SECONDARY
+  VOCATIONAL_TECHNICAL
+  UNDERGRAD
+  MASTERS
+  PHD
+  POSTDOC_NATIONAL_RD
+}
+
+enum MaatPillar {
+  TRUTH
+  JUSTICE
+  BALANCE
+  ORDER
+  RECIPROCITY
+}
+
+enum EntityStatus {
+  ACTIVE
+  INACTIVE
+  ARCHIVED
+  SUSPENDED
+}
+
+enum EnrollmentStatus {
+  ENROLLED
+  COMPLETED
+  WITHDRAWN
+  PROBATION
+}
+
+enum PainSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum AuditAction {
+  CREATE
+  UPDATE
+  DELETE
+  POLICY_CHANGE
+  PROGRESSION
+  HEALING
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  displayName  String?  @map("display_name")
+  roleId       String   @map("role_id")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  role Role @relation(fields: [roleId], references: [id])
+
+  auditTrails AuditTrail[] @relation("AuditActor")
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  users       User[]
+  permissions RolePermission[]
+}
+
+model Permission {
+  id   String @id @default(cuid())
+  name String @unique
+
+  roles RolePermission[]
+}
+
+model RolePermission {
+  roleId       String @map("role_id")
+  permissionId String @map("permission_id")
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+}
+
+/// 42 Nomes — structural registry (count enforced in app/seed, not DB check)
+model Nome {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String?
+  regionHint  String?  @map("region_hint")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  institutions Institution[]
+  learners     Learner[]
+  painEvents   PainEvent[]
+}
+
+model InstitutionType {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  institutions Institution[]
+}
+
+model Institution {
+  id                 String   @id @default(cuid())
+  name               String
+  institutionTypeId  String   @map("institution_type_id")
+  nomeId             String   @map("nome_id")
+  status             EntityStatus @default(ACTIVE)
+  charterSummary     String?  @map("charter_summary")
+  metadata           Json?
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  type      InstitutionType @relation(fields: [institutionTypeId], references: [id])
+  nome      Nome            @relation(fields: [nomeId], references: [id])
+  faculty   Faculty[]
+  cohorts   Cohort[]
+  enrollments Enrollment[]
+}
+
+model StageDefinition {
+  id                        String    @id @default(cuid())
+  code                      StageCode @unique
+  title                     String
+  /// Primary source: University of KMT step-by-step pipeline table (see docs/canon/).
+  canonReference            String    @default("UKMT_EDUCATION_PIPELINE_TABLE_V1") @map("canon_reference")
+  ageRangeMin               Int?      @map("age_range_min")
+  ageRangeMax               Int?      @map("age_range_max")
+  institutionalForm         String    @map("institutional_form")
+  corePurpose               String    @map("core_purpose") @db.Text
+  curriculumModel           String    @map("curriculum_model") @db.Text
+  pedagogyModel             String    @map("pedagogy_model") @db.Text
+  credentialModel           String    @map("credential_model") @db.Text
+  transitionRequirementsIn  String    @map("transition_requirements_in") @db.Text
+  transitionRequirementsOut String    @map("transition_requirements_out") @db.Text
+  expectedOutputs           String    @map("expected_outputs") @db.Text
+  maatObligations           String    @map("maat_obligations") @db.Text
+  publicServiceObligations  String    @map("public_service_obligations") @db.Text
+  /// UKMT canon: "Step-by-step build actions (concise)" column — system implementation checklist.
+  stepwiseBuildActions      String    @default("") @map("stepwise_build_actions") @db.Text
+  version                   Int       @default(1)
+  effectiveFrom             DateTime  @default(now()) @map("effective_from")
+  createdAt                 DateTime  @default(now()) @map("created_at")
+  updatedAt                 DateTime  @updatedAt @map("updated_at")
+
+  progressRecordsFrom ProgressRecord[] @relation("FromStage")
+  progressRecordsTo   ProgressRecord[] @relation("ToStage")
+}
+
+model Constitution {
+  id            String   @id @default(cuid())
+  version       String
+  title         String
+  bodyMd        String   @map("body_md") @db.Text
+  effectiveFrom DateTime @default(now()) @map("effective_from")
+  isActive      Boolean  @default(false) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@unique([version])
+}
+
+/// Five pillars + descriptive principles — evaluation layer, distinct from 42 nomes
+model MaatPrinciple {
+  id          String      @id @default(cuid())
+  pillar      MaatPillar
+  name        String
+  description String      @db.Text
+  sortOrder   Int         @map("sort_order")
+  createdAt   DateTime    @default(now()) @map("created_at")
+
+  @@index([pillar])
+}
+
+model GovernancePolicy {
+  id               String    @id @default(cuid())
+  title            String
+  body             String    @db.Text
+  version          Int       @default(1)
+  status           String    @default("DRAFT")
+  requiresApproval Boolean   @default(true) @map("requires_approval")
+  approvedAt       DateTime? @map("approved_at")
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+}
+
+model Learner {
+  id              String    @id @default(cuid())
+  externalRef     String?   @unique @map("external_ref")
+  firstName       String    @map("first_name")
+  lastName        String    @map("last_name")
+  dateOfBirth     DateTime? @map("date_of_birth")
+  status          EntityStatus @default(ACTIVE)
+  nomeId          String    @map("nome_id")
+  currentStageCode StageCode? @map("current_stage_code")
+  metadata        Json?
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  nome         Nome           @relation(fields: [nomeId], references: [id])
+  enrollments  Enrollment[]
+  assessments  AssessmentResult[]
+  progress     ProgressRecord[]
+}
+
+model Faculty {
+  id             String   @id @default(cuid())
+  firstName      String   @map("first_name")
+  lastName       String   @map("last_name")
+  email          String?  @unique
+  institutionId  String   @map("institution_id")
+  positionTitle  String?  @map("position_title")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  institution Institution @relation(fields: [institutionId], references: [id])
+}
+
+model Cohort {
+  id            String    @id @default(cuid())
+  name          String
+  institutionId String    @map("institution_id")
+  stageCode     StageCode @map("stage_code")
+  startDate     DateTime  @map("start_date")
+  endDate       DateTime? @map("end_date")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  institution Institution @relation(fields: [institutionId], references: [id])
+  enrollments Enrollment[]
+}
+
+model Enrollment {
+  id            String           @id @default(cuid())
+  learnerId     String           @map("learner_id")
+  cohortId      String           @map("cohort_id")
+  institutionId String           @map("institution_id")
+  stageCode     StageCode        @map("stage_code")
+  enrolledAt    DateTime         @default(now()) @map("enrolled_at")
+  status        EnrollmentStatus @default(ENROLLED)
+
+  learner     Learner     @relation(fields: [learnerId], references: [id])
+  cohort      Cohort      @relation(fields: [cohortId], references: [id])
+  institution Institution @relation(fields: [institutionId], references: [id])
+}
+
+model CurriculumModule {
+  id        String    @id @default(cuid())
+  code      String
+  title     String
+  stageCode StageCode @map("stage_code")
+  credits   Decimal?  @db.Decimal(5, 2)
+  sequence  Int       @default(0)
+  summary   String?   @db.Text
+  createdAt DateTime  @default(now()) @map("created_at")
+
+  @@unique([code, stageCode])
+}
+
+model Assessment {
+  id        String   @id @default(cuid())
+  title     String
+  type      String
+  moduleId  String?  @map("module_id")
+  metadata  Json?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  results AssessmentResult[]
+}
+
+model AssessmentResult {
+  id           String   @id @default(cuid())
+  assessmentId String   @map("assessment_id")
+  learnerId    String   @map("learner_id")
+  score        Decimal? @db.Decimal(10, 2)
+  passed       Boolean?
+  evidenceUrl  String?  @map("evidence_url")
+  explainJson  Json?    @map("explain_json")
+  recordedAt   DateTime @default(now()) @map("recorded_at")
+
+  assessment Assessment @relation(fields: [assessmentId], references: [id])
+  learner    Learner    @relation(fields: [learnerId], references: [id])
+}
+
+model ProgressRecord {
+  id             String     @id @default(cuid())
+  learnerId      String     @map("learner_id")
+  fromStageCode  StageCode  @map("from_stage_code")
+  toStageCode    StageCode? @map("to_stage_code")
+  decidedAt      DateTime   @default(now()) @map("decided_at")
+  decidedByUserId String?   @map("decided_by_user_id")
+  evidence       String?    @db.Text
+  explainability Json       @map("explainability")
+  promoted       Boolean    @default(false)
+
+  learner   Learner        @relation(fields: [learnerId], references: [id])
+  fromStage StageDefinition @relation("FromStage", fields: [fromStageCode], references: [code])
+  toStage   StageDefinition? @relation("ToStage", fields: [toStageCode], references: [code])
+}
+
+model PainEvent {
+  id             String       @id @default(cuid())
+  organ          String
+  subdomain      String?
+  severity       PainSeverity
+  institutionId  String?      @map("institution_id")
+  cohortId       String?      @map("cohort_id")
+  nomeId         String?      @map("nome_id")
+  description    String       @db.Text
+  attempts       Int          @default(0)
+  healed         Boolean      @default(false)
+  method         String?
+  evidence       Json?
+  createdAt      DateTime     @default(now()) @map("created_at")
+
+  nome Nome? @relation(fields: [nomeId], references: [id])
+}
+
+model HealingRule {
+  id        String   @id @default(cuid())
+  name      String
+  organ     String
+  condition String   @db.Text
+  action    String   @db.Text
+  priority  Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now()) @map("created_at")
+}
+
+model AuditTrail {
+  id         String      @id @default(cuid())
+  entityType String      @map("entity_type")
+  entityId   String      @map("entity_id")
+  action     AuditAction
+  actorId    String?     @map("actor_id")
+  diff       Json?
+  createdAt  DateTime    @default(now()) @map("created_at")
+
+  actor User? @relation("AuditActor", fields: [actorId], references: [id])
+}
+
+model EventLog {
+  id        String   @id @default(cuid())
+  eventType String   @map("event_type")
+  payload   Json
+  source    String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([eventType])
+}

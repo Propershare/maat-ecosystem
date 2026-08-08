@@ -1,0 +1,18 @@
+[Unit]
+Description=Paperclip control plane (pnpm dev)
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/mnt/data_drive/paperclip
+Environment="PATH=/home/suspect/.nvm/versions/node/v22.22.0/bin:/usr/local/bin:/usr/bin:/bin:/home/suspect/.local/bin"
+ExecStart=/home/suspect/.nvm/versions/node/v22.22.0/bin/pnpm dev
+Restart=on-failure
+RestartSec=15
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

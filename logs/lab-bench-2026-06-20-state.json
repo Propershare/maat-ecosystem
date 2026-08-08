@@ -1,0 +1,17 @@
+{
+  "run_id": "bench-20260620T164204Z-1124265",
+  "started_at": "2026-06-20T16:42:04Z",
+  "lab_host": "127.0.0.1",
+  "workflow_fail": 0,
+  "tiers": {
+    "lab_bench_live": true,
+    "gateway_8040_http_code": "200"
+  },
+  "pytest": {
+    "passed": 81,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "exit_code": 0
+  }
+}

@@ -48,6 +48,7 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 
 ## See also
 
+- [`docs/MAAT-PHASE-1-PRODUCT-SPECS.md`](MAAT-PHASE-1-PRODUCT-SPECS.md) — **Phase 1 build plan**: MaatBench report, Guard simulator, BLR lesson builder (Teach · Govern · Verify)
 - [`docs/MAAT-AUDIT-ACTION-PLAN.md`](MAAT-AUDIT-ACTION-PLAN.md) — **truth / order / balance** checklist (canonical tree, entry path, wire vocabulary, open runtime + user test)  
 - [`docs/INITIATION.md`](INITIATION.md) — **Ma’at initiation**: plain five questions, no product names at entry; internal translation for builders  
 - [`docs/SETUP-WITH-AGENT.md`](SETUP-WITH-AGENT.md) — **technical setup**: prompts for the agent, ordered links  

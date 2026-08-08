@@ -11,6 +11,53 @@ build/
 venv/
 .venvs/
 
+# Embedded git repos (each has its own .git; tracked in their own remotes)
+/agent-skills/
+/weknora-analysis/
+/openclaw/
+/openclaw-integration/
+/vendor/
+/langgraph-agent-demo/
+/ollama-nuggets/
+/Legal_AI_FL.tmp/
+/Legal_AI_FL/
+/maat-runtime/
+/self-hosted-ai-starter-kit/
+/hermes-agent/
+
+# Workspace hygiene
+/_quarantine/
+
+# Data dumps / archives at repo root (kept locally; not source)
+/*.rar
+/*.zip
+/*.7z
+/*.pdf
+/*.bz2
+/*.tar
+/*.tar.gz
+/enwiki*
+
+# Model weights and training data (large; tracked in object stores, not git)
+/fine-tuned-models/
+/models/
+
+# RBG Library — reference corpus for legal/research work; lives in object store
+/maatlangchain/docs/RBG_Library/
+/maatlangchain/docs/*.rar
+/maatlangchain/docs/Tehutidata*
+
+# Intermediate working dirs
+/maatlangchain/extracted_files_review/
+/maatlangchain/rbg_processing_output/
+/maatlangchain/re_extracted_files/
+/maatlangchain/test_db/
+/maatlangchain/chroma_db_maat/
+/maatlangchain/processing_results_*.json
+
+# Legal AI backups (sensitive; never in git)
+/Legal_AI_FL.bak.*/
+
 # Generator scripts (not part of the ecosystem itself)
 generate*.py
 

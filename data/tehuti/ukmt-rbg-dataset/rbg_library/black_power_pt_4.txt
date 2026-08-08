@@ -1,0 +1,2407 @@
+=== EXTRACTED TEXT FROM: Black Power Pt 4.pdf ===
+Extraction Method: PyPDFLoader
+Total Pages: 42
+Timestamp: 2026-01-04T16:52:44.581132
+================================================================================
+
+
+--- PAGE 1 ---
+A UPA Collection
+from
+A Guide to the Microfilm Edition of
+BLACK STUDIES RESEARCH SOURCES
+Microfilms from Major Archival and Manuscript Collections
+General Editors: John H. Bracey, Jr., and Sharon Harley
+THE BLACK POWER MOVEMENT
+Part 4: The League of Revolutionary Black Workers,Part 4: The League of Revolutionary Black Workers,Part 4: The League of Revolutionary Black Workers,Part 4: The League of Revolutionary Black Workers,Part 4: The League of Revolutionary Black Workers,
+1965–19761965–19761965–19761965–19761965–1976
+
+
+--- PAGE 2 ---
+Cover: DRUM campaign poster, undated. Front row: Don Jackson, Carlos Williams, Betty Griffith,
+and Gerald Wooten. Second row: Ron March, Raymond Johnson, and Lafayette Philyaw. Back row:
+Charles Roberts, Don Gaitor, and Grover Douglas.
+
+
+--- PAGE 3 ---
+
+
+
+--- PAGE 4 ---
+The Black Power Movement
+Part 4: The League of Revolutionary Black Workers,
+1965–1976
+Editorial Adviser
+Ernie Allen Jr.
+Project Coordinator
+Randolph H. Boehm
+Guide compiled by
+Daniel Lewis
+BLACK STUDIES RESEARCH SOURCES
+Microfilms from Major Archival and Manuscript Collections
+General Editors: John H. Bracey, Jr., and Sharon Harley
+4520 East-West Highway  Bethesda, MD 20814-3389
+A UPA Collection from
+
+
+--- PAGE 5 ---
+ii
+Library of Congress Cataloging-in-Publication Data
+The Black power movement. Part 4, The League of Revolutionary Black
+Workers, 1965–1976 / editorial adviser, Ernie Allen, Jr. ; project coordinator,
+Randolph H. Boehm.
+       microfilm reels. —  (Black studies research sources)
+  Microfilmed from the personal holdings of General Baker, Detroit, Michigan.
+  Accompanied by a printed guide compiled by Daniel Lewis entitled: A guide to
+the microfilm edition of The Black power movement. Part 4, The League of
+Revolutionary Black Workers, 1965–1976.
+  ISBN 1-55655-935-6
+ 1.  League of Revolutionary Black Workers—History—Sources. 2.  African
+American labor union members—Political activity—History—Sources.
+3.  African Americans—Civil rights—Michigan—Detroit—History—19th century.
+4.  Labor unions—United States—History—Sources.  I. Title: League of
+Revolutionary Black Workers, 1965–1976. II. Allen, Ernie, 1942– III. Boehm,
+Randolph. IV. Lewis, Daniel, 1972– V. Title: Guide to the microfilm edition of
+The Black power movement. Part 4, The League of Revolutionary Black
+Workers, 1965–1976. VI. Series.
+HD6490.R2
+331.88'6'08996073077434—dc22
+2004048918
+       CIP
+Copyright 
+© 2004 LexisNexis Academic & Library Solutions,
+a division of Reed Elsevier Inc.
+All rights reserved.
+ISBN 1-55655-935-6.
+
+
+--- PAGE 6 ---
+iii
+TABLE OF CONTENTS
+Scope and Content Note .......................................................................................... v
+Source Note ............................................................................................................... ix
+Editorial Note ............................................................................................................ ix
+Abbreviations ............................................................................................................ xi
+Reel Index
+Reel 1
+Series 1: Correspondence .................................................................................. 1
+Series 2: General Documents............................................................................. 1
+Series 3: LRBW Publications .............................................................................. 2
+Series 4: Other Publications ............................................................................... 3
+Reel 2
+Series 4: Other Publications cont. ...................................................................... 3
+Series 5: Detroit Police Files ............................................................................... 4
+Reel 3
+Series 5: Detroit Police Files cont. ...................................................................... 5
+Series 6: FBI Files............................................................................................... 6
+Series 7: Internal Revenue Service File ............................................................. 6
+Series 8: Subject Files ........................................................................................ 7
+Series 9: Oversize Materials............................................................................... 8
+Subject Index ............................................................................................................. 11
+
+
+--- PAGE 7 ---
+
+
+
+--- PAGE 8 ---
+v
+This collection of records of the League of Revolutionary Black Workers
+(LRBW) consists of the files collected by General Gordon Baker Jr., one of the
+founding members of the Dodge Revolutionary Union Movement (DRUM) in 1968
+and the LRBW in 1969. Baker’s involvement in radical politics dated from the early
+1960s. He had been a member of UHURU, a Detroit black power group, and the
+Revolutionary Action Movement (RAM), an organization that advocated a philosophy
+of revolutionary black nationalism combining armed self-defense, Pan-Africanism,
+self-determination, and Marxism. Following the Detroit riot of July 1967, an event
+known to some as the Great Rebellion, General Baker and his fellow radicals sensed
+an opportunity for new organizing efforts. In September 1967, Baker, John Watson,
+Mike Hamlin, and Luke Tripp started a newspaper called the Inner City Voice . The
+paper focused on issues of concern to Detroit’s black population, including working
+conditions, housing, health care, welfare programs, and schools, all from a Marxist
+perspective. In addition to publishing the Inner City Voice,  Baker, Hamlin, and other
+Inner City Voice  staff members formed a study group to discuss how to implement
+revolutionary political change.
+On May 2, 1968, in response to a work speedup at the Dodge Main plant in
+Hamtramck, Baker led several thousand workers out of the plant in a wildcat strike.
+On May 5, the Chrysler Corporation dismissed Baker from his job for violating the
+no-strike clause of the collective bargaining agreement between Chrysler and the
+United Auto Workers (UAW). As a result of this strike, Baker and his fellow activists
+formed DRUM. DRUM saw both Chrysler and the UAW as enemies of African
+American workers, and from 1968 into the early 1970s, DRUM worked to gain more
+power for African American workers and to improve working conditions at Dodge
+Main.
+Following DRUM’s lead, workers in several of Detroit’s automobile plants
+formed revolutionary union movements, beginning with the Eldon Avenue
+Revolutionary Union Movement (ELRUM) at Chrysler’s Eldon Avenue Gear and Axle
+plant in November 1968. Workers at other Chrysler plants and at Ford, Dodge Truck,
+and Cadillac soon formed their own revolutionary union movements and in June
+1969, these organizations joined together in the LRBW. Over the next two years, the
+LRBW and its affiliated organizations articulated a Marxist philosophy, conducted
+demonstrations against the automobile corporations and the UAW, published several
+radical newsletters, and produced a film in support of the goal of winning power for
+African American workers. In the summer of 1971, the LRBW split as a result of
+ideological differences. One faction, led by attorney Kenneth Cockrel, Hamlin, and
+Watson, favored broadening the struggle beyond Detroit, eventually creating a black
+revolutionary political party. In June 1971, Cockrel, Hamlin, and Watson officially
+resigned from the LRBW and joined the Black Workers Congress, headed by James
+Forman, former executive secretary of the Student Nonviolent Coordinating
+Committee (SNCC). Baker and others, however, argued that the LRBW needed to
+SCOPE AND CONTENT NOTE
+
+
+--- PAGE 9 ---
+vi
+continue to focus on organizing black workers in Detroit and the LRBW struggled on
+for the next several years before collapsing in the mid-1970s.
+This collection chronicles the rise and fall of the LRBW and its constituent
+organizations. The materials date primarily from 1967 and 1975 and are arranged into
+nine series.
+Series 1: Correspondence
+This series consists of a single letter from the Central Committee of the LRBW
+to Walter Reuther, president of the UAW. The letter was also printed in Volume III,
+Number 6 (May 4, 1970) of the DRUM newsletter (see Reel 3, Frame 0378). The
+letter is a good introduction to the ideology and tactics of the LRBW. The LRBW
+informed Reuther that it would demonstrate in front of Cobo Hall during the 1970
+UAW special convention. The letter listed five goals for the protest:
+1) To expose UAW racist practices; 2) To expose UAW sweetheart
+union practices; 3) To expose totalitarian control of the UAW by the
+Reuther machine; 4) To present a list of demands for the redress of
+grievances; 5) To unite all black workers in the struggle to dispose of
+you [Reuther] and your henchmen, and to win worker control over the
+union and the shops.
+The LRBW also noted that African Americans held the hardest jobs in the
+plants, were virtually excluded from the skilled trades, and were underrepresented in
+the leadership of the UAW. The league concluded the letter by telling Reuther: “We
+are making the revolution…and we will win.”
+Series 2: General Documents
+The second series consists of the general policy statement of the LRBW and
+other materials pertaining to the overall league program. The opening line of the
+LRBW’s General Program declares that it “is dedicated to waging a relentless
+struggle against racism, capitalism, and imperialism” (Reel 1, Frame 0009). The
+General Program establishes the overall political philosophy of the LRBW and also
+discusses working conditions for African Americans. Other documents in this series
+trace the history of the LRBW, the split in the league in June 1971, and the formation
+of the Black Workers Congress. There is also a chronology of the LRBW and
+transcripts of interviews with General Baker and John Watson, a member of the
+LRBW and editor of two LRBW-related newspapers, Inner City Voice  and The South
+End.
+Series 3: LRBW Publications
+This series consists of publications of both the LRBW and its affiliated
+organizations. The first publication is DRUM, the newsletter of the Dodge
+Revolutionary Union Movement at the Dodge Main plant. This publication focuses on
+the ideology of DRUM and the LRBW, relations with the UAW and Chrysler, the
+conditions faced by workers at Dodge Main, and other issues relevant to African
+Americans in Detroit. The first issue of DRUM describes the origins of DRUM in the
+May 2, 1968, wildcat strike led by General Baker. This series includes the first ten
+issues of Volume I of DRUM, issues 13 through 25 of Volume I, eighteen issues from
+Volume II, three issues from Volume III, two issues from Volume IV, and four
+unnumbered issues. The issues date from 1968 to 1971. Following the DRUM
+newsletter are issues of ELRUM, the newsletter of the Eldon Avenue Revolutionary
+
+
+--- PAGE 10 ---
+vii
+Union Movement, at Chrysler’s Eldon Avenue Gear and Axle plant. This file contains
+six issues from Volume I, six issues from Volume II, and twelve unnumbered issues.
+As in the DRUM publication, conditions inside the Eldon Avenue plant and the overall
+program of the LRBW are covered in detail in ELRUM. Both of these publications
+clearly reveal the LRBW’s disdain for Walter Reuther, the UAW, and Chrysler. This
+series also includes miscellaneous issues from other LRBW organizations. These
+publications are BC & BS RUM,  FORUM, FRUM, JARUM, Rank and File,  and
+SPEAR .
+Series 4: Other Publications
+Publications from other black radical organizations of the 1960s and 1970s are
+represented in this series. The Black Student United Front (BSUF) published the
+Black Student Voice . LRBW leader Michael Hamlin served as an adviser to the
+BSUF and articles in the Black Student Voice  covered conditions in the Detroit city
+schools and other political developments affecting African American students. The
+League of Black Workers, a predecessor of the LRBW, published Black Vanguard .
+The other publications in this series are BWC News  published by the Black Women’s
+Committee, Southern Advocate  published by the Southern Equal Rights Congress,
+and the Black Voice  published by the United Black Workers at the Ford plant in
+Mahwah, New Jersey.
+Series 5: Detroit Police Files
+The Detroit Police files consist of surveillance files on General Baker, the
+LRBW, DRUM, and ELRUM; the daily incident log from the Dodge Main plant; and
+miscellaneous police reports on the LRBW. The file on General Baker includes
+biographical information, arrest records, a digest of newspaper clippings, and
+surveillance reports on Baker’s activities. The LRBW file has surveillance reports,
+newspaper clippings, and copies of several LRBW newsletters. The newsletters
+represented are DRUM, ELRUM, FORUM, UPRUM, JARUM, Eldon Wildcat,  and
+The South End . The daily log of demonstrations at the Dodge Main plant lists the
+dates and times, as well as precise details about each incident.
+Series 6: FBI Files
+The FBI files begin with a folder covering miscellaneous black nationalist
+organizations, including the Detroit black power organization UHURU and the Fox
+and Wolf Hunting Club. General Baker was a member of both of these groups. The
+remainder of this series consists of FBI surveillance reports on the LRBW, issues of
+LRBW publications, and biographical data on LRBW members.
+Series 7: Internal Revenue Service File
+In 1970 and 1971, the Internal Revenue Service (IRS) investigated General
+Baker to determine if he filed income tax returns in 1968 and 1969. This brief series
+consists of documents collected by the IRS during its investigation.
+Series 8: Subject Files
+The subject files consist of miscellaneous materials collected by General Baker
+between 1963 and 2000. The first folder contains a report from the Steel Division of
+the Black Workers Congress on the status of African American steelworkers.
+
+
+--- PAGE 11 ---
+viii
+General Baker joined the Communist Labor Party in 1971. The Communist Labor
+Party folder has correspondence discussing school busing in Detroit and General
+Baker’s campaign for the Michigan House of Representatives in 1976. Documents in
+the Congress of Racial Equality folder cover that organization’s voter registration
+efforts in Louisiana in 1963 and 1964. Other items in this series include a paper by
+Muhammad Ahmad, founder and national field chairman of the RAM, on his
+relationship with Malcolm X, and newspaper clippings on the labor movement in the
+1970s, 1980s, and 1990s.
+Series 9: Oversize Materials
+This series contains materials larger than the 8.5" x 11" or 8.5" x 14" documents
+in the other sections of this collection. The items include a DRUM campaign poster,
+issues of the Inner City Voice  (ICV) and The South End,  a draft copy of the Black
+Student Manifesto, and an LRBW calendar from 1970. There are five issues of ICV in
+this series. The ICV staff reported on local Detroit issues, such as police brutality,
+schools, housing, health care services, working conditions, and LRBW activities.
+The paper’s black power and internationalist perspective is revealed in articles on
+the Black Panther Party, Malcolm X, Muhammad Ali, Mao Tse-tung, Ernesto “Che”
+Guevara, and radical political movements in Latin America and Africa.
+The South End  was the daily newspaper of Wayne State University; however, in
+1968 and 1969, John Watson, the editor of ICV and a member of the LRBW, served
+as editor of The South End . This series includes thirteen issues of the newspaper
+collected by General Baker, including two issues with feature stories relating to the
+LRBW. In a January 23, 1969, article entitled “DRUM: Vanguard of the Black
+Revolution,” feature editor and LRBW member Luke Tripp wrote about the history,
+goals, and organizational structure of DRUM. The May 14, 1969, issue contains an
+article on ELRUM. Other topics covered in The South End  include Detroit politics,
+Wayne State University campus news, and an analysis of the life of Malcolm X. The
+Black Student Manifesto file reproduces the draft proposal issued by the BSUF in
+June 1971. The collection concludes with the LRBW calendar for 1970 with
+photographs of Robert F. Williams, Malcolm X, the Detroit riot of 1967, and LRBW
+members Glanton Dowdell and Ron March.
+Related Collections
+Researchers can find other LRBW materials in The Black Power Movement,
+Part 3: Papers of the Revolutionary Action Movement, 1962–1996 . Collections
+microfilmed by LexisNexis that document Detroit in the 1960s and early 1970s
+include The Black Power Movement, Part 2: The Papers of Robert F. Williams;  and
+Papers of the NAACP, Part 27: Selected Branch Files, Part 28: Special Subject
+Files, and Part 29: Branch Department . Additional materials pertaining to black power
+can be found in The Black Power Movement, Part 1: Amiri Baraka from Black Arts to
+Black Radicalism;  Centers of the Southern Struggle: FBI Files on Selma, Memphis,
+Montgomery, Albany, and St. Augustine;  Records of the National Commission on
+Violence, Part 1: Executive Files;  and Papers of the NAACP, Part 30: General Office
+Files, 1966–1972 .
+
+
+--- PAGE 12 ---
+ix
+SOURCE NOTE
+LexisNexis microfilmed the documents in Part 4 of The Black Power Movement,
+entitled League of Revolutionary Black Workers,  from the personal collection of
+General Gordon Baker Jr., one of the lead figures in the League of Revolutionary
+Black Workers. This microfilm publication does not include the documents on deposit
+at the Walter Reuther Library at Wayne State University.
+EDITORIAL NOTE
+LexisNexis has microfilmed all of the documents from the personal collection of
+General Gordon Baker Jr. in their entirety. Every effort has been made to ensure
+legibility.  Due to the unorganized nature of the original documents, LexisNexis has
+arranged the documents into document-type series under the advice of General
+Baker. These include Series 1: Correspondence files; Series 2: General Documents,
+comprising organizational policy statements, programs, and historical analyses;
+Series 3: LRBW Publications, comprising a variety of pamphlet-type materials, press
+materials, and newsletters; Series 4: Other Publications, comprising several
+newsletters, pamphlets, press materials, and strike and demonstration support
+media, all from organizations other than LRBW; Series 5: Detroit Police Files,
+comprising the Police Department’s intelligence files, police reports, and legal
+maneuverings against General Baker, the LRBW, and affiliates obtained through
+Freedom of Information Act requests; Series 6: FBI Files, comprising records of the
+FBI investigations and intelligence activities against the LRBW and its association
+with other black nationalist groups; Series 7: Internal Revenue Service File,
+comprising the IRS investigation of General Baker and the tax status of the LRBW;
+Series 8: Subject Files, comprising materials on a variety of organizations, political
+parties, and individuals, as well as miscellaneous newspaper clippings and poster
+and flyer materials; Series 9: Oversize Materials, comprising a Dodge Revolutionary
+Union Movement campaign poster, an LRBW calendar, the Black Student Manifesto,
+an incomplete series of The Inner City Voice  for the period 1968–1971, and The
+South End  for 1969.
+
+
+--- PAGE 13 ---
+
+
+
+--- PAGE 14 ---
+xi
+ABBREVIATIONS
+The following abbreviations are used at least three times in this guide.
+ACT Act Collectively Together
+AFL-CIO American Federation of Labor–Congress of Industrial
+Organizations
+BC & BS RUM Blue Cross & Blue Shield Revolutionary Union Movement
+CADRUM Cadillac Revolutionary Union Movement
+COINTELPRO Counterintelligence Program
+CORE Congress of Racial Equality
+DRUM Dodge Revolutionary Union Movement
+DRUM II Dodge Truck Revolutionary Union Movement
+ELRUM Eldon Avenue Revolutionary Union Movement
+FBI Federal Bureau of Investigation
+FORUM Detroit Forge Revolutionary Union Movement
+FRUM Ford Revolutionary Union Movement
+GOAL Group on Advanced Leadership
+JARUM Jefferson Avenue Revolutionary Union Movement
+LRBW League of Revolutionary Black Workers
+MARUM Mack Avenue Revolutionary Union Movement
+MERUM Mound Road Engine Revolutionary Union Movement
+NAACP National Association for the Advancement of Colored People
+NEWRUM Detroit News  Revolutionary Union Movement
+OAAU Organization of Afro-American Unity
+PAIGC Partido Africano da Independencia da Guine e Cabo Verde
+(African Independence Party of Guinea and the Cape
+Verde Islands)
+RAM Revolutionary Action Movement
+ROTC Reserve Officers Training Corps
+RUM Revolutionary Union Movement
+SCLC Southern Christian Leadership Conference
+
+
+--- PAGE 15 ---
+xii
+SDS Students for a Democratic Society
+SNCC Student Nonviolent Coordinating Committee
+UAW United Auto Workers
+UHURU Word meaning “freedom” in Swahili
+UPRUM United Parcel Revolutionary Union Movement
+URUM Uniroyal Revolutionary Union Movement
+
+
+--- PAGE 16 ---
+1 
+REEL INDEX 
+ 
+The following is a list of the folders that compose The Black Power Movement, Part 4: The 
+League of Revolutionary Black Workers, 1965–1976. The four-digit number on the far left is the 
+frame at which a particular file folder begins. The file title and the date(s) of the file follow the 
+frame number. Substantive issues are highlighted under the heading Major Topics. Major 
+Topics are listed in order of first appearance and each topic is listed only once for each folder. 
+Abbreviations of organization names are used when a name appears three times or more. 
+ 
+Reel 1 
+Frame No. 
+Series 1: Correspondence 
+0001 LRBW Correspondence [1969].  
+Major Topics: UAW; Walter Reuther; African American workers; employment 
+discrimination; ELRUM; DRUM; FRUM; harassment and intimidation. 
+Series 2: General Documents 
+0007 General Policy Statement [July 1970]. 
+Major Topics: African American workers; white workers; organized labor; 
+imperialism; Marxism-Leninism; black liberation movement; UAW; 
+unemployment; skilled labor; service industries; agricultural labor; working 
+conditions; DRUM; ELRUM; FRUM; African American women workers; 
+employment discrimination; economic conditions; Leonard Woodcock; strikes; 
+minimum wage; labor standards; job security; hours of work; retirement. 
+0029 Overall Program of the LRBW, July 1970. 
+Major Topics: African American workers; white workers; organized labor; Marxism-
+Leninism; LRBW rules and regulations; LRBW organizational structure; 
+unemployment; working conditions; African American women workers; 
+employment discrimination; economic conditions; UAW; Leonard Woodcock; 
+minimum wage; labor standards; hours of work; retirement; strikes; AFL-CIO; 
+formation and early history of DRUM; Dodge Main plant; Black Panther Party. 
+0176 Related Documents [1969–1971 and undated].  
+Major Topics: Cultural nationalism; Universal Negro Improvement Association; 
+Marcus Garvey; Nation of Islam; Black Panther Party; Amiri Baraka; Chinese 
+Communist Party; cultural revolution; music; motion pictures; theater and plays; 
+Black Workers Congress; African American workers; John Williams; Rufus 
+Burke; Clint Marbury; Communism; Popular Front for the Liberation of Palestine;
+
+
+--- PAGE 17 ---
+Frame No. 
+ 2 
+Marxism-Leninism; Rawsonville Revolutionary Union Movement (RRUM); skilled 
+labor. 
+0259 LRBW Historical Analyses [1968–1980]. 
+Major Topics: LRBW chronology; John Watson; Stokely Carmichael; Black Panther 
+Party; Kwame Nkrumah; Ahmed Sekou Toure; Amilcar Cabral; Pan-Africanism; 
+origins of Inner City Voice (newspaper); Marxism-Leninism; split of LRBW after 
+resignations of Kenneth Cockrel, Mike Hamlin, and John Watson; Black Workers 
+Congress; DRUM; ELRUM; LRBW ideological divisions; Black Economic 
+Development Conference; Finally Got the News (film); Parents and Students for 
+Community Control; James Forman; revolutionary black nationalism; Ernie 
+Mkalimoto; integration; General Gordon Baker Jr.; African American workers; role 
+of white radicals in black liberation movement; UAW; AFL-CIO. 
+Series 3: LRBW Publications 
+0335 DRUM (Dodge Revolutionary Union Movement) [1968–1970]. 
+Major Topics: Dodge Main plant wildcat strike (May 1968); UAW Local 3; Willie 
+Brookins; labor-management relations; Chrysler Corporation; employment 
+discrimination; Ed Benford; Poor People’s Campaign; Dupree Hill; reaction to 
+assassination of Martin Luther King Jr.; Montgomery bus boycott; SNCC; CORE; 
+NAACP; SCLC; Robert F. Williams; Walter Reuther; health care facilities at 
+Dodge Main plant; working conditions; Curtis Lee; Hamtramck police department; 
+John Matthew Jr.; Robert Brooks; Ronald Mathis; endorsement of George C. 
+Wallace by UAW Local 326; Ron March; UAW Local 3 elections; Huber Avenue 
+Foundry (Chrysler); Ed Liska; Sherman Patterson; medical personnel at Huber 
+Avenue Foundry; FRUM; ELRUM; anniversary of assassination of Malcolm X; 
+United Black Brothers of Mahwah Ford; Kenneth Cockrel; UAW Local 906; 
+National Labor Relations Board; Fred Lyles; United Tenants for Collective Action; 
+Ku Klux Klan; Sidney Lewis; urban renewal; James Johnson; UAW Local 961; 
+Eldon Avenue Gear and Axle plant (Chrysler); International Black Appeal; Albert 
+Dawkins. 
+0565 ELRUM (Eldon Avenue Revolutionary Union Movement) [1969–1970]. 
+Major Topics: Eldon Avenue Gear and Axle plant (Chrysler); employment 
+discrimination; working conditions; UAW Local 961; demonstration by ELRUM at 
+Eldon Avenue Gear and Axle plant; anniversary of assassination of Malcolm X; 
+Vietnam War; Howard Davis; urban renewal; National Association of 
+Manufacturers; Walter Reuther; UAW; UAW Local 600; labor-management 
+relations; Leonard Woodcock. 
+0634 Various Revolutionary Union Movement Chapters [1970–1975 and undated]. 
+Major Topics: Blue Cross and Blue Shield Revolutionary Union Movement (BC & BS 
+RUM); ELRUM; Eldon Avenue Gear and Axle plant (Chrysler); United Black 
+Brothers of Mahwah Ford; anniversary of assassination of Malcolm X; George 
+Jackson; FORUM; Chrysler Corporation; International Black Appeal; FRUM; 
+UAW Local 600; DRUM; United Mine Workers of America; General Gordon 
+Baker Jr.; JARUM; inflation; unemployment; UAW Local 7; James Johnson; Rank 
+and File (newsletter); SPEAR (LRBW newsletter); welfare programs; welfare 
+rights organizations. 
+0722 Related Groups [1971–1972 and undated]. 
+Major Topics: Michigan Strike Support Organizing Committee; UAW Local 889; 
+National Welfare Rights Organization; strike by workers at the Commission on
+
+
+--- PAGE 18 ---
+Frame No. 
+ 3 
+Professional and Hospital Activities (Ann Arbor, Michigan); UAW Local 157; 
+welfare programs; Welfare Employees Union; oil crisis; United Farm Workers, 
+AFL-CIO; farm workers strike in California; Black Student United Front; UAW; 
+May Day rally (1972). 
+Series 4: Other Publications 
+0754 Black Student United Front [ Black Student Voice, 1971–1976 and undated].  
+Major Topics: Black Student League; Central High School (Detroit); James Johnson; 
+mob attack on Osborn High School (Detroit) students; Reserve Officers Training 
+Corps (ROTC); teachers; Malcolm X; Highland Park High School. 
+0791 Black Vanguard [League of Black Workers, 1965]. 
+Major Topics: Strikes; labor-management relations; Chrysler Corporation; UAW; 
+Moise Tshombe; Ray Shoulders; Martin Luther King Jr.; James Farmer; Roy 
+Wilkins; Whitney M. Young Jr.; Dodge Main plant; Glynn Vickers; Detroit Police 
+Department; Gabriel Prosser; Robert F. Williams; self-defense; economic 
+conditions; Lorraine Hansberry; assassination of Malcolm X; assassination of 
+John F. Kennedy. 
+0849 BWC News (Black Women’s Committee) [1969]. 
+Major Topics: Birth control; civil war in Zimbabwe; James Forman; “The Black 
+Manifesto”; students; street gangs; Muhammad Ahmad; Pan-Africanism; Stokely 
+Carmichael; Black Student Union. 
+0874 Southern Advocate [Southern Equal Rights Congress, 1980]. 
+Major Topics: Committee for Justice; International Chemical Workers Union; 
+Amalgamated Clothing and Textile Workers Union; Louisiana Hunger Coalition; 
+food stamps; John McCombs Jr.; Charlotte (North Carolina) Equal Rights 
+Council; People United for Justice; boycott of Greene County, Alabama, dog 
+racing track; working conditions; Alabama Dry Docks and Shipbuilding Co.; 
+school desegregation in Alabama; Ku Klux Klan; AFL-CIO; demonstrations at 
+Winn-Dixie supermarkets by United Food and Commercial Workers Union; Afro-
+American Association, University of Alabama. 
+0886 United Black Workers [ The Black Voice, 1974–1975 and undated]. 
+Major Topics: United Black Workers, Ford Mahwah Plantation; UAW Local 906; 
+Black Panther Party; United Workers Movement (MOU); May Day. 
+Reel 2 
+Series 4: Other Publications cont. 
+0001 Miscellaneous [1969–1993]. 
+Major Topics: Slavery; post–Civil War Reconstruction; employment; Marcus Garvey; 
+A. Philip Randolph; African American workers; DRUM; wildcat strikes; John 
+Watson; UAW; Chrysler Corporation; health care facilities at Dodge Main plant; 
+UAW Local 3; ELRUM; Kenneth Cockrel; Ron March; Malcolm X; automation; 
+religion; mass media; students; police brutality; housing; drug use and abuse; 
+Spike Lee; health care facilities and services; arts and culture; National 
+Organizing Committee; JARUM; Charles Wooten.
+
+
+--- PAGE 19 ---
+Frame No. 
+ 4 
+Series 5: Detroit Police Files 
+0220 Index Cards: General [Gordon] Baker [Jr., 1962–1971]. 
+Major Topics: Biographical information for General Gordon Baker Jr.; Detroit police 
+surveillance of Baker; UHURU; RAM; GOAL; Fox and Wolf Hunting Club; League 
+of Black Workers; DRUM; UAW Local 3. 
+0251 Intelligence Bureau File: General [Gordon] Baker [Jr.] (1) [1964–1972]. 
+Major Topics: Fox and Wolf Hunting Club; Poor People’s Campaign; Wayne State 
+SDS demonstration in front of Chrysler Corporation offices in Highland Park, 
+Michigan; GOAL; Freedom Now Party; Richard Henry; Medgar Evers Rifle Club; 
+Deacons for Defense and Justice; RAM; National Rifle Association; Detroit 
+NAACP branch; Milton R. Henry; LRBW demonstration in front of Cobo Hall; 
+UAW; International Black Appeal; arrest of Wilvern McClendon, James 
+Robertson, and Clarence Reed on inciting-to-riot charges; arrest of General 
+Gordon Baker Jr., Nobel Smith, Rufus Griffin Jr., and Glanton Dowdell on 
+carrying-concealed-weapons charges; selective service system; arrest of Baker 
+for resisting arrest and obstructing a police officer in the performance of his duty; 
+split of LRBW after resignations of Kenneth Cockrel, Mike Hamlin, and John 
+Watson. 
+0409 Intelligence Bureau File: General [Gordon] Baker [Jr.] (2) [1963–1975]. 
+Major Topics: Police seizure of weapons from General Gordon Baker Jr. and Glanton 
+Dowdell and arrest of Dowdell and Baker for carrying concealed weapons; UAW; 
+UHURU; Fox and Wolf Hunting Club; Student Committee for Travel to Cuba; 
+Cuban Federation of University Students; Detroit NAACP branch; demonstration 
+at Olympic torch ceremonies and arrest of David Niederhouser, John Watson, 
+John Williams, and Gwendolyn Kemp for disturbing the peace; Richard Henry; 
+Malcolm X; demonstration by ELRUM in front of Eldon Avenue Gear and Axle 
+plant; demonstrations by DRUM in front of Dodge Main plant; Mike Hamlin; Ron 
+March; Milton R. Henry; Charles E. Simmons III; Luke Tripp; Robert David Mates; 
+Charles Wallace Johnson Jr.; selective service system; UAW Local 3; charges of 
+inciting to riot against Thomas Abston, James Roberts, Moses Wedlow, and Alvin 
+Harrison; draft resistance; League of Black Workers; RAM; JARUM; MARUM; 
+NEWRUM; UPRUM; CADRUM; Michigan Communist Party; SDS; General 
+Motors Corporation; Charles Wooten; SDS and DRUM demonstration in front of 
+Chrysler Corporation offices in Highland Park. 
+0516 Intelligence Bureau File: LRBW (1) [1968–1972 and undated]. 
+Major Topics: Split of LRBW after resignations of Kenneth Cockrel, Mike Hamlin, and 
+John Watson; Black Workers Congress; UAW Local 3; DRUM; Medical 
+Committee for Human Rights, Detroit chapter; General Gordon Baker Jr.; John 
+Williams; International Black Appeal; Medical Committee for Human Rights 
+meeting in Chicago; UPRUM; FRUM; JARUM; Black Student United Front; 
+Coleman A. Young; Communism; UAW; Michigan Communist Party; Highland 
+Park Rehabilitation Corp.; Uniroyal Revolutionary Union Movement (URUM); 
+Labor Defense Coalition request for abolition of Detroit Police Department’s 
+Intelligence Bureau. 
+0606 Intelligence Bureau File: LRBW (2) [1969–1972 and undated]. 
+Major Topics: MERUM; May Day; Vietnam War; Communist League; UPRUM; 
+ELRUM; Chrysler Corporation; UAW; ELRUM demonstration at UAW Local 961 
+meeting hall; ELRUM demonstration in front of Eldon Avenue Gear and Axle
+
+
+--- PAGE 20 ---
+Frame No. 
+ 5 
+plant; CADRUM; anniversary of assassination of Malcolm X; James Johnson; 
+Workers Labor Alliance; plans for LRBW demonstration in front of Cobo Hall; 
+NEWRUM; Lafayette Clinic Revolutionary Union Movement (LRUM); JARUM; 
+Rushie Forge; FORUM; General Motors Corporation; Glanton Dowdell; James 
+Johnson; DRUM. 
+0721 Intelligence Bureau File: DRUM [1968–1970 and undated]. 
+Major Topics: Sherman Patterson; Huber Avenue Foundry; Dodge Main plant; UAW 
+Local 3; Chrysler Corporation; medical personnel at Huber Avenue Foundry; 
+health care facilities at Dodge Main plant; apprenticeship training programs; 
+endorsement of George C. Wallace by UAW Local 326; Curtis Lee; John 
+Matthew Jr.; FRUM; ELRUM; anniversary of assassination of Malcolm X; Ed 
+Liska; Herman Hastings; John Patrick McGuire; Dodge Truck Revolutionary 
+Union Movement (DRUM II); Detroit NAACP branch; Ron March; UAW Local 
+140; Huber Avenue Foundry employment office; employment discrimination; 
+skilled labor; Rushie Forge; UAW Local 3 elections at Dodge Main plant; Ed 
+Benford; Sidney Lewis; urban renewal; United Black Brothers of Mahwah Ford; 
+formation of Alliance for Labor Action by UAW and International Brotherhood of 
+Teamsters. 
+0886 Intelligence Bureau File: ELRUM [1969–1970 and undated]. 
+Major Topics: James Johnson; police brutality; Leonard Woodcock; labor-
+management relations; UAW Local 961; Gary Thompson; Communism; United 
+Rubber Workers; wages and salaries; working conditions; wildcat strikes; Eldon 
+Avenue Gear and Axle plant; James Edwards; Robert McKee; Alonzo Linwood 
+Chandler; John Taylor; Mamie Williams; visit to Eldon Avenue Gear and Axle 
+plant by James Johnson and jury in Johnson’s murder trial; Eldon Workers’ 
+Safety Committee; UAW Local 1245; Sterling Township Stamping plant 
+(Chrysler); ELRUM demonstration at Solidarity House; James Edwards; 
+anniversary of assassination of Malcolm X; Ed Rickard; Howard Davis; Chrysler 
+Corporation car prices and sales; election for delegates to UAW convention; 
+Walter Reuther; wages and salaries; Elroy Richardson; formation of Alliance for 
+Labor Action by UAW and International Brotherhood of Teamsters. 
+Reel 3 
+Series 5: Detroit Police Files cont. 
+0001 Dodge Main Plant Protection Daily Log Regarding Demonstrations [1968–1975]. 
+Major Topics: Demonstrations in front of Dodge Main plant; General Gordon Baker 
+Jr.; Hamtramck police; demonstration in front of Chrysler Corporation offices in 
+Highland Park; R. C. Kobus; JARUM; MERUM; school busing. 
+0094 Government Testimony and Police Reports [1968–1970 and undated]. 
+Major Topics: DRUM; General Gordon Baker Jr.; Dodge Main plant; demonstrations 
+in front of Dodge Main plant; UAW; ELRUM; incorporation of LRBW; JARUM; 
+MARUM; NEWRUM; FRUM; UPRUM; CADRUM; Michigan Communist Party; 
+Socialist Workers Party; SDS; Grover Douglas; Ron March; Donald B. Jackson; 
+Mike Hamlin; Aaron Pitts; Luke Tripp; John Watson; Sidney Lewis; Charles 
+Wooten; Fox and Wolf Hunting Club; GOAL; Ameer I. Ismail; Samuel Cottrell; 
+Thomas Gabay; Lee E. Moros; William J. Smith.
+
+
+--- PAGE 21 ---
+Frame No. 
+ 6 
+Series 6: FBI Files 
+0113 Black Nationalist Groups [1964–1972]. 
+Major Topics: Malcolm X; GOAL; Medgar Evers Rifle Club; UHURU; Direct Action 
+Committee (Ann Arbor, Michigan); Muslim Mosque, Inc.; Richard Henry; Fox and 
+Wolf Hunting Club; Milton R. Henry; LRBW members; employment 
+discrimination; Nation of Islam; Lewis G. Robinson. 
+0141 League of Revolutionary Black Workers (1) [1964–1972]. 
+Major Topics: Julia Beverly Burgess; Eric Myron Edwards; Black Workers Congress; 
+James Johnson; Eldon Avenue Gear and Axle plant; Alonzo Linwood Chandler; 
+International Black Appeal; John Williams; Harold M. Baron; Bank of the 
+Commonwealth; UAW; Minnie Laurene Small; shooting of police officer at New 
+Bethel Baptist Church; Republic of New Africa; Association of Black Students, 
+Highland Park Community College; Black Star Publishing Company; Communist 
+League; Mike Hamlin; Ron March; John Watson; General Gordon Baker Jr.; 
+Charles Wooten; Reginald Carter; Kenneth Cockrel; split of LRBW after 
+resignations of Kenneth Cockrel, Mike Hamlin, and John Watson; Black 
+Economic Development Conference; Bank of the Commonwealth; Interreligious 
+Foundation for Community Organizations; Inner City Voice; DRUM; ELRUM; 
+FORUM; demonstrations by LRBW; Socialist Workers Party; Youth Socialist 
+Alliance; Frank Lovell; Michigan Communist Party; Medical Committee for 
+Human Rights; Southern Legal Action Movement; Lynn Battle; Black Student 
+United Front; demonstration in front of Detroit News; Detroit police surveillance of 
+LRBW; Act Collectively Together (ACT); Lorraine Hays; Darryl Mitchell; police 
+informants; FBI and police undercover agents; RAM meeting in Detroit; Leonard 
+Brown Jr.; ELRUM demonstration in front of Eldon Avenue Gear and Axle plant; 
+MERUM; Elroy Richardson; UAW Local 961; Eldon Workers’ Safety Committee; 
+Gary Thompson; DRUM II; plans for LRBW demonstration in front of Cobo Hall; 
+UAW Local 3 elections. 
+0307 League of Revolutionary Black Workers (2) [1965–1972]. 
+Major Topics: First Independence National Bank; International Black Appeal; 
+Communist League; Mike Hamlin; Black Workers Congress; General Gordon 
+Baker Jr.; Jerome Scott; Charles Wooten; Fox and Wolf Hunting Club; Willie 
+Brookins; UAW Local 3; DRUM; Chrysler Corporation; Dodge Main plant; plans 
+for LRBW demonstration in front of Cobo Hall; UAW Local 3 elections; Vietnam 
+War; Mamie Williams; ELRUM; Gary Thompson; wildcat strike at Eldon Avenue 
+Gear and Axle plant; Eldon Workers’ Safety Committee; Huber Avenue Foundry; 
+wildcat strike at Dodge Main plant; employment discrimination; UAW; Walter 
+Reuther; Isaac Jernigan; automobile prices and sales; FRUM; National 
+Organizing Committee; Martin Glaberman; UAW Local 600; Mike Hamlin; Ron 
+March; UAW Local 961; New Detroit Committee. 
+Series 7: Internal Revenue Service File 
+0418 General [Gordon] Baker [Jr., 1967–1977]. 
+Major Topics: Taxation; Highland Park Rehabilitation Corp.; DRUM; Bank of the 
+Commonwealth; Black Star Publishing Company; Glanton Dowdell; RAM; 
+Chrysler Corporation; Luke Tripp; Black Arts Development Center.
+
+
+--- PAGE 22 ---
+Frame No. 
+ 7 
+Series 8: Subject Files 
+0467 Black Workers Congress, Steel Division [1970]. 
+Major Topics: United Steelworkers of America; iron and steel industry employment 
+statistics; African American workers; labor-management relations; wages and 
+salaries. 
+0482 Communist Labor Party [1976 and undated]. 
+Major Topics: Detroit Board of Education; school busing; campaign of General 
+Gordon Baker Jr. for Michigan House of Representatives. 
+0488 CORE [Congress of Racial Equality], Louisiana, 1963–1964. 
+Major Topics: James Farmer; Joseph Carter; voter registration in West Feliciana 
+Parish; Mary Hamilton; Ronnie Moore; Rudy Lombard; Gordon Carey; voter 
+registration in Iberville Parish; Plaquemine City Council; demonstrations in 
+Plaquemine and arrest of demonstrators for disturbing the peace; police brutality; 
+boycott of Plaquemine retail stores; harassment and intimidation; CORE Summer 
+Task Force, Louisiana, 1964; James Van Matre; Sharon Burger; James H. 
+Tredinnick; Jackie Germann; Ronnie Siegal; voter registration in St. Helena 
+Parish; Peggy Ewan; Charles Fenton; voter registration in Monroe; Arthur G. 
+Greenberg; Lawyers Constitutional Defense Committee; Lolis Elie. 
+0507 DRUM Reunion [undated]. 
+0515 Glanton Dowdell Memorial [2000 and undated]. 
+Major Topics: RAM; Al Ware Bey; Muhammad Ahmad; Wilbur Gratton; Harold 
+Mitchell; General Gordon Baker Jr.; Marian Kramer; accomplishments of Glanton 
+Dowdell; Stockholm Committee support of Dowdell after his flight to Sweden; 
+International Black Appeal. 
+0534 Malcolm X [1993]. 
+Major Topics: Relationship between Malcolm X and Muhammad Ahmad (Max 
+Stanford, founder and national field chairman of RAM); Wanda Marshall; Nation 
+of Islam; Fruit of Islam; Benjamin 2X Goodman; SNCC; Cecil B. Moore; 
+Philadelphia NAACP branch; Black Liberation Front of the U.S.A.; Don Freeman; 
+Elijah Muhammad; Afro-American Student Conference in Nashville, Tennessee 
+(1964); Willie Peacock; Robert F. Williams; Organization of Afro-American Unity 
+(OAAU); William Worthy; Barbara Weeks; Muslim Mosque, Inc.; Larry Neal; 
+Helen Brane; Elaine Freeman; Herman Ferguson; Merle Stewart; Jessie Gray; 
+Mississippi Freedom Democratic Party; COINTELPRO. 
+0542 New Bethel Defense Fund Benefit [undated]. 
+Major Topics: Lawyers and legal services; Kenneth Cockrel; Justin Ravitz; Lee 
+Molette; Sheldon Halpern; arrest of Republic of New Africa members; shooting of 
+two Detroit police officers near New Bethel Church followed by arrest of those in 
+the church at the time of the shooting; Alfred Hibbitt; Rafael Vierra; Clarence 
+Fuller. 
+0571 Newspaper Clippings [1968–1992]. 
+Major Topics: DRUM; wildcat strikes; Chrysler Corporation; UAW; Walter Reuther; 
+UAW Local 3; Dodge Main plant; police brutality; Malice Green; Owen Bieber; 
+United Mine Workers of America; Richard Trumka; International Brotherhood of 
+Teamsters; Jackie Presser; AFL-CIO; Lane Kirkland; demonstrations in Lansing 
+by welfare rights organizations; demonstration by Highland Park Community
+
+
+--- PAGE 23 ---
+Frame No. 
+ 8 
+College students; Douglas A. Fraser; Leonard Woodcock; Marcellus Stepp; 
+Congressional Black Caucus; Carter administration energy policies. 
+0591 Posters and Flyers [1968–1992 and undated]. 
+Major Topics: DRUM; George Merrilli; Houston 12 Defense Committee; Gloria 
+Rodriguez; National Organizing Committee; Malice Green; police brutality; 
+International Black Appeal; General Gordon Baker Jr.; African Liberation Day. 
+Series 9: Oversize Materials 
+0604 DRUM Campaign Poster [undated]. 
+Major Topics: DRUM; UAW; labor-management relations; automobile prices; wages 
+and salaries. 
+0606 Inner City Voice [1968–1971]. 
+Major Topics: Detroit police; Glanton Dowdell; Dick Gregory; Jerome Cavanaugh; 
+selective service system; Michigan housing legislation; Michigan crime and riot 
+legislation; Young Socialist Alliance; George S. Edwards; military personnel; 
+Emmett Doe; Floyd Nichols; Texas Southern University riot case; Chrysler 
+Corporation; African American women; Subversive Activities Control Board; 
+antipoverty programs; Black Panther Party; Max Stanford; H. Rap Brown; 
+demonstrations by South Carolina State College students and police shooting of 
+the students (Orangeburg, South Carolina); Bobby Seale; Vietnam War; religion; 
+draft resistance; SNCC; rally in support of Huey Newton; Stokely Carmichael; 
+Robert F. Williams; Mississippi Freedom Democratic Party; Barry Goldwater; 
+health care facilities and services; Ernesto “Che” Guevara; C. L. R. James; 
+wildcat strikes and working conditions at Dodge Main plant; UAW; Walter 
+Reuther; police brutality; General Gordon Baker Jr.; Poor People’s Campaign; 
+violation of Detroit zoning ordinances by Dearborn Steel Sales; Martin Sostre; 
+African American military personnel; Rebel Armed Forces (Guatemala); 13th of 
+November Revolutionary Movement (Guatemala); Eldridge Cleaver; Bobby 
+James Hutton; Mao Tse-tung; discrimination in criminal justice system; Reginald 
+A. Hawkins; Mozambique Liberation Front; Malcolm X; DRUM; UAW strike 
+against General Motors Corporation; Citizen’s Committee for Community Control; 
+Highland Park Board of Education; Highland Park teachers’ strike; Michigan 
+State University; Southeast Michigan Council of Governments; NAACP plans for 
+Detroit school desegregation lawsuit; drug rehabilitation; United Drugfighters of 
+Harlem; review of Finally Got the News (film about UAW, DRUM, and LRBW); 
+UAW contract negotiations; LRBW general policy statement; Detroit Board of 
+Education; Parents and Students for Community Control; Wayne County jail; civil 
+war in Chad; Chad National Liberation Front; Joseph D. Mobutu; United 
+Foundation; International Black Appeal; students; Black Student United Front; 
+review of Burn (film about rebellions against Portuguese colonial government in 
+Caribbean starring Marlon Brando); Food for Peace program; U.S. Army and FBI 
+surveillance of radicals; Angela Davis; Ahmed Sekou Toure; Republic of Guinea; 
+African Independence Party of Guinea and the Cape Verde Islands (Partido 
+Africano da Independencia da Guine e Cabo Verde, PAIGC); Black Star 
+Productions; Rae Johnson; James Johnson; Michigan Civil Rights Commission; 
+demonstration by Labor Defense Coalition regarding conditions in Wayne County 
+jail; George Jackson; Newark, New Jersey, teachers’ strike; Polaroid Workers 
+Revolutionary Movement; National Welfare Rights Organization; rent strike in 
+New York City.
+
+
+--- PAGE 24 ---
+Frame No. 
+ 9 
+0716 The South End [1969]. 
+Major Topics: Eldridge Cleaver; strike by Oil, Chemical, and Atomic Workers’ Union, 
+AFL-CIO; Wayne State University; Free University, University of Detroit; DRUM 
+history and goals; Luke Tripp; UAW; UAW Local 3 elections; Dodge Main plant; 
+Chrysler Corporation; Walter Reuther; Ron March; Malcolm X; Black Panther 
+Party; selective service system; Rushie Forge; welfare programs; Black Student 
+Press Association; Detroit public housing; Bill Cosby; Alvin Ailey Dance Theatre; 
+Open City Project (Detroit); Duke University; LRBW boycott of Chrysler 
+Corporation products; health care facilities and services; Black United Front; 
+criticisms of the Detroit News; abortion laws; economic conditions; Huey Newton; 
+Martin Sostre; GIs United Against the War in Vietnam; review of The Great White 
+Hope (play about heavyweight boxer Jack Johnson); Kenneth Cockrel; Milton R. 
+Henry; ELRUM; Eldon Avenue Gear and Axle plant; UAW Local 961; Socialist 
+Workers Party; William R. Evans; discrimination in criminal justice system; LeRoi 
+Jones; George Crockett; United Student Association; Detroit public schools; 
+review of The Detroit Riot of 1967 (book). 
+0863 Black Student Manifesto [1971]. 
+Major Topics: Black Student United Front; Detroit public schools. 
+0868 LRBW Calendar, 1970. 
+Major Topic: Photographs of Robert F. Williams, Malcolm X, 1967 Detroit riot, 
+Glanton Dowdell, and Ron March.
+
+
+--- PAGE 25 ---
+
+
+
+--- PAGE 26 ---
+11 
+SUBJECT INDEX 
+ 
+The following index is a guide to the major topics in this microfilm publication. The first 
+number after an entry refers to the reel, while the four-digit number following the colon refers to 
+the frame number at which the subject begins. Hence, 3: 0716 directs the researcher to Frame 
+0716 of Reel 3. By referring to the Reel Index, which constitutes the initial segment of this guide, 
+the researcher will find the folder title, inclusive dates, and a list of Major Topics listed in the 
+order in which they appear on the film. 
+ 
+Abortion laws 
+3: 0716 
+Abston, Thomas 
+2: 0409 
+Act Collectively Together (ACT) 
+3: 0141 
+AFL-CIO 
+1: 0029, 0259, 0722, 0874; 3: 0571, 
+0716 
+Africa 
+see African Liberation Day 
+see Chad 
+see Guinea, Republic of 
+see Zimbabwe 
+African Independence Party of Guinea 
+and the Cape Verde Islands (Partido 
+Africano da Independencia da Guine e 
+Cabo Verde, PAIGC) 
+3: 0606 
+African Liberation Day 
+3: 0591 
+Afro-American Association, University of 
+Alabama 
+1: 0874 
+Afro-American Student Conference 
+Nashville, Tennessee (1964) 3: 0534 
+Agricultural labor 
+1: 0007, 0722 
+see also United Farm Workers,  
+AFL-CIO 
+Ahmad, Muhammad (Max Stanford) 
+1: 0849; 3: 0515, 0534, 0606 
+Alvin Ailey Dance Theatre 
+3: 0716 
+Alabama 
+Greene County dog racing track boycott 
+1: 0874 
+Montgomery bus boycott 1: 0335 
+school desegregation 1: 0874 
+see also University of Alabama 
+Alabama Dry Docks and Shipbuilding 
+Co. 
+1: 0874 
+Alliance for Labor Action 
+2: 0721, 0886 
+Amalgamated Clothing and Textile 
+Workers Union 
+1: 0874 
+American Federation of Labor–Congress 
+of Industrial Organizations  
+see AFL-CIO 
+Ann Arbor, Michigan 
+Commission on Professional and 
+Hospital Activities 1: 0722 
+Direct Action Committee 3: 0113 
+Antipoverty programs 
+3: 0606 
+see also Food stamps 
+Apprenticeship training programs 
+2: 0721 
+Army, U.S. 
+surveillance of radicals 3: 0606
+
+
+--- PAGE 27 ---
+12 
+Arrests 
+Abston, Thomas 2: 0409 
+Baker, General Gordon, Jr. 2: 0251, 
+0409 
+demonstrators in Plaquemine, Louisiana 
+3: 0488 
+Dowdell, Glanton 2: 0251, 0409 
+Griffin, Rufus, Jr. 2: 0251 
+Harrison, Alvin 2: 0409 
+Kemp, Gwendolyn 2: 0409 
+McClendon, Wilvern 2: 0251 
+Niederhouser, David 2: 0409 
+Reed, Clarence 2: 0251 
+Republic of New Africa members 
+3: 0542 
+Roberts, James 2: 0409 
+Robertson, James 2: 0251 
+Smith, Nobel 2: 0251 
+Watson, John 2: 0409 
+Wedlow, Moses 2: 0409 
+Williams, John 2: 0409 
+Arts and culture 
+2: 0001; 3: 0716 
+see also Black Arts Development Center 
+see also Motion pictures 
+see also Music 
+see also Theater and plays 
+Assassinations 
+Kennedy, John F. 1: 0791 
+King, Martin Luther, Jr. 1: 0335 
+Malcolm X 1: 0335, 0565, 0634, 0791; 
+2: 0606, 0721, 0886 
+Automation 
+2: 0001 
+Automobile prices and sales 
+2: 0886; 3: 0307, 0604 
+Baker, General Gordon, Jr. 
+1: 0259, 0634; 2: 0220, 0251, 0409, 
+0516; 3: 0001, 0094, 0141, 0307, 
+0418, 0482, 0515, 0591, 0606 
+Bank of the Commonwealth 
+3: 0141, 0418 
+Banks and banking 
+Bank of the Commonwealth 3: 0141, 
+0418 
+First Independence National Bank 
+3: 0307 
+Baptist Church 
+New Bethel Baptist Church 3: 0141, 
+0542 
+Baraka, Amiri 
+1: 0176 
+see also Jones, LeRoi 
+Baron, Harold M. 
+3: 0141 
+Battle, Lynn 
+3: 0141 
+BC & BS RUM 
+see Blue Cross and Blue Shield 
+Revolutionary Union Movement 
+Benford, Ed 
+1: 0335; 2: 0721 
+Bey, Al Ware 
+3: 0515 
+Bieber, Owen 
+3: 0571 
+Birth control 
+1: 0849 
+Black Arts Development Center 
+3: 0418 
+Black Economic Development 
+Conference 
+1: 0259; 3: 0141 
+Black Liberation Front of the U.S.A. 
+3: 0534 
+“The Black Manifesto” 
+1: 0849 
+Black Panther Party 
+1: 0029, 0176, 0259, 0886; 3: 0606, 
+0716 
+Black Star Productions 
+3: 0606 
+Black Star Publishing Company 
+3: 0141, 0418 
+Black Student League 
+1: 0754 
+Black Student Manifesto 
+3: 0863 
+Black Student Press Association 
+3: 0716 
+Black Student Union 
+1: 0849 
+Black Student United Front 
+1: 0722, 0754; 2: 0516; 3: 0141, 0606, 
+0863 
+Black Student Voice 
+1: 0754 
+Black United Front 
+3: 0716
+
+
+--- PAGE 28 ---
+13 
+Black Vanguard 
+1: 0791 
+The Black Voice (newspaper) 
+1: 0886 
+Black Women’s Committee 
+1: 0849 
+Black Workers Congress 
+1: 0176, 0259; 2: 0516; 3: 0141, 0307, 
+0467 
+Blue Cross and Blue Shield 
+Revolutionary Union Movement  
+(BC & BS RUM) 
+1: 0634 
+Boycotts 
+Chrysler Corporation products 3: 0716 
+dog racing 1: 0874 
+Montgomery, Alabama, buses 1: 0335 
+retail stores 3: 0488 
+Brando, Marlon 
+3: 0606 
+Brane, Helen 
+3: 0534 
+Brookins, Willie 
+1: 0335; 3: 0307 
+Brooks, Robert 
+1: 0335 
+Brown, H. Rap 
+3: 0606 
+Brown, Leonard, Jr. 
+3: 0141 
+Burger, Sharon 
+3: 0488 
+Burgess, Julia Beverly 
+3: 0141 
+Burke, Rufus 
+1: 0176 
+Burn (film) 
+review of 3: 0606 
+Buses 
+Montgomery, Alabama, boycott 1: 0335 
+see also School busing 
+BWC News (newspaper) 
+1: 0849 
+Cabral, Amilcar 
+1: 0259 
+Cadillac Revolutionary Union Movement 
+(CADRUM) 
+2: 0409, 0606; 3: 0094 
+California 
+farm workers strike 1: 0722 
+Carey, Gordon 
+3: 0488 
+Carmichael, Stokely 
+1: 0259, 0849; 3: 0606 
+Carter, Jimmy 
+energy policies 3: 0571 
+Carter, Joseph 
+3: 0488 
+Carter, Reginald 
+3: 0141 
+Cavanaugh, Jerome 
+3: 0606 
+Central High School (Detroit, Michigan) 
+1: 0754 
+Chad 
+civil war 3: 0606 
+Chad National Liberation Front 
+3: 0606 
+Chandler, Alonzo Linwood 
+2: 0886; 3: 0141 
+Charlotte Equal Rights Council (North 
+Carolina) 
+1: 0874 
+Chinese Communist Party 
+1: 0176 
+Chronologies 
+LRBW 1: 0259 
+Chrysler Corporation 
+1: 0335, 0634, 0791; 2: 0001, 0251, 
+0409, 0606, 0721, 0886; 3: 0001, 
+0307, 0418, 0571, 0606, 0716 
+see also Dodge Main plant 
+see also Eldon Avenue Gear and Axle 
+plant 
+see also Huber Avenue Foundry 
+see also Sterling Township Stamping 
+plant 
+Citizen’s Committee for Community 
+Control (Highland Park, Michigan) 
+3: 0606 
+Civil liberties 
+Medical Committee for Human Rights 
+2: 0516; 3: 0141 
+Michigan Civil Rights Commission 
+3: 0606 
+Cleaver, Eldridge 
+3: 0606, 0716 
+Clothing industry 
+Amalgamated Clothing and Textile 
+Workers Union 1: 0874
+
+
+--- PAGE 29 ---
+14 
+Cobo Hall (Detroit, Michigan) 
+LRBW demonstrations in front of 
+2: 0251, 0606; 3: 0141, 0307 
+Cockrel, Kenneth 
+1: 0259, 0335; 2: 0001, 0251, 0516; 
+3: 0141, 0542, 0716 
+COINTELPRO 
+see Counterintelligence Program 
+Colleges and universities 
+Duke University 3: 0716 
+Highland Park Community College 
+3: 0141, 0571 
+Michigan State University 3: 0606 
+South Carolina State College 3: 0606 
+Texas Southern University 3: 0606 
+University of Alabama 1: 0874 
+University of Detroit 3: 0716 
+Wayne State University 2: 0251; 3: 0716 
+Commemorations and memorials 
+Dowdell, Glanton 3: 0515 
+Malcolm X 1: 0335, 0565, 0634; 
+2: 0606, 0721, 0886 
+Commission on Professional and 
+Hospital Activities (Ann Arbor, Michigan) 
+1: 0722 
+Committee for Justice 
+1: 0874 
+Communism 
+1: 0176; 2: 0516, 0886 
+see also Chinese Communist Party 
+see also Communist Labor Party 
+see also Communist League 
+see also Marxism-Leninism 
+see also Michigan Communist Party 
+Communist Labor Party 
+3: 0482 
+Communist League 
+2: 0606; 3: 0141, 0307 
+Congressional Black Caucus 
+3: 0571 
+Congress of Racial Equality (CORE) 
+1: 0335; 3: 0488 
+CORE 
+see Congress of Racial Equality 
+Corporations 
+Alabama Dry Docks and Shipbuilding 
+Co. 1: 0874 
+Chrysler Corporation 1: 0335, 0634, 
+0791; 2: 0001, 0251, 0409, 0606, 
+0721, 0886; 3: 0001, 0307, 0418, 
+0571, 0606, 0716 
+Dearborn Steel Sales 3: 0606 
+General Motors Corporation 2: 0409, 
+0606; 3: 0606 
+Cosby, Bill 
+3: 0716 
+Cottrell, Samuel 
+3: 0094 
+Counterintelligence Program 
+(COINTELPRO) 
+3: 0534 
+Crime and criminals 
+Michigan legislation regarding 3: 0606 
+see also Homicide 
+Criminal justice system 
+discrimination in 3: 0606, 0716 
+see also Arrests 
+see also Juries 
+Crockett, George 
+3: 0716 
+Cuba 
+see Cuban Federation of University 
+Students 
+see Student Committee for Travel to 
+Cuba 
+Cuban Federation of University Students 
+2: 0409 
+Cultural nationalism 
+1: 0176 
+Cultural revolution 
+1: 0176 
+Davis, Angela 
+3: 0606 
+Davis, Howard 
+1: 0565; 2: 0886 
+Dawkins, Albert 
+1: 0335 
+Deacons for Defense and Justice 
+2: 0251 
+Dearborn Steel Sales 
+3: 0606 
+Demonstrations and protests 
+DRUM 2: 0409; 3: 0001, 0094 
+ELRUM 1: 0565; 2: 0409, 0606, 0886; 
+3: 0141 
+Highland Park Community College 
+students 3: 0571 
+Labor Defense Coalition 3: 0606 
+LBRW 2: 0251, 0606; 3: 0141, 0307
+
+
+--- PAGE 30 ---
+15 
+May Day 1: 0722, 0886; 2: 0606 
+for Newton, Huey 3: 0606 
+Olympic torch ceremonies 2: 0409 
+Plaquemine, Louisiana 3: 0488 
+Poor People’s Campaign 1: 0335; 
+2: 0251; 3: 0606 
+SDS 2: 0251, 0409 
+South Carolina State College students 
+3: 0606 
+United Food and Commercial Workers 
+Union 1: 0874 
+welfare rights organizations 3: 0571 
+see also Boycotts 
+see also Riots and disorders 
+see also Strikes 
+Detroit, Michigan 
+Board of Education 3: 0482, 0606 
+Central High School 1: 0754 
+housing 3: 0716 
+Medical Committee for Human Rights 
+chapter 2: 0516 
+NAACP branch 2: 0251, 0409, 0721 
+NAACP plans for school desegregation 
+lawsuit 3: 0606 
+Open City Project 3: 0716 
+Osborn High School 1: 0754 
+police 1: 0791; 2: 0220, 0516; 3: 0094, 
+0141, 0542, 0606 
+RAM meeting in 3: 0141 
+riot (1967) 3: 0716, 0868 
+schools 3: 0716, 0863 
+university of 3: 0716 
+zoning ordinances 3: 0606 
+Detroit Forge Revolutionary Union 
+Movement (FORUM) 
+1: 0634; 2: 0606; 3: 0141 
+Detroit News (newspaper) 
+criticism of 3: 0716 
+LRBW demonstration in front of 3: 0141 
+Detroit News Revolutionary Union 
+Movement (NEWRUM) 
+2: 0409, 0606; 3: 0094 
+The Detroit Riot of 1967 (book) 
+review of 3: 0716 
+Direct Action Committee (Ann Arbor, 
+Michigan) 
+3: 0113 
+Discrimination 
+criminal justice system 3: 0606, 0716 
+employment 1: 0001, 0007, 0029, 0335, 
+0565; 2: 0721; 3: 0113, 0307 
+Disturbing the peace 
+2: 0409; 3: 0488 
+Dodge Main plant 
+1: 0029, 0335, 0791; 2: 0001, 0409, 
+0721; 3: 0001, 0094, 0307, 0571, 
+0606, 0716 
+Dodge Revolutionary Union Movement 
+(DRUM) 
+1: 0001, 0007, 0029, 0259, 0335, 0634; 
+2: 0001, 0220, 0409, 0516, 0606, 
+0721; 3: 0094, 0141, 0307, 0418, 
+0507, 0571, 0591, 0604, 0606, 0716 
+Dodge Truck Revolutionary Union 
+Movement (DRUM II) 
+2: 0721; 3: 0141 
+Doe, Emmett 
+3: 0606 
+Dog racing 
+boycott 1: 0874 
+Douglas, Grover 
+3: 0094 
+Dowdell, Glanton 
+2: 0251, 0409, 0606; 3: 0418, 0515, 
+0606, 0868 
+Draft resistance 
+2: 0409; 3: 0606 
+Drug rehabilitation 
+3: 0606 
+Drug use and abuse 
+2: 0001 
+DRUM 
+see Dodge Revolutionary Union 
+Movement 
+DRUM II 
+see Dodge Truck Revolutionary Union 
+Movement 
+Duke University 
+3: 0716 
+Economic conditions 
+1: 0007, 0029, 0791; 3: 0716 
+see also Inflation 
+Education 
+3: 0606 
+see also Apprenticeship training 
+programs 
+see also Colleges and universities
+
+
+--- PAGE 31 ---
+16 
+Education cont. 
+see also Schools 
+see also Students 
+Edwards, Eric Myron 
+3: 0141 
+Edwards, George S. 
+3: 0606 
+Edwards, James 
+2: 0886 
+Eldon Avenue Gear and Axle plant 
+(Chrysler) 
+1: 0335, 0565, 0634; 2: 0409, 0606, 
+0886; 3: 0141, 0307, 0716 
+Eldon Avenue Revolutionary Union 
+Movement (ELRUM) 
+1: 0001, 0007, 0259, 0335, 0565, 0634; 
+2: 0001, 0409, 0606, 0721, 0886; 
+3: 0094, 0141, 0307, 0716 
+Eldon Workers’ Safety Committee 
+2: 0886; 3: 0141, 0307 
+Elections 
+Michigan House of Representatives 
+3: 0482 
+UAW  
+convention delegates 2: 0886 
+Local 3 1: 0335; 2: 0721; 3: 0141, 
+0307, 0716 
+Elie, Lolis 
+3: 0488 
+ELRUM 
+see Eldon Avenue Revolutionary Union 
+Movement 
+Employment 
+see Agricultural labor 
+see Apprenticeship training programs 
+see Employment discrimination 
+see Hours of work 
+see Job security 
+see Labor-management relations 
+see Labor unions and organizations 
+see Skilled labor 
+see Unemployment 
+see Wages and salaries 
+see White workers 
+see Working conditions 
+Employment discrimination 
+1: 0001, 0007, 0029, 0335, 0565; 
+2: 0721; 3: 0113, 0307 
+Energy policies 
+of Carter, Jimmy 3: 0571 
+Espionage 
+3: 0141, 0606 
+Evans, William R. 
+3: 0716 
+Medgar Evers Rifle Club 
+2: 0251; 3: 0113 
+Ewan, Peggy 
+3: 0488 
+Farmer, James 
+1: 0791; 3: 0488 
+Farm workers 
+see Agricultural labor 
+Federal Bureau of Investigation (FBI) 
+3: 0113, 0141, 0307, 0606 
+see also Counterintelligence Program 
+Fenton, Charles 
+3: 0488 
+Ferguson, Herman 
+3: 0534 
+Finally Got the News (film) 
+1: 0259; 3: 0606 
+First Independence National Bank 
+3: 0307 
+Food for Peace program 
+3: 0606 
+Food industry 
+United Food and Commercial Workers 
+Union 1: 0874 
+Winn-Dixie supermarkets 1: 0874 
+Food stamps 
+1: 0874 
+Ford Revolutionary Union Movement 
+(FRUM) 
+1: 0001, 0007, 0335, 0634; 2: 0516, 
+0721; 3: 0094, 0307 
+Forge, Rushie 
+2: 0606, 0721; 3: 0716 
+Forman, James 
+1: 0259, 0849 
+FORUM 
+see Detroit Forge Revolutionary Union 
+Movement 
+Fox and Wolf Hunting Club 
+2: 0220, 0251, 0409; 3: 0094, 0113, 
+0307 
+Fraser, Douglas A. 
+3: 0571 
+Freedom Now Party 
+2: 0251
+
+
+--- PAGE 32 ---
+17 
+Freeman, Don 
+3: 0534 
+Freeman, Elaine 
+3: 0534 
+Free University, University of Detroit 
+3: 0716 
+Fruit of Islam 
+3: 0534 
+FRUM 
+see Ford Revolutionary Union 
+Movement 
+Fuller, Clarence 
+3: 0542 
+Fund-raising 
+International Black Appeal 1: 0335, 
+0634; 2: 0251, 0516; 3: 0141, 0307, 
+0515, 0591, 0606 
+Gabay, Thomas 
+3: 0094 
+Gambling 
+boycott of dog racing track 1: 0874 
+Garvey, Marcus 
+1: 0176; 2: 0001 
+General Motors Corporation 
+2: 0409, 0606; 3: 0606 
+see also Chrysler Corporation 
+Germann, Jackie 
+3: 0488 
+GIs United Against the War in Vietnam 
+3: 0716 
+Glaberman, Martin 
+3: 0307 
+GOAL 
+see Group on Advanced Leadership 
+Goldwater, Barry 
+3: 0606 
+Goodman, Benjamin 2X 
+3: 0534 
+Gratton, Wilbur 
+3: 0515 
+Gray, Jessie 
+3: 0534 
+The Great White Hope (play) 
+review of 3: 0716 
+Green, Malice 
+3: 0571, 0591 
+Greenberg, Arthur G. 
+3: 0488 
+Greene County, Alabama 
+dog racing track boycott 1: 0874 
+Gregory, Dick 
+3: 0606 
+Griffin, Rufus, Jr. 
+2: 0251 
+Group on Advanced Leadership (GOAL) 
+2: 0220, 0251; 3: 0094, 0113 
+Guatemala 
+13th of November Revolutionary 
+Movement 3: 0606 
+Guevara, Ernesto “Che” 
+3: 0606 
+Guinea, Republic of 
+3: 0606 
+Halpern, Sheldon 
+3: 0542 
+Hamilton, Mary 
+3: 0488 
+Hamlin, Mike 
+1: 0259; 2: 0251, 0409, 0516; 3: 0094, 
+0141, 0307 
+Hamtramck, Michigan 
+Dodge main plant 1: 0029, 0335, 0791; 
+2: 0001, 0409, 0721; 3: 0001, 0094, 
+0307, 0571, 0606, 0716 
+police 1: 0335; 3: 0001 
+Hansberry, Lorraine 
+1: 0791 
+Harassment and intimidation 
+1: 0001; 3: 0488 
+see also Mob violence 
+Harrison, Alvin 
+2: 0409 
+Hastings, Herman 
+2: 0721 
+Hawkins, Reginald A. 
+3: 0606 
+Hays, Lorraine 
+3: 0141 
+Health care facilities and services 
+1: 0335; 2: 0001, 0721; 3: 0606, 0716 
+see also Medical personnel 
+Henry, Milton R. 
+2: 0251, 0409; 3: 0113, 0716 
+Henry, Richard 
+2: 0251, 0409; 3: 0113 
+Hibbitt, Alfred 
+3: 0542
+
+
+--- PAGE 33 ---
+18 
+Highland Park, Michigan 
+Board of Education 3: 0606 
+Chrysler Corporation offices 2: 0251, 
+0409; 3: 0001 
+Citizen’s Committee for Community 
+Control 3: 0606 
+High School 1: 0754 
+teachers’ strike 3: 0606 
+Highland Park Community College 
+students 3: 0141, 0571 
+Highland Park Rehabilitation Corporation 
+2: 0516; 3: 0418 
+Hill, Dupree 
+1: 0335 
+Homicide 
+trial of James Johnson 2: 0886 
+Hours of work 
+1: 0007, 0029 
+Housing 
+2: 0001; 3: 0606, 0716 
+Houston 12 Defense Committee 
+3: 0591 
+Huber Avenue Foundry (Chrysler) 
+1: 0335; 2: 0721; 3: 0307 
+Human rights 
+see Civil liberties 
+Hutton, Bobby James 
+3: 0606 
+Iberville Parish, Louisiana 
+voter registration 3: 0488 
+Ideological divisions 
+LRBW 1: 0259 
+Imperialism 
+1: 0007 
+Inflation 
+1: 0634 
+Inner City Voice (newspaper) 
+1: 0259; 3: 0141, 0606 
+Integration 
+1: 0259 
+Internal Revenue Service 
+3: 0418 
+International Black Appeal 
+1: 0335, 0634; 2: 0251, 0516; 3: 0141, 
+0307, 0515, 0591, 0606 
+International Brotherhood of Teamsters 
+2: 0721, 0886; 3: 0571 
+International Chemical Workers Union 
+1: 0874 
+Interreligious Foundation for Community 
+Organizations 
+3: 0141 
+Iron and steel industry 
+Black Workers Congress, Steel Division 
+3: 0467 
+employment statistics 3: 0467 
+Ismail, Ameer I. 
+3: 0094 
+Jackson, Donald B. 
+3: 0094 
+Jackson, George 
+1: 0634; 3: 0606 
+James, C. L. R. 
+3: 0606 
+Jefferson Assembly Revolutionary Union 
+Movement (JARUM) 
+1: 0634; 2: 0001, 0409, 0516, 0606; 
+3: 0001, 0094 
+Jernigan, Isaac 
+3: 0307 
+Job security 
+1: 0007 
+Johnson, Charles Wallace, Jr. 
+2: 0409 
+Johnson, Jack 
+3: 0716 
+Johnson, James 
+1: 0335, 0634, 0754; 2: 0606, 0886; 
+3: 0141, 0606 
+Johnson, Rae 
+3: 0606 
+Jones, LeRoi 
+3: 0716 
+see also Baraka, Amiri 
+Juries 
+2: 0886 
+Kemp, Gwendolyn 
+2: 0409 
+Kennedy, John F. 
+assassination of 1: 0791 
+King, Martin Luther, Jr. 
+1: 0335, 0791 
+Kirkland, Lane 
+3: 0571 
+Kobus, R. C. 
+3: 0001 
+Kramer, Marian 
+3: 0515
+
+
+--- PAGE 34 ---
+19 
+Ku Klux Klan 
+1: 0335, 0874 
+Labor Defense Coalition 
+2: 0516; 3: 0606 
+Labor-management relations 
+1: 0335, 0565, 0791; 2: 0886; 3: 0467, 
+0604, 0606 
+Labor standards 
+1: 0007, 0029 
+Labor unions and organizations 
+AFL-CIO 1: 0029, 0259, 0722, 0874; 
+3: 0571, 0716 
+Alliance for Labor Action 2: 0721, 0886 
+Amalgamated Clothing and Textile 
+Workers Union 1: 0874 
+Black Workers Congress 1: 0176, 0259; 
+2: 0516; 3: 0141, 0307, 0467 
+International Brotherhood of Teamsters 
+2: 0721, 0886; 3: 0571 
+International Chemical Workers Union 
+1: 0874 
+League of Black Workers 1: 0791; 
+2: 0220, 0409 
+Oil, Chemical, and Atomic Workers’ 
+Union, AFL-CIO 3: 0716 
+Polaroid Workers Revolutionary 
+Movement 3: 0606 
+UAW 
+international union 1: 0001, 0007, 
+0029, 0259, 0565, 0722, 0791; 
+2: 0001, 0251, 0409, 0516, 
+0606, 0721, 0886; 3: 0094, 
+0141, 0307, 0571, 0604, 0606, 
+0716 
+Local 3  1: 0335; 2: 0001, 0220, 
+0409, 0516, 0721; 3: 0141, 
+0307, 0571, 0716 
+Local 7  1: 0634 
+Local 140  2: 0721 
+Local 157  1: 0722 
+Local 326  1: 0335; 2: 0721 
+Local 600  1: 0565, 0634; 3: 0307 
+Local 889  1: 0722 
+Local 906  1: 0335, 0886 
+Local 961  1: 0335, 0565; 2: 0606, 
+0886; 3: 0141, 0307, 0716 
+Local 1245  2: 0886 
+United Black Workers 1: 0886 
+United Farm Workers, AFL-CIO 1: 0722 
+United Food and Commercial Workers 
+Union 1: 0874 
+United Mine Workers of America 
+1: 0634; 3: 0571 
+United Rubber Workers 2: 0886 
+United Steelworkers of America 3: 0467 
+United Workers Movement 1: 0886 
+Welfare Employees Union 1: 0722 
+Workers Labor Alliance 2: 0606 
+see also Revolutionary Union 
+Movements 
+Lafayette Clinic Revolutionary Union 
+Movement (LRUM) 
+2: 0606 
+Lansing, Michigan 
+demonstrations by welfare rights 
+organizations 3: 0571 
+Lawyers and legal services 
+3: 0542 
+Lawyers Constitutional Defense 
+Committee 
+3: 0488 
+League of Black Workers 
+1: 0791; 2: 0220, 0409 
+Lee, Curtis 
+1: 0335; 2: 0721 
+Lee, Spike 
+2: 0001 
+Legislation 
+Michigan 3: 0606 
+Legislatures 
+see State legislatures 
+Lewis, Sidney 
+1: 0335; 2: 0721; 3: 0094 
+Liska, Ed 
+1: 0335; 2: 0721 
+Lombard, Rudy 
+3: 0488 
+Louisiana 
+see Iberville Parish, Louisiana 
+see Monroe, Louisiana 
+see Plaquemine, Louisiana 
+see St. Helena Parish, Louisiana 
+see West Feliciana Parish, Louisiana 
+Louisiana Hunger Coalition 
+1: 0874 
+Lovell, Frank 
+3: 0141
+
+
+--- PAGE 35 ---
+20 
+LRUM 
+see Lafayette Clinic Revolutionary 
+Union Movement 
+Lyles, Fred 
+1: 0335 
+Mack Avenue Revolutionary Union 
+Movement (MARUM) 
+2: 0409; 3: 0094 
+Malcolm X 
+1: 0335, 0565, 0634, 0754, 0791; 
+2: 0001, 0409, 0606, 0721, 0886; 
+3: 0113, 0534, 0606, 0716, 0868 
+Mao Tse-tung 
+3: 0606 
+Marbury, Clint 
+1: 0176 
+March, Ron 
+1: 0335; 2: 0001, 0409, 0721; 3: 0094, 
+0141, 0307, 0716, 0868 
+Marshall, Wanda 
+3: 0534 
+MARUM 
+see Mack Avenue Revolutionary Union 
+Movement 
+Marxism-Leninism 
+1: 0007, 0029, 0176, 0259 
+see also Communism 
+Mass media 
+2: 0001 
+Mates, Robert David 
+2: 0409 
+Mathis, Ronald 
+1: 0335 
+Matthew, John, Jr. 
+1: 0335; 2: 0721 
+May Day 
+1: 0722, 0886; 2: 0606 
+McClendon, Wilvern 
+2: 0251 
+McCombs, John, Jr. 
+1: 0874 
+McGuire, John Patrick 
+2: 0721 
+McKee, Robert 
+2: 0886 
+Medical Committee for Human Rights 
+2: 0516; 3: 0141 
+Medical personnel 
+1: 0335; 2: 0721 
+see also Health care facilities and 
+services 
+Membership 
+LRBW 3: 0113 
+Merrilli, George 
+3: 0591 
+MERUM 
+see Mound Road Engine Revolutionary 
+Union Movement 
+Michigan 
+Civil Rights Commission 3: 0606 
+crime legislation 3: 0606 
+House of Representatives 3: 0482 
+housing legislation 3: 0606 
+riot legislation 3: 0606 
+see also Ann Arbor, Michigan 
+see also Detroit, Michigan 
+see also Hamtramck, Michigan 
+see also Highland Park, Michigan 
+see also Southeast Michigan Council of 
+Governments 
+Michigan Communist Party 
+2: 0409, 0516; 3: 0094, 0141 
+Michigan State University 
+3: 0606 
+Michigan Strike Support Organizing 
+Committee 
+1: 0722 
+Military personnel 
+3: 0606 
+see also GIs United Against the War in 
+Vietnam 
+see also Reserve Officers Training 
+Corps 
+see also Selective service system 
+Mines and mining industry 
+United Mine Workers of America 
+1: 0634; 3: 0571 
+Minimum wage 
+1: 0007, 0029 
+Mississippi Freedom Democratic Party 
+3: 0534, 0606 
+Mitchell, Darryl 
+3: 0141 
+Mitchell, Harold 
+3: 0515
+
+
+--- PAGE 36 ---
+21 
+Mkalimoto, Ernie 
+1: 0259 
+Mobutu, Joseph D. 
+3: 0606 
+Mob violence 
+1: 0754 
+Molette, Lee 
+3: 0542 
+Monroe, Louisiana 
+voter registration 3: 0488 
+Montgomery, Alabama 
+bus boycott 1: 0335 
+Moore, Cecil B. 
+3: 0534 
+Moore, Ronnie 
+3: 0488 
+Moros, Lee E. 
+3: 0094 
+Motion pictures 
+1: 0176; 3: 0606 
+see also Finally Got the News 
+Mound Road Engine Revolutionary 
+Union Movement (MERUM) 
+2: 0606; 3: 0001, 0141 
+Mozambique Liberation Front 
+3: 0606 
+Muhammad, Elijah 
+3: 0534 
+Music 
+1: 0176 
+Muslim Mosque, Inc. 
+3: 0113, 0534 
+NAACP 
+Detroit, Michigan, branch 2: 0251, 0409, 
+0721 
+national office 1: 0335; 3: 0606 
+Philadelphia, Pennsylvania 3: 0534 
+Nashville, Tennessee 
+Afro-American Student Conference 
+3: 0534 
+National Association for the 
+Advancement of Colored People 
+see NAACP 
+National Association of Manufacturers 
+1: 0565 
+National Labor Relations Board 
+1: 0335 
+National Organizing Committee 
+2: 0001; 3: 0307, 0591 
+National Rifle Association 
+2: 0251 
+National Welfare Rights Organization 
+1: 0722; 3: 0606 
+Nation of Islam 
+1: 0176; 3: 0113, 0534 
+Neal, Larry 
+3: 0534 
+Newark, New Jersey 
+teachers’ strike 3: 0606 
+New Bethel Baptist Church 
+3: 0141, 0542 
+New Bethel Defense Fund 
+3: 0542 
+New Detroit Committee 
+3: 0307 
+New Jersey 
+Newark teachers’ strike 3: 0606 
+NEWRUM 
+see Detroit News Revolutionary Union 
+Movement 
+Newspapers 
+Detroit News 3: 0716 
+NEWRUM 2: 0409, 0606; 3: 0094 
+Newton, Huey 
+3: 0606, 0716 
+New York City 
+rent strike 3: 0606 
+Nichols, Floyd 
+3: 0606 
+Niederhouser, David 
+2: 0409 
+Nkrumah, Kwame 
+1: 0259 
+North Carolina 
+Charlotte Equal Rights Council 1: 0874 
+Oil, Chemical, and Atomic Workers’ 
+Union, AFL-CIO 
+3: 0716 
+Oil crisis 
+1: 0722 
+Olympic Games 
+demonstration at Olympic torch 
+ceremonies in Detroit 2: 0409 
+Open City Project (Detroit, Michigan) 
+3: 0716 
+Orangeburg, South Carolina 
+demonstrations by South Carolina State 
+College students and police shooting 
+of the students 3: 0606
+
+
+--- PAGE 37 ---
+22 
+Organizational structure 
+LRBW 1: 0029 
+Organization of Afro-American Unity 
+(OAAU) 
+3: 0534 
+Osborn High School (Detroit, Michigan) 
+1: 0754 
+Palestine 
+see Popular Front for the Liberation of 
+Palestine 
+Pan-Africanism 
+1: 0259, 0849 
+Parents and Students for Community 
+Control 
+1: 0259; 3: 0606 
+Patterson, Sherman 
+1: 0335; 2: 0721 
+Peacock, Willie 
+3: 0534 
+People United for Justice 
+1: 0874 
+Philadelphia, Pennsylvania 
+NAACP branch 3: 0534 
+Pitts, Aaron 
+3: 0094 
+Plaquemine, Louisiana 
+city council 3: 0488 
+demonstrations in 3: 0488 
+retail stores boycott 3: 0488 
+Polaroid Workers Revolutionary 
+Movement 
+3: 0606 
+Police 
+Detroit, Michigan 1: 0791; 2: 0220, 
+0251, 0409, 0516, 0606, 0721, 
+0886; 3: 0001, 0094, 0141, 0542, 
+0606 
+Hamtramck, Michigan 1: 0335; 3: 0001 
+Orangeburg, South Carolina 3: 0606 
+Police brutality 
+2: 0001, 0886; 3: 0488, 0571, 0591, 
+0606 
+Poor People’s Campaign 
+1: 0335; 2: 0251; 3: 0606 
+Popular Front for the Liberation of 
+Palestine 
+1: 0176 
+Poverty 
+see Antipoverty programs 
+see Poor People’s Campaign 
+Presser, Jackie 
+3: 0571 
+Prisons 
+Wayne County, Michigan 3: 0606 
+Prosser, Gabriel 
+1: 0791 
+Randolph, A. Philip 
+2: 0001 
+Rank and File (newspaper) 
+1: 0634 
+Ravitz, Justin 
+3: 0542 
+Rawsonville Revolutionary Union 
+Movement (RRUM) 
+1: 0176 
+Rebel Armed Forces (Guatemala) 
+3: 0606 
+Reconstruction, post–Civil War 
+2: 0001 
+Reed, Clarence 
+2: 0251 
+Religion 
+2: 0001; 3: 0606 
+see Baptist Church 
+see Muslim Mosque, Inc. 
+see Nation of Islam 
+Rent strike 
+New York City 3: 0606 
+Republic of New Africa 
+3: 0141, 0542 
+Reserve Officers Training Corps (ROTC) 
+1: 0754 
+Retail stores 
+boycott 3: 0488 
+Retirement 
+1: 0007, 0029 
+Reuther, Walter 
+1: 0001, 0335, 0565; 2: 0886; 3: 0307, 
+0571, 0606, 0716 
+Revolutionary Action Movement (RAM) 
+2: 0220, 0251, 0409; 3: 0141, 0418, 
+0515, 0534 
+Revolutionary black nationalism 
+1: 0259 
+Revolutionary Union Movements 
+BC & BS RUM 1: 0634 
+CADRUM 2: 0409, 0606; 3: 0094 
+DRUM 1: 0001, 0007, 0029, 0259, 
+0335, 0634; 2: 0001, 0220, 0409, 
+0516, 0606, 0721; 3: 0094, 0141,
+
+
+--- PAGE 38 ---
+23 
+0307, 0418, 0507, 0571, 0591, 
+0604, 0606, 0716 
+DRUM II 2: 0721; 3: 0141 
+ELRUM 1: 0001, 0007, 0259, 0335, 
+0565, 0634; 2: 0001, 0409, 0606, 
+0721, 0886; 3: 0094, 0141, 0307, 
+0716 
+FORUM 1: 0634; 2: 0606; 3: 0141 
+FRUM 1: 0001, 0007, 0335, 0634; 
+2: 0516, 0721; 3: 0094, 0307 
+JARUM 1: 0634; 2: 0001, 0409, 0516, 
+0606; 3: 0001, 0094 
+LRUM 2: 0606 
+MARUM 2: 0409; 3: 0094 
+MERUM 2: 0606; 3: 0001, 0141 
+NEWRUM 2: 0409, 0606; 3: 0094 
+RRUM 1: 0176 
+United Black Brothers of Mahwah Ford 
+1: 0335, 0634; 2: 0721 
+UPRUM 2: 0409, 0516, 0606; 3: 0094 
+URUM 2: 0516 
+Richardson, Elroy 
+2: 0886; 3: 0141 
+Rickard, Ed 
+2: 0886 
+Riots and disorders 
+arrests on inciting to riot charges 
+2: 0251, 0409 
+Detroit, Michigan (1967) 3: 0716, 0868 
+Michigan legislation regarding 3: 0606 
+Texas Southern University 3: 0606 
+Roberts, James 
+2: 0409 
+Robertson, James 
+2: 0251 
+Robinson, Lewis G. 
+3: 0113 
+Rodriguez, Gloria 
+3: 0591 
+RRUM 
+see Rawsonville Revolutionary Union 
+Movement 
+Rubber industry 
+United Rubber Workers 2: 0886 
+Rules and regulations 
+LRBW 1: 0029 
+School busing 
+3: 0001, 0482 
+School desegregation 
+Alabama 1: 0874 
+Detroit, Michigan 3: 0606 
+Schools 
+Central High School (Detroit) 1: 0754 
+Detroit, Michigan 3: 0716, 0863 
+Highland Park, Michigan 1: 0754 
+see also Colleges and universities 
+Scott, Jerome 
+3: 0307 
+Seale, Bobby 
+3: 0606 
+Searches and seizures 
+2: 0409 
+Sekou Toure, Ahmed 
+1: 0259; 3: 0606 
+Selective service system 
+2: 0251, 0409; 3: 0606, 0716 
+see also Draft resistance 
+Self-defense 
+1: 0791 
+Service industries 
+1: 0007 
+Ships and shipping 
+Alabama Dry Docks and Shipbuilding 
+Co. 1: 0874 
+Shoulders, Ray 
+1: 0791 
+Siegal, Ronnie 
+3: 0488 
+Simmons, Charles E., III 
+2: 0409 
+Skilled labor 
+1: 0007, 0176; 2: 0721 
+Slavery 
+2: 0001 
+Small, Minnie Laurene 
+3: 0141 
+Smith, Nobel 
+2: 0251 
+Smith, William J. 
+3: 0094 
+Socialist Workers Party 
+3: 0094, 0141, 0716 
+Solidarity House 
+2: 0886 
+Sostre, Martin 
+3: 0606, 0716
+
+
+--- PAGE 39 ---
+24 
+South Carolina State College 
+students 3: 0606 
+Southeast Michigan Council of 
+Governments 
+3: 0606 
+The South End (newspaper) 
+3: 0716 
+Southern Advocate (newspaper) 
+1: 0874 
+Southern Christian Leadership 
+Conference (SCLC) 
+1: 0335 
+Southern Equal Rights Congress 
+1: 0874 
+Southern Legal Action Movement 
+3: 0141 
+SPEAR (LRBW newsletter) 
+1: 0634 
+Stanford, Max 
+see Ahmad, Muhammad 
+State legislatures 
+Michigan House of Representatives 
+3: 0482 
+Steel industry 
+see Iron and steel industry 
+Stepp, Marcellus 
+3: 0571 
+Sterling Township Stamping plant 
+(Chrysler) 
+2: 0886 
+Stewart, Merle 
+3: 0534 
+St. Helena Parish, Louisiana 
+3: 0488 
+Stockholm Committee 
+support of Glanton Dowdell after his 
+flight to Sweden 3: 0515 
+Street gangs 
+1: 0849 
+Strikes 
+1: 0007, 0029, 0722, 0791; 3: 0606, 
+0716 
+see also Demonstrations and protests 
+see also Wildcat strikes 
+Student Committee for Travel to Cuba 
+2: 0409 
+Student Nonviolent Coordinating 
+Committee (SNCC) 
+1: 0335; 3: 0534, 0606 
+Students 
+1: 0754, 0849, 0874; 2: 0001; 3: 0141, 
+0534, 0571, 0606 
+see also Black Student League 
+see also Black Student Manifesto 
+see also Black Student Press 
+Association 
+see also Black Student Union 
+see also Black Student United Front 
+see also Black Student Voice 
+see also Student Committee for Travel 
+to Cuba 
+see also Student Nonviolent 
+Coordinating Committee 
+see also Students for a Democratic 
+Society 
+Students for a Democratic Society (SDS) 
+2: 0251, 0409; 3: 0094 
+Subversive Activities Control Board 
+3: 0606 
+Taxation 
+3: 0418 
+Taylor, John 
+2: 0886 
+Teachers 
+1: 0754; 3: 0606 
+Teamsters 
+see International Brotherhood of 
+Teamsters 
+Tennessee 
+Nashville student conference 3: 0534 
+Texas Southern University riot case 
+3: 0606 
+Theater and plays 
+1: 0176; 3: 0716 
+13th of November Revolutionary 
+Movement (Guatemala) 
+3: 0606 
+Thompson, Gary 
+2: 0886; 3: 0141, 0307 
+Transportation 
+see Automobile prices and sales 
+see Buses 
+see School busing 
+Tredinnick, James H. 
+3: 0488 
+Trials 
+Johnson, James, for murder 2: 0886 
+Tripp, Luke 
+2: 0409; 3: 0094, 0418, 0716
+
+
+--- PAGE 40 ---
+25 
+Trumka, Richard 
+3: 0571 
+Tshombe, Moise 
+1: 0791 
+UHURU (“freedom” in Swahili) 
+2: 0220, 0409; 3: 0113 
+Undercover agents 
+FBI and police 3: 0141 
+Unemployment 
+1: 0007, 0029, 0634 
+Uniroyal Revolutionary Union Movement 
+(URUM) 
+2: 0516 
+United Auto Workers (UAW) 
+international union 1: 0001, 0007, 0029, 
+0259, 0565, 0722, 0791; 2: 0001, 
+0251, 0409, 0516, 0606, 0721, 
+0886; 3: 0094, 0141, 0307, 0571, 
+0604, 0606, 0716 
+Local 3  1: 0335; 2: 0001, 0220, 0409, 
+0516, 0721; 3: 0141, 0307, 0571, 
+0716 
+Local 7  1: 0634 
+Local 140  2: 0721 
+Local 157  1: 0722 
+Local 326  1: 0335; 2: 0721 
+Local 600  1: 0565, 0634; 3: 0307 
+Local 889  1: 0722 
+Local 906  1: 0335, 0886 
+Local 961  1: 0335, 0565; 2: 0606, 0886; 
+3: 0141, 0307, 0716 
+Local 1245  2: 0886 
+United Black Brothers of Mahwah Ford 
+1: 0335, 0634; 2: 0721 
+United Black Workers 
+1: 0886 
+United Drugfighters of Harlem 
+3: 0606 
+United Farm Workers, AFL-CIO 
+1: 0722 
+United Food and Commercial Workers 
+Union 
+1: 0874 
+United Foundation 
+3: 0606 
+United Mine Workers of America 
+1: 0634; 3: 0571 
+United Parcel Revolutionary Union 
+Movement (UPRUM) 
+2: 0409, 0516, 0606; 3: 0094 
+United Rubber Workers 
+2: 0886 
+United Steelworkers of America 
+3: 0467 
+United Student Association 
+3: 0716 
+United Tenants for Collective Action 
+1: 0335 
+United Workers Movement (MOU) 
+1: 0886 
+Universal Negro Improvement 
+Association 
+1: 0176 
+University of Alabama 
+Afro-American Association 1: 0874 
+University of Detroit 
+Free University 3: 0716 
+UPRUM 
+see United Parcel Revolutionary Union 
+Movement 
+Urban renewal 
+1: 0335, 0565; 2: 0721 
+URUM 
+see Uniroyal Revolutionary Union 
+Movement 
+Van Matre, James 
+3: 0488 
+Vickers, Glynn 
+1: 0791 
+Vierra, Rafael 
+3: 0542 
+Vietnam War 
+1: 0565; 2: 0606; 3: 0307, 0606 
+see also GIs United Against the War in 
+Vietnam 
+Violence 
+Detroit, Michigan 3: 0141, 0542 
+see also Harassment and intimidation 
+see also Mob violence 
+see also Riots and disorders 
+Vocational education and training 
+see Apprenticeship training programs 
+Voter registration 
+3: 0488 
+Wages and salaries 
+2: 0886; 3: 0467, 0604 
+see also Minimum wage 
+Wallace, George C. 
+1: 0335; 2: 0721
+
+
+--- PAGE 41 ---
+26 
+Watson, John 
+1: 0259; 2: 0001, 0251, 0409, 0516; 
+3: 0094, 0141 
+Wayne County, Michigan 
+jail 3: 0606 
+Wayne State University (Michigan) 
+2: 0251; 3: 0716 
+Weapons 
+2: 0409 
+Wedlow, Moses 
+2: 0409 
+Weeks, Barbara 
+3: 0534 
+Welfare Employees Union 
+1: 0722 
+Welfare programs 
+1: 0634, 0722; 3: 0716 
+see also Food stamps 
+Welfare rights organizations 
+1: 0634; 3: 0571 
+see also National Welfare Rights 
+Organization 
+West Feliciana Parish, Louisiana 
+3: 0488 
+White radicals 
+role in black liberation movement 
+1: 0259 
+White supremacy groups 
+Ku Klux Klan 1: 0335, 0874 
+White workers 
+1: 0007, 0029 
+Wildcat strikes 
+1: 0335; 2: 0001, 0886; 3: 0307, 0571, 
+0606 
+Wilkins, Roy 
+1: 0791 
+Williams, John 
+1: 0176; 2: 0409, 0516; 3: 0141 
+Williams, Mamie 
+2: 0886; 3: 0307 
+Williams, Robert F. 
+1: 0335, 0791; 3: 0534, 0606, 0868 
+Winn-Dixie supermarkets 
+1: 0874 
+Women 
+1: 0007, 0029; 3: 0606 
+Woodcock, Leonard 
+1: 0007, 0029, 0565, 0849; 2: 0886; 
+3: 0571 
+Wooten, Charles 
+2: 0001, 0409; 3: 0094, 0141, 0307 
+Workers Labor Alliance 
+2: 0606 
+Working conditions 
+1: 0007, 0029, 0335, 0565, 0874; 
+2: 0886; 3: 0606 
+Worthy, William 
+3: 0534 
+Young, Coleman A. 
+2: 0516 
+Young, Whitney M., Jr. 
+1: 0791 
+Young Socialist Alliance 
+3: 0606 
+Youth Socialist Alliance 
+3: 0141 
+Zimbabwe 
+civil war 1: 0849 
+Zoning ordinances 
+3: 0606
+
+
+--- PAGE 42 ---
+Black Studies Research Sources
+The Black Power Movement
+Part 1: Amiri Baraka from Black Arts to Black Radicalism
+Part 2: The Papers of Robert F. Williams
+Part 3: Papers of the Revolutionary Action Movement, 1962–1996
+Part 4: The League of Revolutionary Black Workers, 1965–1976
+Centers of the Southern Struggle:
+FBI Files on Selma, Memphis, Montgomery, Albany,
+and St. Augustine
+Civil Rights During the Johnson Administration,
+1963–1969
+Civil Rights During the Nixon Administration,
+1969–1974
+The Martin Luther King Jr. FBI File
+Papers of the NAACP
+The Bayard Rustin Papers
+Records of the Southern Christian Leadership
+Conference, 1954–1970
+Congress of Racial Equality Papers, 1959–1976
+The Papers of A. Philip Randolph
+UPA Collections from LexisNexis™
+www.lexisnexis.com/academic
+

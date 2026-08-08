@@ -1,0 +1,51 @@
+# MANIFEST.ka — Ka Education Body
+kind: ka-body
+version: 1.0.0
+name: ka-education-body
+purpose: "Develop learners, researchers, and institutions in alignment with Maat"
+constitution_version: "1.0.0"
+
+attribution:
+  framework: "Ka Architecture"
+  reference_platform: "MAAT Ecosystem"
+  domain: "Ka Education System"
+
+organs:
+  soul:
+    module: src/soul
+    role: "governance, identity, constitutional rules"
+  brain:
+    module: src/brain
+    role: "reasoning, progression, recommendations"
+  memory:
+    module: src/memory
+    role: "records, search, archives, patterns"
+  hands:
+    module: src/hands
+    role: "workflows, execution, documents, assignments"
+  senses:
+    module: src/senses
+    role: "event intake, reporting, observation"
+  voice:
+    module: src/voice
+    role: "dashboard read models, exports, notices"
+  ka:
+    module: src/ka
+    role: "health, pain, healing, restoration"
+  skeleton:
+    module: src/skeleton
+    role: "schema, stages, institutional structure"
+  blood:
+    module: src/blood
+    role: "events, queues, propagation"
+
+boot_sequence:
+  1: "load constitution"
+  2: "load nomes and stage definitions"
+  3: "connect primary database"
+  4: "initialize event bus"
+  5: "start health monitors"
+  6: "enable intake endpoints"
+  7: "enable dashboard read models"
+
+maatbench_note: "External benchmark only — not an organ of this body."

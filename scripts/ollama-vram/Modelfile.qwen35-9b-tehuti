@@ -1,0 +1,4 @@
+# VRAM-friendly alias: same weights as qwen3.5:9b, smaller default context.
+# Use from CLI or pin in WebUI; WebUI also clamps num_ctx via OLLAMA_WEBUI_MAX_NUM_CTX.
+FROM qwen3.5:9b
+PARAMETER num_ctx 16384

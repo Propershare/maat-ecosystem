@@ -1,0 +1,96 @@
+{
+  "package": "fable5_cross_model_capture",
+  "version": "fable5_capture_package_v1",
+  "status": "frozen_partial_or_complete",
+  "frozen_at": "2026-07-07T16:13:25.814995+00:00",
+  "research_question": "Can a stronger model eliminate the need for constitutional runtime enforcement, or does it only reduce repair burden?",
+  "model_card": "fable5_model_card.json",
+  "model_card_screenshot": "fable5_model_card_screenshot.png",
+  "limitations": "fable5_limitations.md",
+  "design_freeze_sha256": "c70894b4ba40a5e1868b37344a496d2d2b272c4204fd58a1a9bc87a79ad61066",
+  "prompted_framing_sha256": "302caa4217f70a1ababa342350e4fccfe0e5ec6fff55d3f6fa1bc3066d121d95",
+  "arms": {
+    "smoke_default": {
+      "cases_file": "fable5_smoke_default_cases.jsonl",
+      "raw_file": "fable5_smoke_default_raw.jsonl",
+      "score_file": "fable5_smoke_default_score.json",
+      "case_count": 16,
+      "prompt_mode": "default",
+      "status": "scored"
+    },
+    "smoke_prompted": {
+      "cases_file": "fable5_smoke_prompted_cases.jsonl",
+      "raw_file": "fable5_smoke_prompted_raw.jsonl",
+      "score_file": "fable5_smoke_prompted_score.json",
+      "case_count": 16,
+      "prompt_mode": "prompted_covenant_record",
+      "status": "scored"
+    },
+    "tier_b": {
+      "cases_file": "fable5_tier_b_cases.jsonl",
+      "raw_file": "fable5_tier_b_raw.jsonl",
+      "score_file": "fable5_tier_b_score.json",
+      "case_count": 77,
+      "prompt_mode": "default",
+      "status": "scored"
+    }
+  },
+  "sha256": {
+    "fable5_model_card.json": "61bc5182d247d32e6f921cda21f1cb2eade432150ce749890c1f6c4849bb37a6",
+    "fable5_model_card_screenshot.png": "2b9aaeea61705b8ebadfca91d918863868f49583f1afe22c38201b740f5acbbc",
+    "fable5_model_card.template.json": "6c611d0fa9b04f8ce969a1a93cd2e9ca421d989d807c4454f78ba37e15888480",
+    "fable5_smoke_default_cases.jsonl": "cdfbc46a0c2cb015c512e5ebb6a5e3ad1ab4cadf08b12bf43554133a50004d6f",
+    "fable5_smoke_default_raw.jsonl": "ef61056872e53b340bb5aaf4e31d3f713378439eac35b5ca57858780df021037",
+    "fable5_smoke_default_score.json": "b0253835f1c1b36aaa8b13e752433546e65562983e877123f0edf96f2a82b11d",
+    "fable5_smoke_prompted_cases.jsonl": "cd050eef93285a77754f975a19dabcd9ee94a791d3e9ac560c088351e77684ea",
+    "fable5_smoke_prompted_raw.jsonl": "b77ea6496e0d27f535c02c488980dd0a36dc338d9da4cab250e38955fa183e0c",
+    "fable5_smoke_prompted_score.json": "2550654b4e505b5345af25cda56f0b0ddbaad8f75ee8dd4c87adb8f0987910a8",
+    "fable5_tier_b_cases.jsonl": "d777e912fae55bab32797c41be17a7826cf366e25254113c5abb4f33675205f8",
+    "fable5_tier_b_raw.jsonl": "aeb1f15ae65911265a9d9aa8a079d37d5ef7dcc9915819fd1f90f9397639bf03",
+    "fable5_tier_b_score.json": "4dcde5b4a3da28c006fc074ecc62615e7e7118363080bd76913ef04dc805ec01",
+    "fable5_raw_outputs.smoke.jsonl": "ef61056872e53b340bb5aaf4e31d3f713378439eac35b5ca57858780df021037",
+    "fable5_smoke_score_report.json": "6900972bc21de88e7f86f81ae7076ddd47a0bea413af0979e4d40126dba1518c",
+    "fable5_limitations.md": "59a1ba0a30e6398a628efc07b81a0839368a2bc10b0071ae67e49a44c30123fc",
+    "PROMPTED_COVENANT_FRAMING.frozen.txt": "302caa4217f70a1ababa342350e4fccfe0e5ec6fff55d3f6fa1bc3066d121d95",
+    "FABLE5_CAPTURE_CHECKLIST.md": "6d1cb80e241736ac3cf344af36b4de751b88eb41fa027a5d085def90f4a66987",
+    "FABLE5_STAGED_CROSS_MODEL_EVIDENCE_PACKAGE.md": "8e6d5a1cec06107c73eba5731067a330112d368d80e6fe6afc3e2b834d847d16",
+    "FABLE5_PUBLIC_POST_DRAFT.md": "d2ddbef0517b5dcb610e59ff0a965cf1404db128acef21759a34142a6dd30df6"
+  },
+  "gates": {
+    "model_promotion": false,
+    "training": "blocked",
+    "full_251": "optional_after_p0_p3"
+  },
+  "artifacts_at_generation": {
+    "fable5_smoke_default_cases.jsonl": "cdfbc46a0c2cb015c512e5ebb6a5e3ad1ab4cadf08b12bf43554133a50004d6f",
+    "fable5_smoke_prompted_cases.jsonl": "cd050eef93285a77754f975a19dabcd9ee94a791d3e9ac560c088351e77684ea",
+    "fable5_tier_b_cases.jsonl": "d777e912fae55bab32797c41be17a7826cf366e25254113c5abb4f33675205f8",
+    "fable5_limitations.md": "59a1ba0a30e6398a628efc07b81a0839368a2bc10b0071ae67e49a44c30123fc",
+    "PROMPTED_COVENANT_FRAMING.frozen.txt": "302caa4217f70a1ababa342350e4fccfe0e5ec6fff55d3f6fa1bc3066d121d95",
+    "fable5_tier_b_batch_01_cases.jsonl": "d2f89cefff36665ee78464cede5ef9a390f702355b2df399315e9bfcdbf949ef",
+    "fable5_tier_b_batch_02_cases.jsonl": "14d2443dfb5ea4d7f4042e238c2fe4e09ebb291977be094c6fd6fc2c8f40ab81",
+    "fable5_tier_b_batch_03_cases.jsonl": "3f07964303fb5cf80686770dcb96872909d84850c4abd2b8730ccfc0b0c8aa4e",
+    "fable5_tier_b_batch_04_cases.jsonl": "4df07ea554b9f9c070505b2c35eb5d5eb0b9a8cbb11e40070d186b19953b1895"
+  },
+  "present_artifacts": [
+    "fable5_model_card.json",
+    "fable5_model_card_screenshot.png",
+    "fable5_model_card.template.json",
+    "fable5_smoke_default_cases.jsonl",
+    "fable5_smoke_default_raw.jsonl",
+    "fable5_smoke_default_score.json",
+    "fable5_smoke_prompted_cases.jsonl",
+    "fable5_smoke_prompted_raw.jsonl",
+    "fable5_smoke_prompted_score.json",
+    "fable5_tier_b_cases.jsonl",
+    "fable5_tier_b_raw.jsonl",
+    "fable5_tier_b_score.json",
+    "fable5_raw_outputs.smoke.jsonl",
+    "fable5_smoke_score_report.json",
+    "fable5_limitations.md",
+    "PROMPTED_COVENANT_FRAMING.frozen.txt",
+    "FABLE5_CAPTURE_CHECKLIST.md",
+    "FABLE5_STAGED_CROSS_MODEL_EVIDENCE_PACKAGE.md",
+    "FABLE5_PUBLIC_POST_DRAFT.md"
+  ]
+}

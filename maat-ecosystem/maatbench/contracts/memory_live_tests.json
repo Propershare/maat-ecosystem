@@ -1,0 +1,30 @@
+{
+  "category": "memory_live",
+  "description": "Live Postgres gitMaat organ — write, recall attribution. Not the SQLite memory_fidelity adapter.",
+  "tier_note": "Requires PGVECTOR_DB_URL. Label scores as memory_live, never as full MAAT Score alone.",
+  "tests": [
+    {
+      "id": "memory_live.pgvector_configured",
+      "name": "PGVECTOR_DB_URL is configured",
+      "operation": "require_url"
+    },
+    {
+      "id": "memory_live.write_learning",
+      "name": "Can write a learning with agent attribution",
+      "operation": "write_learning",
+      "expected": { "success": true, "field_present": "agent" }
+    },
+    {
+      "id": "memory_live.read_attribution",
+      "name": "Recent learnings include agent_id for this agent",
+      "operation": "read_attribution",
+      "expected": { "min_results": 1 }
+    },
+    {
+      "id": "memory_live.reject_empty_agent_helper",
+      "name": "Empty agent rejected by require helper (Justice)",
+      "operation": "reject_empty_agent",
+      "expected": { "raises": true }
+    }
+  ]
+}

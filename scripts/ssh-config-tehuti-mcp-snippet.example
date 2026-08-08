@@ -1,0 +1,23 @@
+# Merge into ~/.ssh/config on your laptop (adjust User / HostName / IdentityFile).
+# Then:  ssh -N tehuti-mcp
+#
+# Server: 192.168.4.21  |  Other lab nodes: .25 .36 .81
+
+Host tehuti-mcp
+  HostName 192.168.4.21
+  User suspect
+  # IdentityFile ~/.ssh/id_ed25519
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+  ExitOnForwardFailure yes
+  LocalForward 8011 127.0.0.1:8011
+  LocalForward 8012 127.0.0.1:8012
+  LocalForward 8013 127.0.0.1:8013
+  LocalForward 8014 127.0.0.1:8014
+  LocalForward 8015 127.0.0.1:8015
+  LocalForward 8016 127.0.0.1:8016
+  LocalForward 8017 127.0.0.1:8017
+  LocalForward 8018 127.0.0.1:8018
+  LocalForward 8019 127.0.0.1:8019
+  LocalForward 8020 127.0.0.1:8020
+  LocalForward 8021 127.0.0.1:8021

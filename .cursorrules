@@ -1,0 +1,397 @@
+# Tehuti Lab Workspace - Cursor Rules (Maat-Governed)
+
+## 🎯 Your Context
+
+You are working in **Tehuti Lab**, owned by **Imhotep** (ancient KMT architect, physician, and sage).
+
+**Imhotep's Mission**: Personal mission to build Maat-aligned AI infrastructure with fully agentic workflow systems.
+
+**CRITICAL:** 
+- **Workspace may vary** - Cursor might open in `/home/suspect/.n8n/` or any project subdirectory
+- **Auto-detect workspace root** - Look for `memory-bank/`, `.cursorrules`, `tehuti-guard/`, or `maatlangchain/` markers
+- **Auto-detect current project** - Check current directory for `AGENTS.md` or project markers
+- **Each project has its own `AGENTS.md`** for specific instructions
+- **This prompt works from ANY project subdirectory** - Cursor finds it automatically
+- **Understand tool relationships** - All projects work together in Maat Order
+- **Terminal-capable agents (shell / host execution):** Memory MCP + gitMaat context + machine-protective defaults are **required default posture**, not optional session extras—unless the user **explicitly** disables them. If this session cannot reach Memory MCP or Postgres, **say so clearly**; do not frame memory as “only if configured” as if that matched lab design. See **`docs/TERMINAL-MEMORY-DEFAULT.md`** and **`AGENTS.md`** → *Default agent posture — terminal + memory*.
+
+## 🏗️ Workspace Projects
+
+### Core Products
+- **`maat-ecosystem/`** - **Ka-body** (canonical): soul/brain/memory/hands/senses/voice/ka/skeleton/blood per `MANIFEST.ka`; docs in `docs/WORKSPACE-KA-MAP.md` map the rest of the monorepo to the same organs
+- **`maatlangchain/`** - Monetizable RAG/Agent product (PostgreSQL, LangChain, MaatRAG)
+- **`openclaw/`** - Primary client on all machines (agent UI, gateway, tools)
+- **`open-webui/`** / **`tehuti-lab-webui/`** - Still in use where needed (Tehuti Lab WebUI, forked from Open WebUI)
+- **`tehuti-guard/`** - Policy enforcement system (TypeScript)
+- **`tehuti-search/`** - Search functionality
+
+### Infrastructure
+- **`maat-ecosystem/mcp-servers/`** (lab root **`mcp-servers/`** symlink) — MCP + Ka discovery (**8010** HTTP manifest). Organ MCP ports — confirm with `GET :8010/manifest`: **8014** Tehuti Core, **8016** filesystem, **8017** postgres, **8018** memory-kv, **8019** ComfyUI, **8020** pipeline, **8022** Maat Memory (gitMaat MCP). Policy: **8013** Tehuti Guard (lab root `tehuti-guard/`). Channels: **18790** OpenClaw. **n8n retired** — see `docs/N8N-RETIRED.md`. See **`maat-ecosystem/MANIFEST.ka`** → `network:` and **`docs/GITMAAT-CONNECT.md`**.
+- **`ollama-nuggets/`** - Model management
+- **`memory-bank/`** - System documentation (read for context, NOT for tasks)
+- **`docs/`** - Project documentation
+
+### Maat Memory (gitMaat) - Coordination System
+- **`maatlangchain/maat_memory/`** - Database system for tasks, coordination, logging (QUERY FIRST - THIS IS LAW)
+- **Purpose**: Coordinates all projects, all laptops, all agents
+- **Location**: Inside MaatLangChain, but serves entire workspace
+
+### Ka Discovery + gitMaat on the network (Tehuti Lab — LAW for remote agents)
+
+1. **Discover first:** `GET http://<Imhotep-server-lan-ip>:8010/manifest` — JSON lists real **`organs.*.endpoint`** (memory **8022**, brain **8014**, …). **Ka Discovery** (`maat-ecosystem/mcp-servers/ka-discovery/`) binds **0.0.0.0:8010** and injects the host’s **primary LAN IP** into the manifest. Do not invent URLs if discovery is available.
+2. **Canonical hostname:** `staydangerous` (use when DNS/hosts resolve); otherwise use **IP from `/manifest`**.
+3. **Single gitMaat database:** PostgreSQL **`maat_memory`** on port **5432** via **`PGVECTOR_DB_URL`** in **`/home/suspect/.n8n/.env`**. Authoritative connection matrix: **`docs/GITMAAT-CONNECT.md`** (`localhost` on server, **`192.168.4.21`** from LAN in that doc). **Not** 5434 for gitMaat.
+4. **On-disk awareness:** Task/session rows live in the **Postgres data cluster** the URL points to (native or Docker volume). Agents connect via URL, not by reading raw PG files — **every** workstation must use the **same** `PGVECTOR_DB_URL` (or LAN equivalent) so reporting hits one truth.
+5. **Report to memory:** After substantive work, **`memory.log_change` / `log_learning` / `log_decision`** (Python) or Tehuti Core tools **`log_gitmaat_*` / `query_gitmaat`** on **8014**. Agent id: **`get_unique_agent_id("cursor")`** → e.g. **`cursor_staydangerous`** on this machine.
+
+### MaatCode (Future)
+- **Planned**: Fork of OpenCode → MaatCode
+- **Purpose**: Fully agentic workflow system with Maat governance
+- **Integration**: gitMaat + TehutiGuard + Maat principles
+- **Status**: Strategy documented in `docs/MAATCODE-FORK-STRATEGY.md`
+
+### Legacy/Compatibility
+- **`jarvis/`** - Legacy paths (compatibility layer)
+
+## 🏛️ Maat Principles (LAW) + Sankofa (Learn from Past)
+
+**Sankofa: "Go back and get it" - Learn from the past to build the future.**
+
+**Before ANY change:**
+1. **QUERY gitMaat FIRST** - Get tasks from Maat Memory database (MANDATORY LAW)
+2. **SANKOFA: Learn from past** - Check gitMaat for similar work, decisions, learnings
+3. **VERIFY** what currently works - Test existing systems before changing
+4. **READ Memory Bank** - Only if you need context (`memory-bank/` is documentation, NOT task source)
+5. **PRESERVE** working systems - Build on what works, don't break it
+6. **TEST** before changing - Verify each step
+7. **REVERT** if broken - Don't loop fixes, restore working state
+8. **LEARN** - Log what worked and what didn't to gitMaat
+
+**Maat: Truth, Balance, Order, Justice, Self-Reflection**  
+**Sankofa: Learn from past, build on what works, preserve knowledge**
+
+## 📖 Tasks (MANDATORY LAW - DO THIS FIRST)
+
+**Tasks come from gitMaat (Maat Memory database), NOT from Memory Bank or .md files.**
+
+**Key Distinction:**
+- **Maat Memory (gitMaat)** = Database system (`maatlangchain/maat_memory/`) - **QUERY FIRST FOR TASKS** (THIS IS LAW)
+- **Memory Bank** = Documentation folder (`memory-bank/`) - Read for context only (optional)
+
+```python
+# PREFERRED for builds (pip install maat-memory-client — no sys.path hacks):
+from maat_memory_client import MaatMemoryClient
+memory = MaatMemoryClient()
+tasks = memory.get_tasks(status="pending", limit=10)
+
+# IN-REPO BACKEND ONLY (MCP server, migrations, lab scripts on PYTHONPATH):
+from maat_memory import MaatMemory, get_unique_agent_id
+agent_id = get_unique_agent_id("cursor")
+memory = MaatMemory()
+tasks = memory.get_tasks(status="pending", limit=10)
+```
+
+See **`docs/MAAT-MEMORY-ADOPTION.md`** for the shared-organ adoption story.
+
+**Read project `PROMPT-NEXT-ACTION.md` only for context, not for tasks.**
+
+## 🔍 Project Discovery (AUTO-DETECT)
+
+**Before working, auto-detect which project you're in:**
+
+```python
+from pathlib import Path
+import os
+
+# Auto-detect workspace root (look for memory-bank/ or .cursorrules)
+def find_workspace_root():
+    current = Path.cwd()
+    for path in [current] + list(current.parents):
+        if (path / "memory-bank").exists() or (path / ".cursorrules").exists():
+            return path
+    return current  # Fallback to current directory
+
+# Auto-detect current project
+def detect_current_project():
+    cwd = Path.cwd()
+    workspace = find_workspace_root()
+    
+    # Check if we're in a known project subdirectory
+    for project_dir in ["maatlangchain", "openclaw", "open-webui", "tehuti-guard", "tehuti-search", "maat-ecosystem", "mcp-servers"]:
+        project_path = workspace / project_dir
+        if cwd == project_path or project_path in cwd.parents:
+            return project_dir
+    
+    # Check current directory name
+    if cwd.name in ["maatlangchain", "openclaw", "open-webui", "tehuti-guard", "tehuti-search"]:
+        return cwd.name
+    
+    return None  # Unknown project
+
+workspace_root = find_workspace_root()
+current_project = detect_current_project()
+
+# Use project-specific discovery if available
+if current_project == "maatlangchain":
+    try:
+        import sys
+        sys.path.insert(0, str(workspace_root / "maatlangchain"))
+        from maat_memory import discover_project
+        discovery = discover_project()
+    except:
+        pass
+```
+
+**This works from ANY subdirectory - auto-detects workspace and project.**
+
+## 🔗 Tool Relationships (Maat Order)
+
+### Tool Hierarchy (In Order of Importance)
+
+1. **gitMaat (Maat Memory)** - Coordination System
+   - **Location**: `maatlangchain/maat_memory/` (inside MaatLangChain)
+   - **Purpose**: Tasks, sessions, changes, coordination
+   - **Serves**: ALL projects, ALL laptops, ALL agents
+   - **Priority**: QUERY FIRST (MANDATORY LAW)
+
+2. **TehutiGuard** - Protection System
+   - **Location**: `tehuti-guard/` (separate project)
+   - **Purpose**: Policy enforcement, three-ring governance, validation
+   - **Protects**: Inner Ring (Canon), Middle Ring (Scholarship), Outer Ring (Monetized)
+   - **Priority**: VALIDATE BEFORE DEPLOYMENT
+
+3. **Memory Bank** - Documentation System
+   - **Location**: `memory-bank/` (workspace root)
+   - **Purpose**: System documentation, patterns, context
+   - **Usage**: Read for context only (optional)
+
+4. **Project-Specific Tools**
+   - **MaatLangChain**: RAG, agents, governance (contains gitMaat)
+   - **Tehuti Lab WebUI**: Client interface
+   - **MCP Servers**: Tool integration
+   - **MaatCode** (planned): Fork of OpenCode with Maat governance
+
+### Relationship Flow
+
+```
+TehutiGuard (Protection)
+    ↓ validates
+All Projects (MaatLangChain, WebUI, MCP servers, MaatCode)
+    ↓ coordinate via
+gitMaat (Maat Memory) - IN MaatLangChain
+    ↓ documents to
+Memory Bank (Documentation)
+```
+
+**Key Insight**: 
+- gitMaat coordinates all projects, but lives in MaatLangChain
+- TehutiGuard protects all projects
+- Memory Bank documents all projects
+- Each project has its own `AGENTS.md`
+
+## 🚀 Production & Deployment
+
+**Before deploying ANY project:**
+
+1. **Query gitMaat FIRST** - Check for deployment tasks, past deployments, learnings
+2. **SANKOFA: Learn from past deployments** - Check gitMaat for what worked/failed before
+3. **Read Memory Bank (if needed)** - For context only:
+   - `memory-bank/projectbrief.md` - Core requirements
+   - `memory-bank/systemPatterns.md` - Deployment patterns
+   - `memory-bank/techContext.md` - Technologies and constraints
+4. **Verify Dependencies:**
+   - PostgreSQL (Maat Memory, RAG)
+   - Redis (caching)
+   - Ollama (models)
+   - Docker (containers)
+5. **Check Service Status:**
+   - Ka Discovery HTTP **8010**; Tehuti Core **8014**; Maat Memory MCP **8022**; other organs per **`maat-ecosystem/MANIFEST.ka`** `network:` (or live **`/manifest`**)
+   - OpenWebUI (port 3000)
+   - OpenClaw gateway (port 18790)
+   - Ollama (port 11434)
+6. **Run Deployment Checklist:**
+   - Backup configs
+   - Test current state
+   - Deploy incrementally
+   - Verify each service
+   - Log deployment to gitMaat
+   - Update Memory Bank if needed
+
+## 📝 Logging (MANDATORY)
+
+**Log ALL changes to gitMaat (works from any project):**
+
+```python
+# Auto-detect workspace and setup Maat Memory
+from pathlib import Path
+import sys
+
+workspace_root = None
+current = Path.cwd()
+for path in [current] + list(current.parents):
+    if (path / "maatlangchain").exists():
+        workspace_root = path
+        break
+
+if workspace_root:
+    sys.path.insert(0, str(workspace_root / "maatlangchain"))
+    from maat_memory import MaatMemory, get_unique_agent_id
+    
+    agent_id = get_unique_agent_id("cursor")
+    memory = MaatMemory()
+    
+    # Log file changes
+    memory.log_change(agent_id, "file.py", "create", "Created component", "reason")
+    
+    # Log decisions
+    memory.log_decision(agent_id, "context", "decision", "rationale")
+    
+    # Log tasks
+    memory.log_task(agent_id, "title", "description", status="in_progress")
+```
+
+## 🆔 Your Agent ID
+
+**Always use unique ID (auto-detected per machine):**
+
+```python
+# Auto-detect workspace and import
+from pathlib import Path
+import sys
+
+workspace_root = None
+current = Path.cwd()
+for path in [current] + list(current.parents):
+    if (path / "maatlangchain").exists():
+        workspace_root = path
+        break
+
+if workspace_root:
+    sys.path.insert(0, str(workspace_root / "maatlangchain"))
+    from maat_memory import get_unique_agent_id
+    
+    # Auto-detected: cursor_<hostname> (e.g., cursor_imhotep, cursor_macdaddy)
+    agent_id = get_unique_agent_id("cursor")
+```
+
+**Each laptop gets unique ID (`cursor_<hostname>`):**
+- Imhotep (staydangerous): `cursor_staydangerous`
+- Imhotep (alt hostname): `cursor_imhotep`
+- MacDaddy: `cursor_macdaddy`
+- Imhotepjr: `cursor_imhotepjr`
+
+## 🔄 Three-Ring Governance
+
+**Respect boundaries:**
+
+- **Inner Ring (Canon)** - READ ONLY (`jarvis/maat-graphs/`)
+- **Middle Ring (Scholarship)** - Propose, don't mutate (`jarvis/rbg-library/`)
+- **Outer Ring (Monetized)** - Full access (`jarvis/monetization/`)
+
+**When in doubt: Default to stricter (read-only) behavior.**
+
+## 📚 Project-Specific Instructions
+
+**Each project has its own `AGENTS.md`:**
+
+- **MaatLangChain**: `maatlangchain/AGENTS.md`
+- **WebUI**: Check `open-webui/` for optimization plans
+- **TehutiGuard**: Check `tehuti-guard/` for TypeScript patterns
+- **MCP Servers**: Check `maat-ecosystem/mcp-servers/` (or root symlink `mcp-servers/`) and `docs/mcp/INDEX.md`
+
+**Read project `AGENTS.md` for specific workflows.**
+
+## ❌ Don't Do
+
+- ❌ Don't use .md files for tasks (use gitMaat)
+- ❌ Don't use Memory Bank for tasks (it's documentation, not task source)
+- ❌ Don't skip querying gitMaat first (THIS IS LAW)
+- ❌ Don't ignore past work (Sankofa - learn from gitMaat history)
+- ❌ Don't break working systems (preserve what works)
+- ❌ Don't work without identifying project context
+- ❌ Don't deploy without testing
+- ❌ Don't skip logging to gitMaat (all changes must be logged)
+
+## ✅ Workflow (MANDATORY - Sankofa-Aligned)
+
+**This workflow works from ANY project subdirectory:**
+
+1. **Query gitMaat FIRST** - `memory.get_tasks(status="pending")` (MANDATORY LAW - Maat Memory database)
+2. **SANKOFA: Learn from past** - Check gitMaat for similar work, decisions, learnings, changes
+3. **Auto-detect workspace** - Find workspace root (look for `memory-bank/` or `.cursorrules`)
+4. **Auto-detect project** - Identify which project you're in (check for `AGENTS.md`)
+5. **Read Memory Bank (if needed)** - `{workspace_root}/memory-bank/projectbrief.md` for context only (NOT for tasks)
+6. **Read project docs** - Project-specific `AGENTS.md` or docs
+7. **Discover project** - `discover_project()` to see what exists (if MaatLangChain)
+8. **Make changes** - Log everything to gitMaat (changes, decisions, learnings)
+9. **Test** - Verify before committing
+10. **Learn** - Log what worked/failed to gitMaat for future reference (Sankofa)
+11. **Document** - Update Memory Bank and project docs if needed
+
+## 🔗 Key Files (Relative to Workspace Root)
+
+**All paths are relative to workspace root (auto-detected):**
+
+- **Maat Memory (gitMaat)**: `{workspace_root}/maatlangchain/maat_memory/` - Database for tasks (QUERY FIRST - THIS IS LAW)
+- **Memory Bank**: `{workspace_root}/memory-bank/projectbrief.md` - Documentation (Context only, read if needed)
+- **System Patterns**: `{workspace_root}/memory-bank/systemPatterns.md` (deployment patterns)
+- **Maat Law**: `{workspace_root}/maatlangchain/maat_memory/MAAT_LAW_TASKS.md` (task coordination)
+- **Project Docs**: `{workspace_root}/docs/` (indexes for each system)
+- **Project AGENTS**: `{workspace_root}/{project_name}/AGENTS.md` (project-specific)
+
+## 🌐 Multi-Laptop Support
+
+**This `.cursorrules` works on all laptops:**
+- ✅ Imhotep
+- ✅ MacDaddy  
+- ✅ Imhotepjr
+- ✅ Any laptop with Tehuti Lab workspace
+
+**Requirements:**
+- Workspace structure must match (projects in workspace root)
+- `PGVECTOR_DB_URL` must point to shared PostgreSQL database
+- Each laptop gets unique agent ID automatically
+
+**Distribution:**
+- Copy `.cursorrules` to workspace root on each laptop
+- No hardcoded paths - all auto-detected
+- Works from any project subdirectory
+
+## 🏛️ Maat Order: Rational Kernels vs Trash
+
+**Maat Order = Keep what works (rational kernels) + Discard what doesn't (trash) + Evidence (prove)**
+
+### Rational Kernels (Keep - Evidence-Based)
+- ✅ gitMaat system (coordinates all projects)
+- ✅ TehutiGuard protection (enforces three-ring)
+- ✅ Memory Bank documentation (clear structure)
+- ✅ Project discovery (auto-setup works)
+- ✅ AGENTS.md system (agents read successfully)
+
+### Trash (Discard - Evidence-Based)
+- ❌ System prompt too narrow (doesn't understand ecosystem)
+- ❌ OpenCode no Maat integration (can't coordinate)
+- ❌ Confusion about tools (not clearly defined)
+- ❌ No evidence-based decisions (can't prove what works)
+
+**See**: `docs/MAAT-ORDER-AUDIT.md` for complete assessment.
+
+---
+
+## 🪶 Sankofa Principle
+
+**Sankofa: "Go back and get it" - Learn from the past to build the future.**
+
+**How to apply Sankofa:**
+1. **Query gitMaat history** - Check past work, decisions, learnings before starting
+2. **Learn from failures** - Review what didn't work and why
+3. **Build on success** - Use patterns that worked before
+4. **Preserve knowledge** - Log all learnings to gitMaat for future reference
+5. **Respect the past** - Don't break what works, improve it
+
+**Sankofa + Maat = Truth from history, Balance in learning, Order in patterns, Justice in attribution, Self-Reflection in growth.**
+
+---
+
+**Simple rule:** Query gitMaat first (LAW), learn from past (Sankofa), read Memory Bank for context, log everything, preserve what works, follow Maat principles.
+

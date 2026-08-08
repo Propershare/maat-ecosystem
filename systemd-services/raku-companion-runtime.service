@@ -1,0 +1,22 @@
+[Unit]
+Description=StayDangerous AI Companion Brain (raku-companion-runtime)
+After=network-online.target ollama.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n/raku-companion-runtime
+Environment=RAKU_COMPANION_MODE=hybrid
+Environment=RAKU_COMPANION_MODEL=qwen3.5:4b
+Environment=RAKU_COMPANION_OLLAMA_URL=http://127.0.0.1:11434
+Environment=RAKU_COMPANION_HOST=127.0.0.1
+Environment=RAKU_COMPANION_PORT=8765
+ExecStart=/home/suspect/.n8n/raku-companion-runtime/run.sh
+Restart=always
+RestartSec=3
+StandardOutput=append:/home/suspect/.n8n/raku-companion-runtime/logs/service.log
+StandardError=append:/home/suspect/.n8n/raku-companion-runtime/logs/service.log
+
+[Install]
+WantedBy=multi-user.target

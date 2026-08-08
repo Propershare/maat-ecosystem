@@ -1,0 +1,17 @@
+[gateway-server] starting on http://127.0.0.1:8040
+[gateway-server] gateways: ['analyst', 'archivist', 'fl-trust-law', 'ka2-research', 'scout']
+[gateway-server] ollama: http://127.0.0.1:11434
+[gateway-server] stream: /home/suspect/.n8n/logs/archivist/records.jsonl
+[gateway-server] see /info for plain-language description
+Traceback (most recent call last):
+  File "/home/suspect/.n8n/gemma4-toolshim/swarm/gateway_server.py", line 534, in <module>
+    sys.exit(main())
+  File "/home/suspect/.n8n/gemma4-toolshim/swarm/gateway_server.py", line 523, in main
+    server = ThreadingHTTPServer((args.host, args.port), GatewayHTTPHandler)
+  File "/usr/lib/python3.10/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.10/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.10/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use

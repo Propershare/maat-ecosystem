@@ -39,3 +39,11 @@ Thumbs.db
 # Test artifacts
 /tmp_test_*
 *.db
+
+# Secrets — doctrine + enforcement
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.webui_secret_key

@@ -1,0 +1,163 @@
+{
+  "server_id": "filesystem-mcp",
+  "server_name": "secure-filesystem-server",
+  "version": "0.2.0",
+  "description": "secure-filesystem-server MCP Server",
+  "total_tools": 14,
+  "maat_principles": {
+    "truth": "Secure filesystem operations with access control",
+    "balance": "Balance file access with security",
+    "order": "Organized file operations",
+    "justice": "Respect file permissions and ownership",
+    "self_reflection": "Learn from file operation patterns"
+  },
+  "use_cases": [
+    "Read/write files securely",
+    "List directories",
+    "Get file metadata",
+    "Search files"
+  ],
+  "common_patterns": [
+    "List \u2192 Read \u2192 Process \u2192 Write"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_read_file_post",
+      "path": "/read_file",
+      "method": "POST",
+      "summary": "Read File",
+      "description": "Read the complete contents of a file as text. DEPRECATED: Use read_text_file instead.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_read_text_file_post",
+      "path": "/read_text_file",
+      "method": "POST",
+      "summary": "Read Text File",
+      "description": "Read the complete contents of a file from the file system as text. Handles various text encodings and provides detailed error messages if the file cannot be read. Use this tool when you need to examine the contents of a single file. Use the 'head' parameter to read only the first N lines of a file, or the 'tail' parameter to read only the last N lines of a file. Operates on the file as text regardless of extension. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_read_media_file_post",
+      "path": "/read_media_file",
+      "method": "POST",
+      "summary": "Read Media File",
+      "description": "Read an image or audio file. Returns the base64 encoded data and MIME type. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_read_multiple_files_post",
+      "path": "/read_multiple_files",
+      "method": "POST",
+      "summary": "Read Multiple Files",
+      "description": "Read the contents of multiple files simultaneously. This is more efficient than reading files one by one when you need to analyze or compare multiple files. Each file's content is returned with its path as a reference. Failed reads for individual files won't stop the entire operation. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_write_file_post",
+      "path": "/write_file",
+      "method": "POST",
+      "summary": "Write File",
+      "description": "Create a new file or completely overwrite an existing file with new content. Use with caution as it will overwrite existing files without warning. Handles text content with proper encoding. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_edit_file_post",
+      "path": "/edit_file",
+      "method": "POST",
+      "summary": "Edit File",
+      "description": "Make line-based edits to a text file. Each edit replaces exact line sequences with new content. Returns a git-style diff showing the changes made. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_create_directory_post",
+      "path": "/create_directory",
+      "method": "POST",
+      "summary": "Create Directory",
+      "description": "Create a new directory or ensure a directory exists. Can create multiple nested directories in one operation. If the directory already exists, this operation will succeed silently. Perfect for setting up directory structures for projects or ensuring required paths exist. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_directory_post",
+      "path": "/list_directory",
+      "method": "POST",
+      "summary": "List Directory",
+      "description": "Get a detailed listing of all files and directories in a specified path. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes. This tool is essential for understanding directory structure and finding specific files within a directory. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_directory_with_sizes_post",
+      "path": "/list_directory_with_sizes",
+      "method": "POST",
+      "summary": "List Directory With Sizes",
+      "description": "Get a detailed listing of all files and directories in a specified path, including sizes. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes. This tool is useful for understanding directory structure and finding specific files within a directory. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_directory_tree_post",
+      "path": "/directory_tree",
+      "method": "POST",
+      "summary": "Directory Tree",
+      "description": "Get a recursive tree view of files and directories as a JSON structure. Each entry includes 'name', 'type' (file/directory), and 'children' for directories. Files have no children array, while directories always have a children array (which may be empty). The output is formatted with 2-space indentation for readability. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_move_file_post",
+      "path": "/move_file",
+      "method": "POST",
+      "summary": "Move File",
+      "description": "Move or rename files and directories. Can move files between directories and rename them in a single operation. If the destination exists, the operation will fail. Works across different directories and can be used for simple renaming within the same directory. Both source and destination must be within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_search_files_post",
+      "path": "/search_files",
+      "method": "POST",
+      "summary": "Search Files",
+      "description": "Recursively search for files and directories matching a pattern. The patterns should be glob-style patterns that match paths relative to the working directory. Use pattern like '*.ext' to match files in current directory, and '**/*.ext' to match files in all subdirectories. Returns full paths to all matching items. Great for finding files when you don't know their exact location. Only searches within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_file_info_post",
+      "path": "/get_file_info",
+      "method": "POST",
+      "summary": "Get File Info",
+      "description": "Retrieve detailed metadata about a file or directory. Returns comprehensive information including size, creation time, last modified time, permissions, and type. This tool is perfect for understanding file characteristics without reading the actual content. Only works within allowed directories.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_allowed_directories_post",
+      "path": "/list_allowed_directories",
+      "method": "POST",
+      "summary": "List Allowed Directories",
+      "description": "Returns the list of directories that this server is allowed to access. Subdirectories within these allowed directories are also accessible. Use this to understand which directories and their nested paths are available before trying to access files.",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

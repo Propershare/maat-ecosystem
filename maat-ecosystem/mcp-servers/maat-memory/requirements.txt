@@ -1,0 +1,3 @@
+# Maat Memory MCP (maat_memory_server.py) — use with .venv + mcpo; see start_maat_memory.sh
+psycopg2-binary>=2.9.7
+mcp[cli]>=1.2.0

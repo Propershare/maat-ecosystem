@@ -1,0 +1,19 @@
+[Unit]
+Description=MaatLangChain Pipeline MCP Server (via mcpo)
+After=network.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n/mcp-servers/maatlangchain-pipeline
+Environment="PGVECTOR_DB_URL=postgresql://suspect:disdick@localhost:5432/maat_memory"
+Environment="TEHUTI_CORE_URL=http://127.0.0.1:8014"
+Environment="OLLAMA_DEFAULT_MODEL=qwen3:latest"
+Environment="WORKSPACE_ROOT=/home/suspect/.n8n"
+ExecStart=/home/suspect/.n8n/scripts/start-maatlangchain-pipeline-mcp.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+

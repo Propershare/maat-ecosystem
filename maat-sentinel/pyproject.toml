@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maat-sentinel"
+version = "0.2.0"
+description = "Minimal Sentinel v1: ingest doctor snapshots, immune JSONL, presence (live awareness scaffold)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+maat-sentinel = "maat_sentinel.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["maat_sentinel"]

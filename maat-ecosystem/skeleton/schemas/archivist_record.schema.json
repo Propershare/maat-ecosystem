@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:archivist_record:v1",
+  "title": "MAAT Archivist Record Contract",
+  "description": "Structured-first persistence envelope every expert gateway emits per turn. Read by Sentinel, Bench, Forge, and Guard. Prose only inside 'summary' or 'notes'. See docs/SCOUT-ANALYST-ARCHIVIST.md.",
+  "type": "object",
+  "required": [
+    "schema",
+    "record_id",
+    "correlation_id",
+    "created_at",
+    "agent_id",
+    "gateway_id",
+    "research_grade",
+    "tags",
+    "summary",
+    "sources"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.archivist_record.v1"
+    },
+    "record_id": {
+      "type": "string",
+      "description": "UUID or monotonic id unique to this record."
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Session id + turn id joined by ':'. Binds the record to a replayable turn."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Agent that produced the record, e.g. cursor_staydangerous or ka2-research."
+    },
+    "gateway_id": {
+      "type": "string",
+      "description": "Expert gateway id, e.g. ka2-research, scout, analyst, archivist, rag-expert."
+    },
+    "research_grade": {
+      "type": "boolean",
+      "description": "True when the turn is research-grade and requires a KA2 header + Maat scorecard."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Lowercase namespace:value tags, e.g. domain:tehuti-lab, topic:swarm, confidence:high, rbl:flagged."
+    },
+    "summary": {
+      "type": "string",
+      "description": "One to three sentences, factual, no hedge soup."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "ref"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["file", "url", "gitmaat", "tool_result", "memory", "corpus"]
+          },
+          "ref": { "type": "string" },
+          "line_start": { "type": "integer", "minimum": 0 },
+          "line_end": { "type": "integer", "minimum": 0 },
+          "retrieved_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "ka2": {
+      "type": "object",
+      "description": "KA2 research header. Required when research_grade is true.",
+      "properties": {
+        "research_type": {
+          "type": "string",
+          "enum": [
+            "historical",
+            "experimental",
+            "theoretical",
+            "descriptive",
+            "applied",
+            "comparative",
+            "qualitative",
+            "quantitative"
+          ]
+        },
+        "problem": { "type": "string" },
+        "time_dimension": {
+          "type": "string",
+          "description": "Explicit temporal framing, e.g. 'Florida probate case law 1971-2025'."
+        },
+        "level_of_analysis": {
+          "type": "string",
+          "enum": ["cell", "group", "institution", "system"]
+        },
+        "mode_of_appropriation": {
+          "type": "object",
+          "properties": {
+            "bias_validation": { "type": "string" },
+            "data_organization": { "type": "string" }
+          }
+        },
+        "life_cycle": {
+          "type": "object",
+          "properties": {
+            "periods": { "type": "array", "items": { "type": "string" } },
+            "phases": { "type": "array", "items": { "type": "string" } },
+            "contradictions": { "type": "array", "items": { "type": "string" } },
+            "nodal_points": { "type": "array", "items": { "type": "string" } },
+            "transitions": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "dialectical_findings": {
+          "type": "object",
+          "properties": {
+            "law": { "type": "string" },
+            "tendency": { "type": "string" },
+            "contradiction": { "type": "string" },
+            "synthesis": { "type": "string" }
+          }
+        },
+        "determination": {
+          "type": "string",
+          "enum": ["RBL", "KWF", "undetermined"],
+          "description": "RBL = Regression Back Line detected; KWF = Kazi Work Formation / genuine supercession; undetermined = insufficient evidence."
+        }
+      }
+    },
+    "maat_scorecard": {
+      "$ref": "maat:ka2_scorecard:v1"
+    },
+    "rbl_flags": {
+      "type": "array",
+      "description": "RBL indicators detected in the produced content. 3+ flags triggers HALT in the guard validator.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "individualism_over_systemic",
+          "static_over_motion",
+          "cultural_bias_as_universal",
+          "omission_of_african_agency",
+          "linear_progress_no_contradictions",
+          "technical_jargon_masking_truth",
+          "depoliticized_objectivity",
+          "symptoms_over_structural_causes"
+        ]
+      }
+    },
+    "forbidden_hits": {
+      "type": "array",
+      "description": "Which forbidden-action validators fired. Non-empty implies the record needs Guard review.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ai_tell_vocabulary",
+          "static_snapshot_required_motion",
+          "omitted_contradictions",
+          "eurocentric_source_not_validated",
+          "missing_maat_scorecard",
+          "missing_method_naming"
+        ]
+      }
+    },
+    "gateway_state": {
+      "type": "object",
+      "description": "Compact machine state for Sentinel. No prose.",
+      "properties": {
+        "turn_index": { "type": "integer", "minimum": 0 },
+        "model_id": { "type": "string" },
+        "retrieval_packs": { "type": "array", "items": { "type": "string" } },
+        "tools_used": { "type": "array", "items": { "type": "string" } },
+        "latency_ms": { "type": "integer", "minimum": 0 },
+        "prompt_tokens": { "type": "integer", "minimum": 0 },
+        "completion_tokens": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "related_events": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Named events produced in the same turn, e.g. tool.called, memory.written, policy.evaluated."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional free-form note. Must remain short; not used for machine decisions."
+    },
+    "payload": {
+      "type": "object",
+      "description": "Optional extra structured data (tool results excerpts, hashes, pointers to full blobs stored elsewhere)."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "research_grade": { "const": true } }
+      },
+      "then": {
+        "required": ["ka2", "maat_scorecard"]
+      }
+    }
+  ]
+}

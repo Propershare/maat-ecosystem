@@ -71,6 +71,12 @@ nav .links a:hover { color: var(--gold); }
 }
 .hero .desc { max-width: 720px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; }
 .hero .desc strong { color: var(--text-bright); }
+.hero .ecosystem-illustration {
+  display: block; max-width: 520px; width: 100%; margin: 48px auto 0;
+  border-radius: 12px; border: 1px solid var(--border);
+  box-shadow: 0 0 60px rgba(201,168,76,0.18);
+}
+@media (max-width: 600px) { .hero .ecosystem-illustration { max-width: 100%; margin-top: 32px; } }
 
 /* ─── SECTIONS ─── */
 section { padding: 80px 0; border-top: 1px solid var(--border); }
@@ -287,6 +293,8 @@ footer .glyph { font-size: 32px; opacity: 0.2; margin-top: 24px; }
       <br><br>
       From chatbot to robot. Same body plan. Same soul.
     </div>
+    <img class="ecosystem-illustration" src="assets/maat-ecosystem-body.png"
+         alt="The Maat Ecosystem as a Kemetic nine-organ body — soul, brain, memory, senses, voice, ka, hands, skeleton, and blood, with the Ka life-force radiating from the heart." />
   </div>
 </div>
 

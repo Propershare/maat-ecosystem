@@ -1,0 +1,22 @@
+[Unit]
+Description=MAAT Gateway HTTP server (channel-agnostic expert surface)
+Documentation=file:///home/suspect/.n8n/docs/USING-GATEWAYS-FROM-ANY-CHANNEL.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=suspect
+Group=suspect
+WorkingDirectory=/home/suspect/.n8n
+EnvironmentFile=-/home/suspect/.n8n/.env
+Environment=GATEWAY_SERVER_BIND=127.0.0.1
+Environment=GATEWAY_SERVER_PORT=8040
+ExecStart=/bin/bash /home/suspect/.n8n/scripts/start-gateway-server.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/suspect/.n8n/logs/gateway-server.log
+StandardError=append:/home/suspect/.n8n/logs/gateway-server.log
+
+[Install]
+WantedBy=multi-user.target

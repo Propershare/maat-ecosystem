@@ -12,7 +12,8 @@ Not "does the model answer well?" but "does the system preserve its guarantees u
 |---|----------|---------------|
 | 1 | Contract Integrity | Schemas are valid, required fields present, versions compatible |
 | 2 | Policy Fidelity | Forbidden actions denied, escalations triggered, no bypass |
-| 3 | Memory Fidelity | Attribution exists, append-only honored, rollback works |
+| 3 | Memory Fidelity | Attribution exists, append-only honored, rollback works *(SQLite adapter)* |
+| 3b | Memory Live | Live Postgres gitMaat write/read/attribution — `python3 -m maatbench.run --category memory_live` |
 | 4 | Event Fidelity | Actions emit events, types canonical, logs reconstructable |
 | 5 | Portability | Identity/memory/policy survive adapter swaps |
 | 6 | Behavior Balance | Model uses tools when needed, converses when not *(optional — requires live model)* |
@@ -20,6 +21,47 @@ Not "does the model answer well?" but "does the system preserve its guarantees u
 | 8 | Gateway Contract | KA2 archivist records, scorecard math, `pass_at=40` |
 | 9 | Gateway Policy | Lived-truth `guard_cases/` round-trip through Guard validator |
 | 10 | Lab Spine | OpenClaw, MAAT Gateway, Hermes skills, registry triad (multi-agent) |
+
+### Adversarial layer — Isfet Test (opt-in)
+
+| Layer | Question |
+|--|--|
+| MaatBench Core | Can the system **govern** (produce governed records)? |
+| Behavior Balance | Can the system behave properly with live tools? |
+| **Isfet Test** | Can the system **resist corruption** under adversarial pressure? |
+
+**Isfet Test v1** measures resistance to: truth corruption, provenance erasure, role collapse, unauthorized tool action, memory poisoning, log destruction, power escalation, synthetic evidence.
+
+Primary KPI: **Isfet Leakage Rate** (low is good) — disorder that reached action, memory, or final answer without block/repair/review.
+
+```bash
+python3 -m maatbench.run --category isfet_resistance --verbose --report json
+```
+
+Spec: [`ISFET-TEST-v1.md`](./ISFET-TEST-v1.md) · also `hermes/docs/ISFET-TEST-v1.md`  
+Isfet metrics are **not** averaged into the default structural MAAT Score.
+
+### Memory Plane (fleet balance — opt-in)
+
+Enterprise registry + learning loop + storage awareness + session presence.
+
+```bash
+python3 /mnt/data_drive/hermes/scripts/maat_memory_plane.py migrate
+python3 /mnt/data_drive/hermes/scripts/maat_memory_plane.py preflight
+python3 -m maatbench.run --category memory_plane --verbose
+```
+
+Doctrine: [`MAAT-MEMORY-PLANE-v0.md`](./MAAT-MEMORY-PLANE-v0.md) · also `hermes/docs/MAAT-MEMORY-PLANE-v0.md`
+
+### Maat Attest (claim bar)
+
+Isfet Core harness passes are **not** Maat Attested. See [`MAAT-ATTEST-v0.md`](./MAAT-ATTEST-v0.md).
+
+```bash
+python3 -m maatbench.scorers.maat_attest_gate   # demo: lab_only
+```
+
+Gate: `scorers/maat_attest_gate.py` · Rubric: `contracts/maat_attest_v0.json`
 
 ## MAAT Score
 

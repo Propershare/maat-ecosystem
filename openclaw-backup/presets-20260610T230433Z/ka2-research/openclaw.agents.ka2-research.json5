@@ -1,0 +1,30 @@
+// Fragment: append this object to `agents.list` in ~/.openclaw/openclaw.json (JSON5).
+// Adjust `workspace` if your lab root is not /home/suspect/.n8n
+// Adjust `model` to your Ollama (or other) provider ids.
+{
+  id: "ka2-research",
+  name: "KA2 Research",
+  workspace: "/home/suspect/.n8n/openclaw/presets/ka2-research-workspace",
+  identity: {
+    name: "KA2 Research",
+    emoji: "📜",
+  },
+  // Align with agents.defaults on Tehuti Lab: gemma4 via Ollama (adjust ids to match your `models.providers.ollama.models`).
+  model: {
+    primary: "ollama/gemma4:e4b",
+    fallbacks: ["ollama/gemma4:e2b", "ollama/gemma4:26b"],
+  },
+  tools: {
+    profile: "coding",
+    // sessions_spawn / sub-agents; cross-agent allowlist below
+    alsoAllow: ["group:sessions", "group:web", "browser"],
+  },
+  subagents: {
+    // Allow spawning under main or ka2-research via sessions_spawn agentId (use ["*"] for any listed agent)
+    allowAgents: ["*", "main", "ka2-research"],
+  },
+  heartbeat: {
+    every: "8h",
+    prompt: "Read HEARTBEAT.md in the workspace. If gitMaat is available, check pending tasks per lab rules. If nothing needs attention, reply HEARTBEAT_OK.",
+  },
+}

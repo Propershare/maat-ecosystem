@@ -1,0 +1,117 @@
+{
+  "server_id": "memory-mcp",
+  "server_name": "memory-server",
+  "version": "0.6.3",
+  "description": "memory-server MCP Server",
+  "total_tools": 9,
+  "maat_principles": {
+    "truth": "Memory management and retrieval",
+    "balance": "Balance memory storage with retrieval efficiency",
+    "order": "Organized memory structure",
+    "justice": "Proper memory attribution",
+    "self_reflection": "Learn from memory patterns"
+  },
+  "use_cases": [
+    "Store memories",
+    "Retrieve memories",
+    "Search memories"
+  ],
+  "common_patterns": [
+    "Store \u2192 Retrieve \u2192 Use"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_create_entities_post",
+      "path": "/create_entities",
+      "method": "POST",
+      "summary": "Create Entities",
+      "description": "Create multiple new entities in the knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_create_relations_post",
+      "path": "/create_relations",
+      "method": "POST",
+      "summary": "Create Relations",
+      "description": "Create multiple new relations between entities in the knowledge graph. Relations should be in active voice",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_add_observations_post",
+      "path": "/add_observations",
+      "method": "POST",
+      "summary": "Add Observations",
+      "description": "Add new observations to existing entities in the knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_delete_entities_post",
+      "path": "/delete_entities",
+      "method": "POST",
+      "summary": "Delete Entities",
+      "description": "Delete multiple entities and their associated relations from the knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_delete_observations_post",
+      "path": "/delete_observations",
+      "method": "POST",
+      "summary": "Delete Observations",
+      "description": "Delete specific observations from entities in the knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_delete_relations_post",
+      "path": "/delete_relations",
+      "method": "POST",
+      "summary": "Delete Relations",
+      "description": "Delete multiple relations from the knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_read_graph_post",
+      "path": "/read_graph",
+      "method": "POST",
+      "summary": "Read Graph",
+      "description": "Read the entire knowledge graph",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_search_nodes_post",
+      "path": "/search_nodes",
+      "method": "POST",
+      "summary": "Search Nodes",
+      "description": "Search for nodes in the knowledge graph based on a query",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_open_nodes_post",
+      "path": "/open_nodes",
+      "method": "POST",
+      "summary": "Open Nodes",
+      "description": "Open specific nodes in the knowledge graph by their names",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

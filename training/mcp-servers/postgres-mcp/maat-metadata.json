@@ -1,0 +1,44 @@
+{
+  "server_id": "postgres-mcp",
+  "server_name": "example-servers/postgres",
+  "version": "0.1.0",
+  "description": "example-servers/postgres MCP Server",
+  "total_tools": 1,
+  "maat_principles": {
+    "truth": "PostgreSQL database operations",
+    "balance": "Balance query power with safety",
+    "order": "Structured database queries",
+    "justice": "Proper data attribution",
+    "self_reflection": "Learn from query patterns"
+  },
+  "use_cases": [
+    "Database queries",
+    "Data retrieval"
+  ],
+  "common_patterns": [
+    "Query \u2192 Process \u2192 Return"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_query_post",
+      "path": "/query",
+      "method": "POST",
+      "summary": "Query",
+      "description": "Run a read-only SQL query",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

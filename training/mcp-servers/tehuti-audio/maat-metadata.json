@@ -1,0 +1,110 @@
+{
+  "server_id": "tehuti-audio",
+  "server_name": "Tehuti Audio - Bark TTS API",
+  "version": "1.0.0",
+  "description": "Text-to-speech, multilingual, and creative audio generation using Bark",
+  "total_tools": 7,
+  "maat_principles": {
+    "truth": "Bark TTS - text-to-speech, multilingual, music generation",
+    "balance": "Balance quality with generation speed",
+    "order": "Structured audio generation",
+    "justice": "Proper audio attribution",
+    "self_reflection": "Learn from audio patterns"
+  },
+  "use_cases": [
+    "Text-to-speech",
+    "Multilingual audio",
+    "Music generation",
+    "Sound effects"
+  ],
+  "common_patterns": [
+    "Text \u2192 Generate \u2192 Return audio"
+  ],
+  "tools": [
+    {
+      "operation_id": "health_check_health_get",
+      "path": "/health",
+      "method": "GET",
+      "summary": "Health Check",
+      "description": "Health check endpoint.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "get_openapi_spec_openapi_json_get",
+      "path": "/openapi.json",
+      "method": "GET",
+      "summary": "Get Openapi Spec",
+      "description": "Return OpenAPI specification.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "generate_speech_api_generate_speech_post",
+      "path": "/api/generate_speech",
+      "method": "POST",
+      "summary": "Generate Speech",
+      "description": "Generate speech from text using Bark TTS.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "generate_speech_with_voice_api_generate_speech_with_voice_post",
+      "path": "/api/generate_speech_with_voice",
+      "method": "POST",
+      "summary": "Generate Speech With Voice",
+      "description": "Generate speech with specific voice preset and emotion tags.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "generate_multilingual_api_generate_multilingual_post",
+      "path": "/api/generate_multilingual",
+      "method": "POST",
+      "summary": "Generate Multilingual",
+      "description": "Generate speech in multiple languages (auto-detects language from text).",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "generate_music_api_generate_music_post",
+      "path": "/api/generate_music",
+      "method": "POST",
+      "summary": "Generate Music",
+      "description": "Generate music from lyrics with music notation.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "get_audio_file_api_audio__audio_id__get",
+      "path": "/api/audio/{audio_id}",
+      "method": "GET",
+      "summary": "Get Audio File",
+      "description": "Retrieve generated audio file by ID.",
+      "parameters": [
+        {
+          "name": "audio_id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "title": "Audio Id"
+          }
+        }
+      ],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=Tehuti Core MCP Server (via mcpo)
+After=network.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n/mcp-servers/tehuti-core
+Environment="PGVECTOR_DB_URL=postgresql://suspect:disdick@localhost:5432/maat_memory"
+Environment="WORKSPACE_ROOT=/home/suspect/.n8n"
+ExecStart=/home/suspect/.n8n/scripts/start-tehuti-core-mcp.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+

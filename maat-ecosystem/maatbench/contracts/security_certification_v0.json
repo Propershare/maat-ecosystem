@@ -1,0 +1,5 @@
+{
+  "renamed_to": "maat_attest_v0.json",
+  "doctrine": "hermes/docs/MAAT-ATTEST-v0.md",
+  "note": "Maat Security Certification naming retired; use Maat Attest (stack: prove / resist / attest)."
+}

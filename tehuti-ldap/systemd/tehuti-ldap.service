@@ -1,0 +1,26 @@
+[Unit]
+Description=Tehuti Lab LDAP Server (Maat-Aligned)
+After=network.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=openldap
+Group=openldap
+ExecStart=/usr/sbin/slapd -h "ldap://127.0.0.1:389/ ldaps://127.0.0.1:636/" -u openldap -g openldap -f /home/suspect/.n8n/tehuti-ldap/config/slapd.conf -d 0
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/ldap/tehuti-lab /var/run/slapd
+
+[Install]
+WantedBy=multi-user.target
+

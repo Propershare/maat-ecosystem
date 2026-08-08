@@ -1,0 +1,46 @@
+# Three-Ring Governance Groups
+# Maat-Aligned Group Structure
+
+# Inner Ring - Canon (Read-only)
+dn: cn=inner-ring,ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatGroup
+cn: inner-ring
+description: Inner Ring - Canon (Read-only access)
+maatRole: inner-ring
+member: cn=admin,dc=tehuti,dc=lab
+
+# Middle Ring - Scholarship (Propose)
+dn: cn=middle-ring,ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatGroup
+cn: middle-ring
+description: Middle Ring - Scholarship (Propose changes)
+maatRole: middle-ring
+member: cn=admin,dc=tehuti,dc=lab
+
+# Outer Ring - Monetized (Full access)
+dn: cn=outer-ring,ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatGroup
+cn: outer-ring
+description: Outer Ring - Monetized (Full access)
+maatRole: outer-ring
+member: cn=admin,dc=tehuti,dc=lab
+
+# Agents Group
+dn: cn=agents,ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatGroup
+cn: agents
+description: AI Agents
+member: cn=admin,dc=tehuti,dc=lab
+
+# Admins Group
+dn: cn=admins,ou=groups,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatGroup
+cn: admins
+description: System Administrators
+member: cn=admin,dc=tehuti,dc=lab
+

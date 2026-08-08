@@ -1,0 +1,43 @@
+# Workstation Identities
+# Maat-Aligned Workstation Entries
+
+# Imhotep workstation
+dn: cn=imhotep,ou=workstations,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatWorkstation
+objectClass: device
+cn: imhotep
+ipHostNumber: 192.168.4.25
+description: Imhotep workstation
+maatAgentId: cursor_imhotep
+
+# MacDaddy workstation
+dn: cn=macdaddy,ou=workstations,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatWorkstation
+objectClass: device
+cn: macdaddy
+ipHostNumber: 192.168.4.36
+description: MacDaddy workstation
+maatAgentId: cursor_macdaddy
+
+# ImhotepJr workstation
+dn: cn=imhotepjr,ou=workstations,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatWorkstation
+objectClass: device
+cn: imhotepjr
+ipHostNumber: 192.168.4.81
+description: ImhotepJr workstation
+maatAgentId: cursor_imhotepjr
+
+# StayDangerous workstation (current server)
+dn: cn=staydangerous,ou=workstations,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatWorkstation
+objectClass: device
+cn: staydangerous
+ipHostNumber: 47.200.181.85
+description: StayDangerous server (LDAP host)
+maatAgentId: cursor_staydangerous
+

@@ -1,0 +1,10 @@
+Year/Period | Event / Milestone | Genetic / Anthropological Evidence | Cultural & Religious Transformation | Pillage & Theft / Material Impact
+--- | --- | --- | --- | ---
+Pre-639 CE | Indigenous African Kmt civilization | Skeletal/cranial studies: Kmtians related to Nubians, Beja, NE Africans (Keita, 2005) | Greek and Coptic used; native religions dominant | Temples, statues, archives intact
+639 CE | Beginning of Arab invasion | Introduction of Arab population begins demographic shift | Initial suppression of indigenous religious practices | Early looting of supplies and infrastructure
+640–641 CE | Battles & capture of key cities | Intermarriage begins layering Arab ancestry over African core | Arabic introduced gradually; some Coptic/Gk influence remains | Babylon Fortress captured; Alexandria threatened; some looting
+642 CE | Fall of Alexandria | Genetic shift minor but begins with Arab settlers | Indigenous religion further suppressed | Significant destruction of libraries, treasures, texts
+7th–8th Century | Consolidation of Arab rule | Arab population settles, intermarriage continues | Arabic used in governance; Islam spreads gradually; temples repurposed | Systematic cultural and religious transformation of public spaces
+8th–10th Century | Arabization policies | African core persists, but Arab cultural traits dominate elite layers | Adoption of Arabic names, culture; African identity marginalized | Indigenous Kmtian knowledge systems sidelined
+10th–12th Century | Islamization becomes dominant | Genetic admixture continues | Majority converts to Islam; African markers obscured | Temples, burial sites altered or repurposed
+Post 12th Century | Cultural erasure & identity distortion | Pre-Arab African heritage overshadowed in identity and narratives | Arab identity retroactively projected onto ancien

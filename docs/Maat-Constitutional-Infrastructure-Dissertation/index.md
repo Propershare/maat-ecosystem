@@ -15,6 +15,7 @@
 | **Status** | **V1 PDF imported 2026-06-20**; Ch. 7 updated (OpenClaw §7.5 replaces n8n; MaatBench 58/58); regenerate PDF from V1 markdown when ready |
 | **Key concepts** | Ma’at as constitutional infrastructure; NIST / UNESCO / OECD / OWASP convergence; decolonial AI ethics; provenance, bounded agency, accountable memory |
 | **Scribe protocol** | [`SCRIBE-PROTOCOL.md`](SCRIBE-PROTOCOL.md) |
+| **Scholarship (Kilimanjaro / AI political economy)** | [`scholarship/README.md`](scholarship/README.md) — reading list, youth notes, dissertation bridge |
 
 ## Next milestone
 
@@ -33,6 +34,7 @@
 | Evidence appendix | [`appendices/EVIDENCE-APPENDIX-2026-06-15.md`](appendices/EVIDENCE-APPENDIX-2026-06-15.md) |
 | Citation verification | [`appendices/CITATION-VERIFICATION-2026-06-15.md`](appendices/CITATION-VERIFICATION-2026-06-15.md) |
 | Manuscript | See canonical file above |
+| Scholarship | [`scholarship/`](scholarship/) |
 
 ---
 

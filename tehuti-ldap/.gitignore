@@ -1,0 +1,62 @@
+# Tehuti Lab LDAP - Git Ignore
+# Maat-Aligned Git Configuration
+
+# Password files (CRITICAL - never commit)
+.ldap_admin_password
+*.password
+*.pwd
+
+# SSL certificates and keys
+ssl/*.key
+ssl/*.crt
+ssl/*.pem
+ssl/*.csr
+
+# Database files
+/var/lib/ldap/tehuti-lab/
+*.mdb
+*.ldb
+
+# Logs
+*.log
+logs/
+/var/log/ldap/
+
+# Backups
+backups/
+*.ldif.gz
+*.ldif.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+

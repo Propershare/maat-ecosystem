@@ -68,7 +68,7 @@ flowchart TB
 ├── scripts/                  ← lab-runtime-check.sh, starters
 ├── systemd-services/         ← unit files (paths often use …/mcp-servers/…)
 ├── AGENTS.md, README.md, .cursorrules
-└── …                         ← n8n, training, models, experiments (see TEHUTI-LAB-TREE)
+└── …                         ← training, models, experiments (see TEHUTI-LAB-TREE); `_retired/n8n/` for archived n8n
 ```
 
 ### 2.1 Inside `maat-ecosystem/` (body + MCP)
@@ -98,7 +98,7 @@ maat-ecosystem/
 | **RAG / agents** | **MaatLangChain**, LangChain, optional **Chroma** | `maatlangchain/` |
 | **Gateway** | **OpenClaw** (Node), default **18790** | `~/.openclaw/openclaw.json`; workspace = lab root. |
 | **IDE agents** | **Cursor** + MCP config | Bearer to organ URLs from **8010/manifest**. |
-| **Automation** | **n8n** (optional), workflows under `n8n-workflows/` | |
+| **Automation** | **OpenClaw** gateway (`:18790`) — channels, hooks, cron | n8n **retired** — `docs/N8N-RETIRED.md` |
 | **Models** | **Ollama** (typical **11434**), model dirs under `models/` / `ollama-nuggets/` | |
 | **Policy** | **Tehuti Guard (Python decision API, lab)**, **8013** | `tehuti-guard/guard/` |
 | **Awareness** | **maat-sentinel**, **4242** | Optional; feeds Guard. |

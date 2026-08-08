@@ -1,0 +1,14 @@
+{
+  "_comment": "Optional models.json for a LOCAL operator via Ollama's OpenAI-compatible endpoint. Copy the relevant entry into ~/.pi/agent/models.json, or rely on OPENAI_BASE_URL set by run_operator.sh --local. Local Gemma-4-E4B teachers are weak tool-callers; pull a tool-capable coder (qwen2.5-coder / qwen3-coder / gpt-oss) for a real local operator.",
+  "providers": {
+    "ollama-openai": {
+      "api": "openai-completions",
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "apiKey": "ollama",
+      "models": [
+        { "id": "qwen2.5-coder:7b", "name": "Qwen2.5 Coder 7B (local operator)", "toolCalling": true },
+        { "id": "qwen3-coder:30b", "name": "Qwen3 Coder 30B (local operator)", "toolCalling": true }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4485 @@
+=== EXTRACTED TEXT FROM: Imhotep.pdf ===
+Extraction Method: PyPDFLoader
+Total Pages: 159
+Timestamp: 2026-01-04T17:23:52.927015
+================================================================================
+
+
+--- PAGE 1 ---
+
+
+
+--- PAGE 2 ---
+
+
+
+--- PAGE 3 ---
+IMHOTEP
+
+
+--- PAGE 4 ---
+I. IMHOTEP AS A DEMIGOD
+
+
+--- PAGE 5 ---
+IMHOTEP 
+I The Vizier and Phvsician of 
+KING ZOSER 
+and afierwards 
+THE EGYPTIAN GOD 
+OF MEDICINE 
+BY 
+JAMIESON B. HURRY, M.A., M.D. 
+OXFORD UNIVERSITY PRESS 
+HUMPHREY MILFORD
+
+
+--- PAGE 6 ---
+
+
+
+--- PAGE 7 ---
+IN HONOUR 
+OF 
+IMHOTEP 
+' The first Figure of a Physician to stand out dearly 
+from the Mists of Antiquity.'-SIR W. OSLER.
+
+
+--- PAGE 8 ---
+
+
+
+--- PAGE 9 ---
+THE PROLOGUE 
+T 
+HIS Monograph is consecrated to the 
+memory of a distinguished magician-physi- 
+cian and sage who first appears on the stage of 
+Egyptian history in the reign of King Zoser of 
+the IIIrd Dynasty, and reappears at intervals on 
+that stage during a period of over three thousand 
+years. His record therefore extends over a large 
+part of the history of ancient Egypt. 
+We shall attempt to trace the fortunes of 
+Imhotep both during the period of his human 
+activity and also during the subsequent periods 
+when he was looked upon first as a demigod and 
+finally as one of the full deities of Egypt. We 
+shall also seek to analyse the forces which resulted 
+in such an exceptional occurrence as the deification 
+of an ordinary mortal, i. e. of one who had never 
+been a king. 
+The subject is one which will interest various 
+groups of readers. In the first place it will 
+appeal to the lover of archaeology who is fascinated 
+by the early story of our race and by every detail 
+which throws light on its evolution. There is 
+a glamour in the study of the earliest pages of
+
+
+--- PAGE 10 ---
+X THE PROLOGUE 
+liberal scale, so that the reader may be fur- 
+nished with the authority on which statements 
+are founded. 
+An abstract of this Monograph was contributed 
+to the Fourth International Congress of the 
+History of Medicine which met last year in Geneva. 
+Since, however, the short time allotted to indi- 
+vidual contributions forbade the submission of 
+more than a portion of the following study, it has 
+been thought well to publish the work in extenso. 
+My cordial thanks are due to various authorities 
+who have given facilities in connexion with illus- 
+trations. 
+The Director of the MusCe des AntiquitCs 
+Egyptiennes at Cairo has kindly permitted the 
+reproduction of Figs. I and V ; the Ministry of 
+Public Works in Egypt the use of Col. Lyons's 
+photographs of Philae. The authorities of the 
+Wellcome Historical Medical Museum have given 
+facilities in regard to Fig. VII ; those of the 
+Staats-Museum of Berlin in regard to Fig. VI ; 
+those of the British Museum in regard to Figs. X 
+and XI ; the Illustrated London News in regard to 
+Fig. 11 ; Messrs. Methuen & Co. in regard to 
+Fig. XII ; the Egyptological Department of the 
+Liverpool University in regard to Fig. XVII. To
+
+
+--- PAGE 11 ---
+THE PROLOGUE xi 
+the late Dr. R. Caton, C.B.E., special thanks are 
+due for the loan of blocks used in Figs. 111, IV, 
+and XIII-XVI. 
+Various friends have also given generous assis- 
+tance in connexion with hieroglyphic readings and 
+otherwise. Amongst them must be mentioned 
+Sir E. A. Wallis Budge, Professor T. E. Peet, Miss 
+Murray, Mr. C. J. S. Thompson, and Mr. W. R. 
+Dawson. The latter has further been good 
+enough to read through the proof sheets. I desire 
+also to thank Dr. Alan H. Gardiner for his kind- 
+ness in allowing the use of his new fount for the 
+hieroglyphs included in this volume. 
+The story of Imhotep adds a fresh chapter to 
+the History of Medicine which is gradually being 
+compiled, thanks to the collaboration of workers 
+all the world over. 
+J. B. H.
+
+
+--- PAGE 12 ---
+
+
+
+--- PAGE 13 ---
+CONTENTS 
+The Prologue 
+I. Introduction . 
+11. Imhotep as Contemporary of King 
+Zoser . 
+A. The Vizier . 
+B. The Architect 
+C. The Chief Lector Priest or 
+Kheri-heb . 
+D. The Sage and Scribe . . 
+E. The Astronomer . 
+F. The Magician-Physician . 
+111. Imhotep as Medical Demigod . 
+IV. Imhotep as God of Medicine . 
+V. Ancient Egyptian Medicine . 
+VI. Honour to whom Honour is due . 
+vii 
+The Epilogue.
+
+
+--- PAGE 14 ---
+xiv CONTENTS 
+Appendixes : 
+A. Bibliography . 93 
+B. The name ' Imhotep ' and its 
+Variants . 95 
+C. The Pedigree of Imhotep . 98 
+D. Statuettes of the Demigod 
+Imhotep . . 101 
+E. Mural Pictures of the Deity 
+Imhotep . . 104 
+Index . . 111
+
+
+--- PAGE 15 ---
+ILLUSTRATIONS 
+I. Imhotep as a Demigod Frontispiece 
+11. King Zoser . fmacz%! 4 
+111. The Step-Pyramid of Sakkarah ,, 10 
+IV. The Temple of Edfu . ,, 12 
+V. Imhotep as a Demigod . ,, 30 
+VI. Imhotep as a Demigod . ,, 32 
+VII. Imhotep as a Demigod . 77 34 
+VIII. Imhotep as Deity of Medicine page 40 
+IX. Imhotep as Deity of Medicine ,, 41 
+X. Imhotep as Deity of Medicine facing 42 
+XI. The Triad of Memphis: Ptah, 
+Imhotep, and Sekhmet 7, 44 
+XII. The Island of Philae . page 45 
+XIII. The Temple of Imhotep, Island 
+of Philae. (Ground Plan) ,, 47 
+XIV. The Temple of Imhotep, Island 
+of Philae. (Front View) facing 48
+
+
+--- PAGE 16 ---
+xvi ILLUSTRATIONS 
+XV. The Temple of Imhotep, Island 
+of Philae. (Western wall of 
+Temple, and Entrance) 
+between 48-49 
+XVI. The Temple of Imhotep, Island 
+of Philae. (Eastern wall of 
+Courtyard) . facing 50 
+XVII. Amulet of Imhotep . ,, 52
+
+
+--- PAGE 17 ---
+INTRODUCTION 
+I 
+N the childhood of the world Egypt was the 
+pioneer country as regards the evolution of 
+medicine. To her belongs the high honour of 
+having raised the healing art to a level far ex- 
+ceeding that hitherto attained. Both in diagnosis 
+and in therapeutics astonishing progress was 
+made. Even pathology attracted widespread 
+interest ; the Edwin Smith Papyrus suggests that 
+dissection of the human body was systematically 
+practised in ancient times. 
+The medical schools of Egypt, closely associated 
+with her priestcraft and temples, were famous far 
+and wide, her specialist physicians being sum- 
+moned to attend royal and other personages in 
+distant 1ands.l For a physician to have been 
+educated in Egypt was in itself a passport to 
+success. This high reputation is acknowledged 
+by Homer when he says : ' In Egypt the men are 
+more skilled in medicine than any of human 
+kind .' 
+Most of the ancient races of the world have 
+found a place in their theology for one or more 
+deities of medicine to whom were attributed 
+miraculous powers in restoring sick and apparently 
+1 Herodotus, ii. 84 ; iii. I, 129. 2 Odyssey, iv. 227. 
+3I21 B
+
+
+--- PAGE 18 ---
+2 IMHOTEP 
+dying persons to health. Such deities were wor- 
+shipped amongst the Persians, Hindus, Chinese, 
+Babylonians, Aztecs, and Phoenicians inter alios ; 
+many of them had shrines which were resorted to 
+by suffering men and women, whether afflicted 
+mentally or physically. 
+The ancient Egyptians also had numerous deities 
+to whom were attributed the invention of various 
+arts and sciences, including medicine. Amongst 
+those most generally referred to in this connexion 
+are the falcon-headed sun-god Re, the wonder- 
+working Isis with her son the sun-god Horus, 
+Ptah, the ancient God of Memphis: and the ibis- 
+headed moon-god Thoth, the reputed author of 
+religious and scientific works including treatises 
+of medicine. Less important medical members of 
+the Egyptian pantheon were Khnum with rams' 
+horns and the lion-headed goddess Sekhmet, 
+who were worshipped as the tutelary deities of 
+procreation and ~hildbirth.~ All these deities, 
+however, were probably mere mythical creations 
+of the imagination and lack the fascination asso- 
+ciated with a human personality. 
+Ptah was the deity of healing in Memphis, just as each 
+local deity was the creator and healer of his own people. 
+Khnum was thus the healer at Aswan, and Sekhmet preceded 
+Ptah, and consequently Imhotep, at Memphis. 
+a Other deities were closely associated with childbirth. 
+Cf. Maspero, Popular Stories of Ancient Egypt, 1915, P. 36.
+
+
+--- PAGE 19 ---
+INTRODUCTION 3 
+Of outstanding interest, therefore, is the famous 
+Imhotep, who first appears on the stage of history 
+as the vizier-physician of King Zoser m: 
+and who so impressed his fellow countrymen with 
+his skill in healing disease that he was eventually 
+raised first to the status of medical demigod and 
+eventually to that of full deity of medicine. 
+Unfortunately we cannot trace his history from 
+the beginning ; all that can be done is to collect 
+and arrange such biographical details as have 
+survived. Happily recent research allows of a 
+more coherent account than was formerly possible. 
+Imhotep, the earliest physician of &horn his- 
+torical details have survived, lived in the reign of 
+a famous Egyptian king named Zoser (p/=I'j 
+(Fig. II), a Pharaoh of the IIIrd Dynasty (ca. 2980- 
+2900 B. c.).~ 
+Unhappily we know nothing of his early history. 
+No glimpse is allowed us of his birthplace or 
+childhood ; there is no record of his appearance 
+1 According to Manetho, King Athothis of the 1st Dynasty 
+practised medicine and wrote anatomical books. No bio- 
+graphical details, however, have survived and the entire story 
+may be legendary. 
+2 Fig. 11 represents the life-size statue of King Zoser 
+recently found at Sakkarah, and inscribed with his name as 
+King of Upper and Lower Egypt. The figure wears the 
+sacred wig covered with the Nemes head-dress. 
+The chronology adopted in this work is that of Professor 
+Breasted's History of Egypt.
+
+
+--- PAGE 20 ---
+4 IMHOTEP 
+in the flesh, nor is anything told us of the steps by 
+which he reached the highest post open to an 
+official in Egypt. 
+Descended from a distinguished architect named 
+Kanofer h KI-nfr, and from a mother named 
+Khreduonkh j Urdw-rnb, Imhotep appears 
+to have received a liberal education, so far as such 
+was possible in those far-off days. At any rate 
+he grew up an erudite, versatile man, a sort of 
+Aristotelian genius, who took all knowledge for 
+his province. He was distinguished for his vast 
+learning as well as for some striking achievements, 
+and in the course of ages became generally recog- 
+nized as the Egyptian god of medicine. His name 
+Imhotep jh* signifies ' he who cometh in 
+peace ',l a most appropriate name for a healer of 
+the sick and one which must have brought solace 
+and courage to many an anxious patient. 
+It will be convenient to divide his career into 
+three periods and to consider in order : 
+I. IMHOTEP AS CONTEMPORARY OF KING ZOSER 
+(ca. 2980 B. C.) 
+11. IMHOTEP AS A MEDICAL DEMIGOD 
+(ca. 2850 B. C.-Reign of Mycerinus) 
+111. IMHOTEP AS FULL DEITY OF MEDICINE 
+(ca. 525 B. C.-Persian Period) 
+For the construction and meaning of the name, cf. Ap- 
+pendix B.
+
+
+--- PAGE 21 ---
+11. KING ZOSER
+
+
+--- PAGE 22 ---
+
+
+
+--- PAGE 23 ---
+IMHOTEP AS CONTEMPORARY OF 
+KING ZOSER 
+I 
+MHOTEP devoted his life to various activities 
+which may be grouped as follows : 
+A. Grand Vizier. 
+B. Architect. 
+C. Chief Lector Priest or Kheri-heb. 
+D. Sage and Scribe. 
+E. Astronomer. 
+F. Magician-Physician. 
+A few details will be given under each of these 
+headings : 
+A. IMHOTEP AS VIZIER 
+The office of vizier to the ruling Pharaoh was 
+one of high dignity and responsibility. The 
+occupant of the post was a sort of Joseph, whose 
+jurisdiction extended over the various depart- 
+ments of state.l Although no specific duties of 
+We owe to K. Sethe a valuable monograph, throwing 
+a flood of light on the history of Imhotep and marshalling the 
+evidence that he was actually a contemporary of King Zoser. 
+K. Sethe, Imhotep, der Asklepws der Aegypter : Ein vergotteter 
+Mensch aus der Zeit des Konigs DoJer. Untersuchungen zur 
+Geschichte und Altertumskunde Aegyptens, 1902, vol. ii. The 
+author accepts Sethe's evidence as settling the question, 
+although a few Egyptologists, e. g. G. Foucart, remain uncon- 
+vinced.
+
+
+--- PAGE 24 ---
+6 IMHOTEP 
+the office under King Zoser are on record, many 
+details of the duties of viziers under later Egyptian 
+kings are known, and we may fairly conclude that 
+similar duties were carried out by Imh~tep.~ 
+The following list of titles in itself indicates the 
+manifold responsibilities of the office : ' chief 
+judge,' ' overseer of the King's records,' ' bearer 
+of the royal seal,' ' chief of all works of the King,' 
+' supervisor of that which Heaven brings, the 
+Earth creates and the Nile brings,' ' supervisor of 
+everything in this entire land.' Amongst some of 
+the departments of his office are mentioned the 
+Judiciary, the Treasury, War (Army and Navy), 
+the Interior, Agriculture, and the General Execu- 
+tive. A prodigy of efficiency must have been 
+required to carry out such multifarious duties. 
+The name of the vizier was sometimes actually 
+followed by the royal salutation ' Life, Prosperity, 
+Health ', and in his judicial capacity he was re- 
+garded by the people as one who could not do 
+wrong. Three of the greatest sages and authors 
+of proverbial wisdom, Imhotep, Kegemni, and 
+Also known as Tcheser, Doser or Tosorthros. 
+2 Breasted, in his Ancient Records of Egypt, 1906, records 
+many details of the duties of viziers. Cf. especially vol. i, 
+pp. 122, 158,212 ; vol. ii, pp. 268 ff. A famous vizier of the 
+XVIIIth Dynasty, Rekhmire, has left a long inscription in his 
+tomb at Thebes detailing the duties of the vizier. Cf. New- 
+berry, Life of Rekhmara, pp. 22 ff.
+
+
+--- PAGE 25 ---
+CONTEMPORARY OF KING ZOSER 7 
+Ptah-hotpe, held the office of vizier in the Old 
+Kingdom. 
+An interesting incident associated with Im- 
+hotep and King Zoser is recorded in what is 
+known as the Legend of the Seven Years' Famine, 
+which describes a period of terrible starvation 
+caused by the failure of the Nile for seven consecu- 
+tive years to reach its usual flood level and thus to 
+irrigate the land sufficiently? The result was that 
+grain grew very scarce and almost everything 
+needed for food came to an end.2 The famine was 
+attributed to the King's neglect to pay due honour 
+and worship to the god Khnum 0&'$4 who 
+was one of the deities controlling the sources of 
+the Nile. 
+The King, in his distress at the calamity which 
+had befallen his country, turned to his counsellor 
+Imhotep and questioned him about the birthplace 
+This legend is inscribed on a granite rock on the island of 
+Seh&l near Aswan, and dates from the Ptolemaic period, 
+although in its earlier form it may be as old as the IIIrd Dy- 
+nasty. For further details cf. Sethe, Imhotep, p. 11 ; Sir E. A. 
+Budge, The Legends of the Gods, pp. lx, 120 (with text and 
+translation). 
+Another view is that it was fabricated by priests in order 
+to prove the generosity of the ancient Pharaohs and to enlist 
+a similar generosity. Cf. Maspero, The Dawn of Civilization, 
+1894, p. 240. 
+2 A similar seven years' famine in Egypt is recorded in 
+Genesis xli. 54.
+
+
+--- PAGE 26 ---
+8 IMHOTEP 
+of the Nile and the god who ruled there. Unable 
+to answer the King's questions at once, Imhotep 
+requested leave of absence that he might consult 
+the sacred books on the subject. After a brief 
+absence he revealed to the King ' the hidden 
+wonders, the way to which had been shown to no 
+King for unimaginable ages '.l On receiving this 
+report, King Zoser at once wrote to the Viceroy 
+of Nubia, a nobleman called Meter, asking for his 
+advice and assistance in abating the grievous state 
+of affairs. ' I go back,' he wrote, ' in my mind to 
+the days when I had an adviser, to the time of the 
+gods, to the ibis-god (Thoth >), and to the chief " \\ 
+Kheri-heb priest Imhotep, the son of Ptah 
+South of his Wall.' He then proceeded to inquire 
+what god or goddess presided over the Nile and 
+could replenish his granaries with grain, so that 
+the deity might be visited and propitiated. 
+Eventually, the King paid a personal visit to 
+the temple of the god Khnum in order to make 
+G. Steindorff, The Religion of the Ancient Egyptians, 
+p. 101. 
+The title 'son of Ptah ', here given to Imhotep, is an 
+anachronism to be explained by the fact that this legend dates 
+from Ptolemaic times, when the god Ptah had been assigned 
+to Imhotep as a divine father. Sethe, Imhotep, p. 12. 
+3 This title of Ptah ' South of his Wall ' is derived from the 
+fact that, in one of his forms, that deity was worshipped in 
+a temple on the south side of Memphis. E. A. Budge, Gods 
+of the Egyptians, 1904, i, p. 514.
+
+
+--- PAGE 27 ---
+CONTEMPORARY OF KING ZOSER 9 
+prayers and supplications before him, and to 
+propitiate him with offerings. In response, the 
+god Khnum appeared to the King in a dream, 
+and promised that the Nile should rise and never 
+fail again : ' It shall spread its water out, and cover 
+all the land satisfactorily. Plants shall bend be- 
+neath their produce. . . . Want shall cease, and the 
+emptiness of the granaries shall come to an end.' 
+In gratitude for Khnum's intervention, King 
+Zoser made a decree, and endowed the temple 
+of the god with lands and valuable gifts? Gold, 
+ivory, ebony, spices, precious stones and woods 
+were all tithed so as to supply rich offerings for 
+the temple. This is the prototype of temple 
+endowments, which were doubtless used for the 
+manifold wants of the god, for the maintenance 
+of a sacerdotal staff, and for building operations. 
+B. IMHOTEP AS ARCHITECT 
+Imhotep, ' the chief of all the works of the 
+King,' was also a notable architect, and in all 
+probability designed for his royal master the well- 
+' By the advice of the learned Imhotep, Zoser had once 
+presented this god Khnum with twelve tracts of land on both 
+sides of the river, with all their revenues and taxes, in order 
+that he should once more send a rich Nile into the country 
+which was suffering from its seventh year of scarcity.' 
+A. Erman, Handbook of Egyptian Religion, p. 201. Cf. also 
+K. Sethe, Untersuchungen z. Geschichte und Altertumskunde 
+Aegyptens, ii. 3. 
+3x21 C
+
+
+--- PAGE 28 ---
+10 IMHOTEP 
+known Step-Pyramid of Sakkarah (Fig. III), near 
+Memphis, and familiar to every tourist who 
+ascends the Ni1e.l This pyramid, a transition 
+between the mastaba tombs of the earlier kings 
+and the true pyramid form which is met with 
+later, was constructed by the superimposition of 
+five successively smaller mastabas on an original 
+large one. The east and west sides of the base 
+measured 396 feet in length, and the north and 
+south sides 352 feet, while the height was about 
+195 feet. The six gigantic steps measure in height 
+38,36,34&, 32, 3 I, and 29* feet respectively, while 
+the width of each step is from 6 to 7 feet. Within 
+the building, which was constructed of blocks of 
+limestone, the halls and corridors were lined with 
+blue and green glazed tiles of inlaid faience, 
+bearing the King's names and  title^.^ This 
+pyramid is the earliest large stone structure known 
+to history, and was destined to become the tomb 
+of King Zo~er.~ 
+The Arab name ' Sakkarah ' is probably a corruption of 
+an older Egyptian word Sokari (Socharis), the name of an 
+early god of the dead at Memphis. 
+a An illustration of one of these halls decorated with tiles 
+is given by Maspero, Manua of Egyptian Archaeology, 1914, 
+P. 303- 
+Zoser began by building a mastaba tomb at Bet-Khallaf 
+near Abydos, and subsequently abandoned this scheme in 
+favour of the more ambitious pyramid which was constructed 
+of hewn stone instead of bricks.
+
+
+--- PAGE 29 ---
+
+
+
+--- PAGE 30 ---
+
+
+
+--- PAGE 31 ---
+CONTEMPORARY OF KING ZOSER 11 
+The Step-Pyramid of Sakkarah l is further an 
+index of a high state of civilization. There must 
+have been wealth in the Pharaonic exchequer, 
+stable government by the vizier and other officials, 
+experience in the organization of labour, aptitude 
+in the keeping of complex accounts, technical 
+skill in the quarrying, dressing, and transportation 
+of stone. In all these indications of economic 
+prosperity we may see in part at least the genius 
+of the vizier Imhotep. Nor can we doubt that 
+the triumphant completion of the first pyramid, 
+the earliest large monument constructed of hewn 
+stone, must have paved the way for the yet 
+mightier pyramids that were soon to follow. 
+The name of Imhotep is also associated with 
+the first temple of Edfu which was said to have 
+been constructed according to a plan dropped 
+down from heaven to earth near the city of Mem- 
+phis. ' The master craftsman was Imhotep, the 
+son of Ptah, the great god of Memphis, and father 
+The conception of the terraced pyramid of Sakkarah 
+appears on first thoughts a stroke of genius on the part of 
+King Zoser and his architect Imhotep. There are, however, 
+somewhat similar square monuments in India and Mesopo- 
+tamia of remote antiquity known as Stupas, Topes, or Dago- 
+bas, which may have suggested the idea of Sakkarah. There 
+may well have been occasional communications between 
+Egypt and the East even under the early Dynasties. Cf. 
+W. Simpson, ' The Tower of Babel, and the Birs Nimroud, 
+Transactions of the S. of Biblical Archaeology, 1893, ix, p. 307.
+
+
+--- PAGE 32 ---
+IMHOTEP 
+and son united their powers and produced the 
+first temple at Edfu in one of the earliest periods 
+of Egyptian history.' 
+The present splendid temple (Fig. IV) was 
+begun during the reign of Ptolemy I11 Euer- 
+getes I, 237 B. C., and finished in 57 B. c. The 
+inscriptions in the temple describe Imhotep ' as 
+the great priest Imhotep the son of Ptah, who 
+speaks or lectures '.2 
+As we shall see in greater detail farther on, 
+Imhotep appears to have been the second member 
+of a long pedigree of architects, commencing with 
+his father Kanofer (cf. Appendix C), and ending 
+with Khnum-ib-re, who was chief minister of 
+works for the whole country, and architect of 
+Upper and Lower Egypt from the twenty-seventh 
+to the thirtieth year of King Darius I (ca. 490 B. C.). 
+Imhotep held the important office of Kheri- 
+heb her tep, 1118, or first lector prie~t.~ In 
+E. A. Budge, A History of Egypt, 1902, viii, p. 49. 
+2 De RougC, Inscriptions et Notices du Temple dJEdfou, 
+, PI. 89. Cf. also Appendix E. According to Naville, Textes 
+relatifs au Mythe d'Horus ci Edfou, 1870, p. 15, this is the only 
+monument which contains the signature of the artist who made 
+its plan. 
+3 An excellent account of the Egyptian priesthood by A. M.
+
+
+--- PAGE 33 ---
+
+
+
+--- PAGE 34 ---
+
+
+
+--- PAGE 35 ---
+CONTEMPORARY OF KING ZOSER 13 
+this capacity his duty was to recite from the holy 
+books, and since according to the Egyptian faith 
+these religious texts possessed magical powers, 
+the common people regarded the Kheri-heb as 
+a magician. 
+The Kheri-heb took an important part in cere- 
+monies known as the ' Liturgy of Funerary 
+Offerings ' dealing with the presentation of gifts 
+to the dead, the formula which was pronounced 
+over each element being supposed to change it 
+into a divine and spiritual food, which was par- 
+taken of by the souls of the departed. The 
+material elements of the offerings were eaten by 
+the priests and by the relatives of the deceased, 
+who were thus brought into communion with the 
+blessed dead and with the gods? Although the 
+formulas in the liturgy were recited by the Kheri- 
+heb priest, who held in his hands a roll of papyrus 
+and directed the assistant priests, most of the 
+ceremonies were performed by the Sem priest, 
+/h&, assisted by several ministrants. 
+In the other series of ceremonies known as 
+' The Opening the Mouth ', y, the object was 
+Blackman will be found in the Encyclopaedia of Religrgrm at;d 
+Ethics, X, p. 294. E. A. Budge (Gods of the Egyptians, i, 
+p. 525) states that Imhotep was attached to the priesthood 
+of Re, the sun-god. 
+E. A. Budge, The Liturgy of Funerary Offerings, pp. ix, 
+41 E.
+
+
+--- PAGE 36 ---
+14 IMHOTEP 
+to restore to the inert corpse the functions of 
+which it had been deprived by death and embalm- 
+ment. The mouth was symbolically opened that 
+the mummy might speak, and the eyes touched 
+that they might see. A bull was slaughtered in 
+order to provide food, while other ceremonies 
+were intended to enable clothes, unguents, &C., 
+to be used, in fact to cause the mummy in all 
+respects to resemble a living human body. The 
+end in view was also aimed at by the recitation of 
+appropriate formulas and by touching the mummy 
+case with a wand shaped like the hieroglyph 1. 
+When these ceremonies had been performed the 
+body was lowered into the grave and the approach 
+closed, a funeral feast being held in the ante- 
+chamber of the tomb. 
+Here also the Kheri-heb was responsible for the 
+order of ritua1,l although he had various assis- 
+tants, especially the Sem who in many respects 
+played the principal part. In brief the Kheri-heb 
+E. A. Budge, The Book of Opening the Mouth, p. 11 and 
+passim. In both these series of ceremonies the details date 
+mainly from the XVIIIth Dynasty ; but most of them were 
+certainly of much earlier origin. 
+In the ceremony of ' The Opening of the Mouth ' at the 
+tomb of Amenemhet the principal part is played by the Sem 
+priest, the role of the Kheri-heb being that of prompter to 
+his companions. Cf. A. H. Gardiner, The Tomb of Amenemh~t, 
+191 5, pp. 57 E. ; Maspero, Btudes de Mythologie et d'ArchPo- 
+logie, i, pp. 283-324.
+
+
+--- PAGE 37 ---
+CONTEMPORARY OF KING ZOSER 15 
+was held in great honour throughout Egypt. By 
+the common people he was regarded as the 
+mediator between the King and the unseen 
+powers of the universe, and was supposed to 
+influence the final destinies of the dead.l 
+There is an interesting reference to Imhotep in 
+- 
+the Ritual of Embalmment. After the statement 
+that the deceased sees Arnmon, the text goes on to 
+say to him : 
+' Thy soul unites itself to Imhotep whilst thou art 
+in the funeral valley, and thy heart rejoiceth 
+because thou dost not go into the dwelling of 
+Sebek? and because thou art like a son in the 
+house of his father, and doest what pleaseth thee 
+in the city of Thebes.' 
+To Imhotep were also attributed in later times thewords 
+of power which protected the dead from all kinds of enemies 
+that awaited them in the Underworld or Duat (Tuat) 3ck A. 
+Without such words of power poor persons who could not 
+purchase even cheap amulets or afford costly funerals might 
+be unable to continue their way through the later stages of 
+the Underworld. E. A. Budge, Gods of the Egyptians, i, 
+PP. 261, 523- 
+The Crocodile god Sebek was associated in certain of his 
+aspects with the idea of death and destruction. This allusion 
+therefore probably means that the deceased would escape 
+annihilation. 
+Maspero, Mhoire sur quelques Papyrus du Louvre, 1875, 
+pp. 24, 80. The papyrus is written in hieratic and is of late 
+(Graeco-Roman) date.
+
+
+--- PAGE 38 ---
+I 6 IMHOTEP 
+Imhotep enjoyed the reputation of being ' one 
+of the greatest of Egyptian sages ' ; l his fame for 
+wisdom made so deep an impression on his 
+countrymen that it endured as a national tradition 
+for many centuries. 
+As regards his literary activities, he is said to 
+have produced works on medicine and archi- 
+tecture, as well as on more general subjects, and 
+some of his works were extant at the dawn of 
+the Christian era. His proverbs, embodying the 
+philosophy of life which experience had taught, 
+were handed down from generation to generation, 
+and were noted for their grace and poetic diction, 
+their author being described as a ' master of 
+poetry '. We shall see later on that his eminence 
+as a man of letters led him to be recognized as the 
+' patron of scribes '. 
+An interesting song, or rather dirge, known as 
+the ' Song of the Harper ',2 has survived in which 
+E. A. Budge, Short History of Egypt, p. 91. 
+A complete copy of the song occurs in the Harris Papyrus, 
+No. 500 in the British Museum, and a copy was also 
+inscribed on the walls of the Theban Tomb of Pa-aten-em- 
+hab (XVIIIth Dynasty) of which the remaining fragments 
+are now at Leiden. (Leemans, Monuments, Pt. 111, PI. XII ; 
+conveniently reproduced in Breasted, History of Egypt, 1919, 
+p. 208.) A similar song is inscribed on the walls of the
+
+
+--- PAGE 39 ---
+CONTEMPORARY OF KING ZOSER 17 
+the names of Imhotep and Hordedef l are linked 
+together and in which these two sages dilate on 
+the uncertainty and brevity of life, and enforce 
+the doctrine that as man is so soon gone and for- 
+gotten, he should enjoy his life to the full. The 
+philosophy is that of those persons who in all ages 
+of the world have said : ' Let us eat and drink, 
+for to-morrow we die.' This poem was evidently 
+a great favourite. The oldest version that has 
+survived was written in the tomb of the Theban 
+King Antuf near the figure of the harper, and 
+was doubtless sung during the funeral feast for 
+the entertainment of the guests. The object was 
+to remind them of the brevity of life, even while 
+they were enjoying it.4 The following version 
+Theban tomb of Neferhotpe. Both have been studied in 
+detail and published by Maspero, Etudes Egyptiennes, i, pp. 
+172 ff. 
+Hordedef was a prince of the IVth Dynasty and probably 
+n son of Khufu (Cheops) (eF&] , the builder of the 
+great pyramid of Gizeh. He also was one of the wise men of 
+Egypt and figures in the famous story of Khufu and the 
+magicians. 
+2 I Corinthians xv. 32. 
+King Antuf (Intef) was one of the kings of the XIth 
+Dynasty. There were some other kings Antuf in the XVIIth 
+Dynasty. 
+Herodotus (ii. 78) thus describes this striking custom 
+among the Egyptians : ' In the social banquets of the rich, 
+as soon as the feast is ended, a man carries round a wooden 
+figure of a corpse in its coffin, graven and painted so as to 
+7121 D
+
+
+--- PAGE 40 ---
+I 8 IMHOTEP 
+conveys a good impression of this poem and 
+indicates the feeling and rhythm met with in 
+Egyptian literature, although there are no rhyming 
+lines : 
+Soxg of the House of the Blessed King Antuf, 
+which is written in front of the Harper.l 
+ALL hail to the prince, the good man, 
+Whose body must pass away, 
+While his children remain for aye. 
+The gods of old rest in their tombs, 
+And the mummies of men long dead ; 
+The same for both rich and poor. 
+The words of Imhotep I hear, 
+The words of Hordedef, which say : 
+' What is prosperity ? tell ! ' 
+Their fences and walls are destroyed, 
+Their houses exist no more ; 
+And no man cometh again from the tomb 
+To tell of what passeth below. 
+resemble the reality as nearly as possible, from one to two 
+cubits long. And as he shows it to each of the guests, he says, 
+" Look on this, and drink, and be merry ; for when thou art 
+dead, such shalt thou be." ' 
+H. R. Hail, Cambridge Ancient History, i, p. 324 ; Erman, 
+Life in Ancient Egypt, p. 386 ; W. Max Miiller, Die Liebes- 
+poesie der alten Aegyptev, pp. 29, 35. 
+This allusion to the walls and house of Imhotep is 
+peculiarly effective. Although he was the famous architect 
+of King Zoser, yet his own tomb has so entirely disappeared 
+that ' the place thereof knows it no more '.
+
+
+--- PAGE 41 ---
+CONTEMPORARY OF KING ZOSER 19 
+Ye go to the place of the mourners, 
+To the bourne whence none return ; 
+Strengthen your hearts to forget your joys, 
+Yet fulfil your desires while ye live. 
+Anoint yourselves, clothe yourselves well, 
+Use the gifts which the gods bestow, 
+Fulfil your desires upon earth. 
+For the day will come to you all 
+When ye hear not the voices of friends, 
+When weeping avails you no more. 
+So feast in tranquillity now, 
+For none taketh his goods below to the tomb, 
+And none cometh thence back again. 
+It would of course not be fair to judge of 
+Imhotep's philosophy from so slender a basis as 
+that presented by the ' Song of the Harper '. As 
+his reputation was so enduring, there were doubt- 
+less precepts and proverbs enjoining a higher 
+morality. His name is sometimes linked with 
+those of two other famous Egyptian sages, i. e. 
+Kegemni who lived in the reign of Huni, last 
+king of the IIIrd Dynasty, and Ptah-hotpe, 
+vizier of King Assa, of the Vth Dynasty, both 
+of whom have bequeathed precepts of singular 
+beauty. 
+We append one gem from the ' Instruction of 
+Ptah-hotpe', which teaches the virtue of humility : 
+' If thou be great, after being of none account, 
+and hast gotten riches after squalor, being fore-
+
+
+--- PAGE 42 ---
+20 IMHOTEP 
+most of these in the city, and hast knowledge 
+concerning useful matters, so that promotion is 
+come to thee ; then swathe not thine heart in 
+thine own hoard, for thou art become the steward 
+of the endowments of the god.' l 
+It is delightful to have voices speaking across 
+so long a span of years and recalling the philosophy 
+held by the wise men of an ancient nation, whose 
+glory has now departed. 
+If the references to Imhotep in Hermetic 
+literature can be trusted, he was also interested 
+in astronomy and astrology, although no special 
+observations are associated with his name. Sethe 
+gives various references to that literature, showing 
+that Imhotep was reputed to have been associated 
+with the god Thoth (Hermes) in astronomical 
+ observation^.^ Doubtless he was a believer in 
+the influence exerted by the heavenly bodies on 
+the welfare of men, as was the fashion in the 
+Pharaonic period. 
+The faith that stars in their courses powerfully 
+affected human destiny was wellnigh universal, 
+and this faith led to a close study of the move- 
+ments of the heavenly bodies, of eclipses, of the 
+l B. Gunn, The Iminrction of Ptah-Hotep, and the In- 
+struction of Kegemni: the Oldest Books of the World, p. 54. 
+Sethe, Imhotep, p. 22.
+
+
+--- PAGE 43 ---
+CONTEMPORARY OF KING ZOSER 21 
+precession of the equinoxes, of occultations of the 
+planets, of the length of the sidereal year, as well 
+as to the identification of the sun, moon and stars 
+with the principal deities in the Egyptian pan- 
+theon. Both the sun and moon were the objects 
+of divine worship by the royal family and the 
+nobles, as some of the grandest of natural objects.' 
+No wonder that the fundamental laws of astro- 
+nomy were discovered and brought into intimate 
+association both with national events and with 
+the ordinary occurrences of life. 
+As Diodorus Siculus says : ' There is no 
+country where the positions and movements of 
+the stars have been observed with such accuracy 
+as in Egypt. Registers in which these observa- 
+tions are recorded have been kept during an 
+incredible number of years.' 
+Imhotep enjoyed a high reputation both as 
+magician and as physician. He was ' a famous 
+priest and magician of Memphis ',3 while his 
+The common people worshipped their local gods. 
+Diodorus Siculus, Book I, c. L, LXXXI. Cf. Herodotus, 
+ii. 4. Of the native Egyptian records of the movements of the 
+heavenly bodies, the most celebrated are those in the royal 
+tombs at Thebes. Cf. Le Page Renouf, Life-Work, iii, 
+PP. 97 ff. 
+3 E. A. Budge, The Literature of the Ancient Egyptiam, p. 84.
+
+
+--- PAGE 44 ---
+subsequent apotheosis as the god of medicine 
+testifies to his skill as a healer of the sick. We may 
+briefly refer here to the twin offices of magician 
+and physician, leaving a fuller discussion of the 
+subject to an excursus on early Egyptian medicine. 
+Magic and medicine were closely allied in the 
+time of the Pharaohs. Magic is generally re- 
+garded as the older of the two and never lost hold 
+on her offspring. By magic actions are implied 
+such actions as persons perform for their own or 
+others' benefit and which demand certain mys- 
+terious and miraculous powers for their perform- 
+ance. According to the Egyptian belief, wizardry 
+could work all kinds of wonders which were not 
+possible by simple means.l 
+The operations of magic related to all the 
+events of daily life. It might be prophylactic of 
+evil, curative of disease, prognostic of calamity, 
+sometimes benevolent towards others, at other 
+times malevolent. One common characteristic 
+was the use of a mystic incomprehensible gib- 
+berish to convey an impression of wisdom behind 
+it. It is difficult to draw any hard-and-fast line 
+between religion and magic, since the latter was 
+in large measure a form of applied religion (religio 
+privata). Practitioners of magic kept a box of 
+materials and instruments always ready so as to 
+Cf. the article on ' Magic ' by A. H. Gardiner, Encyclo- 
+paedia of Rekion and Ethics, viii, p. 262.
+
+
+--- PAGE 45 ---
+CONTEMPORARY OF KING ZOSER 23 
+apply their art to any special circumstances that 
+ar0se.l 
+In the Westcar Papyrus allusion is made to 
+a wonderful feat of magic performed by the chief 
+Kheri-heb or lector priest of King Zoser, who, it 
+has been suggested, may well have been Imh~tep.~ 
+The full details are not told, but the allusion 
+occurs in a speech made to the King Khufu 
+(Cheops) by one of his sons as having occurred 
+in the days of King Zoser and performed by his 
+chief lector priest. 
+Although Imhotep was a noted magician, it 
+appears that medicine was the mistress he most 
+zealously wooed ; it is his eminence as a healer 
+of the sick that has given him imperishable fame, 
+and that led eventually to his deification. For a 
+time he was court physician to King Zoser, whose 
+vizier he had been ; evidently he moved in the 
+highest social circles. 
+Doubtless magic and medicine were closely 
+associated in his treatment of the sick, the remedy 
+most suited to the malady in question being 
+Magic was practised in England not so many years ago and 
+even to-day is not extinct. Cf. Elworthy, The Evil Eye, 1895, 
+pp. 53, 56 ; C. K. Sharpe, Witchcraft in Scotland, 1884, p. 21. 
+Erman, Die Marchen des Papyrus Westcar, i, p. 7. The 
+Westcar Papyrus contains in the form of a popular romance 
+an account of the wonders wrought by magicians for the 
+entertainment of King Khufu (Cheops). 
+Sethe, Imhotep, p. 25.
+
+
+--- PAGE 46 ---
+24 IMHOTEP 
+selected. Magical papyri are leavened with 
+medical prescriptions, while medical papyri, such 
+as the Ebers Papyrus, are constantly interspersed 
+with incantations. 
+Unhappily, nothing is known of his special 
+work as a physician. The important office of 
+vizier must have added prestige to his name and 
+inspired confidence in his patients. But the fact 
+that he later on received divine honours-a rare 
+event except in the case of a king-proves him 
+to have been a man of rare distinction. A fine type 
+of scholar-physician, he evidently rendered service 
+both to the bodies and spirits of the sick and 
+afflicted to whom it was his privilege to minister. 
+As regards Imhotep's relations, a few details 
+have come down to us (cf. Appendix C). His 
+father was a famous court architect or master- 
+builder named Kanofer K]-nfr. This we 
+learn from an inscription found in the Wadi 
+Hammamat, a valley leading from Coptos down 
+to the Red Sea, and giving a genealogical tree 
+of the ancestors of the architect Chnem-eb-re 
+(Khnum-ib-re). 
+Much less is known about Imhotep's mother 
+Khreduonkh Nrdw-rnb and his wife Ronpe- 
+nofret {i&jJ Rnpt-nfrt. After his apotheosis, his 
+mother Khreduonkh was looked upon as the 
+mother of a god, and was represented with a
+
+
+--- PAGE 47 ---
+CONTEMPORARY OF KING ZOSER 25 
+human head, adorned with the hood of a vulture 
+and with double feathers? His wife Ronpe-nofret 
+likewise after the apotheosis of her husband be- 
+came the wife of a god. 
+The Egyptians appear to have found no diffi- 
+culty in regarding Imhotep as the son of the god 
+Ptah, while his mother, wife and other relations 
+were but ordinary  mortal^.^ Such double filiation 
+was possible since deities could borrow a human 
+body so as to enable a woman to bear them a son. 
+Imhotep could thus be the son both of Ptah and 
+of Kanofer. 
+We have no information as to the length of 
+Sethe, Imhotep, pp. 4, 24. 
+The names Imhotep, Kanofer, and Ronpe-nofret were 
+not uncommon under the Old Kingdom, while that of Khre- 
+duonkh does not appear till the Graeco-Roman period. One 
+of the Pharaohs was named Imhotep, although the date of his 
+~eign is uncertain. At Berlin is preserved the stela of a man 
+named Imhotep, who in one picture is seen praying before 
+Osiris, in another before Osiris-Apis. A. Erman, Handbook 
+of Egyptian Religion, p. 2 17. 
+The mastaba-tomb of another man named Imhotep, a 
+famous official of one of the XIIth Dynasty kings named 
+Sesostris (Senusert), was discovered at the South Pyramid of 
+Lisht in 1914. Ancient Egypt, 1915, p. 146. 
+Another Imhotep, who bore the titles ' Royal Scribe ' and 
+' Child of the Nursery ',lived at Thebes in the reign of Arneno- 
+phis I11 (ca. 1410-1375 B. C.). Persons of the same name 
+are also mentioned by Brugsch, 2. f. Agyptische Sprache, 1884, 
+xxii, pp. 118 ff. 
+In ancient Egypt there appears to have been a fortress 
+called the ' Gate of Imhotep '. Erman and Ranke, Aegypten, 
+3121 E
+
+
+--- PAGE 48 ---
+26 IMHOTEP 
+Imhotep's life or the date of his death. As far 
+as history goes he was a man of high and un- 
+sullied character, with a wide outlook on life, 
+as well as a tender heart towards suffering 
+humanity. We may therefore well be confident 
+that when, after a career devoted to the public 
+service, to the healing of the sick, and to his many 
+other interests, he was at length laid to rest, 
+a great concourse of mourners joined in the 
+funeral procession and accompanied the mummy 
+to its last home. Moreover, with the knowledge 
+we possess of the funerary ceremonial in the early 
+dynasties, and with a little imagination, we can 
+readily picture to ourselves the various episodes 
+on the way to the vast necropolis of Memphis. 
+After the embalmment of the body, a process 
+which occupied several weeks, the corpse would 
+be placed in a four-sided somewhat plain coffin 
+which was then covered with flowers and ferried 
+across the Nile on a richly decorated barque, 
+accompanied by several other boats filled with 
+friends and relations. Meanwhile the funerary 
+priest, i.e. the Kheri-heb, made offerings and 
+burnt incense before the mummy, and conducted 
+his official recitations and invocations to the g0ds.l 
+1923, p. 628. Roeder suggests that this may perhaps have 
+been built by the subject of this monograph (Pauly, Real- 
+fincyclopadie, ix. I 213). 
+1 Many details and illustrations of funeral ceremonies will
+
+
+--- PAGE 49 ---
+CONTEMPORARY OF KING ZOSER 27 
+The river safely crossed, the coffin together 
+with its barque was transferred to a sledge and 
+drawn by oxen to the already constructed mastaba, 
+every stage of the journey being accompanied by 
+a complicated ceremonial. Egyptian mourners 
+were highly demonstrative and in the case of 
+Imhotep doubtless there was pathetic wailing of 
+his friends and relations, as well as of the sick 
+and afflicted patients to whom he had formerly 
+ministered. Especially affected would be the 
+women who with bare breasts uttered impassioned 
+cries, slapped their faces, and scattered ashes on 
+their heads, everything being done to glorify the 
+deceased and to indicate the grievous loss and 
+solitude of the survivors. 
+Imhotep's mastaba, which will doubtless some 
+day be unearthed, was probably situated in the 
+desert just outside the city of Memphis, near to 
+the Serapeum and the modern village of Abusir. 
+It was therefore also close to the famous pyramid 
+which the deceased had built for his patron and 
+royal master 2oser.l Near to this spot was later 
+on situated the Pi-f-m-hotp-si-ptah ?&==AQn aOln 1 
+be found in Erman and Ranke, Aegypten, 1923, pp. 34.4 ff. 
+Cf. also Maspero, gtudes ggyptiennes, 1886, i, pp. 81-194. 
+Since these pages have been in the press, excavations 
+carried on at Sakkarah by Mr. C. M. Firth, of the ' Service 
+des AntiquitCs ', have brought to light some remarkable 
+buildings constructed by Imhotep. They consist of a wall
+
+
+--- PAGE 50 ---
+28 IMHOTEP 
+' the temple of Imhotep, son of Ptah ',l which the 
+Greeks called ' the Asklepieion '.2 
+As we shall see in the next Chapters it was not 
+Imhotep's destiny to lie forgotten in one of the 
+numerous mastabas in the necropolis of Memphis, 
+in which repose so many notable Egyptians. A 
+far higher distinction awaited him than any 
+Pharaoh could confer, for posterity raised him 
+to the rank of the Egyptian deity of medicine, and 
+gave him a place among the immortals whose 
+name will be held in everlasting honour. Non 
+moritur cujus fama vivit. 
+500 yards long by 300 yards wide, enclosing the Step-Pyramid, 
+together with a beautiful colonnade about 85 yards long, 
+which appears to have formed the main entrance to the pyramid 
+enclosure. There are 48 columns of white limestone arranged 
+in pairs, the shafts being carved so as to imitate a bundle of 
+reeds. Further details, as well as an illustration of the 
+colonnade, will be found in The Times of January 16th, 1926. 
+Brugsch, Dictionnaire Gkographipue, p. 1098. 
+An ancient writer, Mercur, states that Asklepios, sc. 
+Imhotep, was buried at a town called Crocodilopolis, which 
+was probably close to GebelCn, a few miles north of Esnah. 
+By far the strongest evidence, however, points to Sakkarah as 
+the place of sepulture, where the Step-Pyramid of King Zoser 
+is situated. Weigall, on the other hand, does not wholly 
+discredit the Gebelbn suggestion. ' If the hills of GebelCn ', 
+he writes, ' contain Imhotep's tomb, their interest to the 
+visitor will not be lessened by the fact that they hold the bones 
+of the earliest philosopher and wise man known to the world's 
+history.' A. E. Weigall, Guide to the Antiquities of Upper 
+Egypt, 1913, p. 298.
+
+
+--- PAGE 51 ---
+IMHOTEP AS MEDICAL DEMIGOD 
+F 
+OR many years Egyptologists have been 
+puzzled to explain why Imhotep, who lived 
+in the days of King Zoser, ca. 2900 B.c., was not 
+ranked among the full gods of Egypt until the 
+Persian period, dating from 525 B. c. The apo- 
+theosis of a man, however distinguished, so many 
+centuries after his life on earth seems indeed 
+mysterious. The explanation appears to be that 
+first suggested by Erman, viz. that Imhotep, at 
+any rate during a large part of the interval, was 
+regarded as a sort of hero or demigod and re- 
+ceived a semi-divine worship. Erman suggested 
+that this rank of demigod was bestowed on him 
+at the time of the New Kingdom, i.e. about 
+1580 B.c., but more recent evidence seems to 
+indicate that this demigod stage was reached at 
+a much earlier period. 
+In one of the Oxyrhynchus Papyri, written in 
+Greek, and dating probably from the second 
+century A. D.,~ we read that King Mycerinus 
+(a], the son of Khufu (Cheops) of the 
+l Grenfell and Hunt, Oxyrhynchus Papyri, Part XI (1915). 
+Cf. also Ancient Egypt, 1916, p. 41. This Papyrus, itself 
+a copy, was found in the temple of Imhotep in the time of 
+Nectanebo. It possesses great interest, although opinions
+
+
+--- PAGE 52 ---
+30 IMHOTEP 
+IVth Dynasty, established temples and endow- 
+ments for Imhotep the son of Ptah and other 
+pers0ns.l Consequently, if this Papyrus is to be 
+trusted, Imhotep was worshipped as early as the 
+IVth Dynasty, and his temple was resorted to 
+by sick and afflicted persons. 
+The writer of the Papyrus, named Nechautis, 
+worked up the story of Imhotep from the record 
+found in his temple, with the object of showing 
+that he, the writer, was the proper person to hold 
+the office of priest of Imhotep with power to 
+bequeath that position to his po~terity.~ He 
+further states that he had resolved to honour 
+Imhotep by translating into Greek an ancient 
+Egyptian work he had before him, but that he 
+feared to undertake the task lest he might prove 
+unable to do justice to the merits of the deity. 
+He hoped that, when older and more experienced, 
+he might be better equipped for the work. Then 
+may differ as to its reliability as an historical document ; attri- 
+butions of great antiquity to religious foundations must be 
+accepted with reserve. On the other hand, Grenfell and Hunt 
+write : ' So far as it goes, the evidence of this Papyrus favours 
+the view that the worship of Imhotep began in the early days 
+of Egyptian History.' 
+The other persons are Horus son of Hermes, and Kaleoi- 
+bis son of Apollo ; it is not known who these were. 
+Some offices in the priesthood were hereditary and 
+attached to certain families. Cf. Erman and Ranke, Aegypten, 
+1923, P. 331.
+
+
+--- PAGE 53 ---
+V. IMHOTEP AS A DEMIGOD
+
+
+--- PAGE 54 ---
+
+
+
+--- PAGE 55 ---
+MEDICAL DEMIGOD 3 1 
+follows the story of a vision in which Imhotep 
+(Asklepios) appears to a devotee, which throws 
+such a vivid light on the Egyptian temple as a 
+resort of the sick and on the practice of incu- 
+bation that it is worth reproducing at some 
+1ength.l 
+The story relates to the mother of Nechautis 
+who was attacked with quartan ague, which 
+induced her friends to seek assistance at the temple 
+of Imhotep. This deity appeared to the sick 
+woman in dreams and cured her by ' simple 
+remedies ', for which both mother and son 
+showed their thanks by sacrifices. 
+Nechautis himself subsequently also fell ill, 
+with pain in his right side, violent fever, loss of 
+breath and coughing, associated with the pain 
+in his side. He too, in his turn, and accompanied 
+by his mother, hastened to the shrine and lapsed 
+into half-unconscious sleep. Meanwhile his 
+mother, wide awake, suddenly perceived in a 
+vision a being of superhuman ~tature,~ clothed 
+in shining raiment and carrying a book, who 
+regarded the patient intently from head to foot 
+and then vanished. When the mother had re- 
+For fuller details reference must be made to Grenfell 
+and Hunt's translation. An excellent rksume' of the story 
+appears in the Lancet, 1915, ii, p. 1204. 
+When a deity appeared to a mortal his divinity was shown 
+by his superhuman stature.
+
+
+--- PAGE 56 ---
+IMHOTEP 
+covered from her surprise at the vision, she woke 
+up the invalid and found that his fever had 
+departed, leaving him in a profuse perspiration. 
+As soon as the invalid was able to speak he began 
+to recount what he had seen in a dream, i.e. the 
+same vision that his mother had witnessed whilst 
+awake. The pains in his side soon ceased, the 
+god having given him an ' assuaging cure '. 
+The mother and son at once proceeded to 
+express their gratitude by the customary sacrifices 
+and, it may be presumed, ' donaria '. Imhotep, 
+however, notified that such were not the recom- 
+pense and signs of gratitude he required. He 
+wished Nechautis to fulfil the promise made 
+years ago to re-edit the ancient Egyptian book 
+in Greek. 
+The writer then goes on to say that, since the 
+divine master regretted the non-composition of 
+the divine book, which invoked his providence 
+and was filled with the story of his divinity and 
+inventiveness, he set about the dutiful task, which 
+he thus describes : 
+' Since thou hadst once noticed, Master, that 
+I was neglecting the divine book invoking thy 
+providence and filled with thy divinity, I hastened 
+to the inspired task of the history. And I hope 
+to extend by my proclamation the fame of thy 
+inventiveness ; for I unfolded truly by a physical 
+treatise in another book the convincing account
+
+
+--- PAGE 57 ---
+VI. IMHOTEP AS A DEMIGOD
+
+
+--- PAGE 58 ---
+
+
+
+--- PAGE 59 ---
+MEDICAL DEMIGOD 33 
+of the creation of the world. Throughout I have 
+filled up defects and struck out supeduities. . . . 
+Hence, Master, I conjecture the book has been 
+completed in accordance with thy favour, . . . 
+suiting thy divinity. As the discoverer of this 
+art, Asclepios,l greatest of Gods and my teacher, 
+thou art distinguished by the thanks of all men. 
+For every gift of a votive offering or sacrifice 
+presently perishes, but a written record is an 
+undying meed of gratitude, renewing its youth 
+in the memory. Every Greek tongue will tell 
+thy story and every man will worship the son of 
+Ptah, Imouthes.' 
+The address closes with the following procla- 
+mation : 
+' Assemble all ye benevolent and good persons ! 
+Depart all wicked and godless ones ! Assemble 
+all ye . . . who have been cured of diseases through 
+serving the god, all ye who practise the healing art, 
+all ye who zealously strive after a virtuous life, ye 
+who in the past have been blessed with abundance 
+of good things, ye who have been delivered from 
+the perils of the sea ! For every place has been 
+penetrated by the saving grace of the god.' 
+The text then proceeds to recount the history 
+l i.e. Imhotep. This is an illustration of the concealment 
+of an Egyptian deity under a Greek name. The quotation 
+also throws an interesting light on the system of propaganda 
+practised by the devotees of Imhotep. Every effort was 
+made, both by word of mouth and by written records, to 
+broadcast any marvellous cures, in order further to enhance 
+the prestige of the god of healing. Cf. W. Schubart, Agypten 
+von AIexander dent Grossen bis auf Mohammed, p. 314. 
+3121 F
+
+
+--- PAGE 60 ---
+34 IMHOTEP 
+of Asklepios (Imhotep), son of Hephaestos,' and 
+the manner in which he told Mycerinus to busy 
+himself with his tomb. It is clear that though 
+Imhotep was not yet recognized as a full deity, 
+he was to some extent worshipped in the same 
+manner as a god.2 
+Until the Oxyrhynchus Papyrus described 
+above was discovered showing that Imhotep was 
+worshipped in the time of King Mycerinus his 
+elevation to the status of demigod had been 
+associated with the religious revival that occurred 
+at the advent of the New Kingdom, i.e. 1580 
+B. One result of this revival was a resuscitation 
+of ancient beliefs and cults accompanied by a more 
+elaborate and magnificent ritual at the services. 
+The gods came to be enthroned in palatial 
+temples that glistened with costly sacramental 
+vessels, the ceremonies being supported by 
+wealthy endowments, while the high priests 
+enjoyed wellnigh royal rank and power. 
+This increase in the magnificence and wealth 
+of the great Egyptian gods led more and more 
+to their estrangement from the common people. 
+The fact that Hephaestos is here equated with Ptah 
+indicates the late date of the Papyrus. Milne states that there 
+is a mixed Graeco-Egyptian coin-type of Ptah-Hephaistos 
+(History of Egypt U& Roman Rule, 1924, p. 193). 
+K. Sethe, Encyclopaedia of Religion and Ethics, vi, p. 647. 
+Cf. Erman, A Handbook of Egyptian Reli-, 1907, p. 56, 
+Ch. on ' Religious Beliefs and Customs of the New Kingdom '.
+
+
+--- PAGE 61 ---
+VII. IMHOTEP AS A DEPllIGOD
+
+
+--- PAGE 62 ---
+
+
+
+--- PAGE 63 ---
+MEDICAL DEMIGOD 35 
+The humble peasant felt that he could no longer 
+approach his deity with his daily petitions for 
+body and soul, as he used to do in more primitive 
+times. Yet the common people seem as much as 
+before to have needed a superhuman helper and 
+friend in sympathy with the troubles and pro- 
+blems of life and accessible to their personal needs. 
+Thus came about the introduction of new and more 
+popular deities, or rather of demigods, heroes, or 
+saints, who could be worshipped and invoked by 
+the common people, and these were often selected 
+from amongst the national heroes of past ages. 
+Among them was the wise and good 1mhotep.l 
+These popular demigods were probably re- 
+garded somewhat as the Greeks later on revered 
+their hero-gods to whom was rendered a semi- 
+divine wor~hip.~ 
+These popular deities (Sondergiitter-German) later on 
+obtained important places in the Pantheon. Cf. A. Wiede- 
+mann, Encyclopaedia of Religion and Ethics, vi, p. 276. 
+A parallel may be cited in the case of the Pharaoh Arneno- 
+phis I (XVIIIth Dynasty), who was deified after his death 
+and considerably later became the local patron of that quarter 
+of Thebes in which the necropolis workmen lived. These 
+men resorted to this deified king for help and advice in all 
+their troubles. 
+a An excellent summary of the question is given by K. 
+Sethe (Imhotep, p. 4, and in the Encyclopaedia of Relkion and 
+Ethics, vi, p. 650). It is interesting to note that both in Greece 
+and in Rome a ' demigod ' stage was recognized on the way to 
+full apotheosis. Julius Caesar became a demigod before being
+
+
+--- PAGE 64 ---
+IMHOTEP 
+Errnan writes : 
+' Out of this esteem for the ancient wisdom 
+there arose the veneration manifested at this late 
+time for those who had been leaders of the nation 
+in the primitive period. They had previously 
+been looked upon as people of renown, now some 
+of them were regarded as demigods. . . . Among 
+them is Imhotep, a man who belonged to the 
+court of Zoser, one of the earliest of the Kings 
+of Egypt, and who was remembered by the people 
+as the celebrated royal architect, and as the author 
+of ancient literature.' 
+This view of the demigod stage being deferred 
+till the New Kingdom depends, however, on the 
+opinion that is formed of the trustworthiness of 
+the Oxyrhynchus Papyrus referred to above. 
+It is also during this demigod stage, in the 
+XVIIIth Dynasty (Amenophis 111), that arose 
+the custom amongst Egyptian scribes of pouring 
+a libation out of their water-bowl to ' that most 
+famous of scribes ' Imh~tep.~ A. H. Gardiner 
+thus refers to this custom : 
+' That Imhotep should have been so distin- 
+guished from other Egyptian celebrities by a 
+enrolled amongst the gods. Smith, Dictionary of Greek and 
+Roman Antiquities, IYI, i, pp. 140--I. 
+1 A. Erman, Handbook of Egyptian Relkion, 1907, p. 173. 
+Cf. also Erman and Ranke, Aegypten, 1923, p. 378, where 
+Erman speaks of ' the demigod Imhotep, the son of the 
+goddess Sechmet '. 
+a 2. f. Agyptische Sprache, xxxvi, 1898, p. 147 ; xl, 1902-3, 
+p. 146.
+
+
+--- PAGE 65 ---
+MEDICAL DEMIGOD 
+special rite, not the common funeral offering 
+accorded to others, is surely sufficient to warrant 
+the epithet demigod, not denied him at a later 
+date.' 
+In the numerous bronze statuettes (Figs. I, V- 
+VII) representing the demigod stage of his 
+career l Imhotep presents obvious signs of his 
+human origin (Appendix D). He appears in the 
+figure of an ordinary man, clothed in the simple 
+garments of primitive days, without sceptre or 
+ankh or the peculiar beard worn by the gods.2 
+He looks like a sage and is generally seated on a 
+throne or chair, rarely standing, and with a roll of 
+papyrus on his knees or under his arm ; he may 
+either be reading or appear to be buried in 
+thought. 
+This appearance forms a striking contrast to 
+that met with after his apotheosis, as we shall see 
+in the next Chapter. 
+Figs. I, v, VI, v11 represent Imhotep as a demigod. 
+Nos. I and v are taken from the Catalogue &S Antiquitks 
+ggyptiennes du Mwbe du Caire : Statues de Divinitbs, i, p. 17 ; 
+ii, P1. IV. No. VI is a statuette preserved in the Wellcome 
+Historical Medical Museum, London, and is remarkable for 
+the row of uraei arranged round the seat as a decoration. 
+No. VII is in the Berlin Staats-Museum. 
+Erman, Handbook of Egyptian Religion, 1907, p. 174.
+
+
+--- PAGE 66 ---
+THE APOTHEOSIS OF IMHOTEP AS 
+GOD OF MEDICINE 
+T 
+HE full apotheosis of Imhotep (Figs. VIII, IX, 
+and X) appears to have taken place in the 
+Persian period,l somewhere about 525 B. C., the 
+year in which Egypt was conquered by Cambyses 
+and became a Persian pr~vince.~ To this new 
+The three Figs. VIII, IX, and X represent Imhotep as the full 
+deity of medicine. No. v111 shows the god in the standing 
+posture and carrying the uas sceptre in one hand and the ankh 
+in the other ; it is taken from the temple of Ptah at Karnak 
+(p. 57). NO. IX shows him in a sitting posture and is taken 
+from the temple of Medinet Habu (p. 57). NO. X is a 
+mutilated bronze statuette preserved at the British Museum. 
+It shows the figure of Imhotep carrying an ankh in his left 
+hand, while the broken-off right arm is extended and appears 
+as if it originally held a sceptre. This appears to be the only 
+known statuette showing Imhotep as a full deity. Its date 
+has been conjectured to be the XXVIth Dynasty. But the 
+variations in the figure from the conventional XXVIth to the 
+Ptolemaic Dynasties, such as the style of the skirt and the 
+coarseness of the legs, point almost certainly to the Roman 
+period. 
+a According to Sethe (Imhotep, p. I), the earliest monument 
+that refers to Imhotep as a deity and that can be approximately 
+dated appears to be the statue of one of his priests named 
+Amasis which is now in the Berlin Museum (No. 14765), and 
+which belongs to the Persian period, ca. 525 B.C. According
+
+
+--- PAGE 67 ---
+GOD OF MEDICINE 
+Egyptian god is now assigned a divine father 
+Ptah, in place of his human father Kanofer, and 
+he becomes a member of the great triad of Mem- 
+phis (Fig. XI), which includes Ptah, Sekhmet, and 
+Imhotep? His mother Khreduonkh and his 
+to the inscription on this monument, the great-grandfather 
+of the priest Amasis who was called Neferebre had filled the 
+office of third prophet of the house of Imhotep, the son of 
+Ptah. As this Neferebre is mentioned in conjunction with 
+the titles King Psammetich 11, 594-589 B. C., and must 
+therefore have been born at latest during his reign, Sethe 
+concludes that the worship of Imhotep as a deity dates from 
+the reign of King Arnasis (57-525 B. C.). The elevation of 
+Imhotep to divine rank was probably a gradual process and 
+unaccompanied by any ceremonial. For the elaborate rites 
+performed at the deification of Alexander the Great, cf. the 
+article ' Comment Alexandre devint dieu en ggypte ', by 
+Maspero, gtudes de Mythologie et d'drchklogie ggyptiennes, 
+1912, vi, p. 263. 
+Fig. XI. The three figures here shown form the triad of 
+Memphis : Ptah, Sekhmet, and Imhotep, and are reproduced 
+from statuettes at the British Museum. 
+At an earlier period this triad comprised Ptah, Sekhmet, 
+and Nefertem, but Imhotep appears eventually to have 
+usurped the place of the latter. The members of Egyptian 
+triads varied at different times and places. Thus Ptah, Nut, 
+and Imhotep sometimes form a triad, while in Thebes Ptah, 
+Mut-Hathor, and Imhotep formed a similar body. Cf. Roscher, 
+Lexicon, ii (i), p. 125. 
+According to Brugsch, Imhotep through his association 
+with Ptah, who in the view of some authorities is one of the 
+forms of Show (Shu), becomes linked up with the great 
+Ennead. Cf. Brugsch, Religion und Mythologie der alten 
+Aegypter, pp. 508, 526.
+
+
+--- PAGE 68 ---
+VIII. IMHOTEP AS DEITY OF MEDICINE
+
+
+--- PAGE 69 ---
+IX. IMHOTEP AS DEITY OF MEDICINE 
+3121 G
+
+
+--- PAGE 70 ---
+IMHOTEP 
+wife Ronpe-nofret are in their turn raised to the 
+rank of the mother and the wife of a god. The 
+Graeco-Egyptians called Imhotep Imouthes or 
+Asklepios and gradually assimilated him with 
+their own deity of medicine.l 
+The Imhotepian cult was probably at first 
+associated with his tomb, which, as already 
+mentioned, was situated outside the city of Mem-. 
+phis on the edge of the desert to the west of 
+Memphis. As time went on his cult spread far 
+and wide through the land of Egypt and even 
+into Nubia. More and more generally was 
+Imhotep accepted as the deity of medicine, and 
+worshipped throughout the land, as on a level 
+with the full gods of Egypt. 
+A similar process of gradual elevation to the rank 
+of demigod and finally of full deity occurred in the 
+case of another noted sage, viz. Amenophis, the 
+son of Hapi, and vizier to King Amenophis 111. 
+The names of these two sages had lingered for 
+many centuries in the popular imagination as. 
+national heroes who had in course of time come 
+to be regarded as superhuman in nature and 
+l This is one of the numerous cases in which under the 
+influence of Hellenism a fusion took place between Greek and 
+Egyptian deities. It has even been suggested that the deifi- 
+cation of Imhotep was due to Hellenistic influence. Cf. 
+J. G. Milne, Encyclopaedia of Rel+ and Ethics, vi, p. 380 ; 
+Biasing, Deutscke Literaiurzeitung, 1902, col. 2330.
+
+
+--- PAGE 71 ---
+X. IMHOTEP AS DEITY OF MEDICINE
+
+
+--- PAGE 72 ---
+
+
+
+--- PAGE 73 ---
+GOD OF MEDICINE 43 
+therefore entitled to divine honours. Probably 
+in both cases their burial places became centres 
+of pilgrimage, and, at any rate in the case of 
+Imhotep, especially for the sick and suffering. 
+This Arnenophis was in many respects the 
+counterpart of Imhotep. What the latter was 
+at the outset for Memphis, Arnenophis was for 
+the Thebans down to the latest times. His 
+deification probably took place in the reign of 
+King Ptolemy Euergetes 11.1 
+At least three temples are known to have been 
+built in honour of Imhotep. The first one was 
+at Memphis and became a famous hospital and 
+school of magic and medi~ine.~ Doubtless count- 
+less numbers of sick, maimed, and blind persons 
+resorted to that shrine, and returned to their 
+simple mud hovels nestling under the date palms 
+or amongst the millet fields, full of gratitude for 
+renewed health and strength. This beloved priest- 
+physician was eventually laid to rest near to the 
+temple where he had spent his days in relieving 
+pain and prolonging life. For him we cannot 
+doubt that sedare dolorem divinum opus. 
+l H. Brugsch-Bey, History of Egypt under the Pharaohs, 
+1881, i, p. 485 ; K. Sethe, Encyclopaedia of Rel2hn and 
+Ethics, vi, p. 651. 
+Other medical schools existed at Thebes, Sais, and On 
+(Heliopolis). The head priest of Sais bore the title ' Greatest 
+of the Physicians '.
+
+
+--- PAGE 74 ---
+44 IMHOTEP 
+This temple was called by the Greeks the 
+Asklepieion, ~i, rpi,s MiP+~v pea 'ACTKX~ITLE~OU, 
+and was situated close to the Serapieion. In fact 
+the worship of Imhotep was to some extent con- 
+nected with that of Serapis, so much so that there 
+were stone altars sacred to him in the Serapieion 
+itself, on which daily libations were 0ffered.I 
+Another temple of Imhotep existed at Philae 
+(Fig. XII) ; of this, a glorious specimen of Egyptian 
+architecture, a large portion has survived to this 
+day, in spite of its immersion in a vast re~ervoir.~ 
+Some of the halls (Figs. XIII-XVI) which were 
+used for clinical purposes thousands of years ago 
+are e~tant.~ 
+S. Birch, Archaeologia, 1863, xxxix, p. 315. 
+2 Fig. XII shows a Plan of the Island of Philae and the 
+position of Imhotep's temple on the island. The temple lies 
+to the south of the much larger temple of Isis which was the 
+principal sanctuary on the island and dedicated to Isis and 
+her son Harpocrates. 
+Figs. XIII-XVI show the plan and three views of Imhotep's 
+temple. In No. XIII is seen the ground-plan ; in No. XN the 
+front of the temple ; in No. xv the Western wall and the 
+entrance to the courtyard ; in No. XVI the Eastern wall of the 
+courtyard. It is pleasant to think that Imhotep was wor- 
+shipped in this famous island, sometimes called the ' Holy 
+Island ', so rich in its associations with religion, with history, 
+with architecture and painting. Kings, conquerors, priests, 
+and travellers without number have been enchanted with its 
+beauty, and have left records of their victories, of their acts of 
+adoration, of their offerings to the deities whose temples still 
+adorn this hallowed spot.
+
+
+--- PAGE 75 ---
+
+
+
+--- PAGE 76 ---
+
+
+
+--- PAGE 77 ---
+
+
+
+--- PAGE 78 ---
+IMHOTEP 
+This temple was built under the Ptolemies, 
+the hieroglyphic inscriptions being those of 
+Ptolemy IV Philopator, while the Greek text over 
+the door, dedicating the building to the Greek god 
+Asklepios, was placed there by the command of 
+Ptolemy V Epiphanes? From one of the former 
+we obtain the following address to Imhotep : 
+' Great One, Son of Ptah, the creative god, made 
+by Thenen, begotten by him and beloved by him, 
+the god of divine forms in the temples, who giveth 
+life to all men, the mighty one of wonders, the 
+maker of times (?), who cometh unto him that 
+calleth upon him, wheresoever he may be, who 
+giveth sons to the childless, the chief Kheri-heb, 
+the image and likeness of Thoth the Wise.' 
+The best guide to the temple of Imhotep is the 
+long East Colonnade leading from the temple of 
+l An admirable view of this temple from the south, showing 
+several figures of the deity Imhotep, is given by H. G. Lyons 
+in his Report on the Island and Temples of Philae, P1. X. Cf. 
+also Mahaffy, History of Egypt under the Ptolemaic Dynasty, 
+p. 184. As a rule when the Ptolemies erected a temple in 
+honour of their Egyptian gods, its style and ornamentation 
+were purely Egyptian. The Greek inscription at Philae 
+supplies an interesting example of the identification of 
+Imhotep with Asklepios. Budge, History of Egypt, viii, p. 133. 
+Brugsch, Thesaurus, p. 783 ; Religion und Mythologie der 
+alten Aegypter, p. 527. After his deification Imhotep is 
+sometimes designated as Ibis, i.e. the sacred bird of Thoth. 
+Sages who were raised to the status of divinity were in some 
+measure regarded as incarnations of that god. K. Sethe, 
+Encyclopaedia of Religion and Ethics, vi, pp. 650-1.
+
+
+--- PAGE 79 ---
+GROUND PLAN OF 
+TEMPLE OF IzEMzHOTEP PHUE 
+East Colonnade 
+N 
+XIII. THE TEMPLE OF IMHOTEP, ISLAND OF PHILAE 
+GROUND PLAN
+
+
+--- PAGE 80 ---
+IMHOTEP 
+Arsnuphis to the Great Pylon, a colonnade con- 
+sisting of seventeen columns. Through this wall - 
+are cut seven doorways, the first five of which 
+lead out to the court in which stands the ruined 
+chapel of Mandulis. The sixth leads to the small 
+temple of Imhotep? As the visitor passes through 
+this doorway he finds himself in a little court, on 
+the north side of which is the entrance to the 
+temple. There are figures of Imhotep and other 
+deities on both sides of the entrance which 
+Weigall thus describes : 
+' On the left side is seen King Ptolemy V 
+Epiphanes before Imhotep. On the right side 
+he is shown before Khnum, Satis and Anukis, 
+and before Unnefer, Isis and Imhotep. Around 
+the doorway are small panels of reliefs showing 
+Osiris, Isis, Khnum, Hathor, Ptah, Thoth and 
+Idotep being adored by the King. On either 
+side of the jambs of the door the King's titles are 
+inscribed, and reference is made to Isis, while he 
+is said to be beloved of Imhotep and Ptah.' 
+There was also a small temple at Thebes, but 
+it appears to have been less important than that 
+at Philae. In Thebes, as already mentioned, Ptah, 
+Mut-Hathor and Imhotep in later times formed 
+A good plan of these buildings will be found in Baedeker's 
+Egypt, 1914, P. 365. 
+A. E. Weigall, Antiquities of Lower Nubia; 1907, p. 42. 
+There are also references to Imhotep and the deities coupled 
+with him on pp. 40,43, and 50. Cf. also Weigall's Antiquities 
+of Upper Egypt, '9'3, P. 475.
+
+
+--- PAGE 81 ---
+
+
+
+--- PAGE 82 ---
+
+
+
+--- PAGE 83 ---
+IMHOTI 
+ce to the l'emple ot lmhotep IS seen on the right between the hrst ar 
+The western wall of the Temple (with medieval Coptic doorway) occupies me centre or tne plcture
+
+
+--- PAGE 84 ---
+
+
+
+--- PAGE 85 ---
+GOD OF MEDICINE 49 
+a triad, which thus differs from the Memphitic 
+triad referred to above, in which Sekhmet formed 
+the third member.l 
+Apart from the temples of Imhotep we have 
+records of a sanatorium which was situated in 
+the upper terrace of the temple of Hatshepsowet 
+at Deir-el-Bahari, and which was given up to the 
+worship of Imhotep and of the other deified hero 
+Arnenophis the son of Hapi, both of whom figured 
+at this period as patrons of healing. Under their 
+auspices Deir-el-Bahari seems to have become 
+a regular resort for invalids who scratched or 
+painted numerous invocations to these deities on 
+the walls of the temple.2 
+Amongst common grafiti are the following : 
+' the homage of M. to the lord god Asklepios ' ; 
+' N. came to worship the great god Asklepios '- 
+usually with the addition of the name Amenothes, 
+and often with that of Hygieia, to Asklepios ; 
+sometimes the writer associated his wife, his 
+family, or his friends in his act of worship. 
+Brugsch, Religion und Mythologie der altm Aegypter, 
+pp. 526-8 ; W. H. Roscher, Lexicon der Griechischen und 
+Rcmischen Mythologie, ii, p. 123. In the period of its glory 
+(XVIIIth-XXth Dynasties) the triad of Thebes consisted of 
+Amon, Mut, and Khons. 
+J. G. Milne, J. of Egyptian Archaeology, 1914, i, p. 96. 
+Cf. also C. R. Piers, J. of Hellenic Studies, 1899, xix, p. 13 ; 
+J. G. Milne, Encyclopaedia of Relkion and Ethics, vi, p. 382. 
+Amenothes is a Greek variant of the more frequent Amenophis. 
+3121 H
+
+
+--- PAGE 86 ---
+IMHOTEP 
+A graflto quoted by Milne is of special interest, 
+as it has been twice improved upon by later com- 
+mentators. The first entry ran ' Eugraphios 
+offers his homage before the lord god Asklepios 
+and Amenothes and Hygieia : be mindful of us 
+and grant us healing ' ; at the end of this, one 
+Pesubis, presumably a Gnostic who desired some 
+credit to be ascribed to the weird spirits whom he 
+worshipped, wrote ' with the help of Cherstapane 
+and Phritob ' ; finally a Christian, grieved to find 
+so many deities evoked, added his correction above 
+the errors of previous centuries : ' It is the One 
+God who helps you.' 
+An interesting story has survived which illus- 
+trates the practice of incubation at Imhotep's 
+temples. We shall follow here the popular 
+version as emended by Maspero'l while readers 
+wishing for a more exact translation are referred 
+to F. L1. Griffith's transliterati~n.~ 
+The story relates to a man named Satmi 
+Khamuas, the son of the Pharaoh Usermares, 
+who had no man-child by his wife Mahftuaskhit ; 
+this afflicted him greatly in his heart, and his wife 
+1 G. Maspero, Popular Stories of Ancient Egypt, 1915, 
+P. '44- 
+a F. L1. Griffith, Stories of the Hgh Priests of Memphis, 
+1900, PP. 42, 143. Griffith prefers ' Setme ' to ' Satmi ', 
+' Meh-wesekht ' t6 ' Mahituaskit ', and ' Si-osiri ' to ' Seno- 
+siris '.
+
+
+--- PAGE 87 ---
+
+
+
+--- PAGE 88 ---
+
+
+
+--- PAGE 89 ---
+GOD OF MEDICINE 51 
+Mahituaskhit was greatly afflicted with him. 
+One day, when he was more depressed than usual, 
+his wife Mahituaskhit went to the temple of 
+Imiithes, son of Ptah, and prayed before him, 
+saying : ' Turn thy face towards me, my lord 
+Imiithes, son of Ptah ; it is thou who dost work 
+miracles, and who art beneficent in all thy deeds ; 
+it is thou who givest a son to her who has none. 
+Listen to my lamentation and give me conception 
+of a man-child.' 
+Mahituaskhit, the wife of Satmi, slept in the 
+temple and she dreamed a dream that same night. 
+One spake with her, saying : ' Art thou not 
+Mahituaskhit, the wife of Satmi, who dost sleep 
+in the temple to receive a remedy for thy sterility 
+from the hands of the god ? When to-morrow 
+morning comes, go to the bath-room of Satmi 
+thy husband, and thou wilt find a root of colocasia 
+that is growing there. The colocasia that thou 
+meetest with thou shalt gather with its leaves ; 
+thou shalt make of it a remedy that thou shalt 
+give to thy husband, then thou shalt lie by his 
+side, and thou shalt conceive by him the same 
+night .' 
+When Mahituaskhit awoke from her dream 
+after having seen these things she did everything 
+according to that which had been told her in her 
+dream ; then she lay by the side of Satmi, her
+
+
+--- PAGE 90 ---
+52 IMHOTEP 
+husband, and she conceived by him. When the 
+time came she had the signs of pregnant women, 
+and Satmi announced it to Pharaoh, for his heart 
+rejoiced greatly thereat ; he bound an amulet 
+upon her (Fig. XVII),~ and recited a spell over her. 
+Eventually she gave birth to a remarkable boy 
+named Senosiris, who later on performed many 
+wonders in the land of Egypt. 
+A similar story of sterility being cured by 
+Imhotep is told in a famous stele of the Ptolemaic 
+Period, now in the British MuseumO2 The story 
+relates to a lady named ' Thet Imhotep ', who 
+belonged to a family that reckoned among its 
+members several princes of Memphis and high 
+priests of Ptah. She was born in the ninth year 
+of the reign of Ptolemy XIII, about 71 B. C., and 
+when fourteen years old she was married to her 
+half-brother, the priest P-Shere-en-PtahO8 Dur- 
+ing the first twelve years of her married life she 
+l This is an interesting reference to the use of an amulet, 
+which was a figure or ornament possessing magical power 
+and worn as a preservative against sickness or misfortune. 
+Amulets associated with Imhotep are not frequently met 
+with. Fig. XVII represents a specimen preserved in the 
+Egyptological Museum of the Liverpool University. 
+British Museum, Egyptian Sculpture Gallery, Bay 29, 
+No. 1027. Cf. E. A. Budge, Guide to the Egyptian Collec- 
+tions in the British Museum, 1909, p. 274. 
+His stela is also in the British Museum, Egyptian Sculp- 
+ture Gallery, Bay 27, No. 1026.
+
+
+--- PAGE 91 ---
+XVII. AMULET OF IMHOTEP
+
+
+--- PAGE 92 ---
+
+
+
+--- PAGE 93 ---
+GOD OF MEDICINE 
+gave birth to three daughters, but had no son, 
+which caused her husband great grief. She and 
+her husband prayed to the god Imhotep, the son 
+of Ptah, for a son ; in response, the god, appearing 
+to P-Shere-en-Ptah in a dream, promised to grant 
+his prayer provided that he carried out certain 
+works in connexion with the temple. When the 
+priest awoke, he caused the works to be taken in 
+hand, and soon after they were completed his 
+wife gave birth to a son who was named Imhotep, 
+and surnamed Pedi-Bast? 
+Incubation sleep in the temples was resorted 
+to for many forms of sickness, suggestive intima- 
+tions being given by the deity during natural or 
+drug-produced dreams and interpreted by the 
+priests. Doubtless in many cases a cure was 
+effected through the awakening of an expectation 
+of cure in the sleeper himself. Thus the temple- 
+sleep was used as a form of faith-healing. Sug- 
+gestions received during dreams that a cure had 
+been effected were found to have achieved their 
+British Museum, 1. C., Bay 27, No. 1030. 
+Incubation was by no means confined to the shrines of 
+Imhotep. For example, at the temple of Medinet Habu night 
+oracles were received through incubation from Thoth who was 
+wont to descend on the temple each night in the form of an 
+ibis. P. Boynan, Thoth the Hermes of Egypt, 1922, p. 168. 
+Cf. also G. Foucart, on ' Dreams and Incubation ' in the 
+Encyclopaedia of Religion and Ethics, v, p. 34.
+
+
+--- PAGE 94 ---
+54 IMHOTEP 
+purpose when the sufferer aw0ke.l The more 
+emotional and highly strung the patient, the 
+greater the probability of cure. 
+As the centuries rolled by, the worship of 
+Imhotep spread more and more widely, until 
+eventually he became recognized all over Egypt 
+as the god of medicine. Indeed the learned 
+magician-physician of the time of King Zoser 
+became one of the most popular deities, as we 
+learn from the eulogistic appreciations that have 
+been handed down to us. Thus he is described 
+as ' the good physician of gods and men, a kind 
+and merciful god, assuaging the sufferings of those 
+in pain, healing the diseases of men and giving 
+peaceful sleep to the restless and suffering '. 
+Elsewhere he is spoken of as ' the god who 
+protects human beings, who gives to him who 
+calls upon him, who gives life to men and women, 
+and who gives life to all who are bounden to 
+him '. At other times he is described as the ' god 
+who looks after the sick ' and ' the worshipful or 
+holy god who gives a son to him who has none '. 
+Another fine testimony says that he visits the 
+Incubation dreams were also used for propaganda, 
+devotees being urged to build further temples and spread the 
+cult of the deity. Priests also appeared during the night, 
+apart from dreams, and, acting on behalf of the deity, indicated 
+the path to recovery. W. Schubart, Agrpten vm Alexander 
+dem Grossen & auf Mohammed, 1892, pp. 3 14 ff.
+
+
+--- PAGE 95 ---
+GOD OF MEDICINE 55 
+suffering ' to give them peaceful sleep and heal 
+their pains and diseases '? The popularity of 
+Imhotep will cause no surprise, since he both 
+healed the sick, protected from accident and gave 
+children to those who had hitherto been sterile. 
+As Breasted has well said : 
+' The great wise man Imhotep was one of King 
+Zoser's chief advisers. In priestly wisdom, in 
+magic, in the formulation of wise proverbs, in 
+medicine, in architecture, this remarkable figure 
+of Zoser's reign left so notable a reputation that 
+his name was never forgotten. The people sang 
+of his proverbs centuries later, and 2,500 years 
+after his death he had become a god of medicine 
+whom the Greeks, who called him Imouthes, 
+identified with their own Aesculapius.' 
+In fact during the Hellenistic period the sage 
+Imhotep, now deified, appears to have become 
+the principal god worshipped at Memphis, and 
+to have wellnigh superseded Ptah. 
+Brugsch says that after recovery the patients used to 
+dedicate to the god a model of the diseased member, such as 
+an eye, an ear, a foot, &c. Brugsch, Religion und Mythologie 
+der alten Aegypter, p. 527. Some specimens of Egyptian 
+votive offerings in wood, bronze, and blue glazed ware may be 
+seen in museums of Egyptology. 
+Breasted, A History of Egypt, 1919, p. 113. Just as the 
+Greeks identified Imhotep with their own deity of medicine, 
+i.e. Asklepios, so the Egyptians also equated him with 
+Eshmun, the Phoenician god of healing. Cf. W. A. Jayne, 
+The Healing Gods of Ancient Civilizations, 1925, p. 138.
+
+
+--- PAGE 96 ---
+56 IMHOTEP 
+But apart from the temples specially associated 
+with him, Imhotep was also worshipped in various 
+other temples. Amongst them is the temple of 
+Deir-el-Bahari where the Ptolemaic Chamber l 
+was dedicated to two men who had both been 
+deified, Imhotep the son of Ptah and Amenophis 
+the son of Ha~i.~ On the wall of this Chamber is 
+a fine representation of the deity Imhotep carrying 
+a sceptre in his right hand and an ankh in his left. 
+Close to the god is the inscription : ' I have given 
+thee life combined with health and protection. 
+I am thy protector.' 
+Other inscriptions describe Imhotep as ' the 
+great Kheri-heb, the first chief one of the Ibis, 
+Imhotep, the son of Ptah, south of his Wall, who 
+listens to him who implores him, on the Western 
+side of Thebes, who does good to its inhabitants, 
+giving life, strength and joy to its dwellers, and 
+enriching the land '. Behind the picture of 
+Imhotep is a goddess having some resemblance 
+to Hathor. Naville suggests that this figure is 
+the mother of Imhotep who has also been deified 
+and says : ' I give thee life ; I join to it health ; 
+my protective power, Imhotep, is guarding thee.' 
+This chamber dates from about 140 B. C., in the reign of 
+Ptolemy IX Euergetes 11. 
+E. Naville, The Temple of Deir-el-Bahari, 1906, Part V, 
+p. 11 and P1. CXLIX.
+
+
+--- PAGE 97 ---
+GOD OF MEDICINE 57 
+Another shrine in which Imhotep was wor- 
+shipped was the temple of Ptah at Thebes.l This 
+temple was built by Tuthmosis I11 and restored 
+by several of the Ptolemies. Here were wor- 
+shipped Ptah, his wife Sekhmet, and their son 
+Imhotep, together with Amenophis the son of 
+Ha~i.~ 
+Another small Ptolemaic temple known at the 
+present day as the Qasr-el-Agouz (Kasr el-Agouz) 
+was erected by Euergetes I1 to the god Thoth. 
+In the second hall may be seen the King sacrificing 
+to Thoth, Imhotep, and the deified sage Ameno- 
+phis. This temple stands south-west of the 
+Colossi of Memn~n.~ 
+Yet another temple in which Imhotep and 
+Arnenophis were jointly worshipped was Medinet 
+Habu, lying directly west of the Col~ssi.~ Evi- 
+dently the two famous sages of Egypt who had 
+both been accorded divine honours were often 
+worshipped in the same shrines. 
+The same applies to the temple of Deir el 
+Medineh, which lies north-west of the Colossi. 
+Baedeker's Egypt, 1914, p. 277 ; Plan of Karnak, p. 264. 
+2 G. Maspero, Ancient Sites and Modern Scenes, pp. 444-5. 
+Pictures of Ptah and Imhotep are sculptured on the walls of 
+the temple. 
+Baedeker's Egypt, 1914, p. 330, Plan, p. 280. 
+Ibid., p. 330. 
+3121 I
+
+
+--- PAGE 98 ---
+58 IMHOTEP 
+This temple was originally the grave of Arneno- 
+phis and was converted by Ptolemy IV into 
+a shrine to the gods of the dead? In it both he 
+and Imhotep were worshipped in company with 
+the full gods of Eg~pt.~ 
+Apart from these public temples there appear 
+to have been in Ptolemaic times many small 
+shrines or altars which individuals erected in 
+their own homes in honour of their tutelary deity 
+Imhotep and in the hope of securing his protec- 
+tion against all sorts of misfortunes. In other 
+cases such shrines were hired out by their owners 
+in return for money payments contributed by 
+sick persons or such as needed some oracular 
+guidance in a difficulty. Such shrines were 
+dedicated both to Isis and Asklepios (sc. Imhotep), 
+the latter, however, being the principal god of 
+healing .3 
+The interesting discovery has recently been 
+made that under the Ptolemies regular festivals 
+were celebrated in honour of the god Imhotep 
+in much the same way as was done in the case 
+A. Erman, A Handbook of the Egyptian Religion, p. 
+175. 
+In several of these temples may be seen some of the mural 
+reliefs of Imhotep mentioned in Appendix E. 
+3 W. Schubart, Agypten von Alexander dem Grossen bis auf 
+Mohammed, 1922, p. 300.
+
+
+--- PAGE 99 ---
+GOD OF MEDICINE 59 
+of other traditional deities.l It is well known 
+that festivals and fasts played a leading part in 
+the religious life of the Egyptians and were 
+celebrated with vociferous demonstrations of 
+joy-processions accompanied by banners, singing, 
+dancing, and sacred emblems. Pilgrimages and 
+banquets also formed part of the festival, which 
+might extend over several days or even weeks.2 
+Doubtless in the case of Imhotep there would 
+be abundant expressions of gratitude by his 
+former patients for the wonderful cures he had 
+performed. 
+This discovery has been made by means of an 
+inscription on the recently found carved pedestal 
+of a lost statue, now in the British M~seum.~ 
+The inscription begins with an address to his 
+lord Imhotep, son of Ptah, from his divine friend, 
+the prophet and scribe Pedi-Bast : ' I am thy 
+son, perfect in the service of thy Ka on all thy 
+festival days, at the commencement of the 
+seasons and on all festivals taken together.' 
+H. Gauthier, ' Un Nouveau Monument du Dieu Im- 
+hotep ', Bulletin de l'lnstitut Frangais d7Archt!ohgie Orientale, 
+1918, xiv (i), p. 33. 
+For further details compare the article by Foucart, 
+' Festivals and Fasts ', in Encyclopaedia of Religion and Ethics, 
+v, p. 853. Cf. also 2. f. Agyptische Sprache, 1886, xxiv, 
+PP. 20, 24-5. 
+Southern Egyptian Sculpture Gallery, Bay 29, No. 347.
+
+
+--- PAGE 100 ---
+IMHOTEP 
+There were six festivals in all, celebrated on 
+the following dates : 
+Day of Egyptian 
+Festival Month Date 
+16th day Epiphi. 31st May. 
+3rd month of spring. 
+I rth day Mekhir. 27th Dec. 
+2nd month of winter. 
+9th day MesorC. 23rd June. 
+4th month of spring. 
+17th day Mesord. 1st July. 
+4th month of Shemu. 
+~3rd day MesorC. 7th July. 
+4th month of Shemu. 
+4th day Paoni . 19th April. 
+and month of Shemu. 
+It will be observed these festivals are not 
+arranged in the chronological order of the months 
+of the year ; their order corresponds to certain 
+events in the life of the god Imhotep which they 
+are intended to commemorate. 
+A. First festival. 
+' The day on which was born Imhotep of 
+his father Ptah and his mother Khreduonkh ; 
+the heart of the great god, the father of the 
+gods, is pleased at seeing him.' 
+B. Second festival. 
+' The day of the first festival of Imhotep ; 
+H. Brugsch, Matkriaux pour le Calendrier des Anciens 
+Egyptiens, p. SO.
+
+
+--- PAGE 101 ---
+GOD OF MEDICINE 61 
+he appears before his father Ptah and 
+Sekhmet, the great one, beloved of Ptah. 
+She ordains . . . and glorifies his image.' 
+C. Third festival. 
+' The day of the slaying of the vile Asiatics 
+by Sekhmet, the great one, beloved of Ptah. 
+She tears off their limbs whilst burning 
+them. She capsizes their boats in the 
+region of the land of the Red Lake.' 
+D. Fourth festival. 
+' The day of lamentation of his father Ptah 
+for Imhotep when he (?) died . . . his body . . . 
+his spirit when it was re-united (?) ' (prob- 
+ably an allusion to the separation of spirit 
+and body at the moment of the death of 
+the god). 
+E. Fifth festival. 
+' The day on which Imhotep reposes before 
+his father after his death : he enters and 
+goes out before the great god : the re-union 
+of his spirit with his body takes place and 
+he rests in the great Dehan, a cavern dear 
+to his heart.' 
+F. Sixth festival. 
+' The day on which the spirit of Imhotep 
+departs towards the great place of sojourn 
+of this god upon the whole earth.' 
+No doubt at these festivals the Imhotepian
+
+
+--- PAGE 102 ---
+62 IMHOTEP 
+devotees would bring their offerings to the 
+sanctuary, some of them being given as thank- 
+offerings for recovery from illness or accident, 
+others in anticipation of such benefits in future 
+years.l 
+Some interesting details have survived of the 
+allowances made to the priests who were associated 
+with the Egyptian temples during the second 
+century B. These allowances, known as 
+the (TVW~~ELF (TLTLKCL~, appear to have consisted 
+of wine, milk, oil, and bread ; the two forms of 
+oil were sesame and kiki (i. e. castor) oil: while 
+the loaves were made of spelt, i. e. a form of wheat 
+(Triticum spelta) . 
+At the Asklepieion at Memphis, in addition to 
+the ordinary priests, a form of lower priesthood 
+seems to have been in existence, represented by 
+the so-called twin-sisters (618~~~~). These twin- 
+sisters (i~~68ovAo~) received daily for their services 
+In the Cairo Museum is preserved a Orl~avpk or money- 
+box, derived from the temple of Asklepios and Hygieia at 
+Ptolemais, and intended to receive donations from worshippers. 
+Such money-boxes were commonly used in Egyptian temples 
+of the Graeco-Roman period ; the Cairo specimen is sur- 
+mounted by a serpent's head, doubtless as a symbol. 2. f. 
+Bgyptische Spy&, 1902-3, xl, p. 140. 
+W. Otto, Priester und Tempel im Helhistischen Agypten, 
+1908, i, PP. "7, 373. 
+This was the Ricinus communis, a common plant in 
+Egypt. Rawlinson, History of Herodotw, ii. 94.
+
+
+--- PAGE 103 ---
+GOD OF MEDICINE 
+at the Asklepieion l four loaves a day, called 
+cyllQtis (KUIXX~CTLS). 
+On what grounds did Imhotep receive the very 
+rare honour of being raised to the full rank of 
+divinity ? Only a few other instances in which an 
+ordinary mortal receives apotheosis are known in 
+the whole of Egyptian hi~tory.~ During his life 
+King Zoser bestowed on him the highest office 
+in the State, that of vizier ; but posterity con- 
+ferred an even greater honour when it placed 
+him among the deities of Egypt. 
+Maspero attributes this signal favour to the 
+cumulative qualifications of architect, physician, 
+sage, and magician, but attributes the apotheosis 
+mainly to his skill in magic. ' It is ', he says, ' in 
+virtue of his powers as a magician that Imhotep 
+was deified.' 
+There can be no question that in Egypt magic 
+exerted an enormous influence in the life both of 
+the individual and of the nation. It was invoked 
+RawIinson, History of Herodotus, ii. 77. 
+This of course does not apply to the Pharaohs, since 
+these were never looked upon as ordinary mortals. Sethe 
+enumerates eight instances of the deification of individuals 
+not of royal rank. Cf. Encyclopaedia of Religion and Ethics, vi, 
+p. 650. 
+G. Maspero, gtudes de Mythologie et d'Archkologie 
+ggyptiennes, 1916, viii, p. 134. Cf. also his article on the 
+deification of Arnenophis : ' How an Egyptian Statesman 
+became a God ', in New Light on Ancient Egypt, 1908, p. 189.
+
+
+--- PAGE 104 ---
+64 IMHOTEP 
+in all questions of life and death, of love and 
+hatred, of health and sickness. But this potent 
+influence does not prevent the reputation of 
+Imhotep being also due to exceptional skill in the 
+use of the rich materia medica at his disposal, for 
+it must have been chiefly in psycho-neuroses that 
+magic was successful. Physical as well as psychical 
+therapeutics may well have been used in co- 
+operation, and by combining their forces have 
+raised him to a position of rare eminence. Doubt- 
+less after his death his reputation led to pilgrim- 
+ages to his tomb, when incubation sleep in his 
+adjoining temple was followed by many recoveries. 
+Every successful cure would confirm the public 
+confidence that the former magician-physician 
+still possessed superhuman powers. Fame would 
+grow into veneration and eventually into true 
+worship. 
+The deification of Imhotep proves that the 
+Egyptians believed it possible for gods to be 
+evolved out of common mortals. Speaking 
+generally, an ordinary individual was not supposed 
+to have any right to immortality, but the part of 
+him which persists and which is called his Ka or 
+double might be kept alive, provided it was 
+unceasingly nourished and comforted by actual 
+bread, meat, and drink and other necessary 
+supplies.
+
+
+--- PAGE 105 ---
+GOD OF MEDICINE 65 
+When the Ka of a deceased was thus supported 
+by his descendants or by devotees, the moment 
+of his dissolution could be indefinitely postponed. 
+Even the gods, although less perishable than 
+mortals, were subject to like infirmities as were 
+the latter, e.g. to disease, senility and death, and 
+needed liturgies and incantations as well as 
+material sustenance if their continued existence 
+was to be assured. Thus the difference between 
+a deity and an ordinary mortal was merely one 
+of degree. Provided therefore that the descen- 
+dants of a deceased person continued to support 
+him by generous gifts and endowments in the 
+same manner as was done in the case of a god, his 
+continued existence would be assured. In Mas- 
+pero's words, ' mortal men would have manu- 
+factured a new immortal '. The generous gifts 
+provided by his devotees would at the same time 
+enhance his prestige ; this prestige would bring 
+further gifts and thus increase his chances of 
+attaining immortality. Such seems to have been 
+the sequence of events which led to the apotheosis 
+of one who had originally been an ordinary man 
+of flesh and blood. 
+Long before the Greek conquest of Egypt by 
+Alexander, Imhotep had become generally recog- 
+nized as the deity of medicine. The Greeks who 
+called him Imouthes amalgamated him with their 
+3121 K
+
+
+--- PAGE 106 ---
+66 ZMHOTEP 
+own Asklepios (Aesculapius), so that for some 
+centuries the Egyptian deity of medicine may be 
+described as in some measure a fusion of the 
+ancient Imhotep and the much more modern 
+Asklepios. Frequently, indeed, the identity of 
+Imhotep is concealed under the name Asklepios? 
+During the Ptolemaic period there seems to 
+have been some relation between the worship of 
+Imhotep and that of the sacred bull of Ptah named 
+Apis. Ammianus Marcellinus, referring to the 
+time of Julius Augustus (63 B. C.-A. D. 14), thus 
+describes the association of Apis with the temple 
+of Imhotep at Memphis. When the Apis bull 
+had died, ' another is sought amid great public 
+mourning ; and if one can be found distinguished 
+by all the required marks, he is led to Memphis, 
+a city of great renown, and especially celebrated 
+for the patronage of the god Aesculapius. And 
+after he has been led into the city by one hundred 
+priests and conducted into a chamber, he is looked 
+upon as consecrated and is said to point out by 
+evident means the signs of future events. Some 
+also of those who come to him he repels by un- 
+favourable signs ; as it is reported he formally 
+rejected Caesar Gennanicus when he offered him 
+Imhotep was also at times assimilated with other deities 
+that were associated with him, e. g. Harpokrates in Thebes, 
+and Khnum in Elephantine. Pauly, Real-Encyclopddie, ix (ii), 
+col. 1217.
+
+
+--- PAGE 107 ---
+GOD OF MEDICINE 67 
+food ; thus portending what shortly happened.' l 
+Doubtless Apis was taken into the inner sanctum 
+of Asklepios (sc. Imhotep) in order that he might 
+be touched and thus consecrated by the statue 
+of the deity. 
+An interesting question arises as to how late 
+the worship of Irnhotep lasted on during the 
+Christian era. The palaeography of the grafiti 
+at the sanatorium at Deir-el-Bahari which relate 
+to Imhotep indicates that they probably belong 
+to the second century A. D., but not much beyond 
+it." There was, however, a special local reason 
+for their discontinuance. The raids of the bar- 
+barian tribes of Nubia in the middle of the third 
+century would doubtless interfere with security 
+of life, frighten away invalids, and check pilgrim- 
+ages to the shrine. Probably, therefore, Deir-el- 
+Bahari ceased to be a health resort for the Greeks 
+and Romans soon after A. D. 200. 
+In the north of Egypt, on the other hand, there 
+is evidence that the worship of Imhotep continued 
+considerably later, and indeed that his reputation 
+as the deity of medicine gradually grew in com- 
+parison with that of the other Egyptian gods, 
+until in the fourth century he had come to be 
+l Arnmianus Marcellinus, tr. by C. D. Yonge, xxii, 14, 
+p. 306. 
+a Milne, J. of Egyptian Archaeology, 1914, i, p. 98.
+
+
+--- PAGE 108 ---
+68 IMHOTEP 
+regarded as the leading divinity of Memphis.l As 
+Otto says : ' It is very remarkable that the 
+deified Imhotep, who was probably not acknow- 
+ledged as a god until the Saite period, and did not 
+receive his fullest recognition as god till the 
+Ptolemaic period, by the time of Ammianus 
+Marcellinus had come to be the chief deity of 
+Memphi~.'~ Thus his worship evidently ex- 
+tended well into the Roman period, to the time 
+when profound changes had taken place in the 
+internal and external economy of Egypt. The 
+country in fact had become part of a new world. 
+Her glorious history-one of the most momentous 
+epochs in the history of man-had closed, and 
+she was living an artificial life in which she no 
+longer played an active part. 
+The collapse of ancient Egyptian civilization 
+was due to a variety of causes acting cumulatively. 
+One of these causes was the passing of the country 
+under the guardianship of Rome in the year 
+30 B. C. Henceforth she became a vassal of the 
+Roman Empire and was governed by its represen- 
+1 Imhotep appears still to have retained his reputation as 
+a patron of magic, as the alchemist Zosimos (3rd c. A.D.) 
+entitled one of his works 'IPo;B, i. e. Imhotep. Pauly, Real- 
+Encyclopadie, ix (ii), col. 1217. 
+2 Ammianus Marcellinus lived ca. A. D. 330-400. 
+3 W. Otto, Priester und Tempel im Helhistischen Agypten, 
+1908, ii, p. 214.
+
+
+--- PAGE 109 ---
+GOD OF MEDICINE 69 
+tative. The steady drain involved by the annual 
+tribute of corn to feed the hungry Romans, 
+combined with the extortions of her governors, 
+depleted the supply of capital wealth. The 
+bucolic rebellion of A.D. 172 was a symptom of 
+the national distress and aggravated the ex- 
+haustion of the country. From this period down 
+to about A. D. 300 the land became more and more 
+impoverished. 
+Another potent influence at work in the dis- 
+integration of the ancient rbgime was the spread 
+of Christianity, whose doctrines were well estab- 
+lished in Alexandria in the second century and 
+were gradually being diffused throughout the 
+country. In spite of persecutions the number of 
+churches steadily grew, so that by about A. D. 300 
+many towns on the Nile were provided with places 
+of Christian worship. The conversion of the 
+Emperor Constantine (ca. A. D. 288 to 337) to 
+Christianity gave a further impetus to the new 
+religion and caused many worshippers of the gods 
+of Egypt to transfer their devotion to an austere 
+form of Christianity. Indeed, during the next 
+two centuries these converts did their best to 
+root out the native forms of worship. Mean- 
+while the national faith in the ancient deities had 
+weakened almost to a vanishing point, and with 
+that weakening the associated priesthood and
+
+
+--- PAGE 110 ---
+70 IMHOTEP 
+ritual would naturally disappear? Associated 
+with the progress of Christianity was the growth 
+of Christian monasticism, which, while it had 
+sprung from Egyptian monasticism, had in course 
+of time become an important adjunct to the new 
+religion. These monasteries indeed frequently 
+occupied buildings that had previously been 
+Egyptian temples, and naturally brought all native 
+religious observances to an end. So numerous 
+had the monks become that in the fourth century 
+the Emperor Valens (A. D. 364-378) sent three 
+thousand troops into the desert of Nitria to compel 
+the able-bodied ascetics who had retired there to 
+enlist in the imperial armies. In that desert alone 
+there lived no less than five thousand monks? 
+Further, a large amount of labour was withdrawn 
+by the monasteries from the economic resources of 
+the country and devoted to ecclesiastical purposes. 
+Thus, deprived of an important productive ele- 
+ment in its population and drained of many of its 
+W. Otto, Priester und Tempel im Hellenistischen Agypten, 
+1908, ii, p. 214. Other references to the priests of Imhotep 
+(sc. Asklepios) during the early Christian era will be found in 
+Hieronymus, Vita S. Hilarionis, cap. 21 (Migne, Patrol. 
+Latina, xxiii, p. 38) ; Clement of Alexandria, Strom., i, 
+cap. 21, 399. 
+An account of early Christianity in Egypt is given by 
+W. Scott, Hermetica, i, pp. 65 ff. 
+E. Gibbon, Decline and Fall of the Roman Empire, 
+chaps. xxv and xxxvii.
+
+
+--- PAGE 111 ---
+GOD OF MEDICINE 71 
+material resources, the nation sank to a low 
+economic level, so low indeed that the available 
+capital was insufficient to support the miserably 
+debased coinage. By A. D. 370 taxes were paid 
+in kind and commerce was reduced to barter. 
+A third factor in the general disruption was 
+the introduction of Greek culture and science, 
+including Greek medicine. Ever since the found- 
+ing of Alexandria in 331 B. c. Hellenic influences 
+had gradually been permeating and undermining 
+the ancient methods of treating the sick, based 
+partly on experience and partly on magic, that 
+had held sway for many centuries. The Egyptian 
+magician-physicians had been content to use 
+prescriptions that had been handed down for 
+many generations, rarely testing their results by 
+means of experiment, while, on the other hand, 
+the patient was still encouraged in the old belief 
+that the magic formulas which were recited, 
+whenever a potion was swallowed, were able to 
+placate the evil spirits that had caused the disease 
+and were at least as potent as the physical remedy. 
+This antiquated procedure now gave way under 
+the influence of a spirit of inquiry and experiment, 
+rapid progress being made in anatomy, physiology, 
+materia medica, and pathology? The result was 
+that the primitive system of medicine which had 
+1 An excellent summary is given by E. A. Budge in his
+
+
+--- PAGE 112 ---
+IMHOTEP 
+been in vogue since the days of Imhotep passed 
+into oblivion, the old order changing and giving 
+place to new. 
+Lastly, amongst the forces which brought the 
+ancient civilization of Egypt to an end were the 
+hostile incursions into Egypt during the Roman 
+period. Both the Blemmyes of the Eastern 
+desert and the Nobadae of the Western desert 
+harassed the Roman conquerors at intervals during 
+the first three centuries of the Christian era, and 
+the Emperor Diocletian (284-305) was obliged 
+to put an end to their invasions by an annual 
+subsidy. 
+The story of the political and religious dis- 
+turbances that raged during these early centuries 
+of our era is too long and complex to be told 
+here ; suffice it to say that they combined to 
+render the foreign occupation a period of stress 
+and turmoil in which the constituent elements 
+of early Egyptian civilization broke asunder. 
+Indeed the final collapse of Egypt was largely 
+due to the purely military government of the 
+Introduction to the Syrian Anatomy, Pathology and Thera- 
+peutics, 1913, i, pp. mii ff. Cf. also F. H. Garrison, History 
+of Medicine, 1921, p. 93 ; K. Sudhoff,Studien x. Geschichte der 
+Medizin (Puschmann-Stiftung), 1909, Nos. 5, 6. The first 
+great medical school of antiquity was established at Alex- 
+andria, where there were extensive laboratories, clinics and 
+libraries.
+
+
+--- PAGE 113 ---
+GOD OF MEDICINE 73 
+Romans, who did little to prevent the inroads 
+of savages and allowed the country to lapse into 
+barbarism. The Egyptian people had lost all 
+desire for independence and did nothing to 
+resist the oppressive alien government. Thus 
+the Moslem conquest of the country in A.D. 639 
+became easy, and for over three centuries Egypt 
+became a province of the Eastern Caliphate. 
+The worship of Imhotep at Memphis seems 
+to have lingered on until the process of national 
+dissolution was far advanced. Doubtless the 
+traditions of his skill in the ars medendi, dating 
+from the glorious days of the early Dynasties, 
+kept alive the popular confidence in him, even 
+when faith in many of the other deities had faded 
+away. All through his long career since the days 
+of the Pharaoh Zoser he played a worthy part 
+on the stage of history ; for ever will his name 
+be held in grateful remembrance. 
+To Imhotep, indeed, may truthfully be applied 
+the words of Virgil, written not many years 
+before the Roman conquest of his country : 
+' Semper honos, nomenque tuum, laudesque 
+manebunt .'
+
+
+--- PAGE 114 ---
+ANCIENT EGYPTIAN MEDICINE 
+SHORT excursus may be permitted in order 
+A to indicate the extraordinary development 
+of the healing art that had been reached by the 
+time of Imhotep. The full story is a fascinating 
+one, but it cannot be told here. With scarcely 
+a trace of infancy, the ars medica suddenly emerges, 
+exhibiting an unparalleled stage of evolution in 
+Egypt when compared with any other country. 
+In the words of Foucart : ' The Egyptian science 
+of healing constituted from the very beginning 
+a system several thousand years in advance of 
+the rest of human society.' At the same time 
+medicine was closely interwoven with magic, each 
+of these elements acting and reacting on the 
+other. The briefest survey of what had been 
+achieved in the Pyramid age must suffice. 
+It will be convenient in the first place to sum- 
+marize the progress made in the ars medendi, 
+and then to deal with the elements of magic and 
+occultism which were closely interwoven with it. 
+1 Encyclopaedia of Religion and Ethics, iv, p. 752.
+
+
+--- PAGE 115 ---
+ANCIENT EGYPTIAN MEDICINE 75 
+Fortunately a considerable number of medical - 
+documents have survived written in the hieratic 
+script on rolls of papyrus. The most important 
+of these is the Ebers Papyrus which was actually 
+written in the early XVIIIth Dynasty, ca. 1550 
+B.c., but which was evidently compiled from one 
+or more other books many centuries earlier. 
+Indeed the document itself states that some 
+portions date from the 1st Dyna~ty,~ and therefore 
+were in part at least in existence during Imho- 
+tep's lifetime. The Papyrus contains a long list 
+of prescriptions for numerous named ailments 
+and specifies the remedies to be used, as well 
+as their doses and the mode of administration. 
+Evidently considerable progress had been made, 
+especially in clinical examination, diagnosis and 
+therapeutics. Further, there was an accurate 
+knowledge of the skeleton and of the method of 
+treating fractures successfully. The position and 
+The other important medical papyri are the Hearst 
+Papyrus about as ancient as the Ebers, the Berlin Medical 
+Papyrus written somewhat later, the Kahun Medical Papyrus, 
+which is surely of the XIIth Dynasty, i.e. considerably 
+earlier than the Ebers, the London Medical Papyrus, the 
+Edwin Smith Papyrus, and another papyrus at Berlin, which 
+contains a collection of spelIs and prescriptions for mothers 
+and their babies. 
+For an excellent rksumd of the subject cf. W. R. Dawson's 
+paper ' Medicine and Surgery in Ancient Egypt ', Nm York 
+Medical Times, Feb. 1925.
+
+
+--- PAGE 116 ---
+IMHOTEP 
+function of the stomach and intestines were 
+known, as well as the fact that the great blood- 
+vessels run from the heart to every part of the 
+body. Some of the glosses in the Edwin Smith 
+Papyrus reveal an acquaintance with anatomy 
+which could only have been acquired by dissec- 
+tion? 
+In the Ebers Papyrus lengthy descriptions are 
+given of the vascular system, and the wide- 
+spread influence of a disordered cardiac action is 
+recognized, the heart being described as ' the 
+beginning of all the members '.2 There is also 
+some inkling of a circulation of the blood ; 
+pulsation was perceived although the actual 
+pumping action of the heart was not understood. 
+On the other hand, the relation of the pulse to 
+the heart was well recognized. Thus the Papyrus 
+says : ' When the heart is diseased its work is 
+imperfectly performed : the vessels proceeding 
+from the heart become inactive, so that you 
+cannot feel them ; they become full of air and 
+water.' This latter statement is explained by 
+the belief that the arteries contained air instead of 
+J. H. Breasted, Recueil Champollion, 1922, p. 425. 
+Papyrus Ebers, 99, I. W. Max Miiller discovered some 
+pictures which he believed to represent surgical operations 
+(2500 B. C.). Egyptological Researches, Carnegie Institution, 
+Washington, 1906. Cf. also Walsh, J. American Med. Ass., 
+Aix, PP- '593-5.
+
+
+--- PAGE 117 ---
+ANCIENT EGYPTIAN MEDICINE 77 
+blood, an erroneous conclusion based on the 
+condition observed at post-mortems. 
+The conception of air reaching to every part 
+of the body was familiar, although the air was 
+supposed to travel by the arteries. The breath 
+when entering the nostrils was believed to pene- 
+trate to the heart and internal organs, and to 
+supply the whole blood abundantly. 
+Surgery was not highly developed. The knife 
+and cautery were familiar, and simple operations 
+were regularly performed on the head, neck and 
+extremities, although surgeons never went so 
+far as to open the abdomen. Fractures were 
+treated with splints made of fibre, and many 
+observations on mummies show that union with 
+but little displacement was secured. More compli- 
+cated operations were performed on the domestic 
+animals than on man. 
+The custom of mummification, although not 
+connected with medicine either in purpose or 
+practice, exercised a profound influence on the 
+growth of that science. Not only did the opening 
+of the abdomen and the removal of the viscera 
+familiarize the Egyptians with the form and 
+position of many internal organs, but it reconciled 
+the people of Egypt for more than thirty centuries 
+to the idea of cutting the dead human body. 
+Thus it overcame the popular prejudice against
+
+
+--- PAGE 118 ---
+78 IMHOTEP 
+systematic dissection which prevented Greek 
+physicians from acquiring a knowledge of prac- 
+tical anatomy in their own country. 
+It is, however, in the realms of diagnosis and 
+therapeutics that the most astounding advance 
+had been made,indicating a real interest in disease. 
+Knowledge was admittedly empiric, but the 
+accumulated experience of remedies employed 
+during many centuries had borne rich fruit. At 
+least 15 distinct diseases of the abdomen, 11 of 
+the bladder, 10 of the rectum and anus, 29 of the 
+eyes, 6 of the ears, 18 of the skin were diagnosed 
+and treated on definite principles. From the 
+symptoms described in the papyri about 250 
+different kinds of disease can be differentiated. 
+Evidently the physicians who practised on the 
+banks of the Nile possessed in some measure 
+the scientific spirit, were capable of accurate 
+clinical observations, and competent to co-ordinate 
+and interpret symptoms. In fact so minute 
+a classification of disease implies considerable 
+scientific advance. 
+Herodotus in the following quotation refers 
+to the prevalence of specialism as a feature of 
+Egyptian medicine : ' The art of medicine is 
+thus divided : each physician applies himself 
+to one disease only, and not more. All places 
+abound in physicians ; some are for the eyes,
+
+
+--- PAGE 119 ---
+ANCIENT EGYPTIAN MEDICINE 79 
+others for the head, others for the teeth, others 
+for the intestines, and others for internal dis- 
+orders.' Recently discovered medical papyri, 
+however, throw considerable doubt on such 
+specialism, every part of medicine being appar- 
+ently practised by physicians. Moreover, the 
+Westcar Papyrus indicates that midwifery was 
+not regarded as a department of medicine as was 
+formerly belie~ed.~ Veterinary medicine was 
+not overlooked, and a papyrus (that of Kahun) 
+devoted to that branch of the healing art has 
+survived. Further evidence of the advanced state 
+of Egyptian medicine may be found in the 
+extensive materia medica which formed the 
+armamentarium medici. 
+The Edwin Smith Papyrus also reveals to us 
+that there were in early Egypt medical practitioners 
+who carried out dissection of the human body, 
+organized their observations, and based con- 
+clusions on facts they had observed. Evidently 
+they acted on the principle nec silet mors. A large 
+number of the drugs used several millennia ago 
+still figure in modern Pharmacopoeias. The flora 
+of Egypt was rich in medicinal herbs, as Homer 
+1 Herodotus, ii. 84. The passages of medical interest in 
+Herodotus have been collected by W. R. Dawson. Cf. 
+Annals of Medical History, 1924, vi, NO. 3, pp. 183 ff. 
+G. Maspero, Popular Stories of Ancient Egypt, 1916, 
+PP. 36 ff.
+
+
+--- PAGE 120 ---
+points out: and evidently their therapeutic pro- 
+perties were carefully studied and utilized. 
+Amongst vegetable products frequently men- 
+tioned are castor oil, opium, aloes, coriander, cara- 
+way, gentian, turpentine, myrrh, juniper, fennel, 
+henbane, linseed and peppermint ; but recent 
+research throws much doubt, at least in some 
+cases, on their correct identification. On the 
+other hand, iron, soda, lime, salts of lead, sulphate 
+of copper, magnesia were certainly amongst the 
+mineral products in use. Other drugs were 
+derived from the animal body, such as gall and 
+blood from the ox, lion and hippopotamus, as well 
+as fats from these and other animals ; even 
+coprotherapy was ~ommon.~ It is interesting to 
+observe that the use of the secretions and parts 
+of the animal body as remedies, now a world- 
+wide practice, was first introduced by Egyptian 
+physicians .3 
+' Earth the grain-giver yields herbs in the greatest plenty, 
+many that are healing in the cup, and many baneful.' 
+2 Many such fanciful remedies were prescribed in this 
+country so recently as the seventeenth century and even later. 
+Cf. the Pharmacopoeia of the Royal College of Physicians of 
+London, A. D. 1651. 
+3 According to Osler the use of magic and of the secretions 
+and parts of the animal body as remedies form two world- 
+wide methods of practice that found their earliest illustrations 
+in ancient Egypt. W. Osler, The Evolution of Modem Medi- 
+cine, p. 13.
+
+
+--- PAGE 121 ---
+ANCIENT EGYPTIAN MEDICINE 81 
+It is pleasant to think that even in those far- 
+off days opium was used to relieve poor suffering 
+humanity, and Pliny states that among the herbs 
+given to Helen of Troy was nepenthes, which 
+caused ' oblivion of sorrow '. 
+Even the forms in which remedies were 
+administered showed some clinical insight into 
+pathological processes. Gargles, salves, lozenges, 
+inhalations, snuffs, suppositories, pills, capsules, 
+enemata, fumigations, poultices and plasters were 
+all employed. Ingredients were added for the 
+purpose of disguising nauseous drugs. 
+The large number of remedies and prescrip- 
+tions mentioned in the Ebers Papyrus prove con- 
+clusively that therapeutics were carefully studied. 
+The same Papyrus shows that remedies were 
+classified into special groups, amongst which 
+were sedatives, narcotics, hypnotics, antispas- 
+modic~, mydriatics, myotics, expectorants, tonics, 
+emetics, carminatives, purgatives, astringents, 
+cholagogues, anthelmintics, diuretics, diaphoretics, 
+emmenagogues, oxytocics, galactagogues, haemo- 
+statics, emollients, disinfectants, antidotes, and 
+so forth. In brief, while scientific medicine was 
+still in its infancy, empiric therapeutics were 
+highly advanced. 
+No sketch of the Egyptian knowledge of 
+medicine, however, is complete without reference 
+3121 M
+
+
+--- PAGE 122 ---
+82 IMHOTEP 
+to the prevailing faith in magic. Magic was the 
+mother of medicine and never ceased to influence 
+its offspring. In fact any eulogy of Egyptian 
+therapeutics is heavily discounted when the 
+ever-present accompaniment of magical formulas, 
+amulets and incantations is taken into con- 
+sideration. Disease was generally attributed, 
+not to a disturbance of normal functions, but to 
+a malign spirit or god who had entered the body 
+and attacked it furiously. Unless this evil spirit 
+could be expelled before irreparable damage had 
+been done, recovery was hopeless. The evil 
+spirits or demons insinuated themselves into the 
+individual by the nostrils, mouth or ears, and 
+once inside devoured his vital substance. The 
+character and termination of the resulting disease 
+depended on the progress made in the destructive 
+activity of the invading spirit, its virulence 
+depending also on times and seasons of the year, 
+on lucky and unlucky days and similar contin- 
+gencies. The physician-priest-magician who 
+treats the sick person must first of all discover 
+the nature and if possible the name of the evil 
+spirit in possession, and then seek to expel it by 
+every means in his power. He must be expert 
+in magic, knowing suitable incantations, and 
+skilful in making amulets adapted to the occa- 
+sion. As opportunity presents he must resort to
+
+
+--- PAGE 123 ---
+ANCIENT EGYPTIAN MEDICINE 83 
+invocations and impressive ritual. Material 
+remedies must also be tried, and recourse had 
+to the rich pharmacopoeia which the experience 
+of centuries had accumulated. The best practi- 
+tioners were in some measure rationalistic, and 
+carefully diagnosed between those cases for which 
+magic and exorcisms were most suited, those for 
+which incubation in the temple promised the 
+best results, and those which called for incanta- 
+tions accompanied by drugs? 
+The following is a specimen of an incantation 
+which had to be recited during the preparation 
+of a medicine in order to endow it with the right 
+power : ' That Isis might make free, make free. 
+That Isis might make Horus free from all evil 
+that his brother Set had done to him when he 
+slew his father Osiris. 0 Isis, great enchantress, 
+free me, release me from all evil red things, from 
+the fever of the god and the fever of the goddess, 
+from death, and death from pain, and the pain 
+which comes over me ; as thou hast freed, as thou 
+hast released thy son Horus, whilst I enter into 
+the fire and go forth from the water ', &c2 
+A different formula was recited as the invalid 
+swallowed his dose : ' Welcome, remedy, wel- 
+come, which destroyest the trouble in this my 
+G. Maspero, Life in Ancient Egypt and Assyria, p. I 19. 
+Papyrus Ebers, i. 12 ff.
+
+
+--- PAGE 124 ---
+84 IMHOTEP 
+heart and in these my limbs. The magic of Horus 
+is victorious in the remedy.' 
+Another common magical practice was to write 
+down an incantation on papyrus, to wash it off 
+into the medicine, and then to administer the 
+latter to the patient, as is still commonly done in 
+Eastern countries2 Instead of such a simple 
+phrase as ' Prescription for curing such a disease ' 
+the expression ' Prescription for expelling or 
+terrifying such a disease ' would be adopted, with 
+the evident implication of demoniacal possession. 
+This view of the nature of disease naturally 
+had a fundamental and blighting influence on 
+therapeutics. Disease caused by the pernicious 
+influence of an indwelling spirit must be combated 
+by magic, incantations and spells, although 
+remedies might also relieve symptoms and abolish 
+pain. Rational therapeutics and magic were thus 
+closely interwoven in the practice of the magician- 
+physician, who had to distinguish between diseases 
+' 
+curable by drugs and those requiring psycho- 
+therapy. In the early days superstitious and 
+sacerdotal measures probably predominated, while 
+as time passed on exact observation and thera- 
+peutics more and more gained the upper hand, 
+sorcery yielding to science. The choice between 
+Papyrus Ebers, ii. 1-2. 
+W. Max Miiller, Egyptian Mythology, p. 199.
+
+
+--- PAGE 125 ---
+ANCIENT EGYPTIAN MEDICINE 85 
+theurgical or rational methods of treatment would 
+also largely depend on the philosophical views of 
+the physician, and we have evidence that much 
+less magic was used in some cases than in others. 
+Probably magic ceremonies were resorted to as 
+a last resource when the skill of the physician 
+was baffled. The malade imaginaire was doubtless 
+as common a phenomenon as he is to-day ; many 
+faith cures took place at famous shrines. 
+It may seem strange that such an apparently 
+absurd occult force as magic retained a potent 
+influence through all the centuries of ancient 
+Egyptian history. On the other hand, it must 
+be remembered that sick persons, even if they 
+belong to the educated class, have some excuse 
+for fantastic actions and beliefs. They are ab- 
+normally emotional and suggestible, and readily 
+clutch at any remedy, even if irrational, that 
+presents itself, especially if powerfully supported 
+by tradition and authority. As is well known, 
+the benefits conferred by medicaments depend 
+largely on the confidence felt in the physician 
+and in his prescriptions. 
+We cannot doubt that Imhotep, with his wide 
+outlook on life, his experience of men and human 
+affairs, and his interest in astronomy and other 
+sciences, inclined to the side of scientific medicine. 
+Indeed, as Erman says, ' the son of the goddess
+
+
+--- PAGE 126 ---
+IMHOTEP 
+Sechrnet, the demigod ImhGtep, was in later 
+times considered to be the creator of medical 
+knowledge '.' 
+The advanced state of hygiene also proves 
+a high stage of civilization. The Egyptians 
+boasted that they were the healthiest of all mortals, 
+and regulated the sanitation of the town, of the 
+dwelling, and even of the person, while the priests 
+set up a high standard of cleanliness by their 
+frequent ablutions and the immaculate purity 
+of their ~lothing.~ The homes of the people 
+were fumigated from time to time to keep them 
+sweet, suitable precautions being taken to prevent 
+the annoyance of wasps and mosquitoes. There 
+was also some knowledge of antiseptics, since the 
+virtues of extreme dryness and of certain chemicals 
+like nitre, common salt and alcohol as preserva-. 
+tives were recognized. Evidently the importance 
+of sanitation was well understood. Even in those 
+far-off days experience had taught the lesson that 
+6y~aive~v Gp~arov 2miv. The value of preventive 
+medicine was also well recognized. The Egyp- 
+A. Erman, Life in Ancient Egypt, p. 357. 
+In order to preserve their purity of body, the priests 
+washed themselves fkm head to foot in cold water twice 
+every day and twice every night.
+
+
+--- PAGE 127 ---
+ANCIENT EGYPTIAN MEDICINE 87 
+tians probably knew that the majority of diseases 
+proceed from indigestion and excess of eating, 
+and these evils they avoided or combated by 
+frequent days of abstinence, by emetics, gentle 
+aperients, and other means of relieving the system. 
+The superiority of prophylaxis as compared with 
+therapeutics was evidently appreciated. ' The 
+whole manner of life ', says Diodorus, 'was so 
+evenly ordered that it would appear as though it 
+had been arranged according to the rules of health 
+by a learned physician, rather than by a law-giver.' 
+These few facts will suffice to indicate in outline 
+the extraordinary interest that was taken in 
+remedies in ancient Egypt, and the progress that 
+had been made. But it cannot be claimed that 
+Egyptian medicine ever developed into a scientific 
+system. Rather should its stage be described as 
+one in which superstition and science struggled 
+for mastery. Which indeed of us can say that 
+this perennial conflict has, even to-day, been 
+finally won by either combatant ?
+
+
+--- PAGE 128 ---
+HONOUR TO WHOM HONOUR IS DUE 
+S 
+TRANGE it is that the claims of Imhotep to 
+be recognized as the tutelary deity of medicine 
+have been so neglected. Many centuries before 
+the exodus of the Israelites from Egypt: long 
+before the recognition of Asklepios by the Greeks 
+as their legendary god of medicine: long before 
+the days of Homer: long before the birth of 
+Hippocrates,4 there lived in Egypt a magician- 
+physician so famous for his skill in healing disease 
+that he became recognized eventually as the 
+Egyptian god of medicine. To him surely 
+belongs the highest place in our hagiology ; to 
+him should physicians all the world over look up 
+The Exodus from Egypt is believed to have taken place 
+ca. 1230 B. C. Cf. Encyclopaedia Britannica, iii, p. 868. 
+The cult of Asklepios appears not to go back farther than 
+the time of Homer when Asklepios was still but a Thessalian 
+hero and clever leech, and the father of two heroes, Machaon 
+and Podaleirus, who fought before Troy and became famous 
+physicians. And yet on the strength of such a trivial claim 
+Asklepios has been for centuries our emblematic god of 
+medicine, the reputed healer of men. His figure appears in 
+countless diplomas, coins and seals associated with hospitals 
+and medical societies in every civilized country. 
+Ca. 850 B. c. * Ca. 460 B.C.
+
+
+--- PAGE 129 ---
+HONOUR DUE TO IMHOTEP 89 
+as the patron spirit of the ars medendi, as the 
+emblematic god of medicine. 
+The reason for the neglect of Imhotep doubt- 
+less lies in the fact that it is only since Champollion 
+deciphered the hieroglyphs about a century ago 
+that the civilization of ancient Egypt has become 
+known to the learned world ; until then all con- 
+temporary records, whether depicted in the 
+temples or tombs, or inscribed on papyri, were 
+undecipherable. Meanwhile Greek and Roman 
+scholarship had for many centuries been familiar, 
+with the result that the mythological lore relating 
+to the classical deity of the healing art has 
+become interwoven with the history of medicine 
+in all civilized countries to the exclusion of the 
+much older Egyptian deities. 
+Surely the time has come to do justice to the 
+' 
+venerable figure described in the above pages, 
+and to elevate Imhotep to the place of honour 
+which is his due? 
+The Reading Pathological Society, the oldest Pathological 
+Society in the United Kingdom, has recently adopted Im- 
+hotep, the Egyptian deity of medicine, as its Badge. This 
+Badge shows the figure of the god executed in blue enamel 
+and enclosed in a gold frame, and was presented to the 
+Society by Sir Stewart Abram, as a souvenir of his Presidency. 
+This is probably the first recognition by a Medical Society of 
+the claims of Imhotep to be recognized as the patron spirit 
+of the healing art.
+
+
+--- PAGE 130 ---
+THE EPILOGUE 
+W 
+E have now completed the story of the 
+venerable physician, whom Sir W. Osler 
+calls ' Dr.' Imhotep, from the time of his dramatic 
+appearance as vizier and magician-physician of 
+King Zoser to his elevation to the rank of one of 
+the full Egyptian deities. The contemplation 
+of a career so varied in its pursuits, so notable in 
+its achievements, so trusted by suffering humanity, 
+so glorified in its final apotheosis must call forth 
+a tribute of admiration. The worship of Imhotep 
+extended well into the Roman period, at any rate 
+as late as the fourth century of our era, so that 
+his career, one of unique interest, extends over 
+a period of about three thousand years. His name 
+deserves to be held in everlasting remembrance 
+as one of the few men of genius recorded in the 
+history of ancient Egypt ; he is one of the fixed 
+stars in the Egyptian firmament. His influence 
+still remained dominant when the Egyptian 
+civilization had long passed its meridian, and the 
+country had become the vassal first of Greece and 
+eventually of Rome. The grasti of the rich 
+Greeks and Romans who visited the ruined
+
+
+--- PAGE 131 ---
+EPILOGUE 9 1 
+temples and tombs still record the homage paid 
+to our hero and the widespread faith in his power 
+to heal the sick devotees who flocked to his 
+shrines. 
+During the Greek and Roman periods of 
+Egyptian history, Imhotep, alias Imouthes, be- 
+came more and more closely identified with 
+Asklepios or Aesculapius the Greek and after- 
+wards the Roman god of medicine. Ultimately 
+indeed Imhotep was entirely merged in the latter 
+deity.' 
+In Egypt, as everywhere else, ' the old order 
+changeth, giving place to new.' In the course 
+of the intervening centuries time's eroding finger 
+and the vandalism of man have wrought strange 
+transformations in the temples where the beloved 
+Imhotep formerly reigned as the beneficent deity 
+who gave life and health to the sick and suffering. 
+His chief temple at Memphis is now a scene of 
+desolation. Where once the sacred aisles and 
+pillars echoed to the march of priest and wor- 
+shipper, all is silence, save for bats and owls 
+and scarabs. The impressive ceremonial, the 
+magic rites and incantations that ministered to 
+the healing art have ceased for ever. 
+No longer do the seekers after health crave 
+permission to sleep within the precincts of his 
+Encyclopaedia Britannica, xxiv, p. 681.
+
+
+--- PAGE 132 ---
+IMHOTEP 
+temple in the hope that the deity would appear 
+to them in dreams and reveal the panacea for 
+their sickness. No longer do devoted patients 
+sing and dance before his shrine with hearts 
+bursting with gratitude for a new lease of health 
+and life. 
+The smaller sanctuary at Philae is submerged 
+in a vast reservoir destined to bring material 
+blessings to the country in lieu of the healing 
+virtues formerly associated with the temple. The 
+glory has also departed from the other shrines 
+linked with Imhotep's worship which have been 
+alluded to above. 
+Let us, however, be thankful that even to this 
+day there survive some material and visible 
+memorials of the immortal Egyptian physician. 
+The terraced Pyramid of Sakkarah, the ruins at 
+Philae, at Deir-el-Bahari and elsewhere will long 
+remain as imposing reliquiae recalling the part 
+he played on the stage of history ; and even when 
+pyramid and temple have crumbled into dust his 
+name will still be held in undying remembrance. 
+Deep are the footprints he has left on the sands 
+of time, and physicians all over the world will 
+ever revere him as one of the pioneers of their 
+ancient profession, as one whose name ' on fame's 
+eternal1 beade-roll is worthie to be fyled '. Medice 
+immortalis, in perpetuum ave !
+
+
+--- PAGE 133 ---
+APPENDIXES 
+A. BIBLIOGRAPHY 
+BIRCH, S. 'TWO Egyptian Tablets of the Ptolemaic 
+Period.' Archaeologia, vol. xxxix. 
+BISSING, W. V. Deutsche LiteratwZeitung, 1902, col. 2330. 
+BREASTED, J. H. A History of Egypt, 1909, p. 112. 
+British Museum Publications. Guides to the Egyptian 
+Galleries. * 
+BRUGSCH, H. Rel* und Mythologie dm alten Aegypter, 
+1890, p. 526.* 
+Dictionnuire Gkographique, p. 1099. 
+Die Biblischen Sieben Jahe Hungermoth, 1891 
+(with facsimile of Inscription). 
+A History of Egypt under the Phmaohs, 1879, ii, p. 299. 
+BUDGE, E. A. W. The Gods of the Egyptians, i, p. 522.* 
+CATON, R. The Harveian Oration,2 1904.* 
+DARESSY, G. Catalogue des Antipuitks I?,gyptiennes du 
+Mude du Caire : Statues de Divinitks, i. 17 ; ii. 
+PI. IV, v.* 
+ERMAN, A. Handbook of Egyptian Religio7, pp. 76,173 .* 
+FOUCART, G. ' Imhotep.' Revue de l'Hktoire des 
+Rel&im, 1903, xlviii, p. 362. 
+GAUTHIER, H. ' Un Nouveau Monument du Dieu Im- 
+hotep.' Bulletin de I'Institut Frangais d'Archdo- 
+logie Orientale, 1918, vol. xiv. 
+1 Volumes marked with an * contain illustrations of 
+Imhotep. Less important references are given in the notes 
+ap ended to the text. 
+l~lso published in the Lancet, lgoq, i, p. 1769 ; British 
+Medical Journal, 1904, i, p. 1473.
+
+
+--- PAGE 134 ---
+94 IMHOTEP 
+GRENFELL, B. P., and HUNT, A. S. Oxyrhynchus Papyri, 
+1915, Part XI, p. 221. 
+Lancet, Th, 1915, ii, p. 1204. 
+JAYNE, W. A. The Healing Gods of Ancient Civilisation., 
+1925, p. 62.* 
+LANZONI, R. V. DiXiOnario di Mitologia Egiza, ii, 
+p. 151, P1. L.* 
+LEPSIUS, C. R. Denkmiiler aus Aegypten U. ~thiopien, ix, 
+Part IV, P1. 15, 18, 19, 25.* 
+MASPERO, G. ' La 1110 Dynastie ManCthonienne et le 
+Dieu Imouthb.' gtudes de Mythologie 'et 
+d'ArcMologie Bgyptiennes, 191 6, viii, pp. I 24 ff. 
+NAVILLE, E. Temple of D& el Bahari, Part V, p. 11, 
+P1. cXL1x.* 
+PAULY, A. F. Real-Encyclopadie der Classischen Alter- 
+tumswissenschaft, 1916, ix, col. 1213. 
+PI ERR ET,^. LePanthdonggyptien, 1881,pp.77,86,101.* 
+ROSCHER, W. H. Lexicon der Griechischen und Rhischm 
+Mythologie, ii (i), p. 125. 
+SETHE, K. Imhotep, der Asklepios der Aegypter. Unter- 
+suchungen xur Geschichte und Altertumskunde 
+Aegyptens, ii. 
+STRAUSS and TORNEY. Entstehung und Geschichte des 
+Altagyptischer Gotterglaubes, 1889, i, pp. 426-7. 
+WIEDEMANN, A. Religion of the Ancient Egyptians, I 897, 
+P. 139.* 
+WILKINSON, J. G. Manners and Customs of the Ancient 
+Egyptians, 1878, iii, p. 204.*
+
+
+--- PAGE 135 ---
+APPENDIXES 
+B. THE NAME IMHOTEP AND ITS 
+VARIANTS l 
+The name Imhotep may be spelt either ]hen, 
+44 A- +D or ]z and may be transliterated Ij-m-htp. 
+The usually adopted modern vocalization is Imhotep, 
+which the Greeks rendered as 'Ipov'Brls. 
+Personal names ending in the word htp and com- 
+pounded with the names of certain, but not with all, 
+gods, were common in Egypt in all periods. Thus we 
+find RE-hotep, Ptah-hotep, and similar compounds with 
+the divine names Amen, Aah, Khons, Khnum, Mut, 
+Min, Mont (Menthu), and others.2 In these names the 
+word htp is the ' pseudo-participle '-or ' old perfective ' 
+tense of the verb &p ; the names therefore mean ' Re is 
+satisfied ', ' Ptah is satisfied', &C., and they are more 
+correctly rendered-Re-btpe or Re-btp, &c. The verb 
+htp means to satisfy, and its use as a noun conveys the 
+notion ' that which satisfies ', ' satisfier '. Its commonest 
+use as a noun is with the meaning ' offerings ', as these, 
+pm excellence, in a primitive concept, are what bring 
+satisfaction to a god. Its almost equally common signifi- 
+cance ' peace ' is derived from the same series of ideas 
+and refers to the state of the god's mind when due 
+offerings have been made to him. 
+The name Imhotep, however, is quite differently 
+constituted from the above God + htp compounds. In 
+this case htp is a noun and means ' peace ' or ' satis- 
+1 I am indebted to Mr. W. R. Dawson for some notes on 
+the name Imhotep. 
+2 Certain divine names are never found combined in this 
+way, e. g. Osiris, Isis, Nephthys.
+
+
+--- PAGE 136 ---
+96 IMHOTEP 
+faction '. The translation ' he who comes in peace ' is 
+the generally accepted one, although 4 may be either 
+the participle ' He who comes ' or the imperative 
+' Come '. The em or m can be either the preposition 
+' in ' or a particle meaning ' as ' or ' in guise of '. The 
+name therefore means either ' one who comes in peace ' 
+or ' a comer in peace '.l 
+The Egyptian hieroglyphs, like most of the Semitic 
+scripts, do not indicate vowels, nor indeed do they 
+always accurately represent the consonantal skeleton. For 
+these reasons there is no certainty how words were 
+actually sounded, and a multiform transliteration, largely 
+based on conjecture, has resulted. The following list 
+of variants, which does not profess to be complete, will 
+suffice to indicate the existing confusion and the urgency 
+of some international agreement on the ~ubject.~ 
+Aiemapt S. Birch, Egypt from the Earliest Times to 
+300 B.C., p. 29. 
+Aiemhetp Wilkinson, Ancient Egyptians, 1878, iii, 
+p. 204. 
+Names beginning with g are not uncommon in the Old 
+and Middle Kingdoms, e.'g. 4244 I-MERY ' come, be- 
+loved ', g& (I I.M.SNB ' come in health '. 
+2 Variants in which only small differences occur, such as 
+the use of either the simple ' h ' or the guttural ' h ', have 
+not been included. Sethe discusses in detail the question of 
+vocalization and accepts Imhotep as a satisfactory representa- 
+tion (Sethe, Imhotep, p. I). 
+In the Catalogue of the Demotic Papyri in the John Rylands 
+Library, iii, p. 437, F. L1. Griffith gives the ways in which 
+' Imhoter, ' was written in the time of PsammCtik I, Ahmasi 11, 
+Darius, and the early and late Ptolemies.
+
+
+--- PAGE 137 ---
+APPENDIXES 97 
+Aiemhotep 
+I-em-hotep 
+Iemhotpe 
+Ihotep 
+Imhitpou 
+Im-hetep 
+Imhoten 
+Imhotep 
+Imhothb 
+Imhotp 
+Imhotpe 
+Imhotpou 
+Imhotpii 
+ImhoutpC 
+Imhutep 
+Imopth 
+Imothts 
+Imutep 
+Iu-em-hept 
+Wilkinson, Ancient Egyptians, 1878, iii, 
+p. 204. 
+Budge, An Egyptian Hieroglyphic Diction- 
+ary, P. 30. 
+Petrie, A History of Egypt, i, p. 30. 
+Maspero, gtudes de Mythologie et d'Archb- 
+Zogie Sgyptbnes, 1916, viii, p. 124. 
+Breasted, Ancient Times, 1914, p. 737. 
+Budge, Gods of the Ancient Egyptians, i, 
+p. 522. 
+Caton, Harveian Oration, 1904, p. 5. 
+Weigall, History of the Pharaohs, i, p. 6. 
+Pauly , Real-Encyclopadie, ix, p. 1214. 
+Maspero, gtudes, &C., viii, p. 124. 
+Wiedemann, ~~~ptische Geschichte, 1880, 
+p. 220. 
+Wall, Sex and Sex Worship, p. 406. 
+Encyclopaedia Britannb, xxiv, p. 681. 
+Revue de l'Histoiredes ReEigions,xlviii, p. 362. 
+Encyclopaedia Britannica, xiii, p. 245. 
+Encyclopaedia of Rel%ion and Ethics, xii, 
+p. 780. 
+Maspero, Life in Ancient Egypt and Asyia, 
+p. 120. 
+Maspero, Dawn of Civilization, p. 105. 
+Maspero, gtudes de Mythologie et d'Archko- 
+logie ggyptiennes, 1916, viii, p. 124. 
+Sethe, Die Aegyptologie, p. 7. (Der Alte 
+Orient, 1923, xxiii.) 
+Records of the Past, iv, p. 117. 
+Revue de Z'Histoire des Rel@ns, xlviii, p. 367. 
+Sethe, Imhotep, p. 12. 
+A. B. Gosse, Civilization of the Ancient 
+Egyptians, p. I I 2. 
+0
+
+
+--- PAGE 138 ---
+98 IMHOTEP 
+Yemhatpe H. R. Hall, The Observer, Jan. 24, 1926. 
+Pmhetep Lady Amherst, A Sketch of Egyptian His- 
+tory, p. 68. 
+Y@6tep A. Erman, Life in Ancient Egypt, 1894, 
+p. 386. 
+Ymhothphe H. R. Hall, The Observer, Jan. 24, 1926. 
+C. THE PEDIGREE OF IMHOTEP 
+In the Wadi Hammamat, the valley which runs down 
+from Coptos to the Red Sea, the architect Khnum-ib-re 
+(Chnem-eb-re), who between the years 495-491 B. C.' 
+was occupied in quarrying stones for the Public Works 
+Department, has left us an inscription which records 
+the names of his ancestors, and in which Kanofer the 
+father of Imhotep appears first and Imhotep holds the 
+second place. The pedigree contains a list of twenty-five 
+architects, all of whom are consecutively fathers and sons. 
+Moreover, they are all master-builders.2 
+In this pedigree the earliest known ancestor is de- 
+scribed as ' the chief of works, both of the South- and of 
+of the North-land, governor of the capital and vizier, 
+chief ritual priest of Zoser, the King of Upper and Lower 
+Egypt, the son of Kanofer, chief of works of the South- 
+and of the North-land '. 
+This master-builder, or chief of all the King's works, 
+who was also chief ritual priest of King Zoser, must 
+almost certainly have been Imhotep. The office of 
+Master of the King's Works was evidently held in high 
+honour, as was indeed the building industry in Egypt. 
+i. e. from the 26th to the 30th year of the reign of Darius. 
+a Breasted uses the following expressions to indicate this 
+office : ' master-builder ', ' chief of works ', ' leader of works ', 
+' master of works ', ' overseer of works '. Cf. his Ancient 
+Records of Egypt, vol. v, Index V.
+
+
+--- PAGE 139 ---
+APPENDIXES 99 
+The following pedigree is reproduced from the list as 
+given by Brugsch.1 
+KA NOFER : Architect of S. and N. Egypt. 
+1 
+IMH~TEP : Architect of S. and N. Egypt ; 
+chief burgomaster, a high func- 
+tionary of King Z'a-sar (lived 
+in the time of the IIIrd Dy- 
+nasty). 
+R'A-HOTEP : Prophet of Amon-ra, king of the 
+l 
+gods ; secret-seer of Heliopolis ; 
+architect of Upper and Lower 
+Egypt ; chief burgomaster. 
+BOK-EN-KHUNSU : Chief burgomaster. 
+I 
+I 
+UZA-KHUNSU : Architect ; chief burgomaster. 
+I 
+I 
+NOFER-MENNU : Architect : chief burgomaster. 
+I 
+MI (0; AI ?) : Architect ; chief burgomaster. 
+1 
+SI-UER-~NEN-HIB : Architect. 
+I 
+PEPI : Architect ; chief burgomaster. 
+I 
+AMON-HIR-h-MESH'A : znd, 3rd and 4th prophet and high- 
+I 
+priest of Amon, king of the gods ; 
+chief burgomaster. 
+I 
+HOR-EM-SAF : Chief burgomaster. 
+I 
+l H. Bmgsch-Bey, A Hisfury of Eg~t wrde* the Phmaohs, 
+1879, ii, p. 299. In this list, in order to avoid confusion, 
+Brugsch's spelling of the personal names is retained, even 
+when it is inconsistent with that employed elsewhere in this 
+volume.
+
+
+--- PAGE 140 ---
+IOO IhlHOTEP 
+MERMER : Architect ; commander. 
+I 
+HOR-$M-SAF : Architect ; commander. 
+I 
+ZA-HIB : Architect ; commander. 
+I 
+NASSAUNU : Architect ; commander. 
+I 
+i 
+ZA-HIB : Architect ; commander. 
+I 
+I 
+NASSHUNU : Architect ; commander. 
+I 
+ZA-HIB : Architect ; commander. 
+I 
+NASSHUNU : Architect ; commander. 
+I 
+ZA-N-HIBU : Architect of Upper and Lower 
+I Egypt ; commander. 
+I 
+NASSHUNU : Architect. 
+I UAH-AB-R'A-RAN-UER : Architect. 
+I 
+'ANKH-PSAMTHIK : Architect of Upper and Lower 
+I Egypt. 
+A'mMA SI-NIT : Architect of Upper and Lower 
+(m. Sit-Nofer-tum) Egypt. 
+I 
+KHNUM-AB-R'A : Chief minister of works for the 
+whole country ; architect of 
+Upper and Lower Egypt in the 
+27th to 30th years of King 
+Darius I (about 490 B.c.).
+
+
+--- PAGE 141 ---
+APPENDIXES 
+D. STATUETTES OF IMHOTEP AS 
+MEDICAL DEMIGOD 
+In most museums of Egyptology may be seen one or 
+more bronze statuettes representing a somewhat diminu- 
+tive dolichocephaIic person who is evidently a learned 
+scribe and who has on his knees an unrolled papyrus 
+which he is reading attentively.1 
+These statuettes, usually from 12 to 20 cm. high, repre- 
+sent Imhotep as demigod, and belong to the Saite or Greek 
+period.2 The best of these statuettes are executed with 
+unusual grace and delicacy, the face being well moulded 
+and an excellent example of saitic art. Amongst the 
+finest images are those at Cairo, the British Museum and 
+the Wellcome Historical Medical Museum in London ; 
+there are also excellent specimens at Paris, Berlin, 
+Marseilles and Leiden. Many figures are enriched 
+with gold, silver, and precious stones ; in other cases the 
+inscriptions are inlaid with gold. 
+Although most of the statuettes are in solid bronze, 
+some are made of glazed ware, steatite, imitation lapis- 
+lazuli, electron, basalt or marble ; at Cairo two speci- 
+mens are of bronze with wooden seats (acacia and cedar). 
+There are also amulet figures of glazed ware in London 
+A statuette in the Cairo Museum (No. 38063) shows 
+a scribe's palette lying on the papyrus near the left hand. 
+Cf. Daressy, Statues a!e DivinitLs, i. 
+' All the bronze figures of the god belong to a period 
+subsequent to the XXIInd Dynasty.' E. A. Budge, Gods of 
+the Egyptians, i, p. 525. According to Sethe (Imhotep, p. I) 
+these figures date from the period 700-332 B. C. 
+A basalt statue 45 cm. high is preserved (ca. 660 B. C.) 
+at the Louvre in the Salle des Monuments Religieux. 
+At the Wellcome Historical Medical Museum.
+
+
+--- PAGE 142 ---
+IMHOTEP 
+and in Liverpool. The costume worn is usually that of 
+a priest, a finely pleated apron hanging down over the 
+knees and legs ; at other times the latter are bare. In 
+one specimen at Cairo the legs are bandaged ; occasion- 
+ally there is nudity.2 A closely fitted cap usually covers 
+the head, although in other cases this is bald. A hand- 
+some necklace with four or more rows of beads is worn 
+in many instances ; occasionally a pectoral is suspended 
+by a cord. Although the sitting posture is usual, a few 
+standing figures are known, where the roll of papyrus is 
+held in the hand or under the arm. In rare cases the 
+right hand grasps a pen, the left a roll of papyrus. In 
+one instance a cynocephalus ape is held up.3 
+At the Cairo Museum of Antiquities are exhibited 
+twenty-one statuettes, some of them of a highly artistic 
+character. The British Museum possesses ten statuettes 
+in a sitting posture. At the Wellcome Historical Medical 
+Museum are thirty-three specimens, including two standing 
+ones. The Ashmolean Museum at Oxford possesses three 
+statuettes. At Berlin are three seated figures and one 
+standing. The Metropolitan Museum of Art, New York, 
+possesses six standing images and one sitting. The Louvre 
+has about fifty specimens. Turin possesses five statuettes, 
+four in bronze and one in blue glazed ware. At the 
+Hermitage Museum, Petrograd, there are nine bronze 
+images and one of glazed ware. 
+In many cases dedicatory inscriptions are added on the 
+base, giving the name of the donor, who was probably 
+G. Maspero, The Dawn of Civilization, p. 105. 
+A. Erman, Handbook of Egyptian Rel*ion, p. 174. 
+S As Imhotep was regarded as the god of learning he 
+became associated with the animals sacred to Thoth, e.g. 
+the ibis and cynocephalic ape. In later times he absorbed 
+the duties of Thoth, as ' scribe of the gods '.
+
+
+--- PAGE 143 ---
+APPENDIXES 103 
+a sick person seeking health, or a grateful patient who had 
+been cured. Thus the statuettes are votive in character. 
+The following is the inscription on one of the figures 
+at Cairo, and gives the name of the donor followed by 
+that of his father : ' Imhotep son of Ptah, born of Khre- 
+duonkh : Imhotep endowed with life ; Penek son of 
+Uahibra.' Another inscription at Cairo (No. 38064) 
+includes a specific prayer asking for ' great length of 
+days and a great and happy old age '. 
+At the Wellcome Historical Medical Museum two 
+figures bear the following inscriptions : ' Mes-son of 
+Pedu-Ptah ' (Ptolemaic Period, ca. 300 B. C.) and ' Petea- 
+mensamtau '. At the British Museum, one figure is 
+dedicated to Imhotep by Ptah-mm, and another by a de- 
+votee who is also called Imhotep. In the same collection 
+is a figure of the god in the form of an ape reading a 
+papyrus. This is probably a survival of animal worship, 
+the ape being sacred to Thoth. At University College, 
+London, is a figure dedicated by Wenamon son of Ta- 
+Khred-Khons. At New York two open papyrus scrolls 
+on the lap of the images have the following inscriptions : 
+' Imhotep, son of Ptah, born of Khreduonkh ' and 
+' Imhotep, son of the living Ptah '. One figure at Berlin 
+(No. 2517) bears the inscription : ' Every scribe pours 
+out to you a libation from his water bowl.' 
+The form of seat occupied by sitting figures is usually 
+plain ; in other cases elaborate mouldings are added, 
+while in one of the finest examples at the Wellcome 
+Historical Medical Museum the top of the seat is adorned 
+with a row of about twenty uraei. 
+The human appearance of the figure represented in 
+these statuettes is regarded by Erman as proving that 
+1 Kiinigliche Museen zu Berlin, Ausftihrliches Verzeichniss 
+der Aegyptischen Alteriiimer, p. 299.
+
+
+--- PAGE 144 ---
+IMHOTEP 
+they belong to the period in which Imhotep was still 
+regarded as a demigod and had not yet attained to the 
+full status of deity.1 These bronze figures form a striking 
+contrast with his pictures dating from the Graeco-Roman 
+period, when the deified man wears the costume and 
+beard of a full deity, and holds the symbol of life in his 
+hand. 
+E. MURAL FIGURES OF IMHOTEP AS DEITY 
+On the walls of various Egyptian and Nubian temples 
+may be seen mural representations of the deity Imhotep 
+carrying the uas sceptre and the ankh. In some cases 
+the god is in a standing, in other cases in a sitting, posture. 
+All these mural figures belong to the later Dynasties 
+and correspond to the period of deification referred to 
+above. 
+The figures are usually accompanied by inscriptions 
+addressed to Imhotep. For instance, the inscription 
+attached to the picture in the temple of Kasr el-Agouz 
+referred to below reads thus : ' Son of Ptah, beneficent 
+god, begotten by the god of the South Wall: giver of life, 
+who bestows gifts on those he loves, who listens [? to those - 
+who call upon him], who provides remedies for all 
+diseases.' 
+I. THEBES 
+(a) Karnak. 
+In the temple of Ptah and Hathor at Karnak, Imhotep 
+with Ptah and his consort Hathor are seen sculptured on 
+the walls and worshipped by King Tuthrnosis 111. 
+A. Erman, Aegypten, ii, p. 477 ; Sethe, Imhotep, p. 4. 
+2 i. e. Ptah. 
+D. Mallet, Le Km El-Agoliz, 1909, p. 38.
+
+
+--- PAGE 145 ---
+APPENDIXES 
+Arnenophis, the son of Hapi, was also worshipped in this 
+temple.1 
+Ptolemy IV Philopator I, 222 B. C. 
+(b) Deir-eI-Bahan. 
+In the temple of Hatshepsowet a standing figure of 
+Imhotep is seen by the side of that of the deified sage 
+Amenophis? who was also regarded as a patron of healing. 
+Ptolemy IX Euergetes 11, 147 B. c. 
+(c) Medinet Habu. 
+In this temple Imhotep is represented in company with 
+several other gods of healing. Thus there is Thoth, 
+a deity enjoying the reputation both of a magician and 
+of a god of medicine. Another god of healing, named 
+Teos, was also honoured. Lastly comes Amenophis. 
+Imhotep, Amenophis, and Teos were all deified sages 
+and appear as paredroi of Thoth, the Hermes of Egypt.3 
+(d) Deir el-Medineh. 
+In this small though graceful mortuary temple the 
+deified Imhotep is again represented by the side of the 
+deified sage Amenophis. The two figures may be seen 
+1 A. E. WeigaI1, Guide to the Antipities of Upper Egfit, 
+1913, p. 106. Cf. also G. Maspero, Egypt, Ancient Sites and 
+Modern Scenes, p. 14 ; Lepsius, Denkmah, ix, Part IV, 
+P1.15 d. Imhotep appears only as a god with the Memphite 
+deities, the Osiris group, and Amenophis, son of Hapi ; 
+never with the Sun-deities. It will be observed that in most 
+of the figures here described Amenophis appears as a sort 
+of pendant to Imhotep. This association is somewhat sur- 
+prising seeing the great dynastic interval between the two 
+men. On the other hand, both were famous sages as well 
+as architects and had filled the office of vizier to their respective 
+kings. Cf. Piehl, 2. f. Agyptische Sprache, 1887, xxv, p. 117. 
+E. Naville, D& el-Bahari, Part V, p. 11 and PI. cxtxx. 
+Cf. also J. of Egyptian Archaeology, 1914, i, p. 96. 
+Lepsius, Denkmak, ix, Part IV, Pi. 32 c; P. Boylan, 
+Thoth, the Hermes of Egypt, 1922, pp. 166-8. 
+3121 P
+
+
+--- PAGE 146 ---
+IMHOTEP 
+on two pillars with elaborate capitals just beyond the 
+first court.1 This temple was begun by Ptolemy IV, 
+continued by Ptolemy VII, and finished by Ptolemy IX. 
+Hathor was regarded as its tutelary deity. 
+(e) Kasr el-Agouz. 
+In this temple, which was erected to the god Thoth and 
+is sometimes called after that deity, Imhotep is represented 
+as seated behind King Ptolemy Euergetes I1 and Thoth. 
+Imhotep is seen wearing a short shenti like that of Thoth, 
+while Amenophis the son of Hapi sitting behind Imhotep 
+is wearing the longer shenti of cerem~ny.~ 
+Ptolemy IX Euergetes 11, I 16 B. C. 
+Brugsch (2. f. ~~~ptische Sprache, 1887, xxv, p. I 17) 
+states that Imhotep with Amenophis as a sort of pendant 
+also appears on the wall of the temple of El-Assasif, 
+a short distance to the E. of the temple of Deir-el-Bahari. 
+The large-scale map of the Theban Necropolis, however, 
+published by the Survey Department, 1924, shows no 
+temple at Assasif. 
+On the Pylon of Imhotep's temple at Philae are five 
+figures of the god, three of which are standing and two 
+sitting. In one instance King Ptolemy V is offering 
+incense to the god ; in another the same king is offering 
+an image of the goddess Maat ; in a third he is offering 
+wine to Imhotep as well as to other deities. In the fourth 
+case the king offering incense and libations, while in 
+l A. E. Weigall, Guide to the Antiquities of Upper Egypt, 
+1913, p. 277 ; Baedeker, Egypt, 1914, p. 317, 
+D. Mallet, Le Km El-Agoriz, 1909, p. 38. Other reliefs 
+of Imhotep probably also existed in this temple. Cf. Mallet, 
+I.c., p. 35.
+
+
+--- PAGE 147 ---
+APPENDIXES 107 
+the last case he is seen grasping a club and standing in 
+the presence of the god.' 
+At the entrance to the temple is another standing figure 
+of the god Imhotep associated with Isis and Osiris and 
+belonging to the same period.2 
+Ptolemy V Epiphanes, 205 B. c. 
+Lastly, in another part of the same temple at Philae 
+the god is shown standing and associated with Isis and 
+Harpocrates, all three being worshipped by eight cyno- 
+cephalic apes.3 
+Ptolemy V11 Philometer I, 173 B. c. 
+A representation of Imhotep occurs on the inner west 
+aspect of the surrounding wall of the temple of Edfu. 
+He is wearing the leopard skin, as was usual for chief 
+priests, and reading from a scroll the history of a civil 
+war waged between the adherents of Horus and those of 
+Set, which culminates in the two great defeats of the latter 
+at Heliopolis and Ha or Hat.4 
+It is from the mythological fight between Homs and 
+Set, in which Horus lost an eye, that is derived the sign 
+which still figures at the head of our present-day medical 
+prescriptions, viz. v, and which in its original form 
+resembled a human eye.5 
+l Lepsius, Denkmcih, ix, Part IV, PI. 18. Cf. also 
+H. G. Lyons, Report on the Island and Temples of Phi&, 
+P1. X ; A. E. Weigall, Guide to the Antiquities of Upper Egypt, 
+1913, p. 475. According to Sethe (Imhotep, p. 4), the mother of Imhotep, Khreduonkh, is seen with a human head and the 
+hood of a vulture and double feathers. 
+Lepsius, Denkmah, ix, Part IV, PI. 19. 
+S Lepsius, 1. C., PI. 25. 
+4 A. E. Weigall, A Hhtory of the Phmaohs, i, p: 6. 
+6 Cf. J. D. Comrie, Edinburgh &led. J., 1909,11, p. 119.
+
+
+--- PAGE 148 ---
+IMHOTEP 
+In this scene a priest called the menhu or slaughterer 
+is seen cutting to pieces an animal which may be either 
+a pig or a hippopotamus, representing Typhon (Set). 
+Meanwhile Imhotep, the Khn'-hh, clad in a leopard's 
+skin and wearing a sort of helmet reads the justification 
+of Horus. Close by is the following inscription : 
+BB-mfQi4 h-h??: K 
+' Chief priest, scribe of the god, Imhotep, the great one, 
+son of Ptah.' 
+Naville thus refers to the scene : ' This priest, Imhotep 
+uer si Ptah, interests us particularly, not because he is 
+invested with one of the chief sacerdotal posts in the 
+temple of Edfou, but because he was also its architect ; 
+at least he directed the construction of certain parts of 
+the edifice. This is the only monument where we find 
+the signature of the artist who made its plan.' 
+Imhotep proclaims Horus justified in the usecht, i.e. 
+in one of the great halls of the temple. 
+IV. NUBIA 
+(a) DCbBt. 
+In this temple Imhotep is represented three times, 
+once in the temple itself, and twice in the chapel of the 
+Nubian king Azkheramon.2 
+Weigall thus describes one of the scenes : 
+' As one enters the roofless pronaos the reliefs on the 
+inner sides of the doorway are seen to represent Horus 
+and Thoth pouring a vessel of holy water over the 
+approaching worshipper, while behind them " the Chief 
+l E. Naville, Textes relatif.. au Mythe d'Horus, recueillis 
+dam le temple d'Edfou, 1870, p. 15, P1. XI. 
+G. Roeder, Les Temples immergks de & Nubie, I g I I, i, pp. 
+47,52,53 ; ii, Pis. 12, 13, M.
+
+
+--- PAGE 149 ---
+APPENDIXES 109 
+Reader-priest, the Chief Scribe of the North and South ", 
+the demigod Imhotep, sees that the necessary ritual is 
+said.' 
+(b) Dakkah. 
+Here there are two scenes in which Imhotep  appear^.^ 
+? Ptolemy IX Euergetes 11. 
+(c) Kalabshah. 
+Imhotep is here represented as receiving a gift of 
+incense from the Emperor Aug~stus.~ 
+? Ptolemaic Period. 
+(d) Meroe. 
+It is possible that a relief in one of the pyramids of 
+Meroe (No. 12) is intended to represent Imhotep, but no 
+positive assertion can be made on the subject. The 
+reliefs in the chapel concerned are reproduced by Lep- 
+sius,4 and the drawing in question shows a figure similar 
+to that of the deified Irnhotep, but without ankh, and 
+only holding an ordinary staff instead of the uas sceptre. 
+Budge describes the scene as that of ' The deceased - 
+adoring an ancestor (or I-em-hetep) '.5 
+l A. E. Weigall, Guide to the Antiquities of Upper Egypt, 
+1913, p, 492 ; Antiquities of Lower Nubia, 1907, p. 58. 
+Bulletin de I'lnstitut Frangais d'Archblogie Orientale, 
+1918, xiv, Fasc. I, p. 40. 
+H. Gauthier, Les Temples immergks de la Nubie, 1911, i, 
+p. 88, P1. XXVII b. Imhotep is wearing a uraeus and is carrying 
+a sceptre and an ankh. 
+Lepsius, Denkmdler, X, Part V, P1.26. 
+6 E. A. Budge, The Egyptian Sudan, i, p. 400.
+
+
+--- PAGE 150 ---
+
+
+
+--- PAGE 151 ---
+INDEX 
+(PERSONS, PLACES AND SUBJECTS) 
+A 
+Abram, Sir Stewart . 89 
+Abusir . . . . . 27 
+Abydos . . . . . 10 
+Aesculapius . 55,66,91 
+Alexander the Great 39,65 
+Alexandria . . . 71,72 
+Allowances to priests . 62 
+Amasis, king . . 39,96 
+-, priest . . . 38939 
+Amenemha, tomb of . 14 
+Amenophis I, king . 35 
+- 111, king . 25,36,42 
+- son of Hapi, 42, 43, 49, 
+56 f., 63, 105, 106 
+Ammanus Marcellinus 66,68 
+Arnmon (Amon) . 1549 
+Amulets of Imhotep, 52,101, 
+Fig. xvii 
+-use of . . . 52,82 
+Ankh, the . . . 38, 109 
+Antuf, king . . 17, 18 
+Anukis.. . . . 48 
+Ape, cynocephalic 102, 103 
+Apis, the bull . . 66,67 
+Apotheosis of Imhotep, 38 f., 
+89, 90, 104 f. 
+Architect, Irnhotep as, 9 f., 99 
+Architects, pedigree of 
+the ..... 99 
+Ashmolean Nluseum, 
+the . . . . . 102 
+Asklepieion 28,44,62,63 
+Asklepios, 31, 34,42,46, 49, 
+50,559 58,629 66,679 88s 91 
+Assa,king . . . 19 
+Astronomy, Egyptian 
+knowledge of . . 20 
+Aswan . . . . . 2,7 
+Athothis, king . . 3 
+Augustus, emperor 86, log 
+Azkheramon, king . . 108 
+Aztecs, deities of medi- 
+cine amongst . . 2 
+B 
+Babylonia, deities of 
+medicine in . . . 2 
+Badge of Imhotep . 89 
+Basalt statue of Im- 
+hotep. . . . . IOI 
+Berlin Medical Papyrus 75 
+- Museum, 25, 37, 38, 75, 
+101 f. 
+Bet-KhalIAf . . . 10 
+Bibliography . . . 93 
+Blemmyes, the . . . 72 
+Breasted, J. H. . 3,55 
+British Museum, 16, 38, 39, 
+52, 53, 59, 101 f. 
+Bronze statuettes of 
+Imhotep . . .37, IOI f. 
+Brugsch, H. . 55,99,106 
+Budge, E. A., 13,7I, 101,109 
+C 
+Caesar Germanicus . 66 
+-, Julius . . . . 35 
+Cairo . . . 62, 101 f. 
+Cambyses . . . . 38 
+Castor oil . . . 62
+
+
+--- PAGE 152 ---
+112 
+Champollion . . . 89 
+Cheops (Khufu), king, 17,23, 
+29 Cherstapane . . . 50 
+Chief lector priest : cf. 
+also Kheri-heb . . 12 f. 
+Childbirth, deities as- 
+sociated with . . 2 
+China, deities of medi- 
+cine in . . . . 2 
+Chnem-eb-re . 24,98, IOO 
+Chriitianityin Egypt . 69 
+Coin-type of Ptah- 
+Hephaistos . . . 34 
+Colocasia, root of . . 51 
+Colossi of Memnon . 57 
+Constantine, emperor . 69 
+Coprotherapy . . . 80 
+Coptos . . . . . 98 
+Crocodile god, the . . 15 
+Crocodilopolis . . 28 
+Cyllbtis . . . . 63 
+Cynocephalic ape 102,103 
+D 
+Dagobas in India . . I 1 
+Dakkah . . . . . 109 
+Darius I, king 12,96,98, loo 
+Dawson, W. R. 75,79, 95 
+Dead, gifts to the . . 13 
+DCb6t . . . . . 108 
+Dehan, the great . . 61 
+Deification of Alexan- 
+der the Great . . 39 
+- of Amenothis son of 
+Hapi, 42,438 49, 56 f-, 63, 105, 106 
+- of Imhotep . 38 f., 63 f. 
+- of individuals . . 63 f. 
+Deir-el-Bahari, 49,56,67,92, 
+105,106 
+Deir el-Medineh . 57, 105 
+INDEX 
+Demigod, Imhotep a, 3,29 f., 
+42, IOI f., Figs. i, v, vi, vii 
+Demigods in Greece 
+and Rome . . . 35 
+Diagnosis, progress in, 78,80 
+Diocletian, emperor . 72 
+Diodorus Siculus . 21,87 
+Dissection in ancient 
+Egypt 1,76,79 ' Donaria ' . . . . 32 
+Drugs, list of Egyptian 80 
+Duat, the . . . . 15 
+E 
+Eben Papyrus, the, 24, 75, 
+76,81 
+Edfu (Edfou), 11, 12, 107, 
+108, Fig. iv 
+Edwin Smith Papyrus, 
+the . . I, 75,76,79 Egypt, close of civiliza- 
+tion in . . . . 68 f. 
+-, deities of medicine 
+in. . . . 1,71,74 
+-, magic in ancient, 22, 63, 
+64, 7!, -74,. 80 f. 
+-, mediclne m . 71, 74 f. 
+El-Assasif . . . . 106 
+Elephantine . . . 66 
+Embalmment, ritual of 15 
+Emperor Augustus . 109 
+- Constantine . . - Diocletian . . . 69 
+72 - Valens . . . . 70 
+Ennead, the Great . 39 
+Eman, A. 29,36785,103 Eshmun, the Phoem- 
+cian god of healing . 55 Esnah . . . . 28 
+Exodus, ;be . . . 88 
+Eye of Horus in medical 
+prescriptions . . 107
+
+
+--- PAGE 153 ---
+INC 
+F 
+Faith cures . . . 53985 
+Famine for seven years 7 
+Festivals in honour of 
+Imhotep . . . 58 f. 
+Figures of Imhotep, 
+mural . . . . 104f. 
+Foucart, G. . . 5, 74 
+Funeral ceremonies 26,27 
+G 
+Gardiner, A. H. . xi, 36 
+' Gate of Imhotep ' . 25 
+Gebelen . . . . 28 
+Gizeh, pyramid of . . 17 
+God of medicine, Im- 
+hotep as, 38f., 89, go, 
+104 f,, Figs. viii, ix, X, XI 
+GraBti relating to Im- 
+hotep . . . 49~90 
+Greek culture . . . 71 
+-demigods . . . 3 5 
+- medicine . '. 71 
+Grenfell and ~unt, 
+Messrs. . . . . 29f. 
+Griffith, F. L1. . . 50,96 
+H 
+Ha or Hat . . . . 107 
+' Harper, Song of the ' 16 f. 
+Harpocrates . ++,66,107 
+Harris Papyrus, the . 16 
+Hathor . . . 48,56,104 
+Hatshepsowet, queen, 49,105 
+Hearst Papyrus, the . 75 
+Helen of Troy . . . 81 
+Heliopolis . . . 43,107 
+Hellenism . . . 42,71 
+Hephaestos . . . . 34 
+Hermes of Egypt, the, 20,105 
+Hermitage Museum, 
+Petrograd . . . 102 
+Herodotus . . 17,78,79 
+Hieronymus . . . 
+Hippocrates . . . E 
+' Holy Island ', the . 44 
+Homer . . . I, 79,88 
+Hordedef . . . 17,18 
+HONS, 2,30,83,84,107,108 
+Horus, eye of, in Medi- 
+cine . . . . . 107 
+Huni, king . . . . 19 
+Hygieia . . 49,50,62 
+Hygiene, knowIknge of 86 
+Ibis, the . . 46,53,102 
+Imhotep, activities of 5 f. 
+-, amulet of . 52, Fig. xvii 
+-, apotheosis of, 38 f., 89, go, 
+I04 f. 
+- as architect . . . 9 f. 
+- as astronomer . . W 
+- as chief lector priest, 5, 8, 
+12 f., 46,56, 108 
+- as contemporary of 
+king Zoser . 3,5,29 
+- as demigod, 3,29 f.,42,86, 
+IOI f., Figs. i, v, vi, vii 
+- as god of medicine, viii, 
+38 f., 40,41, 88, Figs. viii, 
+ix, X, xi 
+- as Khai-hb, 5, 8, 12 f., 
+46,56,108 - as magician, 21,63,64,68, 
+88 
+- as ' master of poetry ' 16 
+-as physician, viii, 21, 24, 
+63, 64, 88 - as sage and scribe 16 f. 
+- as vizier . . . 5 f., 63 
+-,badge of . . . 89 
+-, basalt statue of . IOI 
+-, creator of medical 
+knowledge . . . 86 
+I
+
+
+--- PAGE 154 ---
+114 IN: 
+Imhote , continued. 
+-, deifation of 38 f., 63 f. 
+-,'Dr.*. . . . 90 
+-, eulogies of . . . 54 f. 
+-,festivals of . . . 58 f. 
+-, Gate of . . . 25 
+-, meaning df the 
+name . . . . 4,95 
+-, other persons 
+named . . . . 
+-,pedigree of . . . 98 2i! 
+-, philosophy of . . 19 
+-, relations of . .4,24, 99 
+-, shrines erected to . 58 
+-, statuettes of 37, IOI f. 
+-9 temples of* 28, 43 f.? 47, Figs. xi-xvi 
+-, the Pharaoh . . 25 
+-,tomb of . . 27,28 
+-, variants in spelling 95 f. 
+Imoutha, 33,42, 51, 55,659 
+91 ~ncantations, use of . 82 f. 
+Incubation 31,51? 53,54 
+India, deities of medl- 
+cine in . . . . 2 
+Individuals, deification 
+of private . . . 63 f. 
+Intef,king. . . . 17 
+Isis, 2,44,48,58,839 95, 107 Israelites, exodus of the 88 
+K 
+Ka, the . 59,648 65 
+Kahun ~eiicai Papy- 
+rus,the . . 75979 Kalabshah . . . . 109 
+Kaleoibis, son of Apollo 30 
+& .. 38,IoJ 
+Kasr el-Agouz 57,104, I 
+Kegemni . . 6,19 
+Kherduanki . . . 103 
+Hmi-hb, the, 5,8,12 f., 23, 
+26,46, 56, 108 
+Khnum . . 2,7f., 48,66 , 
+Khnum-ib-re, 12,24,98,1oo 
+Khons . . . . . 49 
+Khreduonkh, 4, 24, 39, 60, 
+Khu IO& (Cheeps), Io7 king, 17,23, 
+29 King Amasis . . 39,96 
+- Amenophis I . . 35 
+- Amenophis I11 25,36,42 
+-Antuf . . . 17,18 
+-Assa. . . . . 19 
+-Athothis . . . 3 
+- Azkherarnon . . 108 
+- Darius I 12,96,98, ~oo 
+-Huni . . . . I9 
+- Mycerinus . . 29, 34 
+-Psamm&ikI . . 96 
+- Psammetik I1 . . 39 
+- Ptolemy I11 . . 12 
+- Ptolemy W, 46, 58, 105, 
+106 
+- Ptolemy V Epi- 
+phanes . 46, 8,106,107 
+- Ptolemy V11 d hilo- 
+meter . . . 106, ~q 
+- Ptolemy IX Euer- 
+getes 11, 43, 56, 57, '05, 
+106,109 
+-PtolemyXIII . . 52 
+- Tuthmosis 111, king, 57, 
+i 104 
+- Usermares . . . 50 
+I - Zoser, 18, 23, 28, 29, 36, 
+1 54,55,63,73,9', Fig. ii
+
+
+--- PAGE 155 ---
+INDEX 1 15 
+Legend of Seven Years' 
+Famine . . . . 7 
+Leiden . . . . 16, IOI 
+Leopard skin worn by 
+priest . . . 107, 108 
+Lepsius, R. . . . 109 
+Libations to Imhotep, 36,103 
+Lisht, Pyramid of . . 25 
+Liturgy of funerary 
+offerings . . . . 13 
+Liverpool Museum . 102 
+London Medical Papy- 
+NS..... 
+London, University 75 
+College . . . . 103 
+Louvre, the . . 101,102 
+Lyons,H.G. . . . 46 
+Maat, the goddess . . 106 
+Machaon . . . . 88 
+Magic, Egyptian, 22, 63, 64, 
+7',74,80 f.984 -m England . . . 23 
+Magician-physician, 
+Imhotep as, 21, 24,63,64, 
+68,88 
+Mahituaskhit . 50951 
+Mandulis, chapel of . 48 
+Manetho . . . . 3 
+Marseilles . . . . IOI 
+Maspero, G. . 50,63,65 
+Materia mdica, Egyp- 
+tian 64,7', 74,79 
+Medicine, Egyptian 71,74 f. 
+-, Greek . . . . 71 
+-, preventive . . . 86 
+-,veterinary . . . 79 
+Medinet Habu 38,53,57,105 
+Memmon, Colossi of . 57 
+Memphis, 2, 8, 10, 11, 21, 
+26 f.9 39942,439 52,559 62, 
+66,68,91 
+Mwhu or slaughterer . 108 
+Mercur . . . . . 28 
+Meroe, Pyramids of . 109 
+Mes-son of Pedu-Ptah 103 
+Meter, Viceroy of Nubia 8 
+Midwifery in Egypt . 79 
+Milne, J. G. . . 349 50 
+Monasticism in Egypt . 70 
+Money-boxes in 
+temples . . . . 62 
+Moral precepts . I g, 20 
+Moslem conquest . . 73 
+Mosquitoes . . . 86 
+Miiller, W. Max . . 76 
+Mummification . . 77 
+Mummy, treatment of 
+the . . . . . 14 
+I Mural figures of Im- 
+hotep . . . . 104f. 
+Mut, the goddess 39,48,49 
+Mut-Hathor . . 39,48 
+Mycerinus, king . 29,34 
+N 
+Name Imhotep, the . 4,95 
+Naville, E. . . . . 108 
+Nechautis . . . . 30 f. 
+Nectanebo . . . . 29 
+Neferebre . . . . 39 
+Neferhotpe . . . . 17 
+Nefertem . . . . 39 
+Nemes head-dress, the 3 
+Nepenthes . . . . 81 
+Nephthys . . . . 95 
+New Kingdom, the, 29,34,36 
+New York Museum, 102,103 
+I Nitria, desert of . . 70 
+Nobadae, the . . . 72 
+Nubia . 42,67, 104,108 
+-viceroy of . . . 8 
+Nut.. . . . . 39
+
+
+--- PAGE 156 ---
+I 16 INDEX 
+0 
+On.. .. . . 43 
+' Opening the Mouth ', 
+the . . . . 
+opium, of . -I3 
+Osiris . 48,83,95,105,107 
+Osler, Sir W. . v,8o,go 
+Otto, W. . 68,70 
+Oxford, ~skdlean 
+Museum at . . 102 
+Oxyrhynchus Papyri, 29, 34, 
+36 
+P 
+Pa-aten-emhab, tomb 
+of. . . . . . 16 
+Palette of scribe . . IOI 
+Papyri, the Oxyrhynchus, 29, 
+34936 Papyrus, incantations 
+written on . . . 84 
+-, the Berlin Medical 75 
+-, the Ebers 24,75,76,81 
+-,the Edwin Smith, I, 75, 
+76379 -, the Harris . . . 16 
+-, the Hearst . . . 75 
+-, the Kahun . . 75.79 
+-, the London Medical 75 
+-, the Westcar . 23,79 
+Paris, the Louvre at . IOI 
+Pedi-Bast . . . 53, 59 
+Pedigree of Imhotep . 98 f. 
+- of the architects . 99 
+Penek, son of Uahibra . 103 
+Persia, deities of medi- 
+cine in . . . . 2 
+Persian period, the . 38 
+Pesubis, a gnostic . . 50 
+Peteamensamtau . . 103 
+Petrograd, museum at . 102 
+Philae, 44, 45, 92, 106, 107, Figs. xi-xvi 
+Philae, the ' Holy Island ' qq 
+Phoenicians, deities of 
+medicine amongst . 2 
+Phritob . . . . . 50 
+Pi-l-m-bap-si-ptah . 27 
+plin~ 
+hdaleirus 88 
+Preventive medicine . 86 
+Priesthood, hereditary 30 
+Priestsofthe Apis Bull 66 
+- of the AsHe~ieion 62 
+-, personal purity of ; 86 
+Propaganda by devotees 33 
+Prophylaxis of disease 87 
+Psammetik I, king . . 96 
+-11,king. . . . 39 
+P-Shere-en-Ptah . 52, 53 
+Ptah, 2,8, 11, 12,25,25, 30, 
+33, 38, 39, 46, 51 f., 66, 103,104,108, Fig. XI 
+Ptah-hotpe . . 7,19,28 
+Ptah-mes . . . . 103 
+Ptolemais . . . 62 
+Ptolemy 111, king . . 12 
+- IV, king, 46,58,105,106 
+- V, king . 46,48,106,107 
+- VII, king . . 106,107 
+- IX, king, 43, 56, 57, 105, 
+106,109 
+- XIII, king . . . 52 
+Pyramid age, the . . 74 
+- of Gizeh . . . I7 
+- of Lisht . . . . 25 
+- of Sakkarah, 3, 10, I I, 28, 
+92, Fig. iii 
+Q 
+Qasr-el-Agouz, temple 
+of. . . . . . 57 
+R 
+P in medical prescrip- 
+tions . . . . . 107
+
+
+--- PAGE 157 ---
+DEX 
+Rationalism in medi- 
+cine . . . . . 83 f. 
+Re, the sun-god . . 2,13 
+Reading Pathological 
+Society, the . . . 
+Rekhrnir~ . . . . 
+Religio privata . . . 22 
+Religion and magic 22, 82 
+Ricinus communis . . 62 
+Ritual of embalmment 15 
+Roeder . . . . . 26 
+Roman period, the . 38 
+Rome 35,68,69,73,90,91 
+Ronpe-nofret . . 24,42 
+S 
+Sais . . . . . . 43 
+Saite period, the . 68, IOI 
+Sakkarah, pyramid of, 3, 10, 
+I I, 27,28,92, Fig. iii 
+Sanatorium at Deir-el- 
+Bahari . . . . 
+Sanitation in ancient 49 
+Egypt . . . . 86 
+Satis . . . . . 48 
+Satmi Khamuas . 50,51 
+Scribe, palette of . . IOI 
+Scribes, libations of, to 
+Imhotep . . . 36,103 
+Sebek, the crocodile 
+god ..... '5 
+Sedare dolorem divinum 
+ops.. . . . 43 
+Sehel, island of . . 7 
+Sekhmet, 2, 35 39, 49, 57, 
+61, 86, Fig. XI 
+Sem priest, the . 13,14 
+Semitic scripts . . . 
+Senosiris . . . . 96 
+52 Senusert . . . . 25 
+Serapeum, the . . 27,44 
+Serapis . . . . . 44 
+Sesame oil . . - . 62 
+1 Sesostris . . . . 25 
+Set . . . 83,107,108 
+Sethe, K., 5,38,39,96, 101, 
+107 Show (Shu) . . . 39 
+Shrines in honour of 
+Imhotep . . . . 58 
+Siculus Diodorus . 21,87 
+Socharis . . . . 10 
+Society, the Reading 
+Pathological . . . 89 
+Sokari . . . . . 10 
+' Song of the Harper ', 
+the . . . 16,18,19 
+' South of his wall ', 
+meaning of . . . 8 
+Specialism in Egypt 78,79 
+Spells, use of . . . 84 
+Spelt . . . . . 62 
+Statuettes of Imhotep, 37, 
+I01 f. 
+Ste~-Pvramid of Sak- 
+kirah, 3, 10, 11, 28, 92, 
+Fig.. iii 
+~teri%ty, cures of . . 51 f. 
+Stupas in India . . 11 
+Suggestion, influence of 85 
+Surgery in ancient 
+Egypt . . . 76,77 
+T 
+Ta-Khred-Khons . . 103 
+Temple of Edfu, 11, 12, 107, 
+108, Fig. iv 
+- of Hatshepsowet . 49 
+- of Qasr-el-Agouz . 
+47, Figs. xi-xvi 
+Temples of Imhotep, 28,43 
+Teos . . . . . 105 
+Theban necropolis . 106 
+Thebes, 6,1~,21,2s, 3539, 
+43,489 49956, 57,66, '04 Thenen . . . . . 46
+
+
+--- PAGE 158 ---
+INDEX I 18 
+Therapeutics, progress 
+in . I* 78, 
+*t 1Aot;p : 52 
+Thoth, z,8,2o, 46,489 53,579 
+102, 103 105 106, 108 
+Topes in India . - .I1 
+Triad of Memphis, 39, Fig- 
+xi 
+-of l'l~ebes 49 
+T~OY - 88 
+Tuat,the . - . . 15 
+Tuthmothii 111, king, 57,104 
+Twin-sisters, the . . 62 
+Typhon . . 108 
+U 
+Uas sceptre . . . 109 
+Underworld, the . . 15 
+University College, 
+London . . . I03 
+Unnefer . . . . 48 
+Uraei as decoration 37, 103 
+Uraeus, Imhotep with 109 
+Usecht, a hall in a 
+temple . . . 108 
+Usermares, king . . 50 
+V 
+Vdens, empe;or . . 70 
+Variants of the name 
+Imhotep . . . . 95 fe - of the name Zoser . 
+Veterinary medicine . 79 
+Virgil, quotation from 73 
+Vizier, duties of a . . 6 
+- Imhotep as . . 5 f., 63 
+Votiveofferings . . 55 
+W 
+Wadi Hammamat . 24,98 
+Weigall, A. E. . 28,48,108 
+Wellcome Historical 
+Medical Museum, 37, IOI f. 
+Wenarnon . . . . 103 
+Westcar Papyrus, the 23,79 
+z 
+Zoser, king, 3,10, 18,23,27, . 
+29, 36, 54, 55, 63, 731 91, Flg. 11 
+Zosimos, the alchemist 68
+
+
+--- PAGE 159 ---
+Pn'ntcd in Engkad 
+At the OXFORD UNI~~RSITY Psgss 
+By John Johnson 
+Printn to the Univasily
+

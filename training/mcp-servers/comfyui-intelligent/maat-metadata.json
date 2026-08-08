@@ -1,0 +1,307 @@
+{
+  "server_id": "comfyui-intelligent",
+  "server_name": "intelligent-comfyui-mcp",
+  "version": "1.25.0",
+  "description": "intelligent-comfyui-mcp MCP Server",
+  "total_tools": 30,
+  "maat_principles": {
+    "truth": "ComfyUI workflow generation and image processing",
+    "balance": "Balance creative freedom with workflow structure",
+    "order": "Systematic workflow generation",
+    "justice": "Proper workflow attribution",
+    "self_reflection": "Learn from workflow patterns"
+  },
+  "use_cases": [
+    "Generate images",
+    "Edit images",
+    "Create workflows",
+    "Execute workflows"
+  ],
+  "common_patterns": [
+    "Prompt \u2192 Generate workflow \u2192 Execute \u2192 Return image"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_list_models_post",
+      "path": "/list_models",
+      "method": "POST",
+      "summary": "List Models",
+      "description": "List available models. Filter by type (diffusion, text_encoder, vae) or capability (image_to_video, text_to_video, etc.)",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_workflows_post",
+      "path": "/list_workflows",
+      "method": "POST",
+      "summary": "List Workflows",
+      "description": "List all available workflows and their capabilities",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_best_model_post",
+      "path": "/get_best_model",
+      "method": "POST",
+      "summary": "Get Best Model",
+      "description": "Get the best model for a capability, optionally constrained by VRAM",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_execution_statistics_post",
+      "path": "/get_execution_statistics",
+      "method": "POST",
+      "summary": "Get Execution Statistics",
+      "description": "Get statistics about workflow executions",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_search_workflows_post",
+      "path": "/search_workflows",
+      "method": "POST",
+      "summary": "Search Workflows",
+      "description": "Search workflows by specifications (capability, input type, output type, model family, etc.)",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_workflow_specs_post",
+      "path": "/get_workflow_specs",
+      "method": "POST",
+      "summary": "Get Workflow Specs",
+      "description": "Get detailed specifications for a workflow",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_model_settings_post",
+      "path": "/get_model_settings",
+      "method": "POST",
+      "summary": "Get Model Settings",
+      "description": "Get best settings for a model (resolution, steps, cfg, sampler, etc.) for training/optimization",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_training_recommendations_post",
+      "path": "/get_training_recommendations",
+      "method": "POST",
+      "summary": "Get Training Recommendations",
+      "description": "Get training/optimization recommendations for a model",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_version_post",
+      "path": "/get_version",
+      "method": "POST",
+      "summary": "Get Version",
+      "description": "Get the MCP server version and build information",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_execution_status_post",
+      "path": "/get_execution_status",
+      "method": "POST",
+      "summary": "Get Execution Status",
+      "description": "Get the status of a workflow execution by execution ID",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_executions_post",
+      "path": "/list_executions",
+      "method": "POST",
+      "summary": "List Executions",
+      "description": "List recent workflow executions with optional filters",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_validate_workflow_post",
+      "path": "/validate_workflow",
+      "method": "POST",
+      "summary": "Validate Workflow",
+      "description": "Validate workflow accuracy and check if download is needed. Returns accuracy score, errors, and recommendations.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_check_workflow_accuracy_post",
+      "path": "/check_workflow_accuracy",
+      "method": "POST",
+      "summary": "Check Workflow Accuracy",
+      "description": "Check workflow accuracy and get detailed report. Will indicate if workflow needs to be downloaded.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_download_model_post",
+      "path": "/download_model",
+      "method": "POST",
+      "summary": "Download Model",
+      "description": "Download a model from Hugging Face Hub. Returns download status and file path.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_download_workflow_post",
+      "path": "/download_workflow",
+      "method": "POST",
+      "summary": "Download Workflow",
+      "description": "Download a workflow JSON from Hugging Face Hub or URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_search_models_post",
+      "path": "/search_models",
+      "method": "POST",
+      "summary": "Search Models",
+      "description": "Search for models on Hugging Face Hub by query.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_install_custom_node_post",
+      "path": "/install_custom_node",
+      "method": "POST",
+      "summary": "Install Custom Node",
+      "description": "Install a custom node using ComfyUI-Manager. Required for workflows that depend on custom nodes.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_check_missing_nodes_post",
+      "path": "/check_missing_nodes",
+      "method": "POST",
+      "summary": "Check Missing Nodes",
+      "description": "Check if a workflow has missing custom nodes that need to be installed.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_install_missing_nodes_post",
+      "path": "/install_missing_nodes",
+      "method": "POST",
+      "summary": "Install Missing Nodes",
+      "description": "Automatically install missing custom nodes required by a workflow.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_load_workflow_to_canvas_post",
+      "path": "/load_workflow_to_canvas",
+      "method": "POST",
+      "summary": "Load Workflow To Canvas",
+      "description": "Load a workflow JSON file into ComfyUI canvas. Opens the workflow in the web interface for viewing/editing.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_wan2_2_i2v_post",
+      "path": "/execute_wan2.2_i2v",
+      "method": "POST",
+      "summary": "Execute Wan2.2 I2V",
+      "description": "CALL THIS TOOL to transform or modify an image based on a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to generate a video from an image and text prompt. Returns a result_url with the generated video., CALL THIS TOOL to generate a video from a text prompt. Returns a result_url with the generated video.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_basic_post",
+      "path": "/execute_txt2img_basic",
+      "method": "POST",
+      "summary": "Execute Txt2Img Basic",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_realvisxl_v5_full_post",
+      "path": "/execute_txt2img_realvisxl_v5_full",
+      "method": "POST",
+      "summary": "Execute Txt2Img Realvisxl V5 Full",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_example_download_test_post",
+      "path": "/execute_example_download_test",
+      "method": "POST",
+      "summary": "Execute Example Download Test",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_img2img_basic_post",
+      "path": "/execute_img2img_basic",
+      "method": "POST",
+      "summary": "Execute Img2Img Basic",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to transform or modify an image based on a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_sd15_post",
+      "path": "/execute_txt2img_sd15",
+      "method": "POST",
+      "summary": "Execute Txt2Img Sd15",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_realvisxl_v5_with_lora_post",
+      "path": "/execute_txt2img_realvisxl_v5_with_lora",
+      "method": "POST",
+      "summary": "Execute Txt2Img Realvisxl V5 With Lora",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_realvisxl_v5_post",
+      "path": "/execute_txt2img_realvisxl_v5",
+      "method": "POST",
+      "summary": "Execute Txt2Img Realvisxl V5",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_Chroma1_HD_DF11_post",
+      "path": "/execute_Chroma1-HD-DF11",
+      "method": "POST",
+      "summary": "Execute Chroma1-Hd-Df11",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_execute_txt2img_chroma_hd_post",
+      "path": "/execute_txt2img_chroma_hd",
+      "method": "POST",
+      "summary": "Execute Txt2Img Chroma Hd",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

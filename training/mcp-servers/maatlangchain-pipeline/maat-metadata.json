@@ -1,0 +1,99 @@
+{
+  "server_id": "maatlangchain-pipeline",
+  "server_name": "MaatLangChain Pipeline API",
+  "version": "1.0.0",
+  "description": "RAG, agents, and knowledge base pipeline - connects to Tehuti Core and n8n workflows",
+  "total_tools": 7,
+  "maat_principles": {
+    "truth": "RAG, agents, and knowledge base operations",
+    "balance": "Balance retrieval accuracy with response speed",
+    "order": "Structured RAG pipeline",
+    "justice": "Proper source attribution",
+    "self_reflection": "Learn from RAG patterns"
+  },
+  "use_cases": [
+    "RAG queries",
+    "Agent operations",
+    "Knowledge base management"
+  ],
+  "common_patterns": [
+    "Query \u2192 Retrieve \u2192 Process \u2192 Return"
+  ],
+  "tools": [
+    {
+      "operation_id": "search_knowledge_base_tools_search_knowledge_base_post",
+      "path": "/tools/search_knowledge_base",
+      "method": "POST",
+      "summary": "Search Knowledge Base",
+      "description": "Search MaatLangChain knowledge base using RAG.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "query_gitmaat_advanced_tools_query_gitmaat_advanced_post",
+      "path": "/tools/query_gitmaat_advanced",
+      "method": "POST",
+      "summary": "Query Gitmaat Advanced",
+      "description": "Advanced gitMaat query with semantic search support.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "execute_research_pipeline_tools_execute_research_pipeline_post",
+      "path": "/tools/execute_research_pipeline",
+      "method": "POST",
+      "summary": "Execute Research Pipeline",
+      "description": "Execute full research pipeline using MaatLangChain + Tehuti Core.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "create_pipeline_task_tools_create_pipeline_task_post",
+      "path": "/tools/create_pipeline_task",
+      "method": "POST",
+      "summary": "Create Pipeline Task",
+      "description": "Create a task in gitMaat for pipeline execution.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "trigger_n8n_workflow_tools_trigger_n8n_workflow_post",
+      "path": "/tools/trigger_n8n_workflow",
+      "method": "POST",
+      "summary": "Trigger N8N Workflow",
+      "description": "Trigger an n8n workflow (connects to Tehuti Integration).",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "openapi_openapi_json_get",
+      "path": "/openapi.json",
+      "method": "GET",
+      "summary": "Openapi",
+      "description": "Return OpenAPI spec for WebUI integration.",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "health_health_get",
+      "path": "/health",
+      "method": "GET",
+      "summary": "Health",
+      "description": "Health check endpoint.",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

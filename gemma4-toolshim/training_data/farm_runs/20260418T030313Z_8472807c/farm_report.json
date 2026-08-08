@@ -1,0 +1,59 @@
+{
+  "run_id": "20260418T030313Z_8472807c",
+  "profile": "/home/suspect/.n8n/gemma4-toolshim/farm/profile.full-expert.yaml",
+  "lab_root": "/home/suspect/.n8n",
+  "ingest_log": [
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/scout.jsonl",
+      "loaded": 8,
+      "dimension": "scout"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/analyst.jsonl",
+      "loaded": 8,
+      "dimension": "analyst"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/archivist.jsonl",
+      "loaded": 8,
+      "dimension": "archivist"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/rag.jsonl",
+      "loaded": 8,
+      "dimension": "rag"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/code.jsonl",
+      "loaded": 8,
+      "dimension": "code"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/full-expert/ops.jsonl",
+      "loaded": 8,
+      "dimension": "ops"
+    }
+  ],
+  "rule_gates": {
+    "total_rows": 48,
+    "unique_rows": 48,
+    "duplicate_ratio": 0.0,
+    "dimension_counts": {
+      "rag": 8,
+      "archivist": 8,
+      "analyst": 8,
+      "code": 8,
+      "scout": 8,
+      "ops": 8
+    },
+    "rule_failures": [],
+    "passed": true
+  },
+  "llm_judge": {
+    "skipped": true,
+    "reason": "teacher disabled"
+  },
+  "gates_passed": true,
+  "merged_rows": 48,
+  "merged_path": "/home/suspect/.n8n/gemma4-toolshim/training_data/farm_runs/20260418T030313Z_8472807c/merged.jsonl"
+}

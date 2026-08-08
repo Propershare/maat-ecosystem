@@ -1,0 +1,503 @@
+{
+  "dependencies": [],
+  "common_chains": [
+    {
+      "name": "File Processing Chain",
+      "description": "Read file \u2192 Process with Python \u2192 Write result",
+      "tools": [
+        "read_file",
+        "tool_run_python_code_post",
+        "write_file"
+      ],
+      "servers": [
+        "filesystem-mcp",
+        "tehuti-core",
+        "filesystem-mcp"
+      ]
+    },
+    {
+      "name": "Workflow Creation Chain",
+      "description": "Search nodes \u2192 Get docs \u2192 Validate \u2192 Create workflow",
+      "tools": [
+        "search_nodes",
+        "get_node_documentation",
+        "validate_workflow",
+        "create_workflow"
+      ],
+      "servers": [
+        "n8n-mcp",
+        "n8n-mcp",
+        "n8n-mcp",
+        "n8n-mcp"
+      ]
+    },
+    {
+      "name": "Task Coordination Chain",
+      "description": "Query gitMaat \u2192 Execute task \u2192 Log result",
+      "tools": [
+        "tool_query_gitmaat_post",
+        "tool_execute_command_post",
+        "tool_query_gitmaat_post"
+      ],
+      "servers": [
+        "tehuti-core",
+        "tehuti-core",
+        "tehuti-core"
+      ]
+    },
+    {
+      "name": "Image Generation Chain",
+      "description": "Generate workflow \u2192 Execute \u2192 Return image",
+      "tools": [
+        "generate_workflow",
+        "execute_workflow",
+        "get_image"
+      ],
+      "servers": [
+        "comfyui-intelligent",
+        "comfyui-intelligent",
+        "comfyui-intelligent"
+      ]
+    }
+  ],
+  "tool_groups": {
+    "integration": [
+      {
+        "tool_id": "tool_tehuti_integration_list_workflows_post",
+        "server_id": "tehuti-integration"
+      },
+      {
+        "tool_id": "tool_tehuti_integration_get_workflow_post",
+        "server_id": "tehuti-integration"
+      },
+      {
+        "tool_id": "tool_tehuti_integration_trigger_workflow_post",
+        "server_id": "tehuti-integration"
+      },
+      {
+        "tool_id": "tool_tehuti_integration_get_execution_post",
+        "server_id": "tehuti-integration"
+      }
+    ],
+    "image": [
+      {
+        "tool_id": "tool_list_models_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_list_workflows_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_best_model_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_execution_statistics_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_search_workflows_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_workflow_specs_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_model_settings_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_training_recommendations_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_version_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_get_execution_status_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_list_executions_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_validate_workflow_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_check_workflow_accuracy_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_download_model_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_download_workflow_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_search_models_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_install_custom_node_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_check_missing_nodes_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_install_missing_nodes_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_load_workflow_to_canvas_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_wan2_2_i2v_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_basic_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_realvisxl_v5_full_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_example_download_test_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_img2img_basic_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_sd15_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_realvisxl_v5_with_lora_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_realvisxl_v5_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_Chroma1_HD_DF11_post",
+        "server_id": "comfyui-intelligent"
+      },
+      {
+        "tool_id": "tool_execute_txt2img_chroma_hd_post",
+        "server_id": "comfyui-intelligent"
+      }
+    ],
+    "workflow": [
+      {
+        "tool_id": "tool_tools_documentation_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_search_nodes_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_get_node_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_validate_node_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_get_template_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_search_templates_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_validate_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_create_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_get_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_update_full_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_update_partial_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_delete_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_list_workflows_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_validate_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_autofix_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_test_workflow_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_executions_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_health_check_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_workflow_versions_post",
+        "server_id": "n8n-mcp"
+      },
+      {
+        "tool_id": "tool_n8n_deploy_template_post",
+        "server_id": "n8n-mcp"
+      }
+    ],
+    "education": [
+      {
+        "tool_id": "tool_tehuti_curriculum_generate_curriculum_post",
+        "server_id": "tehuti-curriculum"
+      },
+      {
+        "tool_id": "tool_tehuti_curriculum_list_templates_post",
+        "server_id": "tehuti-curriculum"
+      },
+      {
+        "tool_id": "tool_tehuti_curriculum_get_template_post",
+        "server_id": "tehuti-curriculum"
+      }
+    ],
+    "ai": [
+      {
+        "tool_id": "search_knowledge_base_tools_search_knowledge_base_post",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "query_gitmaat_advanced_tools_query_gitmaat_advanced_post",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "execute_research_pipeline_tools_execute_research_pipeline_post",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "create_pipeline_task_tools_create_pipeline_task_post",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "trigger_n8n_workflow_tools_trigger_n8n_workflow_post",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "openapi_openapi_json_get",
+        "server_id": "maatlangchain-pipeline"
+      },
+      {
+        "tool_id": "health_health_get",
+        "server_id": "maatlangchain-pipeline"
+      }
+    ],
+    "database": [
+      {
+        "tool_id": "tool_query_post",
+        "server_id": "postgres-mcp"
+      }
+    ],
+    "research": [
+      {
+        "tool_id": "tool_tehuti_research_list_methodologies_post",
+        "server_id": "tehuti-research"
+      },
+      {
+        "tool_id": "tool_tehuti_research_get_methodology_post",
+        "server_id": "tehuti-research"
+      },
+      {
+        "tool_id": "tool_tehuti_research_get_analysis_tool_post",
+        "server_id": "tehuti-research"
+      }
+    ],
+    "audio": [
+      {
+        "tool_id": "health_check_health_get",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "get_openapi_spec_openapi_json_get",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "generate_speech_api_generate_speech_post",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "generate_speech_with_voice_api_generate_speech_with_voice_post",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "generate_multilingual_api_generate_multilingual_post",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "generate_music_api_generate_music_post",
+        "server_id": "tehuti-audio"
+      },
+      {
+        "tool_id": "get_audio_file_api_audio__audio_id__get",
+        "server_id": "tehuti-audio"
+      }
+    ],
+    "memory": [
+      {
+        "tool_id": "tool_create_entities_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_create_relations_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_add_observations_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_delete_entities_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_delete_observations_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_delete_relations_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_read_graph_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_search_nodes_post",
+        "server_id": "memory-mcp"
+      },
+      {
+        "tool_id": "tool_open_nodes_post",
+        "server_id": "memory-mcp"
+      }
+    ],
+    "filesystem": [
+      {
+        "tool_id": "tool_read_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_read_text_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_read_media_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_read_multiple_files_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_write_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_edit_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_create_directory_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_list_directory_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_list_directory_with_sizes_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_directory_tree_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_move_file_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_search_files_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_get_file_info_post",
+        "server_id": "filesystem-mcp"
+      },
+      {
+        "tool_id": "tool_list_allowed_directories_post",
+        "server_id": "filesystem-mcp"
+      }
+    ],
+    "system": [
+      {
+        "tool_id": "tool_execute_command_post",
+        "server_id": "tehuti-core"
+      },
+      {
+        "tool_id": "tool_run_python_code_post",
+        "server_id": "tehuti-core"
+      },
+      {
+        "tool_id": "tool_get_system_info_post",
+        "server_id": "tehuti-core"
+      },
+      {
+        "tool_id": "tool_list_directory_post",
+        "server_id": "tehuti-core"
+      },
+      {
+        "tool_id": "tool_read_file_post",
+        "server_id": "tehuti-core"
+      },
+      {
+        "tool_id": "tool_query_gitmaat_post",
+        "server_id": "tehuti-core"
+      }
+    ]
+  }
+}

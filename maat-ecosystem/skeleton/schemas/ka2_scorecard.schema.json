@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:ka2_scorecard:v1",
+  "title": "MAAT KA2 Scorecard Contract",
+  "description": "Self-validation scorecard attached to every research-grade archivist record. Threshold (pass_at) and RBL halt rule (halt_flags) are constitutional and live here, not in prompt text. Threshold changes are a sacred-layer change and require governed promotion.",
+  "type": "object",
+  "required": ["schema", "scores", "total", "pass_at", "passed", "halt_flags"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.ka2_scorecard.v1"
+    },
+    "scores": {
+      "type": "object",
+      "required": ["truth", "order", "balance", "justice", "self_reflection"],
+      "properties": {
+        "truth": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "order": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "balance": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "justice": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "self_reflection": { "type": "integer", "minimum": 0, "maximum": 10 }
+      }
+    },
+    "total": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 50
+    },
+    "pass_at": {
+      "type": "integer",
+      "const": 40,
+      "description": "Minimum passing score (sacred)."
+    },
+    "passed": {
+      "type": "boolean",
+      "description": "True when total >= pass_at AND halt_flags < 3."
+    },
+    "halt_flags": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Count of RBL indicators. >=3 triggers HALT regardless of numeric total."
+    },
+    "correction_notes": {
+      "type": "string",
+      "description": "Required when passed is false; names which axis failed and why."
+    }
+  }
+}

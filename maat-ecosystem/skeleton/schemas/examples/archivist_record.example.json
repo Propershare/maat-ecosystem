@@ -1,0 +1,83 @@
+{
+  "schema": "maat.archivist_record.v1",
+  "record_id": "9c1d1d38-4f2b-4c0e-8c8a-1b5c8d2e0a1f",
+  "correlation_id": "d8ade1b4-d4a8-44b5-8a9c-3526dac61d18:0007",
+  "created_at": "2026-04-16T14:20:31Z",
+  "agent_id": "cursor_staydangerous",
+  "gateway_id": "ka2-research",
+  "research_grade": true,
+  "tags": [
+    "domain:kmt-scholarship",
+    "topic:dialectical-engine",
+    "confidence:high",
+    "rbl:clean"
+  ],
+  "summary": "Located three primary sources framing the contradiction between colonial Egyptology and Kemetic self-narration; synthesis shows RBL risk absent when sources are triangulated.",
+  "sources": [
+    {
+      "kind": "file",
+      "ref": "data/tehuti/ukmt-rbg-dataset/ka2_agent_system_prompt.md",
+      "line_start": 1,
+      "line_end": 237
+    },
+    {
+      "kind": "gitmaat",
+      "ref": "task:3f9c0c1e-..."
+    },
+    {
+      "kind": "corpus",
+      "ref": "retrieval_pack:ukmt-rbg"
+    }
+  ],
+  "ka2": {
+    "research_type": "historical",
+    "problem": "How does KA2 resist Eurocentric framing in the study of KMT institutions?",
+    "time_dimension": "Kemetic period (Old Kingdom through Late Period) with 19th- to 21st-century reception.",
+    "level_of_analysis": "system",
+    "mode_of_appropriation": {
+      "bias_validation": "Primary sources from UKMT canon cross-checked against external scholarship for race/class framing.",
+      "data_organization": "Chronological by dynasty, thematic by institution."
+    },
+    "life_cycle": {
+      "periods": ["Old Kingdom", "Middle Kingdom", "New Kingdom", "Late Period"],
+      "phases": ["institutional formation", "expansion", "external pressure", "reception and distortion"],
+      "contradictions": ["indigenous authorship vs colonial authorship"],
+      "nodal_points": ["colonial Egyptology codification"],
+      "transitions": ["from Kemetic self-narration to colonial interpretive frame"]
+    },
+    "dialectical_findings": {
+      "law": "Authorship of knowledge migrates with power.",
+      "tendency": "Distortion scales with distance from primary sources.",
+      "contradiction": "Colonial framing vs Kemetic self-narration.",
+      "synthesis": "Return to primary sources and KA2 method restores epistemic authorship."
+    },
+    "determination": "KWF"
+  },
+  "maat_scorecard": {
+    "schema": "maat.ka2_scorecard.v1",
+    "scores": {
+      "truth": 9,
+      "order": 8,
+      "balance": 9,
+      "justice": 9,
+      "self_reflection": 8
+    },
+    "total": 43,
+    "pass_at": 40,
+    "passed": true,
+    "halt_flags": 0
+  },
+  "rbl_flags": [],
+  "forbidden_hits": [],
+  "gateway_state": {
+    "turn_index": 7,
+    "model_id": "ollama/gemma4:e4b",
+    "retrieval_packs": ["ukmt-rbg"],
+    "tools_used": ["query_gitmaat", "read_file"],
+    "latency_ms": 1842,
+    "prompt_tokens": 612,
+    "completion_tokens": 318
+  },
+  "related_events": ["memory.written", "policy.evaluated"],
+  "notes": "Attached as bench fixture for gateway contract suite."
+}

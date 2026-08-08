@@ -1,0 +1,62 @@
+{
+  "server_id": "tehuti-research",
+  "server_name": "Tehuti-Research",
+  "version": "1.0",
+  "description": "Tehuti-Research MCP Server",
+  "total_tools": 3,
+  "maat_principles": {
+    "truth": "Research methodologies and analysis tools",
+    "balance": "Balance exploration with systematic methodology",
+    "order": "Structured research workflows",
+    "justice": "Proper citation and attribution",
+    "self_reflection": "Learn from research patterns"
+  },
+  "use_cases": [
+    "Research methodologies",
+    "Analysis tools"
+  ],
+  "common_patterns": [
+    "Methodology \u2192 Analysis \u2192 Results"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_tehuti_research_list_methodologies_post",
+      "path": "/tehuti-research/list-methodologies",
+      "method": "POST",
+      "summary": "Tehuti-Research/List-Methodologies",
+      "description": "List available research methodologies",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_research_get_methodology_post",
+      "path": "/tehuti-research/get-methodology",
+      "method": "POST",
+      "summary": "Tehuti-Research/Get-Methodology",
+      "description": "Get a methodology by id",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_research_get_analysis_tool_post",
+      "path": "/tehuti-research/get-analysis-tool",
+      "method": "POST",
+      "summary": "Tehuti-Research/Get-Analysis-Tool",
+      "description": "Get an analysis tool by type and id",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

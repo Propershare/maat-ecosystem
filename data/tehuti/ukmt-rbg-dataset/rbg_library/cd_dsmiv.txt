@@ -1,0 +1,1314 @@
+=== EXTRACTED TEXT FROM: CD_DSMIV.pdf ===
+Extraction Method: PyPDFLoader
+Total Pages: 14
+Timestamp: 2026-01-04T16:51:20.941425
+================================================================================
+
+
+--- PAGE 1 ---
+DSM-IV-TR CLASSIFICATION*
+NOS = Not Otherwise Specified
+An x appearing in a diagnostic code indicates that a spe-
+cific code number is required.
+An ellipsis (. . .) is used in the names of certain disorders
+to indicate that the name of a specific mental disorder or
+general medical condition should be inserted when
+recording the name (e.g., 293.0 Delirium Due to
+Hypothyroidism).
+Disorders Usually First Diagnosed in Infancy,
+Childhood, or Adolescence 
+MENTAL RETARDATION 
+Note: These are coded on Axis II.
+317 Mild Mental Retardation 
+318.0 Moderate Mental Retardation 
+318.1 Severe Mental Retardation 
+318.2 Profound Mental Retardation 
+319 Mental Retardation, Severity Unspecified 
+LEARNING DISORDERS 
+315.00 Reading Disorder 
+315.1 Mathematics Disorder 
+315.2 Disorder of Written Expression 
+315.9 Learning Disorder NOS 
+MOTOR SKILLS DISORDER 
+315.4 Developmental Coordination Disorder 
+COMMUNICATION DISORDERS 
+315.31 Expressive Language Disorder 
+315.32 Mixed Receptive-Expressive Language Disorder 
+315.39 Phonological Disorder 
+307.0 Stuttering 
+307.9 Communication Disorder NOS 
+PERVASIVE DEVELOPMENTAL DISORDERS 
+299.00 Autistic Disorder 
+299.80 Rett’s Disorder 
+299.10 Childhood Disintegrative Disorder 
+299.80 Asperger’s Disorder 
+299.80 Pervasive Developmental Disorder NOS 
+ATTENTION-DEFICIT AND DISRUPTIVE BEHAVIOR 
+DISORDERS 
+314.xx Attention-Deficit/Hyperactivity Disorder 
+.01 Combined Type
+.00 Predominantly Inattentive Type
+.01 Predominantly Hyperactive-Impulsive Type
+314.9 Attention-Deficit/Hyperactivity Disorder NOS 
+312.xx Conduct Disorder 
+.81 Childhood-Onset Type
+.82 Adolescent-Onset Type
+.89 Unspecified Onset
+313.81 Oppositional Defiant Disorder 
+312.9 Disruptive Behavior Disorder NOS 
+FEEDING AND EATING DISORDERS OF INFANCY OR EARLY
+CHILDHOOD 
+307.52 Pica 
+307.53 Rumination Disorder 
+307.59 Feeding Disorder of Infancy or Early 
+Childhood 
+TIC DISORDERS 
+307.23 Tourette’s Disorder 
+307.22 Chronic Motor or Vocal Tic Disorder 
+307.21 Transient Tic Disorder 
+Specify if: Single Episode/Recurrent
+307.20 Tic Disorder NOS 
+ELIMINATION DISORDERS 
+____.__ Encopresis 
+787.6 With Constipation and Overflow Incontinence
+307.7 Without Constipation and Overflow Incontinence
+307.6 Enuresis (Not Due to a General Medical
+Condition) 
+Specify type: Nocturnal Only/Diurnal Only/Nocturnal
+and Diurnal
+OTHER DISORDERS OF INFANCY, CHILDHOOD, OR
+ADOLESCENCE 
+309.21 Separation Anxiety Disorder 
+Specify if: Early Onset
+313.23 Selective Mutism 
+313.89 Reactive Attachment Disorder of Infancy or Early
+Childhood 
+Specify type: Inhibited Type/Disinhibited Type
+307.3 Stereotypic Movement Disorder 
+Specify if: With Self-Injurious Behavior
+If criteria are currently met, one of the following severity
+specifiers may be noted after the diagnosis:
+Mild
+Moderate
+Severe
+If criteria are no longer met, one of the following speci-
+fiers may be noted:
+In Partial Remission
+In Full Remission
+Prior History
+*Reprinted with permission from the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition, Text Revision. Copyright 2000 American
+Psychiatric Association.
+
+
+--- PAGE 2 ---
+I Appendix DSM-IV-TR Classification
+313.9 Disorder of Infancy, Childhood, or Adolescence
+NOS 
+Delirium, Dementia, and Amnestic and Other
+Cognitive Disorders 
+DELIRIUM 
+293.0 Delirium Due to . . . [Indicate the General
+Medical Condition]
+____.__ Substance Intoxication Delirium (refer to
+Substance-Related Disorders for substance-
+specific codes)
+____.__ Substance Withdrawal Delirium (refer to
+Substance-Related Disorders for substance-
+specific codes)
+____.__ Delirium Due to Multiple Etiologies (code each of
+the specific etiologies)
+780.09 Delirium NOS 
+DEMENTIA 
+294.xx* Dementia of the Alzheimer’s Type, With Early
+Onset (also code 331.0 Alzheimer’s disease on
+Axis III)
+.10 Without Behavioral Disturbance
+.11 With Behavioral Disturbance
+294.xx
+* Dementia of the Alzheimer’s Type, With Late
+Onset (also code 331.0 Alzheimer’s disease on
+Axis III)
+.10 Without Behavioral Disturbance
+.11 With Behavioral Disturbance
+290.xx Vascular Dementia 
+.40 Uncomplicated
+.41 With Delirium
+.42 With Delusions
+.43 With Depressed Mood
+Specify if: With Behavioral Disturbance
+Code presence or absence of a behavioral disturbance in the
+fifth digit forDementia Due to a General Medical Condition:
+0 = Without Behavioral Disturbance
+1 = With Behavioral Disturbance
+294.1x* Dementia Due to HIV Disease (also code 042
+HIV on Axis III)
+294.1x* Dementia Due to Head Trauma (also code 042
+HIV on Axis III)
+294.1x* Dementia Due to Head Trauma (also code 854.00
+head injury on Axis III)
+294.1x* Dementia Due to Parkinson’s Disease (also code
+332.0 Parkinson’s disease on Axis III)
+294.1x* Dementia Due to Huntington’s Disease (also code
+333.4 Huntington’s disease on Axis III)
+294.1x* Dementia Due to Pick’s Disease (also code 331.1
+Pick’s disease on Axis III)
+294.1x* Dementia Due to Creutzfeldt-Jakob Disease 
+(also code 046.1 Creutzfeldt-Jakob disease on
+Axis III)
+294.1x
+* Dementia Due to . . . [Indicate the General
+Medical Condition not listed above] (also code
+the general medical condition on Axis III)
+____.__ Substance-Induced Persisting Dementia (refer to
+Substance-Related Disorders for substance-
+specific codes)
+____.__ Dementia Due to Multiple Etiologies (code each
+of the specific etiologies)
+294.8 Dementia NOS 
+AMNESTIC DISORDERS 
+294.0 Amnestic Disorder Due to . . . [Indicate the
+General Medical Condition]
+Specify if: Transient/Chronic
+____.__ Substance-Induced Persisting Amnestic Dis-
+order (refer to Substance-Related Disorders for
+substance-specific codes)
+294.8 Amnestic Disorder NOS 
+OTHER COGNITIVE DISORDERS 
+294.9 Cognitive Disorder NOS 
+Mental Disorders Due to a General Medical
+Condition Not Elsewhere Classified 
+293.89 Catatonic Disorder Due to . . . [Indicate the
+General Medical Condition]
+310.1 Personality Change Due to . . . [Indicate the
+General Medical Condition]
+Specify type: Labile Type/Disinhibited Type/Aggressive
+Type/Apathetic Type/Paranoid Type/Other
+Type/Combined Type/Unspecified Type
+293.9 Mental Disorder NOS Due to . . . [Indicate the
+General Medical Condition]
+Substance-Related Disorders 
+The following specifiers apply to Substance Dependence as
+noted:
+aWith Physiological Dependence/Without Physiological 
+Dependence
+bEarly Full Remission/Early Partial Remission/Sustained Full 
+Remission/Sustained Partial Remission
+cIn a Controlled Environment
+dOn Agonist Therapy
+The following specifiers apply to Substance-Induced
+Disorders as noted:
+IWith Onset During Intoxication/WWith Onset During 
+Withdrawal
+ALCOHOL-RELATED DISORDERS 
+Alcohol Use Disorders 
+303.90 Alcohol Dependence a,b,c
+305.00 Alcohol Abuse 
+Alcohol-Induced Disorders 
+303.00 Alcohol Intoxication 
+291.81 Alcohol Withdrawal 
+Specify if: With Perceptual Disturbances
+291.0 Alcohol Intoxication Delirium * ICD-9-CM code valid after October 1, 2000.
+
+
+--- PAGE 3 ---
+Appendix DSM-IV-TR Classification  I
+291.0 Alcohol Withdrawal Delirium 
+291.2 Alcohol-Induced Persisting Dementia 
+291.1 Alcohol-Induced Persisting Amnestic 
+Disorder 
+291.x Alcohol-Induced Psychotic Disorder 
+.5 With Delusions
+I,W
+.3 With Hallucinations I,W
+291.89 Alcohol-Induced Mood Disorder I,W
+291.89 Alcohol-Induced Anxiety Disorder I,W
+291.89 Alcohol-Induced Sexual Dysfunction I
+291.89 Alcohol-Induced Sleep Disorder I,W
+291.9 Alcohol-Related Disorder NOS 
+AMPHETAMINE (OR AMPHETAMINE-LIKE)–RELATED
+DISORDERS 
+Amphetamine Use Disorders 
+304.40 Amphetamine Dependence a,b,c
+305.70 Amphetamine Abuse 
+Amphetamine-Induced Disorders 
+292.89 Amphetamine Intoxication
+Specify if: With Perceptual Disturbances
+292.0 Amphetamine Withdrawal 
+292.81 Amphetamine Intoxication Delirium 
+292.xx Amphetamine-Induced Psychotic Disorder 
+.11 With Delusions
+I
+.12 With Hallucinations I
+292.84 Amphetamine-Induced Mood Disorder I,W
+292.89 Amphetamine-Induced Anxiety Disorder I
+292.89 Amphetamine-Induced Sexual Dysfunction I
+292.89 Amphetamine-Induced Sleep Disorder I,W
+292.9 Amphetamine-Related Disorder NOS 
+CAFFEINE-RELATED DISORDERS 
+Caffeine-Induced Disorders 
+305.90 Caffeine Intoxication 
+292.89 Caffeine-Induced Anxiety Disorder I
+292.89 Caffeine-Induced Sleep Disorder I
+292.9 Caffeine-Related Disorder NOS
+CANNABIS-RELATED DISORDERS 
+Cannabis Use Disorders 
+304.30 Cannabis Dependence a,b,c
+305.20 Cannabis Abuse 
+Cannabis-Induced Disorders
+292.89 Cannabis Intoxication 
+Specify if: With Perceptual Disturbance
+292.81 Cannabis Intoxication Delirium 
+292.xx Cannabis-Induced Psychotic Disorder 
+.11 With Delusions I
+.12 With Hallucinations I
+292.89 Cannabis-Induced Anxiety Disorder I
+292.9 Cannabis-Related Disorder NOS 
+COCAINE-RELATED DISORDERS 
+Cocaine Use Disorders 
+304.20 Cocaine Dependence a,b,c
+305.60 Cocaine Abuse 
+Cocaine-Induced Disorders 
+292.89 Cocaine Intoxication 
+Specify if: With Perceptual Disturbances
+292.0 Cocaine Withdrawal 
+292.81 Cocaine Intoxication Delirium 
+292.xx Cocaine-Induced Psychotic Disorder 
+.11 With Delusions
+I
+.12 With Hallucinations I
+292.84 Cocaine-Induced Mood Disorder I,W
+292.89 Cocaine-Induced Anxiety Disorder I,W
+292.89 Cocaine-Induced Sexual Dysfunction I
+292.89 Cocaine-Induced Sleep Disorder I,W
+292.9 Cocaine-Related Disorder NOS
+HALLUCINOGEN-RELATED DISORDERS 
+Hallucinogen Use Disorders 
+304.50 Hallucinogen Dependence b,c
+305.30 Hallucinogen Abuse 
+Hallucinogen-Induced Disorders 
+292.89 Hallucinogen Intoxication 
+292.89 Hallucinogen Persisting Perception Disorder
+(Flashbacks) 
+292.81 Hallucinogen Intoxication Delirium 
+292.xx Hallucinogen-Induced Psychotic Disorder 
+.11 With Delusions
+I
+.12 With Hallucinations I
+292.84 Hallucinogen-Induced Mood Disorder I
+292.89 Hallucinogen-Induced Anxiety Disorder I
+292.9 Hallucinogen-Related Disorder NOS 
+INHALANT-RELATED DISORDERS 
+Inhalant Use Disorders 
+304.60 Inhalant Dependence b,c
+305.90 Inhalant Abuse 
+Inhalant-Induced Disorders 
+292.89 Inhalant Intoxication 
+292.81 Inhalant Intoxication Delirium 
+292.82 Inhalant-Induced Persisting Dementia 
+292.xx Inhalant-Induced Psychotic Disorder
+.11 With Delusions
+I
+.12 With Hallucinations I
+292.84 Inhalant-Induced Mood Disorder I
+292.89 Inhalant-Induced Anxiety Disorder I
+292.9 Inhalant-Related Disorder NOS 
+NICOTINE-RELATED DISORDERS 
+Nicotine Use Disorder 
+305.1 Nicotine Dependence a,b
+Nicotine-Induced Disorder 
+292.0 Nicotine Withdrawal 
+292.9 Nicotine-Related Disorder NOS 
+OPIOID-RELATED DISORDERS 
+Opioid Use Disorders 
+304.00 Opioid Dependence a,b,c,d
+305.50 Opioid Abuse
+
+
+--- PAGE 4 ---
+I Appendix DSM-IV-TR Classification
+Opioid-Induced Disorders 
+292.89 Opioid Intoxication 
+Specify if: With Perceptual Disturbances
+292.0 Opioid Withdrawal 
+292.81 Opioid Intoxication Delirium 
+292.xx Opioid-Induced Psychotic Disorder 
+.11 With Delusions
+I
+.12 With Hallucinations I
+292.84 Opioid-Induced Mood Disorder I
+292.89 Opioid-Induced Sexual Dysfunction I
+292.89 Opioid-Induced Sleep Disorder I,W
+292.9 Opioid-Related Disorder NOS 
+PHENCYCLIDINE (OR PHENCYCLIDINE-LIKE)–RELATED
+DISORDERS 
+Phencyclidine Use Disorders 
+304.60 Phencyclidine Dependence b,c
+305.90 Phencyclidine Abuse 
+Phencyclidine-Induced Disorders 
+292.89 Phencyclidine Intoxication 
+Specify if: With Perceptual Disturbances
+292.81 Phencyclidine Intoxication Delirium 
+292.xx Phencyclidine-Induced Psychotic 
+Disorder 
+.11 With Delusions I
+.12 With Hallucinations I
+292.84 Phencyclidine-Induced Mood Disorder I
+292.89 Phencyclidine-Induced Anxiety Disorder I
+292.9 Phencyclidine-Related Disorder NOS 
+SEDATIVE-, HYPNOTIC-, OR ANXIOLYTIC-RELATED
+DISORDERS 
+Sedative, Hypnotic, or Anxiolytic Use Disorders 
+304.10 Sedative, Hypnotic, or Anxiolytic 
+Dependencea,b,c
+305.40 Sedative, Hypnotic, or Anxiolytic Abuse
+Sedative-, Hypnotic-, or Anxiolytic-Induced Disorders 
+292.89 Sedative, Hypnotic, or Anxiolytic 
+Intoxication
+292.0 Sedative, Hypnotic, or Anxiolytic 
+Withdrawal 
+Specify if: With Perceptual Disturbances
+292.81 Sedative, Hypnotic, or Anxiolytic Intoxication
+Delirium 
+292.81 Sedative, Hypnotic, or Anxiolytic Withdrawal
+Delirium 
+292.82 Sedative, Hypnotic, or Anxiolytic-Induced
+Persisting Dementia 
+292.83 Sedative-, Hypnotic-, or Anxiolytic-Induced
+Persisting Amnestic Disorder 
+292.xx Sedative-, Hypnotic-, or Anxiolytic-Induced
+Psychotic Disorder 
+.11 With Delusions I,W
+.12 With Hallucinations I,W
+292.84 Sedative-, Hypnotic-, or Anxiolytic-Induced Mood
+DisorderI,W
+292.89 Sedative-, Hypnotic-, or Anxiolytic-Induced
+Anxiety DisorderW
+292.89 Sedative-, Hypnotic-, or Anxiolytic-Induced
+Sexual DysfunctionI
+292.89 Sedative-, Hypnotic, or Anxiolytic-Induced Sleep
+DisorderI,W
+292.9 Sedative-, Hypnotic, or Anxiolytic-Related
+Disorder NOS 
+POLYSUBSTANCE-RELATED DISORDER 
+304.80 Polysubstance Dependence a,b,c,d
+OTHER (OR UNKNOWN) SUBSTANCE-RELATED 
+DISORDERS 
+Other (or Unknown) Substance Use Disorders
+304.90 Other (or Unknown) Substance 
+Dependencea,b,c,d
+305.90 Other (or Unknown) Substance Abuse 
+Other (or Unknown) Substance-Induced Disorders 
+292.89 Other (or Unknown) Substance Intoxication 
+Specify if: With Perceptual Disturbances
+292.0 Other (or Unknown) Substance Withdrawal 
+Specify if: With Perceptual Disturbances
+292.81 Other (or Unknown) Substance-Induced 
+Delirium 
+292.82 Other (or Unknown) Substance-Induced Persisting
+Dementia 
+292.83 Other (or Unknown) Substance-Induced Persisting
+Amnestic Disorder 
+292.xx Other (or Unknown) Substance-Induced Psychotic
+Disorder 
+.11 With Delusions I,W
+.12 With Hallucinations I,W
+292.84 Other (or Unknown) Substance-Induced Mood
+DisorderI,W
+292.89 Other (or Unknown) Substance-Induced Anxiety
+DisorderI,W
+292.89 Other (or Unknown) Substance-Induced Sexual
+DysfunctionI
+292.89 Other (or Unknown) Substance-Induced Sleep
+DisorderI,W
+292.9 Other (or Unknown) Substance-Related Disorder
+NOS 
+POLYSUBSTANCE-RELATED DISORDER 
+304.80 Polysubstance Dependence a,b,c,d
+OTHER (OR UNKNOWN) SUBSTANCE-RELATED DISORDERS 
+Other (or Unknown) Substance Use Disorders 
+304.90 Other (or Unknown) Substance 
+Dependencea,b,c,d
+305.90 Other (or Unknown) Substance Abuse 
+Other (or Unknown) Substance-Induced Disorders 
+292.89 Other (or Unknown) Substance Intoxication 
+Specify if: With Perceptual Disturbances
+292.0 Other (or Unknown) Substance Withdrawal 
+Specify if: With Perceptual Disturbances
+
+
+--- PAGE 5 ---
+Appendix DSM-IV-TR Classification  I
+292.81 Other (or Unknown) Substance-Induced 
+Delirium 
+292.82 Other (or Unknown) Substance-Induced Persisting
+Dementia 
+292.83 Other (or Unknown) Substance-Induced Persisting
+Amnestic Disorder 
+292.xx Other (or Unknown) Substance-Induced Psychotic
+Disorder 
+.11 With Delusions I,W
+.12 With Hallucinations I,W
+292.84 Other (or Unknown) Substance-Induced Mood
+DisorderI,W
+292.89 Other (or Unknown) Substance-Induced Anxiety
+DisorderI,W
+292.89 Other (or Unknown) Substance-Induced Sexual
+DysfunctionI
+292.89 Other (or Unknown) Substance-Induced Sleep
+DisorderI,W
+292.9 Other (or Unknown) Substance-Related Disorder
+NOS 
+Schizophrenia and Other Psychotic 
+Disorders 
+295.xx Schizophrenia 
+The following Classification of Longitudinal Course applies
+to all subtypes of Schizophrenia:
+Episodic With Interepisode Residual Symptoms (Specify if:
+With Prominent Negative Symptoms)/Episodic With No
+Interepisode Residual Symptoms
+Continuous (Specify if: With Prominent Negative Symptoms)
+Single Episode in Partial Remission (Specify if: With Prominent 
+Negative Symptoms)/Single Episode in Full Remission
+Other or Unspecified Pattern
+.30 Paranoid Type 
+.10 Disorganized Type 
+.20 Catatonic Type 
+.90 Undifferentiated Type 
+.60 Residual Type 
+295.40 Schizophreniform Disorder 
+Specify if: Without Good Prognostic Features/With Good
+Prognostic Features
+295.70 Schizoaffective Disorder 
+Specify type: Bipolar Type/Depressive Type
+297.1 Delusional Disorder 
+Specify type: Erotomanic Type/Grandiose Type/Jealous
+Type/Persecutory Type/Somatic Type/Mixed
+Type/Unspecified Type
+298.8 Brief Psychotic Disorder 
+Specify if: With Marked Stressor(s)/Without Marked
+Stressor(s)/With Postpartum Onset
+297.3 Shared Psychotic Disorder 
+293.xx Psychotic Disorder Due to . . . [Indicate the
+General Medical Condition]
+.81 With Delusions
+.82 With Hallucinations
+____.__ Substance-Induced Psychotic Disorder (refer to
+Substance-Related Disorders for substance-
+specific codes)
+Specify if: With Onset During Intoxication/With Onset
+During Withdrawal
+298.9 Psychotic Disorder NOS 
+Mood Disorders 
+Code current state of Major Depressive Disorder or Bipolar
+I Disorder in fifth digit:
+1 = Mild
+2 = Moderate
+3 = Severe Without Psychotic Features
+4 = Severe With Psychotic Features
+Specify: Mood-Congruent Psychotic Features/Mood-
+Incongruent Psychotic Features
+5 = In Partial Remission
+6 = In Full Remission
+0 = Unspecified
+The following specifiers apply (for current or most recent
+episode) to Mood Disorders as noted:
+aSeverity/Psychotic/Remission Specifiers/bChronic/cWith 
+Catatonic Features/dWith Melancholic Features/eWIth
+Atypical Features/fWith Postpartum Onset
+The following specifiers apply to Mood Disorders as noted:
+gWith or Without Full Interepisode Recovery/hWith Seasonal 
+Pattern/iWith Rapid Cycling
+DEPRESSIVE DISORDERS 
+296.xx Major Depressive Disorder 
+.2x Single Episode a,b,c,d,e,f
+.3x Recurrent a,b,c,d,e,f,g,h
+300.4 Dysthymic Disorder 
+Specify if: Early Onset/Late Onset
+Specify if: With Atypical Features
+311 Depressive Disorder NOS 
+BIPOLAR DISORDERS 
+296.xx Bipolar I Disorder 
+.0x Single Manic Episode a,c,f
+Specify if: Mixed
+.40 Most Recent Episode Hypomanic g,h,i
+.4x Most Recent Episode Manic a,c,f,g,h,i
+.6x Most Recent Episode Mixed a,c,f,g,h,i
+.5x Most Recent Episode Depressed a,b,c,d,e,f,g,h,i
+.7 Most Recent Episode Unspecified g,h,i
+296.89 Bipolar II Disorder a,b,c,d,e,f,g,h,i
+Specify (current or most recent episode):
+Hypomanic/Depressed
+301.13 Cyclothymic Disorder 
+296.80 Bipolar Disorder NOS 
+293.83 Mood Disorder Due to . . . [Indicate the General
+Medical Condition]
+Specify type: With Depressive Features/With Major
+Depressive-Like Episode/With Manic Features/With
+Mixed Features
+
+
+--- PAGE 6 ---
+I Appendix DSM-IV-TR Classification
+____.__ Substance-Induced Mood Disorder (refer to
+Substance-Related Disorders for substance-
+specific codes)
+Specify type: With Depressive Features/With Manic
+Features/With Mixed Features
+Specify if: With Onset During Intoxication/With Onset
+During Withdrawal
+296.90 Mood Disorder NOS 
+Anxiety Disorders 
+300.01 Panic Disorder Without Agoraphobia 
+300.21 Panic Disorder With Agoraphobia 
+300.22 Agoraphobia Without History of Panic 
+Disorder 
+300.29 Specific Phobia 
+Specify type: Animal Type/Natural Environment Type/
+Blood-Injection-Injury Type/Situational Type/Other Type
+300.23 Social Phobia 
+Specify if: Generalized
+300.3 Obsessive-Compulsive Disorder 
+Specify if: With Poor Insight
+309.81 Posttraumatic Stress Disorder 
+Specify if: Acute/Chronic
+Specify if: With Delayed Onset
+308.3 Acute Stress Disorder 
+300.02 Generalized Anxiety Disorder 
+293.84 Anxiety Disorder Due to . . . [Indicate the
+General Medical Condition]
+Specify if: With Generalized Anxiety/With Panic
+Attacks/With Obsessive-Compulsive Symptoms
+____.__ Substance-Induced Anxiety Disorder (refer to
+Substance-Related Disorders for substance-
+specific codes)
+Specify if: With Generalized Anxiety/With Panic
+Attacks/With Obsessive-Compulsive Symptoms/With
+Phobic Symptoms
+Specify if: With Onset During Intoxication/With Onset
+During Withdrawal
+300.00 Anxiety Disorder NOS 
+SOMATOFORM DISORDERS
+300.81 Somatization Disorder 
+300.82 Undifferentiated Somatoform Disorder 
+300.11 Conversion Disorder 
+Specify type: With Motor Symptom or Deficit/With
+Sensory Symptom or Deficit/With Seizures or
+Convulsions/With Mixed Presentation
+307.xx Pain Disorder 
+.80 Associated With Psychological Factors
+.89 Associated With Both Psychological Factors and
+a General Medical Condition
+Specify if: Acute/Chronic
+300.7 Hypochondriasis 
+Specify if: With Poor Insight
+300.7 Body Dysmorphic Disorder 
+300.82 Somatoform Disorder NOS 
+Factitious Disorders 
+300.xx Factitious Disorder 
+.16 With Predominantly Psychological Signs and
+Symptoms
+.19 With Predominantly Physical Signs and Symptoms
+.19 With Combined Psychological and Physical
+Signs and Symptoms
+300.19 Factitious Disorder NOS 
+Dissociative Disorders 
+300.12 Dissociative Amnesia 
+300.13 Dissociative Fugue 
+300.14 Dissociative Identity Disorder 
+300.6 Depersonalization Disorder 
+300.15 Dissociative Disorder NOS 
+Sexual and Gender Identity Disorders 
+SEXUAL DYSFUNCTIONS 
+The following specifiers apply to all primary Sexual
+Dysfunctions:
+Lifelong Type/Acquired Type
+Generalized Type/Situational Type
+Due to Psychological Factors/Due to Combined Factors
+SEXUAL DESIRE DISORDERS 
+302.71 Hypoactive Sexual Desire Disorder 
+302.79 Sexual Aversion Disorder 
+SEXUAL AROUSAL DISORDERS 
+302.72 Female Sexual Arousal Disorder 
+302.72 Male Erectile Disorder 
+ORGASMIC DISORDERS 
+302.73 Female Orgasmic Disorder 
+302.74 Male Orgasmic Disorder 
+302.75 Premature Ejaculation 
+SEXUAL PAIN DISORDERS 
+302.76 Dyspareunia (Not Due to a General Medical
+Condition) 
+306.51 Vaginismus (Not Due to a General Medical
+Condition) 
+SEXUAL DYSFUNCTION DUE TO A GENERAL MEDICAL
+CONDITION 
+625.8 Female Hypoactive Sexual Desire Disorder Due to 
+...  [Indicate the General Medical Condition]
+608.89 Male Hypoactive Sexual Desire Disorder Due to 
+...  [Indicate the General Medical Condition]
+607.84 Male Erectile Disorder Due to . . . [Indicate the
+General Medical Condition]
+625.0 Female Dyspareunia Due to . . . [Indicate the
+General Medical Condition]
+608.89 Male Dyspareunia Due to . . . [Indicate the
+General Medical Condition]
+625.8 Other Female Sexual Dysfunction Due to . . .
+[Indicate the General Medical Condition]
+608.89 Other Male Sexual Dysfunction Due to . . .
+[Indicate the General Medical Condition]
+
+
+--- PAGE 7 ---
+Appendix DSM-IV-TR Classification  I
+____.__ Substance-Induced Sexual Dysfunction (refer to
+Substance-Related Disorders for substance-
+specific codes)
+Specify if: With Impaired Desire/With Impaired
+Arousal/With Impaired Orgasm/With Sexual Pain
+Specify if: With Onset During Intoxication
+302.70 Sexual Dysfunction NOS 
+PARAPHILIAS 
+302.4 Exhibitionism 
+302.81 Fetishism 
+302.89 Frotteurism 
+302.2 Pedophilia 
+Specify if: Sexually Attracted to Males/Sexually Attracted
+to Females/Sexually Attracted to Both
+Specify if: Limited to Incest
+Specify type: Exclusive Type/Nonexclusive Type
+302.83 Sexual Masochism 
+302.84 Sexual Sadism 
+302.3 Transvestic Fetishism 
+Specify if: With Gender Dysphoria
+302.82 Voyeurism 
+302.9 Paraphilia NOS 
+GENDER IDENTITY DISORDERS 
+302.xx Gender Identity Disorder 
+.6 in Children
+.85 in Adolescents or Adults
+Specify if: Sexually Attracted to Males/Sexually Attracted
+to Females/Sexually Attracted to Both/Sexually Attracted
+to Neither
+302.6 Gender Identity Disorder NOS 
+302.9 Sexual Disorder NOS 
+Eating Disorders 
+307.1 Anorexia Nervosa 
+Specify type: Restricting Type; Binge-Eating/Purging Type
+307.51 Bulimia Nervosa 
+Specify type: Purging Type/Nonpurging Type
+307.50 Eating Disorder NOS 
+Sleep Disorders 
+PRIMARY SLEEP DISORDERS 
+Dyssomnias 
+307.42 Primary Insomnia 
+307.44 Primary Hypersomnia 
+Specify if: Recurrent
+347 Narcolepsy 
+780.59 Breathing-Related Sleep Disorder 
+307.45 Circadian Rhythm Sleep Disorder 
+Specify type: Delayed Sleep Phase Type/Jet Lag
+Type/Shift Work Type/Unspecified Type
+307.47 Dyssomnia NOS 
+Parasomnias 
+307.47 Nightmare Disorder 
+307.46 Sleep Terror Disorder 
+307.46 Sleepwalking Disorder 
+307.47 Parasomnia NOS 
+SLEEP DISORDERS RELATED TO ANOTHER MENTAL 
+DISORDER 
+307.42 Insomnia Related to . . . [Indicate the Axis I or
+Axis II Disorder]
+307.44 Hypersomnia Related to . . . [Indicate the Axis I
+or Axis II Disorder]
+OTHER SLEEP DISORDERS 
+780.xx Sleep Disorder Due to . . . [Indicate the General
+Medical Condition]
+.52 Insomnia Type
+.54 Hypersomnia Type
+.59 Parasomnia Type
+.59 Mixed Type
+____.__ Substance-Induced Sleep Disorder (refer to
+Substance-Related Disorders for substance-
+specific codes)
+Specify type: Insomnia Type/Hypersomnia
+Type/Parasomnia Type/Mixed Type
+Specify if: With Onset During Intoxication/With Onset
+During Withdrawal
+Impulse-Control Disorders Not Elsewhere 
+Classified 
+312.34 Intermittent Explosive Disorder 
+312.32 Kleptomania 
+312.33 Pyromania 
+312.31 Pathological Gambling 
+312.39 Trichotillomania 
+312.30 Impulse-Control Disorder NOS 
+Adjustment Disorders 
+309.xx Adjustment Disorder 
+.0 With Depressed Mood
+.24 With Anxiety
+.28 With Mixed Anxiety and Depressed Mood
+.3 With Disturbance of Conduct
+.4 With Mixed Disturbance of Emotions and Condut
+.9 Unspecified
+Specify if: Acute/Chronic
+Personality Disorders
+Note: These are coded on Axis II.
+301.0 Paranoid Personality Disorder 
+301.20 Schizoid Personality Disorder 
+301.22 Schizotypal Personality Disorder 
+301.7 Antisocial Personality Disorder 
+301.83 Borderline Personality Disorder 
+301.50 Histrionic Personality Disorder 
+301.81 Narcissistic Personality Disorder 
+301.82 Avoidant Personality Disorder 
+301.6 Dependent Personality Disorder 
+301.4 Obsessive-Compulsive Personality Disorder 
+301.9 Personality Disorder NOS
+
+
+--- PAGE 8 ---
+I Appendix DSM-IV-TR Classification
+Other Conditions That May Be a Focus of Clinical
+Attention 
+PSYCHOLOGICAL FACTORS AFFECTING MEDICAL
+CONDITION 
+316 . . . [Specified Psychological Factor] Affecting . .
+. [Indicate the General Medical Condition]
+Choose name based on nature of factors:
+Mental Disorder Affecting Medical Condition
+Psychological Symptoms Affecting Medical 
+Condition
+Personality Traits or Coping Style Affecting 
+Medical Condition
+Maladaptive Health Behaviors Affecting Medical 
+Condition
+Stress-Related Physiological Response Affecting 
+Medical Condition
+Other or Unspecified Psychological Factors 
+Affecting Medical Condition
+MEDICATION-INDUCED MOVEMENT DISORDERS 
+332.1 Neuroleptic-Induced Parkinsonism 
+333.92 Neuroleptic Malignant Syndrome 
+333.7 Neuroleptic-Induced Acute Dystonia 
+333.99 Neuroleptic-Induced Acute Akathisia 
+333.82 Neuroleptic-Induced Tardive Dyskinesia 
+333.1 Medication-Induced Postural Tremor 
+333.90 Medication-Induced Movement Disorder NOS 
+OTHER MEDICATION-INDUCED DISORDER 
+995.2 Adverse Effects of Medication NOS 
+RELATIONAL PROBLEMS 
+V61.9 Relational Problem Related to a Mental Disorder
+or General Medical Condition 
+V61.20 Parent-Child Relational Problem 
+V61.10 Partner Relational Problem 
+V61.8 Sibling Relational Problem 
+V62.81 Relational Problem NOS 
+PROBLEMS RELATED TO ABUSE OR NEGLECT 
+V61.21 Physical Abuse of Child 
+(code 995.54 if focus of attention is on victim)
+V61.21 Sexual Abuse of Child 
+(code 995.53 if focus of attention is on victim)
+V61.21 Neglect of Child 
+(code 995.52 if focus of attention is on victim)
+____.__ Ph ysical Abuse of Adult 
+V61.12 (if by partner)
+V62.83 (if by person other than partner) (code 995.81 if
+focus of attention is on victim)
+____.__ Sexual Abuse of Adult 
+V61.12 (if by partner)
+V62.83 (if by person other than partner) (code 995.83 if
+focus of attention is on victim)
+ADDITIONAL CONDITIONS THAT MAY BE A FOCUS 
+OF CLINICAL ATTENTION 
+V15.81 Noncomplicance With Treatment 
+V65.2 Malingering 
+V71.01 Adult Antisocial Behavior 
+V71.02 Child or Adolescent Antisocial Behavior 
+V62.89 Borderline Intellectual Functioning 
+Note: This is coded on Axis II.
+780.9 Age-Related Cognitive Decline 
+V62.82 Bereavement 
+V62.3 Academic Problem 
+V62.2 Occupational Problem 
+313.82 Identity Problem 
+V62.89 Religious or Spiritual Problem 
+V62.4 Acculturation Problem 
+V62.89 Phase of Life Problem 
+Additional Codes 
+300.9 Unspecified Mental Disorder (nonpsychotic) 
+V71.09 No Diagnosis or Condition on Axis I 
+799.9 Diagnosis or Condition Deferred on Axis I 
+V71.09 No Diagnosis on Axis II 
+799.9 Diagnosis Deferred on Axis II 
+Multiaxial System
+Axis I Clinical Disorders
+Other Conditions That May Be a Focus of Clinical
+Attention
+Axis II Personality Disorders
+Mental Retardation
+Axis III General Medical Conditions
+Axis IV Psychosocial and Environmental Problems
+Axis V Global Assessment of Functioning
+
+
+--- PAGE 9 ---
+MULTIAXIAL ASSESSMENT
+A multiaxial system involves an assessment on several
+axes, each of which refers to a different domain of infor-
+mation that may help the clinician plan treatment and
+predict outcome. There are five axes included in the
+DSM-IV multiaxial classification:
+Axis I Clinical Disorders
+Other Conditions That May Be a Focus of Clinical
+Attention
+Axis II Personality Disorders
+Mental Retardation
+Axis III General Medical Conditions
+Axis IV Psychosocial and Environmental Problems
+Axis V Global Assessment of Functioning
+The use of the multiaxial system facilitates compre-
+hensive and systematic evaluation with attention to the
+various mental disorders and general medical conditions,
+psychosocial and environmental problems, and level of
+functioning that might be overlooked if the focus were on
+assessing a single presenting problem. A multiaxial system
+provides a convenient format for organizing and commu-
+nicating clinical information, for capturing the complex-
+ity of clinical situations, and for describing the hetero-
+geneity of individuals presenting with the same diagnosis.
+In addition, the multiaxial system promotes the applica-
+tion of the biopsychosocial model in clinical, educational,
+and research settings.
+The rest of this section provides a description of each
+of the DSM-IV axes. In some settings or situations, clini-
+cians may prefer not to use the multiaxial system. For this
+reason, guidelines for reporting the results of a DSM-IV
+assessment without applying the formal multiaxial system
+are provided at the end of this section.
+AXIS I: Clinical Disorders—
+Other Conditions That May Be 
+a Focus of Clinical Attention
+Axis I is for reporting all the various disorders or conditions
+in the Classification except for the Personality Disorders
+and Mental Retardation (which are reported on Axis II).
+The major groups of disorders to be reported on Axis I are
+listed in the box below. Also reported on Axis I are Other
+Conditions That May Be a Focus of Clinical Attention.
+When an individual has more than one Axis I disorder,
+all of these should be reported. If more than one Axis I
+disorder is present, the principal diagnosis or the reason
+for visit should be indicated by listing it first. When an
+individual has both an Axis I and an Axis II disorder, the
+principal diagnosis or the reason for visit will be assumed
+to be on Axis I unless the Axis II diagnosis is followed by
+the qualifying phrase “(Principal Diagnosis)” or “(Reason
+for Visit).” If no Axis I disorder is present, this should be
+coded as V71.09. If an Axis I diagnosis is deferred, pend-
+ing the gathering of additional information, this should
+be coded as 799.9.
+AXIS II: Personality Disorders
+and Mental Retardation
+Axis II is for reporting Personality Disorders and Mental
+Retardation. It may also be used for noting prominent mal-
+adaptive personality features and defense mechanisms. The
+Clinical Disorders
+AXIS I
+Other Conditions That May Be a Focus 
+of Clinical Attention
+Disorders Usually First Diagnosed in Infancy,
+Childhood, or Adolescence (excluding Mental
+Retardation, which is diagnosed on Axis II)
+Delirium, Dementia, and Amnestic and Other
+Cognitive Disorders
+Mental Disorders Due to a General Medical
+Condition
+Substance-Related Disorders
+Schizophrenia and Other Psychotic Disorders
+Mood Disorders
+Anxiety Disorders
+Somatoform Disorders
+Factitious Disorders
+Dissociative Disorders
+Sexual and Gender Identity Disorders
+Eating Disorders
+Sleep Disorders
+Impulse-Control Disorders Not Elsewhere
+Classified
+Adjustment Disorders
+Other Conditions That May Be a Focus of Clinical
+Attention
+
+
+--- PAGE 10 ---
+I Appendix DSM-IV-TR Classification
+listing of Personality Disorders and Mental Retardation on
+a separate axis ensures that consideration will be given to
+the possible presence of Personality Disorders and Mental
+Retardation that might otherwise be overlooked when
+attention is directed to the usually more florid Axis I disor-
+ders. The coding of Personality Disorders on Axis II should
+not be taken to imply that their pathogenesis or range of
+appropriate treatment is fundamentally different from that
+for the disorders coded on Axis I. The disorders to be
+reported on Axis II are listed in the box below.
+In the common situation in which an individual has
+more than one Axis II diagnosis, all should be reported.
+When an individual has both an Axis I and an Axis II
+diagnosis and the Axis II diagnosis is the principal diag-
+nosis or the reason for visit, this should be indicated by
+adding the qualifying phrase “(Principal Diagnosis)” or
+“(Reason for Visit)” after the Axis II diagnosis. If no Axis
+II disorder is present, this should be coded as V71.09. If
+an Axis II diagnosis is deferred, pending the gathering of
+additional information, this should be coded as 799.9.
+Axis II may also be used to indicate prominent mal-
+adaptive personality features that do not meet the thresh-
+old for a Personality Disorder (in such instances, no code
+number should be used). The habitual use of maladaptive
+defense mechanisms may also be indicated on Axis II.
+AXIS III: General Medical
+Conditions
+Axis III is for reporting current general medical conditions
+that are potentially relevant to the understanding or man-
+agement of the individual’s mental disorder. These condi-
+tions are classified outside the “Mental Disorders” chapter
+of ICD-9-CM (and outside Chapter V of ICD-10). A list-
+ing of the broad categories of general medical conditions is
+given in the box below. 
+As discussed in the “Introduction,” the multiaxial dis-
+tinction among Axis I, Axis II, and Axis III disorders does
+not imply that there are fundamental differences in their
+conceptualization, that mental disorders are unrelated to
+physical or biological factors or processes, or that general
+medical conditions are unrelated to behavioral or psy-
+chosocial factors or processes. The purpose of distin-
+guishing general medical conditions is to encourage thor-
+oughness in evaluation and to enhance communication
+among health care providers.
+General medical conditions can be related to mental
+disorders in a variety of ways. In some cases it is clear that
+the general medical condition is directly etiological to the
+development or worsening of mental symptoms and that
+the mechanism for this effect is physiological. When a
+mental disorder is judged to be a direct physiological con-
+sequence of the general medical condition, a Mental
+Disorder Due to a General Medical Condition should be
+diagnosed on Axis I and the general medical condition
+should be recorded on both Axis I and Axis III. For exam-
+ple, when hypothyroidism is a direct cause of depressive
+symptoms, the designation on Axis I is 293.83 Mood
+Disorder Due to Hypothyroidism, With Depressive
+Features, and the hypothyroidism is listed again and
+coded on Axis III as 244.9.
+In those instances in which the etiological relationship
+between the general medical condition and the mental
+symptoms is insufficiently clear to warrant an Axis I diag-
+nosis of Mental Disorder Due to a General Medical
+Condition, the appropriate mental disorder (e.g., Major
+Depressive Disorder) should be listed and coded on Axis
+I; the general medical condition should only be coded on
+Axis III.
+There are other situations in which general medical
+conditions are recorded on Axis III because of their
+importance to the overall understanding or treatment of
+the individual with the mental disorder. An Axis I disor-
+der may be a psychological reaction to an Axis III general
+medical condition (e.g., the development of 309.0
+Adjustment Disorder With Depressed Mood as a reaction
+Personality Disorders
+AXIS II
+Mental Retardation
+Paranoid Personality Narcissistic Personality 
+Disorder Disorder
+Schizoid Personality Avoidant Personality 
+Disorder Disorder
+Schizotypal Personality Dependent Personality 
+Disorder Disorder
+Antisocial Personality Obsessive-Compulsive 
+Disorder Personality disorder
+Borderline Personality Personality Disorder 
+Disorder Not Otherwise 
+Specified
+Histrionic Personality Mental Retardation
+Disorder
+
+
+--- PAGE 11 ---
+Appendix DSM-IV-TR Classification  I
+to the diagnosis of carcinoma of the breast). Some general
+medical conditions may not be directly related to the
+mental disorder but nonetheless have important prognos-
+tic or treatment implications (e.g., when the diagnosis on
+Axis I is 296.30 Major Depressive Disorder, Recurrent,
+and on Axis III is 427.9 arrhythmia, the choice of phar-
+macotherapy is influenced by the general medical condi-
+tion; or when a person with diabetes mellitus is admitted
+to the hospital for an exacerbation of Schizophrenia and
+insulin management must be monitored).
+When an individual has more than one clinically rele-
+vant Axis III diagnosis, all should be reported. If no Axis
+III disorder is present, this should be indicated by the
+notation “Axis III: None.” If an Axis III diagnosis is
+deferred, pending the gathering of additional informa-
+tion, this should be indicated by the notation “Axis III:
+Deferred.”
+AXIS IV: Psychosocial and
+Environmental Problems
+Axis IV is for reporting psychosocial and environmental
+problems that may affect the diagnosis, treatment, and
+prognosis of mental disorders (Axes I and II). A psy-
+chosocial or environmental problem may be a negative
+life event, an environmental difficulty or deficiency, a
+familial or other interpersonal stress, an inadequacy of
+social support or personal resources, or other problem
+relating to the context in which a person’s difficulties have
+developed. So-called positive stressors, such as job pro-
+motion, should be listed only if they constitute or lead to
+a problem, as when a person has difficulty adapting to the
+new situation. In addition to playing a role in the initia-
+tion or exacerbation of a mental disorder, psychosocial
+problems may also develop as a consequence of a person’s
+psychopathology or may constitute problems that should
+be considered in the overall management plan.
+When an individual has multiple psychosocial or envi-
+ronmental problems, the clinician may note as many as
+are judged to be relevant. In general, the clinician should
+note only those psychosocial and environmental prob-
+lems that have been present during the year preceding the
+current evaluation. However, the clinician may choose to
+note psychosocial and environmental problems occurring
+prior to the previous year if these clearly contribute to the
+mental disorder or have become a focus of treatment—
+for example, previous combat experiences leading to
+Posttraumatic Stress Disorder.
+In practice, most psychosocial and environmental
+problems will be indicated on Axis IV . However, when a
+psychosocial or environmental problem is the primary
+focus of clinical attention, it should also be recorded on
+Axis I, with a code derived from the section “Other
+Conditions That May Be a Focus of Clinical Attention.”
+For convenience, the problems are grouped together in
+the following categories:
+I Problems with primary support group—e.g., death
+of a family member; health problems in family; dis-
+ruption of family by separation, divorce, or estrange-
+ment; removal from the home; remarriage of parent;
+sexual or physical abuse; parental overprotection;
+neglect of child; inadequate discipline; discord with
+siblings; birth of a sibling
+I Problems related to the social environment—e.g.,
+death or loss of friend; inadequate social support; liv-
+ing alone; difficulty with acculturation; discrimina-
+tion; adjustment of life-cycle transition (such as
+retirement)
+General Medical Conditions 
+(with ICD-9-CM codes)
+AXIS III
+Infectious and Parasitic Diseases (001–139)
+Neoplasms (140–239)
+Endocrine, Nutritional, and Metabolic Diseases
+and immunity Disorders (240–279)
+Diseases of the Blood and Blood-Forming Organs
+(280–289)
+Diseases of the Nervous System and Sense
+Organs (320–389)
+Diseases of the Circulatory System (390–459)
+Diseases of the Respiratory System (460–519)
+Diseases of the Digestive System (520–579)
+Diseases of the Genitourinary System (580–629)
+Complications of Pregnancy, Childbirth, and the
+Puerperium (630–676)
+Diseases of the Skin and Subcutaneous Tissue
+(680–709)
+Diseases of the Musculoskeletal System and
+Connective Tissue (710–739)
+Congenital Anomalies (740–759)
+Certain Conditions Originating in the Perinatal
+Period (760–779)
+Symptoms, Signs, and Ill-Defined Conditions
+(780–799)
+Injury and Poisoning (800–999)
+
+
+--- PAGE 12 ---
+I Appendix DSM-IV-TR Classification
+I Educational problems—e.g., illiteracy; academic
+problems; discord with teachers or classmates; inade-
+quate school environment
+I Occupational problems—e.g., unemployment; threat
+of job loss; stressful work schedule; difficult work
+conditions; job dissatisfaction; job change; discord
+with boss or co-workers
+I Housing problems—e.g., homelessness; inadequate
+housing; unsafe neighborhood; discord with neigh-
+bors or landlord
+I Economic problems—e.g., extreme poverty; inade-
+quate finances; insufficient welfare support
+I Problems with access to health care services—e.g.,
+inadequate health care services; transportation to health
+care facilities unavailable; inadequate health insurance
+I Problems related to interaction with the legal sys-
+tem/crime—e.g., arrest; incarceration; litigation; vic-
+tim of crime
+I Other psychosocial and environmental problems—
+e.g., exposure to disasters, war, other hostilities; dis-
+cord with nonfamily caregivers such as counselor,
+social worker, or physician; unavailability of social
+service agencies
+When using the Multiaxial Evaluation Report Form,
+the clinician should identify the relevant categories of
+psychosocial and environmental problems and indicate
+the specific factors involved. If a recording form with a
+checklist of problem categories is not used, the clinician
+may simply list the specific problems on Axis IV .
+AXIS V: Global Assessment 
+of Functioning
+Axis V is for reporting the clinician’s judgment of the
+individual’s overall level of functioning. This information
+is useful in planning treatment and measuring its impact,
+and in predicting outcome.
+The reporting of overall functioning on Axis V can be
+done using the Global Assessment of Functioning (GAF)
+Scale. The GAF Scale may be particularly useful in track-
+ing the clinical progress of individuals in global terms,
+using a single measure. The GAP Scale is to be rated with
+respect only to psychological, social, and occupational
+functioning. The instructions specify, “Do not include
+impairment in functioning due to physical (or environ-
+mental) limitations.”
+The GAF scale is divided into 10 ranges of function-
+ing. Making a GAF rating involves picking a single value
+that best reflects the individual’s overall level of function-
+ing. The description of each 10-point range in the GAF
+scale has two components: the first part covers symptom
+severity, and the second part covers functioning. The
+GAF rating is within a particular decile if either the
+symptom severity or the level of functioning falls within
+the range. For example, the first part of the range 41–50
+describes “serious symptoms (e.g., suicidal ideation,
+severe obsessional rituals, frequent shoplifting)” and the
+second part includes “any serious impairment in social,
+occupational, or school functioning (e.g., no friends,
+unable to keep a job).” It should be noted that in situa-
+tions where the individual’s symptom severity and level of
+functioning are discordant, the final GAF rating always
+reflects the worse of the two. For example, the GAF rat-
+ing for an individual who is a significant danger to self
+but is otherwise functioning well would be below 20.
+Similarly, the GAF rating for an individual with minimal
+psychological symptomatology but significant impair-
+ment in functioning (e.g., an individual whose excessive
+preoccupation with substance use has resulting in loss of
+job and friends but no other psychopathology) would be
+40 or lower.
+In most instances, ratings on the GAF Scale should be
+for the current period (i.e., the level of functioning at the
+time of the evaluation) because ratings of current func-
+tioning will generally reflect the need for treatment or
+care. In order to account for day-to-day variability in
+functioning, the GAF rating for the “current period” is
+sometimes operationalized as the lowest level of function-
+ing for the past week. In some settings, it may be useful to
+note the GAF Scale rating both at time of admission and
+Psychosocial and Environmental
+Problems
+AXIS IV
+Problems with primary support group
+Problems related to the social environment
+Educational problems
+Occupational problems
+Housing problems
+Economic problems
+Problems with access to health care services
+Problems related to interaction with the legal 
+system/crime
+Other psychosocial and environmental problems
+
+
+--- PAGE 13 ---
+Appendix DSM-IV-TR Classification  I
+at time of discharge. The GAF Scale may also be rated for
+other time periods (e.g., the highest level of functioning
+for at least a few months during the past year). The GAF
+Scale is reported on Axis V as follows: “GAF =,” followed
+by the GAF rating from 0 to 100, followed by the time
+period reflected by the rating in parentheses—for exam-
+ple, “(current),” “(highest level in past year),” “(at dis-
+charge).”
+In order to ensure that no elements of the GAF scale
+are overlooked when a GAF rating is being made, the fol-
+lowing method for determining a GAF rating may be
+applied:
+STEP 1: Starting at the top level, evaluate each range by
+asking “is either the individual’s symptom severity OR
+level of functioning worse than what is indicated in the
+range description?”
+STEP 2: Keep moving down the scale until the range that
+best matches the individual’s symptom severity OR the
+level of functioning is reached, whichever is worse.
+STEP 3: Look at the next lower range as a double-check
+against having stopped prematurely. This range should be
+too severe on both symptom severity and level of func-
+tioning. If it is, the appropriate range has been reached
+(continue with step 4). If not, go back to step 2 and con-
+tinue moving down the scale.
+STEP 4: T o determine the specific GAF rating within the
+selected 10-point range, consider whether the individual
+is functioning at the higher or lower end of the 10-point
+range. For example, consider an individual who hears
+voices that do not influence his behavior (e.g., someone
+with long-standing Schizophrenia who accepts his hallu-
+cinations as part of his illness). If the voices occur rela-
+tively infrequently (once a week or less), a rating of 39 or
+40 might be most appropriate. In contrast, if the individ-
+ual hears voices almost continuously, a rating of 31 or 32
+would be more appropriate.
+In some settings, it may be useful to assess social and
+occupational disability and to track progress in rehabilita-
+tion independent of the severity of the psychological
+symptoms.
+GLOBAL ASSESSMENT OF FUNCTIONING
+(GAF) SCALE
+Consider psychological, social, and occupational func-
+tioning on a hypothetical continuum of mental health-
+illness. Do not include impairment in functioning due to
+physical (or environmental) limitations.
+
+
+--- PAGE 14 ---
+I Appendix DSM-IV-TR Classification
+TABLE A.1
+Code (Note: Use intermediate codes when appropriate, e.g., 45, 68, 72.)
+100/91 Superior functioning in a wide range of activities, life’s problems never seem to get out of hand, is sought out
+by others because of his or her many positive qualities. No symptoms.
+90/81 Absent or minimal symptoms (e.g., mild anxiety before an exam), good functioning in all areas, interested
+and involved in a wide range of activities, socially effective, generally satisfied with life, no more than every-
+day problems or concerns (e.g., an occasional argument with family members).
+80/71 If symptoms are present, they are transient and expectable reactions to psychosocial stressors (e.g., difficulty
+concentrating after family argument), no more than slight impairment in social, occupational, or school func-
+tioning (e.g., temporarily falling behind in schoolwork).
+70/61 Some mild symptoms (e.g., depressed mood and mild insomnia) OR some difficulty in social, occupational,
+or school functioning (e.g., occasional truancy, or theft within the household), but generally functioning
+pretty well, has some meaningful interpersonal relationships.
+60/51 Moderate symptoms (e.g., flat affect and circumstantial speech, occasional panic attacks) OR moderate diffi-
+culty in social, occupational, or school functioning (e.g., few friends, conflicts with peers or co-workers).
+50/41 Serious symptoms (e.g., suicidal ideation, severe obsessional rituals, frequent shoplifting) OR any serious
+impairment in social, occupational, or school functioning (e.g., no friends, unable to keep a job).
+40/31 Some impairment in reality testing or communication (e.g., speech is at times illogical, obscure, or irrelevant)
+OR major impairment in several areas, such as work or school, family relations, judgment, thinking, or mood
+(e.g., depressed man avoids friends, neglects family, and is unable to work; child frequently beats up younger
+children, is defiant at home, and is failing at school).
+30/21 Behavior is considerably influenced by delusions or hallucinations OR serious impairment in communication
+or judgment (e.g., sometimes incoherent, acts grossly inappropriately, suicidal preoccupation) OR inability to
+function in almost all areas (e.g., stays in bed all day; no job, home, or friends).
+20/11 Some danger of hurting self or others (e.g., suicide attempts without clear expectation of death; frequently
+violent; manic excitement) OR occasionally fails to maintain minimal personal hygiene (e.g., smears feces)
+OR gross impairment in communication (e.g., largely incoherent or mute).
+10/1 Persistent danger of severely hurting self or others (e.g., recurrent violence) OR persistent inability to main-
+tain minimal personal hygiene OR serious suicidal act with clear expectation of death.
+0 Inadequate information.
+The rating of overall psychological functioning on a scale of 0–100 was operationalized by Luborsky in the Health-Sickness Rating Scale
+(Luborsky L: “Clinicians’ Judgments of Mental Health.” Archives of General Psychiatry 7:407–417, 1962). Spitzer and colleagues developed a
+revision of the Health-Sickness Rating Scale called the Global Assessment Scale (GAS) (Endicott J, Spitzer RL, Fleiss JL, Cohen J: “The Global
+Assessment Scale: A Procedure for Measuring Overall Severity of Psychiatric Disturbance.” Archives of General Psychiatry 33:766–771, 1976). A
+modified version of the GAS was included in DSM-ILL-R as the Global Assessment of Functioning (GAF) Scale.
+

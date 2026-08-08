@@ -1,0 +1,8 @@
+# MaatCode API Server Requirements
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# MCP Server (optional, for future use)
+# mcp>=0.1.0  # Uncomment when MCP library is available
+

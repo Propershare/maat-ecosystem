@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "tehuti-maat-memory": {
+      "command": "ssh",
+      "args": [
+        "-T",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ServerAliveInterval=30",
+        "REPLACE_SSH_TARGET",
+        "/home/suspect/.n8n/scripts/run-maat-memory-mcp-for-claude.sh"
+      ],
+      "env": {}
+    },
+    "tehuti-core-optional": {
+      "command": "ssh",
+      "args": [
+        "-T",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ServerAliveInterval=30",
+        "REPLACE_SSH_TARGET",
+        "/home/suspect/.n8n/scripts/run-tehuti-core-mcp-for-claude.sh"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -24,3 +24,15 @@ Run the lived-truth policy suite (mirrors `guard_cases/`):
 ```
 python3 -m maatbench.run --category gateway_policy --verbose
 ```
+
+## Isfet Test (adversarial)
+
+Contract-driven adversarial suite (not lived-truth capture yet):
+
+```
+python3 -m maatbench.run --category isfet_resistance --verbose --report json
+```
+
+See `maatbench/ISFET-TEST-v1.md` and `contracts/isfet_tests.json`.
+
+Isfet Core harness results feed **lab_only** at best. Maat Attest: `MAAT-ATTEST-v0.md` + `maat_attest_gate.py`.

@@ -1,0 +1,3272 @@
+=== EXTRACTED TEXT FROM: teach_yourself_swahili_cd_content.pdf ===
+Extraction Method: PyPDFLoader
+Total Pages: 75
+Timestamp: 2026-01-04T17:17:01.872472
+================================================================================
+
+
+--- PAGE 1 ---
+Teach Yourself Swahili 
+ 
+© Hassan O. Ali & Ali M. Mazrui 
+ 
+August 3, 2004
+
+
+--- PAGE 2 ---
+i
+Contents 
+ 
+ABOUT THIS COURSE.............................................................................................................. ................ 1 
+ABOUT SWAHILI.................................................................................................................. ..................... 1 
+LESSON 1: ALPHABET ..................................................................................................................... 3  
+LESSON 2: PRONUNCIATION GUIDE........................................................................................... 3  
+VOWELS ............................................................................................................................... ...................... 3 
+SYLLABLES............................................................................................................................... .................. 3 
+SAME SOUND AS IN ENGLISH: F, H , L, M, N, S, V, W, Y, Z ............................................................................. 4 
+“HARD” CONSONANTS: B, D, G, J................................................................................................................. 4  
+“ROLLING” R ............................................................................................................................... ............... 4 
+TWO-CONSONANT COMBINATIONS: CH, DH, GH, KH, MB, MY, ND, NG, NG’, NJ, NY, SH, TH, VY .................... 5 
+TWO DISTICT SOUNDS: CH, K, P, T ............................................................................................................... 5  
+ADDITION OF “W”.............................................................................................................................. ......... 6 
+LESSON 3: LETTER SOUNDS .......................................................................................................... 7 
+LESSON 4: SYLLABLE SOUNDS................................................................................................... 12  
+LESSON 5: EMPHASIS..................................................................................................................... 13  
+TEST YOURSELF 1 .................................................................................................................................. 14 
+LESSON 6: PERSONAL PRONOUNS ............................................................................................ 15 
+LESSON 7: PREFIXES – THE BASICS.......................................................................................... 15  
+LESSON 8: PREFIXES FOR PRONOUNS AND TENSES ........................................................... 17 
+LESSON 9: VERBS.......................................................................................................................... .. 19 
+LESSON 10: SENTENCE EXAMPLES............................................................................................. 20  
+TEST YOURSELF 2 .................................................................................................................................. 27 
+LESSON 11: GREETINGS.................................................................................................................. 28  
+LESSON 12: SELF-INTRODUCTION .............................................................................................. 28 
+LESSON 13: ASKING FOR DIRECTION ........................................................................................ 29 
+LESSON 14: ASKING FOR HELP .................................................................................................... 30 
+LESSON 15: RELATIONS.................................................................................................................. 30  
+LESSON 16: HUMAN BODY PARTS ............................................................................................... 31 
+LESSON 17: FOOD........................................................................................................................... ... 32 
+LESSON 18: NUMBERS ..................................................................................................................... 33  
+LESSON 19: DAYS OF THE WEEK ................................................................................................. 35 
+LESSON 20: TIME........................................................................................................................... .... 35 
+LESSON 21: CLOTHES AND ADORNMENT................................................................................. 37  
+LESSON 22: ANIMALS AND INSECTS........................................................................................... 38  
+LESSON 23: PROFESSIONS.............................................................................................................. 46  
+LESSON 24: COURTESY AND EMERGENCY .............................................................................. 46
+
+
+--- PAGE 3 ---
+ii
+LESSON 25: ENTERTAINMENT...................................................................................................... 47  
+LESSON 26: HOME........................................................................................................................... .. 48 
+LESSON 27: OFFICE ..........................................................................................................................4 9 
+LESSON 28: TRAVEL......................................................................................................................... 50 
+LESSON 29: SHOPPING..................................................................................................................... 51  
+DICTIONARY..................................................................................................................... ....................... 52
+
+
+--- PAGE 4 ---
+1
+ 
+Teach Yourself Swahili 
+Hassan O. Ali & Ali M. Mazrui 
+ 
+ABOUT THIS COURSE 
+ 
+This is a unique Teach Yourself Swahili course. We have designed it to give you a very 
+easy way to learn to speak, read, and even write Swahili words correctly. It gives you the 
+ability to learn new Swahili words not only by the way they are written, but also with 
+correct pronunciation. 
+ 
+We have made great efforts to provide in this course many useful Swahili words that you 
+will sure find handy in many practical situations. Just click on the words written in blue
+1 
+to listen to the way the words are correctly pronounced. 
+ 
+We hope you’ll enjoy this course! 
+ 
+ABOUT SWAHILI 
+ 
+First of all, is it “Swahili” or “Kiswahili”? It’s both! It’s “Swahili” if you say it in 
+English, and “Kiswahili” if you say it in Swahili. The following example will make it 
+more clear. The language spoken in France is “French” in English, “Français” in French, 
+and “Kifaransa” in Swahili. Calling the language spoken in Tanzania, “Kiswahili”, while 
+speaking in English is like calling the language spoken in France, “Français”, while 
+speaking in Swahili instead of “Kifaransa”. 
+ 
+Now, what is this language called “Swahili”? It belongs to a family of Bantu (African) 
+languages spoken mostly in eastern, central, and southern Africa. Due to historical 
+reasons, it has borrowed heavily from Arabic, Persian, Kutchi (Indian), and English 
+languages. It has also borrowed to a lesser extent from other languages such as German, 
+and Portuguese. While the vocabulary is of mixed origins, the language syntax and 
+grammar is purely Bantu. 
+ 
+For centuries, Swahili remained as the language of the people of the East African coast. 
+In fact the word “Swahili” itself was originally used by early Arab visitors to the coast 
+and it means "the coast". Ultimately it came to be applied to the people and the language.
+   
+Long-time interactions with other people bordering the Indian Ocean spread the Swahili 
+language to distant places such as on the islands of Comoro and Madagascar and even far 
+beyond to South Africa, Oman and United Arab Emirates. Trade and migration from the 
+                                                 
+1 Pronunciation of the words is provided only in the Teach Yourself Swahili CD that can be ordered from 
+http://www.glcom.com/swahili/lessons/teach_yourself_swahili.html for only US$25. This document 
+represents the CD content – minus the sound.
+
+
+--- PAGE 5 ---
+2
+Swahili coast during the nineteenth-century helped spread the language to the interior of 
+particularly Tanzania. It also reached Uganda, Rwanda, Burundi, Congo, Central African 
+Republic, and Mozambique. 
+Christian missionaries adopted Swahili as the language of communication to spread the 
+Gospel in Eastern Africa. So, the missionaries also helped to spread the language. As a 
+matter of fact the first Swahili-English dictionary was prepared by a missionary. During 
+the colonial time, Swahili was used for communication with the local inhabitants. Hence 
+the colonial administrators pioneered the effort of standardizing the Swahili language. 
+Zanzibar was the epicenter of culture and commerce. For that reason, colonial 
+administrators selected the dialect of the Zanzibar (Unguja) town as the Standard Swahili. 
+The Unguja dialect (Kiunguja) was then used for all formal communication such as in 
+schools, in mass media (newspapers and radio), in books and other publications.  
+Now Swahili is spoken in many countries of eastern, central, and southern Africa. For 
+Tanzania, deliberate efforts were made by the independent nation to promote the 
+language (thanks to the efforts of the former head of state, Julius K. Nyerere). Tanzania's 
+special relations with countries of southern Africa was the main reason behind the spread 
+of Swahili to Zambia, Malawi, South Africa, and other neighboring countries to the 
+south. Swahili is the national as well as the official language of Tanzania - almost all 
+Tanzanians speak Swahili proficiently and are unified by it. In Kenya and Uganda, it is 
+the national language, but official correspondence is still conducted in English.  
+Swahili is the most widely spoken language of eastern Africa. It is one of the languages 
+that feature in some world radio stations such as, the BBC, Radio Cairo (Egypt), the 
+Voice of America (U.S.A.), Radio Deutschewelle (Germany), Radio Moscow 
+International (Russia), Radio Japan International, Radio China International, Radio 
+Sudan, and Radio South Africa. The Swahili language is also making its presence in the 
+art world - in songs, theatres, movies and television programs. For example, the lyrics for 
+the song titled “Liberian girl” by Michael Jackson have Swahili phrases: "Nakupenda 
+pia, nakutaka pia, mpenzi we!" (I love you, and I want you, my dear!). The well-
+celebrated Disney movie, "The Lion King" featured several Swahili words, for example 
+"simba" (lion), "rafiki" (friend), as the names of the characters. The Swahili phrase 
+"hakuna matata" (No troubles or no problems) was also used in that movie.  
+The promotion of the Swahili language is not only in its use but also deliberate efforts are 
+made throughout the world to include it in education curriculums for higher institutions 
+of learning. It is taught in many parts of the world.
+
+
+--- PAGE 6 ---
+3
+LESSON 1: ALPHABET 
+ 
+The Swahili language doesn’t have its own alphabet. It was originally written using the 
+Arabic alphabet. For the sounds missing in the Arabic alphabet like CH and G, Farsi 
+characters were used. Later on in history, the colonial rulers in East Africa and Christian 
+missionaries started to write Swahili words using the English alphabet. 
+ 
+Swahili words can be written fully using the English alphabet. Some sounds are 
+represented by letter combinations – just like in English. For example, the “TH” letter 
+combination in Swahili sounds the same way as in the English word “TH
+INK”. No 
+words, however, use letters “Q”, “X”, and lone “C”. Letter “C” only appears in a “CH” 
+letter combination that sounds like in the English word CHURCH. 
+ 
+LESSON 2: PRONUNCIATION GUIDE 
+ 
+Swahili pronunciation is extremely easy. You’ll learn in this lesson how syllables are 
+constructed in Swahili and how to pronounce them. We’ll start our lesson with vowels – 
+the most important building blocks of most Swahili syllables.  
+Vowels 
+ 
+Vowels are called “vokali” in Swahili. They are, a, e, i, o, u - just as in English, but 
+pronounced a little differently. In every Swahili word the vowels make exactly the same 
+sounds – no exception what-so-ever! For example, in English, the vowel “e” sounds 
+differently in words “Peter” and “elephant”. It’s not like that in Swahili. Vowel “e” in 
+every word sounds like “e” as in “elephant”.  
+ 
+Syllables 
+ 
+Syllables in Swahili are made of vowels alone, or combinations of consonants and 
+vowels. The exception is with letters “m” and “n” which form syllables just by 
+themselves in some words e.g. “m
+tu” (person), “nchi” (country).  
+ 
+Swahili people don’t like “hanging consonants” – consonants that are not followed by 
+vowels. Therefore, if your name is “John” with a hanging “n”, they’ll call you “Joni” – 
+with a vowel “i” added at the end. If you’re “Bruce” – with a hanging “s” sound – they’ll 
+call you “Brusi”. If you’re “Rose” – with a hanging “z” sound – they’ll call you “Rozi”.  
+Of course the Arabic name “Salim” becomes “Salimu”. You have to watchout if your 
+name is “Cook” or “Cooke” because they will call you “Kuku” which actually means 
+“chicken” in Swahili!  The most common consonants that can be forgiven to appear in a 
+“hanging” state are “f”, “k”, “l”, “m”, “n”, and “s”, appearing in the middle.  For
+
+
+--- PAGE 7 ---
+4
+example, “afya” (health), “maktaba” (library), “almasi” (diamond), “mamlaka” 
+(authority), “mantiki” (logic), and “mstari” (line). 
+ 
+Same sound as in English: f, h , l, m, n, s, v, w, y, z 
+ 
+The above-listed letters make exactly the same sounds as in English:  
+ 
+f farasi  (horse), fedha  (silver), figo  (kidney), foronya  (pillow-case), kifua  (chest) 
+h hatari  (danger), hewa  (air), historia  (history), hoteli  (hotel),  
+huduma  (service) 
+l saladi  (salad), leseni  (license), limau  (lemon), lozi  (almond),  
+lugha  (language) 
+m maji  (water), meza  (table), mimi (I), moja  (one), muhimu  (important) 
+n nazi  (coconut), nane  (eight), nani  (who), neno  (word), nusu  (half) 
+s safari  (journey), serikali  (government), siri  (secret),  
+sokwe  (chimpanzee), kasuku  (parrot) 
+v vanila  (vanilla), veli  (veil), vita  (war), volkano  (volcano),  
+vumbi   (dust) 
+w watu  (people), wembe  (razor blade), wiki  (week), woga  (fear) 
+y yaya  (maid), yeye  (he/she), yeyote  (anyone), yunifomu  (uniform) 
+z zabibu  (grape), zege  (concrete), ziwa  (lake), zoezi  (exercise),  
+zulia (carpet) 
+ 
+“Hard” consonants: b, d, g, j 
+ 
+The above four letters make sounds that are slightly different from English. They are 
+pronounced in a “hard” way rather than the English “soft” way. For example, the word 
+for “father” should correctly be pronounced as “baba”, not “baba”. The word for “boat” 
+is “boti”, not “boti”. The word for “sister” is “dada”, not “dada”. The word for 
+“cheetah” is “duma”, not “duma”. The word for “car” is “gari”, not “gari”. The word 
+for “knee” is “goti”, not “goti”. The word for “yesterday” is “jana”, not “jana”. The 
+word for “jinni” is “jini” not “jini”. 
+“Rolling” r 
+ 
+The letter “r” is always pronounced with a “rolling” tongue.  For example, “rangi” 
+(color), “redio” (radio), “habari” (news), “robo” (quarter), “rubani” (pilot).
+
+
+--- PAGE 8 ---
+5
+Two-consonant combinations: ch, dh, gh, kh, mb, my, nd, ng, ng’, nj, 
+ny, sh, th, vy 
+ 
+Some Swahili sounds are created using two-consonant combinations as listed above. The 
+following are examples of words with those consonant combinations: 
+ 
+ch chakula (food), cheche (spark), chizi (cheese), choo (toilet), chupi (underwear) 
+dh dhahabu (gold), fedheha (shame), dhiki (hardship), dhoruba (storm),  
+dhumna  (domino) 
+gh ghali (expensive), ghorofa (storey), ghuba (gulf),  
+kh Alkhamisi (Thursday) 
+mb mbali (far), mbegu (seed), mbili (two), mboga (vegetable), mbuzi (goat) 
+my kimya (quiet) 
+nd ndama (calf), ndevu (beard), ndizi (banana), ndoto (dream), bunduki (gun) 
+ng ngamia (camel), kengele (bell), ngisi (squid), ngome (fort), nguva (mermaid) 
+ng’ ning’iniza (hang), ng’ombe (cow), mung’unye (squash) 
+nj njaa (hunger), njegere (green peas), njiwa (dove), njozi (dream), njugu (peanuts) 
+ny nyama (meat), nyeti (sensitive), nyika (bush), nyoka (snake), nyumba (house) 
+sh shavu (cheek), sheria (law), shingo (neck), shoka (axe), shule (school) 
+th thamani (value), theluji (snow), ithibati (proof), kitunguu-thomu (garlic), thuluthi (one-third) 
+vy vyama (parties), vyema (well), vyovyote (anyhow), vyuma (pieces of iron) 
+ 
+Two distict sounds: ch, k, p, t 
+ 
+Letter combination “ch”, and letters “k”, “p”, and “t” have two distinct sound formats in 
+Swahili. One format is “light” and the other is “heavy”. The “light” format is exactly the 
+same as in English. That is, “ch” as in “chat”, “k” as in “keep”, “p” as in “put”, and “t” as 
+in “take”. The “heavy” format can easily be understood through examples.  
+ 
+In English it is “chat”, not “chat”; “keep”, not “keep”; “put”, not “put”; “take”, not 
+“take”. However, in Swahili both two sound formats exist and give different meanings to 
+words that have otherwise same spellings. See example below: 
+ 
+ Light Heavy 
+ch changu  (snapper fish) changu  (mine) 
+k kaa  (crab), mkunga (midwife) kaa  (charcoal), mkunga (eel) 
+p paa  (deer), pima  (two-arm length) paa  (roof), pima  (measure) 
+t taa  (rayfish) taa  (lamp/light)
+
+
+--- PAGE 9 ---
+6
+Addition of “w” 
+ 
+ Letter “w” can be added to some consonants and consonant combinations to give some 
+interesting sounds. The following are the possible combinations: 
+ 
+bw, chw, gw, jw, kw, lw, mbw, mw, ndw, ngw, ng’w, njw, nyw, pw, shw, sw, tw, zw. 
+ 
+Syllables made up of those consonant combinations rarely carry vowels “o” and “u”. The 
+table below provides some word examples for those letter combinations: 
+ 
+bw Bwana  (Mister), bweha  (jackal), chubwi  (sinker) 
+chw kichwa  (head), uachwe  (you should be freed), huachwi  (you won’t be freed) 
+gw amepigwa  (he/she has been beaten), apigwe  (he/she should be beaten),  
+hapigwi (he/she won’t be beaten) 
+jw ametajwa  (he/she has been named), atajwe (he/she should be named),  
+hatajwi (he/she won’t be named) 
+kw kwapa  (armpit), kweli  (true), kwikwi  (hiccup) 
+lw Kilwa  (Kilwa – name of a town in Tanzania) 
+mbw mbweu  (burp) 
+mw mwaka  (year), mwezi  (month/moon), mwili  (body) 
+ndw ninapendwa (I’m loved), nipendwe  (so that I get loved),  
+sipendwi  (I’m not loved) 
+ngw Imetungwa  (It’s been authored), kongwe  (very old),  
+haijengwi  (it won’t be built) 
+ng’w ng’wafua (bite forcefully), ng’weng’we  (big shot/big boss) 
+njw ugonjwa (disease), isionjwe (It should not be tasted) 
+nyw kinywaji  (a drink), nywele  (hair), sinywi  (I don’t drink),  
+pw pwani  (by the acean/coastal), pweza  (octopus), kupwita  (to pulsate) 
+shw imepitishwa  (it has been passed), ipitishwe (it has to be passed),  
+haipitishwi  (it will not be passed) 
+sw swala  (impala), sweta  (sweater), swichi  (switch) 
+tw kutwa  (all day), tweka  (set sail), twiga  (giraffe)  
+zw kuongozwa  (to be led), niongezwe  (I should be given more),  
+siongezwi  (I won’t be given more)
+
+
+--- PAGE 10 ---
+7
+LESSON 3: LETTER SOUNDS 
+ 
+Here is a list of various Swahili letters and letter combinations with distinct sounds. 
+Please click on the words written in blue to learn how they sound like in Swahili. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ A B CH CH 
+Almasi (Diamond) Bakuli (Bowl) Chungwa  (Orange) Chui (Leopard) 
+ 
+  
+ 
+D DH 
+Darubini  (Microscope) Dhumna  (Domino)
+
+
+--- PAGE 11 ---
+8
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+E F G 
+Embe  (Mango) Farasi  (Horse) Gari  (Car) 
+ 
+  
+ GH H I J 
+Ghuba  (Gulf) Herini  (Earring) Iliki  (Cardamom) Jicho  (Eye) 
+K  K KH L 
+Kufuli  (Padlock) Kuku  (Chicken) Khamis  Lozi  (Almond) 
+ 
+Name of a person 
+M  M MB MB 
+Mende (Cockroach) Mdomo  (Mouth) Mbwa  (Dog) Mbuni  (Ostrich)
+
+
+--- PAGE 12 ---
+9
+ 
+ 
+N  ND NG NG 
+Nanasi (Pineapple) Ndizi (Banana) Ngoma  (Drum) Nge  (Scorpion)
+
+
+--- PAGE 13 ---
+10
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NG’ NJ  NY O 
+Ng’ombe (Cow) Njia  (Road) Nyati  (Buffalo) Ofisi  (Office) 
+ 
+  
+P P 
+Paa (Roof) Paa  (Deer) 
+ 
+ R S SH 
+Roketi (Rocket) Simu  (Telephone) Shati  (Shirt) 
+ 
+ 
+ 
+T  T TH U 
+Taa (Lamp/Light) Taa  (Rayfish) Theluji  (Snow) Ufunguo (Key)
+
+
+--- PAGE 14 ---
+11
+ 
+ 
+V  W Y Z 
+Volkano (Volcano) Waridi  (Rose) Yai (Egg) Zulia  (Carpet)
+
+
+--- PAGE 15 ---
+12
+LESSON 4: SYLLABLE SOUNDS 
+ 
+Here is a list of the syllables made up of one or two consonants and vowels. Please click 
+on the syllables to hear how they sound like. 
+ A E I O U 
+B BA BE BI BO BU 
+CH CHA CHE CHI CHO CHU 
+CH CHA CHE CHI CHO CHU 
+D DA DE DI DO DU 
+DH DHA DHE DHI DHO DHU 
+F FA FE FI FO FU 
+G GA GE GI GO GU 
+GH GHA GHE GHI GHO GHU 
+H HA HE HI HO HU 
+J JA JE JI JO JU 
+K KA KE KI KO KU 
+K KA KE KI KO KU 
+KH KHA KHE KHI KHO KHU 
+L LA LE LI LO LU 
+M MA ME MI MO MU 
+MB MBA MBE MBI MBO MBU 
+N NA NE NI NO NU 
+ND NDA NDE NDI NDO NDU 
+NG NGA NGE NGI NGO NGU 
+NG’ NG’A NG’E NG’I NG’O NG’U 
+NJ NJA NJE NJI NJO NJU 
+NY NYA NYE NYI NYO NYU 
+P PA PE PI PO PU 
+P PA PE PI PO PU 
+R RA RE RI RO RU 
+S SA SE SI SO SU 
+SH SHA SHE SHI SHO SHU 
+T TA TE TI TO TU 
+T TA TE TI TO TU 
+TH THA THE THI THO THU 
+V VA VE VI VO VU 
+W WA WE WI WO WU 
+Y YA YE YI YO YU 
+Z ZA ZE ZI ZO ZU
+
+
+--- PAGE 16 ---
+13
+Here is a list of all the three- and four-letter syllables including letter “W”. Please click 
+on them to learn how to pronounce them. 
+ 
+ A E I 
+B BWA BWE BWI 
+CH CHWA CHWE CHWI 
+CH CHWA CHWE CHWI 
+G GWA GWE GWI 
+J JWA JWE JWI 
+K KWA KWE KWI 
+K KWA KWE KWI 
+L LWA LWE LWI 
+M MWA MWE MWI 
+MB MBWA MBWE MBWI 
+ND NDWA NDWE NDWI 
+NG NGWA NGWE NGWI 
+NG’ NG’WA NG’WE NG’WI 
+NJ NJWA NJWE NJWI 
+NY NYWA NYWE NYWI 
+P PWA PWE PWI 
+P PWA PWE PWI 
+S SWA SWE SWI 
+SH SHWA SHWE SHWI 
+T TWA TWE TWI 
+Z ZWA ZWE ZWI 
+ 
+LESSON 5: EMPHASIS 
+ 
+Emphasis (stress) in Swahili words is so simple to understand. For most words, use the 
+following simple rule: No stress except on the last but one syllable. Of course, in two-
+syllable words, the first syllable has to be stressed! Here are some examples: 
+ 
+WORD MEANING 
+Habari! Hello! 
+Samaki Fish 
+Ninakula I’m eating 
+Sitaki I don’t want 
+Tanzania An East African country (Wrong pronunciation: Tanzania) 
+Mama Mother 
+Sikiliza! Listen! 
+Marekani United States of America 
+Sigara Cigarette
+
+
+--- PAGE 17 ---
+14
+TEST YOURSELF 1 
+ 
+Pronounce the following words. Click on them to check if you were correct. 
+ 
+WORD MEANING 
+Hujambo? Are you fine? 
+Sijambo! I’m fine 
+Hakuna matata! No problem! 
+Sina chochote! I’ve got nothing! 
+Ninakupenda I love you 
+Hongera! Congratulations! 
+Jina lako nani? What’s your name? 
+Mnyang’anye Snatch it off from him 
+Ning’iniza Hang it
+
+
+--- PAGE 18 ---
+15
+LESSON 6: PERSONAL PRONOUNS 
+ 
+SINGULAR PLURAL PERSON SWAHILI ENGLISH SWAHILI ENGLISH 
+First Mimi I Sisi We 
+Second Wewe You Nyinyi You 
+Third Yeye He/She Wao They 
+ 
+LESSON 7: PREFIXES – THE BASICS 
+ 
+This lesson provides the basic information needed for sentence construction. Most 
+sentences need verbs. But verbs are a different can of worms in Swahili. And we mean 
+that literally! 
+ 
+Swahili verbs are sticky parasites – just like worms! They have no “life” just by 
+themselves. They have to attach themselves to other things to make sense (in life). In 
+Swahili, we call those “poor” things “viambishi”, in plural, and “kiambishi” in singular. 
+Viambishi literally means “attachments” which in English are referred to as prefixes, 
+affixes, or suffixes depending on where they appear – at the beginning of the word, in the 
+middle, or at the end. For the sake of simplicity, we’ll continue to use “viambishi” in 
+plural and “kiambishi” in singular in this course whenever we refer to prefixes, affixes, 
+and suffixes. 
+ 
+Viambishi modify verbs in many ways. Primarily they modify verbs to show the subject, 
+the tense, and the object of a sentence. They also modify other parts of speech such as 
+adjectives and possessives to agree with the nouns and pronouns used in the sentence. 
+ 
+Viambishi vary with words associated with different classes of nouns. Different noun 
+classes go with different sets of viambishi. Noun classification itself is not very straight 
+forward in Swahili. There are various ways that Swahili nouns have been classified. 
+Generally the classes are determined by the way the nouns are spoken in singular and 
+plural. Unfortunately there are no short cuts for new Swahili speakers. In most cases they 
+just have to know how to speak Swahili words both in singular and plural. That’s why we 
+took efforts to include plural forms of various useful words in various lessons of this 
+course. 
+ 
+We list down below, simplified Swahili noun classes just to show the variation and 
+agreement in viambishi that go with them. In the example sentences, viambishi related 
+to the considered noun class are marked in red
+.
+
+
+--- PAGE 19 ---
+16
+SINGULAR PLURAL NOUN 
+CLASS SWAHILI ENGLISH SWAHILI ENGLISH 
+Mtu mrefu amekuja A tall person has 
+come 
+Watu warefu 
+wamekuja 
+Tall persons have 
+come 
+Mtoto wako mdogo 
+analia 
+Your small child is 
+crying 
+Watoto wako 
+wadogo wanalia 
+Your small children 
+are crying M-WA 
+Wewe ni mgeni 
+wangu  
+You are my guest Nyinyi ni wageni 
+wangu 
+You are my guests 
+Nimechukua mkoba 
+mkubwa 
+I’m carrying a big 
+bag 
+Nimechukua 
+mikoba mikubwa 
+I’m carrying big 
+bags 
+Mji mzuri A nice town Miji mizuri Nice towns M-MI 
+Mguu wa farasi A horse’s leg Miguu ya farasi Horse’s legs 
+Jicho jekundu A red eye Macho mekundu Red eyes 
+Jina lako silijui I don’t know your 
+name 
+Majina yenu 
+siyajui 
+I don’t your names 
+JI-MA 
+Jani pana la mgomba A wide banana leaf Majani mapana ya 
+mgomba 
+Wide banana leaves 
+Kichwa chake 
+kikubwa 
+His head is big Vichwa vyao 
+vikubwa 
+Their heads are big 
+Kijiko cha dhahabu A golden spoon Vijiko vya 
+dhahabu 
+Golden spoons KI-VI 
+Kitabu cha hadithi A story book Vitabu vya hadithi Story books 
+Ndizi yangu mbivu My ripe banana Ndizi zangu mbivu My ripe bananas 
+Nazi hii ya nani? Whose coconut is 
+this? 
+Nazi hizi za nani? Whose coconuts are 
+these? N 
+Nyumba ya waziri A minister’s house Nyumba za waziri Minister’s houses 
+Ukuta wa Berlin The Berlin wall Kuta za Berlin Berlin walls 
+Uzi mrefu wa hariri A long silk thread Nyuzi ndefu za 
+hariri 
+Long silk threads U 
+Ubao wangu My board Mbao zangu My boards 
+Umekaa mahali 
+pangu 
+You are seating on 
+my place 
+Mmekaa mwahali 
+mwangu 
+You are seating on 
+my places 
+Mahali pazuri pa 
+kupumzikia 
+A nice resting place Mwahali muzuri 
+mwa kupumzikia 
+Nice resting places PA 
+Ulipopapata ni 
+pakubwa sana 
+You’ve achieved a 
+lot 
+Mlimomupata ni 
+mukubwa sana 
+You’ve achieved a 
+lot 
+Utanikuta nyumbani 
+kwangu 
+You will meet me 
+at my house 
+Utanikuta 
+nyumbani mwangu 
+You will meet me at 
+my houses 
+Akili kichwani 
+kwako! 
+Brain in your head! 
+(Think about it!) 
+Akili vichwani 
+mwenu! 
+Brain in your heads! 
+(Think about it!) KU 
+Kwake kuzuri His/Her place is 
+nice 
+Mwake muzuri His/Her places are 
+nice 
+MU Ninakupenda moyoni 
+mwangu 
+I love you in my 
+heart 
+Tunakupenda 
+mioyoni mwetu 
+We love you in our 
+hearts
+
+
+--- PAGE 20 ---
+17
+Mwako au mwangu 
+mote sawa tu! 
+In your place or in 
+my place, all the 
+same! 
+Mwenu au mwetu 
+mote sawa tu! 
+In your places or in 
+our places, all the 
+same! 
+Damu imo mwilini 
+mwangu 
+Blood is in my 
+body 
+Damu imo mwilini 
+mwetu 
+Blood is in our 
+bodies 
+ 
+LESSON 8: PREFIXES FOR PRONOUNS AND TENSES 
+ 
+As mentioned above, viambishi (prefixes) vary with different classes of nouns and their 
+respective pronouns. The easiest to understand is the way viambishi change with 
+pronouns.  In this section we’ll discuss viambishi for personal pronouns of the M-WA 
+noun class and those for most common tenses. This lesson is intended to provide a 
+general sense of how viambishi work in Swahili.  
+ 
+Viambishi for the personal pronouns of the M-WA noun class are shown in the table 
+below. 
+ 
+SINGULAR PLURAL 
+SUBJECT OBJECT SUBJECT OBJECT PERSON 
+SWAHILI ENGLISH SWAHILI ENGLISH SWAHILI ENGLISH SWAHILI ENGLISH
+First ni- I -ni- me tu- we -tu- us 
+Second u- you -ku- you m- you -wa- you 
+Third a- he/she -m- him/her wa- they -wa- them 
+ 
+Viambishi that show the tense of a sentence do not vary with nouns and pronouns. They, 
+obviously, only change with tense as shown below. 
+ 
+TENSE Past Present 
+Perfect Present Present 
+Continuous Future 
+KIAMBISHI -li- -me- -na- -na- -ta- 
+ 
+Did we say verbs are a different can of worms in Swahili? Yes we did! And if you didn’t 
+believe us here are some more facts about verbs and viambishi that may knock your sox 
+off! 
+ 
+Viambishi for subject and tense actually change when used to express a negative action. 
+We’ll show examples of that in a moment but at this point just mark in the two tables 
+below, viambishi for personal pronouns associated with negative actions.
+
+
+--- PAGE 21 ---
+18
+KIAMBISHI FOR SUBJECT 
+SINGULAR PLURAL PERSON 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+First si- I hatu- we 
+Second hu- you ham- you 
+Third ha- he/she hawa- they 
+ 
+TENSE Past Present 
+Perfect Present Present 
+Continuous Future 
+KIAMBISHI -ku- -ja- -i -i -ta- 
+ 
+For negative actions, sometimes kiambishi, “-to-”, is used instead of “-ta-”, to show the 
+future tense. For example, “sitopenda” (I will not like) instead of “sitapenda” (I will not 
+like).  
+ 
+Also note that when the subject is the same as the object, the kiambishi for object is 
+always “-ji-”, for all pronouns – for positive and negative actions.  
+ 
+And lastly, also note that for the present tense, showing a habitual (everyday) action, only 
+kiambishi “hu-” is normally used to serve both the tense and all forms of subjects. 
+Usually, the actual noun or pronoun would precede the verb to show the subject of the 
+sentence. For example, “Mimi hu
+penda kusoma” (I like to read); “Watoto hupenda 
+kucheza” (Children like to play).  
+ 
+Don’t worry if it’s all fuzzy for you now. It will become clearer when we review several 
+examples.
+
+
+--- PAGE 22 ---
+19
+LESSON 9: VERBS 
+ 
+Believe it or not, with the knowledge of viambishi you gained in LESSON 8:, you are 
+ready to start creating your own Swahili sentences. But, wait a minute! Most sentences 
+need verbs, and we haven’t learned a single verb yet! So, it’s now the right time to 
+introduce verbs.  
+ 
+Since Swahili verbs are “parasites”, it would be difficult to learn stand-alone verbs. For 
+that reason, we’ll introduce here, some common verbs in the infinitive form. Observe 
+kiambishi, “ku”, at the beginning of each word. This kiambishi is used with the 
+infinitive form of verbs. When you remove “ku”, the remaining part is the root of the 
+verb. It is this root of the verb viambishi attach to in different circumstances. 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+kuweza to be able kusoma to read 
+kununua to buy kutoa to remove 
+kuja to come kusema to say 
+kupika to cook kuona to see 
+kulia to cry kuuza to sell 
+kunywa to drink kukaa to sit 
+kula to eat kulala to sleep 
+kuhisi to feel kusema to speak 
+kupa to give kusimama to stand up 
+kutoa to give out kufikiri to think 
+kuenda/kwenda to go kusafiri to travel 
+kusikia to hear kuamka to wake up 
+kucheka to laugh kutembea to walk 
+kupenda to like/to love kutaka to want 
+kusikiliza to listen kuosha to wash 
+kutazama to look at kutazama/kuangalia to watch 
+kutafuta to look for kufanyakazi to work 
+kulipa to pay kuandika to write
+
+
+--- PAGE 23 ---
+20
+LESSON 10: SENTENCE EXAMPLES 
+ 
+Armed with the knowledge of viambishi, and some verbs, we’re now ready to construct 
+our first Swahili sentences! Let’s start with positive sentences using the verb “soma” 
+(read). In the tables below, viambishi for subject are in red and those for tense are in 
+green. 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Nilisoma kitabu I read a book Tulisoma kitabu We read a book 
+Present Perfect Nimesoma 
+kitabu 
+I have read a 
+book 
+Tumesoma 
+kitabu 
+We have read a book
+Present Ninasoma kitabu I read a book Tunasoma kitabu We read a book 
+Present 
+Continuous 
+Ninasoma kitabu I am reading a 
+book 
+Tunasoma kitabu We are reading a 
+book 
+Future Nitasoma kitabu I will read a book Tutasoma kitabu We will read a book 
+ 
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Ulisoma kitabu You read a book Mlisoma kitabu You read a book 
+Present Perfect Umesoma kitabu You have read a 
+book Mmesoma kitabu You have read a 
+book 
+Present Unasoma kitabu You read a book Mnasoma kitabu You read a book 
+Present 
+Continuous Unasoma kitabu You are reading a 
+book Mnasoma kitabu You are reading a 
+book 
+Future Utasoma kitabu You will read a 
+book Mtasoma kitabu You will read a book
+ 
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Alisoma kitabu He/She read a 
+book Walisoma kitabu They read a book 
+Present Perfect Amesoma kitabu He/She has read a 
+book 
+Wamesoma 
+kitabu 
+They have read a 
+book 
+Present Anasoma kitabu He/She reads a 
+book 
+Wanasoma 
+kitabu They read a book 
+Present 
+Continuous Anasoma kitabu He/She is reading 
+a book 
+Wanasoma 
+kitabu 
+They are reading a 
+book 
+Future Atasoma kitabu He/She will read 
+a book Watasoma kitabu They will read a 
+book
+
+
+--- PAGE 24 ---
+21
+And now, let’s make some negative sentences using the same verb “soma”: 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Sikusoma kitabu I didn’t read a 
+book 
+Hatukusoma 
+kitabu 
+We didn’t read a 
+book 
+Present Perfect Sijasoma kitabu I have not read a 
+book 
+Hatujasoma 
+kitabu 
+We have not read a 
+book 
+Present Sisomi kitabu I don’t read a 
+book Hatusomi kitabu We don’t read a 
+book 
+Present 
+Continuous Sisomi kitabu I am not reading a 
+book Hatusomi kitabu We are not reading a 
+book 
+Future Sitasoma kitabu I will not read a 
+book 
+Hatutasoma 
+kitabu 
+We will not read a 
+book 
+ 
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hukusoma 
+kitabu 
+You didn’t read a 
+book 
+Hamkusoma 
+kitabu 
+You didn’t read a 
+book 
+Present Perfect Hujasoma 
+kitabu 
+You have not 
+read a book 
+Hamjasoma 
+kitabu 
+You have not read a 
+book 
+Present Husomi kitabu You don’t read a 
+book Hamsomi kitabu You don’t read a 
+book 
+Present 
+Continuous Husomi kitabu You are not 
+reading a book Hamsomi kitabu You are not reading a 
+book 
+Future Hutasoma 
+kitabu 
+You will not read 
+a book 
+Hamtasoma 
+kitabu 
+We will not read a 
+book 
+ 
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hakusoma 
+kitabu 
+He/She didn’t 
+read a book 
+Hawakusoma 
+kitabu 
+They didn’t read a 
+book 
+Present 
+Perfect Hajasoma kitabu He/She has not 
+read a book 
+Hawajasoma 
+kitabu 
+They have not read a 
+book 
+Present Hasomi kitabu He/She doesn’t 
+read a book Hawasomi kitabu They don’t read a 
+book 
+Present 
+Continuous Hasomi kitabu He/She is not 
+reading a book Hawasomi kitabu They are not reading 
+a book 
+Future Hatasoma kitabu He/She will not 
+read a book 
+Hawatasoma 
+kitabu 
+They will not read a 
+book
+
+
+--- PAGE 25 ---
+22
+Let’s now have a little more difficult example. This one will have a regular verb “penda” 
+(like) and an infinitive “kusema” (to speak). We’ll start with positive sentences. 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Nilipenda 
+kusema 
+Kiswahili 
+I liked to 
+speak Swahili 
+Tulipenda 
+kusema 
+Kiswahili 
+We liked to speak 
+Swahili 
+Present 
+Perfect 
+Nimependa 
+kusema 
+Kiswahili  
+I have liked to 
+speak Swahili 
+Tumependa 
+kusema 
+Kiswahili 
+We have liked to 
+speak Swahili 
+Present Ninapenda 
+kusema 
+Kiswahili 
+I like to speak 
+Swahili 
+Tunapenda 
+kusema 
+Kiswahili 
+We like to speak 
+Swahili 
+Present 
+Continuous 
+Ninapenda 
+kusema 
+Kiswahili 
+I am liking to 
+speak Swahili 
+Tunapenda 
+kusema 
+Kiswahili 
+We are liking to 
+speak Swahili 
+Future Nitapenda 
+kusema 
+Kiswahili 
+I will like to 
+speak Swahili 
+Tutapenda 
+kusema 
+Kiswahili 
+We will like to 
+speak Swahili 
+ 
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Ulipenda 
+kusema 
+Kiswahili 
+You liked to 
+speak Swahili 
+Mlipenda 
+kusema 
+Kiswahili 
+You liked to 
+speak Swahili 
+Present 
+Perfect 
+Umependa 
+kusema 
+Kiswahili  
+You have liked 
+to speak Swahili 
+Mmependa 
+kusema 
+Kiswahili 
+You have liked 
+to speak Swahili 
+Present Unapenda 
+kusema 
+Kiswahili 
+You like to 
+speak Swahili 
+Mnapenda 
+kusema 
+Kiswahili 
+You like to speak 
+Swahili 
+Present 
+Continuous 
+Unapenda 
+kusema 
+Kiswahili 
+You are liking to 
+speak Swahili 
+Mnapenda 
+kusema 
+Kiswahili 
+You are liking to 
+speak Swahili 
+Future Utapenda 
+kusema 
+Kiswahili 
+You will like to 
+speak Swahili 
+Mtapenda 
+kusema 
+Kiswahili 
+You will like to 
+speak Swahili
+
+
+--- PAGE 26 ---
+23
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Alipenda 
+kusema 
+Kiswahili 
+He/She liked to 
+speak Swahili 
+Walipenda 
+kusema 
+Kiswahili 
+They liked to 
+speak Swahili 
+Present 
+Perfect 
+Amependa 
+kusema 
+Kiswahili  
+He/She has liked 
+to speak Swahili 
+Wamependa 
+kusema 
+Kiswahili 
+They have liked 
+to speak Swahili 
+Present Anapenda 
+kusema 
+Kiswahili 
+H/She likes to 
+speak Swahili 
+Wanapenda 
+kusema 
+Kiswahili 
+They like to 
+speak Swahili 
+Present 
+Continuous 
+Anapenda 
+kusema 
+Kiswahili 
+He/She is liking 
+to speak Swahili 
+Wanapenda 
+kusema 
+Kiswahili 
+They are liking 
+to speak Swahili 
+Future Atapenda 
+kusema 
+Kiswahili 
+He/She will like 
+to speak Swahili 
+Watapenda 
+kusema 
+Kiswahili 
+They will like to 
+speak Swahili 
+ 
+And now the corresponding negative sentences: 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Sikupenda 
+kusema 
+Kiswahili 
+I didn’t like to 
+speak Swahili 
+Hatukupenda 
+kusema 
+Kiswahili 
+We didn’t like to 
+speak Swahili 
+Present 
+Perfect 
+Sijapenda 
+kusema 
+Kiswahili 
+I have not liked to 
+speak Swahili 
+Hatujapenda 
+kusema 
+Kiswahili 
+We have not liked 
+to speak Swahili 
+Present Sipendi kusema 
+Kiswahili 
+I don’t like to speak 
+Swahili 
+Hatupendi 
+kusema 
+Kiswahili 
+We don’t like to 
+speak Swahili 
+Present 
+Continuous 
+Sipendi kusema 
+Kiswahili 
+I am not liking to 
+speak Swahili 
+Hatupendi 
+kusema 
+Kiswahili 
+We are not liking to 
+speak Swahili 
+Future Sitapenda 
+kusema 
+Kiswahili 
+I will not like to 
+speak Swahili 
+Hatutapenda 
+kusema 
+Kiswahili 
+We will not like to 
+speak Swahili
+
+
+--- PAGE 27 ---
+24
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hukupenda 
+kusema 
+Kiswahili 
+You didn’t like to 
+speak Swahili 
+Hamkupenda 
+kusema 
+Kiswahili 
+You didn’t like to 
+speak Swahili 
+Present 
+Perfect 
+Hujapenda 
+kusema 
+Kiswahili 
+You have not liked 
+to speak Swahili 
+Hamjapenda 
+kusema 
+Kiswahili 
+You have not liked 
+to speak Swahili 
+Present Hupendi 
+kusema 
+Kiswahili 
+You don’t like to 
+speak Swahili 
+Hampendi 
+kusema 
+Kiswahili 
+You don’t like to 
+speak Swahili 
+Present 
+Continuous 
+Hupendi 
+kusema 
+Kiswahili 
+You are not liking 
+to speak Swahili 
+Hampendi 
+kusema 
+Kiswahili 
+You are not liking 
+to speak Swahili 
+Future Hutapenda 
+kusema 
+Kiswahili 
+You will not like to 
+speak Swahili 
+Hamtapenda 
+kusema 
+Kiswahili 
+You will not like to 
+speak Swahili 
+ 
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hakupenda 
+kusema 
+Kiswahili 
+He/She didn’t like 
+to speak Swahili 
+Hawakupenda 
+kusema 
+Kiswahili 
+They didn’t like to 
+speak Swahili 
+Present 
+Perfect 
+Hajapenda 
+kusema 
+Kiswahili 
+He/She has not 
+liked to speak 
+Swahili 
+Hawajapenda 
+kusema 
+Kiswahili 
+They have not liked 
+to speak Swahili 
+Present Hapendi kusema 
+Kiswahili 
+He/She doesn’t like 
+to speak Swahili 
+Hawapendi 
+kusema 
+Kiswahili 
+They don’t like to 
+speak Swahili 
+Present 
+Continuous 
+Hapendi kusema 
+Kiswahili 
+He/She is not liking 
+to speak Swahili 
+Hawapendi 
+kusema 
+Kiswahili 
+They are not liking 
+to speak Swahili 
+Future Hatapenda 
+kusema 
+Kiswahili 
+He/She will not like 
+to speak Swahili 
+Hawatapenda 
+kusema 
+Kiswahili 
+They will not like 
+to speak Swahili
+
+
+--- PAGE 28 ---
+25
+ 
+And now, a much tougher example! We’ll see an example of a verb carrying various 
+types of viambishi – for subject (shown in red), for object (shown in purple), and for 
+tense (shown in green). In this example, the object is in the second person singular hence 
+its corresponding kiambishi is “-ku-” for all the cases except when the subject is also in 
+the second person, in which case the correct kiambishi is “-ji-”. 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Nilikupenda I loved you Tulikupenda We loved you 
+Present 
+Perfect 
+Nimekupenda I have loved you Tumekupenda We have loved 
+you 
+Present Ninakupenda I love you Tunakupenda We love you 
+Present 
+Continuous 
+Ninakupenda I am loving you Tunakupenda We are loving you 
+Future Nitakupenda I will love you Tutakupenda We will love you 
+ 
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Ulijipenda You loved yourself Mlijipenda You loved 
+yourselves 
+Present 
+Perfect 
+Umejipenda You have loved 
+yourself 
+Mmejipenda You have loved 
+yourselves 
+Present Unajipenda You love yourself Mnajipenda You love 
+yourselves 
+Present 
+Continuous 
+Unajipenda You are loving 
+yourself 
+Mnajipenda You are loving 
+yourselves 
+Future Utajipenda You will love 
+yourself 
+Mtajipenda You will love 
+yourselves 
+ 
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Alikupenda He/She loved you Walikupenda They loved you 
+Present 
+Perfect 
+Amekupenda He/She has loved 
+you 
+Wamekupenda They have loved 
+you 
+Present Anakupenda He/She loves you Wanakupenda They love you 
+Present 
+Continuous 
+Anakupenda He/She is loving 
+you 
+Wanakupenda They are loving 
+you 
+Future Atakupenda He/She will love 
+you 
+Watakupenda They will love 
+you
+
+
+--- PAGE 29 ---
+26
+Now let’s make the corresponding negative sentences. 
+ 
+ FIRST PERSON SINGULAR FIRST PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Sikukupenda I didn’t love you Hatukukupenda We didn’t love 
+you 
+Present 
+Perfect 
+Sijakupenda I have not loved 
+you 
+Hatujakupenda We have not 
+loved you 
+Present Sikupendi I don’t love you Hatukupendi We don’t love 
+you 
+Present 
+Continuous 
+Sikupendi I am not loving 
+you 
+Hatukupendi We are not loving 
+you 
+Future Sitakupenda I will not love 
+you 
+Hatutakupenda We will not love 
+you 
+ 
+ SECOND PERSON SINGULAR SECOND PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hukujipenda You didn’t love 
+yourself 
+Hamkujipenda You didn’t love 
+yourselves 
+Present 
+Perfect 
+Hujajipenda You have not 
+loved yourself 
+Hamjajipenda You have not 
+loved yourselves 
+Present Hujipendi You don’t love 
+yourself 
+Hamjipendi You don’t love 
+yourselves 
+Present 
+Continuous 
+Hujipendi You are not loving 
+yourself 
+Hamjipendi You are not loving 
+yourselves 
+Future Hutajipenda You will not love 
+yourself 
+Hamtajipenda You will not love 
+yourselves 
+ 
+ THIRD PERSON SINGULAR THIRD PERSON PLURAL 
+TENSE SWAHILI ENGLISH SWAHILI ENGLISH 
+Past Hakukupenda He/She didn’t 
+love you 
+Hawakukupenda They didn’t love 
+you 
+Present 
+Perfect 
+Hajakupenda He/She has not 
+loved you 
+Hawajakupenda They have not 
+loved you 
+Present Hakupendi He/She doesn’t 
+love you 
+Hawakupendi They don’t love 
+you 
+Present 
+Continuous 
+Hakupendi He/She is not 
+loving you 
+Hawakupendi They are not 
+loving you 
+Future Hatakupenda He/She will not 
+love you 
+Hawatakupenda They will not 
+love you
+
+
+--- PAGE 30 ---
+27
+TEST YOURSELF 2 
+Use the words and techniques you’ve learned so far to make Swahili sentences with 
+the meaning provided in the right column of the table below. You can find many 
+useful words in various lessons of this course. For example, you can find the Swahili 
+word for television in LESSON 25:. More words can be found from the Dictionary 
+provided in this course. Click on “Show sentence” to show the correct sentence.  
+SWAHILI SENTENCE MEANING 
+Show sentence I want to watch television 
+Show sentence I don’t want to watch television 
+Show sentence She will come later 
+Show sentence She will not come  
+Show sentence We are cooking bananas 
+Show sentence We cooked bananas yesterday 
+Show sentence You like to laugh 
+Show sentence You don’t like to laugh 
+Show sentence They are drinking milk 
+Show sentence They are not drinking milk, they are drinking coffee!
+Show sentence I gave her a gift 
+Show sentence We gave her gifts 
+Show sentence You will give her a gift 
+Show sentence They have given her gifts 
+Show sentence I have eaten fish and rice 
+Show sentence They have eaten chicken and potatoes 
+ 
+SWAHILI SENTENCE MEANING 
+Ninataka kutazama televisheni I want to watch television 
+Sitaki kutazama televisheni I don’t want to watch television 
+Atakuja baadaye She will come later 
+Hatokuja She will not come  
+Tunapika ndizi We are cooking bananas 
+Tulipika ndizi jana We cooked bananas yesterday 
+Unapenda kucheka You like to laugh 
+Hupendi kucheka You don’t like to laugh 
+Wanakunywa maziwa They are drinking milk 
+Hawanywi maziwa, wanakunywa kahawa! They are not drinking milk, they are drinking coffee!
+Nilimpa zawadi I gave her a gift 
+Tulimpa zawadi We gave her gifts 
+Utampa zawadi You will give her a gift 
+Wamempa zawadi They have given her gifts 
+Nimekula samaki na wali I have eaten fish and rice 
+Wamekula kuku na mbatata They have eaten chicken and potatoes
+
+
+--- PAGE 31 ---
+28
+LESSON 11: GREETINGS 
+ 
+The table below gives words/phrases that convey greetings. You will respond with a 
+word or a phrase written in blue to the corresponding word or phrase written in red. 
+ 
+SWAHILI ENGLISH 
+ Shikamoo! (to a person older than you) 
+ Marahaba! 
+Hello/Hi! 
+Hello to you! 
+Habari/Habari gani? 
+Nzuri! 
+Sio nzuri!/Mbaya! 
+Hello/Hi! 
+Good/Fine! 
+Not good! 
+Hujambo? 
+Sijambo! 
+How are you? 
+I am fine! 
+Karibu kwetu! 
+Asante!/Asante sana! 
+Welcome to our home/country! 
+Thank you!/Thank you very much! 
+Karibu nyumbani! 
+Asante!/Asante sana! 
+Welcome home! (at person’s house) 
+Thank you!/Thank you very much! 
+Kwaheri! 
+Karibu. Tutaonana baadaye! 
+Goodbye!  
+Goodbye! See you later! 
+ 
+LESSON 12: SELF-INTRODUCTION 
+ 
+Sometimes we feel the need to introduce ourselves or we may be in a situation in which 
+we are required to do so. In any case, here is a list of commonly used sentences for self-
+introduction. 
+ 
+SWAHILI ENGLISH 
+Unasema Kiswahili? Do you speak Swahili? 
+Kidogo tu! Just a little bit! 
+Hapana! Sisemi Kiswahili. Ninasema 
+Kiingereza. 
+No! I don’t speak Swahili. I speak 
+English. 
+Jina lako nani?/Unaitwaje? What is your name? 
+Jina langu Adam My name is Adam 
+Unatokea wapi?  Where are you from?  
+Ninatokea Marekani I am from United States of America  
+Ulifika hapa lini? When did you arrive here? 
+Nilifika hapa kiasi wiki mbili zilizopita. I arrived here about two weeks ago. 
+Unafanya kazi gani? What do you do?  
+Mimi ni mhasibu. I am an accountant. 
+Uko hapa kikazi au matembezi? Are you here on business or leisure? 
+Niko hapa kwa matembezi. I am just visiting. 
+Umeoa? (question to a male) Are you married?  
+Umeolewa? (question to a female) Are you married?  
+Ndio, nimeoa (response from a male). Yes, I am married.
+
+
+--- PAGE 32 ---
+29
+Hapana, sijaoa (response from a male). No, I am not married. 
+Ndio, nimeolewa (response from a female). Yes, I am married. 
+Hapana, sijaolewa (response from a female). No, I am not married. 
+Familia yako iko wapi? Where is your family? 
+Familia yako iko hapa? Is your family here? 
+Ndio, familia yangu iko hapa. Yes, my family is here. 
+Hapana, familia yangu iko nyumbani. No, my family is at home. 
+Unao watoto wangapi? How many children do you have? 
+Ninao watoto wawili. I have two children. 
+Sina watoto. I do not have children. 
+Watoto wako wana umri gani?  How old are your children?  
+Mimi ninaishi hapa. I live here. 
+Umeishi hapa miaka mingapi? How many years have you lived here? 
+Nimeishi hapa miaka sita. I have lived here for six years. 
+Umeishi hapa muda gani? How long have you lived here? 
+Nimeishi hapa kwa muda mrefu sana. I have lived here for a long time. 
+Nimefurahi kujuana na wewe. I’m pleased to know you. 
+Nimefurahi kuonana na wewe. I’m pleased to meet you. 
+Tutaonana baadaye We will meet later. 
+ 
+LESSON 13: ASKING FOR DIRECTION 
+ 
+SWAHILI ENGLISH 
+Uwanja wa ndege uko wapi? Where is the airport? 
+Nitafikaje hospitali? How do I get to hospital? 
+Upande gani ni kaskazini? Which direction is north? 
+Upande gani ni kusini? Which direction is south? 
+Upande gani ni mashariki? Which direction is east? 
+Upande gani ni magharibi? Which direction is west? 
+Huu ni upande gani? Which direction is this? 
+Tafadhali nioneshe njia ya mjini Please show me the way to town. 
+Kijiji hiki kinaitwaje? What is the name of this village? 
+Ni masafa gani mpaka mjini? How far is it to the town? 
+Basi lipi linakwenda mjini? Which bus goes to the town? 
+Kituo cha basi kiko wapi? Where is the bus station? 
+Nitafikaje nyumbani kwako? How do I get to your house? 
+Njia hii inaitwaje? What is the name of this road? 
+Njia hii inakwenda wapi? Where does this road go?
+
+
+--- PAGE 33 ---
+30
+LESSON 14: ASKING FOR HELP 
+ 
+SWAHILI ENGLISH 
+Nina kiu / Nina kiu sana! I am thirsty / I am very thirsty! 
+Nasikia kiu / Nasikia kiu sana! I am thirsty / I am very thirsty! 
+Tafadhali nipatie maji ya kunywa. Get me some water, please. 
+Tafadhali niletee maji ya kunywa. Bring me some water, please. 
+Tafadhali nipatie kinywaji baridi. Get me a cold drink, please. 
+Tafadhali niletee kiburudisho. Bring me some refreshment, please. 
+Nina njaa / Nina njaa sana! I am hungry / I am very hungry! 
+Nasikia njaa / Nasikia njaa sana! I am hungry / I am very hungry! 
+Tafadhali nipatie chakula. Get me some food, please. 
+Tafadhali niletee chakula moto. Bring me some hot food, please. 
+Kichwa kinaniuma. I have got headache 
+Unazo dawa za kichwa? Do you have headache medicine? 
+Tafadhali nipatie dawa. Get me some medicine, please! 
+Naweza kutumia choo, tafadhali? May I use the restroom/toilet, please? 
+Unaweza kunisaidia, tafadhali? Can you help me, please? 
+Tafadhali nipatie chenji. Get me some change, please.  
+Ninataka kwenda hospitali. I would like to go to hospital. 
+Unaweza kunipeleka hospitali, tafadhali? Could you take me to hospital, please? 
+Nipunguzie bei, tafadhali. Mimi rafiki yako. Give me some discount, please. I’m your friend.
+ 
+LESSON 15: RELATIONS 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+kaka brother mjomba maternal uncle 
+ndugu brother/sister mama mother 
+shemeji/ 
+shemegi 
+brother-in-law/sister-in-law (also 
+husband’s/wife’s brother) 
+mama mkuu mother’s elder 
+sister 
+mtoto/watoto child/children mama mdogo mother’s 
+younger sister 
+mtoto wa kike daughter mpwa nephew/niece 
+baba father shangazi paternal aunt 
+mkwe father-in-law/mother-in-law ami paternal uncle 
+shoga female friend of a female 
+person 
+bintiami paternal uncle’s 
+daughter 
+mchumba fiancé binami paternal uncle’s 
+son 
+rafiki/marafiki friend/friends  dada sister 
+mjukuu/ 
+wajukuu 
+grand-child/ 
+grand-children 
+mtoto wa kiume son 
+babu grandfather baba wa kambo step-father 
+bibi grandmother ndugu wa 
+kambo 
+step-brother/ 
+step-sister
+
+
+--- PAGE 34 ---
+31
+kitukuu great grand-child mtoto wa kambo step-child 
+mlezi guardian mama wa kambo step-mother 
+mume husband mapacha twins 
+wifi husband’s sister mke wife 
+ 
+LESSON 16: HUMAN BODY PARTS 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+mkono/mikono arm/arms kichwa/vichwa head/heads 
+kwapa/kwapa armpit/armpits kisigino/visigino heel/heels 
+mgongo/migongo back/backs kiuno/viuno hip/hips 
+ndevu beard goti/magoti knee/knees 
+tumbo belly/tummy mguu/miguu leg/legs 
+kitovu belly-button/navel mdomo/midomo lip/lips 
+mwili/miili body/bodies masharubu moustache 
+matiti breast mdomo/midomo mouth/mouths 
+matako buttocks kucha/kucha nail/nails 
+shavu/mashavu cheek/cheeks shingo/shingo neck/necks 
+kifua/vifua chest/chests pua/pua nose/noses 
+kidevu/videvu chin/chins kiganja/viganja palm/palms 
+sikio/masikio ear/ears ubavu/mbavu rib/ribs 
+jicho/macho eye/eyes muundi/miundi sheen/sheens 
+nyusi/nyusi eyebrow/eyebrows bega/mabega shoulder/shoulders
+kope/kope eyelash/eyelashes ngozi skin 
+kidole/vidole finger/fingers; toe/toes unyayo/nyayo sole/soles 
+kidole cha mkono finger paja/mapaja thigh/thighs 
+mguu/miguu foot/feet kidole gumba thumb 
+paji la uso forehead kidole cha mguu toe 
+nywele hair ulimi/ndimi tongue/tongues 
+mkono/mikono hand/hands jino/meno tooth/teeth
+
+
+--- PAGE 35 ---
+32
+LESSON 17: FOOD 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+pombe alcoholic drink unga wa mahindi/sembe corn flour 
+lozi/lozi almond/almonds kaa/kaa crab/crabs 
+tofaa/matofaa apple/apples kitango cucumber 
+ndizi/ndizi banana/bananas chakula cha jioni dinner 
+kunde/kunde bean/beans kinywaji drink 
+nyama ya ng'ombe beef mkunga eel 
+bia beer yai/mayai egg/eggs 
+pilipili manga black pepper samaki fish 
+mkate bread unga flour 
+kifungua kinywa/chai breakfast chakula food 
+siagi butter tunda/matunda fruit/fruits 
+kabichi cabbage kitunguu thomu garlic 
+keki cake samli ghee 
+korosho cashew nuts zabibu/zabibu grape/grapes 
+nyama ya kuku chicken (meat) barafu ice 
+pilipili chili pepper jamu jam 
+chaza/chaza clam/clams sharubati juice 
+kahawa coffee nyama ya kondoo lamb 
+hindi/mahindi corn/corns ndimu/ndimu lime/limes 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+limau/malimau lemon/lemons mchele (wali) rice (cooked rice) 
+kamba/kamba lobster/lobsters saladi salad 
+chakula cha mchana lunch chumvi salt 
+embe/maembe mango/mangoes mchuzi sauce 
+siagi margarine kamba shrimp 
+nyama meat soda soda 
+maziwa milk supu soup 
+mafuta oil maharage soy beans 
+bamia okra mchicha spinach 
+kitunguu/vitunguu onion/onions sukari sugar 
+chungwa/machungwa orange/oranges kiazi kitamu sweet potato 
+papai/mapapai papaya/papayas chai tea 
+njugu/njugu peanut/peanuts nyanya/tungule tomato 
+njegere peas mboga vegetables 
+achari pickle maji water 
+nanasi/mananasi pineapple/pineapples unga wa ngano wheat flour 
+mbatata/mbatata potato/potatoes hamira yeast 
+boga/maboga pumpkin/pumpkins mtindi yoghurt
+
+
+--- PAGE 36 ---
+33
+LESSON 18: NUMBERS 
+ 
+Numbers in Swahili are very easy to say. If you know how to say 0, 1, 2, 3, 4, 5, 6, 7, 8, 
+9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 1000000, and 1000000000, you should be 
+able to say any other (practical) number. That’s because, the other numbers are spoken as 
+combinations of the above-mentioned numbers. 
+ 
+For example, 1932, is elfu moja mia tisa thalathini na mbili which is an exact literal 
+translation of one thousand nine hundred thirty two. The only (minor) difference here is 
+the addition of na which means and, between the Swahili word for thirty (thalathini) and 
+two (mbili). In Swahili, na is always added between tens and unit digits. There are a few 
+other twists. Read on to learn more about them. 
+ 
+Of course you also need to know how to say fractional and decimal numbers as well as 
+percentages. Swahili people also have a habit of using a number called laki, which is 
+100,000. So, numbers in hundreds of thousand are alternatively spoken using laki. For 
+example, 324,167 can be spoken as mia tatu ishirini na nne elfu, mia moja sitini na 
+saba, or alternatively, laki tatu, ishirini na nne elfu, mia moja sitini na saba. Both 
+forms are correct. 
+ 
+Please find below examples of numbers as spoken in Swahili. 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+sifuri 0 ishirini na tatu 23 
+moja 1 thalathini 30 
+mbili 2 thalathini na moja 31 
+tatu 3 thalathini na mbili 32 
+nne 4 arubaini 40 
+tano 5 arubaini na moja 41 
+sita 6 arubaini na mbili 42 
+saba 7 hamsini 50 
+nane 8 hamsini na moja 51 
+tisa 9 hamsini na mbili 52 
+kumi 10 sitini 60 
+kumi na moja 11 sitini na moja 61 
+kumi na mbili 12 sitini na mbili 62 
+kumi na tatu 13 sabini 70 
+kumi na nne 14 sabini na moja 71 
+kumi na tano 15 sabini na mbili 72 
+kumi na sita 16 thamanini 80 
+kumi na saba 17 thamanini na moja 81 
+kumi na nane 18 thamanini na mbili 82 
+kumi na tisa 19 tisini 90 
+ishirini 20 tisini na moja 91 
+ishirini na moja 21 tisini na mbili 92 
+ishirini na mbili 22 mia 100
+
+
+--- PAGE 37 ---
+34
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+mia na moja 101 elfu 1000 
+mia na mbili 102 elfu moja mia tisa tisini na saba 1997 
+mia moja na 
+kumi 110 kumi na tatu elfu mia saba 
+arubaini 13,740 
+mia moja kumi 
+na moja 
+111 ishirini na tisa elfu na tatu 29,003 
+mia moja 
+ishirini 120 thalathini na sita elfu, na ishirini 
+na saba 36,027 
+mia moja 
+ishirini na moja 
+121 mia nne kumi na mbili elfu, mia 
+mbili thalathini na nane 412,238 
+mia moja 
+thalathini 
+130 milioni tatu sitini na saba elfu, 
+mia nane thamanini na tatu 3,067,883 
+mia mbili 200 
+mia tano sitini na mbili milioni, 
+mia nne tisini na tano elfu na 
+kumi na moja 
+562,495,011 
+mia tatu 300 
+bilioni mbili, mia mbili thamanini 
+na tisa milioni, mia moja arubaini 
+na tatu elfu, mia mbili na sita 
+2,289,143,206 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+sehemu fraction thuluthi 1/3 
+thumni 1/8 nusu 1/2 
+sudusi 1/6 thuluthi mbili 2/3 
+robo 1/4 robo tatu 3/4 
+    
+nukta  decimal 
+point 
+arubaini na tano elfu, mia tatu 
+tisini na moja nukta tatu sita tano 45,391.365
+mbili nukta nne 
+tano 
+2.45 mia mbili hamsini na tatu nukta 
+sifuri sifuri tisa 253.009 
+sifuri nukta mbili 
+mbili nne 
+0.224 sifuri nukta sifuri sifuri saba 
+sifuri moja 0.00701 
+    
+asilimia percent (%) asilimia kumi na tatu nukta nne 
+tano 13.45% 
+asilimia mia moja 100% asilimia moja 1%
+
+
+--- PAGE 38 ---
+35
+LESSON 19: DAYS OF THE WEEK 
+ 
+In the Swahili world, the week (wiki) has seven days (siku) just like in the West. The 
+first day of the week, however, is different. It is Saturday! The sixth day of the week, 
+Thursday, is sometimes pronounced as Alkhamisi instead of Alhamisi.  
+ 
+The names for Thursday (Alhamisi) and Friday (Ijumaa) are of Arabic origin. They 
+probably replaced the original Bantu names of those days due to their special place in the 
+Islamic religion. Note that in the Arab world, “Alkhamis” means the fifth day of the 
+week, but the same name is used in the Swahili world for the sixth day of the week! 
+Someone messed up on that! 
+ 
+Enough talk on language mess, here are the days of the week: 
+ 
+SWAHILI ENGLISH 
+Jumamosi Saturday 
+Jumapili Sunday 
+Jumatatu Monday 
+Jumanne Tuesday 
+Jumatano Wednesday 
+Alhamisi Thursday 
+Ijumaa Friday 
+ 
+LESSON 20: TIME 
+ 
+Let’s talk a little bit about time. Swahili people seem to have ALL the time for ALL the 
+things. And they don’t like to be rushed – into and out of any event! They like to take 
+their own time! When you deal with Swahili people, you’ll be well served to bear that in 
+mind! 
+ 
+It’s interesting to note that in the Swahili culture the day starts at sunrise. This is in 
+contrast to the Arab world where the day starts at sunset and in the Western world where 
+the day starts at midnight. Sunrise in East Africa happens everyday at around 6:00 a.m. 
+That’s because East Africa falls right on the Equator. So, 6:00 a.m. is “0:00 morning” 
+Swahili time.  7:00 a.m. is “1:00 morning” (saa moja asubuhi) Swahili time. 
+ 
+It’s also worth noting that Swahili time doesn’t use “noon” as the reference as in a.m. 
+(before noon), and p.m. (after noon). Swahili time is spoken using the following loose 
+references: 
+ 
+- alfajiri: early morning time before sunrise 
+- asubuhi: from sunrise to a little before noon 
+- mchana: from around noon to around 3:00 p.m.
+
+
+--- PAGE 39 ---
+36
+- alasiri: from around 3:00 p.m. to sunset 
+- jioni: from around 3:00 p.m. to a little before 7:00 p.m. 
+- usiku: from around 7:00 p.m. to early morning 
+ 
+The following are some words associated with time: 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+karne century msimu season 
+saa clock sekunde second 
+siku/siku day/days polepole slow/slowly 
+keshokutwa day after tomorrow vuli spring 
+juzi day before yesterday ghafla sudden 
+mchana daytime kaskazi summer 
+magharibi dusk mapambazuko sunrise 
+mapema early machweo sunset 
+kipupwe fall wakati/saa time 
+saa/saa hour/hours leo today 
+usiku wa manane late night kesho tomorrow 
+baadaye/halafu later saa watch 
+dakika/dakika minute/minutes wiki/wiki week/weeks 
+mwezi/miezi month/months Saa ngapi? What time is it? 
+usiku night time masika winter 
+sasa now mwaka/miaka year/years 
+haraka quick/quickly jana yesterday 
+ 
+The table below shows how you tell the time. Observe that after 30 minutes past the hour 
+the time is usually told using the number of minutes before the coming hour. For 
+example, 3:47 p.m. is spoken as “13 minutes short of 4 p.m.” That is, “Saa kumi kasoro 
+dakika kumi na tatu jioni”. The word “kasoro” means “short of” or “before”. For 15 
+minutes before the hour, the word “kasorobo” (also kasarobo) is used.
+
+
+--- PAGE 40 ---
+37
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+Saa mbili kamili asubuhi 8:00 a.m. Saa mbili kasorobo usiku 7:45 p.m. 
+Saa mbili barabara 
+8 o’clock 
+sharp 
+Saa tatu kasoro dakika 
+moja usiku 8:59 p.m. 
+Saa tatu unusu asubuhi 9:30 a.m. 
+Saa tano na dakika moja 
+usiku 11:01 p.m.
+Saa sita mchana noon Saa sita usiku midnight 
+Saa saba na dakika 
+kumi na sita mchana 1:16 p.m. Saa nane na robo usiku 2:15 a.m. 
+Saa tisa kasoro dakika 
+kumi na sita mchana 2:44 p.m. 
+Saa kumi na moja na 
+dakika tatu alfajiri 5:03 a.m. 
+Saa tisa na dakika 
+ishirini na tano alasiri 
+3:25 p.m. 
+Saa kumi na mbili na 
+robo asubuhi 6:15 a.m. 
+Saa kumi na mbili na 
+robo jioni 
+6:15 p.m. 
+Saa moja kasoro dakika 
+kumi asubuhi 
+6:50 a.m. 
+ 
+LESSON 21: CLOTHES AND ADORNMENT 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+bangili bangle/bracelet suruali pants 
+buti boot poda powder 
+sidiria brassier pete/pete ring/rings 
+mkufu chain kanzu/kanzu robe/robes 
+nguo/nguo cloth/clothes ndara/ndara sandal/sandals 
+koti/makoti coat/coats skafu/skafu scarf/scarves 
+nepi/nepi diaper/diapers shimizi chemise 
+gauni/magauni dress/dresses shati/mashati shirt/shirts 
+herini/herini earring/earrings kiatu/viatu shoe/shoes 
+dhahabu gold fedha silver 
+mkoba/mikoba handbag/handbags skati/sketi skirt 
+kofia/kofia hat/hats soksi sox 
+kilemba headscarf/turban suti suit 
+pasi iron tai/tai tie/ties 
+rangi ya mdomo lipstick mtandio top-throw 
+wanja mascara fulana T-shirt/vest 
+kidani/mkufu necklace chupi underwear 
+mafuta oil pochi wallet
+
+
+--- PAGE 41 ---
+38
+LESSON 22: ANIMALS AND INSECTS 
+ 
+SWAHILI PICTURE ENGLISH 
+mnyama/wanyama 
+ animal/animals 
+mdudu/wadudu 
+ 
+ant/ants 
+nyani 
+ 
+baboon 
+dubu/madubu 
+ 
+bear/bears 
+ndege/ndege 
+ 
+bird/birds 
+nguruwe-mwitu 
+ 
+boar
+
+
+--- PAGE 42 ---
+39
+nyati 
+ 
+buffalo 
+kipepeo/vipepeo 
+ 
+butterfly/butterflies 
+paka/paka 
+ 
+cat/cats 
+duma/duma 
+ 
+cheetah 
+kuku 
+ 
+chicken/hen 
+sokwe 
+ 
+chimpanzee 
+mende/mende 
+ 
+cockroach/cockroaches
+
+
+--- PAGE 43 ---
+40
+ng'ombe/ng’ombe 
+ 
+cow/cows 
+mamba/mamba 
+ 
+crocodile/crocodiles 
+paa/paa 
+ 
+deer/deers 
+mbwa/mbwa 
+ 
+dog/dogs 
+punda/punda 
+ 
+donkey/donkeys 
+bata/mabata 
+ 
+duck/ducks
+
+
+--- PAGE 44 ---
+41
+tembo/tembo 
+ 
+elephant/elephants 
+samaki 
+ 
+fish 
+nzi/nzi 
+ 
+fly/flies 
+twiga/twiga 
+ 
+giraffe/giraffes 
+mbuzi/mbuzi 
+ 
+goat/goats 
+panzi/panzi 
+ 
+grasshopper/grasshoppers
+
+
+--- PAGE 45 ---
+42
+kiboko 
+ 
+hippopotamus 
+farasi/farasi 
+ 
+horse/horses 
+fisi/fisi 
+ 
+hyena/hyenas 
+swala/swala 
+ 
+impala/impala 
+mdudu/wadudu 
+ 
+insect/insects 
+chui/chui 
+ 
+leopard/leopards
+
+
+--- PAGE 46 ---
+43
+simba/simba 
+ 
+lion/lions 
+kima/kima 
+ 
+monkey/monkeys 
+panya/panya 
+ 
+mouse/mice 
+mbuni/mbuni 
+ 
+ostrich/ostriches 
+ng'ombe dume 
+ 
+ox 
+kasuku/kasuku 
+ 
+parrot/parrots
+
+
+--- PAGE 47 ---
+44
+tausi/tausi 
+ 
+peacock/peacocks 
+nguruwe/nguruwe 
+ 
+pig/pigs 
+chatu/chatu 
+ 
+python/pythons 
+sungura/sungura 
+ 
+rabbit/rabbits 
+kifaru/vifaru 
+ 
+rhinoceros/rhinoceros 
+papa/papa 
+ 
+shark/sharks 
+kondoo/kondoo 
+ 
+sheep/sheep
+
+
+--- PAGE 48 ---
+45
+nyoka/nyoka 
+ 
+snake/snakes 
+kobe/makobe 
+ 
+tortoise/tortoise 
+bata-mzinga 
+ 
+turkey/turkeys 
+kasa/kasa 
+ 
+turtle/turtles 
+ngiri/ngiri 
+ 
+warthog/warthogs 
+nyangumi/nyangumi 
+ 
+whale/whales 
+punda-milia/punda-milia 
+ 
+zebra/zebras
+
+
+--- PAGE 49 ---
+46
+LESSON 23: PROFESSIONS 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+mtangazaji/watangazaji announcer/announcers waziri/mawaziri minister/ministers 
+mwanajeshi/wanajeshi army officer/ 
+army officers muuguzi/wauguzi nurse/nurses 
+kinyozi/vinyozi barber/barbers polisi/polisi police officer/police 
+officers 
+mjenzi builder/mason mwanasiasa politician 
+mfanyabiashara/ 
+wafanyabiashara 
+businessman/ 
+businessmen raisi/maraisi president/presidents 
+karani/makarani clerk/clerks waziri mkuu prime minister 
+fundi wa kompyuta computer technician profesa/maprofesa professor/professors 
+daktari/madaktari doctor/doctors afisa usalama security officer 
+dereva/madereva driver/drivers muuza duka shopkeeper 
+mhandisi/wahandisi engineer/engineers askari/askari soldier/soldiers 
+mkulima/wakulima farmer/farmers mshoni/washoni tailor/tailors 
+mvuvi/wavuvi fisherman/fishermen dereva wa teksi taxi driver 
+muuza samaki fish-vendor mwalimu/walimu teacher/teachers 
+mlinzi/walinzi guard/guards fundi/mafundi technician/technicians 
+mwandishi wa habari/ 
+waandishi wa habari journalist/journalists kazi work 
+mbunge/wabunge member of parliament/ 
+members of parliament
+mfanyakazi/ 
+wafanyakazi worker/workers 
+ 
+LESSON 24: COURTESY AND EMERGENCY 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+ambalesi ambulance tafadhali please 
+choo bathroom/restroom Kimbia! Run away! 
+Hatari! Danger! Samahani! Sorry! (to apologize) 
+Moto! Fire! Pole! Sorry! (to sympathize) 
+Toka! Get out! Simama! Stop! 
+Ondoka! Go away! Asante! Thank you! 
+Kwaheri! Goodbye! Asante sana! Thank you very much! 
+Nisaidie Help me mwizi thief 
+hospitali hospital karibu welcome/come again 
+Vipi? How? Nini? What? 
+Nimeumia I'm hurt Lini? When? 
+Ninaumwa I'm sick Wapi? Where? 
+Hodi? May I come in? Ipi? Which? 
+dawa medicine Nani? Who? 
+Hapana! No! Ndio! Yes!
+
+
+--- PAGE 50 ---
+47
+LESSON 25: ENTERTAINMENT 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+riadha athletics cheza play 
+mpira/mipira ball/balls uwanja play ground 
+mpira wa kikapu basketball mchezaji player 
+bao board game shairi/mashairi poem/poems 
+ngumi boxing mbio race 
+karata/karata card/cards redio radio 
+bingwa champion refa referee 
+mashindano championship/tournament soka/kandanda soccer 
+chesi chess stesheni station 
+sinema cinema hadithi/hadithi story/stories 
+nage dodge ball kuogelea swimming 
+suluhu draw foliti tag game 
+filamu film televisheni television 
+mchezo/michezo game/games tenisi tennis 
+kipa goalkeeper mchezo wa kuigiza theatrical play 
+goli/magoli goal/goals mpira wa wavu volleyball 
+mchezo wa kuruka 
+juu high-jump firimbi/firimbi whistle/whistles
+mshindwa loser mshindi/washindi winner/winners 
+gololi/gololi marble/marbles dama X-and-O game 
+kitabu cha hadithi novel video video
+
+
+--- PAGE 51 ---
+48
+LESSON 26: HOME 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+choo/vyoo bathroom/bathrooms gilasi/gilasi glass/glasses 
+kitanda/vitanda bed/beds moto hot 
+chumba cha kulala/ 
+vyumba vya kulala bedroom/bedrooms nyumba/nyumba house/houses; 
+home/homes 
+shuka/shuka bed sheet/bed sheets pasi/pasi iron/irons 
+blangeti/mablangeti blanket/blankets jagi/majagi jug/jugs 
+bakuli/bakuli bowl/bowls birika/birika kettle/kettle 
+busati/mabusati carpet/carpets jiko/majiko kitchen/kitchens 
+dari ceiling kisu/visu knife/knives 
+kiti/viti chair/chairs taa/taa light/lights;lamp/lamps 
+baridi cold ukumbi/kumbi living room/living rooms 
+sufuria/masufuria cooking pot/cooking pots godoro/magodoro mattress/mattresses 
+kochi/makochi couch/couches karai/makarai pan/pans 
+kikombe/vikombe cup/cups mto/mito pillow/pillows 
+kabati/makabati cupboard/cupboards sahani/sahani plate/plates 
+pazia/mapazia curtain/curtains paa/mapaa roof/roofs 
+chumba cha kulia dining room kisahani/visahani saucer/saucers 
+mlango/milango door/doors rafu/rafu shelf/shelves 
+umeme electricity kijiko/vijiko spoon/spoons 
+feni/mafeni fan/fans swichi/swichi switch/switches 
+sakafu floor meza/meza table/tables 
+uma/nyuma fork/forks ukuta/kuta wall/walls 
+friji/mafriji fridge/fridges dirisha/madirisha window/windows
+
+
+--- PAGE 52 ---
+49
+LESSON 27: OFFICE 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+bodi board (as in ‘board 
+of directors’) mkutano meeting/conference 
+kitabu/vitabu book/books ofisi/ofisi office/offices 
+kabati/makabati cabinet/cabinets tarishi/matarishi messenger/messengers
+kiti/viti chair/chairs ofisa/maofisa officer/officers 
+mwenyekiti chairman karatasi paper 
+karani/makarani clerk/clerks kalamu/kalamu pen/pens 
+kompyuta/kompyuta computer/computers penseli/penseli pencil/pencils 
+monita/monita computer monitor/ 
+computer monitors fotokopi photocopy 
+chumba cha mkutano conference room printa/printa printer/printers 
+mkurugenzi/ 
+wakurugenzi director/directors daftari/madaftari record book/record 
+books 
+mtoto wa meza drawer ripoti/ripoti report/reports 
+faksi fax machine katibu secretary 
+faili/mafaili file/files rafu/rafu shelf/shelves 
+jalada/majalada folder/folders muangalizi supervisor 
+msafishaji janitor meza table/desk 
+barua/barua letter/letters simu telephone 
+meneja/meneja manager/managers kazi work/job 
+kumbukumbu za 
+mkutano meeting minutes mfanyakazi worker
+
+
+--- PAGE 53 ---
+50
+LESSON 28: TRA VEL 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+anga air/space mzigo/mizigo luggage 
+ndege/ndege airplane/airplanes ramani/ramani map/maps 
+uwanja wa ndege airport pikipiki motorbike 
+begi/mabegi bag/bags kaskazini north 
+sanduku/masanduku box/boxes sio mbali not far 
+baiskeli/baiskeli bicycle/bicycles sio mbali sana not very far 
+mashua/mashua boat/boats pasi/pasipoti passport 
+basi/mabasi bus/busses rubani/marubani pilot/pilots 
+kondakta/utingo bus conductor reli rail 
+mtumbwi/dau canoe mkahawa/mikahawa restaurant/restaurants
+gari/gari car/cars njia/njia road/roads 
+karibu close to/nearby baharia/mabaharia sailor/sailors 
+jahazi dhow bahari sea 
+masafa distance meli ship 
+dereva/madereva driver/drivers kusini south 
+mashariki east mtaa street 
+mbali far teksi taxi 
+nauli fare pale/kule there 
+kituo cha mafuta gas station tiketi/tiketi ticket/tickets 
+zawadi/zawadi gift/gifts mtalii/watalii tourist/tourists 
+bandari/bandarini harbor/at the harbor gari-moshi/magari-moshi train/trains 
+hapa here kadi ya mchanjo vaccination card 
+barabara highway karibu sana very close 
+hoteli/hoteli hotel/hotels mbali sana very far 
+safari journey magharibi west
+
+
+--- PAGE 54 ---
+51
+LESSON 29: SHOPPING 
+ 
+SWAHILI ENGLISH SWAHILI ENGLISH 
+duka la vitabu bookstore soko/masoko market/markets 
+duka la nyama butchery kati-na-kati/wastani medium 
+nunua buy pesa money 
+senti cent noti note (paper money)
+chenji change ratili pound (weight) 
+rahisi/bei nafuu cheap pauni pound (currency) 
+dola/dola dollar/dollars bei price 
+ghali expensive robo quarter 
+duka la nguo fashion store shilingi shilling 
+soko la samaki fish market duka shop/store 
+duka la chakula grocery store muuza duka shopkeeper 
+nusu half  kiasi  size 
+kilo kilo ndogo small 
+kubwa large ghala store (for storage)
+
+
+--- PAGE 55 ---
+52
+ DICTIONARY 
+ 
+ENGLISH SWAHILI 
+0 sifuri 
+0.00701 sifuri nukta sifuri sifuri saba sifuri moja 
+1% asilimia moja 
+13.45% asilimia kumi na tatu nukta nne tano 
+0.224 sifuri nukta mbili mbili nne 
+100% asilimia mia moja 
+1 moja 
+2 mbili 
+2.45 mbili nukta nne tano 
+3 tatu 
+4 nne 
+5 tano 
+6 sita 
+7 saba 
+8 nane 
+9 tisa 
+10 kumi 
+11 kumi na moja 
+12 kumi na mbili 
+13 kumi na tatu 
+14 kumi na nne 
+15 kumi na tano 
+16 kumi na sita 
+17 kumi na saba 
+18 kumi na nane 
+19 kumi na tisa 
+20 ishirini 
+21 ishirini na moja 
+22 ishirini na mbili 
+23 ishirini na tatu 
+30 thalathini 
+31 thalathini na moja 
+32 thalathini na mbili 
+40 arubaini 
+41 arubaini na moja
+
+
+--- PAGE 56 ---
+53
+42 arubaini na mbili 
+50 hamsini 
+51 hamsini na moja 
+52 hamsini na mbili 
+60 sitini 
+61 sitini na moja 
+62 sitini na mbili 
+70 sabini 
+71 sabini na moja 
+72 sabini na mbili 
+80 thamanini 
+81 thamanini na moja 
+82 thamanini na mbili 
+90 tisini 
+91 tisini na moja 
+92 tisini na mbili 
+100 mia 
+101 mia na moja 
+102 mia na mbili 
+110 mia moja na kumi 
+111 mia moja kumi na moja 
+120 mia moja ishirini 
+121 mia moja ishirini na moja 
+130 mia moja thalathini 
+200 mia mbili 
+253.009 mia mbili hamsini na tatu nukta sifuri sifuri tisa 
+300 mia tatu 
+1000 elfu 
+1997 elfu moja mia tisa tisini na saba 
+13,740 kumi na tatu elfu mia saba arubaini 
+29,003 ishirini na tisa elfu na tatu 
+36,027 thalathini na sita elfu, na ishirini na saba 
+45,391.37 arubaini na tano elfu, mia tatu tisini na moja 
+nukta tatu sita tano 
+412,238 mia nne kumi na mbili elfu, mia mbili thalathini 
+na nane 
+3,067,883 milioni tatu sitini na saba elfu, mia nane 
+thamanini na tatu 
+562,495,011 mia tano sitini na mbili milioni, mia nne tisini na 
+tano elfu na kumi na moja
+
+
+--- PAGE 57 ---
+54
+2,289,143,206 bilioni mbili, mia mbili thamanini na tisa milioni, 
+mia moja arubaini na tatu elfu, mia mbili na sita 
+1:16 p.m. Saa saba na dakika kumi na sita mchana 
+11:01 p.m. Saa tano na dakika moja usiku 
+2:15 a.m. Saa nane na robo usiku 
+2:44 p.m. Saa tisa kasoro dakika kumi na sita mchana 
+3:25 p.m. Saa tisa na dakika ishirini na tano alasiri 
+5:03 a.m. Saa kumi na moja na dakika tatu alfajiri 
+6:15 a.m. Saa kumi na mbili na robo asubuhi 
+6:15 p.m. Saa kumi na mbili na robo jioni 
+6:50 a.m. Saa moja kasoro dakika kumi asubuhi 
+7:45 p.m. Saa mbili kasorobo usiku 
+8 o’clock sharp Saa mbili barabara 
+8:00 a.m. Saa mbili kamili asubuhi 
+8:59 p.m. Saa tatu kasoro dakika moja usiku 
+9:30 a.m. Saa tatu unusu asubuhi 
+accountant mhasibu 
+air hewa 
+air/space anga 
+airplane/airplanes ndege/ndege 
+airport uwanja wa ndege 
+alcoholic drink pombe 
+almond/almonds lozi/lozi 
+ambulance ambalesi 
+American (national) Mmarekani 
+and na 
+animal/animals mnyama/wanyama 
+announcer/announcers mtangazaji/watangazaji 
+ant/ants mdudu/wadudu 
+anyhow vyovyote 
+anyone (person) yeyote 
+anyone (thing) yoyote 
+apple/apples tofaa/matofaa 
+Arab (national) Muarabu 
+Arabic (language) Kiarabu 
+arm/arms mkono/mikono 
+armpit/armpits kwapa/kwapa 
+army officer/army officers mwanajeshi/wanajeshi
+
+
+--- PAGE 58 ---
+55
+athletics riadha 
+authority mamlaka 
+axe shoka 
+baboon nyani 
+back/backs mgongo/migongo 
+bad mbaya 
+bag/bags begi/mabegi 
+ball/balls mpira/mipira 
+banana/bananas ndizi/ndizi 
+bangle/bracelet bangili 
+barber/barbers kinyozi/vinyozi 
+basketball mpira wa kikapu 
+bathroom/bathrooms choo/vyoo 
+bathroom/restroom choo 
+bean/beans kunde/kunde 
+bear/bears dubu/madubu 
+beard ndevu 
+bed sheet/bed sheets shuka/shuka 
+bed/beds kitanda/vitanda 
+bedroom/bedrooms chumba cha kulala/vyumba vya kulala 
+beef nyama ya ng'ombe 
+beer bia 
+bell kengele 
+belly/tummy tumbo 
+belly-button/navel kitovu 
+bicycle/bicycles baiskeli/baiskeli 
+bird/birds ndege/ndege 
+black pepper pilipili manga 
+blanket/blankets blangeti/mablangeti 
+blue buluu 
+boar nguruwe-mwitu 
+board bodi 
+board game bao 
+boat/boats mashua/mashua 
+body/bodies mwili/miili 
+book/books kitabu/vitabu 
+bookstore duka la vitabu 
+boot buti
+
+
+--- PAGE 59 ---
+56
+bowl/bowls bakuli/bakuli 
+box/boxes sanduku/masanduku 
+boxing ngumi 
+brassier sidiria 
+bread mkate 
+breakfast kifungua kinywa/chai 
+breast matiti 
+brother (older male sibbling) kaka 
+brother/sister (younger sibbling) ndugu 
+brother-in-law/sister-in-law (also 
+husband’s/wife’s brother) 
+shemeji/shemegi 
+buffalo nyati 
+builder/mason mjenzi 
+burp (noun) mbweu 
+bus conductor kondakta/utingo 
+bus/busses basi/mabasi 
+bush nyika 
+businessman/businessmen mfanyabiashara/wafanyabiashara 
+butchery duka la nyama 
+butter siagi 
+butterfly/butterflies kipepeo/vipepeo 
+buttocks matako 
+buy nunua 
+cabbage kabichi 
+cabinet/cabinets kabati/makabati 
+cake keki 
+calf ndama 
+camel ngamia 
+canoe mtumbwi/dau 
+car/cars gari/gari 
+card/cards karata/karata 
+carpet/carpets busati/mabusati 
+cashew nuts korosho 
+cat/cats paka/paka 
+ceiling dari 
+cent senti 
+century karne 
+chain mkufu
+
+
+--- PAGE 60 ---
+57
+chair/chairs kiti/viti 
+chairman mwenyekiti 
+champion bingwa 
+championship/tournament mashindano 
+change chenji 
+charcoal kaa 
+cheap rahisi/bei nafuu 
+cheek/cheeks shavu/mashavu 
+cheetah duma/duma 
+chemise shimizi 
+chess chesi 
+chest/chests kifua/vifua 
+chicken (meat) nyama ya kuku 
+chicken/hen kuku 
+child/children mtoto/watoto 
+chili pepper pilipili 
+chimpanzee sokwe 
+chin/chins kidevu/videvu 
+Chinese (language) Kichina 
+Chinese (national) Mchina 
+cinema sinema 
+clam/clams chaza/chaza 
+clerk/clerks karani/makarani 
+clock saa 
+close to/nearby karibu 
+cloth/clothes nguo/nguo 
+coat/coats koti/makoti 
+cockroach/cockroaches mende/mende 
+coconut nazi 
+coffee kahawa 
+cold baridi 
+computer monitor/computer monitors monita/monita 
+computer technician fundi wa kompyuta 
+computer/computers kompyuta/kompyuta 
+concrete zege 
+conference room chumba cha mkutano 
+cooking pot/cooking pots sufuria/masufuria
+
+
+--- PAGE 61 ---
+58
+corn flour unga wa mahindi/sembe 
+corn/corns hindi/mahindi 
+couch/couches kochi/makochi 
+country nchi 
+cow/cows ng'ombe/ng’ombe 
+crab/crabs kaa/kaa 
+crocodile/crocodiles mamba/mamba 
+cucumber kitango 
+cup/cups kikombe/vikombe 
+cupboard/cupboards kabati/makabati 
+curtain/curtains pazia/mapazia 
+Danger! Hatari! 
+daughter mtoto wa kike 
+day after tomorrow keshokutwa 
+day before yesterday juzi 
+day/days siku/siku 
+daytime mchana 
+decimal point nukta  
+deer/deers paa/paa 
+dhow jahazi 
+diaper/diapers nepi/nepi 
+dining room chumba cha kulia 
+dinner chakula cha jioni 
+director/directors mkurugenzi/wakurugenzi 
+disease ugonjwa 
+distance masafa 
+doctor/doctors daktari/madaktari 
+dodge ball nage 
+dog/dogs mbwa/mbwa 
+dollar/dollars dola/dola 
+donkey/donkeys punda/punda 
+door/doors mlango/milango 
+dove njiwa 
+down chini 
+draw (in a match) suluhu 
+drawer mtoto wa meza 
+dream ndoto/njozi
+
+
+--- PAGE 62 ---
+59
+dress/dresses gauni/magauni 
+drink kinywaji 
+driver/drivers dereva/madereva 
+duck/ducks bata/mabata 
+dusk magharibi 
+dust vumbi 
+ear/ears sikio/masikio 
+early mapema 
+earring/earrings herini/herini 
+east mashariki 
+eel mkunga 
+egg/eggs yai/mayai 
+electricity umeme 
+elephant/elephants tembo/tembo 
+engineer/engineers mhandisi/wahandisi 
+English (language) Kiingereza 
+English (national) Muingereza 
+exercise zoezi 
+expensive ghali 
+eye/eyes jicho/macho 
+eyebrow/eyebrows nyusi/nyusi 
+eyelash/eyelashes kope/kope 
+fall kipupwe 
+family familia 
+fan/fans feni/mafeni 
+far mbali 
+fare nauli 
+farmer/farmers mkulima/wakulima 
+fashion store duka la nguo 
+father baba 
+father-in-law/mother-in-law mkwe 
+fax machine faksi 
+fear woga 
+female friend of a female person shoga 
+fiancé mchumba 
+file/files faili/mafaili 
+film filamu 
+finger/fingers kidole cha mkono/vidole vya mkono
+
+
+--- PAGE 63 ---
+60
+Fire Moto 
+fish samaki 
+fish market soko la samaki 
+fisherman/fishermen mvuvi/wavuvi 
+fish-vendor muuza samaki 
+floor sakafu 
+flour unga 
+fly/flies nzi/nzi 
+folder/folders jalada/majalada 
+food chakula 
+foot/feet mguu/miguu 
+forehead paji la uso 
+fork/forks uma/nyuma 
+fort ngome 
+fraction sehemu 
+French (language) Kifaransa 
+French (national) Mfaransa 
+Friday Ijumaa 
+fridge/fridges friji/mafriji 
+friend/friends rafiki/marafiki 
+fruit/fruits tunda/matunda 
+game/games mchezo/michezo 
+garlic kitunguu thomu 
+gas station kituo cha mafuta 
+Get out! Toka! 
+ghee samli 
+gift/gifts zawadi/zawadi 
+giraffe/giraffes twiga/twiga 
+glass/glasses gilasi/gilasi 
+Go away! Ondoka! 
+goal/goals goli/magoli 
+goalkeeper kipa 
+goat/goats mbuzi/mbuzi 
+gold dhahabu 
+good nzuri 
+Goodbye! Kwaheri! 
+government serikali 
+grand-child/grand-children mjukuu/wajukuu
+
+
+--- PAGE 64 ---
+61
+grandfather babu 
+grandmother bibi 
+grape/grapes zabibu/zabibu 
+grasshopper/grasshoppers panzi/panzi 
+great grand-child kitukuu 
+green kijani 
+grocery store duka la chakula 
+guard/guards mlinzi/walinzi 
+guardian mlezi 
+gun bunduki 
+hair nywele 
+half nusu 
+hand/hands mkono/mikono 
+handbag/handbags mkoba/mikoba 
+hang ning'iniza/tundika 
+harbor/at the harbor bandari/bandarini 
+hardship dhiki 
+hat/hats kofia/kofia 
+head/heads kichwa/vichwa 
+headscarf/turban kilemba 
+health afya 
+heel/heels kisigino/visigino 
+Hello! Habari! 
+help msaada 
+Help me Nisaidie 
+here hapa 
+Hi! Habari! 
+hiccup kwikwi 
+high-jump mchezo wa kuruka juu 
+highway barabara 
+hip/hips kiuno/viuno 
+hippopotamus kiboko 
+history historia 
+horse farasi   
+horse/horses farasi/farasi 
+hospital hospitali 
+hot moto 
+hotel/hotels hoteli/hoteli
+
+
+--- PAGE 65 ---
+62
+hour/hours saa/saa 
+house/houses; home/homes nyumba/nyumba 
+How? Vipi? 
+hunger njaa 
+husband mume 
+husband’s sister wifi 
+hyena/hyenas fisi/fisi 
+ice barafu 
+I'm hurt Nimeumia 
+I'm sick Ninaumwa 
+impala/impala swala/swala 
+important muhimu 
+insect/insects mdudu/wadudu 
+iron/irons pasi/pasi 
+jam jamu 
+janitor msafishaji 
+Japanese (language) Kijapani 
+Japanese (national) Mjapani 
+jinni jini 
+journalist/journalists mwandishi wa habari/waandishi wa habari 
+journey safari 
+jug/jugs jagi/majagi 
+juice sharubati 
+kettle/kettle birika/birika 
+kidney figo   
+kilo kilo 
+kitchen/kitchens jiko/majiko 
+knee/knees goti/magoti 
+knife/knives kisu/visu 
+lake ziwa 
+lamb nyama ya kondoo 
+language lugha 
+large kubwa 
+late night usiku wa manane 
+later baadaye/halafu 
+law sheria 
+leg/legs mguu/miguu 
+lemon/lemons limau/malimau
+
+
+--- PAGE 66 ---
+63
+leopard/leopards chui/chui 
+letter/letters barua/barua 
+library maktaba 
+license leseni 
+light/lights;lamp/lamps taa/taa 
+lime/limes ndimu/ndimu 
+line mstari 
+lion/lions simba/simba 
+lip/lips mdomo/midomo 
+lipstick rangi ya mdomo 
+little kidogo 
+living room/living rooms ukumbi/kumbi 
+lobster/lobsters kamba/kamba 
+logic mantiki 
+loser mshindwa 
+luggage mzigo/mizigo 
+lunch chakula cha mchana 
+maid yaya 
+manager/managers meneja/meneja 
+mango/mangoes embe/maembe 
+map/maps ramani/ramani 
+marble/marbles gololi/gololi 
+margarine siagi 
+market/markets soko/masoko 
+mascara wanja 
+maternal uncle mjomba 
+mattress/mattresses godoro/magodoro 
+May I come in? Hodi? 
+meat nyama 
+medicine dawa 
+medium kati-na-kati/wastani 
+meeting minutes kumbukumbu za mkutano 
+meeting/conference mkutano 
+member of parliament/members of 
+parliament 
+mbunge/wabunge 
+mermaid nguva 
+messenger/messengers tarishi/matarishi 
+midnight Saa sita usiku 
+milk maziwa
+
+
+--- PAGE 67 ---
+64
+minister/ministers waziri/mawaziri 
+minute/minutes dakika/dakika 
+Mister Bwana 
+Monday Jumatatu 
+money pesa 
+monkey/monkeys kima/kima 
+month/months mwezi/miezi 
+mother mama 
+mother’s elder sister mama mkuu 
+mother’s younger sister mama mdogo 
+motorbike pikipiki 
+mouse/mice panya/panya 
+moustache masharubu 
+mouth/mouths mdomo/midomo 
+nail/nails kucha/kucha 
+name jina 
+neck/necks shingo/shingo 
+necklace kidani/mkufu 
+nephew/niece mpwa 
+news habari 
+nice nzuri 
+night time usiku 
+No! Hapana! 
+noon Saa sita mchana 
+north kaskazini 
+nose/noses pua/pua 
+not far sio mbali 
+not very far sio mbali sana 
+note (paper money) noti 
+novel kitabu cha hadithi 
+now sasa 
+nurse/nurses muuguzi/wauguzi 
+octopus pweza 
+office/offices ofisi/ofisi 
+officer/officers ofisa/maofisa 
+ogre zimwi 
+oil mafuta 
+okra bamia
+
+
+--- PAGE 68 ---
+65
+one eighth thumni 
+one sixth sudusi 
+one third thuluthi 
+onion/onions kitunguu/vitunguu 
+orange/oranges chungwa/machungwa 
+ostrich/ostriches mbuni/mbuni 
+ox ng'ombe dume 
+palm/palms kiganja/viganja 
+pan/pans karai/makarai 
+pants suruali 
+papaya/papayas papai/mapapai 
+paper karatasi 
+parrot/parrots kasuku/kasuku 
+party/parties chama/vyama 
+passport pasi/pasipoti 
+paternal aunt shangazi 
+paternal uncle ami 
+paternal uncle’s daughter bintiami 
+paternal uncle’s son binami 
+peacock/peacocks tausi/tausi 
+peanut/peanuts njugu/njugu 
+peas njegere 
+pen/pens kalamu/kalamu 
+pencil/pencils penseli/penseli 
+people watu 
+percent (%) asilimia 
+person mtu 
+photocopy fotokopi 
+pickle achari 
+pig/pigs nguruwe/nguruwe 
+pillow/pillows mto/mito 
+pillow-case foronya 
+pilot/pilots rubani/marubani 
+pineapple/pineapples nanasi/mananasi 
+plate/plates sahani/sahani 
+play cheza 
+play ground uwanja 
+player mchezaji
+
+
+--- PAGE 69 ---
+66
+please tafadhali 
+poem/poems shairi/mashairi 
+police officer/police officers polisi/polisi 
+politician mwanasiasa 
+potato/potatoes mbatata/mbatata 
+pound (currency) pauni 
+pound (weight) ratili 
+powder poda 
+president/presidents raisi/maraisi 
+price bei 
+prime minister waziri mkuu 
+printer/printers printa/printa 
+professor/professors profesa/maprofesa 
+proof ithibati 
+pumpkin/pumpkins boga/maboga 
+python/pythons chatu/chatu 
+quarter robo 
+quarter robo 
+quick/quickly haraka 
+quiet kimya 
+rabbit/rabbits sungura/sungura 
+race mbio 
+radio redio 
+rail reli 
+razor wembe 
+record book/record books daftari/madaftari 
+red nyekundu 
+referee refa 
+report/reports ripoti/ripoti 
+restaurant/restaurants mkahawa/mikahawa 
+rhinoceros/rhinoceros kifaru/vifaru 
+rib/ribs ubavu/mbavu 
+rice (cooked rice) mchele (wali) 
+ring/rings pete/pete 
+river mto 
+road/roads njia/njia 
+robe/robes kanzu/kanzu 
+roof/roofs paa/mapaa
+
+
+--- PAGE 70 ---
+67
+rule/rules sheria 
+ruler mstari 
+Run away! Kimbia! 
+sailor/sailors baharia/mabaharia 
+salad saladi 
+salt chumvi 
+sandal/sandals ndara/ndara 
+Saturday Jumamosi 
+sauce mchuzi 
+saucer/saucers kisahani/visahani 
+scarf/scarves skafu/skafu 
+school shule 
+sea bahari 
+season msimu 
+second sekunde 
+secret siri 
+secretary katibu 
+security officer afisa usalama 
+seed mbegu 
+sensitive nyeti 
+service huduma 
+shame fedheha 
+shark/sharks papa/papa 
+sheen/sheens muundi/miundi 
+sheep/sheep kondoo/kondoo 
+shelf/shelves rafu/rafu 
+shilling shilingi 
+ship meli 
+shirt/shirts shati/mashati 
+shoe/shoes kiatu/viatu 
+shop/store duka 
+shopkeeper muuza duka 
+shoulder/shoulders bega/mabega 
+shrimp kamba 
+silver fedha 
+sister dada 
+sit kaa 
+size kiasi
+
+
+--- PAGE 71 ---
+68
+skin ngozi 
+skirt skati/sketi 
+slow/slowly polepole 
+small ndogo 
+snake/snakes nyoka/nyoka 
+soccer soka/kandanda 
+soda soda 
+soldier askari/askari 
+sole/soles unyayo/nyayo 
+son mtoto wa kiume 
+Sorry! (to apologize) Samahani! 
+Sorry! (to sympathize) Pole! 
+soup supu 
+south kusini 
+sox soksi 
+soy beans maharage 
+spark cheche 
+spinach mchicha 
+spoon/spoons kijiko/vijiko 
+spring vuli 
+squash mung'unye 
+squid ngisi 
+stand up simama 
+station stesheni 
+step-brother/step-sister ndugu wa kambo 
+step-child mtoto wa kambo 
+step-father baba wa kambo 
+step-mother mama wa kambo 
+Stop! Simama! 
+store (for storage) ghala 
+storey ghorofa 
+storm dhoruba 
+story/stories hadithi/hadithi 
+street mtaa 
+sudden ghafla 
+sugar sukari 
+suit suti 
+summer kaskazi 
+Sunday Jumapili 
+sunrise mapambazuko
+
+
+--- PAGE 72 ---
+69
+sunset machweo 
+supervisor muangalizi 
+sweater sweta 
+sweet potato kiazi kitamu 
+swimming kuogelea 
+switch/switches swichi/swichi 
+table/tables meza/meza 
+tag game foliti 
+tailor/tailors mshoni/washoni 
+taxi teksi 
+taxi driver dereva wa teksi 
+tea chai 
+teacher/teachers mwalimu/walimu 
+technician/technicians fundi/mafundi 
+telephone simu 
+television televisheni 
+tennis tenisi 
+Thank you very much! Asante sana! 
+Thank you! Asante! 
+theatrical play mchezo wa kuigiza 
+there pale/kule 
+thief mwizi 
+thigh/thighs paja/mapaja 
+three quarters robo tatu 
+thumb kidole gumba 
+Thursday Alhamisi 
+ticket/tickets tiketi/tiketi 
+tie/ties tai/tai 
+time wakati/saa 
+to be able kuweza 
+to buy kununua 
+to come kuja 
+to cook kupika 
+to cry kulia 
+to drink kunywa 
+to eat kula 
+to feel kuhisi 
+to give kupa 
+to give out kutoa 
+to go kuenda/kwenda
+
+
+--- PAGE 73 ---
+70
+to hear kusikia 
+to laugh kucheka 
+to like/to love kupenda 
+to listen kusikiliza 
+to look at kutazama 
+to look for kutafuta 
+to pay kulipa 
+to read kusoma 
+to remove kutoa 
+to say kusema 
+to see kuona 
+to sell kuuza 
+to sit kukaa 
+to sleep kulala 
+to speak kusema 
+to stand up kusimama 
+to think kufikiri 
+to travel kusafiri 
+to wake up kuamka 
+to walk kutembea 
+to want kutaka 
+to wash kuosha 
+to watch kutazama/kuangalia 
+to work kufanyakazi 
+to write kuandika 
+today leo 
+toe kidole cha mguu 
+toe/toes kidole cha mguu/vidole vya mguu 
+tomato nyanya/tungule 
+tomorrow kesho 
+tongue/tongues ulimi/ndimi 
+tooth/teeth jino/meno 
+top-throw mtandio 
+tortoise/tortoise kobe/makobe 
+tourist/tourists mtalii/watalii 
+train/trains gari-moshi/magari-moshi 
+true/truth kweli 
+T-shirt/vest fulana 
+Tuesday Jumanne 
+turkey/turkeys bata-mzinga
+
+
+--- PAGE 74 ---
+71
+turtle/turtles kasa/kasa 
+twins mapacha 
+two thirds thuluthi mbili 
+underwear chupi 
+up juu 
+vaccination card kadi ya mchanjo 
+value thamani 
+vegetables mboga 
+veil veli 
+very close karibu sana 
+very far mbali sana 
+video video 
+visit (noun) matembezi 
+volleyball mpira wa wavu 
+wall/walls ukuta/kuta 
+wallet pochi 
+war vita 
+warthog/warthogs ngiri/ngiri 
+watch saa 
+water maji 
+Wednesday Jumatano 
+week/weeks wiki/wiki 
+welcome/come again karibu 
+well vyema 
+west magharibi 
+whale/whales nyangumi/nyangumi 
+What time is it? Saa ngapi? 
+What? Nini? 
+wheat flour unga wa ngano 
+When? Lini? 
+Where? Wapi? 
+Which? Ipi? 
+whistle/whistles firimbi/firimbi 
+Who? Nani? 
+wife mke 
+window/windows dirisha/madirisha 
+winner/winners mshindi/washindi 
+winter masika 
+word/words neno/maneno
+
+
+--- PAGE 75 ---
+72
+work/job kazi 
+worker/workers mfanyakazi/wafanyakazi 
+X-and-O game dama 
+year/years mwaka/miaka 
+yeast hamira 
+Yes! Ndio! 
+yesterday jana 
+yoghurt mtindi 
+zebra/zebras punda-milia/punda-milia
+

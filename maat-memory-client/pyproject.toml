@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maat-memory-client"
+version = "0.1.0"
+description = "Self-configuring client for Maat Memory (shared organ, :8022 mcpo)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+maat-memory-client = "maat_memory_client.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["maat_memory_client"]

@@ -1,0 +1,72 @@
+{
+  "server_id": "tehuti-integration",
+  "server_name": "Tehuti-Integration",
+  "version": "1.0",
+  "description": "Tehuti-Integration MCP Server",
+  "total_tools": 4,
+  "maat_principles": {
+    "truth": "Integration with n8n, filesystem, databases",
+    "balance": "Balance automation with control",
+    "order": "Orchestrated workflow execution",
+    "justice": "Proper workflow attribution",
+    "self_reflection": "Learn from integration patterns"
+  },
+  "use_cases": [
+    "n8n workflow management",
+    "File operations",
+    "Database queries"
+  ],
+  "common_patterns": [
+    "List \u2192 Get \u2192 Execute"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_tehuti_integration_list_workflows_post",
+      "path": "/tehuti-integration/list-workflows",
+      "method": "POST",
+      "summary": "Tehuti-Integration/List-Workflows",
+      "description": "List available workflows",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_integration_get_workflow_post",
+      "path": "/tehuti-integration/get-workflow",
+      "method": "POST",
+      "summary": "Tehuti-Integration/Get-Workflow",
+      "description": "Get workflow metadata by id",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_integration_trigger_workflow_post",
+      "path": "/tehuti-integration/trigger-workflow",
+      "method": "POST",
+      "summary": "Tehuti-Integration/Trigger-Workflow",
+      "description": "Trigger a workflow with parameters",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_tehuti_integration_get_execution_post",
+      "path": "/tehuti-integration/get-execution",
+      "method": "POST",
+      "summary": "Tehuti-Integration/Get-Execution",
+      "description": "Get a workflow execution status/result",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

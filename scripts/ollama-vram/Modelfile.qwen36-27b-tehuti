@@ -1,0 +1,4 @@
+# Same blobs as qwen3.6:27b; conservative context for 12GB VRAM (+ ComfyUI, etc.).
+# Raise num_ctx only after verifying headroom (nvidia-smi during chat).
+FROM qwen3.6:27b
+PARAMETER num_ctx 8192

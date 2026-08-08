@@ -1,0 +1,13 @@
+[Unit]
+Description=Gemma4 Tool-Call Shim Proxy
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/suspect/.n8n/gemma4-toolshim/shim.py
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

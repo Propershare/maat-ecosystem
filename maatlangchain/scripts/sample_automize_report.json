@@ -1,0 +1,11 @@
+{
+  "taskId": null,
+  "status": "completed",
+  "summary": "Sample AutoManize run: validated report parsing and gitMaat push. No taskId so only changes are logged.",
+  "files": [
+    { "path": "D:\\clawd\\.env", "action": "modify" },
+    { "path": "D:\\clawd\\report.json", "action": "create" }
+  ],
+  "commands": ["python parse_acp_report.py", "python report_to_gitmaat.py"],
+  "agent": "opencode_clawd"
+}

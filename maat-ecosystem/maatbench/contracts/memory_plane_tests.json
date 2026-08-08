@@ -1,0 +1,125 @@
+{
+  "category": "memory_plane",
+  "schema_version": "maat.memory_plane.tests.v0",
+  "description": "Enterprise Memory Plane \u2014 registry, learning loop, storage resolve, session presence. Requires PGVECTOR_DB_URL + migrated schema_memory_plane_v0.sql.",
+  "doctrine": "hermes/docs/MAAT-MEMORY-PLANE-v0.md",
+  "opt_in": true,
+  "tests": [
+    {
+      "id": "plane.schema.machines",
+      "name": "maat_machines table exists",
+      "operation": "table_exists",
+      "table": "maat_machines"
+    },
+    {
+      "id": "plane.schema.agents",
+      "name": "maat_agents table exists",
+      "operation": "table_exists",
+      "table": "maat_agents"
+    },
+    {
+      "id": "plane.schema.presence",
+      "name": "maat_session_presence table exists",
+      "operation": "table_exists",
+      "table": "maat_session_presence"
+    },
+    {
+      "id": "plane.schema.storage_roots",
+      "name": "maat_storage_roots table exists",
+      "operation": "table_exists",
+      "table": "maat_storage_roots"
+    },
+    {
+      "id": "plane.enroll.roundtrip",
+      "name": "Local machine+agent enroll succeeds",
+      "operation": "enroll_local"
+    },
+    {
+      "id": "plane.learning.propose_not_applied",
+      "name": "Proposed learning starts applied=false",
+      "operation": "propose_learning"
+    },
+    {
+      "id": "plane.learning.poison_denied",
+      "name": "Hostile learning proposal is guard_decision=deny",
+      "operation": "propose_poison"
+    },
+    {
+      "id": "plane.learning.apply_enrolled",
+      "name": "Enrolled agent can apply non-denied learning",
+      "operation": "propose_and_apply"
+    },
+    {
+      "id": "plane.presence.active",
+      "name": "Session presence register appears in active list",
+      "operation": "presence_roundtrip"
+    },
+    {
+      "id": "plane.storage.resolve_existing",
+      "name": "Storage resolve finds an existing lab file",
+      "operation": "resolve_file"
+    },
+    {
+      "id": "plane.schema.artifact_objects",
+      "name": "maat_artifact_objects table exists",
+      "operation": "table_exists",
+      "table": "maat_artifact_objects"
+    },
+    {
+      "id": "plane.artifact.promote_and_fetch",
+      "name": "Promote local HTML and fetch via maat://object",
+      "operation": "promote_and_fetch"
+    },
+    {
+      "id": "plane.artifact.resolve_portable",
+      "name": "Storage resolve serves object-store URI without host file",
+      "operation": "resolve_portable"
+    },
+    {
+      "id": "plane.schema.handoffs",
+      "name": "maat_handoffs table exists",
+      "operation": "table_exists",
+      "table": "maat_handoffs"
+    },
+    {
+      "id": "plane.schema.invites",
+      "name": "maat_invites table exists",
+      "operation": "table_exists",
+      "table": "maat_invites"
+    },
+    {
+      "id": "plane.schema.principals",
+      "name": "maat_principals table exists",
+      "operation": "table_exists",
+      "table": "maat_principals"
+    },
+    {
+      "id": "plane.schema.tepi_log",
+      "name": "maat_tepi_log table exists",
+      "operation": "table_exists",
+      "table": "maat_tepi_log"
+    },
+    {
+      "id": "plane.schema.artifacts_ring",
+      "name": "maat_artifacts.ring column exists",
+      "operation": "column_exists",
+      "table": "maat_artifacts",
+      "column": "ring"
+    },
+    {
+      "id": "plane.handoff.offer_ack_verify",
+      "name": "Handoff offer\u2192ack\u2192verify with fetch_sha",
+      "operation": "handoff_roundtrip"
+    },
+    {
+      "id": "plane.tepi.ring_filter",
+      "name": "Outer viewer cannot see inner artifact",
+      "operation": "tepi_ring_filter"
+    },
+    {
+      "id": "plane.guard.enroll_outer",
+      "name": "Guard allows outer enroll",
+      "operation": "guard_enroll_outer"
+    }
+  ]
+}

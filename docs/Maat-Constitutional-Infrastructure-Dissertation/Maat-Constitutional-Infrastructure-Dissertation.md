@@ -1108,6 +1108,7 @@ Internal Tehuti/UKMT Corpus to integrate later:
 * *Restoring History*
 * *BAK2*
 * *African Time*
+* Kilimanjaro, Tdka. Essay on AI, wage labor, and mode-of-production transition (Q&A follow-up; scholarship capture 2026-06-20). Study layer: `scholarship/kilimanjaro-automation-essay-READING-LIST.md`, `scholarship/youth-facing-economics-and-ai-NOTES.md`, `scholarship/DISSERTATION-BRIDGE-kilimanjaro-automation-essay.md`.
 * Tehuti Research Lab testing logs
 * Tehuti Guard notes
 * Tehuti SQL schema

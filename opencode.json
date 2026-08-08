@@ -1,0 +1,137 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": "notify",
+  "mcp": {
+    "tehuti-core": {
+      "type": "local",
+      "command": [
+        "python3",
+        "/home/suspect/.n8n/mcp-servers/tehuti-core/tehuti_core_server.py"
+      ],
+      "enabled": true
+    }
+  },
+  "share": "manual",
+  "watcher": {
+    "ignore": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/.venv/**",
+      "**/venv/**",
+      "**/chroma_db*/**",
+      "**/unsloth_compiled_cache/**",
+      "**/tehuti-lab-webui-venv/**",
+      "**/__pycache__/**",
+      "**/.ruff_cache/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.next/**",
+      "**/target/**"
+    ]
+  },
+  "skills": {
+    "paths": [
+      "hermes-agent/skills",
+      "skills"
+    ]
+  },
+  "command": {
+    "maat-bootstrap": {
+      "description": "Tehuti Lab session start: root, AGENTS.md, risks",
+      "template": "Session bootstrap for Tehuti Lab: (1) Infer workspace root (memory-bank, .cursorrules, maatlangchain, or this tree). (2) Read the relevant project AGENTS.md if any. (3) If Maat Memory/gitMaat applies to this task, treat it as coordination law per workspace rules \u2014 do not invent tasks from random markdown. (4) State briefly what files or systems you might touch and the main risk. Then continue with whatever the user asks next.",
+      "agent": "plan"
+    },
+    "review-change": {
+      "description": "Review recent / staged changes for bugs, security, tests",
+      "template": "Review the current code change: use read-only git commands as needed (status, diff). Flag correctness bugs, security issues, missing tests, and risky edge cases. Suggest minimal fixes. Do not commit unless the user explicitly asked to commit.",
+      "agent": "build"
+    },
+    "summarize-thread": {
+      "description": "Compact long work into decisions + open questions",
+      "template": "Summarize this session so far: bullet decisions made, files touched, current state of the repo/feature, and open questions for the user. Keep it under 25 lines. No new tool runs unless needed to verify a fact.",
+      "agent": "build"
+    }
+  },
+  "instructions": [
+    ".cursor/rules/**/*.md",
+    ".cursor/rules/opencode-maat/RULE.md",
+    "**/AGENTS.md"
+  ],
+  "default_agent": "build",
+  "model": "maat-router/lab-frontier",
+  "small_model": "maat-router/lab-small",
+  "agent": {
+    "build": {
+      "steps": 80,
+      "model": "maat-router/lab-frontier"
+    },
+    "plan": {
+      "steps": 40,
+      "model": "maat-router/lab-frontier"
+    }
+  },
+  "permission": {
+    "read": "allow",
+    "edit": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "bash": "ask",
+    "task": "ask",
+    "external_directory": "ask",
+    "webfetch": "ask",
+    "todowrite": "allow",
+    "question": "allow"
+  },
+  "provider": {
+    "llamacpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (:9080 OpenAI-compatible)",
+      "options": {
+        "baseURL": "http://127.0.0.1:9080/v1",
+        "apiKey": "lmstudio-local"
+      },
+      "models": {
+        "Qwen3.6-35B-A3B-Q4_K_M": {
+          "name": "Qwen3.6 35B MoE (Hermes / llama-server)",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        }
+      }
+    },
+    "maat-router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Maat Lab Router (:9140 house + porch)",
+      "options": {
+        "baseURL": "http://127.0.0.1:9140/v1",
+        "apiKey": "maat-local"
+      },
+      "models": {
+        "lab-frontier": {
+          "name": "Porch frontier (OpenRouter) — BUILD TONIGHT"
+        },
+        "lab-brain": {
+          "name": "Hub qwen3.6:27b local"
+        },
+        "lab-small": {
+          "name": "Edge Gemma pool (other PCs)"
+        }
+      }
+    },
+    "maat-porch": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Maat Porch direct (:9141)",
+      "options": {
+        "baseURL": "http://127.0.0.1:9141/v1",
+        "apiKey": "porch-local"
+      },
+      "models": {
+        "default": {
+          "name": "Porch default frontier model"
+        }
+      }
+    }
+  }
+}

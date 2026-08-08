@@ -1,0 +1,11 @@
+{
+  "total_pdfs": 556,
+  "processed": 556,
+  "success": 554,
+  "errors": 2,
+  "with_ocr": 105,
+  "without_ocr": 451,
+  "start_time": "2026-01-04T16:44:17.182605",
+  "end_time": "2026-01-04T17:36:50.432806",
+  "total_processing_time": 3153.250201
+}

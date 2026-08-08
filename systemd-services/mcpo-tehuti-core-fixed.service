@@ -1,0 +1,19 @@
+[Unit]
+Description=mcpo bridge for tehuti-core MCP server
+After=network.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n/mcp-servers/tehuti-core
+# Load workspace .env so PGVECTOR_DB_URL is available for gitMaat (- = optional)
+EnvironmentFile=-/home/suspect/.n8n/.env
+Environment="PATH=/usr/local/bin:/usr/bin:/bin:/home/suspect/.local/bin"
+Environment="PYTHONPATH=/home/suspect/.n8n/mcp-servers/tehuti-core"
+ExecStart=/home/suspect/.local/bin/uvx mcpo --host 127.0.0.1 --port 8014 -- python3 /home/suspect/.n8n/mcp-servers/tehuti-core/tehuti_core_server.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+

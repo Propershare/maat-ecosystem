@@ -1,0 +1,49 @@
+{
+  "run_id": "20260418T005526Z_b8af67c4",
+  "profile": "/home/suspect/.n8n/gemma4-toolshim/farm/profile.example.yaml",
+  "lab_root": "/home/suspect/.n8n",
+  "ingest_log": [
+    {
+      "path": "/home/suspect/.n8n/training/examples/error-handling-examples.jsonl",
+      "loaded": 4,
+      "dimension": "examples"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/maat-perfect-examples.jsonl",
+      "loaded": 4,
+      "dimension": "examples"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/multi-tool-examples.jsonl",
+      "loaded": 7,
+      "dimension": "examples"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/natural-maat-examples.jsonl",
+      "loaded": 10,
+      "dimension": "examples"
+    },
+    {
+      "path": "/home/suspect/.n8n/training/examples/tool-calling-examples.jsonl",
+      "loaded": 45,
+      "dimension": "examples"
+    }
+  ],
+  "rule_gates": {
+    "total_rows": 64,
+    "unique_rows": 64,
+    "duplicate_ratio": 0.0,
+    "dimension_counts": {
+      "examples": 64
+    },
+    "rule_failures": [],
+    "passed": true
+  },
+  "llm_judge": {
+    "skipped": true,
+    "reason": "teacher disabled"
+  },
+  "gates_passed": true,
+  "merged_rows": 64,
+  "merged_path": "/home/suspect/.n8n/gemma4-toolshim/training_data/farm_runs/20260418T005526Z_b8af67c4/merged.jsonl"
+}

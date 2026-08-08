@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "updated": "2026-04-07",
+  "methodology": "overall = min(D1..D6) — bottleneck is truth (Maat)",
+  "dimensions": {
+    "D1_inference_local": { "score": null, "notes": "Run run-tehuti-local-tests.sh; watch ollama ps + nvidia-smi" },
+    "D2_schema_contract": { "score": null, "notes": "maatbench --category contract_integrity" },
+    "D3_policy_memory_bench": { "score": null, "notes": "Requires maat_core; 0 until full MaatBench green" },
+    "D4_gitmaat": { "score": null, "notes": "PGVECTOR_DB_URL + log round-trip" },
+    "D5_training_readiness": { "score": null, "notes": "captures.jsonl count + synthetic + finetune smoke" },
+    "D6_gateway_agents": { "score": null, "notes": "OpenClaw local default; doctor clean" }
+  },
+  "limiting_dimension": null,
+  "training_evidence_next": [
+    "Add shim capture count target from MAAT-INITIATION-REPORT.md §5",
+    "List open MaatBench categories failing after maat_core install"
+  ]
+}

@@ -1,0 +1,641 @@
+[
+  {
+    "status": "success",
+    "file": "metu_neter_volume_2__by_ra_un_amen_nefer_smaller.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-2/Ra-Un-Nefer-Amen- The 11 Laws of Ma'at.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/metu_neter_volume_2__by_ra_un_amen_nefer_smaller.txt",
+    "size": 201273,
+    "words": 32573,
+    "processing_time": 224.77233147621155
+  },
+  {
+    "status": "success",
+    "file": "metu_neter_volume_3_by_ra_un_amen_nefer.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-2/Ra-Un-Nefer-Amen- The 11 Laws of Ma'at.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/metu_neter_volume_3_by_ra_un_amen_nefer.txt",
+    "size": 201273,
+    "words": 32573,
+    "processing_time": 296.337162733078
+  },
+  {
+    "status": "success",
+    "file": "ivan_van_sertima~early_america_revisited_1.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Black-Women-in-Antiquity-Ivan-Van-Sertima.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/ivan_van_sertima~early_america_revisited_1.txt",
+    "size": 405767,
+    "words": 29417,
+    "processing_time": 511.1724317073822
+  },
+  {
+    "status": "success",
+    "file": "benjamin_banneker~_almanac_1793.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/benjamin_banneker~_almanac_1793.txt",
+    "size": 14042,
+    "words": 2384,
+    "processing_time": 46.002270221710205
+  },
+  {
+    "status": "success",
+    "file": "workingwithhands00washrich.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/W-3/workingwithhands00washrich.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/workingwithhands00washrich.txt",
+    "size": 301660,
+    "words": 53249,
+    "processing_time": 543.3066439628601
+  },
+  {
+    "status": "success",
+    "file": "the_american_negro_revolution_fromnonviolence_to_black_power.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Amiri-Baraka-and-the-Black-Power-Movement.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/the_american_negro_revolution_fromnonviolence_to_black_power.txt",
+    "size": 307940,
+    "words": 32778,
+    "processing_time": 104.94807767868042
+  },
+  {
+    "status": "success",
+    "file": "introduction_to_african_civilization_by_john_g_jacksonsmaller.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/I-2/Introduction-to-African-Civilization-by-John-G-Jacksonsmaller.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/introduction_to_african_civilization_by_john_g_jacksonsmaller.txt",
+    "size": 687255,
+    "words": 109789,
+    "processing_time": 609.9517843723297
+  },
+  {
+    "status": "success",
+    "file": "benjamin_banneker~_almanac_1792.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/benjamin_banneker~_almanac_1792.txt",
+    "size": 14042,
+    "words": 2384,
+    "processing_time": 40.21189308166504
+  },
+  {
+    "status": "success",
+    "file": "rememberbookertwashington.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-3/rememberbookertwashington.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/rememberbookertwashington.txt",
+    "size": 13544,
+    "words": 2463,
+    "processing_time": 50.913726806640625
+  },
+  {
+    "status": "success",
+    "file": "listen_brother_a_pamphlet_by_robert_f_williams_the_photos.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/L/Listen-Brother-A-Pamphlet-by-Robert-F-Williams-THE-PHOTOS.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/listen_brother_a_pamphlet_by_robert_f_williams_the_photos.txt",
+    "size": 3729,
+    "words": 503,
+    "processing_time": 45.03996443748474
+  },
+  {
+    "status": "success",
+    "file": "negroyearbook52tuskrich.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-6/negroyearbook52tuskrich.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/negroyearbook52tuskrich.txt",
+    "size": 56779,
+    "words": 6857,
+    "processing_time": 1418.0116565227509
+  },
+  {
+    "status": "error",
+    "file": "assata_shakur_an_autobiography.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Assata-An-Autobiography-and-Eyes-of-the-Rainbow-An-Assata-Shakur-Documentary.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.613624095916748
+  },
+  {
+    "status": "error",
+    "file": "the_groundings_with_my_brother.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/G-1/George Jackson-Soledad-Brother.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.38761138916015625
+  },
+  {
+    "status": "error",
+    "file": "benjamin_banneker~_almanac.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.5148108005523682
+  },
+  {
+    "status": "error",
+    "file": "harriet,_the_moses_of_her_people.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-5/Moses-and-Monotheism.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.3771932125091553
+  },
+  {
+    "status": "error",
+    "file": "walter_rodney_a_history_of_the_guyanese_working_people,_1881_1905.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/W-1/Walter-Rodney-an-Pan-AfricanIsm-Today.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.4161374568939209
+  },
+  {
+    "status": "error",
+    "file": "soul_on_ice___eldridge_cleaver_smaller.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Eldridge-Cleaver-on-Lumpen-Ideology.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.41329002380371094
+  },
+  {
+    "status": "error",
+    "file": "boyslifeofbooker00lcjack.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/boyslifeofbooker00lcjack.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.28787827491760254
+  },
+  {
+    "status": "error",
+    "file": "negroes_with_guns_by_robert_f_williams.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-6/Negroes-With-Guns-by-Robert-F-Williams.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.30847716331481934
+  },
+  {
+    "status": "error",
+    "file": "myth_of_ham_in_19th_century_american_christianity_sylvester_a_johnson.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-5/Myth-of-Ham-in-19th-Century-American-Christianity-Sylvester-A-Johnson.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.3279454708099365
+  },
+  {
+    "status": "error",
+    "file": "the_vanguard___a_photographic_essay_on_th.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-10/The-Vanguard---A-Photographic-Essay-on-th.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.29233765602111816
+  },
+  {
+    "status": "error",
+    "file": "what_is_qatum_melanin_physics.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/W-2/What-Is-Qatum-Melanin-Physics.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.3113522529602051
+  },
+  {
+    "status": "error",
+    "file": "blacks_in_science_ancient_and_modern_ivan_van_sertima_(2).txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Blacks-in-Science-Ancient-and-Modern-Ivan-Van-Sertima (2).pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.3281257152557373
+  },
+  {
+    "status": "error",
+    "file": "walter_rodney~a_history_of_upper_guinea_coast_1545_1800_by_walter_rodney.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/W-1/Walter-Rodney-an-Pan-AfricanIsm-Today.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.2959561347961426
+  },
+  {
+    "status": "error",
+    "file": "david_hatcher_childress~tech._of_the_gods,_the_incredible_sciences_of_the_ancients.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-1/Technology-of-the-Gods-the-Incredible-Sciences-of-the-Ancients.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.32749438285827637
+  },
+  {
+    "status": "error",
+    "file": "dennis_the_burden_of_isis_being_the_lament_of_isis_and_nephthys_bw_complete.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Dennis-The-Burden-of-Isis-Being-The-Lament-of-Isis-and-Nephthys-bw-Complete.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.29140663146972656
+  },
+  {
+    "status": "error",
+    "file": "the_colored_patriots_of_the_american_rev.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-6/The_colored_patriots_of_the_American_Rev.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.2958216667175293
+  },
+  {
+    "status": "success",
+    "file": "black_women_in_antiquity_ivan_van_sertima.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Black-Women-in-Antiquity-Ivan-Van-Sertima.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/black_women_in_antiquity_ivan_van_sertima.txt",
+    "size": 405767,
+    "words": 29417,
+    "processing_time": 398.5536279678345
+  },
+  {
+    "status": "success",
+    "file": "cheikh_anta_diop_civilization_of_barbarism.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Cheikh-Anta-Diop-Civilization-of-Barbarism.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/cheikh_anta_diop_civilization_of_barbarism.txt",
+    "size": 885032,
+    "words": 98087,
+    "processing_time": 1022.603013753891
+  },
+  {
+    "status": "error",
+    "file": "na'im_akbar~know_thyself.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-6/Na'Im Akbar~Know-Thyself.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8021385669708252
+  },
+  {
+    "status": "error",
+    "file": "the_black_panther_party_and_the_case_of_the_new_york_21.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-7/The-Black-Panther-Party-and-the-Case-of-the-New-York-21.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.2333312034606934
+  },
+  {
+    "status": "success",
+    "file": "benjamin_banneker~_almanac_1794.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/benjamin_banneker~_almanac_1794.txt",
+    "size": 99,
+    "words": 13,
+    "processing_time": 45.57818150520325
+  },
+  {
+    "status": "success",
+    "file": "the_african_background_to_medical_science_charles_s_finch_cropped.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-7/the-African-Background-to-Medical-Science-Charles-S-Finch-Cropped.pdf",
+    "output_path": "/home/suspect/.n8n/maatlangchain/re_extracted_files/the_african_background_to_medical_science_charles_s_finch_cropped.txt",
+    "size": 103,
+    "words": 15,
+    "processing_time": 473.74444460868835
+  },
+  {
+    "status": "error",
+    "file": "george_l._jackson~blood_in_my_eye.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Eric Mann~Comrade-George.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.7918319702148438
+  },
+  {
+    "status": "error",
+    "file": "cheikh_anta_diop_precolonial_black_africa.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Cheikh-Anta-Diop-Precolonial-Black-Africa.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8786346912384033
+  },
+  {
+    "status": "error",
+    "file": "ku_klux_klan.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/k/Ku_Klux_klan.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0609874725341797
+  },
+  {
+    "status": "error",
+    "file": "benjamin_banneker~_almanac_1796.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8119351863861084
+  },
+  {
+    "status": "error",
+    "file": "ivan_van_sertima_they_came_before_columbus.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/I-3/Ivan-Van-Sertima-They-Came-Before-Columbus.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.07759428024292
+  },
+  {
+    "status": "error",
+    "file": "kloranwhiteknights.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/k/kloranwhiteknights.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1938121318817139
+  },
+  {
+    "status": "error",
+    "file": "yurugu_an_african_centered_critique_of_european_cultural_thought_and_behavior_by_miramba_ani.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Y/Yurugu An African-Centered-Critique-of-European-Cultural-Thought-and-Behavior-by-Miramba-Ani.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8853819370269775
+  },
+  {
+    "status": "error",
+    "file": "benjamin_bannekers_almanac_1977.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8027360439300537
+  },
+  {
+    "status": "error",
+    "file": "cheikh_anta_diop~_cultural_unity_of_black_africa.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Cheikh-Anta-Diop-Precolonial-Black-Africa.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.089820146560669
+  },
+  {
+    "status": "error",
+    "file": "the_african_dream__the_diaries_of_the_revolutionary_war_in_the_congo_by_ernesto_guevara.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-6/The_African_dream-_the_diaries_of_the_revolutionary_war_in_the_Congo_By_Ernesto_Guevara.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0136353969573975
+  },
+  {
+    "status": "error",
+    "file": "the_history_of_the_negro_church.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-6/The_history_of_the_Negro_church.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8405134677886963
+  },
+  {
+    "status": "error",
+    "file": "muata_ashby_african_religon_vol_5_goddes_e_book.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-5/Muata-Ashby-African-Religon-Vol-5-GODDES-E-Book.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0511093139648438
+  },
+  {
+    "status": "error",
+    "file": "egyptianhierogly01budguoft.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/egyptianhierogly01budguoft.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.2006890773773193
+  },
+  {
+    "status": "error",
+    "file": "ra_un_nefer_amen__the_11_laws_of_ma'at.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-2/Ra-Un-Nefer-Amen- The 11 Laws of Ma'at.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8597664833068848
+  },
+  {
+    "status": "error",
+    "file": "benjamin_banneker~_almanac_1795.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Benjamin-Banneker-Pionerring Scientist.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8834266662597656
+  },
+  {
+    "status": "error",
+    "file": "e.a._wallis_budge~_the_banlet_of_righteouesness.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/E.A. Wallis Budge~ The-Banlet-of-Righteouesness.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.2454748153686523
+  },
+  {
+    "status": "error",
+    "file": "the_negro_in_our_history.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-7/The_Negro_in_our_history.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.7823691368103027
+  },
+  {
+    "status": "error",
+    "file": "great_black_leaders_ancient_and_dr_ivan_van_sertima1_pdf.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/G-3/Great-Black-Leaders-Ancient-and-Dr-Ivan-Van-Sertima1-PDF.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.9204626083374023
+  },
+  {
+    "status": "error",
+    "file": "we_the_black_jews_vol._1&2_yosef_ben_jochannan_smaller_file.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/W-3/WHO-IS-DR BEN Dr-Yosef-Ben-Jochannan-on-Imhotep-and-More.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.9103133678436279
+  },
+  {
+    "status": "error",
+    "file": "harriettubmanwholeadtheslavestofreedom.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/H-1/harriettubmanwholeadtheslavestofreedom.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1681292057037354
+  },
+  {
+    "status": "error",
+    "file": "new_dimensions_in_african_history_yosef_ben_jochannan_and_john_henrik_clarke.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Education-for-a-New-Reality-in-the-African-World-by-Dr-John-Henrik-Clarke.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8525712490081787
+  },
+  {
+    "status": "error",
+    "file": "the_books_of_chilan_balam_the_prophetic_and_historic_records_of_the_mayas_of_yucatan_1882.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-8/The-books-of-Chilan-Balam-the-prophetic-and-historic-records-of-the-Mayas-of-Yucatan-1882.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.89188551902771
+  },
+  {
+    "status": "error",
+    "file": "hmixtapes_click_n_play_vols_1_thru_4_produced_by_bro_cadence_4_your_listening_pleasure.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/H-2/HMixtapes-Click-n-Play-Vols-1-Thru-4-Produced-by-Bro-Cadence-4-Your-Listening-Pleasure.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8765079975128174
+  },
+  {
+    "status": "error",
+    "file": "golden_age_of_the_moor_ivan_van_sertima.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/G-3/Golden-Age-of-The-Moor-Ivan-Van-Sertima.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.130018711090088
+  },
+  {
+    "status": "error",
+    "file": "dr._ivan_van_sertima~african_presence_in_early_asia.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Black-Women-in-Antiquity-Ivan-Van-Sertima.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.929663896560669
+  },
+  {
+    "status": "error",
+    "file": "raboteau_slave_religion.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-1/raboteau_slave-religion.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.074220895767212
+  },
+  {
+    "status": "error",
+    "file": "capitalism_plus_dope_equals_genocide_original_document.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Capitalism-Plus-Dope-Equals-Genocide-Original-Document.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.180083990097046
+  },
+  {
+    "status": "error",
+    "file": "chanceller_williams_the_destruction_of_black_civilizatios.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Chanceller-Williams-The-Destruction-of-Black-Civilizatios.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.9697518348693848
+  },
+  {
+    "status": "error",
+    "file": "the_genius_of_huey_p_newton.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-8/The-Genius-of-Huey-P-Newton.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8705735206604004
+  },
+  {
+    "status": "error",
+    "file": "essays_minister_of_defense.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Essays-Minister of Defense.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8519027233123779
+  },
+  {
+    "status": "error",
+    "file": "dr._ivan_van_sertima~african_presence_in_early_europe.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Black-Women-in-Antiquity-Ivan-Van-Sertima.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1040046215057373
+  },
+  {
+    "status": "error",
+    "file": "the_shape_of_things_to_come_a_master_plan_from_the_destruction_of_black_civilization.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-9/The-Shape-of-Things-to-Come-A-Master-Plan-From-the-Destruction-of-Black-Civilization.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.851250410079956
+  },
+  {
+    "status": "error",
+    "file": "assata_an_autobiography_and_eyes_of_the_rainbow_an_assata_shakur_documentary.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Assata-An-Autobiography-and-Eyes-of-the-Rainbow-An-Assata-Shakur-Documentary.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0089161396026611
+  },
+  {
+    "status": "error",
+    "file": "the_instruction_of_ptah_hotep_an.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-8/The-Instruction-of-Ptah-Hotep-an.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1064538955688477
+  },
+  {
+    "status": "error",
+    "file": "eric_mann~comrade_george.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Eric Mann~Comrade-George.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8723335266113281
+  },
+  {
+    "status": "error",
+    "file": "technology_of_the_gods_the_incredible_sciences_of_the_ancients.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-1/Technology-of-the-Gods-the-Incredible-Sciences-of-the-Ancients.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.932074785232544
+  },
+  {
+    "status": "error",
+    "file": "the_history_of_the_yorubas.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/P/Pan-African-History.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.068809986114502
+  },
+  {
+    "status": "error",
+    "file": "the_mayan_prophecies.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-9/The-Mayan-Prophecies.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0316712856292725
+  },
+  {
+    "status": "error",
+    "file": "metu_neter_volume_1_by_ra_un_amen_nefer_smaller.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-2/Ra-Un-Nefer-Amen- The 11 Laws of Ma'at.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8152563571929932
+  },
+  {
+    "status": "error",
+    "file": "great_african_americans_coloring_book.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/M-5/Muata-Ashby-African-Religon-Vol-5-GODDES-E-Book.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.108510971069336
+  },
+  {
+    "status": "error",
+    "file": "radio_free_dixie_robert_f_williams_and_his_wife_mabel_broadcasting_from_cuba.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/R-1/Radio-Free-Dixie-Robert-F-Williams-and-His-Wife-Mabel-Broadcasting-From-Cuba.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1041076183319092
+  },
+  {
+    "status": "error",
+    "file": "i_i_em_hotep_and_ancient_egyptian_medici.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/I-1/I_I_em_hotep_and_ancient_Egyptian_medici.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8828549385070801
+  },
+  {
+    "status": "error",
+    "file": "huey_p._newton_the_radical_theorist.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-8/The-Genius-of-Huey-P-Newton.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.875779390335083
+  },
+  {
+    "status": "error",
+    "file": "framing_of_mumia_abu_jamal.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Framing of Mumia Abu-Jamal.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.9399948120117188
+  },
+  {
+    "status": "error",
+    "file": "kwame_toure~black_power.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Amiri-Baraka-and-the-Black-Power-Movement.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.055751085281372
+  },
+  {
+    "status": "error",
+    "file": "messenger___the_rise_and_fall_of_elijah_muhammad.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Elijah_Muhammad.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8640861511230469
+  },
+  {
+    "status": "error",
+    "file": "skin_deep_spirit_strong_the_black_female_body_in_american_culture.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/S-2/Skin_Deep_Spirit_Strong_The_Black_Female_Body_in_American_Culture.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.016036033630371
+  },
+  {
+    "status": "error",
+    "file": "the_undiscovered_paul_robeson.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/A-Paul-Cuffe-Biography.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.1612646579742432
+  },
+  {
+    "status": "error",
+    "file": "blakademics_blogged_table_for_advanced_learners_and_teachers.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Blakademics-Blogged-Table-For-Advanced-Learners-and-Teachers.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8417079448699951
+  },
+  {
+    "status": "error",
+    "file": "from_black_power_to_hip_hop_racism,_nationalism,_and_feminism_pdf.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Amiri-Baraka-and-the-Black-Power-Movement.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8647317886352539
+  },
+  {
+    "status": "error",
+    "file": "who_is_dr_ben_dr_yosef_ben_jochannan_on_imhotep_and_more.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/I-1/Imhotep.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.032233715057373
+  },
+  {
+    "status": "error",
+    "file": "the_official_malcolm_x_mixtapes_vols_1_2_produced_and_arranged_by_bro_cadence.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/T-9/The-Official-Malcolm-X-Mixtapes-Vols-1-2-Produced-and-Arranged-by-Bro-Cadence.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.9587109088897705
+  },
+  {
+    "status": "error",
+    "file": "lecturesonliberationbyangeladavis.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/L/LecturesOnLiberationByAngelaDavis.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 0.8477232456207275
+  },
+  {
+    "status": "error",
+    "file": "eldridge_cleaver_on_lumpen_ideology.txt",
+    "pdf": "/home/suspect/.n8n/maatlangchain/docs/RBG_Library/Eldridge-Cleaver-on-Lumpen-Ideology.pdf",
+    "error": "Failed to load PDF",
+    "processing_time": 1.0753679275512695
+  }
+]

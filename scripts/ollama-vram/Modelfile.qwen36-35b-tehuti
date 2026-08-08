@@ -1,0 +1,4 @@
+# Same weights as qwen3.6:35b (~23GB). Assumes ComfyUI is NOT on GPU (quit when chatting).
+# Aligns with OLLAMA_WEBUI_MAX_NUM_CTX=16384; lower num_ctx if you still OOM.
+FROM qwen3.6:35b
+PARAMETER num_ctx 16384

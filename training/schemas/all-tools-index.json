@@ -1,0 +1,1572 @@
+{
+  "total_tools": 104,
+  "total_servers": 11,
+  "generated_at": "2025-12-25",
+  "tools": [
+    {
+      "tool_id": "tool_check_missing_nodes_post",
+      "tool_name": "Check Missing Nodes",
+      "description": "Check if a workflow has missing custom nodes that need to be installed.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/check_missing_nodes",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_check_workflow_accuracy_post",
+      "tool_name": "Check Workflow Accuracy",
+      "description": "Check workflow accuracy and get detailed report. Will indicate if workflow needs to be downloaded.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/check_workflow_accuracy",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_download_model_post",
+      "tool_name": "Download Model",
+      "description": "Download a model from Hugging Face Hub. Returns download status and file path.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/download_model",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_download_workflow_post",
+      "tool_name": "Download Workflow",
+      "description": "Download a workflow JSON from Hugging Face Hub or URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/download_workflow",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_Chroma1_HD_DF11_post",
+      "tool_name": "Execute Chroma1-Hd-Df11",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_Chroma1-HD-DF11",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_example_download_test_post",
+      "tool_name": "Execute Example Download Test",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_example_download_test",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_img2img_basic_post",
+      "tool_name": "Execute Img2Img Basic",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to transform or modify an image based on a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_img2img_basic",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation",
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_basic_post",
+      "tool_name": "Execute Txt2Img Basic",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_basic",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_chroma_hd_post",
+      "tool_name": "Execute Txt2Img Chroma Hd",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_chroma_hd",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_realvisxl_v5_full_post",
+      "tool_name": "Execute Txt2Img Realvisxl V5 Full",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_realvisxl_v5_full",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_realvisxl_v5_post",
+      "tool_name": "Execute Txt2Img Realvisxl V5",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_realvisxl_v5",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_realvisxl_v5_with_lora_post",
+      "tool_name": "Execute Txt2Img Realvisxl V5 With Lora",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_realvisxl_v5_with_lora",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_txt2img_sd15_post",
+      "tool_name": "Execute Txt2Img Sd15",
+      "description": "CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_txt2img_sd15",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_wan2_2_i2v_post",
+      "tool_name": "Execute Wan2.2 I2V",
+      "description": "CALL THIS TOOL to transform or modify an image based on a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to generate an image from a text prompt. Returns a result_url with the generated image., CALL THIS TOOL to generate a video from an image and text prompt. Returns a result_url with the generated video., CALL THIS TOOL to generate a video from a text prompt. Returns a result_url with the generated video.. REQUIRED parameter: 'text' (the prompt). Returns JSON with 'result_url' field containing the image/video URL.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/execute_wan2.2_i2v",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:creation",
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_best_model_post",
+      "tool_name": "Get Best Model",
+      "description": "Get the best model for a capability, optionally constrained by VRAM",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_best_model",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_execution_statistics_post",
+      "tool_name": "Get Execution Statistics",
+      "description": "Get statistics about workflow executions",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_execution_statistics",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_execution_status_post",
+      "tool_name": "Get Execution Status",
+      "description": "Get the status of a workflow execution by execution ID",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_execution_status",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_model_settings_post",
+      "tool_name": "Get Model Settings",
+      "description": "Get best settings for a model (resolution, steps, cfg, sampler, etc.) for training/optimization",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_model_settings",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_training_recommendations_post",
+      "tool_name": "Get Training Recommendations",
+      "description": "Get training/optimization recommendations for a model",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_training_recommendations",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_version_post",
+      "tool_name": "Get Version",
+      "description": "Get the MCP server version and build information",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_version",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_workflow_specs_post",
+      "tool_name": "Get Workflow Specs",
+      "description": "Get detailed specifications for a workflow",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/get_workflow_specs",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_install_custom_node_post",
+      "tool_name": "Install Custom Node",
+      "description": "Install a custom node using ComfyUI-Manager. Required for workflows that depend on custom nodes.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/install_custom_node",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_install_missing_nodes_post",
+      "tool_name": "Install Missing Nodes",
+      "description": "Automatically install missing custom nodes required by a workflow.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/install_missing_nodes",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_executions_post",
+      "tool_name": "List Executions",
+      "description": "List recent workflow executions with optional filters",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/list_executions",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_models_post",
+      "tool_name": "List Models",
+      "description": "List available models. Filter by type (diffusion, text_encoder, vae) or capability (image_to_video, text_to_video, etc.)",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/list_models",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_workflows_post",
+      "tool_name": "List Workflows",
+      "description": "List all available workflows and their capabilities",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/list_workflows",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_load_workflow_to_canvas_post",
+      "tool_name": "Load Workflow To Canvas",
+      "description": "Load a workflow JSON file into ComfyUI canvas. Opens the workflow in the web interface for viewing/editing.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/load_workflow_to_canvas",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_models_post",
+      "tool_name": "Search Models",
+      "description": "Search for models on Hugging Face Hub by query.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/search_models",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_workflows_post",
+      "tool_name": "Search Workflows",
+      "description": "Search workflows by specifications (capability, input type, output type, model family, etc.)",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/search_workflows",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_validate_workflow_post",
+      "tool_name": "Validate Workflow",
+      "description": "Validate workflow accuracy and check if download is needed. Returns accuracy score, errors, and recommendations.",
+      "server_id": "comfyui-intelligent",
+      "server_name": "intelligent-comfyui-mcp",
+      "path": "/validate_workflow",
+      "method": "POST",
+      "category": "image",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_create_directory_post",
+      "tool_name": "Create Directory",
+      "description": "Create a new directory or ensure a directory exists. Can create multiple nested directories in one operation. If the directory already exists, this operation will succeed silently. Perfect for setting up directory structures for projects or ensuring required paths exist. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/create_directory",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_directory_tree_post",
+      "tool_name": "Directory Tree",
+      "description": "Get a recursive tree view of files and directories as a JSON structure. Each entry includes 'name', 'type' (file/directory), and 'children' for directories. Files have no children array, while directories always have a children array (which may be empty). The output is formatted with 2-space indentation for readability. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/directory_tree",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_edit_file_post",
+      "tool_name": "Edit File",
+      "description": "Make line-based edits to a text file. Each edit replaces exact line sequences with new content. Returns a git-style diff showing the changes made. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/edit_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_file_info_post",
+      "tool_name": "Get File Info",
+      "description": "Retrieve detailed metadata about a file or directory. Returns comprehensive information including size, creation time, last modified time, permissions, and type. This tool is perfect for understanding file characteristics without reading the actual content. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/get_file_info",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_allowed_directories_post",
+      "tool_name": "List Allowed Directories",
+      "description": "Returns the list of directories that this server is allowed to access. Subdirectories within these allowed directories are also accessible. Use this to understand which directories and their nested paths are available before trying to access files.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/list_allowed_directories",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_directory_post",
+      "tool_name": "List Directory",
+      "description": "Get a detailed listing of all files and directories in a specified path. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes. This tool is essential for understanding directory structure and finding specific files within a directory. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/list_directory",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_directory_with_sizes_post",
+      "tool_name": "List Directory With Sizes",
+      "description": "Get a detailed listing of all files and directories in a specified path, including sizes. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes. This tool is useful for understanding directory structure and finding specific files within a directory. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/list_directory_with_sizes",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_move_file_post",
+      "tool_name": "Move File",
+      "description": "Move or rename files and directories. Can move files between directories and rename them in a single operation. If the destination exists, the operation will fail. Works across different directories and can be used for simple renaming within the same directory. Both source and destination must be within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/move_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_file_post",
+      "tool_name": "Read File",
+      "description": "Read the complete contents of a file as text. DEPRECATED: Use read_text_file instead.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/read_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_media_file_post",
+      "tool_name": "Read Media File",
+      "description": "Read an image or audio file. Returns the base64 encoded data and MIME type. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/read_media_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_multiple_files_post",
+      "tool_name": "Read Multiple Files",
+      "description": "Read the contents of multiple files simultaneously. This is more efficient than reading files one by one when you need to analyze or compare multiple files. Each file's content is returned with its path as a reference. Failed reads for individual files won't stop the entire operation. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/read_multiple_files",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "self_reflection:learning"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_text_file_post",
+      "tool_name": "Read Text File",
+      "description": "Read the complete contents of a file from the file system as text. Handles various text encodings and provides detailed error messages if the file cannot be read. Use this tool when you need to examine the contents of a single file. Use the 'head' parameter to read only the first N lines of a file, or the 'tail' parameter to read only the last N lines of a file. Operates on the file as text regardless of extension. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/read_text_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_files_post",
+      "tool_name": "Search Files",
+      "description": "Recursively search for files and directories matching a pattern. The patterns should be glob-style patterns that match paths relative to the working directory. Use pattern like '*.ext' to match files in current directory, and '**/*.ext' to match files in all subdirectories. Returns full paths to all matching items. Great for finding files when you don't know their exact location. Only searches within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/search_files",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_write_file_post",
+      "tool_name": "Write File",
+      "description": "Create a new file or completely overwrite an existing file with new content. Use with caution as it will overwrite existing files without warning. Handles text content with proper encoding. Only works within allowed directories.",
+      "server_id": "filesystem-mcp",
+      "server_name": "secure-filesystem-server",
+      "path": "/write_file",
+      "method": "POST",
+      "category": "filesystem",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "create_pipeline_task_tools_create_pipeline_task_post",
+      "tool_name": "Create Pipeline Task",
+      "description": "Create a task in gitMaat for pipeline execution.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/tools/create_pipeline_task",
+      "method": "POST",
+      "category": "ai",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "execute_research_pipeline_tools_execute_research_pipeline_post",
+      "tool_name": "Execute Research Pipeline",
+      "description": "Execute full research pipeline using MaatLangChain + Tehuti Core.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/tools/execute_research_pipeline",
+      "method": "POST",
+      "category": "ai",
+      "maat_tags": [
+        "truth:execution",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "health_health_get",
+      "tool_name": "Health",
+      "description": "Health check endpoint.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/health",
+      "method": "GET",
+      "category": "ai",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "openapi_openapi_json_get",
+      "tool_name": "Openapi",
+      "description": "Return OpenAPI spec for WebUI integration.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/openapi.json",
+      "method": "GET",
+      "category": "ai",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "query_gitmaat_advanced_tools_query_gitmaat_advanced_post",
+      "tool_name": "Query Gitmaat Advanced",
+      "description": "Advanced gitMaat query with semantic search support.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/tools/query_gitmaat_advanced",
+      "method": "POST",
+      "category": "ai",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "search_knowledge_base_tools_search_knowledge_base_post",
+      "tool_name": "Search Knowledge Base",
+      "description": "Search MaatLangChain knowledge base using RAG.",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/tools/search_knowledge_base",
+      "method": "POST",
+      "category": "ai",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "trigger_n8n_workflow_tools_trigger_n8n_workflow_post",
+      "tool_name": "Trigger N8N Workflow",
+      "description": "Trigger an n8n workflow (connects to Tehuti Integration).",
+      "server_id": "maatlangchain-pipeline",
+      "server_name": "MaatLangChain Pipeline API",
+      "path": "/tools/trigger_n8n_workflow",
+      "method": "POST",
+      "category": "ai",
+      "maat_tags": [
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_add_observations_post",
+      "tool_name": "Add Observations",
+      "description": "Add new observations to existing entities in the knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/add_observations",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_create_entities_post",
+      "tool_name": "Create Entities",
+      "description": "Create multiple new entities in the knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/create_entities",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_create_relations_post",
+      "tool_name": "Create Relations",
+      "description": "Create multiple new relations between entities in the knowledge graph. Relations should be in active voice",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/create_relations",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_delete_entities_post",
+      "tool_name": "Delete Entities",
+      "description": "Delete multiple entities and their associated relations from the knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/delete_entities",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_delete_observations_post",
+      "tool_name": "Delete Observations",
+      "description": "Delete specific observations from entities in the knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/delete_observations",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_delete_relations_post",
+      "tool_name": "Delete Relations",
+      "description": "Delete multiple relations from the knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/delete_relations",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_open_nodes_post",
+      "tool_name": "Open Nodes",
+      "description": "Open specific nodes in the knowledge graph by their names",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/open_nodes",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_graph_post",
+      "tool_name": "Read Graph",
+      "description": "Read the entire knowledge graph",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/read_graph",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_nodes_post",
+      "tool_name": "Search Nodes",
+      "description": "Search for nodes in the knowledge graph based on a query",
+      "server_id": "memory-mcp",
+      "server_name": "memory-server",
+      "path": "/search_nodes",
+      "method": "POST",
+      "category": "memory",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_node_post",
+      "tool_name": "Get Node",
+      "description": "Get node info with progressive detail levels and multiple modes. Detail: minimal (~200 tokens), standard (~1-2K, default), full (~3-8K). Modes: info (default), docs (markdown documentation), search_properties (find properties), versions/compare/breaking/migrations (version info). Use format='docs' for readable documentation, mode='search_properties' with propertyQuery for finding specific fields.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/get_node",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_template_post",
+      "tool_name": "Get Template",
+      "description": "Get template by ID. Use mode to control response size: nodes_only (minimal), structure (nodes+connections), full (complete workflow).",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/get_template",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_autofix_workflow_post",
+      "tool_name": "N8N Autofix Workflow",
+      "description": "Automatically fix common workflow validation errors. Preview fixes or apply them. Fixes expression format, typeVersion, error output config, webhook paths.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_autofix_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_create_workflow_post",
+      "tool_name": "N8N Create Workflow",
+      "description": "Create workflow. Requires: name, nodes[], connections{}. Created inactive. Returns workflow with ID.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_create_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_delete_workflow_post",
+      "tool_name": "N8N Delete Workflow",
+      "description": "Permanently delete a workflow. This action cannot be undone.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_delete_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_deploy_template_post",
+      "tool_name": "N8N Deploy Template",
+      "description": "Deploy a workflow template from n8n.io directly to your n8n instance. Deploys first, then auto-fixes common issues (expression format, typeVersions). Returns workflow ID, required credentials, and fixes applied.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_deploy_template",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_executions_post",
+      "tool_name": "N8N Executions",
+      "description": "Manage workflow executions: get details, list, or delete. Use action='get' with id for execution details, action='list' for listing executions, action='delete' to remove execution record.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_executions",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery",
+        "justice:attribution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_get_workflow_post",
+      "tool_name": "N8N Get Workflow",
+      "description": "Get workflow by ID with different detail levels. Use mode='full' for complete workflow, 'details' for metadata+stats, 'structure' for nodes/connections only, 'minimal' for id/name/active/tags.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_get_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_health_check_post",
+      "tool_name": "N8N Health Check",
+      "description": "Check n8n instance health and API connectivity. Use mode='diagnostic' for detailed troubleshooting with env vars and tool status.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_health_check",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_list_workflows_post",
+      "tool_name": "N8N List Workflows",
+      "description": "List workflows (minimal metadata only). Returns id/name/active/dates/tags. Check hasMore/nextCursor for pagination.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_list_workflows",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "balance:validation",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_test_workflow_post",
+      "tool_name": "N8N Test Workflow",
+      "description": "Test/trigger workflow execution. Auto-detects trigger type (webhook/form/chat). Supports: webhook (HTTP), form (fields), chat (message). Note: Only workflows with these trigger types can be executed externally.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_test_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_update_full_workflow_post",
+      "tool_name": "N8N Update Full Workflow",
+      "description": "Full workflow update. Requires complete nodes[] and connections{}. For incremental use n8n_update_partial_workflow.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_update_full_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_update_partial_workflow_post",
+      "tool_name": "N8N Update Partial Workflow",
+      "description": "Update workflow incrementally with diff operations. Types: addNode, removeNode, updateNode, moveNode, enable/disableNode, addConnection, removeConnection, updateSettings, updateName, add/removeTag. See tools_documentation(\"n8n_update_partial_workflow\", \"full\") for details.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_update_partial_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "order:modification"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_validate_workflow_post",
+      "tool_name": "N8N Validate Workflow",
+      "description": "Validate workflow by ID. Checks nodes, connections, expressions. Returns errors/warnings/suggestions.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_validate_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_n8n_workflow_versions_post",
+      "tool_name": "N8N Workflow Versions",
+      "description": "Manage workflow version history, rollback, and cleanup. Six modes:\n- list: Show version history for a workflow\n- get: Get details of specific version\n- rollback: Restore workflow to previous version (creates backup first)\n- delete: Delete specific version or all versions for a workflow\n- prune: Manually trigger pruning to keep N most recent versions\n- truncate: Delete ALL versions for ALL workflows (requires confirmation)",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/n8n_workflow_versions",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "truth:execution",
+        "balance:discovery",
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_nodes_post",
+      "tool_name": "Search Nodes",
+      "description": "Search n8n nodes by keyword with optional real-world examples. Pass query as string. Example: query=\"webhook\" or query=\"database\". Returns max 20 results. Use includeExamples=true to get top 2 template configs per node.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/search_nodes",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_search_templates_post",
+      "tool_name": "Search Templates",
+      "description": "Search templates with multiple modes. Use searchMode='keyword' for text search, 'by_nodes' to find templates using specific nodes, 'by_task' for curated task-based templates, 'by_metadata' for filtering by complexity/setup time/services.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/search_templates",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tools_documentation_post",
+      "tool_name": "Tools Documentation",
+      "description": "Get documentation for n8n MCP tools. Call without parameters for quick start guide. Use topic parameter to get documentation for specific tools. Use depth='full' for comprehensive documentation.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/tools_documentation",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_validate_node_post",
+      "tool_name": "Validate Node",
+      "description": "Validate n8n node configuration. Use mode='full' for comprehensive validation with errors/warnings/suggestions, mode='minimal' for quick required fields check. Example: nodeType=\"nodes-base.slack\", config={resource:\"channel\",operation:\"create\"}",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/validate_node",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [
+        "balance:validation",
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_validate_workflow_post",
+      "tool_name": "Validate Workflow",
+      "description": "Full workflow validation: structure, connections, expressions, AI tools. Returns errors/warnings/fixes. Essential before deploy.",
+      "server_id": "n8n-mcp",
+      "server_name": "n8n-documentation-mcp",
+      "path": "/validate_workflow",
+      "method": "POST",
+      "category": "workflow",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_query_post",
+      "tool_name": "Query",
+      "description": "Run a read-only SQL query",
+      "server_id": "postgres-mcp",
+      "server_name": "example-servers/postgres",
+      "path": "/query",
+      "method": "POST",
+      "category": "database",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "generate_multilingual_api_generate_multilingual_post",
+      "tool_name": "Generate Multilingual",
+      "description": "Generate speech in multiple languages (auto-detects language from text).",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/api/generate_multilingual",
+      "method": "POST",
+      "category": "audio",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "generate_music_api_generate_music_post",
+      "tool_name": "Generate Music",
+      "description": "Generate music from lyrics with music notation.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/api/generate_music",
+      "method": "POST",
+      "category": "audio",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "generate_speech_api_generate_speech_post",
+      "tool_name": "Generate Speech",
+      "description": "Generate speech from text using Bark TTS.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/api/generate_speech",
+      "method": "POST",
+      "category": "audio",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "generate_speech_with_voice_api_generate_speech_with_voice_post",
+      "tool_name": "Generate Speech With Voice",
+      "description": "Generate speech with specific voice preset and emotion tags.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/api/generate_speech_with_voice",
+      "method": "POST",
+      "category": "audio",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "get_audio_file_api_audio__audio_id__get",
+      "tool_name": "Get Audio File",
+      "description": "Retrieve generated audio file by ID.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/api/audio/{audio_id}",
+      "method": "GET",
+      "category": "audio",
+      "maat_tags": [
+        "order:creation"
+      ],
+      "parameters": [
+        {
+          "name": "audio_id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "title": "Audio Id"
+          }
+        }
+      ],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "get_openapi_spec_openapi_json_get",
+      "tool_name": "Get Openapi Spec",
+      "description": "Return OpenAPI specification.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/openapi.json",
+      "method": "GET",
+      "category": "audio",
+      "maat_tags": [],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "health_check_health_get",
+      "tool_name": "Health Check",
+      "description": "Health check endpoint.",
+      "server_id": "tehuti-audio",
+      "server_name": "Tehuti Audio - Bark TTS API",
+      "path": "/health",
+      "method": "GET",
+      "category": "audio",
+      "maat_tags": [
+        "balance:validation"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_execute_command_post",
+      "tool_name": "Execute Command",
+      "description": "Execute a shell command in the terminal (MaatCode power).\n    \n    Args:\n        command: The command to execute\n        working_directory: Directory to run command in (default: workspace root)\n        timeout: Command timeout in seconds (default: 30)\n        shell: Use shell execution (default: True)\n    \n    Returns:\n        Command output (stdout + stderr)",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/execute_command",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_get_system_info_post",
+      "tool_name": "Get System Info",
+      "description": "Get system information (OS, Python version, workspace info).\n    \n    Returns:\n        System information as formatted text",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/get_system_info",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_list_directory_post",
+      "tool_name": "List Directory",
+      "description": "List directory contents.\n    \n    Args:\n        path: Directory path (default: workspace root)\n        show_hidden: Show hidden files (default: False)\n    \n    Returns:\n        Directory listing",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/list_directory",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_query_gitmaat_post",
+      "tool_name": "Query Gitmaat",
+      "description": "Query gitMaat (Maat Memory) for tasks, changes, or learnings.\n    \n    Args:\n        query_type: Type of query (tasks, changes, learnings, decisions)\n        status: Filter by status (for tasks: pending, in_progress, completed)\n        limit: Maximum results (default: 10)\n    \n    Returns:\n        Query results as JSON",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/query_gitmaat",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "self_reflection:learning"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_read_file_post",
+      "tool_name": "Read File",
+      "description": "Read a file (with line limit for safety).\n    \n    Args:\n        file_path: Path to file\n        max_lines: Maximum lines to read (default: 1000)\n    \n    Returns:\n        File contents",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/read_file",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_run_python_code_post",
+      "tool_name": "Run Python Code",
+      "description": "Execute Python code in a safe context (MaatCode power).\n    \n    Args:\n        code: Python code to execute\n        working_directory: Directory to run code in (default: workspace root)\n    \n    Returns:\n        Code execution output",
+      "server_id": "tehuti-core",
+      "server_name": "Tehuti Core",
+      "path": "/run_python_code",
+      "method": "POST",
+      "category": "system",
+      "maat_tags": [
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_curriculum_generate_curriculum_post",
+      "tool_name": "Tehuti-Curriculum/Generate-Curriculum",
+      "description": "Generate a curriculum based on learning objectives, target audience, and duration",
+      "server_id": "tehuti-curriculum",
+      "server_name": "Tehuti-Curriculum",
+      "path": "/tehuti-curriculum/generate-curriculum",
+      "method": "POST",
+      "category": "education",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "order:creation",
+        "self_reflection:learning"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_curriculum_get_template_post",
+      "tool_name": "Tehuti-Curriculum/Get-Template",
+      "description": "Get a curriculum template by ID",
+      "server_id": "tehuti-curriculum",
+      "server_name": "Tehuti-Curriculum",
+      "path": "/tehuti-curriculum/get-template",
+      "method": "POST",
+      "category": "education",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_curriculum_list_templates_post",
+      "tool_name": "Tehuti-Curriculum/List-Templates",
+      "description": "List available curriculum templates",
+      "server_id": "tehuti-curriculum",
+      "server_name": "Tehuti-Curriculum",
+      "path": "/tehuti-curriculum/list-templates",
+      "method": "POST",
+      "category": "education",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_integration_get_execution_post",
+      "tool_name": "Tehuti-Integration/Get-Execution",
+      "description": "Get a workflow execution status/result",
+      "server_id": "tehuti-integration",
+      "server_name": "Tehuti-Integration",
+      "path": "/tehuti-integration/get-execution",
+      "method": "POST",
+      "category": "integration",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_integration_get_workflow_post",
+      "tool_name": "Tehuti-Integration/Get-Workflow",
+      "description": "Get workflow metadata by id",
+      "server_id": "tehuti-integration",
+      "server_name": "Tehuti-Integration",
+      "path": "/tehuti-integration/get-workflow",
+      "method": "POST",
+      "category": "integration",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_integration_list_workflows_post",
+      "tool_name": "Tehuti-Integration/List-Workflows",
+      "description": "List available workflows",
+      "server_id": "tehuti-integration",
+      "server_name": "Tehuti-Integration",
+      "path": "/tehuti-integration/list-workflows",
+      "method": "POST",
+      "category": "integration",
+      "maat_tags": [
+        "balance:discovery"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_integration_trigger_workflow_post",
+      "tool_name": "Tehuti-Integration/Trigger-Workflow",
+      "description": "Trigger a workflow with parameters",
+      "server_id": "tehuti-integration",
+      "server_name": "Tehuti-Integration",
+      "path": "/tehuti-integration/trigger-workflow",
+      "method": "POST",
+      "category": "integration",
+      "maat_tags": [
+        "truth:execution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_research_get_analysis_tool_post",
+      "tool_name": "Tehuti-Research/Get-Analysis-Tool",
+      "description": "Get an analysis tool by type and id",
+      "server_id": "tehuti-research",
+      "server_name": "Tehuti-Research",
+      "path": "/tehuti-research/get-analysis-tool",
+      "method": "POST",
+      "category": "research",
+      "maat_tags": [
+        "truth:data_retrieval"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_research_get_methodology_post",
+      "tool_name": "Tehuti-Research/Get-Methodology",
+      "description": "Get a methodology by id",
+      "server_id": "tehuti-research",
+      "server_name": "Tehuti-Research",
+      "path": "/tehuti-research/get-methodology",
+      "method": "POST",
+      "category": "research",
+      "maat_tags": [
+        "truth:data_retrieval",
+        "justice:attribution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    },
+    {
+      "tool_id": "tool_tehuti_research_list_methodologies_post",
+      "tool_name": "Tehuti-Research/List-Methodologies",
+      "description": "List available research methodologies",
+      "server_id": "tehuti-research",
+      "server_name": "Tehuti-Research",
+      "path": "/tehuti-research/list-methodologies",
+      "method": "POST",
+      "category": "research",
+      "maat_tags": [
+        "balance:discovery",
+        "justice:attribution"
+      ],
+      "parameters": [],
+      "has_request_body": true
+    }
+  ]
+}

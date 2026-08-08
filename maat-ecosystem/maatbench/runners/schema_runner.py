@@ -86,7 +86,13 @@ def run_schema_tests(test_defs: list[dict]) -> list[dict]:
             elif assertion == "has_required_fields":
                 ok, msg = assert_has_required_fields(schema)
             elif assertion == "has_id_field":
-                ok, msg = assert_has_field(schema, "id")
+                # Canonical Maat identity: id OR record_id (compounding schemas use record_id)
+                ok_id, _ = assert_has_field(schema, "id")
+                ok_rid, _ = assert_has_field(schema, "record_id")
+                if ok_id or ok_rid:
+                    ok, msg = True, "Identity field present (id or record_id)"
+                else:
+                    ok, msg = False, "Field 'id' or 'record_id' missing from properties"
             elif assertion == "has_memory_classes":
                 ok, msg = assert_has_field(schema, "memory_class")
             elif assertion == "has_task_states":

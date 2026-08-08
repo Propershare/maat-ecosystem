@@ -1,0 +1,11 @@
+## Cannibalism of Ancient KMT — Greek, Roman & Arab Waves
+
+| Place(s) | Custodians/Actors | Actions Taken | Impact on Knowledge |
+|----------|--------------------|----------------|----------------------|
+| Nile Valley (temples of Karnak, Luxor, Abydos, Heliopolis, Memphis, etc.) | Indigenous Kmtian priesthood, scribes, scholars | Creation and preservation of advanced systems: astronomy, geometry, medicine, ethics, engineering; written in *Medu Neter*; taught in temple schools | African-centered spiritual-scientific knowledge system controlled by African institutions; based on morality |
+| Alexandria, Nile Delta | Ptolemaic dynasty, Hellenistic scholars (e.g., Manetho, Euclid, Ptolemy) | Conquest of Egypt by Alexander; seizure of temple archives; translation of works into Greek; partial destruction of original texts; exclusion of native Africans from higher learning | Knowledge divorced from African context; rebranded as Greek science; African authors erased |
+| Alexandria, Rome | Roman governors, imperial elites | Egypt annexed into Roman Empire; Library and temples under Roman control; transfer of manuscripts to Rome; further suppression of priesthood | Knowledge becomes imperial asset; filtered through Roman priorities; African sources obscured |
+| Constantinople (Christianized) | Byzantine rulers, Christian clergy | Closure of remaining temples; outlawing of traditional religion; destruction or neglect of *Medu Neter* texts | Final rupture of living African science; reliance on Greek/Latin interpretations of African science |
+| Fustat, Alexandria, Baghdad | Arab Muslim rulers, Abbasid scholars | Conquest of Alexandria; dispersal or burning of Alexandrian holdings; translation of Greek-sourced works into Arabic; creation of translation houses (Bayt al-Hikma) | Knowledge rebranded as "Islamic Golden Age" science; African sources omitted; temple-based education erased |
+| Islamic world (Spain to Central Asia) | Muslim scholars, court patrons | Compilation and systematization of sciences under Islamic banner; extensive reuse via al-Andalus; omission of African origins in all major works | Permanent de-Africanization of global history; Islamic science portrays Africans as subjects, not originators; *INSTITUTIONALIZATION OF INVADING MODERNITY*; African history not recognized |
+

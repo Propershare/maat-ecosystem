@@ -1,0 +1,48 @@
+# Initial Users Template
+# Maat-Aligned User Entries
+
+# Example: Imhotep user
+dn: uid=imhotep,ou=users,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatUser
+objectClass: inetOrgPerson
+uid: imhotep
+cn: Imhotep
+sn: Imhotep
+mail: imhotep@tehuti.lab
+# userPassword: MUST be set during user creation - use scripts/generate-secure-password.sh
+maatRole: outer-ring
+maatAgentId: cursor_imhotep
+workstationId: imhotep
+maatPermissions: {"read": true, "write": true, "execute": true}
+
+# Example: MacDaddy user
+dn: uid=macdaddy,ou=users,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatUser
+objectClass: inetOrgPerson
+uid: macdaddy
+cn: MacDaddy
+sn: MacDaddy
+mail: macdaddy@tehuti.lab
+# userPassword: MUST be set during user creation - use scripts/generate-secure-password.sh
+maatRole: outer-ring
+maatAgentId: cursor_macdaddy
+workstationId: macdaddy
+maatPermissions: {"read": true, "write": true, "execute": true}
+
+# Example: StayDangerous user (current server)
+dn: uid=staydangerous,ou=users,dc=tehuti,dc=lab
+objectClass: top
+objectClass: maatUser
+objectClass: inetOrgPerson
+uid: staydangerous
+cn: StayDangerous
+sn: StayDangerous
+mail: staydangerous@tehuti.lab
+# userPassword: MUST be set during user creation - use scripts/generate-secure-password.sh
+maatRole: outer-ring
+maatAgentId: cursor_staydangerous
+workstationId: staydangerous
+maatPermissions: {"read": true, "write": true, "execute": true}
+

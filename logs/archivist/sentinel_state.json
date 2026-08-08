@@ -1,0 +1,63 @@
+{
+  "schema": "maat.sentinel_state.v1",
+  "generated_at": "2026-07-10T22:46:40Z",
+  "stream_path": "/home/suspect/.n8n/logs/archivist/records.jsonl",
+  "sessions": {
+    "telegram:smoke-test": {
+      "session_id": "telegram:smoke-test",
+      "last_correlation_id": "telegram:smoke-test:0000",
+      "last_turn_index": 0,
+      "last_seen_at": "2026-04-16T16:50:49Z",
+      "turns": 1,
+      "active_gateway": "scout",
+      "active_expert": "scout",
+      "scorecard_fail_streak": 1,
+      "scorecard_pass_streak": 0,
+      "rbl_flag_streak": 0,
+      "stall_ticks": 0,
+      "alerts": []
+    },
+    "telegram:verify": {
+      "session_id": "telegram:verify",
+      "last_correlation_id": "telegram:verify:0000",
+      "last_turn_index": 0,
+      "last_seen_at": "2026-04-16T16:53:05Z",
+      "turns": 1,
+      "active_gateway": "scout",
+      "active_expert": "scout",
+      "scorecard_fail_streak": 1,
+      "scorecard_pass_streak": 0,
+      "rbl_flag_streak": 0,
+      "stall_ticks": 0,
+      "alerts": []
+    },
+    "smoke:rag-1": {
+      "session_id": "smoke:rag-1",
+      "last_correlation_id": "smoke:rag-1:0000",
+      "last_turn_index": 0,
+      "last_seen_at": "2026-04-16T17:39:13Z",
+      "turns": 1,
+      "active_gateway": "fl-trust-law",
+      "active_expert": "rag-expert",
+      "scorecard_fail_streak": 1,
+      "scorecard_pass_streak": 0,
+      "rbl_flag_streak": 0,
+      "stall_ticks": 0,
+      "alerts": []
+    },
+    "verify:local": {
+      "session_id": "verify:local",
+      "last_correlation_id": "verify:local:0000",
+      "last_turn_index": 0,
+      "last_seen_at": "2026-04-16T22:53:49Z",
+      "turns": 1,
+      "active_gateway": "fl-trust-law",
+      "active_expert": "rag-expert",
+      "scorecard_fail_streak": 1,
+      "scorecard_pass_streak": 0,
+      "rbl_flag_streak": 0,
+      "stall_ticks": 0,
+      "alerts": []
+    }
+  }
+}

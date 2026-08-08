@@ -1,0 +1,30 @@
+{
+  "model_label": "fable5_desktop",
+  "provider": "Claude Desktop",
+  "model_id": "claude-fable-5",
+  "model_version_or_date": "Claude Fable 5 (Claude 5 family, Mythos-class tier; shares underlying model with Claude Mythos 5); captured July 2026",
+  "capture_window_start": "2026-07-03T22:08:48Z",
+  "capture_window_end": "2026-07-07T13:56:26Z",
+  "machine_id": "imhotep",
+  "runtime": "Claude Desktop with workspace filesystem access",
+  "adapter_type": "desktop_assisted_file_capture",
+  "quantization": null,
+  "base_model": null,
+  "lora_adapter": null,
+  "system_prompt": "Claude Desktop Cowork mode system prompt (Anthropic agent harness with file tools, sandboxed shell, and skills); not user-customized. Case prompts were delivered as user messages on top of this system prompt, not in a bare-API context.",
+  "temperature": null,
+  "do_sample": null,
+  "max_tokens": null,
+  "stop_strings": [],
+  "raw_output_available": true,
+  "screenshot": "fable5_model_card_screenshot.png",
+  "screenshot_supplemental": "fable5_model_card_screenshot_chat.png",
+  "known_provider_transformations": [
+    "Claude Desktop wrapper/system behavior may be present",
+    "Desktop-assisted capture is not an API-pure adapter",
+    "Sampling parameters (temperature/max_tokens) are not user-controllable or observable in Claude Desktop; recorded as null, not as known values",
+    "Model answered prompts in-session and wrote its own responses to the raw output files (self-capture); no separate API call per case"
+  ],
+  "known_safety_refusal_behavior": "Standard Anthropic safety training (Fable 5 includes additional safety measures for dual-use capabilities vs Mythos 5). Across all captured batches (16 smoke default, 16 smoke prompted, 77 tier B) no out-of-band refusals occurred; all cases returned status=ok with governance decisions (allow/review/deny) expressed in-band as JSON. Would refuse harmful-content requests outside this benign governance-eval scope.",
+  "notes": "Self-capture: Fable 5 running in Claude Desktop Cowork mode read each case prompt and appended its raw JSON answer directly to the target JSONL files. captured_at timestamps exist for prompted and tier B batches; the initial smoke batch (fable5_raw_outputs.smoke.jsonl) predates the captured_at field and its window start is taken from file mtime. Provenance screenshots captured 2026-07-07 on imhotep: Cowork smoke-run view (primary) and Chat model-selector view (supplemental). Offline scoring completed 2026-07-07 on data_drive via score_fable5_desktop_capture.py against MaatBench at /mnt/ai_models/maatbench; all three arms scored (smoke default, smoke prompted, tier B). Capture occurred on imhotep Desktop sandbox; scoring ran on data_drive host where MaatBench is installed."
+}

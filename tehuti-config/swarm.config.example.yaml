@@ -1,0 +1,51 @@
+# Tehuti Lab — machine-readable swarm / role config (EXAMPLE)
+# Copy to swarm.config.yaml on each host; do not commit secrets.
+# Prefer URLs from Ka Discovery (8010 manifest) over static placeholders below.
+
+roles:
+  scout:
+    model: gemma4:e2b
+    behavior: fast_triage
+    must_log_events: true
+    query_memory_first: false
+
+  analyst:
+    model: gemma4:e4b
+    behavior: deep_reasoning
+    must_log_events: true
+    query_memory_first: true
+
+  archivist:
+    model: gemma4:e2b
+    behavior: structured_memory
+    output_format: json
+    must_log_events: true
+    query_memory_first: true
+
+discovery:
+  manifest_url: http://tehuti.local:8010/manifest
+
+# Optional hints if manifest is temporarily unreachable; Discovery wins when healthy.
+services:
+  tehuti_core: http://tehuti.local:8014
+  maat_memory: http://tehuti.local:8022
+
+identity:
+  require_agent_id: true
+  require_device_id: true
+
+events:
+  backend: gitmaat
+  canonical_types:
+    - task.started
+    - task.delegated
+    - task.completed
+    - memory.read
+    - memory.written
+    - analysis.escalated
+
+# Live session registry (Swarm Session Index). Prefer URL from Discovery manifest when listed.
+session_index:
+  enabled: true
+  endpoint: http://tehuti.local:8030
+  heartbeat_interval_sec: 30

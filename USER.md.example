@@ -1,0 +1,13 @@
+# USER.md - About Your Human
+
+Copy to **`USER.md`** at the lab root and fill in. **`USER.md` is gitignored** for public remotes (see [`docs/PUSH-SAFETY.md`](docs/PUSH-SAFETY.md)).
+
+- **Name:** *(your name)*
+- **What to call them:** *(optional)*
+- **Pronouns:** *(optional)*
+- **Timezone:** *(optional)*
+- **Notes:** *(optional context — keep it minimal; long-term memory may live in `MEMORY.md` / gitMaat.)*
+
+## Context
+
+Align with [`AGENTS.md`](AGENTS.md) and lab goals. Respect the difference between learning about the person and building a dossier.

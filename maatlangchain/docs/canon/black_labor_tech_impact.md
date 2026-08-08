@@ -1,0 +1,17 @@
+| Historical / Economic Context | Social & Political Features | Black Population Impact | Automation / Technological Impact |
+|------------------------------|------------------------------|--------------------------|----------------------------------|
+| Colonial and early republic foundations; emergence of mercantile and agrarian systems. | Formation of U.S. institutions; nascent federal governance; capitalism in embryonic form. | Enslavement and forced labor of African populations; Black labor foundational to economy. | Minimal mechanization; human labor primary productive force. |
+| 19th century: expansion of commerce, trade, and industrialization. | Growth of political institutions; codification of property and legal systems; rise of industrial-capitalist social relations. | Black labor exploited in plantations and early industrial sectors; severe social exclusion. | Early mechanization in agriculture and industry; slow rise of labor-saving technology. |
+| Early–mid 20th century: rise of global capitalism. | Consolidation of industrial, legal, and political systems; strong racial and class hierarchies. | Segregation laws, Jim Crow, and systemic discrimination; limited mobility. | Manufacturing and service sectors increasingly mechanized; first automation waves. |
+| Late 20th–early 21st century: globalization, automation, wealth concentration. | Political polarization; social inequality entrenched; capitalist system increasingly unbalanced. | Black workers disproportionately affected by layoffs, wage stagnation, and occupational segregation. | Automation, AI, robotics reduce demand for human labor in manufacturing, agriculture, and services. |
+
+| Sector | Projected OCC Trend (2025–2032) | Automation / Technology Drivers | Black Worker Share & Vulnerable Roles | Projected Impact on Black Workers |
+|--------|-------------------------------|--------------------------------|--------------------------------------|----------------------------------|
+| Manufacturing | Rapid increase: 30–40% rise in capital intensity | Robotics, AI-driven production, IIoT, automated logistics | ~30% in production/material-handling | High displacement; wage stagnation; job precarity |
+| Agriculture | Moderate increase: 20–25% rise in OCC | Automated harvesters, drones, AI crop management | Historically large share in manual labor | Risk of job loss; exclusion from high-tech farming |
+| Construction | Gradual increase: 15–20% | AI project management, robotic machinery, modular prefabrication | ~20% in labor/unskilled roles | Moderate displacement; limited reskilling pathways |
+| Retail | Sharp increase: 25–35% | AI customer service, RPA, self-checkout, admin automation | ~24% in administrative, retail, service roles | Job loss in service sectors; increasing precarity |
+| Transport & Warehousing | Moderate increase: 15–20% | Autonomous trucks, AI logistics, predictive maintenance | Greater Black worker presence in driving/logistics | Displacement risk in frontline delivery/logistics roles |
+| Healthcare | Rapid increase: 25–35% | AI patient interfaces, AI inventory management, telehealth | High in front-line care and service roles | Risk of automation in routine care and clerical roles |
+| General Services | OCC reaches structural saturation; limited automatable roles | Fully integrated AI, robotics, advanced manufacturing, autonomous agents | Black and working-class majority | Class compression; rising unemployment risk |
+

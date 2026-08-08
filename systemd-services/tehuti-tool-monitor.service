@@ -1,0 +1,23 @@
+[Unit]
+Description=Tehuti Lab Tool Health Monitor
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n
+Environment="PATH=/usr/local/bin:/usr/bin:/bin:/home/suspect/.local/bin"
+ExecStart=/home/suspect/.n8n/scripts/monitor-tools.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+

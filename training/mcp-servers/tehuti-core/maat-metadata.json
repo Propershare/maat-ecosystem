@@ -1,0 +1,94 @@
+{
+  "server_id": "tehuti-core",
+  "server_name": "Tehuti Core",
+  "version": "1.25.0",
+  "description": "Tehuti Core MCP Server",
+  "total_tools": 6,
+  "maat_principles": {
+    "truth": "Core system operations - terminal, code execution, file operations, gitMaat queries",
+    "balance": "Use for system-level operations. Balance security (sandboxed execution) with functionality",
+    "order": "Foundation layer - used by other tools. Execute commands, run Python, query gitMaat",
+    "justice": "Proper attribution to MaatCode powers. Respects workspace boundaries",
+    "self_reflection": "Logs all operations to gitMaat. Learn from execution patterns"
+  },
+  "use_cases": [
+    "Execute shell commands safely",
+    "Run Python code in isolated context",
+    "Query gitMaat for tasks, changes, learnings",
+    "List directories and read files",
+    "Get system information"
+  ],
+  "common_patterns": [
+    "Command execution \u2192 Result processing",
+    "Python code \u2192 Data transformation",
+    "gitMaat query \u2192 Task coordination"
+  ],
+  "tools": [
+    {
+      "operation_id": "tool_execute_command_post",
+      "path": "/execute_command",
+      "method": "POST",
+      "summary": "Execute Command",
+      "description": "Execute a shell command in the terminal (MaatCode power).\n    \n    Args:\n        command: The command to execute\n        working_directory: Directory to run command in (default: workspace root)\n        timeout: Command timeout in seconds (default: 30)\n        shell: Use shell execution (default: True)\n    \n    Returns:\n        Command output (stdout + stderr)",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_run_python_code_post",
+      "path": "/run_python_code",
+      "method": "POST",
+      "summary": "Run Python Code",
+      "description": "Execute Python code in a safe context (MaatCode power).\n    \n    Args:\n        code: Python code to execute\n        working_directory: Directory to run code in (default: workspace root)\n    \n    Returns:\n        Code execution output",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_get_system_info_post",
+      "path": "/get_system_info",
+      "method": "POST",
+      "summary": "Get System Info",
+      "description": "Get system information (OS, Python version, workspace info).\n    \n    Returns:\n        System information as formatted text",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_list_directory_post",
+      "path": "/list_directory",
+      "method": "POST",
+      "summary": "List Directory",
+      "description": "List directory contents.\n    \n    Args:\n        path: Directory path (default: workspace root)\n        show_hidden: Show hidden files (default: False)\n    \n    Returns:\n        Directory listing",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_read_file_post",
+      "path": "/read_file",
+      "method": "POST",
+      "summary": "Read File",
+      "description": "Read a file (with line limit for safety).\n    \n    Args:\n        file_path: Path to file\n        max_lines: Maximum lines to read (default: 1000)\n    \n    Returns:\n        File contents",
+      "parameters": [],
+      "request_body": true
+    },
+    {
+      "operation_id": "tool_query_gitmaat_post",
+      "path": "/query_gitmaat",
+      "method": "POST",
+      "summary": "Query Gitmaat",
+      "description": "Query gitMaat (Maat Memory) for tasks, changes, or learnings.\n    \n    Args:\n        query_type: Type of query (tasks, changes, learnings, decisions)\n        status: Filter by status (for tasks: pending, in_progress, completed)\n        limit: Maximum results (default: 10)\n    \n    Returns:\n        Query results as JSON",
+      "parameters": [],
+      "request_body": true
+    }
+  ],
+  "tool_selection_decision_tree": {
+    "domain": "Identify task domain",
+    "availability": "Check tool availability",
+    "selection": "Select appropriate tool",
+    "execution": "Execute with Maat principles"
+  },
+  "error_scenarios": [
+    "Connection errors - server not running",
+    "Parameter errors - type mismatches",
+    "Timeout errors - long-running operations",
+    "Permission errors - access denied"
+  ]
+}

@@ -1,0 +1,19 @@
+[Unit]
+Description=MCP Proxy for Tehuti Audio (Bark TTS) Server
+After=network.target
+
+[Service]
+Type=simple
+User=suspect
+WorkingDirectory=/home/suspect/.n8n/mcp-servers/tehuti-audio
+Environment="PATH=/home/suspect/.local/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True"
+ExecStart=/usr/bin/python3 /home/suspect/.n8n/mcp-servers/tehuti-audio/bark_tts_api.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

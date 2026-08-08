@@ -1,0 +1,479 @@
+=== EXTRACTED TEXT FROM: Project Paperclip.pdf ===
+Extraction Method: PyPDFLoader
+Total Pages: 18
+Timestamp: 2026-01-04T17:10:39.557718
+================================================================================
+
+
+--- PAGE 1 ---
+1
+Project Paperclip
+“This is absolutely intolerable,” Josef Stalin complained to one of his rocket 
+experts, Lieutenant G. A. Tokaty.  “We defeated the Nazi armies; we occupied Berlin and 
+Peenemünde; but the Americans got the rocket engineers.” (Swenson, Grimwood, and 
+Alexander).
+Stalin had every right to be angry.  In its haste to gather all of the scientific 
+advancements and secrets developed by Nazi Germany, the United States cut corners and 
+formed secret organizations, often partaking in some rather dubious acts.  One of these 
+plans was entitled Project Paperclip, a plot by the American government to bring many of 
+the leading and renowned scientists and engineers from Nazi Germany to America.  This 
+project has been shrouded in secrecy for many years; it has only recently come to light. 
+Therefore, the history of this project is not widely known to the American public.  It is 
+important that we look at this history and the effects that Project Paperclip has made on 
+our future.  By examining how this project came to be, it can seen why the American 
+government thought that stealing German scientists and information was important to the 
+war effort and see a few of the technological advances that came about because of their 
+decisions.
+The United States began to make plans to steal Nazi Germany’s technological 
+secrets even before the war had ended.  In fact, this drastic push to gain theses secrets 
+was a reaction to America’s intense involvement in the Pacific Theatre.  Seeing that 
+European Theatre was quickly drawing to a close, the United States also wanted to 
+conclude the war with Japan, assuming taking Germany’s secrets would assist them in 
+this goal.  They also hoped to take away the might of Germany.  By stealing many of the
+
+
+--- PAGE 2 ---
+2
+Nazi’s scientists and other intellectuals, Germany would not be able to rearm itself and a 
+possible World War III could be prevented (Hunt, “Secret” 9).
+Realizing that living on a different continent than Germany might pose a slight 
+problem, the Americans decided to join forces with the British, sharing secrets, 
+manpower, and money (Beyerchen).  John Gimbel, a noted researcher on Project 
+Paperclip says: 
+In their campaign to defeat Germany, the British and 
+Americans created a number of special intelligence 
+organizations and units whose function was to identify, 
+secure, guard, and exploit “valuable and special 
+information, including documents, equipment and persons.” 
+(Gimbel).
+One of these organizations was FIAT, or the Field Information Agency, Technical, 
+created by American Major General Kenneth W. D. Strong (Beyerchen).  Strong saw the 
+need to organize and create different types of information-acquisition teams.  Therefore, 
+he created two different teams, the T-Forces and the CIOS (Gimbel).  The T-Forces were 
+special military units whose objectives were to secure and guard intelligence and 
+counterintelligence targets for exploitation by other teams (Gimbel).  The CIOS, or the 
+Combined Intelligence Objectives Subcommittee, was in charge of finding the 
+aforementioned targets and arranging for them to be exploited by FIAT (Gimbel).  
+In order to find excellent targets who might know important information, CIOS 
+consisted of engineers, physicists, mathematicians, and chemists “borrowed” from 
+various positions in Washington, universities, and industrial organizations (Gimbel). 
+They had three objectives: first, to find out what the Germans knew about weapons, fuel, 
+rockets, engines, communications, etc. that might help the Allies, second, to gather 
+information which might shorten the war with Japan, and third, to locate, detain, and
+
+
+--- PAGE 3 ---
+3
+possibly intern German personnel to obtain information and to stop it from going 
+somewhere dangerous, such as Egypt, Spain, or many Latin American countries 
+(Gimbel).  Scientists, technicians, and engineers who were of particular interest were put 
+onto a list, named “The Black List” (Gimbel).
+One of the most important teams sent in to do this task was code-named “Alsos.” 
+Led by American Lieutenant Colonel Boris Pash, and assisted by chief scientist Samuel 
+Goudsmit, the Alsos team went into Nazi territory to find out about Hitler’s atomic bomb 
+project.  It was believed at the time that Hitler was very close to creating the world’s first 
+atomic bomb.  The Americans wanted this information not only to stop Hitler from using 
+the bomb, but also to create the technology for themselves.  However, upon finding the 
+men with the proper expertise in the subject, the Americans found that the Germans were 
+in fact about two years behind the American atomic bomb project.  What they did 
+discover, though, was the German expertise in biological and chemical warfare.  A few of 
+the men found by the Alsos team were the first scientists and researchers drafted into 
+what would eventually become Project Paperclip (Hunt, “Secret” 11).
+Due to increased interest, civilian teams also joined forces with the military to 
+create the Joint Intelligence Objectives Committee (JIOC) (Walker, Lester).  The main 
+function of the JIOC was to collect physical information before it was destroyed.  They 
+had their work cut out for them.  Many German scientists were unwilling to merely give 
+their secrets away, either due to orders from and love of the Reich, or because of their 
+dislike of the actions of the Allied troops.  These scientists destroyed damning equipment 
+and data, or hid it in various secret locations, such as caves, hidden safes, or mineshafts. 
+Often, the information was covered by containers full of liquid oxygen that would
+
+
+--- PAGE 4 ---
+4
+immediately destroy the evidence if handled poorly (Walker).  Many secret caches were 
+accidentally destroyed by the Allied forces attempting to recover information and some 
+may still remain hidden even today.
+After Germany surrendered and the country began to be carved up between 
+Russia, America, France, and Britain, the United States began to show a concentrated 
+focus on obtaining important German scientists instead of their information and research, 
+as did Stalin and Russia.  In June 1945, the precursor to Project Paperclip, named Project 
+Overcast, was instituted by the Americans (Beyerchen).  Project Overcast basically stated 
+that the CIOS should use “The Black List” to take all possible prospects and to transport 
+them out of the other three sectors, especially the Russian sector, and to settle them into 
+the American sector for possible relocation to America in the future.  They were 
+particularly interested in getting these scientists away from the Russians due to 
+threatening comments made by Stalin.  Stalin had said that he wanted to create a “trans-
+Atlantic rocket” and to use them as “an effective straight jacket for that noisy shopkeeper 
+Harry Truman” (Swenson, Grimwood, and Alexander).  
+Another early phase of the project was code-named “Safehaven.”  This was set up 
+to insure that interesting scientists did not flee to other countries, particularly Latin 
+America, where they could not be exploited by Americans (Hunt, “Secret” 9).  America 
+even made deals with certain Latin American nations and pressured others to deport these 
+Germans back to Germany where the Americans would have access to them (Hunt, 
+“Secret” 145).
+At first, America was not very successful.  Many scientists instead went to work 
+for Britain or Russia, who offered them a better salary, work, and living conditions
+
+
+--- PAGE 5 ---
+5
+(Swenson, Grimwood, and Alexander).  However, America managed to convince many to 
+move to the American sector of Germany with the promise of good salaries and 
+protection for them and their families (Gimbel).  They were told they could take whatever 
+fit into two suitcases and a backpack and to make sure that they brought their science 
+materials (Gimbel).  Some of these scientists were relocated to an internment camp near 
+Frankfurt, called “Dustbin” (Beyerchen).  By doing this, America alienated their British 
+ally.  Instead of sharing information and people as they had previously done, they began 
+to steal important people from the British sector (Beyerchen).  
+Life for these scientists was not all as they have been expecting.  Many of these 
+people never received the compensation they had been promised by the Americans. 
+Instead of the large homes they had left behind, the researchers and the people they 
+brought with them were forced to live in small apartments or in abandoned schools that 
+had been taken over by the Americans.  Here, they were interrogated and forgotten about 
+(Gimbel).  Few of these scientists, technicians, and engineers were recruited into Project 
+Paperclip and taken to America, as had been promised to them earlier.  Many of these 
+people simply had to go back to what remained of their homes once the Americans 
+decided that they were no longer of worth.
+The original idea behind Project Paperclip never actually included relocation of 
+scientists to the United States.  Instead, American personnel were charged with earning 
+the trust of important German scientists, and failing that, to steal their information.  The 
+War Department was afraid that Hitler was close to being able to create an atomic bomb, 
+which they knew he would not hesitate to use against the Allied forces (Hunt, “Secret” 9). 
+The politicians in Washington were regretting their decision to allow Germany to rearm
+
+
+--- PAGE 6 ---
+6
+themselves at all and were hoping that by stealing German research, they could take away 
+Hitler’s military power and end the war, thus correcting their mistake (Hunt, “Secret” 9).
+However, when this plan was lain out to then president Franklin Roosevelt, the 
+project looked to be in serious trouble.  OSS chief William Donovan suggested to 
+Roosevelt that some of the double agents they had hired, including many SS officers and 
+German intelligence agents be offered special privileges once the war was over.  One of 
+these privileges was, in Donovan’s words, “permission for entry into the United States 
+after the war, the placing of their earnings on deposit in an American bank and the like.” 
+(Hunt, “Secret” 9-10).  Donovan needed presidential approval for the plan.  Roosevelt 
+was not a fan of the idea.  He quickly sent Donovan an angry answer, clearly stating his 
+opinions on the project:
+I do not believe that we should offer any guarantees of 
+protection in the post-hostilities period to Germans who are 
+working for your organization.  I think that the carrying out 
+of any such guarantees would be difficult and probably be 
+widely misunderstood both in this country and abroad.  We 
+may expect that the number of Germans who are anxious to 
+save their skins and property will rapidly increase.  Among 
+them may be some who should properly be tried for war 
+crimes or at least arrested for active participation in Nazi 
+activities.  Even with the necessary controls you mention I 
+am not prepared to authorize the giving of guarantees 
+(Hunt, “Secret” 10).
+Roosevelt’s reply did not stop the Americans in Germany from making 
+unsanctioned deals and promises to the personnel they wished to recruit.  As early as 
+1944, some important scientists were anticipating eventual relocation to the United States 
+(Hunt, “Secret” 11).  Roosevelt’s death, Harry Truman’s acquisition to the presidency, 
+and the increasing acknowledgment of German scientists that the war was lost breathed 
+new life and interest in Project Paperclip.
+
+
+--- PAGE 7 ---
+7
+After months of deliberation by the Joint Chiefs of Staff (Gimbel), Project 
+Paperclip was authorized by President Harry Truman in August of 1945 (Walker, 
+Andrew).  This operation was a refinement of the previous Project Overcast, but this time 
+relocated those members of the research teams who were of particular interest to the 
+United States to America for short term consulting jobs.  However, Truman said that 
+anyone found “to have been a member of the Nazi Party and more than a nominal 
+participant in its activities, or an active supporter of Nazism militarism” (Walker, 
+Andrew) should be excluded.  Personal files on all of the scientists were collected; 
+intelligence officers working hard to determine each person’s involvement in the Nazi 
+party.  If these scientists passed the test, they could be admitted to the United States and 
+even possibly offered citizenship.  It is believed that the name “Paperclip” was created 
+due to the fact that the files of the scientists who were to be drafted into Project Paperclip 
+were paper-clipped to immigration forms.
+However, many Americans opposed this idea.  Still reeling from the war, America 
+was full of anti-Nazi sentiment and rumors that the government was going to offer well 
+paying jobs and citizenship to these ex-Nazis did not sit well with them.  Many important 
+military and technological leaders argued that, “‘Great Britain, France, and the USSR will 
+proceed unilaterally’ to exploit Germans for civil purposes whether or not the US did so” 
+(Gimbel).  There was particular unrest within Washington.  A Pentagon general 
+recognized the need for selling Project Paperclip to the American public, saying, “We’ve 
+got to discourage people from thinking that this is a grand opportunity to sign some of the 
+Germans permanently and take them into the Army Air Forces and make them American
+
+
+--- PAGE 8 ---
+8
+citizens” (Lasby, 72-3).  Major General Hugh Knerr, the commander of the U.S. Air 
+Force in Europe also argued for Project Paperclip, saying:
+Occupation of German scientific and industrial 
+establishments has revealed the fact that we have been 
+alarmingly backward in many fields of research.  If we do 
+not take the opportunity to seize the apparatus and the 
+brains that developed it and put the combination back to 
+work promptly, we will remain several years behind while 
+we attempt to cover a field already exploited. (Walker, 
+Andrew).
+The Joint Chiefs of Staff deliberated some more, deciding to bring a total of three 
+hundred and fifty German rocket scientists and engineers over to America (Gimbel). 
+However, as members of the CIOS began to trickle back to Washington after their time in 
+Germany, they brought back with them even more names, concerned that many of the 
+forgotten scientists, engineers, and technicians would be picked up by the British, French, 
+and especially, the Russians (Gimbel).  The Joint Chiefs of Staff convened together once 
+again, this time meeting with the State War-Navy Coordinating Committee (SWNCC) to 
+approve more names for Project Paperclip (Gimbel).  On the eighteenth of November, 
+1945, a few of the first selected group arrived in the United States. (Walker, Andrew). 
+The small group of seven men landed in Boston, headed by their leader, Wernher von 
+Braun, all having signed a six-month contract with the Army (Lasby, 88).  Meanwhile, on 
+the nineteenth of February, 1946, the Joint Chiefs of Staff and SWNCC agreed to bring 
+about one thousand more German and Austrian scientists and technicians over to 
+America, giving them the chance to gain U.S. citizenship upon completion of a good job 
+(Gimbel).
+Because this relocation was supposedly top secret, it is not really known exactly 
+how many people officially came over due to Project Paperclip, even though most of the
+
+
+--- PAGE 9 ---
+9
+records have been declassified due to the Nazi War Crimes Disclosure Act (“Records”). 
+Some speculate it was only five hundred, others say sixteen hundred, while others said it 
+was over three thousand.  The actual number is difficult to determine.  When the United 
+States decided to bring over three hundred and fifty scientists, they were not taking into 
+account the number of dependants who also came over.  The most important of the 
+scientists were allowed to bring over their families, and sometimes even their secretaries 
+and their secretaries’ families (Gimbel).  
+However, it is relatively simple to track the most famous of these scientists, 
+engineers, and technicians and see what they have accomplished.   The most well-known 
+of these names include Wernher von Braun, Arthur Rudolph, and Walter Paul Emil 
+Schreiber, although many others were also quite famous.  The importance of these 
+individuals to American technology can be seen by examining what they accomplished in 
+their lifetimes.
+Wernher von Braun was a leading rocket scientist by the time the war ended.  V on 
+Braun had created the Aggregate 4 (A-4) missile in 1942.  This missile was admired by 
+Hitler himself, who renamed the missile the V-2 (“Reach for the Stars”), or the 
+Vergeltungswaffe zwei (Swenson, Grimwood, and Alexander).  Hitler was so impressed 
+with the weapon that he set up an impossible production schedule for them, trying to have 
+as many made as possible before the end of the war.  Hitler was planning on using the 
+missile to decimate Britain’s major cities (“Reach for the Stars”).  V on Braun and the 
+company he worked for, Peenemünde, fell hopelessly behind due to the unreasonably 
+high demand.  As the technical director of Peenemünde, von Braun was afraid that he 
+would be held personally responsible for the failure to produce enough missiles (“Reach
+
+
+--- PAGE 10 ---
+10
+for the Stars”).  Fortunately for von Braun, the war was beginning to end and many 
+Germans were becoming aware of the fact that they were soon going to be defeated. 
+After being given orders from Heinrich Himmler to desert the Peenemünde facility, von 
+Braun met with his team and together they decided to surrender themselves to either the 
+Americans or the British.  They had heard various tales from refugees about the brutality 
+of the Russians and decided that they would fare better with the other two countries 
+(Lasby, 34).  The team hid various plans and weapon samples in a cave and headed 
+toward an Allied encampment.  Somewhere along the way, the team decided to surrender 
+themselves only to the Americans instead of to the British.  V on Braun later described 
+what made them come to that decision: “We despised the French, we were mortally afraid 
+of the Soviets, we did not believe the British could afford us, so that left the Americans” 
+(Lasby, 125).  
+When the Americans found that the nearly complete Peenemünde team was 
+willing to defect to their side, they immediately started to milk all of the possible 
+information that they could out of them.  The Americans entered the Peenemünde facility 
+shortly before the Russians did, quickly shipping much of the information and about one 
+hundred complete V-2 rockets back to America (“Aftermath”).  V on Braun and a few 
+select members of his team were the first German scientists to be inducted into Project 
+Paperclip.  The Americans wanted to split up his Peenemünde team, but von Braun 
+fought hard to keep them together, saying that they would be more productive in the end 
+because they were used to working as a collective (Lasby, 124).  
+As with many of the German scientists involved in Project Paperclip, there were 
+some who opposed bringing von Braun to America.  He had been a member of numerous
+
+
+--- PAGE 11 ---
+11
+Nazi organizations and was even a ranking member of the SS.  V on Braun had also 
+designed the missiles which had destroyed Britain, leading to a lot of prejudice against 
+him.  His personal intelligence file said that he was a “security risk” (Walker, Andrew). 
+However, his file was “cleaned” and rewritten, with less emphasis on his Nazi activities 
+and more emphasis on what he could do for America.  With this new file, he was 
+welcomed to America with open arms.
+V on Braun’s team, now called the “von Braun Rocket Team,” consisted of Drs. 
+William Mrazek, Walter Haeussermann, Ernst Stuhlinger, Eberhard Rees, Hans E. 
+Hollmann, Herbert Wagner, and Robert Lusser.  Together these men made a lasting 
+impression on American technology, working closely with the Air Force and with NASA 
+(“German Rocket Scientists”).  They were influential in creating such things as the first 
+U.S. orbiting satellite, the Juno; the Pioneer 4, the first U.S. lunar probe; the Apollo 8, 
+which put the first U.S. astronaut into space; the Apollo 11, which put the first man on the 
+moon; the Lunar Roving Vehicle, the first vehicle to travel on the moon; and the Skylab, 
+the first U.S. space station (“German Rocket Scientists”).  Together with his fellow 
+scientist and friend, Dr. Krafft Ehricke, von Braun wrote a book entitled The Mars 
+Project in which they described how man could travel to Mars.  They argued that it could 
+be done by a type of ferry system, which later led to the creation of the modern space 
+station (“German Rocket Scientists”).
+ 
+Dr. Arthur Rudolph was another famous scientist and a member of the von Braun 
+Rocket Team (“German Rocket Scientists”).  He had been another V-2 project engineer 
+(“Records”), but had worked as the chief director of Nordhausen, where the V-2s were
+
+
+--- PAGE 12 ---
+12
+produced (Walker, Andrew).  He became the NASA project director for Saturn V , the 
+moon rocket used to send the Apollo projects to the moon (Hunt, “Arthur”).  
+However, Rudolph is probably more well known for the scandal that erupted 
+years later, when his activities at Nordhausen and the neighboring prison camp Dora were 
+finally discovered.  It was revealed by the Department of Justice (“Records”) that some 
+twenty thousand workers from Dora had died while working at Nordhausen (Walker, 
+Andrew).  The prisoners had been starved, beaten, hung, and shot, essentially used as 
+cheap slave labor to build the missiles (Hunt, “Arthur”).  As described by Colonel James 
+L. Collins, the leader of the infantry unit that entered Dora, “They [the prisoners] had 
+been starved to death.  Their arms were just little sticks, their legs had practically no flesh 
+on them at all.” (Hunt, “Secret” 17-8).  By this time this connection was made, Rudolph 
+had become a U.S. citizen with a good life in America.  Rather than fight various legal 
+battles to clear his spotted past, he renounced his citizenship, going back to live in 
+Germany in 1984 (“Records).
+Another controversial scientist was Dr. Walter Paul Emil Schreiber (“Echoes from 
+Nürnberg”).  He was a Wehrmacht major general in charge of Sanitary Division of the 
+Military Medical Academy and a prominent member of the Reich Research Council 
+(Hunt, “Secret” 151-2).  The Russians, recognizing his worth, quickly snagged him 
+before the Americans could.  The Russians, in addition to gaining his knowledge, had 
+used him as a witness against Herman Göring (“Echoes from Nürnberg”), a move which 
+surprised the Americans.  When the Americans tried to take the supposedly under arrest 
+Schreiber at Nürnberg for interrogation and trial proceedings, the Russians quickly took 
+the scientist back to the Russian sector.  U. S. Prosecutor Alexander Handy was told that
+
+
+--- PAGE 13 ---
+13
+the Americans could not have Schreiber: “I was unofficially informed that he was 
+working on some ‘hot’ assignment for the Russians and that they required his services 
+without interruption.” (Hunt, “Secret” 152).  Schreiber stayed in the Russian sector of 
+Germany for another two years before finally escaping into the American sector of Berlin 
+(“Echoes from Nürnberg”)  The United States contracted him for six months to be a 
+consultant to the U.S. Air Force in the vaguely named “Global Preventive Medicine” 
+Division (“Echoes from Nürnberg”).  
+In 1952, a newspaper column appeared which ruined the public’s opinion already 
+low opinion of Schreiber (“Records”).  Even before this column, there had been many 
+rumors floating around that Schreiber’s past was not as clean as the government claimed. 
+Various investigators and media members complained that such a controversial figure 
+was should not even be allowed in the United States, let alone employed by its 
+government.  Victims of his torture came forward, testifying of the gruesome “tests” they 
+had been forced to endure (Hunt, “Secret” 153-4).
+Schreiber had worked closely with many high ranking officials who were 
+performing medical experiments on prisoners in concentration camps in Auschwitz 
+(“Records”).  They had been testing the effects of cold water on the body and if they were 
+able to freeze people and bring them back to life (“Records”).  This research was being 
+done by the Germans to see if they could rescue their pilots.  They hoped to stop losing 
+their pilots by being able to resuscitate those who were shot down or forced to bail in the 
+freezing Atlantic Ocean.  Other tests endured by victims, such as those at Ravensbrueck 
+concentration camp, dealt with chemical and bone experimentation.  Women had their 
+legs cut open and deliberately infected with gangrene so that a bone transplant had to be
+
+
+--- PAGE 14 ---
+14
+performed.  If these women survived the experiment and subsequent transplant, in 
+addition to having extreme mental scarring from the experience, they then became 
+crippled for life (Hunt, “Secret” 153).
+While the United States seemed not to tie Schreiber to the experiments 
+themselves, they seemed to be fully aware of the accusations.  Schreiber himself 
+definitely knew about them and never denied what was said about him.  The Air Force 
+immediately refused to renew his contract when the heat was put on them by the media 
+and the American people (“Echoes from Nürnberg”).  When asked what he was doing for 
+the Air Force, two official conflicting statements were released: that he was working on 
+unclassified matters, and also that it was confidential and could not be discussed 
+(“Echoes from Nürnberg”).  It was also stated that the Air Force had no idea of 
+Schreiber’s possible past.  When it looked that prosecution was inevitable for Schreiber 
+for abetting and possibly performing inhuman experiments on human subjects (“Echoes 
+from Nürnberg”), he quickly escaped to Argentina, never returning to the United States 
+(“Records”).  
+Besides these three men, von Braun, Rudolph, and Schreiber, numerous other 
+scientists, technicians, and engineers came over to America from 1945 to 1950 (“German 
+Rocket Scientists”).  The ten most famous atomic scientists of the time, including Nobel 
+Prize winners Otto Hahn, Werner Heisenberg, and Max von Laue came to America in 
+1945 (“German Rocket Scientists”).  Drs. Woldemar V oigt, Alexander Lippisch, Hans 
+Multhopp, and Richard V ogt all designed aircraft and bombers, working for such 
+companies as Boeing, Bell, and Martin (“German Rocket Scientists”).  Anton Flettner 
+produced mass production helicopters, with a special easy to fly twin intermeshing rotor
+
+
+--- PAGE 15 ---
+15
+system.  Dr. Adolph Busemann built supersonic wind tunnels (“German Rocket 
+Scientists”).  Kurt Debus and Herbert Wagner designed guided missiles (Hunt, “Secret” 
+6) and rocket launchers along with Willy Fielder.  In addition, Fielder also developed the 
+idea for submarine launched ballistic missiles, named Polaris and Poseidon, while 
+attending a conference with a friend from the Navy (“German Rocket Scientists”). 
+Gerhard Neumann developed gas turbine engines after being hired by GE, working his 
+way up to become a CEO.  His catchphrase was “full speed or bust” (“German Rocket 
+Scientists”).  Hubertus Strughold, the “father or space medicine,” designed NASA’s on-
+board life-support systems (“German Rocket Scientists”).  
+Other scientists worked on developing, improving, and discovering nerve gas, 
+hardened armor, guided missiles, stealth technology, etc.; the list goes on (Walker, 
+Andrew).  They elaborated on most of the American technology of the time, perfecting 
+such things as gyroscopic controls, parachutes for rocket recovery, and moveable 
+deflector vanes in the exhaust of rockets (Swenson, Grimwood, and Alexander).  Modern 
+day cruise missiles are still based on the V-1 created by Wernher von Braun (Walker, 
+Andrew).  Scramjets on NASA’s X-43 hypersonic aircraft are still based on a design 
+invented by early German jet pioneers (Walker, Andrew).  It is probable that due to these 
+scientists, Americans increased what they were capable of tenfold.
+Despite its rather shady beginnings, Project Paperclip was overall rather 
+successful for the Americans.  It brought to America many leading and important 
+scientists who helped to further advance the American technological scene.  By learning 
+about the early history of this secret operation and the circumstances surrounding it, we 
+can better realize the impacts that Project Paperclip had on the war effort.  Not only did
+
+
+--- PAGE 16 ---
+16
+the project bring important German scientists to America so as not to allow other 
+countries to have their intelligence, but they also helped further American technology, an 
+impact felt even today.
+
+
+--- PAGE 17 ---
+17
+Bibliography
+“Aftermath: Operation Paperclip.”  Making the Modern World: Science in war.  2004. 
+The Science Museum. 
+http://www.makingthemodernworld.com/stories/defiant_modernism/01.ST.03/?
+scene=10; Internet; accessed 29 March 2008.
+“Echoes from Nürnberg.”  Time.  10 March 1952.  CNN. 
+http://www.time.com/time/magazine/article/0,9171,822226,00.html; Internet; 
+accessed 5 April 2008.
+“German Rocket Scientists.”  Scientists & Friends.  2007.  Scientists and Friends. 
+http://www.scientistsandfriends.com/index.html; Internet; accessed 5 April 2008.
+“Reach for the Stars.”  Time.  17 February 1958.  CNN. 
+http://www.time.com/time/magazine/article/0,9171,862899-1,00.html; Internet; 
+accessed 29 March 2008.
+“Records of the Office of the Secretary of Defense (Record Group 330).”  Interagency 
+Working Group (IWG).  The National Archives. 
+http://www.archives.gov/iwg/declassified-records/rg-330-defense-secretary/; 
+Internet, accessed 26 March 2008.
+Beyerchen, Alan.  “German Scientists and Research Institutions in Allied Occupation 
+Policy.”  Autumn 1982.  History of Education Quarterly, V ol. 22, No. 3 Special 
+Issue: Educational Policy and Reform in Modern Germany. 
+http://www.jstor.org/stable/367770; Internet; accessed 29 March 2008.
+Gimbel, John.  “U.S. Policy and German Scientists: The Early Cold War.”  1986. 
+Political Science Quarterly.  http://www.jstor.org/stable/2151624; Internet; 
+accessed 29 March 2008.
+Hunt, Linda.  “Arthur Rudolph of Dora and Nasa.”  NASA and Nazis. 
+http://cndyorks.gn.apc.org/yspace/articles/nazis.htm; Internet; accessed 29 March 
+2008.
+Hunt, Linda.  Secret Agenda: The United States Government, Nazi Scientists, and Project 
+Paperclip, 1945 to 1990.  New York: St. Martin’s Press, 1991.
+Lasby, Clarence G.  Project Paperclip.  New York: Atheneum, 1971.
+Swenson, Loyd S. Jr. and James M. Grimwood and Charles C. Alexander.  “The Highway 
+to Space.”  This New Ocean: A History of Project Mercury.  1989.  National 
+Aeronautics and Space Administration (NASA). 
+http://www.hq.nasa.gov/office/pao/History/SP-4201/ch1-3.htm; Internet; accessed 
+5 April 2008.
+
+
+--- PAGE 18 ---
+18
+Walker, Andrew.  “Project Paperclip: Dark Side of the Moon.”  BBC News.  21 November 
+2005.  BBC.  http://news.bbc.co.uk/1/hi/magazine/4443934.stm; Internet; 
+accessed 29 March 2008.
+Walker, C. Lester.  “Secrets By the Thousands.”  Harpes Magazine.  October 1946. 
+http://www.scientistsandfriends.com/files/secrets.doc; Internet; accessed 5 April 
+2008.
+

@@ -1,0 +1,157 @@
+[
+  {
+    "file": "01_United_States_Societal_Anatomy.md",
+    "focus": "System mapping of US power, economy, science, logistics, and AI automation",
+    "use": "Contextualize modern nodes, socio-technical baselines, resource tiers, and contradictions for TRA research problems."
+  },
+  {
+    "file": "02_Fundamental_Research_Design_Errors.md",
+    "focus": "Diagnostic table of design, sampling, and data collection failures",
+    "use": "Design-approval checklist to prevent bias, mis-sampling, and instrumentation errors."
+  },
+  {
+    "file": "03_Statistical_Decision_Tree_and_Measures.md",
+    "focus": "Decision tree for statistical test selection and measure definitions",
+    "use": "Statistical engine selecting chi-square, t-tests, ANOVA, regression, etc., by measure level/variable count."
+  },
+  {
+    "file": "04_Research_Design_and_Statistical_Analysis_Process.md",
+    "focus": "Step-by-step workflow from problem through instrumentation and statistical testing",
+    "use": "Top-level process for TRA to move from problem → literature → design → analysis."
+  },
+  {
+    "file": "05_Science_and_Technology_Blacks_vs_Whites.md",
+    "focus": "Comparative access and application of science/technology by race",
+    "use": "Annotate structural inequalities and justify restorative technology/product framing."
+  },
+  {
+    "file": "06_Science_Engineering_Technology_Relationship.md",
+    "focus": "Venn conceptualization of science, engineering, and technology",
+    "use": "Reference when mapping R&D pipelines or building STEM-aligned products."
+  },
+  {
+    "file": "07_Modernized_African_KMT_Calendar.md",
+    "focus": "KMT calendar, Sirius cycles, and African timekeeping logic",
+    "use": "Align timelines, figures, and product deployment with African time logic."
+  },
+  {
+    "file": "08_Final_Adjusted_Last_Decade_Kmtian_Years.md",
+    "focus": "Recent Kmtian year conversions (2015–2025)",
+    "use": "Timestamp research deliverables within the KMT chronology."
+  },
+  {
+    "file": "09_KMT_Martial_Arts_Belt_System.md",
+    "focus": "Symbolic progression of martial mastery via KMT belts",
+    "use": "Frame team training, confidence-building, or product cultivation models."
+  },
+  {
+    "file": "10_MAAT_Codes_Men_Women_Moment_Mass_Movement.md",
+    "focus": "MAAT moral/martial codes and movement principles",
+    "use": "Ethical guardrails for outputs; base scoring on truth, order, justice, balance, self-reflection."
+  },
+  {
+    "file": "11_Research_Process_Ancient_KMT_Terms.md",
+    "focus": "Hieroglyphic taxonomy of research types",
+    "use": "Allow TRA to translate modern methodology into KMT conceptual categories."
+  },
+  {
+    "file": "12_Guiding_Principles_Life_Development_Human_Origins.md",
+    "focus": "Evolutionary principles and African fossil record pathways",
+    "use": "Ground big-picture narratives and create analogies for product life cycles."
+  },
+  {
+    "file": "13_At_Risk_Jobs_African_Americans_AI.md",
+    "focus": "Jobs most exposed to automation for African Americans",
+    "use": "Feed socio-economic risk models and product impact assessments."
+  },
+  {
+    "file": "14_Research_Process_Ancient_KMT_University.md",
+    "focus": "Extended process for planning, errors, tools, analysis",
+    "use": "Steps for instrumentation, coding, and data quality tracking in TRA."
+  },
+  {
+    "file": "15_Birth_Development_Decline_Decay_USA_Capitalism.md",
+    "focus": "US capitalist phases, transitions, crises",
+    "use": "Template for periodization and contradiction mapping (KAZ)."
+  },
+  {
+    "file": "16_Historical_Study_African_Enslavement_Capitalist_Development_TOC.md",
+    "focus": "Table of contents for transatlantic enslavement study",
+    "use": "Reference structure when surfacing prior work and building new literature chapters."
+  },
+  {
+    "file": "17_Science_Based_Career_Fields_by_Sector.md",
+    "focus": "Sector-by-sector STEM disciplines and careers",
+    "use": "Source for workforce development products, curriculum proposals, empowerment services."
+  },
+  {
+    "file": "18_Development_US_Capitalism_1492_2014.md",
+    "focus": "Capitalism timeline from 1492 to 2014+",
+    "use": "Ideological baseline for macro-economic modeling and product prognostication."
+  },
+  {
+    "file": "19_Ancient_KMT_Inventions_Innovations.md",
+    "focus": "Catalog of foundational KMT discoveries with hieroglyphs",
+    "use": "Knowledge graph of African inventions when justifying new technology."
+  },
+  {
+    "file": "20_Research_Process_Ancient_KMT_Expanded.md",
+    "focus": "Expanded table of planning, errors, tools, and analysis",
+    "use": "Deeper reference for converting modern research steps into KMT terminology."
+  },
+  {
+    "file": "21_KAZ_Methodology.md",
+    "focus": "Dialectical methodology tracking law→tendency→contradiction→synthesis",
+    "use": "Meta-process for detecting nodal points, contradictions, regressions (RBL)."
+  },
+  {
+    "file": "22_Diop_Framework_Explanation_Inherent_Harms.md",
+    "focus": "Diop critique vs. harms (colonial, internalized racism), analysis",
+    "use": "Keeps findings framed anti-colonially and avoids reproducing racist narratives."
+  },
+  {
+    "file": "23_KMT_Chronology_Eurocentric_vs_Scientific_African.md",
+    "focus": "Side-by-side chronology tables of Eurocentric vs. African narratives",
+    "use": "Annotate dates, align claims, and show scientific vs. Eurocentric framing."
+  },
+  {
+    "file": "24_Comparison_Jim_Crow_vs_Present_Day_White_Nazi_Regime.md",
+    "focus": "Structural comparison of historical vs. modern oppression",
+    "use": "Narrative basis for critiques, activism, and product messaging."
+  },
+  {
+    "file": "25_KMT_State_Planned_Economy_Modernity.md",
+    "focus": "State-planned economic mechanics through eras",
+    "use": "Reference for ethically governed product models and planned economy proposals."
+  },
+  {
+    "file": "26_Cultural_Governmental_Elements_KMT.md",
+    "focus": "Symbols/rituals showing dynastic political/religious continuity",
+    "use": "Anchor governance proposals in culturally-authentic ceremonial language."
+  },
+  {
+    "file": "27_Future_African_Modernization_Master_Plan.md",
+    "focus": "Master plan linking ancient institutes and Ma'at to modern science/tech",
+    "use": "Roadmap for modernization offerings grounded in African epistemology, sustainability, ethical tech labs."
+  },
+  {
+    "file": "28_Historical_Overview_Global_Oppression_Against_Africans.md",
+    "focus": "Chronology of invasions, colonization, systemic erasure",
+    "use": "Narrative framing of present-day inequality and justification for restorative products/policies."
+  },
+  {
+    "file": "29_Revised_Historical_Analysis_Ancient_KMT.md",
+    "focus": "Four-dimensional reanalysis (geography, unity, class struggle, state formation)",
+    "use": "Counter Eurocentric timelines and supply alternative models for resilient African-rooted institutions."
+  },
+  {
+    "file": "stolen_legacy_kmt_medicine_math_appropriation.md",
+    "focus": "Kmt medicine/surgery and applied mathematics precede Greece and Arabia; successive empires systematically appropriated and rebranded Kmt science; APA apparatus for medicine, math, architecture, geometry, astronomy, physics.",
+    "use": "Correct cradle narratives; Flagship A scholarship for ../training/TEHUTI_GOVERNED_AGENT_GTM_KERNELS.md. Quote James from /home/suspect/.n8n/data/tehuti/ukmt-rbg-dataset/rbg_library/stolen_legacy.txt."
+  },
+  {
+    "file": "../training/TEHUTI_GOVERNED_AGENT_GTM_KERNELS.md",
+    "focus": "Outer Ring GTM kernels: Greg Isenberg + Isabella Bedoya method filtered through Maat; Kmt STEM Attribution (primary); Truck Dispatch Co-Pilot (secondary); Guard/Hermes/MaatBench/Ops wrapper; value ladder; 30-day sequence.",
+    "use": "Open before Outer Ring agent product work. Keep Tehuti mission + governance. STEM claims resolve via stolen_legacy apparatus + .n8n Stolen Legacy originals."
+  }
+]

@@ -1,0 +1,6 @@
+# Legal_AI_FL server env — source before running agentic commands
+export LAB_ROOT="/home/suspect/.n8n"
+export LEGAL_AI_FL_ROOT="/home/suspect/.n8n/Legal_AI_FL"
+export PYTHONPATH="/home/suspect/.n8n/Legal_AI_FL"
+[[ -f "/home/suspect/.n8n/.env" ]] && set -a && source "/home/suspect/.n8n/.env" && set +a
+[[ -f "/home/suspect/.n8n/Legal_AI_FL/.venv/bin/activate" ]] && source "/home/suspect/.n8n/Legal_AI_FL/.venv/bin/activate"

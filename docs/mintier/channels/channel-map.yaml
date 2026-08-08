@@ -1,0 +1,58 @@
+channels:
+  - channel_id: mintier-whatsapp-dm
+    platform: whatsapp
+    role: conversion
+    primary_audience: warm leads and direct contacts
+    owner: mintier-ops
+    cadence: daily
+    cta_type: reply_dm
+
+  - channel_id: mintier-telegram-home
+    platform: telegram
+    role: broadcast_community
+    primary_audience: subscribers and community members
+    owner: mintier-ops
+    cadence: daily_1_to_2
+    cta_type: join_discussion
+
+  - channel_id: mintier-discord-community
+    platform: discord
+    role: community_support
+    primary_audience: builders and active users
+    owner: mintier-community
+    cadence: daily_plus_replies
+    cta_type: thread_reply
+
+  - channel_id: mintier-x-main
+    platform: x
+    role: awareness
+    primary_audience: broader public and prospects
+    owner: mintier-growth
+    cadence: twice_daily
+    cta_type: link_click_or_reply
+
+governance:
+  risk_classes:
+    low:
+      examples:
+        - educational tips
+        - non-claim updates
+      approval: auto
+    medium:
+      examples:
+        - comparative statements
+        - performance claims
+      approval: owner_review
+    high:
+      examples:
+        - legal-sensitive messaging
+        - financial-sensitive messaging
+      approval: tehuti_guard_required
+
+metrics:
+  core:
+    - reach
+    - engagement_rate
+    - response_latency
+    - cta_conversions
+  review_cycle: weekly

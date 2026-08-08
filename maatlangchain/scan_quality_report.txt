@@ -1,0 +1,754 @@
+SCAN QUALITY ANALYSIS REPORT
+================================================================================
+
+Total files: 552
+Good quality: 405
+Poor quality: 147
+
+POOR QUALITY FILES:
+--------------------------------------------------------------------------------
+
+
+HIGHLY_REPETITIVE (25 files):
+----------------------------------------
+
+File: radio_free_dixie_robert_f_williams_and_his_wife_mabel_broadcasting_from_cuba.txt
+Reason: Highly repetitive content (56.35% repetition)
+Size: 4017 chars
+Words: 539
+
+File: i_i_em_hotep_and_ancient_egyptian_medici.txt
+Reason: Highly repetitive content (66.77% repetition)
+Size: 4531 chars
+Words: 797
+
+File: huey_p._newton_the_radical_theorist.txt
+Reason: Highly repetitive content (63.27% repetition)
+Size: 124552 chars
+Words: 16303
+
+File: framing_of_mumia_abu_jamal.txt
+Reason: Highly repetitive content (63.28% repetition)
+Size: 123935 chars
+Words: 15618
+
+File: kwame_toure~black_power.txt
+Reason: Highly repetitive content (92.20% repetition)
+Size: 10065 chars
+Words: 1574
+
+File: analytixz___griff,_professor.txt
+Reason: Highly repetitive content (75.31% repetition)
+Size: 508457 chars
+Words: 83000
+
+File: messenger___the_rise_and_fall_of_elijah_muhammad.txt
+Reason: Highly repetitive content (63.52% repetition)
+Size: 379916 chars
+Words: 49727
+
+File: public_enemy's_it_takes_a_nation_of_millions_to_hold_us_back_pdf.txt
+Reason: Highly repetitive content (68.37% repetition)
+Size: 100205 chars
+Words: 13551
+
+File: we_are_our_own_liberators___selected_prison_writings_(2nd_edition).txt
+Reason: Highly repetitive content (63.38% repetition)
+Size: 197935 chars
+Words: 27003
+
+File: children_of_the_movement.txt
+Reason: Highly repetitive content (68.75% repetition)
+Size: 204241 chars
+Words: 28514
+
+File: skin_deep_spirit_strong_the_black_female_body_in_american_culture.txt
+Reason: Highly repetitive content (53.45% repetition)
+Size: 100453 chars
+Words: 13078
+
+File: sisters_in_the_struggle___african_american_women_in_the_civil_rights_&_black_power_movements.txt
+Reason: Highly repetitive content (68.96% repetition)
+Size: 244291 chars
+Words: 34243
+
+File: marxism,_reparations_and_the_black_freedom_struggle.txt
+Reason: Highly repetitive content (63.23% repetition)
+Size: 119839 chars
+Words: 15635
+
+File: reggae,_rastafari,_and_the_rhetoric_of_social_control__.txt
+Reason: Highly repetitive content (63.23% repetition)
+Size: 116723 chars
+Words: 14952
+
+File: the_undiscovered_paul_robeson.txt
+Reason: Highly repetitive content (63.42% repetition)
+Size: 220352 chars
+Words: 29021
+
+File: regime_change_of_kwame_nkrumah___epic_heroism_in_africa_and_the_diaspora_complete.txt
+Reason: Highly repetitive content (63.17% repetition)
+Size: 159635 chars
+Words: 21121
+
+File: franz_fanon~a_dying_colonialism.txt
+Reason: Highly repetitive content (51.07% repetition)
+Size: 752499 chars
+Words: 131520
+
+File: royal_parchment_scroll_of_black_supremacy.txt
+Reason: Highly repetitive content (65.17% repetition)
+Size: 94485 chars
+Words: 14899
+
+File: blakademics_blogged_table_for_advanced_learners_and_teachers.txt
+Reason: Highly repetitive content (70.53% repetition)
+Size: 5396 chars
+Words: 671
+
+File: fighting_for_us_maulana_karenga.txt
+Reason: Highly repetitive content (63.22% repetition)
+Size: 147558 chars
+Words: 20024
+
+File: nathaniel_samuel_murell~afro_caribbean_religions,_an_intro....txt
+Reason: Highly repetitive content (63.32% repetition)
+Size: 286944 chars
+Words: 35279
+
+File: from_black_power_to_hip_hop_racism,_nationalism,_and_feminism_pdf.txt
+Reason: Highly repetitive content (63.23% repetition)
+Size: 153819 chars
+Words: 19993
+
+File: who_is_dr_ben_dr_yosef_ben_jochannan_on_imhotep_and_more.txt
+Reason: Highly repetitive content (53.20% repetition)
+Size: 13284 chars
+Words: 1984
+
+File: revolutionaries_to_race_leaders___black_power_and_the_making_of_african_american_politics_.pdf.txt
+Reason: Highly repetitive content (68.83% repetition)
+Size: 216290 chars
+Words: 28253
+
+File: the_official_malcolm_x_mixtapes_vols_1_2_produced_and_arranged_by_bro_cadence.txt
+Reason: Highly repetitive content (69.49% repetition)
+Size: 1617 chars
+Words: 209
+
+HIGH_OCR_ERRORS (119 files):
+----------------------------------------
+
+File: metu_neter_volume_2__by_ra_un_amen_nefer_smaller.txt
+Reason: High OCR error ratio (50.20%, max 30.00%)
+Size: 3690 chars
+Words: 733
+
+File: metu_neter_volume_3_by_ra_un_amen_nefer.txt
+Reason: High OCR error ratio (50.26%, max 30.00%)
+Size: 3941 chars
+Words: 784
+
+File: ivan_van_sertima~early_america_revisited_1.txt
+Reason: High OCR error ratio (50.39%, max 30.00%)
+Size: 4484 chars
+Words: 889
+
+File: benjamin_banneker~_almanac_1793.txt
+Reason: High OCR error ratio (51.63%, max 30.00%)
+Size: 1162 chars
+Words: 215
+
+File: workingwithhands00washrich.txt
+Reason: High OCR error ratio (163.72%, max 30.00%)
+Size: 284827 chars
+Words: 1789
+
+File: the_american_negro_revolution_fromnonviolence_to_black_power.txt
+Reason: High OCR error ratio (50.17%, max 30.00%)
+Size: 7322 chars
+Words: 1455
+
+File: introduction_to_african_civilization_by_john_g_jacksonsmaller.txt
+Reason: High OCR error ratio (33.80%, max 30.00%)
+Size: 11905 chars
+Words: 1870
+
+File: benjamin_banneker~_almanac_1792.txt
+Reason: High OCR error ratio (51.63%, max 30.00%)
+Size: 1162 chars
+Words: 215
+
+File: margo_v._perkins~_an_autobiography_as_activism.txt
+Reason: High OCR error ratio (50.40%, max 30.00%)
+Size: 3788 chars
+Words: 750
+
+File: booker_t_washington_own_story.txt
+Reason: High OCR error ratio (283.99%, max 30.00%)
+Size: 496574 chars
+Words: 2942
+
+File: rememberbookertwashington.txt
+Reason: High OCR error ratio (119.70%, max 30.00%)
+Size: 11546 chars
+Words: 269
+
+File: listen_brother_a_pamphlet_by_robert_f_williams_the_photos.txt
+Reason: High OCR error ratio (37.56%, max 30.00%)
+Size: 1228 chars
+Words: 197
+
+File: the_journal_of_racial_development.txt
+Reason: High OCR error ratio (38.04%, max 30.00%)
+Size: 9797 chars
+Words: 1861
+
+File: turn_off_tv.txt
+Reason: High OCR error ratio (44.52%, max 30.00%)
+Size: 32698 chars
+Words: 1732
+
+File: negroyearbook52tuskrich.txt
+Reason: High OCR error ratio (1211.59%, max 30.00%)
+Size: 1249938 chars
+Words: 3666
+
+File: assata_shakur_an_autobiography.txt
+Reason: High OCR error ratio (50.18%, max 30.00%)
+Size: 5699 chars
+Words: 1122
+
+File: melanin_the_chemical_key_to_black_greatness_by_carol_barnes.txt
+Reason: High OCR error ratio (50.11%, max 30.00%)
+Size: 2261 chars
+Words: 445
+
+File: tuskegee_to_voorhees.txt
+Reason: High OCR error ratio (237.11%, max 30.00%)
+Size: 154450 chars
+Words: 927
+
+File: the_groundings_with_my_brother.txt
+Reason: High OCR error ratio (51.03%, max 30.00%)
+Size: 1522 chars
+Words: 292
+
+File: melanin_a_key_to_freedom_by_richard_king_pdf_smaller_file.txt
+Reason: High OCR error ratio (50.26%, max 30.00%)
+Size: 1948 chars
+Words: 382
+
+File: william_jelani_cobb~the_devil_and_dave_chappelle.txt
+Reason: High OCR error ratio (50.29%, max 30.00%)
+Size: 3510 chars
+Words: 694
+
+File: urbano~fighting_in_the_streets__urban_guerilla_warfare.txt
+Reason: High OCR error ratio (50.70%, max 30.00%)
+Size: 1508 chars
+Words: 286
+
+File: the_secret_relationship_between_blacks_and_jews_vol._2_smaller_file.txt
+Reason: High OCR error ratio (50.09%, max 30.00%)
+Size: 5309 chars
+Words: 1054
+
+File: benjamin_banneker~_almanac.txt
+Reason: High OCR error ratio (48.83%, max 30.00%)
+Size: 177760 chars
+Words: 40342
+
+File: african_origins_of_world_religions.txt
+Reason: High OCR error ratio (50.44%, max 30.00%)
+Size: 3476 chars
+Words: 688
+
+File: tuskegee_its_story.txt
+Reason: High OCR error ratio (195.08%, max 30.00%)
+Size: 251101 chars
+Words: 1706
+
+File: harriet,_the_moses_of_her_people.txt
+Reason: High OCR error ratio (30.94%, max 30.00%)
+Size: 6336 chars
+Words: 1170
+
+File: walter_rodney_a_history_of_the_guyanese_working_people,_1881_1905.txt
+Reason: High OCR error ratio (50.16%, max 30.00%)
+Size: 6387 chars
+Words: 1268
+
+File: soul_on_ice___eldridge_cleaver_smaller.txt
+Reason: High OCR error ratio (50.37%, max 30.00%)
+Size: 2740 chars
+Words: 542
+
+File: boyslifeofbooker00lcjack.txt
+Reason: High OCR error ratio (209.89%, max 30.00%)
+Size: 153523 chars
+Words: 1072
+
+File: negroes_with_guns_by_robert_f_williams.txt
+Reason: High OCR error ratio (50.69%, max 30.00%)
+Size: 1914 chars
+Words: 361
+
+File: sketch_of_life_of_ben_bannaker.txt
+Reason: High OCR error ratio (161.97%, max 30.00%)
+Size: 32361 chars
+Words: 284
+
+File: revolutionary_suicide.txt
+Reason: High OCR error ratio (50.60%, max 30.00%)
+Size: 3763 chars
+Words: 745
+
+File: rudolph_r_windsor_judea_trembles_under.txt
+Reason: High OCR error ratio (50.94%, max 30.00%)
+Size: 1910 chars
+Words: 373
+
+File: myth_of_ham_in_19th_century_american_christianity_sylvester_a_johnson.txt
+Reason: High OCR error ratio (50.74%, max 30.00%)
+Size: 4131 chars
+Words: 808
+
+File: the_vanguard___a_photographic_essay_on_th.txt
+Reason: High OCR error ratio (51.31%, max 30.00%)
+Size: 2743 chars
+Words: 536
+
+File: what_is_qatum_melanin_physics.txt
+Reason: High OCR error ratio (34.86%, max 30.00%)
+Size: 65957 chars
+Words: 13731
+
+File: the_white_architects_of_black_education_ideology_and_power_in_america,1865_1954.txt
+Reason: High OCR error ratio (50.10%, max 30.00%)
+Size: 2461 chars
+Words: 481
+
+File: blacks_in_science_ancient_and_modern_ivan_van_sertima_(2).txt
+Reason: High OCR error ratio (50.80%, max 30.00%)
+Size: 3499 chars
+Words: 685
+
+File: walter_rodney~a_history_of_upper_guinea_coast_1545_1800_by_walter_rodney.txt
+Reason: High OCR error ratio (50.08%, max 30.00%)
+Size: 6134 chars
+Words: 1218
+
+File: rudolph_r_windsor_when_is_the_next_war.txt
+Reason: High OCR error ratio (50.72%, max 30.00%)
+Size: 1777 chars
+Words: 347
+
+File: the_secret_relationship_between_blacks_and_jews_vol._1.txt
+Reason: High OCR error ratio (50.28%, max 30.00%)
+Size: 3596 chars
+Words: 712
+
+File: david_hatcher_childress~tech._of_the_gods,_the_incredible_sciences_of_the_ancients.txt
+Reason: High OCR error ratio (49.97%, max 30.00%)
+Size: 7304 chars
+Words: 1451
+
+File: the_ankh_african_origin_of_electromagnetism_by_nur_ankh_amen.txt
+Reason: High OCR error ratio (50.16%, max 30.00%)
+Size: 1628 chars
+Words: 313
+
+File: dennis_the_burden_of_isis_being_the_lament_of_isis_and_nephthys_bw_complete.txt
+Reason: High OCR error ratio (262.92%, max 30.00%)
+Size: 53032 chars
+Words: 391
+
+File: i_will_marry_when_i_want___ngugi_wa_thiong'o.txt
+Reason: High OCR error ratio (49.71%, max 30.00%)
+Size: 2610 chars
+Words: 513
+
+File: the_colored_patriots_of_the_american_rev.txt
+Reason: High OCR error ratio (39.85%, max 30.00%)
+Size: 11384 chars
+Words: 2173
+
+File: anthony_t_browder~_the_browder_files.txt
+Reason: High OCR error ratio (50.84%, max 30.00%)
+Size: 2117 chars
+Words: 417
+
+File: black_women_in_antiquity_ivan_van_sertima.txt
+Reason: High OCR error ratio (50.98%, max 30.00%)
+Size: 2603 chars
+Words: 508
+
+File: melanin_a_key_to_freedom_by_richard_king_pdf.txt
+Reason: High OCR error ratio (50.53%, max 30.00%)
+Size: 1935 chars
+Words: 380
+
+File: cheikh_anta_diop_civilization_of_barbarism.txt
+Reason: High OCR error ratio (50.28%, max 30.00%)
+Size: 9044 chars
+Words: 1796
+
+File: na'im_akbar~know_thyself.txt
+Reason: High OCR error ratio (52.24%, max 30.00%)
+Size: 1098 chars
+Words: 201
+
+File: the_black_panther_party_and_the_case_of_the_new_york_21.txt
+Reason: High OCR error ratio (55.00%, max 30.00%)
+Size: 654 chars
+Words: 100
+
+File: benjamin_banneker~_almanac_1794.txt
+Reason: High OCR error ratio (52.20%, max 30.00%)
+Size: 896 chars
+Words: 159
+
+File: john_africa_20_years_on_the_move.txt
+Reason: High OCR error ratio (52.14%, max 30.00%)
+Size: 688 chars
+Words: 117
+
+File: the_african_background_to_medical_science_charles_s_finch_cropped.txt
+Reason: High OCR error ratio (50.67%, max 30.00%)
+Size: 4587 chars
+Words: 900
+
+File: george_l._jackson~blood_in_my_eye.txt
+Reason: High OCR error ratio (52.23%, max 30.00%)
+Size: 879 chars
+Words: 157
+
+File: cheikh_anta_diop_precolonial_black_africa.txt
+Reason: High OCR error ratio (50.49%, max 30.00%)
+Size: 5183 chars
+Words: 1024
+
+File: the_iceman_inheritance_prehistoric_sources_of_western_man's_racism_sexism_and_aggression.txt
+Reason: High OCR error ratio (50.19%, max 30.00%)
+Size: 2750 chars
+Words: 538
+
+File: tupac_shakur~the_rose_that_grew_from_concrete.txt
+Reason: High OCR error ratio (50.27%, max 30.00%)
+Size: 3787 chars
+Words: 750
+
+File: ku_klux_klan.txt
+Reason: High OCR error ratio (35.15%, max 30.00%)
+Size: 7916 chars
+Words: 1485
+
+File: afrocentricity_molefi_kete_asante.txt
+Reason: High OCR error ratio (51.32%, max 30.00%)
+Size: 1582 chars
+Words: 302
+
+File: benjamin_banneker~_almanac_1796.txt
+Reason: High OCR error ratio (52.15%, max 30.00%)
+Size: 915 chars
+Words: 163
+
+File: ivan_van_sertima_they_came_before_columbus.txt
+Reason: High OCR error ratio (50.37%, max 30.00%)
+Size: 6744 chars
+Words: 1336
+
+File: kloranwhiteknights.txt
+Reason: High OCR error ratio (53.91%, max 30.00%)
+Size: 750 chars
+Words: 128
+
+File: weep_not,_child_by_ngugi_wa_thiong'o.txt
+Reason: High OCR error ratio (50.78%, max 30.00%)
+Size: 1965 chars
+Words: 386
+
+File: the_case_of_mumia_abu_jamal__a_life_in_the_balance_by_amnesty_international.txt
+Reason: High OCR error ratio (49.46%, max 30.00%)
+Size: 579 chars
+Words: 93
+
+File: sundiata_acoli~_bits_n_pieces.txt
+Reason: High OCR error ratio (54.35%, max 30.00%)
+Size: 571 chars
+Words: 92
+
+File: yurugu_an_african_centered_critique_of_european_cultural_thought_and_behavior_by_miramba_ani.txt
+Reason: High OCR error ratio (50.29%, max 30.00%)
+Size: 6934 chars
+Words: 1366
+
+File: benjamin_bannekers_almanac_1977.txt
+Reason: High OCR error ratio (52.05%, max 30.00%)
+Size: 953 chars
+Words: 171
+
+File: rastafari_roots_and_ideology.txt
+Reason: High OCR error ratio (50.27%, max 30.00%)
+Size: 6430 chars
+Words: 1279
+
+File: cheikh_anta_diop~_cultural_unity_of_black_africa.txt
+Reason: High OCR error ratio (50.17%, max 30.00%)
+Size: 4530 chars
+Words: 899
+
+File: the_african_dream__the_diaries_of_the_revolutionary_war_in_the_congo_by_ernesto_guevara.txt
+Reason: High OCR error ratio (53.79%, max 30.00%)
+Size: 838 chars
+Words: 132
+
+File: the_history_of_the_negro_church.txt
+Reason: High OCR error ratio (40.11%, max 30.00%)
+Size: 11655 chars
+Words: 2229
+
+File: muata_ashby_african_religon_vol_5_goddes_e_book.txt
+Reason: High OCR error ratio (51.55%, max 30.00%)
+Size: 2329 chars
+Words: 452
+
+File: egyptianhierogly01budguoft.txt
+Reason: High OCR error ratio (224.73%, max 30.00%)
+Size: 1172694 chars
+Words: 35977
+
+File: ra_un_nefer_amen__the_11_laws_of_ma'at.txt
+Reason: High OCR error ratio (50.72%, max 30.00%)
+Size: 1796 chars
+Words: 349
+
+File: benjamin_banneker~_almanac_1795.txt
+Reason: High OCR error ratio (52.10%, max 30.00%)
+Size: 934 chars
+Words: 167
+
+File: e.a._wallis_budge~_the_banlet_of_righteouesness.txt
+Reason: High OCR error ratio (51.50%, max 30.00%)
+Size: 1900 chars
+Words: 367
+
+File: booker_t._washington~a_joshua_in_the_camp.txt
+Reason: High OCR error ratio (206.70%, max 30.00%)
+Size: 24480 chars
+Words: 179
+
+File: the_negro_in_our_history.txt
+Reason: High OCR error ratio (40.00%, max 30.00%)
+Size: 11528 chars
+Words: 2205
+
+File: rasta_and_resistance_from_marcus_garvey_to_walter_rodney_horace_campbell.txt
+Reason: High OCR error ratio (50.09%, max 30.00%)
+Size: 2714 chars
+Words: 533
+
+File: great_black_leaders_ancient_and_dr_ivan_van_sertima1_pdf.txt
+Reason: High OCR error ratio (50.56%, max 30.00%)
+Size: 4558 chars
+Words: 896
+
+File: kwame_nkrumah~_the_freedom_fighters_edition_(axioms).txt
+Reason: High OCR error ratio (50.64%, max 30.00%)
+Size: 1639 chars
+Words: 314
+
+File: dr._neb_heru~is_nunology_for_you.txt
+Reason: High OCR error ratio (37.49%, max 30.00%)
+Size: 17473 chars
+Words: 3729
+
+File: ngugi_wa_thiong'o~a_grain_of_wheat.txt
+Reason: High OCR error ratio (50.13%, max 30.00%)
+Size: 5774 chars
+Words: 1143
+
+File: the_belgo_congolese_round_able_the_historic_days_of_1960.txt
+Reason: High OCR error ratio (50.23%, max 30.00%)
+Size: 1187 chars
+Words: 221
+
+File: we_the_black_jews_vol._1&2_yosef_ben_jochannan_smaller_file.txt
+Reason: High OCR error ratio (50.24%, max 30.00%)
+Size: 5321 chars
+Words: 1057
+
+File: harriettubmanwholeadtheslavestofreedom.txt
+Reason: High OCR error ratio (251.33%, max 30.00%)
+Size: 20377 chars
+Words: 150
+
+File: new_dimensions_in_african_history_yosef_ben_jochannan_and_john_henrik_clarke.txt
+Reason: High OCR error ratio (50.00%, max 30.00%)
+Size: 2498 chars
+Words: 490
+
+File: the_books_of_chilan_balam_the_prophetic_and_historic_records_of_the_mayas_of_yucatan_1882.txt
+Reason: High OCR error ratio (123.38%, max 30.00%)
+Size: 23981 chars
+Words: 1416
+
+File: hmixtapes_click_n_play_vols_1_thru_4_produced_by_bro_cadence_4_your_listening_pleasure.txt
+Reason: High OCR error ratio (31.91%, max 30.00%)
+Size: 1142 chars
+Words: 141
+
+File: ben_ammi___god,_the_black_man_&_truth.txt
+Reason: High OCR error ratio (50.18%, max 30.00%)
+Size: 2739 chars
+Words: 544
+
+File: benkamin_bannekers_letters_to_thomas_jefferson_with_reply.txt
+Reason: High OCR error ratio (51.81%, max 30.00%)
+Size: 542 chars
+Words: 83
+
+File: golden_age_of_the_moor_ivan_van_sertima.txt
+Reason: High OCR error ratio (50.51%, max 30.00%)
+Size: 4981 chars
+Words: 984
+
+File: dr._ivan_van_sertima~african_presence_in_early_asia.txt
+Reason: High OCR error ratio (50.18%, max 30.00%)
+Size: 4293 chars
+Words: 851
+
+File: raboteau_slave_religion.txt
+Reason: High OCR error ratio (52.08%, max 30.00%)
+Size: 1287 chars
+Words: 240
+
+File: capitalism_plus_dope_equals_genocide_original_document.txt
+Reason: High OCR error ratio (55.95%, max 30.00%)
+Size: 577 chars
+Words: 84
+
+File: anthony_t_browder_nile_valley_contributions_to_civilization.txt
+Reason: High OCR error ratio (50.25%, max 30.00%)
+Size: 5941 chars
+Words: 1178
+
+File: dr._john_l_johnson_500_questions_answers_on_black_presence_in_the_bible.txt
+Reason: High OCR error ratio (50.00%, max 30.00%)
+Size: 1962 chars
+Words: 384
+
+File: wyndham_john~myths_of_life.txt
+Reason: High OCR error ratio (343.04%, max 30.00%)
+Size: 55076 chars
+Words: 560
+
+File: african_names_the_ancient_egyptian_keys_to_unlocking_your_destiny_and_power.txt
+Reason: High OCR error ratio (50.00%, max 30.00%)
+Size: 2977 chars
+Words: 586
+
+File: the_saga_of_the_black_marxists_versus_the_black_nationalists_by_yosef_ben_jochannan.txt
+Reason: High OCR error ratio (49.80%, max 30.00%)
+Size: 3825 chars
+Words: 757
+
+File: chanceller_williams_the_destruction_of_black_civilizatios.txt
+Reason: High OCR error ratio (50.31%, max 30.00%)
+Size: 8179 chars
+Words: 1620
+
+File: the_genius_of_huey_p_newton.txt
+Reason: High OCR error ratio (53.41%, max 30.00%)
+Size: 987 chars
+Words: 176
+
+File: essays_minister_of_defense.txt
+Reason: High OCR error ratio (53.28%, max 30.00%)
+Size: 720 chars
+Words: 122
+
+File: dr._ivan_van_sertima~african_presence_in_early_europe.txt
+Reason: High OCR error ratio (50.21%, max 30.00%)
+Size: 3675 chars
+Words: 727
+
+File: the_shape_of_things_to_come_a_master_plan_from_the_destruction_of_black_civilization.txt
+Reason: High OCR error ratio (31.07%, max 30.00%)
+Size: 1281 chars
+Words: 206
+
+File: rudolph_r_windsor_the_valley_of_dry_bo.txt
+Reason: High OCR error ratio (50.65%, max 30.00%)
+Size: 1948 chars
+Words: 383
+
+File: assata_an_autobiography_and_eyes_of_the_rainbow_an_assata_shakur_documentary.txt
+Reason: High OCR error ratio (50.45%, max 30.00%)
+Size: 5658 chars
+Words: 1112
+
+File: the_instruction_of_ptah_hotep_an.txt
+Reason: High OCR error ratio (283.26%, max 30.00%)
+Size: 74910 chars
+Words: 472
+
+File: black's_law_dictionary___8th_edition.txt
+Reason: High OCR error ratio (50.05%, max 30.00%)
+Size: 37444 chars
+Words: 7317
+
+File: eric_mann~comrade_george.txt
+Reason: High OCR error ratio (50.98%, max 30.00%)
+Size: 2346 chars
+Words: 461
+
+File: technology_of_the_gods_the_incredible_sciences_of_the_ancients.txt
+Reason: High OCR error ratio (50.35%, max 30.00%)
+Size: 7284 chars
+Words: 1440
+
+File: the_history_of_the_yorubas.txt
+Reason: High OCR error ratio (546.28%, max 30.00%)
+Size: 1425055 chars
+Words: 4976
+
+File: the_mayan_prophecies.txt
+Reason: High OCR error ratio (50.62%, max 30.00%)
+Size: 4102 chars
+Words: 812
+
+File: unsung_heroes.txt
+Reason: High OCR error ratio (202.25%, max 30.00%)
+Size: 230762 chars
+Words: 1603
+
+File: metu_neter_volume_1_by_ra_un_amen_nefer_smaller.txt
+Reason: High OCR error ratio (50.16%, max 30.00%)
+Size: 4689 chars
+Words: 933
+
+File: great_african_americans_coloring_book.txt
+Reason: High OCR error ratio (51.39%, max 30.00%)
+Size: 1168 chars
+Words: 216
+
+TOO_SHORT (3 files):
+----------------------------------------
+
+File: rastafari_lexicon,_by_yasus_afari.txt
+Reason: File too short (403 chars, minimum 500)
+Size: 403 chars
+Words: 56
+
+File: lecturesonliberationbyangeladavis.txt
+Reason: File too short (480 chars, minimum 500)
+Size: 480 chars
+Words: 68
+
+File: eldridge_cleaver_on_lumpen_ideology.txt
+Reason: File too short (482 chars, minimum 500)
+Size: 482 chars
+Words: 68

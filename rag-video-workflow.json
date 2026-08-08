@@ -1,0 +1,388 @@
+{
+  "name": "RAG-Based Longform Video Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate topic ideas from RAG knowledge base\nconst topics = [\n  {\n    query: \"ancient KMT wisdom and teachings\",\n    title: \"Ancient KMT Wisdom Series\"\n  },\n  {\n    query: \"metu neter principles and cosmology\",\n    title: \"Metu Neter Cosmology\"\n  },\n  {\n    query: \"matrix of power and control systems\",\n    title: \"Matrix of Power Analysis\"\n  },\n  {\n    query: \"RBG library historical perspectives\",\n    title: \"RBG Historical Perspectives\"\n  }\n];\n\n// Select a random topic or use the first one\nconst selectedTopic = topics[Math.floor(Math.random() * topics.length)];\n\nreturn {\n  json: {\n    query: selectedTopic.query,\n    title: selectedTopic.title,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "generate-topic",
+      "name": "Generate Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8019/rag/query",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParametersJson": "={{ JSON.stringify({\n  \"question\": $json.query,\n  \"top_k\": 10,\n  \"collection_name\": \"maat_knowledge\"\n}) }}",
+        "options": {}
+      },
+      "id": "rag-query",
+      "name": "Query RAG Knowledge Base",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract RAG response and prepare for scene generation\nconst ragResponse = $input.item.json;\nconst topic = $('Generate Topic').item.json;\n\n// Extract answer and sources from RAG\nconst answer = ragResponse.answer || '';\nconst sources = ragResponse.sources || [];\n\n// Create prompt for scene generation\nconst scenePrompt = `Based on this knowledge from our RAG system:\n\n${answer}\n\nGenerate 10 detailed video scenes for a longform video titled: \"${topic.title}\"\n\nEach scene should include:\n- Scene number (1-10)\n- Visual description\n- Narration/prompts\n- Duration estimate (in seconds)\n- Visual style notes\n\nFormat as a numbered list with clear scene breaks.`;\n\nreturn {\n  json: {\n    title: topic.title,\n    mainContent: answer,\n    sources: sources.map(s => ({\n      file: s.file_name,\n      page: s.page,\n      preview: s.preview\n    })),\n    query: topic.query,\n    scenePrompt: scenePrompt\n  }\n};"
+      },
+      "id": "prepare-scenes",
+      "name": "Prepare Scene Generation",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:11434/api/generate",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParametersJson": "={{ JSON.stringify({\n  \"model\": \"llama3.2:latest\",\n  \"prompt\": $json.scenePrompt,\n  \"stream\": false,\n  \"options\": {\n    \"temperature\": 0.8,\n    \"top_p\": 0.9\n  }\n}) }}",
+        "options": {}
+      },
+      "id": "generate-scenes",
+      "name": "Generate Scenes with Ollama",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Ollama response and structure scenes\nconst ollamaResponse = $input.item.json;\nconst context = $('Prepare Scene Generation').item.json;\n\n// Extract text from Ollama response\nconst responseText = ollamaResponse.response || ollamaResponse.text || JSON.stringify(ollamaResponse);\n\n// Try to parse scenes from response\nlet scenes = [];\n\ntry {\n  // Try to find numbered scenes\n  const sceneMatches = responseText.match(/Scene \\d+[\\s\\S]*?(?=Scene \\d+|$)/gi);\n  \n  if (sceneMatches && sceneMatches.length > 0) {\n    scenes = sceneMatches.slice(0, 10).map((match, idx) => ({\n      id: idx + 1,\n      description: match.trim(),\n      title: `Scene ${idx + 1}`\n    }));\n  } else {\n    // Split by common delimiters\n    const parts = responseText.split(/\\n\\n|\\n(?=\\d+\\.|Scene)/).filter(p => p.trim());\n    const scenesPerPart = Math.max(1, Math.floor(parts.length / 10));\n    \n    scenes = Array.from({ length: 10 }, (_, i) => {\n      const startIdx = i * scenesPerPart;\n      const endIdx = Math.min((i + 1) * scenesPerPart, parts.length);\n      const content = parts.slice(startIdx, endIdx).join('\\n\\n');\n      \n      return {\n        id: i + 1,\n        description: content.trim() || `Scene ${i + 1} content`, \n        title: `Scene ${i + 1}`\n      };\n    });\n  }\n} catch (e) {\n  // Fallback: create 10 scenes from response\n  const chunkSize = Math.ceil(responseText.length / 10);\n  scenes = Array.from({ length: 10 }, (_, i) => ({\n    id: i + 1,\n    description: responseText.substring(i * chunkSize, (i + 1) * chunkSize).trim(),\n    title: `Scene ${i + 1}`\n  }));\n}\n\nreturn {\n  json: {\n    title: context.title,\n    scenes: scenes,\n    ragSources: context.sources,\n    aspectRatio: \"16:9\",\n    productionStatus: \"Concept Development\",\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "parse-scenes",
+      "name": "Parse Scenes",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "scenes",
+        "options": {}
+      },
+      "id": "split-scenes",
+      "name": "Split Out Scenes",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [1560, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare image generation prompts from scene data\nconst scene = $input.item.json;\nconst title = $('Parse Scenes').first().json.title;\n\n// Extract visual description from scene\nconst sceneDescription = scene.description || scene.visual || scene.content || '';\n\n// Create image prompt (limit to 500 chars for API)\nconst imagePrompt = `Cinematic vlog style: ${sceneDescription.substring(0, 500)}. Hyperrealistic, natural lighting, handheld camera aesthetic, earthy tones, misty atmosphere, documentary style.`;\n\nreturn {\n  json: {\n    sceneId: scene.id || scene.sceneId,\n    sceneTitle: scene.title || `Scene ${scene.id}`,\n    imagePrompt: imagePrompt,\n    videoPrompt: scene.description || sceneDescription,\n    title: title,\n    aspectRatio: \"16:9\"\n  }\n};"
+      },
+      "id": "prepare-image-prompts",
+      "name": "Prepare Image Prompts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.lexica.art/v1/search",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParametersJson": "={{ JSON.stringify({\n  \"q\": $json.imagePrompt\n}) }}",
+        "options": {}
+      },
+      "id": "generate-images",
+      "name": "Generate Images",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2000, 300]
+    },
+    {
+      "parameters": {
+        "amount": 5,
+        "unit": "seconds"
+      },
+      "id": "wait-images",
+      "name": "Wait for Images",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [2220, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract image URLs from response\nconst response = $input.item.json;\nconst sceneData = $('Prepare Image Prompts').item.json;\n\n// Handle different response formats\nlet imageUrl = '';\nif (response.images && response.images.length > 0) {\n  imageUrl = response.images[0].src || response.images[0].url || response.images[0];\n} else if (response.src) {\n  imageUrl = response.src;\n} else if (response.url) {\n  imageUrl = response.url;\n} else if (Array.isArray(response) && response.length > 0) {\n  imageUrl = response[0].src || response[0].url || response[0];\n} else if (typeof response === 'string') {\n  imageUrl = response;\n}\n\nreturn {\n  json: {\n    ...sceneData,\n    imageUrl: imageUrl,\n    imageReference: imageUrl\n  }\n};"
+      },
+      "id": "get-images",
+      "name": "Get Image URLs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2440, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare video creation request\nconst sceneData = $input.item.json;\n\n// Create video generation payload\nreturn {\n  json: {\n    ...sceneData,\n    videoType: \"longform\",\n    duration: 60,\n    style: \"cinematic vlog\"\n  }\n};"
+      },
+      "id": "prepare-video",
+      "name": "Prepare Video Creation",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2660, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.jsonbirddeep.com/v1/video/create",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParametersJson": "={{ JSON.stringify({\n  \"image_url\": $json.imageUrl,\n  \"prompt\": $json.videoPrompt,\n  \"aspect_ratio\": $json.aspectRatio\n}) }}",
+        "options": {}
+      },
+      "id": "create-video",
+      "name": "Create Video",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2880, 300]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "wait-video",
+      "name": "Wait for Video",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [3100, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.jsonbirddeep.com/v1/video/status",
+        "authentication": "none",
+        "options": {
+          "queryParameters": {
+            "parameters": [
+              {
+                "name": "video_id",
+                "value": "={{ $json.video_id || $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "get-video",
+      "name": "Get Video Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3320, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Aggregate all video segments\nconst videos = $input.all();\n\nreturn {\n  json: {\n    videos: videos.map(v => v.json),\n    totalVideos: videos.length\n  }\n};"
+      },
+      "id": "aggregate-videos",
+      "name": "Aggregate Videos",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3320, 500]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.jsonbirddeep.com/v1/video/combine",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParametersJson": "={{ JSON.stringify({\n  \"video_ids\": $json.videos.map(v => v.video_id || v.id).filter(id => id)\n}) }}",
+        "options": {}
+      },
+      "id": "combine-videos",
+      "name": "Combine Videos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3540, 500]
+    },
+    {
+      "parameters": {
+        "amount": 60,
+        "unit": "seconds"
+      },
+      "id": "wait-combined",
+      "name": "Wait for Combined Video",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [3760, 500]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.jsonbirddeep.com/v1/video/download",
+        "authentication": "none",
+        "options": {
+          "queryParameters": {
+            "parameters": [
+              {
+                "name": "video_id",
+                "value": "={{ $json.combined_video_id || $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "download-video",
+      "name": "Download Final Video",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3980, 500],
+      "options": {
+        "response": {
+          "response": {
+            "responseFormat": "file"
+          }
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "name": "={{ $('Parse Scenes').first().json.title }}.mp4",
+        "binaryData": true,
+        "fileContent": "={{ $binary.data }}",
+        "options": {}
+      },
+      "id": "upload-drive",
+      "name": "Upload to Google Drive",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3.2,
+      "position": [4200, 500],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "title": "={{ $('Parse Scenes').first().json.title }}",
+        "description": "Generated from RAG knowledge base",
+        "categoryId": "22",
+        "privacyStatus": "unlisted",
+        "binaryData": true,
+        "fileContent": "={{ $binary.data }}",
+        "options": {}
+      },
+      "id": "upload-youtube",
+      "name": "Upload to YouTube",
+      "type": "n8n-nodes-base.youtube",
+      "typeVersion": 1.1,
+      "position": [4200, 300],
+      "credentials": {
+        "youtubeOAuth2Api": {
+          "name": "YouTube account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Log completion\nconst videoData = $input.item.json;\nconst title = $('Parse Scenes').first().json.title;\n\nreturn {\n  json: {\n    status: \"completed\",\n    title: title,\n    videoUrl: videoData.url || videoData.video_url || \"N/A\",\n    timestamp: new Date().toISOString(),\n    message: `Video '${title}' successfully generated from RAG knowledge base and uploaded.`\n  }\n};"
+      },
+      "id": "log-completion",
+      "name": "Log Completion",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [4420, 400]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [[{ "node": "Generate Topic", "type": "main", "index": 0 }]]
+    },
+    "Generate Topic": {
+      "main": [[{ "node": "Query RAG Knowledge Base", "type": "main", "index": 0 }]]
+    },
+    "Query RAG Knowledge Base": {
+      "main": [[{ "node": "Prepare Scene Generation", "type": "main", "index": 0 }]]
+    },
+    "Prepare Scene Generation": {
+      "main": [[{ "node": "Generate Scenes with Ollama", "type": "main", "index": 0 }]]
+    },
+    "Generate Scenes with Ollama": {
+      "main": [[{ "node": "Parse Scenes", "type": "main", "index": 0 }]]
+    },
+    "Parse Scenes": {
+      "main": [[{ "node": "Split Out Scenes", "type": "main", "index": 0 }]]
+    },
+    "Split Out Scenes": {
+      "main": [[{ "node": "Prepare Image Prompts", "type": "main", "index": 0 }]]
+    },
+    "Prepare Image Prompts": {
+      "main": [[{ "node": "Generate Images", "type": "main", "index": 0 }]]
+    },
+    "Generate Images": {
+      "main": [[{ "node": "Wait for Images", "type": "main", "index": 0 }]]
+    },
+    "Wait for Images": {
+      "main": [[{ "node": "Get Image URLs", "type": "main", "index": 0 }]]
+    },
+    "Get Image URLs": {
+      "main": [[{ "node": "Prepare Video Creation", "type": "main", "index": 0 }]]
+    },
+    "Prepare Video Creation": {
+      "main": [[{ "node": "Create Video", "type": "main", "index": 0 }]]
+    },
+    "Create Video": {
+      "main": [[{ "node": "Wait for Video", "type": "main", "index": 0 }, { "node": "Aggregate Videos", "type": "main", "index": 0 }]]
+    },
+    "Wait for Video": {
+      "main": [[{ "node": "Get Video Status", "type": "main", "index": 0 }]]
+    },
+    "Get Video Status": {
+      "main": [[{ "node": "Aggregate Videos", "type": "main", "index": 0 }]]
+    },
+    "Aggregate Videos": {
+      "main": [[{ "node": "Combine Videos", "type": "main", "index": 0 }]]
+    },
+    "Combine Videos": {
+      "main": [[{ "node": "Wait for Combined Video", "type": "main", "index": 0 }]]
+    },
+    "Wait for Combined Video": {
+      "main": [[{ "node": "Download Final Video", "type": "main", "index": 0 }]]
+    },
+    "Download Final Video": {
+      "main": [[{ "node": "Upload to Google Drive", "type": "main", "index": 0 }, { "node": "Upload to YouTube", "type": "main", "index": 0 }]]
+    },
+    "Upload to Google Drive": {
+      "main": [[{ "node": "Log Completion", "type": "main", "index": 0 }]]
+    },
+    "Upload to YouTube": {
+      "main": [[{ "node": "Log Completion", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["rag", "video-generation", "maatlangchain", "ollama", "knowledge-base"]
+}

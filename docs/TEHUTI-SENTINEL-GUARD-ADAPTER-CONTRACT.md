@@ -22,6 +22,8 @@ This contract defines the boundary between:
 
 `allow` | `deny` | `review` | `quarantine` | `escalate`
 
+**Exact request/response schema:** [`TEHUTI-GUARD-WIRE-CONTRACT.md`](TEHUTI-GUARD-WIRE-CONTRACT.md). Adapters may expose convenient local APIs, but must translate to that nested envelope before calling `/decision`.
+
 **Doctrine** sometimes uses **“conditional”** for “only if gates pass.” That is **not** a separate wire value today. Map it to **`review`** (human / gate) or **`quarantine`** (hold / isolate) per [`ENDPOINTS-AND-DECISIONS.md`](ENDPOINTS-AND-DECISIONS.md) §1.
 
 **Posture / machine truth** for Guard comes from **maat-sentinel** `unified_view` (Sentinel is authoritative for **live posture**; Guard combines it with rules).

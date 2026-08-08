@@ -1,0 +1,4068 @@
+diff --git a/docs/providers/models.md b/docs/providers/models.md
+deleted file mode 100644
+index 64c7d865ec1..00000000000
+--- a/docs/providers/models.md
++++ /dev/null
+@@ -1,51 +0,0 @@
+----
+-summary: "Model providers (LLMs) supported by OpenClaw"
+-read_when:
+-  - You want to choose a model provider
+-  - You want quick setup examples for LLM auth + model selection
+-title: "Model Provider Quickstart"
+----
+-
+-# Model Providers
+-
+-OpenClaw can use many LLM providers. Pick one, authenticate, then set the default
+-model as `provider/model`.
+-
+-## Highlight: Venice (Venice AI)
+-
+-Venice is our recommended Venice AI setup for privacy-first inference with an option to use Opus for the hardest tasks.
+-
+-- Default: `venice/llama-3.3-70b`
+-- Best overall: `venice/claude-opus-45` (Opus remains the strongest)
+-
+-See [Venice AI](/providers/venice).
+-
+-## Quick start (two steps)
+-
+-1. Authenticate with the provider (usually via `openclaw onboard`).
+-2. Set the default model:
+-
+-```json5
+-{
+-  agents: { defaults: { model: { primary: "anthropic/claude-opus-4-5" } } },
+-}
+-```
+-
+-## Supported providers (starter set)
+-
+-- [OpenAI (API + Codex)](/providers/openai)
+-- [Anthropic (API + Claude Code CLI)](/providers/anthropic)
+-- [OpenRouter](/providers/openrouter)
+-- [Vercel AI Gateway](/providers/vercel-ai-gateway)
+-- [Cloudflare AI Gateway](/providers/cloudflare-ai-gateway)
+-- [Moonshot AI (Kimi + Kimi Coding)](/providers/moonshot)
+-- [Synthetic](/providers/synthetic)
+-- [OpenCode Zen](/providers/opencode)
+-- [Z.AI](/providers/zai)
+-- [GLM models](/providers/glm)
+-- [MiniMax](/providers/minimax)
+-- [Venice (Venice AI)](/providers/venice)
+-- [Amazon Bedrock](/bedrock)
+-
+-For the full provider catalog (xAI, Groq, Mistral, etc.) and advanced configuration,
+-see [Model providers](/concepts/model-providers).
+diff --git a/package.json b/package.json
+deleted file mode 100644
+index cb9ea558a2f..00000000000
+--- a/package.json
++++ /dev/null
+@@ -1,244 +0,0 @@
+-{
+-  "name": "openclaw",
+-  "version": "2026.2.3",
+-  "description": "WhatsApp gateway CLI (Baileys web) with Pi RPC agent",
+-  "keywords": [],
+-  "license": "MIT",
+-  "author": "",
+-  "bin": {
+-    "openclaw": "openclaw.mjs"
+-  },
+-  "files": [
+-    "assets/",
+-    "CHANGELOG.md",
+-    "dist/",
+-    "docs/",
+-    "extensions/",
+-    "LICENSE",
+-    "openclaw.mjs",
+-    "README-header.png",
+-    "README.md",
+-    "skills/"
+-  ],
+-  "type": "module",
+-  "main": "dist/index.js",
+-  "exports": {
+-    ".": "./dist/index.js",
+-    "./plugin-sdk": "./dist/plugin-sdk/index.js",
+-    "./cli-entry": "./openclaw.mjs"
+-  },
+-  "scripts": {
+-    "android:assemble": "cd apps/android && ./gradlew :app:assembleDebug",
+-    "android:install": "cd apps/android && ./gradlew :app:installDebug",
+-    "android:run": "cd apps/android && ./gradlew :app:installDebug && adb shell am start -n ai.openclaw.android/.MainActivity",
+-    "android:test": "cd apps/android && ./gradlew :app:testDebugUnitTest",
+-    "build": "pnpm canvas:a2ui:bundle && tsdown && node --import tsx scripts/canvas-a2ui-copy.ts && node --import tsx scripts/copy-hook-metadata.ts && node --import tsx scripts/write-build-info.ts && node --import tsx scripts/write-cli-compat.ts",
+-    "canvas:a2ui:bundle": "bash scripts/bundle-a2ui.sh",
+-    "check": "pnpm tsgo && pnpm lint && pnpm format",
+-    "check:loc": "node --import tsx scripts/check-ts-max-loc.ts --max 500",
+-    "dev": "node scripts/run-node.mjs",
+-    "docs:bin": "node scripts/build-docs-list.mjs",
+-    "docs:build": "cd docs && pnpm dlx --reporter append-only mint broken-links",
+-    "docs:dev": "cd docs && mint dev",
+-    "docs:list": "node scripts/docs-list.js",
+-    "format": "oxfmt --check",
+-    "format:all": "pnpm format && pnpm format:swift",
+-    "format:fix": "oxfmt --write",
+-    "format:swift": "swiftformat --lint --config .swiftformat apps/macos/Sources apps/ios/Sources apps/shared/OpenClawKit/Sources",
+-    "gateway:dev": "OPENCLAW_SKIP_CHANNELS=1 CLAWDBOT_SKIP_CHANNELS=1 node scripts/run-node.mjs --dev gateway",
+-    "gateway:dev:reset": "OPENCLAW_SKIP_CHANNELS=1 CLAWDBOT_SKIP_CHANNELS=1 node scripts/run-node.mjs --dev gateway --reset",
+-    "gateway:watch": "node scripts/watch-node.mjs gateway --force",
+-    "ios:build": "bash -lc 'cd apps/ios && xcodegen generate && xcodebuild -project OpenClaw.xcodeproj -scheme OpenClaw -destination \"${IOS_DEST:-platform=iOS Simulator,name=iPhone 17}\" -configuration Debug build'",
+-    "ios:gen": "cd apps/ios && xcodegen generate",
+-    "ios:open": "cd apps/ios && xcodegen generate && open OpenClaw.xcodeproj",
+-    "ios:run": "bash -lc 'cd apps/ios && xcodegen generate && xcodebuild -project OpenClaw.xcodeproj -scheme OpenClaw -destination \"${IOS_DEST:-platform=iOS Simulator,name=iPhone 17}\" -configuration Debug build && xcrun simctl boot \"${IOS_SIM:-iPhone 17}\" || true && xcrun simctl launch booted ai.openclaw.ios'",
+-    "lint": "oxlint --type-aware",
+-    "lint:all": "pnpm lint && pnpm lint:swift",
+-    "lint:fix": "oxlint --type-aware --fix && pnpm format:fix",
+-    "lint:swift": "swiftlint lint --config .swiftlint.yml && (cd apps/ios && swiftlint lint --config .swiftlint.yml)",
+-    "mac:open": "open dist/OpenClaw.app",
+-    "mac:package": "bash scripts/package-mac-app.sh",
+-    "mac:restart": "bash scripts/restart-mac.sh",
+-    "moltbot:rpc": "node scripts/run-node.mjs agent --mode rpc --json",
+-    "openclaw": "node scripts/run-node.mjs",
+-    "openclaw:rpc": "node scripts/run-node.mjs agent --mode rpc --json",
+-    "plugins:sync": "node --import tsx scripts/sync-plugin-versions.ts",
+-    "prepack": "pnpm build && pnpm ui:build",
+-    "prepare": "command -v git >/dev/null 2>&1 && git config core.hooksPath git-hooks || exit 0",
+-    "protocol:check": "pnpm protocol:gen && pnpm protocol:gen:swift && git diff --exit-code -- dist/protocol.schema.json apps/macos/Sources/OpenClawProtocol/GatewayModels.swift",
+-    "protocol:gen": "node --import tsx scripts/protocol-gen.ts",
+-    "protocol:gen:swift": "node --import tsx scripts/protocol-gen-swift.ts",
+-    "release:check": "node --import tsx scripts/release-check.ts",
+-    "start": "node scripts/run-node.mjs",
+-    "test": "node scripts/test-parallel.mjs",
+-    "test:all": "pnpm lint && pnpm build && pnpm test && pnpm test:e2e && pnpm test:live && pnpm test:docker:all",
+-    "test:coverage": "vitest run --coverage",
+-    "test:docker:all": "pnpm test:docker:live-models && pnpm test:docker:live-gateway && pnpm test:docker:onboard && pnpm test:docker:gateway-network && pnpm test:docker:qr && pnpm test:docker:doctor-switch && pnpm test:docker:plugins && pnpm test:docker:cleanup",
+-    "test:docker:cleanup": "bash scripts/test-cleanup-docker.sh",
+-    "test:docker:doctor-switch": "bash scripts/e2e/doctor-install-switch-docker.sh",
+-    "test:docker:gateway-network": "bash scripts/e2e/gateway-network-docker.sh",
+-    "test:docker:live-gateway": "bash scripts/test-live-gateway-models-docker.sh",
+-    "test:docker:live-models": "bash scripts/test-live-models-docker.sh",
+-    "test:docker:onboard": "bash scripts/e2e/onboard-docker.sh",
+-    "test:docker:plugins": "bash scripts/e2e/plugins-docker.sh",
+-    "test:docker:qr": "bash scripts/e2e/qr-import-docker.sh",
+-    "test:e2e": "vitest run --config vitest.e2e.config.ts",
+-    "test:force": "node --import tsx scripts/test-force.ts",
+-    "test:install:e2e": "bash scripts/test-install-sh-e2e-docker.sh",
+-    "test:install:e2e:anthropic": "OPENCLAW_E2E_MODELS=anthropic CLAWDBOT_E2E_MODELS=anthropic bash scripts/test-install-sh-e2e-docker.sh",
+-    "test:install:e2e:openai": "OPENCLAW_E2E_MODELS=openai CLAWDBOT_E2E_MODELS=openai bash scripts/test-install-sh-e2e-docker.sh",
+-    "test:install:smoke": "bash scripts/test-install-sh-docker.sh",
+-    "test:live": "OPENCLAW_LIVE_TEST=1 CLAWDBOT_LIVE_TEST=1 vitest run --config vitest.live.config.ts",
+-    "test:ui": "pnpm --dir ui test",
+-    "test:watch": "vitest",
+-    "tui": "node scripts/run-node.mjs tui",
+-    "tui:dev": "OPENCLAW_PROFILE=dev CLAWDBOT_PROFILE=dev node scripts/run-node.mjs --dev tui",
+-    "ui:build": "node scripts/ui.js build",
+-    "ui:dev": "node scripts/ui.js dev",
+-    "ui:install": "node scripts/ui.js install"
+-  },
+-  "dependencies": {
+-    "@agentclientprotocol/sdk": "0.13.1",
+-    "@aws-sdk/client-bedrock": "^3.981.0",
+-    "@buape/carbon": "0.14.0",
+-    "@clack/prompts": "^1.0.0",
+-    "@grammyjs/runner": "^2.0.3",
+-    "@grammyjs/transformer-throttler": "^1.2.1",
+-    "@homebridge/ciao": "^1.3.4",
+-    "@larksuiteoapi/node-sdk": "^1.42.0",
+-    "@line/bot-sdk": "^10.6.0",
+-    "@lydell/node-pty": "1.2.0-beta.3",
+-    "@mariozechner/pi-agent-core": "0.51.1",
+-    "@mariozechner/pi-ai": "0.51.1",
+-    "@mariozechner/pi-coding-agent": "0.51.1",
+-    "@mariozechner/pi-tui": "0.51.1",
+-    "@mozilla/readability": "^0.6.0",
+-    "@sinclair/typebox": "0.34.48",
+-    "@slack/bolt": "^4.6.0",
+-    "@slack/web-api": "^7.13.0",
+-    "@whiskeysockets/baileys": "7.0.0-rc.9",
+-    "ajv": "^8.17.1",
+-    "chalk": "^5.6.2",
+-    "chokidar": "^5.0.0",
+-    "cli-highlight": "^2.1.11",
+-    "commander": "^14.0.3",
+-    "croner": "^10.0.1",
+-    "discord-api-types": "^0.38.38",
+-    "dotenv": "^17.2.3",
+-    "express": "^5.2.1",
+-    "file-type": "^21.3.0",
+-    "grammy": "^1.39.3",
+-    "hono": "4.11.7",
+-    "jiti": "^2.6.1",
+-    "json5": "^2.2.3",
+-    "jszip": "^3.10.1",
+-    "linkedom": "^0.18.12",
+-    "long": "^5.3.2",
+-    "markdown-it": "^14.1.0",
+-    "node-edge-tts": "^1.2.9",
+-    "osc-progress": "^0.3.0",
+-    "pdfjs-dist": "^5.4.624",
+-    "playwright-core": "1.58.1",
+-    "proper-lockfile": "^4.1.2",
+-    "qrcode-terminal": "^0.12.0",
+-    "sharp": "^0.34.5",
+-    "signal-utils": "^0.21.1",
+-    "sqlite-vec": "0.1.7-alpha.2",
+-    "tar": "7.5.7",
+-    "tslog": "^4.10.2",
+-    "undici": "^7.20.0",
+-    "ws": "^8.19.0",
+-    "yaml": "^2.8.2",
+-    "zod": "^4.3.6"
+-  },
+-  "devDependencies": {
+-    "@grammyjs/types": "^3.23.0",
+-    "@lit-labs/signals": "^0.2.0",
+-    "@lit/context": "^1.1.6",
+-    "@types/express": "^5.0.6",
+-    "@types/markdown-it": "^14.1.2",
+-    "@types/node": "^25.2.0",
+-    "@types/proper-lockfile": "^4.1.4",
+-    "@types/qrcode-terminal": "^0.12.2",
+-    "@types/ws": "^8.18.1",
+-    "@typescript/native-preview": "7.0.0-dev.20260202.1",
+-    "@vitest/coverage-v8": "^4.0.18",
+-    "lit": "^3.3.2",
+-    "ollama": "^0.6.3",
+-    "oxfmt": "0.28.0",
+-    "oxlint": "^1.43.0",
+-    "oxlint-tsgolint": "^0.11.4",
+-    "rolldown": "1.0.0-rc.2",
+-    "tsdown": "^0.20.1",
+-    "tsx": "^4.21.0",
+-    "typescript": "^5.9.3",
+-    "vitest": "^4.0.18"
+-  },
+-  "peerDependencies": {
+-    "@napi-rs/canvas": "^0.1.89",
+-    "node-llama-cpp": "3.15.1"
+-  },
+-  "overrides": {
+-    "tar": "7.5.7"
+-  },
+-  "engines": {
+-    "node": ">=22.12.0"
+-  },
+-  "packageManager": "pnpm@10.23.0",
+-  "pnpm": {
+-    "minimumReleaseAge": 2880,
+-    "overrides": {
+-      "fast-xml-parser": "5.3.4",
+-      "form-data": "2.5.4",
+-      "@hono/node-server>hono": "4.11.7",
+-      "hono": "4.11.7",
+-      "qs": "6.14.1",
+-      "@sinclair/typebox": "0.34.47",
+-      "tar": "7.5.7",
+-      "tough-cookie": "4.1.3"
+-    },
+-    "onlyBuiltDependencies": [
+-      "@lydell/node-pty",
+-      "@matrix-org/matrix-sdk-crypto-nodejs",
+-      "@napi-rs/canvas",
+-      "@whiskeysockets/baileys",
+-      "authenticate-pam",
+-      "esbuild",
+-      "node-llama-cpp",
+-      "protobufjs",
+-      "sharp"
+-    ]
+-  },
+-  "vitest": {
+-    "coverage": {
+-      "provider": "v8",
+-      "reporter": [
+-        "text",
+-        "lcov"
+-      ],
+-      "thresholds": {
+-        "lines": 70,
+-        "functions": 70,
+-        "branches": 70,
+-        "statements": 70
+-      },
+-      "include": [
+-        "src/**/*.ts"
+-      ],
+-      "exclude": [
+-        "src/**/*.test.ts"
+-      ]
+-    },
+-    "include": [
+-      "src/**/*.test.ts"
+-    ],
+-    "exclude": [
+-      "dist/**",
+-      "apps/macos/**",
+-      "apps/macos/.build/**",
+-      "**/vendor/**",
+-      "apps/macos/.build/**",
+-      "dist/OpenClaw.app/**"
+-    ]
+-  }
+-}
+diff --git a/src/agents/model-auth.ts b/src/agents/model-auth.ts
+deleted file mode 100644
+index ba85e213cc6..00000000000
+--- a/src/agents/model-auth.ts
++++ /dev/null
+@@ -1,392 +0,0 @@
+-import { type Api, getEnvApiKey, type Model } from "@mariozechner/pi-ai";
+-import path from "node:path";
+-import type { OpenClawConfig } from "../config/config.js";
+-import type { ModelProviderAuthMode, ModelProviderConfig } from "../config/types.js";
+-import { formatCliCommand } from "../cli/command-format.js";
+-import { getShellEnvAppliedKeys } from "../infra/shell-env.js";
+-import {
+-  type AuthProfileStore,
+-  ensureAuthProfileStore,
+-  listProfilesForProvider,
+-  resolveApiKeyForProfile,
+-  resolveAuthProfileOrder,
+-  resolveAuthStorePathForDisplay,
+-} from "./auth-profiles.js";
+-import { normalizeProviderId } from "./model-selection.js";
+-
+-export { ensureAuthProfileStore, resolveAuthProfileOrder } from "./auth-profiles.js";
+-
+-const AWS_BEARER_ENV = "AWS_BEARER_TOKEN_BEDROCK";
+-const AWS_ACCESS_KEY_ENV = "AWS_ACCESS_KEY_ID";
+-const AWS_SECRET_KEY_ENV = "AWS_SECRET_ACCESS_KEY";
+-const AWS_PROFILE_ENV = "AWS_PROFILE";
+-
+-function resolveProviderConfig(
+-  cfg: OpenClawConfig | undefined,
+-  provider: string,
+-): ModelProviderConfig | undefined {
+-  const providers = cfg?.models?.providers ?? {};
+-  const direct = providers[provider] as ModelProviderConfig | undefined;
+-  if (direct) {
+-    return direct;
+-  }
+-  const normalized = normalizeProviderId(provider);
+-  if (normalized === provider) {
+-    const matched = Object.entries(providers).find(
+-      ([key]) => normalizeProviderId(key) === normalized,
+-    );
+-    return matched?.[1];
+-  }
+-  return (
+-    (providers[normalized] as ModelProviderConfig | undefined) ??
+-    Object.entries(providers).find(([key]) => normalizeProviderId(key) === normalized)?.[1]
+-  );
+-}
+-
+-export function getCustomProviderApiKey(
+-  cfg: OpenClawConfig | undefined,
+-  provider: string,
+-): string | undefined {
+-  const entry = resolveProviderConfig(cfg, provider);
+-  const key = entry?.apiKey?.trim();
+-  return key || undefined;
+-}
+-
+-function resolveProviderAuthOverride(
+-  cfg: OpenClawConfig | undefined,
+-  provider: string,
+-): ModelProviderAuthMode | undefined {
+-  const entry = resolveProviderConfig(cfg, provider);
+-  const auth = entry?.auth;
+-  if (auth === "api-key" || auth === "aws-sdk" || auth === "oauth" || auth === "token") {
+-    return auth;
+-  }
+-  return undefined;
+-}
+-
+-function resolveEnvSourceLabel(params: {
+-  applied: Set<string>;
+-  envVars: string[];
+-  label: string;
+-}): string {
+-  const shellApplied = params.envVars.some((envVar) => params.applied.has(envVar));
+-  const prefix = shellApplied ? "shell env: " : "env: ";
+-  return `${prefix}${params.label}`;
+-}
+-
+-export function resolveAwsSdkEnvVarName(env: NodeJS.ProcessEnv = process.env): string | undefined {
+-  if (env[AWS_BEARER_ENV]?.trim()) {
+-    return AWS_BEARER_ENV;
+-  }
+-  if (env[AWS_ACCESS_KEY_ENV]?.trim() && env[AWS_SECRET_KEY_ENV]?.trim()) {
+-    return AWS_ACCESS_KEY_ENV;
+-  }
+-  if (env[AWS_PROFILE_ENV]?.trim()) {
+-    return AWS_PROFILE_ENV;
+-  }
+-  return undefined;
+-}
+-
+-function resolveAwsSdkAuthInfo(): { mode: "aws-sdk"; source: string } {
+-  const applied = new Set(getShellEnvAppliedKeys());
+-  if (process.env[AWS_BEARER_ENV]?.trim()) {
+-    return {
+-      mode: "aws-sdk",
+-      source: resolveEnvSourceLabel({
+-        applied,
+-        envVars: [AWS_BEARER_ENV],
+-        label: AWS_BEARER_ENV,
+-      }),
+-    };
+-  }
+-  if (process.env[AWS_ACCESS_KEY_ENV]?.trim() && process.env[AWS_SECRET_KEY_ENV]?.trim()) {
+-    return {
+-      mode: "aws-sdk",
+-      source: resolveEnvSourceLabel({
+-        applied,
+-        envVars: [AWS_ACCESS_KEY_ENV, AWS_SECRET_KEY_ENV],
+-        label: `${AWS_ACCESS_KEY_ENV} + ${AWS_SECRET_KEY_ENV}`,
+-      }),
+-    };
+-  }
+-  if (process.env[AWS_PROFILE_ENV]?.trim()) {
+-    return {
+-      mode: "aws-sdk",
+-      source: resolveEnvSourceLabel({
+-        applied,
+-        envVars: [AWS_PROFILE_ENV],
+-        label: AWS_PROFILE_ENV,
+-      }),
+-    };
+-  }
+-  return { mode: "aws-sdk", source: "aws-sdk default chain" };
+-}
+-
+-export type ResolvedProviderAuth = {
+-  apiKey?: string;
+-  profileId?: string;
+-  source: string;
+-  mode: "api-key" | "oauth" | "token" | "aws-sdk";
+-};
+-
+-export async function resolveApiKeyForProvider(params: {
+-  provider: string;
+-  cfg?: OpenClawConfig;
+-  profileId?: string;
+-  preferredProfile?: string;
+-  store?: AuthProfileStore;
+-  agentDir?: string;
+-}): Promise<ResolvedProviderAuth> {
+-  const { provider, cfg, profileId, preferredProfile } = params;
+-  const store = params.store ?? ensureAuthProfileStore(params.agentDir);
+-
+-  if (profileId) {
+-    const resolved = await resolveApiKeyForProfile({
+-      cfg,
+-      store,
+-      profileId,
+-      agentDir: params.agentDir,
+-    });
+-    if (!resolved) {
+-      throw new Error(`No credentials found for profile "${profileId}".`);
+-    }
+-    const mode = store.profiles[profileId]?.type;
+-    return {
+-      apiKey: resolved.apiKey,
+-      profileId,
+-      source: `profile:${profileId}`,
+-      mode: mode === "oauth" ? "oauth" : mode === "token" ? "token" : "api-key",
+-    };
+-  }
+-
+-  const authOverride = resolveProviderAuthOverride(cfg, provider);
+-  if (authOverride === "aws-sdk") {
+-    return resolveAwsSdkAuthInfo();
+-  }
+-
+-  const order = resolveAuthProfileOrder({
+-    cfg,
+-    store,
+-    provider,
+-    preferredProfile,
+-  });
+-  for (const candidate of order) {
+-    try {
+-      const resolved = await resolveApiKeyForProfile({
+-        cfg,
+-        store,
+-        profileId: candidate,
+-        agentDir: params.agentDir,
+-      });
+-      if (resolved) {
+-        const mode = store.profiles[candidate]?.type;
+-        return {
+-          apiKey: resolved.apiKey,
+-          profileId: candidate,
+-          source: `profile:${candidate}`,
+-          mode: mode === "oauth" ? "oauth" : mode === "token" ? "token" : "api-key",
+-        };
+-      }
+-    } catch {}
+-  }
+-
+-  const envResolved = resolveEnvApiKey(provider);
+-  if (envResolved) {
+-    return {
+-      apiKey: envResolved.apiKey,
+-      source: envResolved.source,
+-      mode: envResolved.source.includes("OAUTH_TOKEN") ? "oauth" : "api-key",
+-    };
+-  }
+-
+-  const customKey = getCustomProviderApiKey(cfg, provider);
+-  if (customKey) {
+-    return { apiKey: customKey, source: "models.json", mode: "api-key" };
+-  }
+-
+-  const normalized = normalizeProviderId(provider);
+-  if (authOverride === undefined && normalized === "amazon-bedrock") {
+-    return resolveAwsSdkAuthInfo();
+-  }
+-
+-  if (provider === "openai") {
+-    const hasCodex = listProfilesForProvider(store, "openai-codex").length > 0;
+-    if (hasCodex) {
+-      throw new Error(
+-        'No API key found for provider "openai". You are authenticated with OpenAI Codex OAuth. Use openai-codex/gpt-5.2 (ChatGPT OAuth) or set OPENAI_API_KEY for openai/gpt-5.2.',
+-      );
+-    }
+-  }
+-
+-  const authStorePath = resolveAuthStorePathForDisplay(params.agentDir);
+-  const resolvedAgentDir = path.dirname(authStorePath);
+-  throw new Error(
+-    [
+-      `No API key found for provider "${provider}".`,
+-      `Auth store: ${authStorePath} (agentDir: ${resolvedAgentDir}).`,
+-      `Configure auth for this agent (${formatCliCommand("openclaw agents add <id>")}) or copy auth-profiles.json from the main agentDir.`,
+-    ].join(" "),
+-  );
+-}
+-
+-export type EnvApiKeyResult = { apiKey: string; source: string };
+-export type ModelAuthMode = "api-key" | "oauth" | "token" | "mixed" | "aws-sdk" | "unknown";
+-
+-export function resolveEnvApiKey(provider: string): EnvApiKeyResult | null {
+-  const normalized = normalizeProviderId(provider);
+-  const applied = new Set(getShellEnvAppliedKeys());
+-  const pick = (envVar: string): EnvApiKeyResult | null => {
+-    const value = process.env[envVar]?.trim();
+-    if (!value) {
+-      return null;
+-    }
+-    const source = applied.has(envVar) ? `shell env: ${envVar}` : `env: ${envVar}`;
+-    return { apiKey: value, source };
+-  };
+-
+-  if (normalized === "github-copilot") {
+-    return pick("COPILOT_GITHUB_TOKEN") ?? pick("GH_TOKEN") ?? pick("GITHUB_TOKEN");
+-  }
+-
+-  if (normalized === "anthropic") {
+-    return pick("ANTHROPIC_OAUTH_TOKEN") ?? pick("ANTHROPIC_API_KEY");
+-  }
+-
+-  if (normalized === "chutes") {
+-    return pick("CHUTES_OAUTH_TOKEN") ?? pick("CHUTES_API_KEY");
+-  }
+-
+-  if (normalized === "zai") {
+-    return pick("ZAI_API_KEY") ?? pick("Z_AI_API_KEY");
+-  }
+-
+-  if (normalized === "google-vertex") {
+-    const envKey = getEnvApiKey(normalized);
+-    if (!envKey) {
+-      return null;
+-    }
+-    return { apiKey: envKey, source: "gcloud adc" };
+-  }
+-
+-  if (normalized === "opencode") {
+-    return pick("OPENCODE_API_KEY") ?? pick("OPENCODE_ZEN_API_KEY");
+-  }
+-
+-  if (normalized === "qwen-portal") {
+-    return pick("QWEN_OAUTH_TOKEN") ?? pick("QWEN_PORTAL_API_KEY");
+-  }
+-
+-  if (normalized === "minimax-portal") {
+-    return pick("MINIMAX_OAUTH_TOKEN") ?? pick("MINIMAX_API_KEY");
+-  }
+-
+-  if (normalized === "kimi-coding") {
+-    return pick("KIMI_API_KEY") ?? pick("KIMICODE_API_KEY");
+-  }
+-
+-  const envMap: Record<string, string> = {
+-    openai: "OPENAI_API_KEY",
+-    google: "GEMINI_API_KEY",
+-    groq: "GROQ_API_KEY",
+-    deepgram: "DEEPGRAM_API_KEY",
+-    cerebras: "CEREBRAS_API_KEY",
+-    xai: "XAI_API_KEY",
+-    openrouter: "OPENROUTER_API_KEY",
+-    "vercel-ai-gateway": "AI_GATEWAY_API_KEY",
+-    "cloudflare-ai-gateway": "CLOUDFLARE_AI_GATEWAY_API_KEY",
+-    moonshot: "MOONSHOT_API_KEY",
+-    minimax: "MINIMAX_API_KEY",
+-    xiaomi: "XIAOMI_API_KEY",
+-    synthetic: "SYNTHETIC_API_KEY",
+-    venice: "VENICE_API_KEY",
+-    mistral: "MISTRAL_API_KEY",
+-    opencode: "OPENCODE_API_KEY",
+-  };
+-  const envVar = envMap[normalized];
+-  if (!envVar) {
+-    return null;
+-  }
+-  return pick(envVar);
+-}
+-
+-export function resolveModelAuthMode(
+-  provider?: string,
+-  cfg?: OpenClawConfig,
+-  store?: AuthProfileStore,
+-): ModelAuthMode | undefined {
+-  const resolved = provider?.trim();
+-  if (!resolved) {
+-    return undefined;
+-  }
+-
+-  const authOverride = resolveProviderAuthOverride(cfg, resolved);
+-  if (authOverride === "aws-sdk") {
+-    return "aws-sdk";
+-  }
+-
+-  const authStore = store ?? ensureAuthProfileStore();
+-  const profiles = listProfilesForProvider(authStore, resolved);
+-  if (profiles.length > 0) {
+-    const modes = new Set(
+-      profiles
+-        .map((id) => authStore.profiles[id]?.type)
+-        .filter((mode): mode is "api_key" | "oauth" | "token" => Boolean(mode)),
+-    );
+-    const distinct = ["oauth", "token", "api_key"].filter((k) =>
+-      modes.has(k as "oauth" | "token" | "api_key"),
+-    );
+-    if (distinct.length >= 2) {
+-      return "mixed";
+-    }
+-    if (modes.has("oauth")) {
+-      return "oauth";
+-    }
+-    if (modes.has("token")) {
+-      return "token";
+-    }
+-    if (modes.has("api_key")) {
+-      return "api-key";
+-    }
+-  }
+-
+-  if (authOverride === undefined && normalizeProviderId(resolved) === "amazon-bedrock") {
+-    return "aws-sdk";
+-  }
+-
+-  const envKey = resolveEnvApiKey(resolved);
+-  if (envKey?.apiKey) {
+-    return envKey.source.includes("OAUTH_TOKEN") ? "oauth" : "api-key";
+-  }
+-
+-  if (getCustomProviderApiKey(cfg, resolved)) {
+-    return "api-key";
+-  }
+-
+-  return "unknown";
+-}
+-
+-export async function getApiKeyForModel(params: {
+-  model: Model<Api>;
+-  cfg?: OpenClawConfig;
+-  profileId?: string;
+-  preferredProfile?: string;
+-  store?: AuthProfileStore;
+-  agentDir?: string;
+-}): Promise<ResolvedProviderAuth> {
+-  return resolveApiKeyForProvider({
+-    provider: params.model.provider,
+-    cfg: params.cfg,
+-    profileId: params.profileId,
+-    preferredProfile: params.preferredProfile,
+-    store: params.store,
+-    agentDir: params.agentDir,
+-  });
+-}
+-
+-export function requireApiKey(auth: ResolvedProviderAuth, provider: string): string {
+-  const key = auth.apiKey?.trim();
+-  if (key) {
+-    return key;
+-  }
+-  throw new Error(`No API key resolved for provider "${provider}" (auth mode: ${auth.mode}).`);
+-}
+diff --git a/src/agents/models-config.providers.ollama.test.ts b/src/agents/models-config.providers.ollama.test.ts
+deleted file mode 100644
+index da7c3f373ec..00000000000
+--- a/src/agents/models-config.providers.ollama.test.ts
++++ /dev/null
+@@ -1,15 +0,0 @@
+-import { mkdtempSync } from "node:fs";
+-import { tmpdir } from "node:os";
+-import { join } from "node:path";
+-import { describe, expect, it } from "vitest";
+-import { resolveImplicitProviders } from "./models-config.providers.js";
+-
+-describe("Ollama provider", () => {
+-  it("should not include ollama when no API key is configured", async () => {
+-    const agentDir = mkdtempSync(join(tmpdir(), "openclaw-test-"));
+-    const providers = await resolveImplicitProviders({ agentDir });
+-
+-    // Ollama requires explicit configuration via OLLAMA_API_KEY env var or profile
+-    expect(providers?.ollama).toBeUndefined();
+-  });
+-});
+diff --git a/src/agents/models-config.providers.ts b/src/agents/models-config.providers.ts
+deleted file mode 100644
+index e49b150c764..00000000000
+--- a/src/agents/models-config.providers.ts
++++ /dev/null
+@@ -1,586 +0,0 @@
+-import type { OpenClawConfig } from "../config/config.js";
+-import type { ModelDefinitionConfig } from "../config/types.models.js";
+-import {
+-  DEFAULT_COPILOT_API_BASE_URL,
+-  resolveCopilotApiToken,
+-} from "../providers/github-copilot-token.js";
+-import { ensureAuthProfileStore, listProfilesForProvider } from "./auth-profiles.js";
+-import { discoverBedrockModels } from "./bedrock-discovery.js";
+-import {
+-  buildCloudflareAiGatewayModelDefinition,
+-  resolveCloudflareAiGatewayBaseUrl,
+-} from "./cloudflare-ai-gateway.js";
+-import { resolveAwsSdkEnvVarName, resolveEnvApiKey } from "./model-auth.js";
+-import {
+-  buildSyntheticModelDefinition,
+-  SYNTHETIC_BASE_URL,
+-  SYNTHETIC_MODEL_CATALOG,
+-} from "./synthetic-models.js";
+-import { discoverVeniceModels, VENICE_BASE_URL } from "./venice-models.js";
+-
+-type ModelsConfig = NonNullable<OpenClawConfig["models"]>;
+-export type ProviderConfig = NonNullable<ModelsConfig["providers"]>[string];
+-
+-const MINIMAX_API_BASE_URL = "https://api.minimax.chat/v1";
+-const MINIMAX_PORTAL_BASE_URL = "https://api.minimax.io/anthropic";
+-const MINIMAX_DEFAULT_MODEL_ID = "MiniMax-M2.1";
+-const MINIMAX_DEFAULT_VISION_MODEL_ID = "MiniMax-VL-01";
+-const MINIMAX_DEFAULT_CONTEXT_WINDOW = 200000;
+-const MINIMAX_DEFAULT_MAX_TOKENS = 8192;
+-const MINIMAX_OAUTH_PLACEHOLDER = "minimax-oauth";
+-// Pricing: MiniMax doesn't publish public rates. Override in models.json for accurate costs.
+-const MINIMAX_API_COST = {
+-  input: 15,
+-  output: 60,
+-  cacheRead: 2,
+-  cacheWrite: 10,
+-};
+-
+-const XIAOMI_BASE_URL = "https://api.xiaomimimo.com/anthropic";
+-export const XIAOMI_DEFAULT_MODEL_ID = "mimo-v2-flash";
+-const XIAOMI_DEFAULT_CONTEXT_WINDOW = 262144;
+-const XIAOMI_DEFAULT_MAX_TOKENS = 8192;
+-const XIAOMI_DEFAULT_COST = {
+-  input: 0,
+-  output: 0,
+-  cacheRead: 0,
+-  cacheWrite: 0,
+-};
+-
+-const MOONSHOT_BASE_URL = "https://api.moonshot.ai/v1";
+-const MOONSHOT_DEFAULT_MODEL_ID = "kimi-k2.5";
+-const MOONSHOT_DEFAULT_CONTEXT_WINDOW = 256000;
+-const MOONSHOT_DEFAULT_MAX_TOKENS = 8192;
+-const MOONSHOT_DEFAULT_COST = {
+-  input: 0,
+-  output: 0,
+-  cacheRead: 0,
+-  cacheWrite: 0,
+-};
+-
+-const QWEN_PORTAL_BASE_URL = "https://portal.qwen.ai/v1";
+-const QWEN_PORTAL_OAUTH_PLACEHOLDER = "qwen-oauth";
+-const QWEN_PORTAL_DEFAULT_CONTEXT_WINDOW = 128000;
+-const QWEN_PORTAL_DEFAULT_MAX_TOKENS = 8192;
+-const QWEN_PORTAL_DEFAULT_COST = {
+-  input: 0,
+-  output: 0,
+-  cacheRead: 0,
+-  cacheWrite: 0,
+-};
+-
+-const OLLAMA_BASE_URL = "http://127.0.0.1:11434/v1";
+-const OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
+-const OLLAMA_DEFAULT_CONTEXT_WINDOW = 128000;
+-const OLLAMA_DEFAULT_MAX_TOKENS = 8192;
+-const OLLAMA_DEFAULT_COST = {
+-  input: 0,
+-  output: 0,
+-  cacheRead: 0,
+-  cacheWrite: 0,
+-};
+-
+-interface OllamaModel {
+-  name: string;
+-  modified_at: string;
+-  size: number;
+-  digest: string;
+-  details?: {
+-    family?: string;
+-    parameter_size?: string;
+-  };
+-}
+-
+-interface OllamaTagsResponse {
+-  models: OllamaModel[];
+-}
+-
+-async function discoverOllamaModels(): Promise<ModelDefinitionConfig[]> {
+-  // Skip Ollama discovery in test environments
+-  if (process.env.VITEST || process.env.NODE_ENV === "test") {
+-    return [];
+-  }
+-  try {
+-    const response = await fetch(`${OLLAMA_API_BASE_URL}/api/tags`, {
+-      signal: AbortSignal.timeout(5000),
+-    });
+-    if (!response.ok) {
+-      console.warn(`Failed to discover Ollama models: ${response.status}`);
+-      return [];
+-    }
+-    const data = (await response.json()) as OllamaTagsResponse;
+-    if (!data.models || data.models.length === 0) {
+-      console.warn("No Ollama models found on local instance");
+-      return [];
+-    }
+-    return data.models.map((model) => {
+-      const modelId = model.name;
+-      const isReasoning =
+-        modelId.toLowerCase().includes("r1") || modelId.toLowerCase().includes("reasoning");
+-      return {
+-        id: modelId,
+-        name: modelId,
+-        reasoning: isReasoning,
+-        input: ["text"],
+-        cost: OLLAMA_DEFAULT_COST,
+-        contextWindow: OLLAMA_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: OLLAMA_DEFAULT_MAX_TOKENS,
+-      };
+-    });
+-  } catch (error) {
+-    console.warn(`Failed to discover Ollama models: ${String(error)}`);
+-    return [];
+-  }
+-}
+-
+-function normalizeApiKeyConfig(value: string): string {
+-  const trimmed = value.trim();
+-  const match = /^\$\{([A-Z0-9_]+)\}$/.exec(trimmed);
+-  return match?.[1] ?? trimmed;
+-}
+-
+-function resolveEnvApiKeyVarName(provider: string): string | undefined {
+-  const resolved = resolveEnvApiKey(provider);
+-  if (!resolved) {
+-    return undefined;
+-  }
+-  const match = /^(?:env: |shell env: )([A-Z0-9_]+)$/.exec(resolved.source);
+-  return match ? match[1] : undefined;
+-}
+-
+-function resolveAwsSdkApiKeyVarName(): string {
+-  return resolveAwsSdkEnvVarName() ?? "AWS_PROFILE";
+-}
+-
+-function resolveApiKeyFromProfiles(params: {
+-  provider: string;
+-  store: ReturnType<typeof ensureAuthProfileStore>;
+-}): string | undefined {
+-  const ids = listProfilesForProvider(params.store, params.provider);
+-  for (const id of ids) {
+-    const cred = params.store.profiles[id];
+-    if (!cred) {
+-      continue;
+-    }
+-    if (cred.type === "api_key") {
+-      return cred.key;
+-    }
+-    if (cred.type === "token") {
+-      return cred.token;
+-    }
+-  }
+-  return undefined;
+-}
+-
+-export function normalizeGoogleModelId(id: string): string {
+-  if (id === "gemini-3-pro") {
+-    return "gemini-3-pro-preview";
+-  }
+-  if (id === "gemini-3-flash") {
+-    return "gemini-3-flash-preview";
+-  }
+-  return id;
+-}
+-
+-function normalizeGoogleProvider(provider: ProviderConfig): ProviderConfig {
+-  let mutated = false;
+-  const models = provider.models.map((model) => {
+-    const nextId = normalizeGoogleModelId(model.id);
+-    if (nextId === model.id) {
+-      return model;
+-    }
+-    mutated = true;
+-    return { ...model, id: nextId };
+-  });
+-  return mutated ? { ...provider, models } : provider;
+-}
+-
+-export function normalizeProviders(params: {
+-  providers: ModelsConfig["providers"];
+-  agentDir: string;
+-}): ModelsConfig["providers"] {
+-  const { providers } = params;
+-  if (!providers) {
+-    return providers;
+-  }
+-  const authStore = ensureAuthProfileStore(params.agentDir, {
+-    allowKeychainPrompt: false,
+-  });
+-  let mutated = false;
+-  const next: Record<string, ProviderConfig> = {};
+-
+-  for (const [key, provider] of Object.entries(providers)) {
+-    const normalizedKey = key.trim();
+-    let normalizedProvider = provider;
+-
+-    // Fix common misconfig: apiKey set to "${ENV_VAR}" instead of "ENV_VAR".
+-    if (
+-      normalizedProvider.apiKey &&
+-      normalizeApiKeyConfig(normalizedProvider.apiKey) !== normalizedProvider.apiKey
+-    ) {
+-      mutated = true;
+-      normalizedProvider = {
+-        ...normalizedProvider,
+-        apiKey: normalizeApiKeyConfig(normalizedProvider.apiKey),
+-      };
+-    }
+-
+-    // If a provider defines models, pi's ModelRegistry requires apiKey to be set.
+-    // Fill it from the environment or auth profiles when possible.
+-    const hasModels =
+-      Array.isArray(normalizedProvider.models) && normalizedProvider.models.length > 0;
+-    if (hasModels && !normalizedProvider.apiKey?.trim()) {
+-      const authMode =
+-        normalizedProvider.auth ?? (normalizedKey === "amazon-bedrock" ? "aws-sdk" : undefined);
+-      if (authMode === "aws-sdk") {
+-        const apiKey = resolveAwsSdkApiKeyVarName();
+-        mutated = true;
+-        normalizedProvider = { ...normalizedProvider, apiKey };
+-      } else {
+-        const fromEnv = resolveEnvApiKeyVarName(normalizedKey);
+-        const fromProfiles = resolveApiKeyFromProfiles({
+-          provider: normalizedKey,
+-          store: authStore,
+-        });
+-        const apiKey = fromEnv ?? fromProfiles;
+-        if (apiKey?.trim()) {
+-          mutated = true;
+-          normalizedProvider = { ...normalizedProvider, apiKey };
+-        }
+-      }
+-    }
+-
+-    if (normalizedKey === "google") {
+-      const googleNormalized = normalizeGoogleProvider(normalizedProvider);
+-      if (googleNormalized !== normalizedProvider) {
+-        mutated = true;
+-      }
+-      normalizedProvider = googleNormalized;
+-    }
+-
+-    next[key] = normalizedProvider;
+-  }
+-
+-  return mutated ? next : providers;
+-}
+-
+-function buildMinimaxProvider(): ProviderConfig {
+-  return {
+-    baseUrl: MINIMAX_API_BASE_URL,
+-    api: "openai-completions",
+-    models: [
+-      {
+-        id: MINIMAX_DEFAULT_MODEL_ID,
+-        name: "MiniMax M2.1",
+-        reasoning: false,
+-        input: ["text"],
+-        cost: MINIMAX_API_COST,
+-        contextWindow: MINIMAX_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: MINIMAX_DEFAULT_MAX_TOKENS,
+-      },
+-      {
+-        id: MINIMAX_DEFAULT_VISION_MODEL_ID,
+-        name: "MiniMax VL 01",
+-        reasoning: false,
+-        input: ["text", "image"],
+-        cost: MINIMAX_API_COST,
+-        contextWindow: MINIMAX_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: MINIMAX_DEFAULT_MAX_TOKENS,
+-      },
+-    ],
+-  };
+-}
+-
+-function buildMinimaxPortalProvider(): ProviderConfig {
+-  return {
+-    baseUrl: MINIMAX_PORTAL_BASE_URL,
+-    api: "anthropic-messages",
+-    models: [
+-      {
+-        id: MINIMAX_DEFAULT_MODEL_ID,
+-        name: "MiniMax M2.1",
+-        reasoning: false,
+-        input: ["text"],
+-        cost: MINIMAX_API_COST,
+-        contextWindow: MINIMAX_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: MINIMAX_DEFAULT_MAX_TOKENS,
+-      },
+-    ],
+-  };
+-}
+-
+-function buildMoonshotProvider(): ProviderConfig {
+-  return {
+-    baseUrl: MOONSHOT_BASE_URL,
+-    api: "openai-completions",
+-    models: [
+-      {
+-        id: MOONSHOT_DEFAULT_MODEL_ID,
+-        name: "Kimi K2.5",
+-        reasoning: false,
+-        input: ["text"],
+-        cost: MOONSHOT_DEFAULT_COST,
+-        contextWindow: MOONSHOT_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: MOONSHOT_DEFAULT_MAX_TOKENS,
+-      },
+-    ],
+-  };
+-}
+-
+-function buildQwenPortalProvider(): ProviderConfig {
+-  return {
+-    baseUrl: QWEN_PORTAL_BASE_URL,
+-    api: "openai-completions",
+-    models: [
+-      {
+-        id: "coder-model",
+-        name: "Qwen Coder",
+-        reasoning: false,
+-        input: ["text"],
+-        cost: QWEN_PORTAL_DEFAULT_COST,
+-        contextWindow: QWEN_PORTAL_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: QWEN_PORTAL_DEFAULT_MAX_TOKENS,
+-      },
+-      {
+-        id: "vision-model",
+-        name: "Qwen Vision",
+-        reasoning: false,
+-        input: ["text", "image"],
+-        cost: QWEN_PORTAL_DEFAULT_COST,
+-        contextWindow: QWEN_PORTAL_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: QWEN_PORTAL_DEFAULT_MAX_TOKENS,
+-      },
+-    ],
+-  };
+-}
+-
+-function buildSyntheticProvider(): ProviderConfig {
+-  return {
+-    baseUrl: SYNTHETIC_BASE_URL,
+-    api: "anthropic-messages",
+-    models: SYNTHETIC_MODEL_CATALOG.map(buildSyntheticModelDefinition),
+-  };
+-}
+-
+-export function buildXiaomiProvider(): ProviderConfig {
+-  return {
+-    baseUrl: XIAOMI_BASE_URL,
+-    api: "anthropic-messages",
+-    models: [
+-      {
+-        id: XIAOMI_DEFAULT_MODEL_ID,
+-        name: "Xiaomi MiMo V2 Flash",
+-        reasoning: false,
+-        input: ["text"],
+-        cost: XIAOMI_DEFAULT_COST,
+-        contextWindow: XIAOMI_DEFAULT_CONTEXT_WINDOW,
+-        maxTokens: XIAOMI_DEFAULT_MAX_TOKENS,
+-      },
+-    ],
+-  };
+-}
+-
+-async function buildVeniceProvider(): Promise<ProviderConfig> {
+-  const models = await discoverVeniceModels();
+-  return {
+-    baseUrl: VENICE_BASE_URL,
+-    api: "openai-completions",
+-    models,
+-  };
+-}
+-
+-async function buildOllamaProvider(): Promise<ProviderConfig> {
+-  const models = await discoverOllamaModels();
+-  return {
+-    baseUrl: OLLAMA_BASE_URL,
+-    api: "openai-completions",
+-    models,
+-  };
+-}
+-
+-export async function resolveImplicitProviders(params: {
+-  agentDir: string;
+-}): Promise<ModelsConfig["providers"]> {
+-  const providers: Record<string, ProviderConfig> = {};
+-  const authStore = ensureAuthProfileStore(params.agentDir, {
+-    allowKeychainPrompt: false,
+-  });
+-
+-  const minimaxKey =
+-    resolveEnvApiKeyVarName("minimax") ??
+-    resolveApiKeyFromProfiles({ provider: "minimax", store: authStore });
+-  if (minimaxKey) {
+-    providers.minimax = { ...buildMinimaxProvider(), apiKey: minimaxKey };
+-  }
+-
+-  const minimaxOauthProfile = listProfilesForProvider(authStore, "minimax-portal");
+-  if (minimaxOauthProfile.length > 0) {
+-    providers["minimax-portal"] = {
+-      ...buildMinimaxPortalProvider(),
+-      apiKey: MINIMAX_OAUTH_PLACEHOLDER,
+-    };
+-  }
+-
+-  const moonshotKey =
+-    resolveEnvApiKeyVarName("moonshot") ??
+-    resolveApiKeyFromProfiles({ provider: "moonshot", store: authStore });
+-  if (moonshotKey) {
+-    providers.moonshot = { ...buildMoonshotProvider(), apiKey: moonshotKey };
+-  }
+-
+-  const syntheticKey =
+-    resolveEnvApiKeyVarName("synthetic") ??
+-    resolveApiKeyFromProfiles({ provider: "synthetic", store: authStore });
+-  if (syntheticKey) {
+-    providers.synthetic = { ...buildSyntheticProvider(), apiKey: syntheticKey };
+-  }
+-
+-  const veniceKey =
+-    resolveEnvApiKeyVarName("venice") ??
+-    resolveApiKeyFromProfiles({ provider: "venice", store: authStore });
+-  if (veniceKey) {
+-    providers.venice = { ...(await buildVeniceProvider()), apiKey: veniceKey };
+-  }
+-
+-  const qwenProfiles = listProfilesForProvider(authStore, "qwen-portal");
+-  if (qwenProfiles.length > 0) {
+-    providers["qwen-portal"] = {
+-      ...buildQwenPortalProvider(),
+-      apiKey: QWEN_PORTAL_OAUTH_PLACEHOLDER,
+-    };
+-  }
+-
+-  const xiaomiKey =
+-    resolveEnvApiKeyVarName("xiaomi") ??
+-    resolveApiKeyFromProfiles({ provider: "xiaomi", store: authStore });
+-  if (xiaomiKey) {
+-    providers.xiaomi = { ...buildXiaomiProvider(), apiKey: xiaomiKey };
+-  }
+-
+-  const cloudflareProfiles = listProfilesForProvider(authStore, "cloudflare-ai-gateway");
+-  for (const profileId of cloudflareProfiles) {
+-    const cred = authStore.profiles[profileId];
+-    if (cred?.type !== "api_key") {
+-      continue;
+-    }
+-    const accountId = cred.metadata?.accountId?.trim();
+-    const gatewayId = cred.metadata?.gatewayId?.trim();
+-    if (!accountId || !gatewayId) {
+-      continue;
+-    }
+-    const baseUrl = resolveCloudflareAiGatewayBaseUrl({ accountId, gatewayId });
+-    if (!baseUrl) {
+-      continue;
+-    }
+-    const apiKey = resolveEnvApiKeyVarName("cloudflare-ai-gateway") ?? cred.key?.trim() ?? "";
+-    if (!apiKey) {
+-      continue;
+-    }
+-    providers["cloudflare-ai-gateway"] = {
+-      baseUrl,
+-      api: "anthropic-messages",
+-      apiKey,
+-      models: [buildCloudflareAiGatewayModelDefinition()],
+-    };
+-    break;
+-  }
+-
+-  // Ollama provider - only add if explicitly configured
+-  const ollamaKey =
+-    resolveEnvApiKeyVarName("ollama") ??
+-    resolveApiKeyFromProfiles({ provider: "ollama", store: authStore });
+-  if (ollamaKey) {
+-    providers.ollama = { ...(await buildOllamaProvider()), apiKey: ollamaKey };
+-  }
+-
+-  return providers;
+-}
+-
+-export async function resolveImplicitCopilotProvider(params: {
+-  agentDir: string;
+-  env?: NodeJS.ProcessEnv;
+-}): Promise<ProviderConfig | null> {
+-  const env = params.env ?? process.env;
+-  const authStore = ensureAuthProfileStore(params.agentDir, { allowKeychainPrompt: false });
+-  const hasProfile = listProfilesForProvider(authStore, "github-copilot").length > 0;
+-  const envToken = env.COPILOT_GITHUB_TOKEN ?? env.GH_TOKEN ?? env.GITHUB_TOKEN;
+-  const githubToken = (envToken ?? "").trim();
+-
+-  if (!hasProfile && !githubToken) {
+-    return null;
+-  }
+-
+-  let selectedGithubToken = githubToken;
+-  if (!selectedGithubToken && hasProfile) {
+-    // Use the first available profile as a default for discovery (it will be
+-    // re-resolved per-run by the embedded runner).
+-    const profileId = listProfilesForProvider(authStore, "github-copilot")[0];
+-    const profile = profileId ? authStore.profiles[profileId] : undefined;
+-    if (profile && profile.type === "token") {
+-      selectedGithubToken = profile.token;
+-    }
+-  }
+-
+-  let baseUrl = DEFAULT_COPILOT_API_BASE_URL;
+-  if (selectedGithubToken) {
+-    try {
+-      const token = await resolveCopilotApiToken({
+-        githubToken: selectedGithubToken,
+-        env,
+-      });
+-      baseUrl = token.baseUrl;
+-    } catch {
+-      baseUrl = DEFAULT_COPILOT_API_BASE_URL;
+-    }
+-  }
+-
+-  // pi-coding-agent's ModelRegistry marks a model "available" only if its
+-  // `AuthStorage` has auth configured for that provider (via auth.json/env/etc).
+-  // Our Copilot auth lives in OpenClaw's auth-profiles store instead, so we also
+-  // write a runtime-only auth.json entry for pi-coding-agent to pick up.
+-  //
+-  // This is safe because it's (1) within OpenClaw's agent dir, (2) contains the
+-  // GitHub token (not the exchanged Copilot token), and (3) matches existing
+-  // patterns for OAuth-like providers in pi-coding-agent.
+-  // Note: we deliberately do not write pi-coding-agent's `auth.json` here.
+-  // OpenClaw uses its own auth store and exchanges tokens at runtime.
+-  // `models list` uses OpenClaw's auth heuristics for availability.
+-
+-  // We intentionally do NOT define custom models for Copilot in models.json.
+-  // pi-coding-agent treats providers with models as replacements requiring apiKey.
+-  // We only override baseUrl; the model list comes from pi-ai built-ins.
+-  return {
+-    baseUrl,
+-    models: [],
+-  } satisfies ProviderConfig;
+-}
+-
+-export async function resolveImplicitBedrockProvider(params: {
+-  agentDir: string;
+-  config?: OpenClawConfig;
+-  env?: NodeJS.ProcessEnv;
+-}): Promise<ProviderConfig | null> {
+-  const env = params.env ?? process.env;
+-  const discoveryConfig = params.config?.models?.bedrockDiscovery;
+-  const enabled = discoveryConfig?.enabled;
+-  const hasAwsCreds = resolveAwsSdkEnvVarName(env) !== undefined;
+-  if (enabled === false) {
+-    return null;
+-  }
+-  if (enabled !== true && !hasAwsCreds) {
+-    return null;
+-  }
+-
+-  const region = discoveryConfig?.region ?? env.AWS_REGION ?? env.AWS_DEFAULT_REGION ?? "us-east-1";
+-  const models = await discoverBedrockModels({ region, config: discoveryConfig });
+-  if (models.length === 0) {
+-    return null;
+-  }
+-
+-  return {
+-    baseUrl: `https://bedrock-runtime.${region}.amazonaws.com`,
+-    api: "bedrock-converse-stream",
+-    auth: "aws-sdk",
+-    models,
+-  } satisfies ProviderConfig;
+-}
+diff --git a/src/agents/openclaw-tools.ts b/src/agents/openclaw-tools.ts
+deleted file mode 100644
+index b38645f1480..00000000000
+--- a/src/agents/openclaw-tools.ts
++++ /dev/null
+@@ -1,170 +0,0 @@
+-import type { OpenClawConfig } from "../config/config.js";
+-import type { GatewayMessageChannel } from "../utils/message-channel.js";
+-import type { AnyAgentTool } from "./tools/common.js";
+-import { resolvePluginTools } from "../plugins/tools.js";
+-import { resolveSessionAgentId } from "./agent-scope.js";
+-import { createAgentsListTool } from "./tools/agents-list-tool.js";
+-import { createBrowserTool } from "./tools/browser-tool.js";
+-import { createCanvasTool } from "./tools/canvas-tool.js";
+-import { createCronTool } from "./tools/cron-tool.js";
+-import { createGatewayTool } from "./tools/gateway-tool.js";
+-import { createImageTool } from "./tools/image-tool.js";
+-import { createMessageTool } from "./tools/message-tool.js";
+-import { createNodesTool } from "./tools/nodes-tool.js";
+-import { createSessionStatusTool } from "./tools/session-status-tool.js";
+-import { createSessionsHistoryTool } from "./tools/sessions-history-tool.js";
+-import { createSessionsListTool } from "./tools/sessions-list-tool.js";
+-import { createSessionsSendTool } from "./tools/sessions-send-tool.js";
+-import { createSessionsSpawnTool } from "./tools/sessions-spawn-tool.js";
+-import { createTtsTool } from "./tools/tts-tool.js";
+-import { createWebFetchTool, createWebSearchTool } from "./tools/web-tools.js";
+-
+-export function createOpenClawTools(options?: {
+-  sandboxBrowserBridgeUrl?: string;
+-  allowHostBrowserControl?: boolean;
+-  agentSessionKey?: string;
+-  agentChannel?: GatewayMessageChannel;
+-  agentAccountId?: string;
+-  /** Delivery target (e.g. telegram:group:123:topic:456) for topic/thread routing. */
+-  agentTo?: string;
+-  /** Thread/topic identifier for routing replies to the originating thread. */
+-  agentThreadId?: string | number;
+-  /** Group id for channel-level tool policy inheritance. */
+-  agentGroupId?: string | null;
+-  /** Group channel label for channel-level tool policy inheritance. */
+-  agentGroupChannel?: string | null;
+-  /** Group space label for channel-level tool policy inheritance. */
+-  agentGroupSpace?: string | null;
+-  agentDir?: string;
+-  sandboxRoot?: string;
+-  workspaceDir?: string;
+-  sandboxed?: boolean;
+-  config?: OpenClawConfig;
+-  pluginToolAllowlist?: string[];
+-  /** Current channel ID for auto-threading (Slack). */
+-  currentChannelId?: string;
+-  /** Current thread timestamp for auto-threading (Slack). */
+-  currentThreadTs?: string;
+-  /** Reply-to mode for Slack auto-threading. */
+-  replyToMode?: "off" | "first" | "all";
+-  /** Mutable ref to track if a reply was sent (for "first" mode). */
+-  hasRepliedRef?: { value: boolean };
+-  /** If true, the model has native vision capability */
+-  modelHasVision?: boolean;
+-  /** Explicit agent ID override for cron/hook sessions. */
+-  requesterAgentIdOverride?: string;
+-  /** Require explicit message targets (no implicit last-route sends). */
+-  requireExplicitMessageTarget?: boolean;
+-  /** If true, omit the message tool from the tool list. */
+-  disableMessageTool?: boolean;
+-}): AnyAgentTool[] {
+-  const imageTool = options?.agentDir?.trim()
+-    ? createImageTool({
+-        config: options?.config,
+-        agentDir: options.agentDir,
+-        sandboxRoot: options?.sandboxRoot,
+-        modelHasVision: options?.modelHasVision,
+-      })
+-    : null;
+-  const webSearchTool = createWebSearchTool({
+-    config: options?.config,
+-    sandboxed: options?.sandboxed,
+-  });
+-  const webFetchTool = createWebFetchTool({
+-    config: options?.config,
+-    sandboxed: options?.sandboxed,
+-  });
+-  const messageTool = options?.disableMessageTool
+-    ? null
+-    : createMessageTool({
+-        agentAccountId: options?.agentAccountId,
+-        agentSessionKey: options?.agentSessionKey,
+-        config: options?.config,
+-        currentChannelId: options?.currentChannelId,
+-        currentChannelProvider: options?.agentChannel,
+-        currentThreadTs: options?.currentThreadTs,
+-        replyToMode: options?.replyToMode,
+-        hasRepliedRef: options?.hasRepliedRef,
+-        sandboxRoot: options?.sandboxRoot,
+-        requireExplicitTarget: options?.requireExplicitMessageTarget,
+-      });
+-  const tools: AnyAgentTool[] = [
+-    createBrowserTool({
+-      sandboxBridgeUrl: options?.sandboxBrowserBridgeUrl,
+-      allowHostControl: options?.allowHostBrowserControl,
+-    }),
+-    createCanvasTool(),
+-    createNodesTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      config: options?.config,
+-    }),
+-    createCronTool({
+-      agentSessionKey: options?.agentSessionKey,
+-    }),
+-    ...(messageTool ? [messageTool] : []),
+-    createTtsTool({
+-      agentChannel: options?.agentChannel,
+-      config: options?.config,
+-    }),
+-    createGatewayTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      config: options?.config,
+-    }),
+-    createAgentsListTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      requesterAgentIdOverride: options?.requesterAgentIdOverride,
+-    }),
+-    createSessionsListTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      sandboxed: options?.sandboxed,
+-    }),
+-    createSessionsHistoryTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      sandboxed: options?.sandboxed,
+-    }),
+-    createSessionsSendTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      agentChannel: options?.agentChannel,
+-      sandboxed: options?.sandboxed,
+-    }),
+-    createSessionsSpawnTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      agentChannel: options?.agentChannel,
+-      agentAccountId: options?.agentAccountId,
+-      agentTo: options?.agentTo,
+-      agentThreadId: options?.agentThreadId,
+-      agentGroupId: options?.agentGroupId,
+-      agentGroupChannel: options?.agentGroupChannel,
+-      agentGroupSpace: options?.agentGroupSpace,
+-      sandboxed: options?.sandboxed,
+-      requesterAgentIdOverride: options?.requesterAgentIdOverride,
+-    }),
+-    createSessionStatusTool({
+-      agentSessionKey: options?.agentSessionKey,
+-      config: options?.config,
+-    }),
+-    ...(webSearchTool ? [webSearchTool] : []),
+-    ...(webFetchTool ? [webFetchTool] : []),
+-    ...(imageTool ? [imageTool] : []),
+-  ];
+-
+-  const pluginTools = resolvePluginTools({
+-    context: {
+-      config: options?.config,
+-      workspaceDir: options?.workspaceDir,
+-      agentDir: options?.agentDir,
+-      agentId: resolveSessionAgentId({
+-        sessionKey: options?.agentSessionKey,
+-        config: options?.config,
+-      }),
+-      sessionKey: options?.agentSessionKey,
+-      messageChannel: options?.agentChannel,
+-      agentAccountId: options?.agentAccountId,
+-      sandboxed: options?.sandboxed,
+-    },
+-    existingToolNames: new Set(tools.map((tool) => tool.name)),
+-    toolAllowlist: options?.pluginToolAllowlist,
+-  });
+-
+-  return [...tools, ...pluginTools];
+-}
+diff --git a/src/agents/pi-embedded-runner/compact.ts b/src/agents/pi-embedded-runner/compact.ts
+index 10aa9f89d34..c1a25b2986c 100644
+--- a/src/agents/pi-embedded-runner/compact.ts
++++ b/src/agents/pi-embedded-runner/compact.ts
+@@ -424,10 +424,9 @@ export async function compactEmbeddedPiSessionDirect(
+         const validated = transcriptPolicy.validateAnthropicTurns
+           ? validateAnthropicTurns(validatedGemini)
+           : validatedGemini;
+-        const limited = limitHistoryTurns(
+-          validated,
+-          getDmHistoryLimitFromSessionKey(params.sessionKey, params.config),
+-        );
++        const dmLimit =
++          getDmHistoryLimitFromSessionKey(params.sessionKey, params.config) ?? 20;
++        const limited = limitHistoryTurns(validated, dmLimit);
+         if (limited.length > 0) {
+           session.agent.replaceMessages(limited);
+         }
+diff --git a/src/agents/pi-embedded-runner/run/attempt.ts b/src/agents/pi-embedded-runner/run/attempt.ts
+index abb624fbee2..d09c161f4b8 100644
+--- a/src/agents/pi-embedded-runner/run/attempt.ts
++++ b/src/agents/pi-embedded-runner/run/attempt.ts
+@@ -553,10 +553,9 @@ export async function runEmbeddedAttempt(
+         const validated = transcriptPolicy.validateAnthropicTurns
+           ? validateAnthropicTurns(validatedGemini)
+           : validatedGemini;
+-        const limited = limitHistoryTurns(
+-          validated,
+-          getDmHistoryLimitFromSessionKey(params.sessionKey, params.config),
+-        );
++        const dmLimit =
++          getDmHistoryLimitFromSessionKey(params.sessionKey, params.config) ?? 20;
++        const limited = limitHistoryTurns(validated, dmLimit);
+         cacheTrace?.recordStage("session:limited", { messages: limited });
+         if (limited.length > 0) {
+           activeSession.agent.replaceMessages(limited);
+diff --git a/src/agents/pi-tool-definition-adapter.ts b/src/agents/pi-tool-definition-adapter.ts
+index 3d4a3ca25eb..b826d6b1a2a 100644
+--- a/src/agents/pi-tool-definition-adapter.ts
++++ b/src/agents/pi-tool-definition-adapter.ts
+@@ -7,7 +7,7 @@ import type { ToolDefinition } from "@mariozechner/pi-coding-agent";
+ import type { ClientToolDefinition } from "./pi-embedded-runner/run/params.js";
+ import { logDebug, logError } from "../logger.js";
+ import { runBeforeToolCallHook } from "./pi-tools.before-tool-call.js";
+-import { normalizeToolName } from "./tool-policy.js";
++import { getAliasNamesForCanonical, normalizeToolName } from "./tool-policy.js";
+ import { jsonResult } from "./tools/common.js";
+ 
+ // oxlint-disable-next-line typescript/no-explicit-any
+@@ -81,44 +81,72 @@ function splitToolExecuteArgs(args: ToolExecuteArgsAny): {
+   };
+ }
+ 
++/** Sanitize tool name for OpenAI-compatible APIs (e.g. Ollama): only [a-z0-9_]. */
++function sanitizeToolNameForApi(name: string): string {
++  const s = (name ?? "tool").trim().toLowerCase();
++  return s.replace(/-/g, "_").replace(/[^a-z0-9_]/g, "") || "tool";
++}
++
++function buildOneToolDefinition(
++  tool: AnyAgentTool,
++  defName: string,
++  normalizedName: string,
++): ToolDefinition {
++  return {
++    name: defName,
++    label: tool.label ?? defName,
++    description: tool.description ?? "",
++    parameters: tool.parameters,
++    execute: async (...args: ToolExecuteArgs): Promise<AgentToolResult<unknown>> => {
++      const { toolCallId, params, onUpdate, signal } = splitToolExecuteArgs(args);
++      try {
++        return await tool.execute(toolCallId, params, signal, onUpdate);
++      } catch (err) {
++        if (signal?.aborted) {
++          throw err;
++        }
++        const errName =
++          err && typeof err === "object" && "name" in err
++            ? String((err as { name?: unknown }).name)
++            : "";
++        if (errName === "AbortError") {
++          throw err;
++        }
++        const described = describeToolExecutionError(err);
++        if (described.stack && described.stack !== described.message) {
++          logDebug(`tools: ${normalizedName} failed stack:\n${described.stack}`);
++        }
++        logError(`[tools] ${normalizedName} failed: ${described.message}`);
++        return jsonResult({
++          status: "error",
++          tool: normalizedName,
++          error: described.message,
++        });
++      }
++    },
++  } satisfies ToolDefinition;
++}
++
+ export function toToolDefinitions(tools: AnyAgentTool[]): ToolDefinition[] {
+-  return tools.map((tool) => {
++  const out: ToolDefinition[] = [];
++  const seenApiNames = new Set<string>();
++  for (const tool of tools) {
+     const name = tool.name || "tool";
+     const normalizedName = normalizeToolName(name);
+-    return {
+-      name,
+-      label: tool.label ?? name,
+-      description: tool.description ?? "",
+-      parameters: tool.parameters,
+-      execute: async (...args: ToolExecuteArgs): Promise<AgentToolResult<unknown>> => {
+-        const { toolCallId, params, onUpdate, signal } = splitToolExecuteArgs(args);
+-        try {
+-          return await tool.execute(toolCallId, params, signal, onUpdate);
+-        } catch (err) {
+-          if (signal?.aborted) {
+-            throw err;
+-          }
+-          const name =
+-            err && typeof err === "object" && "name" in err
+-              ? String((err as { name?: unknown }).name)
+-              : "";
+-          if (name === "AbortError") {
+-            throw err;
+-          }
+-          const described = describeToolExecutionError(err);
+-          if (described.stack && described.stack !== described.message) {
+-            logDebug(`tools: ${normalizedName} failed stack:\n${described.stack}`);
+-          }
+-          logError(`[tools] ${normalizedName} failed: ${described.message}`);
+-          return jsonResult({
+-            status: "error",
+-            tool: normalizedName,
+-            error: described.message,
+-          });
+-        }
+-      },
+-    } satisfies ToolDefinition;
+-  });
++    const apiName = sanitizeToolNameForApi(name);
++    if (!seenApiNames.has(apiName)) {
++      seenApiNames.add(apiName);
++      out.push(buildOneToolDefinition(tool, apiName, normalizedName));
++    }
++    for (const alias of getAliasNamesForCanonical(normalizedName)) {
++      const apiAlias = sanitizeToolNameForApi(alias);
++      if (!seenApiNames.has(apiAlias)) {
++        seenApiNames.add(apiAlias);
++        out.push(buildOneToolDefinition(tool, apiAlias, normalizedName));
++      }
++    }
++  }
++  return out;
+ }
+ 
+ // Convert client tools (OpenResponses hosted tools) to ToolDefinition format
+@@ -130,9 +158,10 @@ export function toClientToolDefinitions(
+ ): ToolDefinition[] {
+   return tools.map((tool) => {
+     const func = tool.function;
++    const apiName = sanitizeToolNameForApi(func.name);
+     return {
+-      name: func.name,
+-      label: func.name,
++      name: apiName,
++      label: apiName,
+       description: func.description ?? "",
+       // oxlint-disable-next-line typescript/no-explicit-any
+       parameters: func.parameters as any,
+diff --git a/src/agents/tool-display.json b/src/agents/tool-display.json
+deleted file mode 100644
+index 3fea81405ef..00000000000
+--- a/src/agents/tool-display.json
++++ /dev/null
+@@ -1,308 +0,0 @@
+-{
+-  "version": 1,
+-  "fallback": {
+-    "emoji": "🧩",
+-    "detailKeys": [
+-      "command",
+-      "path",
+-      "url",
+-      "targetUrl",
+-      "targetId",
+-      "ref",
+-      "element",
+-      "node",
+-      "nodeId",
+-      "id",
+-      "requestId",
+-      "to",
+-      "channelId",
+-      "guildId",
+-      "userId",
+-      "name",
+-      "query",
+-      "pattern",
+-      "messageId"
+-    ]
+-  },
+-  "tools": {
+-    "exec": {
+-      "emoji": "🛠️",
+-      "title": "Exec",
+-      "detailKeys": ["command"]
+-    },
+-    "process": {
+-      "emoji": "🧰",
+-      "title": "Process",
+-      "detailKeys": ["sessionId"]
+-    },
+-    "read": {
+-      "emoji": "📖",
+-      "title": "Read",
+-      "detailKeys": ["path"]
+-    },
+-    "write": {
+-      "emoji": "✍️",
+-      "title": "Write",
+-      "detailKeys": ["path"]
+-    },
+-    "edit": {
+-      "emoji": "📝",
+-      "title": "Edit",
+-      "detailKeys": ["path"]
+-    },
+-    "apply_patch": {
+-      "emoji": "🩹",
+-      "title": "Apply Patch",
+-      "detailKeys": []
+-    },
+-    "attach": {
+-      "emoji": "📎",
+-      "title": "Attach",
+-      "detailKeys": ["path", "url", "fileName"]
+-    },
+-    "browser": {
+-      "emoji": "🌐",
+-      "title": "Browser",
+-      "actions": {
+-        "status": { "label": "status" },
+-        "start": { "label": "start" },
+-        "stop": { "label": "stop" },
+-        "tabs": { "label": "tabs" },
+-        "open": { "label": "open", "detailKeys": ["targetUrl"] },
+-        "focus": { "label": "focus", "detailKeys": ["targetId"] },
+-        "close": { "label": "close", "detailKeys": ["targetId"] },
+-        "snapshot": {
+-          "label": "snapshot",
+-          "detailKeys": ["targetUrl", "targetId", "ref", "element", "format"]
+-        },
+-        "screenshot": {
+-          "label": "screenshot",
+-          "detailKeys": ["targetUrl", "targetId", "ref", "element"]
+-        },
+-        "navigate": {
+-          "label": "navigate",
+-          "detailKeys": ["targetUrl", "targetId"]
+-        },
+-        "console": { "label": "console", "detailKeys": ["level", "targetId"] },
+-        "pdf": { "label": "pdf", "detailKeys": ["targetId"] },
+-        "upload": {
+-          "label": "upload",
+-          "detailKeys": ["paths", "ref", "inputRef", "element", "targetId"]
+-        },
+-        "dialog": {
+-          "label": "dialog",
+-          "detailKeys": ["accept", "promptText", "targetId"]
+-        },
+-        "act": {
+-          "label": "act",
+-          "detailKeys": [
+-            "request.kind",
+-            "request.ref",
+-            "request.selector",
+-            "request.text",
+-            "request.value"
+-          ]
+-        }
+-      }
+-    },
+-    "canvas": {
+-      "emoji": "🖼️",
+-      "title": "Canvas",
+-      "actions": {
+-        "present": { "label": "present", "detailKeys": ["target", "node", "nodeId"] },
+-        "hide": { "label": "hide", "detailKeys": ["node", "nodeId"] },
+-        "navigate": { "label": "navigate", "detailKeys": ["url", "node", "nodeId"] },
+-        "eval": { "label": "eval", "detailKeys": ["javaScript", "node", "nodeId"] },
+-        "snapshot": { "label": "snapshot", "detailKeys": ["format", "node", "nodeId"] },
+-        "a2ui_push": { "label": "A2UI push", "detailKeys": ["jsonlPath", "node", "nodeId"] },
+-        "a2ui_reset": { "label": "A2UI reset", "detailKeys": ["node", "nodeId"] }
+-      }
+-    },
+-    "nodes": {
+-      "emoji": "📱",
+-      "title": "Nodes",
+-      "actions": {
+-        "status": { "label": "status" },
+-        "describe": { "label": "describe", "detailKeys": ["node", "nodeId"] },
+-        "pending": { "label": "pending" },
+-        "approve": { "label": "approve", "detailKeys": ["requestId"] },
+-        "reject": { "label": "reject", "detailKeys": ["requestId"] },
+-        "notify": { "label": "notify", "detailKeys": ["node", "nodeId", "title", "body"] },
+-        "camera_snap": {
+-          "label": "camera snap",
+-          "detailKeys": ["node", "nodeId", "facing", "deviceId"]
+-        },
+-        "camera_list": { "label": "camera list", "detailKeys": ["node", "nodeId"] },
+-        "camera_clip": {
+-          "label": "camera clip",
+-          "detailKeys": ["node", "nodeId", "facing", "duration", "durationMs"]
+-        },
+-        "screen_record": {
+-          "label": "screen record",
+-          "detailKeys": ["node", "nodeId", "duration", "durationMs", "fps", "screenIndex"]
+-        }
+-      }
+-    },
+-    "cron": {
+-      "emoji": "⏰",
+-      "title": "Cron",
+-      "actions": {
+-        "status": { "label": "status" },
+-        "list": { "label": "list" },
+-        "add": {
+-          "label": "add",
+-          "detailKeys": ["job.name", "job.id", "job.schedule", "job.cron"]
+-        },
+-        "update": { "label": "update", "detailKeys": ["id"] },
+-        "remove": { "label": "remove", "detailKeys": ["id"] },
+-        "run": { "label": "run", "detailKeys": ["id"] },
+-        "runs": { "label": "runs", "detailKeys": ["id"] },
+-        "wake": { "label": "wake", "detailKeys": ["text", "mode"] }
+-      }
+-    },
+-    "gateway": {
+-      "emoji": "🔌",
+-      "title": "Gateway",
+-      "actions": {
+-        "restart": { "label": "restart", "detailKeys": ["reason", "delayMs"] }
+-      }
+-    },
+-    "message": {
+-      "emoji": "✉️",
+-      "title": "Message",
+-      "actions": {
+-        "send": {
+-          "label": "send",
+-          "detailKeys": ["provider", "to", "media", "replyTo", "threadId"]
+-        },
+-        "poll": { "label": "poll", "detailKeys": ["provider", "to", "pollQuestion"] },
+-        "react": {
+-          "label": "react",
+-          "detailKeys": ["provider", "to", "messageId", "emoji", "remove"]
+-        },
+-        "reactions": {
+-          "label": "reactions",
+-          "detailKeys": ["provider", "to", "messageId", "limit"]
+-        },
+-        "read": { "label": "read", "detailKeys": ["provider", "to", "limit"] },
+-        "edit": { "label": "edit", "detailKeys": ["provider", "to", "messageId"] },
+-        "delete": { "label": "delete", "detailKeys": ["provider", "to", "messageId"] },
+-        "pin": { "label": "pin", "detailKeys": ["provider", "to", "messageId"] },
+-        "unpin": { "label": "unpin", "detailKeys": ["provider", "to", "messageId"] },
+-        "list-pins": { "label": "list pins", "detailKeys": ["provider", "to"] },
+-        "permissions": { "label": "permissions", "detailKeys": ["provider", "channelId", "to"] },
+-        "thread-create": {
+-          "label": "thread create",
+-          "detailKeys": ["provider", "channelId", "threadName"]
+-        },
+-        "thread-list": {
+-          "label": "thread list",
+-          "detailKeys": ["provider", "guildId", "channelId"]
+-        },
+-        "thread-reply": {
+-          "label": "thread reply",
+-          "detailKeys": ["provider", "channelId", "messageId"]
+-        },
+-        "search": { "label": "search", "detailKeys": ["provider", "guildId", "query"] },
+-        "sticker": { "label": "sticker", "detailKeys": ["provider", "to", "stickerId"] },
+-        "member-info": { "label": "member", "detailKeys": ["provider", "guildId", "userId"] },
+-        "role-info": { "label": "roles", "detailKeys": ["provider", "guildId"] },
+-        "emoji-list": { "label": "emoji list", "detailKeys": ["provider", "guildId"] },
+-        "emoji-upload": {
+-          "label": "emoji upload",
+-          "detailKeys": ["provider", "guildId", "emojiName"]
+-        },
+-        "sticker-upload": {
+-          "label": "sticker upload",
+-          "detailKeys": ["provider", "guildId", "stickerName"]
+-        },
+-        "role-add": {
+-          "label": "role add",
+-          "detailKeys": ["provider", "guildId", "userId", "roleId"]
+-        },
+-        "role-remove": {
+-          "label": "role remove",
+-          "detailKeys": ["provider", "guildId", "userId", "roleId"]
+-        },
+-        "channel-info": { "label": "channel", "detailKeys": ["provider", "channelId"] },
+-        "channel-list": { "label": "channels", "detailKeys": ["provider", "guildId"] },
+-        "voice-status": { "label": "voice", "detailKeys": ["provider", "guildId", "userId"] },
+-        "event-list": { "label": "events", "detailKeys": ["provider", "guildId"] },
+-        "event-create": {
+-          "label": "event create",
+-          "detailKeys": ["provider", "guildId", "eventName"]
+-        },
+-        "timeout": { "label": "timeout", "detailKeys": ["provider", "guildId", "userId"] },
+-        "kick": { "label": "kick", "detailKeys": ["provider", "guildId", "userId"] },
+-        "ban": { "label": "ban", "detailKeys": ["provider", "guildId", "userId"] }
+-      }
+-    },
+-    "agents_list": {
+-      "emoji": "🧭",
+-      "title": "Agents",
+-      "detailKeys": []
+-    },
+-    "sessions_list": {
+-      "emoji": "🗂️",
+-      "title": "Sessions",
+-      "detailKeys": ["kinds", "limit", "activeMinutes", "messageLimit"]
+-    },
+-    "sessions_history": {
+-      "emoji": "🧾",
+-      "title": "Session History",
+-      "detailKeys": ["sessionKey", "limit", "includeTools"]
+-    },
+-    "sessions_send": {
+-      "emoji": "📨",
+-      "title": "Session Send",
+-      "detailKeys": ["label", "sessionKey", "agentId", "timeoutSeconds"]
+-    },
+-    "sessions_spawn": {
+-      "emoji": "🧑‍🔧",
+-      "title": "Sub-agent",
+-      "detailKeys": [
+-        "label",
+-        "task",
+-        "agentId",
+-        "model",
+-        "thinking",
+-        "runTimeoutSeconds",
+-        "cleanup",
+-        "timeoutSeconds"
+-      ]
+-    },
+-    "session_status": {
+-      "emoji": "📊",
+-      "title": "Session Status",
+-      "detailKeys": ["sessionKey", "model"]
+-    },
+-    "memory_search": {
+-      "emoji": "🧠",
+-      "title": "Memory Search",
+-      "detailKeys": ["query"]
+-    },
+-    "memory_get": {
+-      "emoji": "📓",
+-      "title": "Memory Get",
+-      "detailKeys": ["path", "from", "lines"]
+-    },
+-    "web_search": {
+-      "emoji": "🔎",
+-      "title": "Web Search",
+-      "detailKeys": ["query", "count"]
+-    },
+-    "web_fetch": {
+-      "emoji": "📄",
+-      "title": "Web Fetch",
+-      "detailKeys": ["url", "extractMode", "maxChars"]
+-    },
+-    "whatsapp_login": {
+-      "emoji": "🟢",
+-      "title": "WhatsApp Login",
+-      "actions": {
+-        "start": { "label": "start" },
+-        "wait": { "label": "wait" }
+-      }
+-    }
+-  }
+-}
+diff --git a/src/agents/tool-policy.ts b/src/agents/tool-policy.ts
+deleted file mode 100644
+index a14cb73ac08..00000000000
+--- a/src/agents/tool-policy.ts
++++ /dev/null
+@@ -1,262 +0,0 @@
+-export type ToolProfileId = "minimal" | "coding" | "messaging" | "full";
+-
+-type ToolProfilePolicy = {
+-  allow?: string[];
+-  deny?: string[];
+-};
+-
+-const TOOL_NAME_ALIASES: Record<string, string> = {
+-  bash: "exec",
+-  "apply-patch": "apply_patch",
+-};
+-
+-export const TOOL_GROUPS: Record<string, string[]> = {
+-  // NOTE: Keep canonical (lowercase) tool names here.
+-  "group:memory": ["memory_search", "memory_get"],
+-  "group:web": ["web_search", "web_fetch"],
+-  // Basic workspace/file tools
+-  "group:fs": ["read", "write", "edit", "apply_patch"],
+-  // Host/runtime execution tools
+-  "group:runtime": ["exec", "process"],
+-  // Session management tools
+-  "group:sessions": [
+-    "sessions_list",
+-    "sessions_history",
+-    "sessions_send",
+-    "sessions_spawn",
+-    "session_status",
+-  ],
+-  // UI helpers
+-  "group:ui": ["browser", "canvas"],
+-  // Automation + infra
+-  "group:automation": ["cron", "gateway"],
+-  // Messaging surface
+-  "group:messaging": ["message"],
+-  // Nodes + device tools
+-  "group:nodes": ["nodes"],
+-  // All OpenClaw native tools (excludes provider plugins).
+-  "group:openclaw": [
+-    "browser",
+-    "canvas",
+-    "nodes",
+-    "cron",
+-    "message",
+-    "gateway",
+-    "agents_list",
+-    "sessions_list",
+-    "sessions_history",
+-    "sessions_send",
+-    "sessions_spawn",
+-    "session_status",
+-    "memory_search",
+-    "memory_get",
+-    "web_search",
+-    "web_fetch",
+-    "image",
+-  ],
+-};
+-
+-const TOOL_PROFILES: Record<ToolProfileId, ToolProfilePolicy> = {
+-  minimal: {
+-    allow: ["session_status"],
+-  },
+-  coding: {
+-    allow: ["group:fs", "group:runtime", "group:sessions", "group:memory", "image"],
+-  },
+-  messaging: {
+-    allow: [
+-      "group:messaging",
+-      "sessions_list",
+-      "sessions_history",
+-      "sessions_send",
+-      "session_status",
+-    ],
+-  },
+-  full: {},
+-};
+-
+-export function normalizeToolName(name: string) {
+-  const normalized = name.trim().toLowerCase();
+-  return TOOL_NAME_ALIASES[normalized] ?? normalized;
+-}
+-
+-export function normalizeToolList(list?: string[]) {
+-  if (!list) {
+-    return [];
+-  }
+-  return list.map(normalizeToolName).filter(Boolean);
+-}
+-
+-export type ToolPolicyLike = {
+-  allow?: string[];
+-  deny?: string[];
+-};
+-
+-export type PluginToolGroups = {
+-  all: string[];
+-  byPlugin: Map<string, string[]>;
+-};
+-
+-export type AllowlistResolution = {
+-  policy: ToolPolicyLike | undefined;
+-  unknownAllowlist: string[];
+-  strippedAllowlist: boolean;
+-};
+-
+-export function expandToolGroups(list?: string[]) {
+-  const normalized = normalizeToolList(list);
+-  const expanded: string[] = [];
+-  for (const value of normalized) {
+-    const group = TOOL_GROUPS[value];
+-    if (group) {
+-      expanded.push(...group);
+-      continue;
+-    }
+-    expanded.push(value);
+-  }
+-  return Array.from(new Set(expanded));
+-}
+-
+-export function collectExplicitAllowlist(policies: Array<ToolPolicyLike | undefined>): string[] {
+-  const entries: string[] = [];
+-  for (const policy of policies) {
+-    if (!policy?.allow) {
+-      continue;
+-    }
+-    for (const value of policy.allow) {
+-      if (typeof value !== "string") {
+-        continue;
+-      }
+-      const trimmed = value.trim();
+-      if (trimmed) {
+-        entries.push(trimmed);
+-      }
+-    }
+-  }
+-  return entries;
+-}
+-
+-export function buildPluginToolGroups<T extends { name: string }>(params: {
+-  tools: T[];
+-  toolMeta: (tool: T) => { pluginId: string } | undefined;
+-}): PluginToolGroups {
+-  const all: string[] = [];
+-  const byPlugin = new Map<string, string[]>();
+-  for (const tool of params.tools) {
+-    const meta = params.toolMeta(tool);
+-    if (!meta) {
+-      continue;
+-    }
+-    const name = normalizeToolName(tool.name);
+-    all.push(name);
+-    const pluginId = meta.pluginId.toLowerCase();
+-    const list = byPlugin.get(pluginId) ?? [];
+-    list.push(name);
+-    byPlugin.set(pluginId, list);
+-  }
+-  return { all, byPlugin };
+-}
+-
+-export function expandPluginGroups(
+-  list: string[] | undefined,
+-  groups: PluginToolGroups,
+-): string[] | undefined {
+-  if (!list || list.length === 0) {
+-    return list;
+-  }
+-  const expanded: string[] = [];
+-  for (const entry of list) {
+-    const normalized = normalizeToolName(entry);
+-    if (normalized === "group:plugins") {
+-      if (groups.all.length > 0) {
+-        expanded.push(...groups.all);
+-      } else {
+-        expanded.push(normalized);
+-      }
+-      continue;
+-    }
+-    const tools = groups.byPlugin.get(normalized);
+-    if (tools && tools.length > 0) {
+-      expanded.push(...tools);
+-      continue;
+-    }
+-    expanded.push(normalized);
+-  }
+-  return Array.from(new Set(expanded));
+-}
+-
+-export function expandPolicyWithPluginGroups(
+-  policy: ToolPolicyLike | undefined,
+-  groups: PluginToolGroups,
+-): ToolPolicyLike | undefined {
+-  if (!policy) {
+-    return undefined;
+-  }
+-  return {
+-    allow: expandPluginGroups(policy.allow, groups),
+-    deny: expandPluginGroups(policy.deny, groups),
+-  };
+-}
+-
+-export function stripPluginOnlyAllowlist(
+-  policy: ToolPolicyLike | undefined,
+-  groups: PluginToolGroups,
+-  coreTools: Set<string>,
+-): AllowlistResolution {
+-  if (!policy?.allow || policy.allow.length === 0) {
+-    return { policy, unknownAllowlist: [], strippedAllowlist: false };
+-  }
+-  const normalized = normalizeToolList(policy.allow);
+-  if (normalized.length === 0) {
+-    return { policy, unknownAllowlist: [], strippedAllowlist: false };
+-  }
+-  const pluginIds = new Set(groups.byPlugin.keys());
+-  const pluginTools = new Set(groups.all);
+-  const unknownAllowlist: string[] = [];
+-  let hasCoreEntry = false;
+-  for (const entry of normalized) {
+-    if (entry === "*") {
+-      hasCoreEntry = true;
+-      continue;
+-    }
+-    const isPluginEntry =
+-      entry === "group:plugins" || pluginIds.has(entry) || pluginTools.has(entry);
+-    const expanded = expandToolGroups([entry]);
+-    const isCoreEntry = expanded.some((tool) => coreTools.has(tool));
+-    if (isCoreEntry) {
+-      hasCoreEntry = true;
+-    }
+-    if (!isCoreEntry && !isPluginEntry) {
+-      unknownAllowlist.push(entry);
+-    }
+-  }
+-  const strippedAllowlist = !hasCoreEntry;
+-  // When an allowlist contains only plugin tools, we strip it to avoid accidentally
+-  // disabling core tools. Users who want additive behavior should prefer `tools.alsoAllow`.
+-  if (strippedAllowlist) {
+-    // Note: logging happens in the caller (pi-tools/tools-invoke) after this function returns.
+-    // We keep this note here for future maintainers.
+-  }
+-  return {
+-    policy: strippedAllowlist ? { ...policy, allow: undefined } : policy,
+-    unknownAllowlist: Array.from(new Set(unknownAllowlist)),
+-    strippedAllowlist,
+-  };
+-}
+-
+-export function resolveToolProfilePolicy(profile?: string): ToolProfilePolicy | undefined {
+-  if (!profile) {
+-    return undefined;
+-  }
+-  const resolved = TOOL_PROFILES[profile as ToolProfileId];
+-  if (!resolved) {
+-    return undefined;
+-  }
+-  if (!resolved.allow && !resolved.deny) {
+-    return undefined;
+-  }
+-  return {
+-    allow: resolved.allow ? [...resolved.allow] : undefined,
+-    deny: resolved.deny ? [...resolved.deny] : undefined,
+-  };
+-}
+diff --git a/src/auto-reply/reply/agent-runner-execution.ts b/src/auto-reply/reply/agent-runner-execution.ts
+deleted file mode 100644
+index 3bdc5dde392..00000000000
+--- a/src/auto-reply/reply/agent-runner-execution.ts
++++ /dev/null
+@@ -1,602 +0,0 @@
+-import crypto from "node:crypto";
+-import fs from "node:fs";
+-import type { TemplateContext } from "../templating.js";
+-import type { VerboseLevel } from "../thinking.js";
+-import type { GetReplyOptions, ReplyPayload } from "../types.js";
+-import type { FollowupRun } from "./queue.js";
+-import type { TypingSignaler } from "./typing-mode.js";
+-import { resolveAgentModelFallbacksOverride } from "../../agents/agent-scope.js";
+-import { runCliAgent } from "../../agents/cli-runner.js";
+-import { getCliSessionId } from "../../agents/cli-session.js";
+-import { runWithModelFallback } from "../../agents/model-fallback.js";
+-import { isCliProvider } from "../../agents/model-selection.js";
+-import {
+-  isCompactionFailureError,
+-  isContextOverflowError,
+-  isLikelyContextOverflowError,
+-  sanitizeUserFacingText,
+-} from "../../agents/pi-embedded-helpers.js";
+-import { runEmbeddedPiAgent } from "../../agents/pi-embedded.js";
+-import {
+-  resolveAgentIdFromSessionKey,
+-  resolveGroupSessionKey,
+-  resolveSessionTranscriptPath,
+-  type SessionEntry,
+-  updateSessionStore,
+-} from "../../config/sessions.js";
+-import { logVerbose } from "../../globals.js";
+-import { emitAgentEvent, registerAgentRunContext } from "../../infra/agent-events.js";
+-import { defaultRuntime } from "../../runtime.js";
+-import {
+-  isMarkdownCapableMessageChannel,
+-  resolveMessageChannel,
+-} from "../../utils/message-channel.js";
+-import { stripHeartbeatToken } from "../heartbeat.js";
+-import { isSilentReplyText, SILENT_REPLY_TOKEN } from "../tokens.js";
+-import { buildThreadingToolContext, resolveEnforceFinalTag } from "./agent-runner-utils.js";
+-import { createBlockReplyPayloadKey, type BlockReplyPipeline } from "./block-reply-pipeline.js";
+-import { parseReplyDirectives } from "./reply-directives.js";
+-import { applyReplyTagsToPayload, isRenderablePayload } from "./reply-payloads.js";
+-
+-export type AgentRunLoopResult =
+-  | {
+-      kind: "success";
+-      runResult: Awaited<ReturnType<typeof runEmbeddedPiAgent>>;
+-      fallbackProvider?: string;
+-      fallbackModel?: string;
+-      didLogHeartbeatStrip: boolean;
+-      autoCompactionCompleted: boolean;
+-      /** Payload keys sent directly (not via pipeline) during tool flush. */
+-      directlySentBlockKeys?: Set<string>;
+-    }
+-  | { kind: "final"; payload: ReplyPayload };
+-
+-export async function runAgentTurnWithFallback(params: {
+-  commandBody: string;
+-  followupRun: FollowupRun;
+-  sessionCtx: TemplateContext;
+-  opts?: GetReplyOptions;
+-  typingSignals: TypingSignaler;
+-  blockReplyPipeline: BlockReplyPipeline | null;
+-  blockStreamingEnabled: boolean;
+-  blockReplyChunking?: {
+-    minChars: number;
+-    maxChars: number;
+-    breakPreference: "paragraph" | "newline" | "sentence";
+-    flushOnParagraph?: boolean;
+-  };
+-  resolvedBlockStreamingBreak: "text_end" | "message_end";
+-  applyReplyToMode: (payload: ReplyPayload) => ReplyPayload;
+-  shouldEmitToolResult: () => boolean;
+-  shouldEmitToolOutput: () => boolean;
+-  pendingToolTasks: Set<Promise<void>>;
+-  resetSessionAfterCompactionFailure: (reason: string) => Promise<boolean>;
+-  resetSessionAfterRoleOrderingConflict: (reason: string) => Promise<boolean>;
+-  isHeartbeat: boolean;
+-  sessionKey?: string;
+-  getActiveSessionEntry: () => SessionEntry | undefined;
+-  activeSessionStore?: Record<string, SessionEntry>;
+-  storePath?: string;
+-  resolvedVerboseLevel: VerboseLevel;
+-}): Promise<AgentRunLoopResult> {
+-  let didLogHeartbeatStrip = false;
+-  let autoCompactionCompleted = false;
+-  // Track payloads sent directly (not via pipeline) during tool flush to avoid duplicates.
+-  const directlySentBlockKeys = new Set<string>();
+-
+-  const runId = params.opts?.runId ?? crypto.randomUUID();
+-  params.opts?.onAgentRunStart?.(runId);
+-  if (params.sessionKey) {
+-    registerAgentRunContext(runId, {
+-      sessionKey: params.sessionKey,
+-      verboseLevel: params.resolvedVerboseLevel,
+-      isHeartbeat: params.isHeartbeat,
+-    });
+-  }
+-  let runResult: Awaited<ReturnType<typeof runEmbeddedPiAgent>>;
+-  let fallbackProvider = params.followupRun.run.provider;
+-  let fallbackModel = params.followupRun.run.model;
+-  let didResetAfterCompactionFailure = false;
+-
+-  while (true) {
+-    try {
+-      const allowPartialStream = !(
+-        params.followupRun.run.reasoningLevel === "stream" && params.opts?.onReasoningStream
+-      );
+-      const normalizeStreamingText = (payload: ReplyPayload): { text?: string; skip: boolean } => {
+-        if (!allowPartialStream) {
+-          return { skip: true };
+-        }
+-        let text = payload.text;
+-        if (!params.isHeartbeat && text?.includes("HEARTBEAT_OK")) {
+-          const stripped = stripHeartbeatToken(text, {
+-            mode: "message",
+-          });
+-          if (stripped.didStrip && !didLogHeartbeatStrip) {
+-            didLogHeartbeatStrip = true;
+-            logVerbose("Stripped stray HEARTBEAT_OK token from reply");
+-          }
+-          if (stripped.shouldSkip && (payload.mediaUrls?.length ?? 0) === 0) {
+-            return { skip: true };
+-          }
+-          text = stripped.text;
+-        }
+-        if (isSilentReplyText(text, SILENT_REPLY_TOKEN)) {
+-          return { skip: true };
+-        }
+-        if (!text) {
+-          return { skip: true };
+-        }
+-        const sanitized = sanitizeUserFacingText(text);
+-        if (!sanitized.trim()) {
+-          return { skip: true };
+-        }
+-        return { text: sanitized, skip: false };
+-      };
+-      const handlePartialForTyping = async (payload: ReplyPayload): Promise<string | undefined> => {
+-        const { text, skip } = normalizeStreamingText(payload);
+-        if (skip || !text) {
+-          return undefined;
+-        }
+-        await params.typingSignals.signalTextDelta(text);
+-        return text;
+-      };
+-      const blockReplyPipeline = params.blockReplyPipeline;
+-      const onToolResult = params.opts?.onToolResult;
+-      const fallbackResult = await runWithModelFallback({
+-        cfg: params.followupRun.run.config,
+-        provider: params.followupRun.run.provider,
+-        model: params.followupRun.run.model,
+-        agentDir: params.followupRun.run.agentDir,
+-        fallbacksOverride: resolveAgentModelFallbacksOverride(
+-          params.followupRun.run.config,
+-          resolveAgentIdFromSessionKey(params.followupRun.run.sessionKey),
+-        ),
+-        run: (provider, model) => {
+-          // Notify that model selection is complete (including after fallback).
+-          // This allows responsePrefix template interpolation with the actual model.
+-          params.opts?.onModelSelected?.({
+-            provider,
+-            model,
+-            thinkLevel: params.followupRun.run.thinkLevel,
+-          });
+-
+-          if (isCliProvider(provider, params.followupRun.run.config)) {
+-            const startedAt = Date.now();
+-            emitAgentEvent({
+-              runId,
+-              stream: "lifecycle",
+-              data: {
+-                phase: "start",
+-                startedAt,
+-              },
+-            });
+-            const cliSessionId = getCliSessionId(params.getActiveSessionEntry(), provider);
+-            return (async () => {
+-              let lifecycleTerminalEmitted = false;
+-              try {
+-                const result = await runCliAgent({
+-                  sessionId: params.followupRun.run.sessionId,
+-                  sessionKey: params.sessionKey,
+-                  sessionFile: params.followupRun.run.sessionFile,
+-                  workspaceDir: params.followupRun.run.workspaceDir,
+-                  config: params.followupRun.run.config,
+-                  prompt: params.commandBody,
+-                  provider,
+-                  model,
+-                  thinkLevel: params.followupRun.run.thinkLevel,
+-                  timeoutMs: params.followupRun.run.timeoutMs,
+-                  runId,
+-                  extraSystemPrompt: params.followupRun.run.extraSystemPrompt,
+-                  ownerNumbers: params.followupRun.run.ownerNumbers,
+-                  cliSessionId,
+-                  images: params.opts?.images,
+-                });
+-
+-                // CLI backends don't emit streaming assistant events, so we need to
+-                // emit one with the final text so server-chat can populate its buffer
+-                // and send the response to TUI/WebSocket clients.
+-                const cliText = result.payloads?.[0]?.text?.trim();
+-                if (cliText) {
+-                  emitAgentEvent({
+-                    runId,
+-                    stream: "assistant",
+-                    data: { text: cliText },
+-                  });
+-                }
+-
+-                emitAgentEvent({
+-                  runId,
+-                  stream: "lifecycle",
+-                  data: {
+-                    phase: "end",
+-                    startedAt,
+-                    endedAt: Date.now(),
+-                  },
+-                });
+-                lifecycleTerminalEmitted = true;
+-
+-                return result;
+-              } catch (err) {
+-                emitAgentEvent({
+-                  runId,
+-                  stream: "lifecycle",
+-                  data: {
+-                    phase: "error",
+-                    startedAt,
+-                    endedAt: Date.now(),
+-                    error: String(err),
+-                  },
+-                });
+-                lifecycleTerminalEmitted = true;
+-                throw err;
+-              } finally {
+-                // Defensive backstop: never let a CLI run complete without a terminal
+-                // lifecycle event, otherwise downstream consumers can hang.
+-                if (!lifecycleTerminalEmitted) {
+-                  emitAgentEvent({
+-                    runId,
+-                    stream: "lifecycle",
+-                    data: {
+-                      phase: "error",
+-                      startedAt,
+-                      endedAt: Date.now(),
+-                      error: "CLI run completed without lifecycle terminal event",
+-                    },
+-                  });
+-                }
+-              }
+-            })();
+-          }
+-          const authProfileId =
+-            provider === params.followupRun.run.provider
+-              ? params.followupRun.run.authProfileId
+-              : undefined;
+-          return runEmbeddedPiAgent({
+-            sessionId: params.followupRun.run.sessionId,
+-            sessionKey: params.sessionKey,
+-            messageProvider: params.sessionCtx.Provider?.trim().toLowerCase() || undefined,
+-            agentAccountId: params.sessionCtx.AccountId,
+-            messageTo: params.sessionCtx.OriginatingTo ?? params.sessionCtx.To,
+-            messageThreadId: params.sessionCtx.MessageThreadId ?? undefined,
+-            groupId: resolveGroupSessionKey(params.sessionCtx)?.id,
+-            groupChannel:
+-              params.sessionCtx.GroupChannel?.trim() ?? params.sessionCtx.GroupSubject?.trim(),
+-            groupSpace: params.sessionCtx.GroupSpace?.trim() ?? undefined,
+-            senderId: params.sessionCtx.SenderId?.trim() || undefined,
+-            senderName: params.sessionCtx.SenderName?.trim() || undefined,
+-            senderUsername: params.sessionCtx.SenderUsername?.trim() || undefined,
+-            senderE164: params.sessionCtx.SenderE164?.trim() || undefined,
+-            // Provider threading context for tool auto-injection
+-            ...buildThreadingToolContext({
+-              sessionCtx: params.sessionCtx,
+-              config: params.followupRun.run.config,
+-              hasRepliedRef: params.opts?.hasRepliedRef,
+-            }),
+-            sessionFile: params.followupRun.run.sessionFile,
+-            workspaceDir: params.followupRun.run.workspaceDir,
+-            agentDir: params.followupRun.run.agentDir,
+-            config: params.followupRun.run.config,
+-            skillsSnapshot: params.followupRun.run.skillsSnapshot,
+-            prompt: params.commandBody,
+-            extraSystemPrompt: params.followupRun.run.extraSystemPrompt,
+-            ownerNumbers: params.followupRun.run.ownerNumbers,
+-            enforceFinalTag: resolveEnforceFinalTag(params.followupRun.run, provider),
+-            provider,
+-            model,
+-            authProfileId,
+-            authProfileIdSource: authProfileId
+-              ? params.followupRun.run.authProfileIdSource
+-              : undefined,
+-            thinkLevel: params.followupRun.run.thinkLevel,
+-            verboseLevel: params.followupRun.run.verboseLevel,
+-            reasoningLevel: params.followupRun.run.reasoningLevel,
+-            execOverrides: params.followupRun.run.execOverrides,
+-            toolResultFormat: (() => {
+-              const channel = resolveMessageChannel(
+-                params.sessionCtx.Surface,
+-                params.sessionCtx.Provider,
+-              );
+-              if (!channel) {
+-                return "markdown";
+-              }
+-              return isMarkdownCapableMessageChannel(channel) ? "markdown" : "plain";
+-            })(),
+-            bashElevated: params.followupRun.run.bashElevated,
+-            timeoutMs: params.followupRun.run.timeoutMs,
+-            runId,
+-            images: params.opts?.images,
+-            abortSignal: params.opts?.abortSignal,
+-            blockReplyBreak: params.resolvedBlockStreamingBreak,
+-            blockReplyChunking: params.blockReplyChunking,
+-            onPartialReply: allowPartialStream
+-              ? async (payload) => {
+-                  const textForTyping = await handlePartialForTyping(payload);
+-                  if (!params.opts?.onPartialReply || textForTyping === undefined) {
+-                    return;
+-                  }
+-                  await params.opts.onPartialReply({
+-                    text: textForTyping,
+-                    mediaUrls: payload.mediaUrls,
+-                  });
+-                }
+-              : undefined,
+-            onAssistantMessageStart: async () => {
+-              await params.typingSignals.signalMessageStart();
+-            },
+-            onReasoningStream:
+-              params.typingSignals.shouldStartOnReasoning || params.opts?.onReasoningStream
+-                ? async (payload) => {
+-                    await params.typingSignals.signalReasoningDelta();
+-                    await params.opts?.onReasoningStream?.({
+-                      text: payload.text,
+-                      mediaUrls: payload.mediaUrls,
+-                    });
+-                  }
+-                : undefined,
+-            onAgentEvent: async (evt) => {
+-              // Trigger typing when tools start executing.
+-              // Must await to ensure typing indicator starts before tool summaries are emitted.
+-              if (evt.stream === "tool") {
+-                const phase = typeof evt.data.phase === "string" ? evt.data.phase : "";
+-                if (phase === "start" || phase === "update") {
+-                  await params.typingSignals.signalToolStart();
+-                }
+-              }
+-              // Track auto-compaction completion
+-              if (evt.stream === "compaction") {
+-                const phase = typeof evt.data.phase === "string" ? evt.data.phase : "";
+-                const willRetry = Boolean(evt.data.willRetry);
+-                if (phase === "end" && !willRetry) {
+-                  autoCompactionCompleted = true;
+-                }
+-              }
+-            },
+-            // Always pass onBlockReply so flushBlockReplyBuffer works before tool execution,
+-            // even when regular block streaming is disabled. The handler sends directly
+-            // via opts.onBlockReply when the pipeline isn't available.
+-            onBlockReply: params.opts?.onBlockReply
+-              ? async (payload) => {
+-                  const { text, skip } = normalizeStreamingText(payload);
+-                  const hasPayloadMedia = (payload.mediaUrls?.length ?? 0) > 0;
+-                  if (skip && !hasPayloadMedia) {
+-                    return;
+-                  }
+-                  const currentMessageId =
+-                    params.sessionCtx.MessageSidFull ?? params.sessionCtx.MessageSid;
+-                  const taggedPayload = applyReplyTagsToPayload(
+-                    {
+-                      text,
+-                      mediaUrls: payload.mediaUrls,
+-                      mediaUrl: payload.mediaUrls?.[0],
+-                      replyToId: payload.replyToId,
+-                      replyToTag: payload.replyToTag,
+-                      replyToCurrent: payload.replyToCurrent,
+-                    },
+-                    currentMessageId,
+-                  );
+-                  // Let through payloads with audioAsVoice flag even if empty (need to track it)
+-                  if (!isRenderablePayload(taggedPayload) && !payload.audioAsVoice) {
+-                    return;
+-                  }
+-                  const parsed = parseReplyDirectives(taggedPayload.text ?? "", {
+-                    currentMessageId,
+-                    silentToken: SILENT_REPLY_TOKEN,
+-                  });
+-                  const cleaned = parsed.text || undefined;
+-                  const hasRenderableMedia =
+-                    Boolean(taggedPayload.mediaUrl) || (taggedPayload.mediaUrls?.length ?? 0) > 0;
+-                  // Skip empty payloads unless they have audioAsVoice flag (need to track it)
+-                  if (
+-                    !cleaned &&
+-                    !hasRenderableMedia &&
+-                    !payload.audioAsVoice &&
+-                    !parsed.audioAsVoice
+-                  ) {
+-                    return;
+-                  }
+-                  if (parsed.isSilent && !hasRenderableMedia) {
+-                    return;
+-                  }
+-
+-                  const blockPayload: ReplyPayload = params.applyReplyToMode({
+-                    ...taggedPayload,
+-                    text: cleaned,
+-                    audioAsVoice: Boolean(parsed.audioAsVoice || payload.audioAsVoice),
+-                    replyToId: taggedPayload.replyToId ?? parsed.replyToId,
+-                    replyToTag: taggedPayload.replyToTag || parsed.replyToTag,
+-                    replyToCurrent: taggedPayload.replyToCurrent || parsed.replyToCurrent,
+-                  });
+-
+-                  void params.typingSignals
+-                    .signalTextDelta(cleaned ?? taggedPayload.text)
+-                    .catch((err) => {
+-                      logVerbose(`block reply typing signal failed: ${String(err)}`);
+-                    });
+-
+-                  // Use pipeline if available (block streaming enabled), otherwise send directly
+-                  if (params.blockStreamingEnabled && params.blockReplyPipeline) {
+-                    params.blockReplyPipeline.enqueue(blockPayload);
+-                  } else if (params.blockStreamingEnabled) {
+-                    // Send directly when flushing before tool execution (no pipeline but streaming enabled).
+-                    // Track sent key to avoid duplicate in final payloads.
+-                    directlySentBlockKeys.add(createBlockReplyPayloadKey(blockPayload));
+-                    await params.opts?.onBlockReply?.(blockPayload);
+-                  }
+-                  // When streaming is disabled entirely, blocks are accumulated in final text instead.
+-                }
+-              : undefined,
+-            onBlockReplyFlush:
+-              params.blockStreamingEnabled && blockReplyPipeline
+-                ? async () => {
+-                    await blockReplyPipeline.flush({ force: true });
+-                  }
+-                : undefined,
+-            shouldEmitToolResult: params.shouldEmitToolResult,
+-            shouldEmitToolOutput: params.shouldEmitToolOutput,
+-            onToolResult: onToolResult
+-              ? (payload) => {
+-                  // `subscribeEmbeddedPiSession` may invoke tool callbacks without awaiting them.
+-                  // If a tool callback starts typing after the run finalized, we can end up with
+-                  // a typing loop that never sees a matching markRunComplete(). Track and drain.
+-                  const task = (async () => {
+-                    const { text, skip } = normalizeStreamingText(payload);
+-                    if (skip) {
+-                      return;
+-                    }
+-                    await params.typingSignals.signalTextDelta(text);
+-                    await onToolResult({
+-                      text,
+-                      mediaUrls: payload.mediaUrls,
+-                    });
+-                  })()
+-                    .catch((err) => {
+-                      logVerbose(`tool result delivery failed: ${String(err)}`);
+-                    })
+-                    .finally(() => {
+-                      params.pendingToolTasks.delete(task);
+-                    });
+-                  params.pendingToolTasks.add(task);
+-                }
+-              : undefined,
+-          });
+-        },
+-      });
+-      runResult = fallbackResult.result;
+-      fallbackProvider = fallbackResult.provider;
+-      fallbackModel = fallbackResult.model;
+-
+-      // Some embedded runs surface context overflow as an error payload instead of throwing.
+-      // Treat those as a session-level failure and auto-recover by starting a fresh session.
+-      const embeddedError = runResult.meta?.error;
+-      if (
+-        embeddedError &&
+-        isContextOverflowError(embeddedError.message) &&
+-        !didResetAfterCompactionFailure &&
+-        (await params.resetSessionAfterCompactionFailure(embeddedError.message))
+-      ) {
+-        didResetAfterCompactionFailure = true;
+-        return {
+-          kind: "final",
+-          payload: {
+-            text: "⚠️ Context limit exceeded. I've reset our conversation to start fresh - please try again.\n\nTo prevent this, increase your compaction buffer by setting `agents.defaults.compaction.reserveTokensFloor` to 4000 or higher in your config.",
+-          },
+-        };
+-      }
+-      if (embeddedError?.kind === "role_ordering") {
+-        const didReset = await params.resetSessionAfterRoleOrderingConflict(embeddedError.message);
+-        if (didReset) {
+-          return {
+-            kind: "final",
+-            payload: {
+-              text: "⚠️ Message ordering conflict. I've reset the conversation - please try again.",
+-            },
+-          };
+-        }
+-      }
+-
+-      break;
+-    } catch (err) {
+-      const message = err instanceof Error ? err.message : String(err);
+-      const isContextOverflow = isLikelyContextOverflowError(message);
+-      const isCompactionFailure = isCompactionFailureError(message);
+-      const isSessionCorruption = /function call turn comes immediately after/i.test(message);
+-      const isRoleOrderingError = /incorrect role information|roles must alternate/i.test(message);
+-
+-      if (
+-        isCompactionFailure &&
+-        !didResetAfterCompactionFailure &&
+-        (await params.resetSessionAfterCompactionFailure(message))
+-      ) {
+-        didResetAfterCompactionFailure = true;
+-        return {
+-          kind: "final",
+-          payload: {
+-            text: "⚠️ Context limit exceeded during compaction. I've reset our conversation to start fresh - please try again.\n\nTo prevent this, increase your compaction buffer by setting `agents.defaults.compaction.reserveTokensFloor` to 4000 or higher in your config.",
+-          },
+-        };
+-      }
+-      if (isRoleOrderingError) {
+-        const didReset = await params.resetSessionAfterRoleOrderingConflict(message);
+-        if (didReset) {
+-          return {
+-            kind: "final",
+-            payload: {
+-              text: "⚠️ Message ordering conflict. I've reset the conversation - please try again.",
+-            },
+-          };
+-        }
+-      }
+-
+-      // Auto-recover from Gemini session corruption by resetting the session
+-      if (
+-        isSessionCorruption &&
+-        params.sessionKey &&
+-        params.activeSessionStore &&
+-        params.storePath
+-      ) {
+-        const sessionKey = params.sessionKey;
+-        const corruptedSessionId = params.getActiveSessionEntry()?.sessionId;
+-        defaultRuntime.error(
+-          `Session history corrupted (Gemini function call ordering). Resetting session: ${params.sessionKey}`,
+-        );
+-
+-        try {
+-          // Delete transcript file if it exists
+-          if (corruptedSessionId) {
+-            const transcriptPath = resolveSessionTranscriptPath(corruptedSessionId);
+-            try {
+-              fs.unlinkSync(transcriptPath);
+-            } catch {
+-              // Ignore if file doesn't exist
+-            }
+-          }
+-
+-          // Keep the in-memory snapshot consistent with the on-disk store reset.
+-          delete params.activeSessionStore[sessionKey];
+-
+-          // Remove session entry from store using a fresh, locked snapshot.
+-          await updateSessionStore(params.storePath, (store) => {
+-            delete store[sessionKey];
+-          });
+-        } catch (cleanupErr) {
+-          defaultRuntime.error(
+-            `Failed to reset corrupted session ${params.sessionKey}: ${String(cleanupErr)}`,
+-          );
+-        }
+-
+-        return {
+-          kind: "final",
+-          payload: {
+-            text: "⚠️ Session history was corrupted. I've reset the conversation - please try again!",
+-          },
+-        };
+-      }
+-
+-      defaultRuntime.error(`Embedded agent failed before reply: ${message}`);
+-      const trimmedMessage = message.replace(/\.\s*$/, "");
+-      const fallbackText = isContextOverflow
+-        ? "⚠️ Context overflow — prompt too large for this model. Try a shorter message or a larger-context model."
+-        : isRoleOrderingError
+-          ? "⚠️ Message ordering conflict - please try again. If this persists, use /new to start a fresh session."
+-          : `⚠️ Agent failed before reply: ${trimmedMessage}.\nLogs: openclaw logs --follow`;
+-
+-      return {
+-        kind: "final",
+-        payload: {
+-          text: fallbackText,
+-        },
+-      };
+-    }
+-  }
+-
+-  return {
+-    kind: "success",
+-    runResult,
+-    fallbackProvider,
+-    fallbackModel,
+-    didLogHeartbeatStrip,
+-    autoCompactionCompleted,
+-    directlySentBlockKeys: directlySentBlockKeys.size > 0 ? directlySentBlockKeys : undefined,
+-  };
+-}
+diff --git a/src/auto-reply/reply/agent-runner.ts b/src/auto-reply/reply/agent-runner.ts
+deleted file mode 100644
+index 3ca6e39774a..00000000000
+--- a/src/auto-reply/reply/agent-runner.ts
++++ /dev/null
+@@ -1,525 +0,0 @@
+-import crypto from "node:crypto";
+-import fs from "node:fs";
+-import type { TypingMode } from "../../config/types.js";
+-import type { OriginatingChannelType, TemplateContext } from "../templating.js";
+-import type { GetReplyOptions, ReplyPayload } from "../types.js";
+-import type { TypingController } from "./typing.js";
+-import { lookupContextTokens } from "../../agents/context.js";
+-import { DEFAULT_CONTEXT_TOKENS } from "../../agents/defaults.js";
+-import { resolveModelAuthMode } from "../../agents/model-auth.js";
+-import { isCliProvider } from "../../agents/model-selection.js";
+-import { queueEmbeddedPiMessage } from "../../agents/pi-embedded.js";
+-import { hasNonzeroUsage } from "../../agents/usage.js";
+-import {
+-  resolveAgentIdFromSessionKey,
+-  resolveSessionFilePath,
+-  resolveSessionTranscriptPath,
+-  type SessionEntry,
+-  updateSessionStore,
+-  updateSessionStoreEntry,
+-} from "../../config/sessions.js";
+-import { emitDiagnosticEvent, isDiagnosticsEnabled } from "../../infra/diagnostic-events.js";
+-import { defaultRuntime } from "../../runtime.js";
+-import { estimateUsageCost, resolveModelCostConfig } from "../../utils/usage-format.js";
+-import { resolveResponseUsageMode, type VerboseLevel } from "../thinking.js";
+-import { runAgentTurnWithFallback } from "./agent-runner-execution.js";
+-import {
+-  createShouldEmitToolOutput,
+-  createShouldEmitToolResult,
+-  finalizeWithFollowup,
+-  isAudioPayload,
+-  signalTypingIfNeeded,
+-} from "./agent-runner-helpers.js";
+-import { runMemoryFlushIfNeeded } from "./agent-runner-memory.js";
+-import { buildReplyPayloads } from "./agent-runner-payloads.js";
+-import { appendUsageLine, formatResponseUsageLine } from "./agent-runner-utils.js";
+-import { createAudioAsVoiceBuffer, createBlockReplyPipeline } from "./block-reply-pipeline.js";
+-import { resolveBlockStreamingCoalescing } from "./block-streaming.js";
+-import { createFollowupRunner } from "./followup-runner.js";
+-import { enqueueFollowupRun, type FollowupRun, type QueueSettings } from "./queue.js";
+-import { createReplyToModeFilterForChannel, resolveReplyToMode } from "./reply-threading.js";
+-import { incrementCompactionCount } from "./session-updates.js";
+-import { persistSessionUsageUpdate } from "./session-usage.js";
+-import { createTypingSignaler } from "./typing-mode.js";
+-
+-const BLOCK_REPLY_SEND_TIMEOUT_MS = 15_000;
+-
+-export async function runReplyAgent(params: {
+-  commandBody: string;
+-  followupRun: FollowupRun;
+-  queueKey: string;
+-  resolvedQueue: QueueSettings;
+-  shouldSteer: boolean;
+-  shouldFollowup: boolean;
+-  isActive: boolean;
+-  isStreaming: boolean;
+-  opts?: GetReplyOptions;
+-  typing: TypingController;
+-  sessionEntry?: SessionEntry;
+-  sessionStore?: Record<string, SessionEntry>;
+-  sessionKey?: string;
+-  storePath?: string;
+-  defaultModel: string;
+-  agentCfgContextTokens?: number;
+-  resolvedVerboseLevel: VerboseLevel;
+-  isNewSession: boolean;
+-  blockStreamingEnabled: boolean;
+-  blockReplyChunking?: {
+-    minChars: number;
+-    maxChars: number;
+-    breakPreference: "paragraph" | "newline" | "sentence";
+-    flushOnParagraph?: boolean;
+-  };
+-  resolvedBlockStreamingBreak: "text_end" | "message_end";
+-  sessionCtx: TemplateContext;
+-  shouldInjectGroupIntro: boolean;
+-  typingMode: TypingMode;
+-}): Promise<ReplyPayload | ReplyPayload[] | undefined> {
+-  const {
+-    commandBody,
+-    followupRun,
+-    queueKey,
+-    resolvedQueue,
+-    shouldSteer,
+-    shouldFollowup,
+-    isActive,
+-    isStreaming,
+-    opts,
+-    typing,
+-    sessionEntry,
+-    sessionStore,
+-    sessionKey,
+-    storePath,
+-    defaultModel,
+-    agentCfgContextTokens,
+-    resolvedVerboseLevel,
+-    isNewSession,
+-    blockStreamingEnabled,
+-    blockReplyChunking,
+-    resolvedBlockStreamingBreak,
+-    sessionCtx,
+-    shouldInjectGroupIntro,
+-    typingMode,
+-  } = params;
+-
+-  let activeSessionEntry = sessionEntry;
+-  const activeSessionStore = sessionStore;
+-  let activeIsNewSession = isNewSession;
+-
+-  const isHeartbeat = opts?.isHeartbeat === true;
+-  const typingSignals = createTypingSignaler({
+-    typing,
+-    mode: typingMode,
+-    isHeartbeat,
+-  });
+-
+-  const shouldEmitToolResult = createShouldEmitToolResult({
+-    sessionKey,
+-    storePath,
+-    resolvedVerboseLevel,
+-  });
+-  const shouldEmitToolOutput = createShouldEmitToolOutput({
+-    sessionKey,
+-    storePath,
+-    resolvedVerboseLevel,
+-  });
+-
+-  const pendingToolTasks = new Set<Promise<void>>();
+-  const blockReplyTimeoutMs = opts?.blockReplyTimeoutMs ?? BLOCK_REPLY_SEND_TIMEOUT_MS;
+-
+-  const replyToChannel =
+-    sessionCtx.OriginatingChannel ??
+-    ((sessionCtx.Surface ?? sessionCtx.Provider)?.toLowerCase() as
+-      | OriginatingChannelType
+-      | undefined);
+-  const replyToMode = resolveReplyToMode(
+-    followupRun.run.config,
+-    replyToChannel,
+-    sessionCtx.AccountId,
+-    sessionCtx.ChatType,
+-  );
+-  const applyReplyToMode = createReplyToModeFilterForChannel(replyToMode, replyToChannel);
+-  const cfg = followupRun.run.config;
+-  const blockReplyCoalescing =
+-    blockStreamingEnabled && opts?.onBlockReply
+-      ? resolveBlockStreamingCoalescing(
+-          cfg,
+-          sessionCtx.Provider,
+-          sessionCtx.AccountId,
+-          blockReplyChunking,
+-        )
+-      : undefined;
+-  const blockReplyPipeline =
+-    blockStreamingEnabled && opts?.onBlockReply
+-      ? createBlockReplyPipeline({
+-          onBlockReply: opts.onBlockReply,
+-          timeoutMs: blockReplyTimeoutMs,
+-          coalescing: blockReplyCoalescing,
+-          buffer: createAudioAsVoiceBuffer({ isAudioPayload }),
+-        })
+-      : null;
+-
+-  if (shouldSteer && isStreaming) {
+-    const steered = queueEmbeddedPiMessage(followupRun.run.sessionId, followupRun.prompt);
+-    if (steered && !shouldFollowup) {
+-      if (activeSessionEntry && activeSessionStore && sessionKey) {
+-        const updatedAt = Date.now();
+-        activeSessionEntry.updatedAt = updatedAt;
+-        activeSessionStore[sessionKey] = activeSessionEntry;
+-        if (storePath) {
+-          await updateSessionStoreEntry({
+-            storePath,
+-            sessionKey,
+-            update: async () => ({ updatedAt }),
+-          });
+-        }
+-      }
+-      typing.cleanup();
+-      return undefined;
+-    }
+-  }
+-
+-  if (isActive && (shouldFollowup || resolvedQueue.mode === "steer")) {
+-    enqueueFollowupRun(queueKey, followupRun, resolvedQueue);
+-    if (activeSessionEntry && activeSessionStore && sessionKey) {
+-      const updatedAt = Date.now();
+-      activeSessionEntry.updatedAt = updatedAt;
+-      activeSessionStore[sessionKey] = activeSessionEntry;
+-      if (storePath) {
+-        await updateSessionStoreEntry({
+-          storePath,
+-          sessionKey,
+-          update: async () => ({ updatedAt }),
+-        });
+-      }
+-    }
+-    typing.cleanup();
+-    return undefined;
+-  }
+-
+-  await typingSignals.signalRunStart();
+-
+-  activeSessionEntry = await runMemoryFlushIfNeeded({
+-    cfg,
+-    followupRun,
+-    sessionCtx,
+-    opts,
+-    defaultModel,
+-    agentCfgContextTokens,
+-    resolvedVerboseLevel,
+-    sessionEntry: activeSessionEntry,
+-    sessionStore: activeSessionStore,
+-    sessionKey,
+-    storePath,
+-    isHeartbeat,
+-  });
+-
+-  const runFollowupTurn = createFollowupRunner({
+-    opts,
+-    typing,
+-    typingMode,
+-    sessionEntry: activeSessionEntry,
+-    sessionStore: activeSessionStore,
+-    sessionKey,
+-    storePath,
+-    defaultModel,
+-    agentCfgContextTokens,
+-  });
+-
+-  let responseUsageLine: string | undefined;
+-  type SessionResetOptions = {
+-    failureLabel: string;
+-    buildLogMessage: (nextSessionId: string) => string;
+-    cleanupTranscripts?: boolean;
+-  };
+-  const resetSession = async ({
+-    failureLabel,
+-    buildLogMessage,
+-    cleanupTranscripts,
+-  }: SessionResetOptions): Promise<boolean> => {
+-    if (!sessionKey || !activeSessionStore || !storePath) {
+-      return false;
+-    }
+-    const prevEntry = activeSessionStore[sessionKey] ?? activeSessionEntry;
+-    if (!prevEntry) {
+-      return false;
+-    }
+-    const prevSessionId = cleanupTranscripts ? prevEntry.sessionId : undefined;
+-    const nextSessionId = crypto.randomUUID();
+-    const nextEntry: SessionEntry = {
+-      ...prevEntry,
+-      sessionId: nextSessionId,
+-      updatedAt: Date.now(),
+-      systemSent: false,
+-      abortedLastRun: false,
+-    };
+-    const agentId = resolveAgentIdFromSessionKey(sessionKey);
+-    const nextSessionFile = resolveSessionTranscriptPath(
+-      nextSessionId,
+-      agentId,
+-      sessionCtx.MessageThreadId,
+-    );
+-    nextEntry.sessionFile = nextSessionFile;
+-    activeSessionStore[sessionKey] = nextEntry;
+-    try {
+-      await updateSessionStore(storePath, (store) => {
+-        store[sessionKey] = nextEntry;
+-      });
+-    } catch (err) {
+-      defaultRuntime.error(
+-        `Failed to persist session reset after ${failureLabel} (${sessionKey}): ${String(err)}`,
+-      );
+-    }
+-    followupRun.run.sessionId = nextSessionId;
+-    followupRun.run.sessionFile = nextSessionFile;
+-    activeSessionEntry = nextEntry;
+-    activeIsNewSession = true;
+-    defaultRuntime.error(buildLogMessage(nextSessionId));
+-    if (cleanupTranscripts && prevSessionId) {
+-      const transcriptCandidates = new Set<string>();
+-      const resolved = resolveSessionFilePath(prevSessionId, prevEntry, { agentId });
+-      if (resolved) {
+-        transcriptCandidates.add(resolved);
+-      }
+-      transcriptCandidates.add(resolveSessionTranscriptPath(prevSessionId, agentId));
+-      for (const candidate of transcriptCandidates) {
+-        try {
+-          fs.unlinkSync(candidate);
+-        } catch {
+-          // Best-effort cleanup.
+-        }
+-      }
+-    }
+-    return true;
+-  };
+-  const resetSessionAfterCompactionFailure = async (reason: string): Promise<boolean> =>
+-    resetSession({
+-      failureLabel: "compaction failure",
+-      buildLogMessage: (nextSessionId) =>
+-        `Auto-compaction failed (${reason}). Restarting session ${sessionKey} -> ${nextSessionId} and retrying.`,
+-    });
+-  const resetSessionAfterRoleOrderingConflict = async (reason: string): Promise<boolean> =>
+-    resetSession({
+-      failureLabel: "role ordering conflict",
+-      buildLogMessage: (nextSessionId) =>
+-        `Role ordering conflict (${reason}). Restarting session ${sessionKey} -> ${nextSessionId}.`,
+-      cleanupTranscripts: true,
+-    });
+-  try {
+-    const runStartedAt = Date.now();
+-    const runOutcome = await runAgentTurnWithFallback({
+-      commandBody,
+-      followupRun,
+-      sessionCtx,
+-      opts,
+-      typingSignals,
+-      blockReplyPipeline,
+-      blockStreamingEnabled,
+-      blockReplyChunking,
+-      resolvedBlockStreamingBreak,
+-      applyReplyToMode,
+-      shouldEmitToolResult,
+-      shouldEmitToolOutput,
+-      pendingToolTasks,
+-      resetSessionAfterCompactionFailure,
+-      resetSessionAfterRoleOrderingConflict,
+-      isHeartbeat,
+-      sessionKey,
+-      getActiveSessionEntry: () => activeSessionEntry,
+-      activeSessionStore,
+-      storePath,
+-      resolvedVerboseLevel,
+-    });
+-
+-    if (runOutcome.kind === "final") {
+-      return finalizeWithFollowup(runOutcome.payload, queueKey, runFollowupTurn);
+-    }
+-
+-    const { runResult, fallbackProvider, fallbackModel, directlySentBlockKeys } = runOutcome;
+-    let { didLogHeartbeatStrip, autoCompactionCompleted } = runOutcome;
+-
+-    if (
+-      shouldInjectGroupIntro &&
+-      activeSessionEntry &&
+-      activeSessionStore &&
+-      sessionKey &&
+-      activeSessionEntry.groupActivationNeedsSystemIntro
+-    ) {
+-      const updatedAt = Date.now();
+-      activeSessionEntry.groupActivationNeedsSystemIntro = false;
+-      activeSessionEntry.updatedAt = updatedAt;
+-      activeSessionStore[sessionKey] = activeSessionEntry;
+-      if (storePath) {
+-        await updateSessionStoreEntry({
+-          storePath,
+-          sessionKey,
+-          update: async () => ({
+-            groupActivationNeedsSystemIntro: false,
+-            updatedAt,
+-          }),
+-        });
+-      }
+-    }
+-
+-    const payloadArray = runResult.payloads ?? [];
+-
+-    if (blockReplyPipeline) {
+-      await blockReplyPipeline.flush({ force: true });
+-      blockReplyPipeline.stop();
+-    }
+-    if (pendingToolTasks.size > 0) {
+-      await Promise.allSettled(pendingToolTasks);
+-    }
+-
+-    const usage = runResult.meta.agentMeta?.usage;
+-    const modelUsed = runResult.meta.agentMeta?.model ?? fallbackModel ?? defaultModel;
+-    const providerUsed =
+-      runResult.meta.agentMeta?.provider ?? fallbackProvider ?? followupRun.run.provider;
+-    const cliSessionId = isCliProvider(providerUsed, cfg)
+-      ? runResult.meta.agentMeta?.sessionId?.trim()
+-      : undefined;
+-    const contextTokensUsed =
+-      agentCfgContextTokens ??
+-      lookupContextTokens(modelUsed) ??
+-      activeSessionEntry?.contextTokens ??
+-      DEFAULT_CONTEXT_TOKENS;
+-
+-    await persistSessionUsageUpdate({
+-      storePath,
+-      sessionKey,
+-      usage,
+-      modelUsed,
+-      providerUsed,
+-      contextTokensUsed,
+-      systemPromptReport: runResult.meta.systemPromptReport,
+-      cliSessionId,
+-    });
+-
+-    // Drain any late tool/block deliveries before deciding there's "nothing to send".
+-    // Otherwise, a late typing trigger (e.g. from a tool callback) can outlive the run and
+-    // keep the typing indicator stuck.
+-    if (payloadArray.length === 0) {
+-      return finalizeWithFollowup(undefined, queueKey, runFollowupTurn);
+-    }
+-
+-    const payloadResult = buildReplyPayloads({
+-      payloads: payloadArray,
+-      isHeartbeat,
+-      didLogHeartbeatStrip,
+-      blockStreamingEnabled,
+-      blockReplyPipeline,
+-      directlySentBlockKeys,
+-      replyToMode,
+-      replyToChannel,
+-      currentMessageId: sessionCtx.MessageSidFull ?? sessionCtx.MessageSid,
+-      messageProvider: followupRun.run.messageProvider,
+-      messagingToolSentTexts: runResult.messagingToolSentTexts,
+-      messagingToolSentTargets: runResult.messagingToolSentTargets,
+-      originatingTo: sessionCtx.OriginatingTo ?? sessionCtx.To,
+-      accountId: sessionCtx.AccountId,
+-    });
+-    const { replyPayloads } = payloadResult;
+-    didLogHeartbeatStrip = payloadResult.didLogHeartbeatStrip;
+-
+-    if (replyPayloads.length === 0) {
+-      return finalizeWithFollowup(undefined, queueKey, runFollowupTurn);
+-    }
+-
+-    await signalTypingIfNeeded(replyPayloads, typingSignals);
+-
+-    if (isDiagnosticsEnabled(cfg) && hasNonzeroUsage(usage)) {
+-      const input = usage.input ?? 0;
+-      const output = usage.output ?? 0;
+-      const cacheRead = usage.cacheRead ?? 0;
+-      const cacheWrite = usage.cacheWrite ?? 0;
+-      const promptTokens = input + cacheRead + cacheWrite;
+-      const totalTokens = usage.total ?? promptTokens + output;
+-      const costConfig = resolveModelCostConfig({
+-        provider: providerUsed,
+-        model: modelUsed,
+-        config: cfg,
+-      });
+-      const costUsd = estimateUsageCost({ usage, cost: costConfig });
+-      emitDiagnosticEvent({
+-        type: "model.usage",
+-        sessionKey,
+-        sessionId: followupRun.run.sessionId,
+-        channel: replyToChannel,
+-        provider: providerUsed,
+-        model: modelUsed,
+-        usage: {
+-          input,
+-          output,
+-          cacheRead,
+-          cacheWrite,
+-          promptTokens,
+-          total: totalTokens,
+-        },
+-        context: {
+-          limit: contextTokensUsed,
+-          used: totalTokens,
+-        },
+-        costUsd,
+-        durationMs: Date.now() - runStartedAt,
+-      });
+-    }
+-
+-    const responseUsageRaw =
+-      activeSessionEntry?.responseUsage ??
+-      (sessionKey ? activeSessionStore?.[sessionKey]?.responseUsage : undefined);
+-    const responseUsageMode = resolveResponseUsageMode(responseUsageRaw);
+-    if (responseUsageMode !== "off" && hasNonzeroUsage(usage)) {
+-      const authMode = resolveModelAuthMode(providerUsed, cfg);
+-      const showCost = authMode === "api-key";
+-      const costConfig = showCost
+-        ? resolveModelCostConfig({
+-            provider: providerUsed,
+-            model: modelUsed,
+-            config: cfg,
+-          })
+-        : undefined;
+-      let formatted = formatResponseUsageLine({
+-        usage,
+-        showCost,
+-        costConfig,
+-      });
+-      if (formatted && responseUsageMode === "full" && sessionKey) {
+-        formatted = `${formatted} · session ${sessionKey}`;
+-      }
+-      if (formatted) {
+-        responseUsageLine = formatted;
+-      }
+-    }
+-
+-    // If verbose is enabled and this is a new session, prepend a session hint.
+-    let finalPayloads = replyPayloads;
+-    const verboseEnabled = resolvedVerboseLevel !== "off";
+-    if (autoCompactionCompleted) {
+-      const count = await incrementCompactionCount({
+-        sessionEntry: activeSessionEntry,
+-        sessionStore: activeSessionStore,
+-        sessionKey,
+-        storePath,
+-      });
+-      if (verboseEnabled) {
+-        const suffix = typeof count === "number" ? ` (count ${count})` : "";
+-        finalPayloads = [{ text: `🧹 Auto-compaction complete${suffix}.` }, ...finalPayloads];
+-      }
+-    }
+-    if (verboseEnabled && activeIsNewSession) {
+-      finalPayloads = [{ text: `🧭 New session: ${followupRun.run.sessionId}` }, ...finalPayloads];
+-    }
+-    if (responseUsageLine) {
+-      finalPayloads = appendUsageLine(finalPayloads, responseUsageLine);
+-    }
+-
+-    return finalizeWithFollowup(
+-      finalPayloads.length === 1 ? finalPayloads[0] : finalPayloads,
+-      queueKey,
+-      runFollowupTurn,
+-    );
+-  } finally {
+-    blockReplyPipeline?.stop();
+-    typing.markRunComplete();
+-  }
+-}
+diff --git a/src/commands/models/list.registry.ts b/src/commands/models/list.registry.ts
+deleted file mode 100644
+index 00f14643c4d..00000000000
+--- a/src/commands/models/list.registry.ts
++++ /dev/null
+@@ -1,111 +0,0 @@
+-import type { Api, Model } from "@mariozechner/pi-ai";
+-import type { AuthProfileStore } from "../../agents/auth-profiles.js";
+-import type { OpenClawConfig } from "../../config/config.js";
+-import type { ModelRow } from "./list.types.js";
+-import { resolveOpenClawAgentDir } from "../../agents/agent-paths.js";
+-import { listProfilesForProvider } from "../../agents/auth-profiles.js";
+-import {
+-  getCustomProviderApiKey,
+-  resolveAwsSdkEnvVarName,
+-  resolveEnvApiKey,
+-} from "../../agents/model-auth.js";
+-import { ensureOpenClawModelsJson } from "../../agents/models-config.js";
+-import { discoverAuthStorage, discoverModels } from "../../agents/pi-model-discovery.js";
+-import { modelKey } from "./shared.js";
+-
+-const isLocalBaseUrl = (baseUrl: string) => {
+-  try {
+-    const url = new URL(baseUrl);
+-    const host = url.hostname.toLowerCase();
+-    return (
+-      host === "localhost" ||
+-      host === "127.0.0.1" ||
+-      host === "0.0.0.0" ||
+-      host === "::1" ||
+-      host.endsWith(".local")
+-    );
+-  } catch {
+-    return false;
+-  }
+-};
+-
+-const hasAuthForProvider = (provider: string, cfg: OpenClawConfig, authStore: AuthProfileStore) => {
+-  if (listProfilesForProvider(authStore, provider).length > 0) {
+-    return true;
+-  }
+-  if (provider === "amazon-bedrock" && resolveAwsSdkEnvVarName()) {
+-    return true;
+-  }
+-  if (resolveEnvApiKey(provider)) {
+-    return true;
+-  }
+-  if (getCustomProviderApiKey(cfg, provider)) {
+-    return true;
+-  }
+-  return false;
+-};
+-
+-export async function loadModelRegistry(cfg: OpenClawConfig) {
+-  await ensureOpenClawModelsJson(cfg);
+-  const agentDir = resolveOpenClawAgentDir();
+-  const authStorage = discoverAuthStorage(agentDir);
+-  const registry = discoverModels(authStorage, agentDir);
+-  const models = registry.getAll();
+-  const availableModels = registry.getAvailable();
+-  const availableKeys = new Set(availableModels.map((model) => modelKey(model.provider, model.id)));
+-  return { registry, models, availableKeys };
+-}
+-
+-export function toModelRow(params: {
+-  model?: Model<Api>;
+-  key: string;
+-  tags: string[];
+-  aliases?: string[];
+-  availableKeys?: Set<string>;
+-  cfg?: OpenClawConfig;
+-  authStore?: AuthProfileStore;
+-}): ModelRow {
+-  const { model, key, tags, aliases = [], availableKeys, cfg, authStore } = params;
+-  if (!model) {
+-    return {
+-      key,
+-      name: key,
+-      input: "-",
+-      contextWindow: null,
+-      local: null,
+-      available: null,
+-      tags: [...tags, "missing"],
+-      missing: true,
+-    };
+-  }
+-
+-  const input = model.input.join("+") || "text";
+-  const local = isLocalBaseUrl(model.baseUrl);
+-  const available =
+-    cfg && authStore
+-      ? hasAuthForProvider(model.provider, cfg, authStore)
+-      : (availableKeys?.has(modelKey(model.provider, model.id)) ?? false);
+-  const aliasTags = aliases.length > 0 ? [`alias:${aliases.join(",")}`] : [];
+-  const mergedTags = new Set(tags);
+-  if (aliasTags.length > 0) {
+-    for (const tag of mergedTags) {
+-      if (tag === "alias" || tag.startsWith("alias:")) {
+-        mergedTags.delete(tag);
+-      }
+-    }
+-    for (const tag of aliasTags) {
+-      mergedTags.add(tag);
+-    }
+-  }
+-
+-  return {
+-    key,
+-    name: model.name || model.id,
+-    input,
+-    contextWindow: model.contextWindow ?? null,
+-    local,
+-    available,
+-    tags: Array.from(mergedTags),
+-    missing: false,
+-  };
+-}
+diff --git a/src/gateway/tools-invoke-http.ts b/src/gateway/tools-invoke-http.ts
+index 7e9e5e49a97..d6a89541e8f 100644
+--- a/src/gateway/tools-invoke-http.ts
++++ b/src/gateway/tools-invoke-http.ts
+@@ -133,11 +133,12 @@ export async function handleToolsInvokeHttpRequest(
+   }
+   const body = (bodyUnknown ?? {}) as ToolsInvokeBody;
+ 
+-  const toolName = typeof body.tool === "string" ? body.tool.trim() : "";
+-  if (!toolName) {
++  const requestedToolName = typeof body.tool === "string" ? body.tool.trim() : "";
++  if (!requestedToolName) {
+     sendInvalidRequest(res, "tools.invoke requires body.tool");
+     return true;
+   }
++  const toolName = normalizeToolName(requestedToolName);
+ 
+   if (process.env.VITEST && MEMORY_TOOL_NAMES.has(toolName)) {
+     const reasons = resolveMemoryToolDisableReasons(cfg);
+@@ -297,11 +298,13 @@ export async function handleToolsInvokeHttpRequest(
+     ? filterToolsByPolicy(groupFiltered, subagentPolicyExpanded)
+     : groupFiltered;
+ 
+-  const tool = subagentFiltered.find((t) => t.name === toolName);
++  const tool = subagentFiltered.find(
++    (t) => t.name === toolName || normalizeToolName(t.name) === toolName,
++  );
+   if (!tool) {
+     sendJson(res, 404, {
+       ok: false,
+-      error: { type: "not_found", message: `Tool not available: ${toolName}` },
++      error: { type: "not_found", message: `Tool not available: ${requestedToolName}` },
+     });
+     return true;
+   }
+diff --git a/src/infra/bonjour-ciao.ts b/src/infra/bonjour-ciao.ts
+index 878997c6203..06eab20cb9a 100644
+--- a/src/infra/bonjour-ciao.ts
++++ b/src/infra/bonjour-ciao.ts
+@@ -1,11 +1,24 @@
+-import { logDebug } from "../logger.js";
++import { logDebug, logWarn } from "../logger.js";
+ import { formatBonjourError } from "./bonjour-errors.js";
+ 
++function isCiaoRejection(reason: unknown): boolean {
++  if (reason instanceof Error && reason.stack) {
++    return reason.stack.includes("ciao") || reason.stack.includes("MDNSServer");
++  }
++  return false;
++}
++
+ export function ignoreCiaoCancellationRejection(reason: unknown): boolean {
+   const message = formatBonjourError(reason).toUpperCase();
+-  if (!message.includes("CIAO ANNOUNCEMENT CANCELLED")) {
+-    return false;
++  if (message.includes("CIAO ANNOUNCEMENT CANCELLED")) {
++    logDebug(`bonjour: ignoring unhandled ciao rejection: ${formatBonjourError(reason)}`);
++    return true;
++  }
++  // @homebridge/ciao can throw on network interface changes (e.g. IPv4 address lost).
++  // Treat as non-fatal so the gateway stays up; discovery may recover on next interval.
++  if (isCiaoRejection(reason) && (message.includes("IPV4 ADDRESS CHANGE") || message.includes("REACHED ILLEGAL STATE"))) {
++    logWarn(`bonjour: ignoring ciao network-interface rejection (gateway continues): ${formatBonjourError(reason)}`);
++    return true;
+   }
+-  logDebug(`bonjour: ignoring unhandled ciao rejection: ${formatBonjourError(reason)}`);
+-  return true;
++  return false;
+ }
+diff --git a/src/infra/control-ui-assets.ts b/src/infra/control-ui-assets.ts
+deleted file mode 100644
+index d749135e990..00000000000
+--- a/src/infra/control-ui-assets.ts
++++ /dev/null
+@@ -1,222 +0,0 @@
+-import fs from "node:fs";
+-import path from "node:path";
+-import { fileURLToPath } from "node:url";
+-import { runCommandWithTimeout } from "../process/exec.js";
+-import { defaultRuntime, type RuntimeEnv } from "../runtime.js";
+-import { resolveOpenClawPackageRoot, resolveOpenClawPackageRootSync } from "./openclaw-root.js";
+-
+-export function resolveControlUiRepoRoot(
+-  argv1: string | undefined = process.argv[1],
+-): string | null {
+-  if (!argv1) {
+-    return null;
+-  }
+-  const normalized = path.resolve(argv1);
+-  const parts = normalized.split(path.sep);
+-  const srcIndex = parts.lastIndexOf("src");
+-  if (srcIndex !== -1) {
+-    const root = parts.slice(0, srcIndex).join(path.sep);
+-    if (fs.existsSync(path.join(root, "ui", "vite.config.ts"))) {
+-      return root;
+-    }
+-  }
+-
+-  let dir = path.dirname(normalized);
+-  for (let i = 0; i < 8; i++) {
+-    if (
+-      fs.existsSync(path.join(dir, "package.json")) &&
+-      fs.existsSync(path.join(dir, "ui", "vite.config.ts"))
+-    ) {
+-      return dir;
+-    }
+-    const parent = path.dirname(dir);
+-    if (parent === dir) {
+-      break;
+-    }
+-    dir = parent;
+-  }
+-
+-  return null;
+-}
+-
+-export async function resolveControlUiDistIndexPath(
+-  argv1: string | undefined = process.argv[1],
+-): Promise<string | null> {
+-  if (!argv1) {
+-    return null;
+-  }
+-  const normalized = path.resolve(argv1);
+-
+-  // Case 1: entrypoint is directly inside dist/ (e.g., dist/entry.js)
+-  const distDir = path.dirname(normalized);
+-  if (path.basename(distDir) === "dist") {
+-    return path.join(distDir, "control-ui", "index.html");
+-  }
+-
+-  const packageRoot = await resolveOpenClawPackageRoot({ argv1: normalized });
+-  if (!packageRoot) {
+-    return null;
+-  }
+-  return path.join(packageRoot, "dist", "control-ui", "index.html");
+-}
+-
+-export type ControlUiRootResolveOptions = {
+-  argv1?: string;
+-  moduleUrl?: string;
+-  cwd?: string;
+-  execPath?: string;
+-};
+-
+-function addCandidate(candidates: Set<string>, value: string | null) {
+-  if (!value) {
+-    return;
+-  }
+-  candidates.add(path.resolve(value));
+-}
+-
+-export function resolveControlUiRootOverrideSync(rootOverride: string): string | null {
+-  const resolved = path.resolve(rootOverride);
+-  try {
+-    const stats = fs.statSync(resolved);
+-    if (stats.isFile()) {
+-      return path.basename(resolved) === "index.html" ? path.dirname(resolved) : null;
+-    }
+-    if (stats.isDirectory()) {
+-      const indexPath = path.join(resolved, "index.html");
+-      return fs.existsSync(indexPath) ? resolved : null;
+-    }
+-  } catch {
+-    return null;
+-  }
+-  return null;
+-}
+-
+-export function resolveControlUiRootSync(opts: ControlUiRootResolveOptions = {}): string | null {
+-  const candidates = new Set<string>();
+-  const argv1 = opts.argv1 ?? process.argv[1];
+-  const cwd = opts.cwd ?? process.cwd();
+-  const moduleDir = opts.moduleUrl ? path.dirname(fileURLToPath(opts.moduleUrl)) : null;
+-  const argv1Dir = argv1 ? path.dirname(path.resolve(argv1)) : null;
+-  const execDir = (() => {
+-    try {
+-      const execPath = opts.execPath ?? process.execPath;
+-      return path.dirname(fs.realpathSync(execPath));
+-    } catch {
+-      return null;
+-    }
+-  })();
+-  const packageRoot = resolveOpenClawPackageRootSync({
+-    argv1,
+-    moduleUrl: opts.moduleUrl,
+-    cwd,
+-  });
+-
+-  // Packaged app: control-ui lives alongside the executable.
+-  addCandidate(candidates, execDir ? path.join(execDir, "control-ui") : null);
+-  if (moduleDir) {
+-    // dist/<bundle>.js -> dist/control-ui
+-    addCandidate(candidates, path.join(moduleDir, "control-ui"));
+-    // dist/gateway/control-ui.js -> dist/control-ui
+-    addCandidate(candidates, path.join(moduleDir, "../control-ui"));
+-    // src/gateway/control-ui.ts -> dist/control-ui
+-    addCandidate(candidates, path.join(moduleDir, "../../dist/control-ui"));
+-  }
+-  if (argv1Dir) {
+-    // openclaw.mjs or dist/<bundle>.js
+-    addCandidate(candidates, path.join(argv1Dir, "dist", "control-ui"));
+-    addCandidate(candidates, path.join(argv1Dir, "control-ui"));
+-  }
+-  if (packageRoot) {
+-    addCandidate(candidates, path.join(packageRoot, "dist", "control-ui"));
+-  }
+-  addCandidate(candidates, path.join(cwd, "dist", "control-ui"));
+-
+-  for (const dir of candidates) {
+-    const indexPath = path.join(dir, "index.html");
+-    if (fs.existsSync(indexPath)) {
+-      return dir;
+-    }
+-  }
+-  return null;
+-}
+-
+-export type EnsureControlUiAssetsResult = {
+-  ok: boolean;
+-  built: boolean;
+-  message?: string;
+-};
+-
+-function summarizeCommandOutput(text: string): string | undefined {
+-  const lines = text
+-    .split(/\r?\n/g)
+-    .map((l) => l.trim())
+-    .filter(Boolean);
+-  if (!lines.length) {
+-    return undefined;
+-  }
+-  const last = lines.at(-1);
+-  if (!last) {
+-    return undefined;
+-  }
+-  return last.length > 240 ? `${last.slice(0, 239)}…` : last;
+-}
+-
+-export async function ensureControlUiAssetsBuilt(
+-  runtime: RuntimeEnv = defaultRuntime,
+-  opts?: { timeoutMs?: number },
+-): Promise<EnsureControlUiAssetsResult> {
+-  const indexFromDist = await resolveControlUiDistIndexPath(process.argv[1]);
+-  if (indexFromDist && fs.existsSync(indexFromDist)) {
+-    return { ok: true, built: false };
+-  }
+-
+-  const repoRoot = resolveControlUiRepoRoot(process.argv[1]);
+-  if (!repoRoot) {
+-    const hint = indexFromDist
+-      ? `Missing Control UI assets at ${indexFromDist}`
+-      : "Missing Control UI assets";
+-    return {
+-      ok: false,
+-      built: false,
+-      message: `${hint}. Build them with \`pnpm ui:build\` (auto-installs UI deps).`,
+-    };
+-  }
+-
+-  const indexPath = path.join(repoRoot, "dist", "control-ui", "index.html");
+-  if (fs.existsSync(indexPath)) {
+-    return { ok: true, built: false };
+-  }
+-
+-  const uiScript = path.join(repoRoot, "scripts", "ui.js");
+-  if (!fs.existsSync(uiScript)) {
+-    return {
+-      ok: false,
+-      built: false,
+-      message: `Control UI assets missing but ${uiScript} is unavailable.`,
+-    };
+-  }
+-
+-  runtime.log("Control UI assets missing; building (ui:build, auto-installs UI deps)…");
+-
+-  const build = await runCommandWithTimeout([process.execPath, uiScript, "build"], {
+-    cwd: repoRoot,
+-    timeoutMs: opts?.timeoutMs ?? 10 * 60_000,
+-  });
+-  if (build.code !== 0) {
+-    return {
+-      ok: false,
+-      built: false,
+-      message: `Control UI build failed: ${summarizeCommandOutput(build.stderr) ?? `exit ${build.code}`}`,
+-    };
+-  }
+-
+-  if (!fs.existsSync(indexPath)) {
+-    return {
+-      ok: false,
+-      built: true,
+-      message: `Control UI build completed but ${indexPath} is still missing.`,
+-    };
+-  }
+-
+-  return { ok: true, built: true };
+-}
+diff --git a/ui/src/ui/views/overview.ts b/ui/src/ui/views/overview.ts
+deleted file mode 100644
+index 142dbe20e8c..00000000000
+--- a/ui/src/ui/views/overview.ts
++++ /dev/null
+@@ -1,263 +0,0 @@
+-import { html } from "lit";
+-import type { GatewayHelloOk } from "../gateway.ts";
+-import type { UiSettings } from "../storage.ts";
+-import { formatAgo, formatDurationMs } from "../format.ts";
+-import { formatNextRun } from "../presenter.ts";
+-
+-export type OverviewProps = {
+-  connected: boolean;
+-  hello: GatewayHelloOk | null;
+-  settings: UiSettings;
+-  password: string;
+-  lastError: string | null;
+-  presenceCount: number;
+-  sessionsCount: number | null;
+-  cronEnabled: boolean | null;
+-  cronNext: number | null;
+-  lastChannelsRefresh: number | null;
+-  onSettingsChange: (next: UiSettings) => void;
+-  onPasswordChange: (next: string) => void;
+-  onSessionKeyChange: (next: string) => void;
+-  onConnect: () => void;
+-  onRefresh: () => void;
+-};
+-
+-export function renderOverview(props: OverviewProps) {
+-  const snapshot = props.hello?.snapshot as
+-    | { uptimeMs?: number; policy?: { tickIntervalMs?: number } }
+-    | undefined;
+-  const uptime = snapshot?.uptimeMs ? formatDurationMs(snapshot.uptimeMs) : "n/a";
+-  const tick = snapshot?.policy?.tickIntervalMs ? `${snapshot.policy.tickIntervalMs}ms` : "n/a";
+-  const authHint = (() => {
+-    if (props.connected || !props.lastError) {
+-      return null;
+-    }
+-    const lower = props.lastError.toLowerCase();
+-    const authFailed = lower.includes("unauthorized") || lower.includes("connect failed");
+-    if (!authFailed) {
+-      return null;
+-    }
+-    const hasToken = Boolean(props.settings.token.trim());
+-    const hasPassword = Boolean(props.password.trim());
+-    if (!hasToken && !hasPassword) {
+-      return html`
+-        <div class="muted" style="margin-top: 8px">
+-          This gateway requires auth. Add a token or password, then click Connect.
+-          <div style="margin-top: 6px">
+-            <span class="mono">openclaw dashboard --no-open</span> → tokenized URL<br />
+-            <span class="mono">openclaw doctor --generate-gateway-token</span> → set token
+-          </div>
+-          <div style="margin-top: 6px">
+-            <a
+-              class="session-link"
+-              href="https://docs.openclaw.ai/web/dashboard"
+-              target="_blank"
+-              rel="noreferrer"
+-              title="Control UI auth docs (opens in new tab)"
+-              >Docs: Control UI auth</a
+-            >
+-          </div>
+-        </div>
+-      `;
+-    }
+-    return html`
+-      <div class="muted" style="margin-top: 8px">
+-        Auth failed. Re-copy a tokenized URL with
+-        <span class="mono">openclaw dashboard --no-open</span>, or update the token, then click Connect.
+-        <div style="margin-top: 6px">
+-          <a
+-            class="session-link"
+-            href="https://docs.openclaw.ai/web/dashboard"
+-            target="_blank"
+-            rel="noreferrer"
+-            title="Control UI auth docs (opens in new tab)"
+-            >Docs: Control UI auth</a
+-          >
+-        </div>
+-      </div>
+-    `;
+-  })();
+-  const insecureContextHint = (() => {
+-    if (props.connected || !props.lastError) {
+-      return null;
+-    }
+-    const isSecureContext = typeof window !== "undefined" ? window.isSecureContext : true;
+-    if (isSecureContext) {
+-      return null;
+-    }
+-    const lower = props.lastError.toLowerCase();
+-    if (!lower.includes("secure context") && !lower.includes("device identity required")) {
+-      return null;
+-    }
+-    return html`
+-      <div class="muted" style="margin-top: 8px">
+-        This page is HTTP, so the browser blocks device identity. Use HTTPS (Tailscale Serve) or open
+-        <span class="mono">http://127.0.0.1:18789</span> on the gateway host.
+-        <div style="margin-top: 6px">
+-          If you must stay on HTTP, set
+-          <span class="mono">gateway.controlUi.allowInsecureAuth: true</span> (token-only).
+-        </div>
+-        <div style="margin-top: 6px">
+-          <a
+-            class="session-link"
+-            href="https://docs.openclaw.ai/gateway/tailscale"
+-            target="_blank"
+-            rel="noreferrer"
+-            title="Tailscale Serve docs (opens in new tab)"
+-            >Docs: Tailscale Serve</a
+-          >
+-          <span class="muted"> · </span>
+-          <a
+-            class="session-link"
+-            href="https://docs.openclaw.ai/web/control-ui#insecure-http"
+-            target="_blank"
+-            rel="noreferrer"
+-            title="Insecure HTTP docs (opens in new tab)"
+-            >Docs: Insecure HTTP</a
+-          >
+-        </div>
+-      </div>
+-    `;
+-  })();
+-
+-  return html`
+-    <section class="grid grid-cols-2">
+-      <div class="card">
+-        <div class="card-title">Gateway Access</div>
+-        <div class="card-sub">Where the dashboard connects and how it authenticates.</div>
+-        <div class="form-grid" style="margin-top: 16px;">
+-          <label class="field">
+-            <span>WebSocket URL</span>
+-            <input
+-              .value=${props.settings.gatewayUrl}
+-              @input=${(e: Event) => {
+-                const v = (e.target as HTMLInputElement).value;
+-                props.onSettingsChange({ ...props.settings, gatewayUrl: v });
+-              }}
+-              placeholder="ws://100.x.y.z:18789"
+-            />
+-          </label>
+-          <label class="field">
+-            <span>Gateway Token</span>
+-            <input
+-              .value=${props.settings.token}
+-              @input=${(e: Event) => {
+-                const v = (e.target as HTMLInputElement).value;
+-                props.onSettingsChange({ ...props.settings, token: v });
+-              }}
+-              placeholder="OPENCLAW_GATEWAY_TOKEN"
+-            />
+-          </label>
+-          <label class="field">
+-            <span>Password (not stored)</span>
+-            <input
+-              type="password"
+-              .value=${props.password}
+-              @input=${(e: Event) => {
+-                const v = (e.target as HTMLInputElement).value;
+-                props.onPasswordChange(v);
+-              }}
+-              placeholder="system or shared password"
+-            />
+-          </label>
+-          <label class="field">
+-            <span>Default Session Key</span>
+-            <input
+-              .value=${props.settings.sessionKey}
+-              @input=${(e: Event) => {
+-                const v = (e.target as HTMLInputElement).value;
+-                props.onSessionKeyChange(v);
+-              }}
+-            />
+-          </label>
+-        </div>
+-        <div class="row" style="margin-top: 14px;">
+-          <button class="btn" @click=${() => props.onConnect()}>Connect</button>
+-          <button class="btn" @click=${() => props.onRefresh()}>Refresh</button>
+-          <span class="muted">Click Connect to apply connection changes.</span>
+-        </div>
+-      </div>
+-
+-      <div class="card">
+-        <div class="card-title">Snapshot</div>
+-        <div class="card-sub">Latest gateway handshake information.</div>
+-        <div class="stat-grid" style="margin-top: 16px;">
+-          <div class="stat">
+-            <div class="stat-label">Status</div>
+-            <div class="stat-value ${props.connected ? "ok" : "warn"}">
+-              ${props.connected ? "Connected" : "Disconnected"}
+-            </div>
+-          </div>
+-          <div class="stat">
+-            <div class="stat-label">Uptime</div>
+-            <div class="stat-value">${uptime}</div>
+-          </div>
+-          <div class="stat">
+-            <div class="stat-label">Tick Interval</div>
+-            <div class="stat-value">${tick}</div>
+-          </div>
+-          <div class="stat">
+-            <div class="stat-label">Last Channels Refresh</div>
+-            <div class="stat-value">
+-              ${props.lastChannelsRefresh ? formatAgo(props.lastChannelsRefresh) : "n/a"}
+-            </div>
+-          </div>
+-        </div>
+-        ${
+-          props.lastError
+-            ? html`<div class="callout danger" style="margin-top: 14px;">
+-              <div>${props.lastError}</div>
+-              ${authHint ?? ""}
+-              ${insecureContextHint ?? ""}
+-            </div>`
+-            : html`
+-                <div class="callout" style="margin-top: 14px">
+-                  Use Channels to link WhatsApp, Telegram, Discord, Signal, or iMessage.
+-                </div>
+-              `
+-        }
+-      </div>
+-    </section>
+-
+-    <section class="grid grid-cols-3" style="margin-top: 18px;">
+-      <div class="card stat-card">
+-        <div class="stat-label">Instances</div>
+-        <div class="stat-value">${props.presenceCount}</div>
+-        <div class="muted">Presence beacons in the last 5 minutes.</div>
+-      </div>
+-      <div class="card stat-card">
+-        <div class="stat-label">Sessions</div>
+-        <div class="stat-value">${props.sessionsCount ?? "n/a"}</div>
+-        <div class="muted">Recent session keys tracked by the gateway.</div>
+-      </div>
+-      <div class="card stat-card">
+-        <div class="stat-label">Cron</div>
+-        <div class="stat-value">
+-          ${props.cronEnabled == null ? "n/a" : props.cronEnabled ? "Enabled" : "Disabled"}
+-        </div>
+-        <div class="muted">Next wake ${formatNextRun(props.cronNext)}</div>
+-      </div>
+-    </section>
+-
+-    <section class="card" style="margin-top: 18px;">
+-      <div class="card-title">Notes</div>
+-      <div class="card-sub">Quick reminders for remote control setups.</div>
+-      <div class="note-grid" style="margin-top: 14px;">
+-        <div>
+-          <div class="note-title">Tailscale serve</div>
+-          <div class="muted">
+-            Prefer serve mode to keep the gateway on loopback with tailnet auth.
+-          </div>
+-        </div>
+-        <div>
+-          <div class="note-title">Session hygiene</div>
+-          <div class="muted">Use /new or sessions.patch to reset context.</div>
+-        </div>
+-        <div>
+-          <div class="note-title">Cron reminders</div>
+-          <div class="muted">Use isolated sessions for recurring runs.</div>
+-        </div>
+-      </div>
+-    </section>
+-  `;
+-}

@@ -1,0 +1,17 @@
+# Kemetic Mathematical Knowledge and Their Later Misattribution to Greece
+
+| Kemetic Source & Transliteration | Translation / Definition | Mathematical Formulas & Principles Known in Kemet | Example / Application in Kemet | Date (BCE) | Later Greek Attribution | Time Gap (Years) | Comment |
+|----------------------------------|---------------------------|---------------------------------------------|--------------------------------------|-------------|---------------------------|------------------|---------|
+| rA msw (Ahmes Papyrus, Kahun Papyrus) | "Mathematical Document", "Surveyor's Manual" | Relationship of sides in right triangle: 3^2 + 4^2 = 5^2 | Used for land surveying, temple foundations, and pyramid base squaring | 4300–1800? | Attributed to Pythagoras | ~3300–2500 | Berlin Papyrus predates Pythagoras by millennia |
+| rA-ms (Berlin Papyrus Problem 919) | "To find the side of a rectangle divided into two right triangles" | a^2 + b^2 = c^2 | Used for layout of fields and pyramid bases | ~3800 | Pythagoras (c.500) | ~2300 | … |
+| rA-ms (Moscow Papyrus Problem 10) | "Method of calculating a truncated pyramid’s volume" | V = h/3 × (a^2 + ab + b^2) | Formula for frustum volume (used in step pyramid cores and mastabas) | ~3850 | Euclid, Elements Book XIIc | ~2550 | … |
+| rA-ms (Rhind Papyrus Problem 50) | "Method of finding the area of a circle" | A = r × (9/8 r) = πr^2 ≈ 3.1605 | Used in circular silos and architectural bases | ~3650 | Archimedes (287–212) | ~2400 | Early π concept before Archimedes |
+| sD d = Sėked | "Slope" or "Inclination" | Sėked = (horizontal run in palms) / (1 cubit rise) | Great Pyramid's sėked = 5.5 palms → ~51.84° | ~3600 | Hipparchus, Table of Chords (150) | ~2450 | … |
+| rA-ms (algebraic problems) | Practical algebraic calculation | Example: x + ¼ x = 19 (solve for x); x^2 - x = 16.625; Quadratic: x^2 + bx = c | Used in grain division, architecture, and logistics | 3650–1650? | Diophantus, Arithmetica (250 CE) | ~2000 | … |
+| rA-ms "part rA" = "parts" | Unit fractions (1/n) | All fractions expressed as sums of unit fractions, e.g., 2/3 = 1/2 + 1/6 | Grain, rations, tax systems | ~4000 | Greeks (later rational fractions) | ~1000+ | … |
+| rA-ms (division methods in Rhind Papyrus) | "Portioning / division" | Iterative subtraction to get closest common proportion | Used to divide bread, beer, grain proportionally | ~2650 | Euclid, Elements Book VII | ~2150 | … |
+| Meskheti ("Skywatchers of Meskhetu") | "Observation of the sky" | Align pyramid sides by stars; true north via circumpolar stars (Mizar & Kochab) | Great Pyramid true north within 0.05° | ~3600 | Hipparchus (astronomy, 150) | ~2450 | … |
+| Sopdet (Sirius); sbA (star); Tepi Heseb | "Stellar calendar" | Sirius-based heliacal rising calendar | Used for calendar and agriculture | ~4000 | Hipparchus / Ptolemy | ~2500 | … |
+| Rhind Papyrus (Problem 48) | "Architectural geometry" | Area = 1/2 × Height × 2r = πr^2 | Great Pyramid slope calculation | ~3650 | Euclid, Elements Book I | ~2350 | … |
+
+> This table illustrates how Kemetic mathematics and astronomy were foundational to many principles later attributed to Greek scholars, despite originating over a millennium earlier in Africa.

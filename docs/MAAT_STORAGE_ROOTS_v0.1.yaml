@@ -1,0 +1,215 @@
+# MAAT_STORAGE_ROOTS_v0.1 — Host Body Awareness / Storage Consciousness Layer
+# Law: Before the fleet debates, the body must know its organs.
+#      Before an agent writes, it must know the mount.
+# Schema: maat.storage_roots.v0.1
+# Machine: staydangerous (Tehuti Lab Ka spine / brain)
+
+version: "0.1"
+schema: maat.storage_roots.v0.1
+machine: staydangerous
+machine_lan: "192.168.4.21"
+agent_seat: cursor_staydangerous_n8n
+cockpit_workspace: /home/suspect/.n8n
+doctrine: |
+  Root is the cockpit, not the warehouse.
+  No agent may write large durable artifacts to root unless explicitly authorized.
+  Storage classes are authority boundaries, not suggestions.
+
+storage_roots:
+  cockpit:
+    paths:
+      - /
+      - /home
+    mount_devices_expected:
+      - /dev/mapper/ubuntu--vg-myRoots
+    purpose: "Cockpit / coordination / repos / configs only"
+    max_write_mb_without_review: 50
+    soft_full_pct: 90
+    hard_full_pct: 95
+    allowed:
+      - configs
+      - source_code
+      - small_receipts
+      - coordination_files
+      - docs
+    denied:
+      - model_weights
+      - training_outputs
+      - large_backups
+      - vector_store_bulk
+      - generated_media_bulk
+      - fine_tune_checkpoints
+      - ollama_blob_store
+
+  live_bulk:
+    paths:
+      - /mnt/data_drive
+    mount_devices_expected:
+      - /dev/nvme0n1
+    purpose: "Live bulk work, site builds, Workflowware packs, active artifacts"
+    max_write_mb_without_review: 8192
+    soft_full_pct: 90
+    hard_full_pct: 95
+    allowed:
+      - artifacts
+      - project_workspaces
+      - workflowware_packs
+      - site_builds
+      - active_datasets
+      - hermes_runtime
+      - librarian_wiki
+    denied:
+      - sole_model_weight_home  # prefer model_home for weights
+
+  model_home:
+    paths:
+      - /mnt/ai_models
+    mount_devices_expected:
+      - /dev/nvme2n1
+    purpose: "Model weights, GGUF/Ollama blobs, approved checkpoints"
+    max_write_mb_without_review: 65536
+    soft_full_pct: 92
+    hard_full_pct: 97
+    allowed:
+      - model_weights
+      - quantized_models
+      - checkpoints
+      - huggingface_cache
+    denied:
+      - source_monorepo
+      - site_builds
+
+  backup:
+    paths:
+      - /mnt/ai_backup
+    mount_devices_expected:
+      - /dev/nvme3n1
+    purpose: "Backups, frozen receipts, archives, old snapshots"
+    max_write_mb_without_review: 65536
+    soft_full_pct: 92
+    hard_full_pct: 97
+    allowed:
+      - archives
+      - frozen_receipts
+      - snapshots
+      - retired_trees
+    denied:
+      - active_site_builds
+      - live_coordination_db
+
+preflight:
+  before_write:
+    - resolve_realpath
+    - detect_mount
+    - classify_storage
+    - estimate_size
+    - check_authority
+    - allow_or_deny
+  outputs:
+    - ALLOW
+    - REVIEW
+    - DENY_EVENT
+    - NO_GO
+
+deny_rules:
+  - name: no_large_write_to_root
+    if:
+      mount_class: cockpit
+      estimated_size_mb_gt: 50
+    then: DENY_EVENT
+    reason: "Large durable write refused on cockpit mount — use live_bulk or model_home"
+
+  - name: no_model_weights_on_root
+    if:
+      mount_class: cockpit
+      artifact_type: model_weight
+    then: NO_GO
+    reason: "Model weights must live under model_home (/mnt/ai_models)"
+
+  - name: no_training_outputs_on_root
+    if:
+      mount_class: cockpit
+      artifact_type: training_output
+    then: NO_GO
+    reason: "Training outputs denied on cockpit — route to live_bulk or model_home"
+
+  - name: no_large_backup_on_root
+    if:
+      mount_class: cockpit
+      artifact_type: large_backup
+    then: NO_GO
+    reason: "Backups belong on /mnt/ai_backup"
+
+  - name: cockpit_hard_full
+    if:
+      mount_class: cockpit
+      used_pct_gte: 95
+    then: NO_GO
+    reason: "Cockpit mount at hard-full — emergency only for tiny configs"
+
+  - name: cockpit_soft_full_large
+    if:
+      mount_class: cockpit
+      used_pct_gte: 90
+      estimated_size_mb_gt: 10
+    then: DENY_EVENT
+    reason: "Cockpit soft-full — only tiny authorized writes"
+
+artifact_type_hints:
+  model_weight:
+    path_substrings:
+      - "/models/"
+      - ".gguf"
+      - "safetensors"
+      - "ollama/models"
+      - "blobs/"
+      - "huggingface"
+  training_output:
+    path_substrings:
+      - "fine-tuned"
+      - "checkpoints"
+      - "lora"
+      - "unsloth"
+  large_backup:
+    path_substrings:
+      - ".reorg-backup"
+      - "/backups/"
+      - ".tar."
+      - ".bak"
+  generated_media_bulk:
+    path_substrings:
+      - "comfyui/output"
+      - "generated_media"
+      - "ltx-output"
+
+existing_debt_2026_08_03:
+  # Truth receipts — violations already on cockpit (must migrate, not grow)
+  - path: /home/suspect/.ollama
+    size_approx: 218G
+    class_should_be: model_home
+  - path: /usr/share/ollama/.ollama/models
+    size_approx: 145G
+    note: "secondary ollama store on root volume"
+  - path: /home/suspect/comfyui
+    size_approx: 142G
+    class_should_be: live_bulk
+  - path: /home/suspect/.n8n/models
+    size_approx: 106G
+    class_should_be: model_home
+  - path: /home/suspect/.n8n/fine-tuned-models
+    size_approx: 22G
+    class_should_be: model_home
+  - path: /home/suspect/.n8n/.reorg-backup-20251217-222805
+    size_approx: 21G
+    class_should_be: backup
+  - path: /home/suspect/.cache
+    size_approx: 43G
+    class_should_be: live_bulk_or_ephemeral
+  - path: /home/suspect/models
+    size_approx: 26G
+    class_should_be: model_home
+
+operator_law:
+  - "Fleet join is blocked from dumping artifacts into /home or .n8n by write preflight."
+  - "Cursor / n8n / OpenClaw seats inherit this law — Linux permission is not Maat authority."
+  - "Cleanup of existing_debt is separate chores; gate prevents new debt."

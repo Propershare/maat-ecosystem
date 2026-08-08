@@ -1,0 +1,65 @@
+{
+  "$schema": "https://tehuti-lab.local/schemas/maat.guard.v1.json",
+  "version": 1,
+  "enabled": true,
+  "mode": "warn",
+  "failClosed": false,
+  "machineId": "staydangerous",
+  "audit": {
+    "localJsonl": "logs/guard-decisions.jsonl",
+    "includeInputSummary": true,
+    "includeRawInput": false
+  },
+  "guard": {
+    "enabled": true,
+    "url": "http://127.0.0.1:8013/decision",
+    "timeoutMs": 5000
+  },
+  "sacredPaths": [
+    "**/.env",
+    "**/.env.*",
+    "**/.git/**",
+    "**/auth.json",
+    "**/SOUL.md",
+    "**/USER.md",
+    "**/MEMORY.md",
+    "**/memory/**",
+    "**/tehuti-guard/**",
+    "**/maat-ecosystem/soul/**",
+    "**/maat-ecosystem/skeleton/schemas/**"
+  ],
+  "highRiskCommands": [
+    "rm -rf",
+    "rm -fr",
+    "rm -r /",
+    "mkfs.",
+    "dd if=",
+    ":(){ :|:& };:",
+    "curl ",
+    "| sh",
+    "| bash",
+    "wget ",
+    "shutdown",
+    "restart-computer",
+    "stop-computer",
+    "remove-item -recurse -force",
+    "del /f /s /q",
+    "chmod -r /",
+    "chown -r /"
+  ],
+  "packageInstall": {
+    "requireAllowlist": false,
+    "allowedSources": []
+  },
+  "centralCallPolicy": {
+    "read": "never",
+    "write": "when_not_low_risk",
+    "execute": "always",
+    "install": "always",
+    "memory_write": "always",
+    "policy_change": "always",
+    "deploy": "always",
+    "delete": "always",
+    "propose": "never"
+  }
+}
