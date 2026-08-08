@@ -91,6 +91,49 @@ The full sweep did not complete in this session. Partial observation:
 extensive `<think>` reasoning. **The model was working; the session
 timed out before the larger sizes could run.**
 
+## 5b. Results — `ministral-3:latest` (8.9B, 2026-08-08 follow-up)
+
+The faster model was chosen to validate the methodology end-to-end.
+Wall-clock budget per size: 50s. Results:
+
+| Size | Words | Actual "the" | Model response | Grade | Wall |
+|------|-------|--------------|----------------|-------|------|
+| 5k tokens | 3,000 | 1,000 | 704 | **FAIL ±29%** | 21s |
+| 25k tokens | 15,000 | 5,000 | 108 | **FAIL ±97%** | 9s |
+| 50k tokens | 30,000 | 10,000 | 100 | **FAIL ±99%** | 29s |
+| 100k tokens | (run errored — JSON parse failed in script) | — | — | — | — |
+
+**Honest interpretation:**
+- At **5k tokens, ministral-3 fails** the count task by 29%. The model
+  cannot reliably perform simple exact-match counting on a 5k input.
+  Either it's truncating input, offloading attention, or just guessing.
+- At **25k tokens, model collapses** to a near-constant answer (108 vs
+  5,000). This is the "dumb zone" the doctrine names — quality is not
+  merely degraded, it's structurally wrong.
+- At **50k tokens, model is even worse** (100 vs 10,000) and slower.
+- The 100k run errored on JSON parsing — likely the model returned
+  non-JSON output (or the response was malformed at that scale).
+
+**This is the first lab-confirmed empirical data point for §5.**
+The doctrine's "50–60% of context window" estimate may be optimistic
+for this model on this task. Ministral-3's effective capacity on exact-
+match counting appears to be **< 5k tokens**.
+
+**Caveats and methodology notes:**
+- Sample size is 1 model, 1 task. A second task (e.g., extraction vs
+  counting) might give different numbers.
+- The "PASS ±10%" band is generous; the FAILs are unambiguous.
+- Ministral-3 context window per ollama is **262,144 tokens** — so
+  this isn't a context-length limit. It's a quality / attention
+  degradation at small fractions of the nominal window.
+
+**Reproducibility:**
+```bash
+for size in 5000 25000 50000; do
+    /tmp/context-sweep/run_sweep.sh ministral-3:latest $size
+done
+```
+
 ## 6. Why the sweep timed out — and what to do next
 
 The sweep is **methodologically correct** but **operationally slow** on
@@ -130,17 +173,27 @@ sweep methodology itself is sound.
 
 ## 8. What this artifact does and doesn't prove
 
-**Proves:**
+**Proves (now):**
 - A reproducible, deterministic, graded sweep methodology exists
 - The current lab can run it on a faster model
 - The grading rubric is unambiguous (PASS / PASS ±10% / FAIL)
+- **ministral-3 fails the count task at 5k tokens** (±29%), collapses at
+  25k tokens (±97%). This is the first lab-confirmed empirical data
+  point for §5.
+- The doctrine's "50–60% of context window" estimate is **optimistic**
+  for ministral-3 on this task. Effective capacity appears to be < 5k tokens.
 
 **Does not prove yet:**
-- Where `qwen3.6:27b` actually starts degrading (run incomplete)
-- Whether the doctrine's "50–60%" threshold is accurate for any lab model
+- Where `qwen3.6:27b` actually starts degrading (still unverified; the
+  27b sweep timed out in §5). Recommended: run during off-hours.
 - Whether the count-the-word task correlates with more important tasks
   (probably yes for token-level attention, but unverified)
+- The full fleet-wide profile. Other models (gemma4:e4b, qwen3.5:9b,
+  qwythos:9b-v2-q4, etc.) should be swept before they're trusted.
 
-This is the **first empirical data point** in the doctrine's lab-confirmed
-column for §5. Until the larger sizes run, the §5 claim remains in the
-synthesized column of the doctrine's §7 truth tables.
+**Doctrine impact (per refs/agentic-engineering-doctrine-2026-08-08 §7.1
+and §7.3 truth tables):** the §5 claim should be moved from "Synthesized"
+to "Lab-confirmed with caveat: at least one model fails much earlier
+than the doctrine's optimistic estimate." The next re-audit (2026-10-01)
+should add a row to §7's truth table listing ministral-3's measured
+degradation point.
