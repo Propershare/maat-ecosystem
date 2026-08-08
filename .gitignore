@@ -15,10 +15,11 @@ venv/
 generate*.py
 
 # Symlinks (created at runtime for Python imports)
-maat_core
-maat_adapters
-maat_memory
-maat_packs
+# Anchored to repo root so source trees like maatlangchain/maat_memory/ are tracked.
+/maat_core
+/maat_adapters
+/maat_memory
+/maat_packs
 
 # Logs
 *.log
