@@ -1,0 +1,400 @@
+<h2 class="sr-only">Detailed breakdown of Dexter Horthy's agentic engineering workflow podcast and blog post, compiled for Tehuti Lab reference</h2>
+<style>
+.doc{max-width:660px;margin:0 auto;padding:2rem 0;font-family:var(--font-sans);color:var(--text-primary);line-height:1.7}
+.doc h1{font-size:22px;font-weight:500;margin:0 0 .5rem}
+.doc .meta{font-size:13px;color:var(--text-secondary);margin-bottom:2rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border)}
+.doc .meta span{display:block;margin-bottom:2px}
+.doc h2{font-size:18px;font-weight:500;margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:0.5px solid var(--border)}
+.doc h3{font-size:16px;font-weight:500;margin:1.5rem 0 .5rem}
+.doc p{margin:0 0 1rem;font-size:15px}
+.doc .bq{border-left:3px solid var(--border-accent);padding:0.75rem 1rem;margin:1rem 0;background:var(--bg-accent);border-radius:0 var(--radius) var(--radius) 0;font-size:14px;color:var(--text-accent)}
+.doc .bq2{border-left:3px solid var(--border-strong);padding:0.75rem 1rem;margin:1rem 0;background:var(--surface-1);border-radius:0 var(--radius) var(--radius) 0;font-size:14px}
+.doc pre{background:var(--surface-1);border:0.5px solid var(--border);border-radius:var(--radius);padding:1rem;font-family:var(--font-mono);font-size:12px;line-height:1.6;overflow-x:auto;margin:1rem 0;white-space:pre-wrap;word-break:break-word}
+.doc ul,.doc ol{margin:0 0 1rem;padding-left:1.5rem;font-size:15px}
+.doc li{margin-bottom:0.4rem}
+.doc strong{font-weight:500}
+.doc .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:var(--radius);margin-right:4px}
+.doc .pill-a{background:var(--bg-accent);color:var(--text-accent)}
+.doc .pill-d{background:var(--bg-danger);color:var(--text-danger)}
+.doc .pill-s{background:var(--bg-success);color:var(--text-success)}
+.doc .pill-w{background:var(--bg-warning);color:var(--text-warning)}
+.doc .pill-p{background:var(--bg-pro);color:var(--text-pro)}
+.doc .card{background:var(--surface-2);border:0.5px solid var(--border);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0}
+.doc .sum{background:var(--surface-1);border-radius:12px;padding:1.5rem;margin:2rem 0}
+.doc .sum h3{margin-top:0}
+.doc hr{border:none;border-top:0.5px solid var(--border);margin:2rem 0}
+</style>
+<div class="doc">
+
+<h1>Why software factories fail — Dexter Horthy breakdown</h1>
+<div class="meta">
+<span><strong>Source:</strong> David Ondrej Podcast, Aug 7 2026 — "Ex-NASA dev reveals his Agentic Engineering Workflow"</span>
+<span><strong>Guest:</strong> Dexter Horthy — coined "context engineering", creator of HumanLayer, 12 Factor Agents</span>
+<span><strong>Companion post:</strong> "Why Software Factories Fail" — hlyr.dev/wsff-gh</span>
+<span><strong>Compiled by:</strong> Tehuti Lab / Imhotep — August 8, 2026</span>
+</div>
+
+<div class="card">
+<h3>Why this matters to Tehuti Lab</h3>
+<p>This isn't abstract. You're running multiple agentic systems right now — MAAT legal AI with Jarvis mode and UPL Guard, the Alpaca options trading agent doing exhaustive config searches, the Maat-runtime TypeScript stack, MaatRAG with pgvector. Every lesson below applies directly to how you architect, review, and extend these systems. Dex's failures and insights map almost 1:1 to the risks of scaling your infrastructure without the discipline he describes.</p>
+</div>
+
+<h2>Part 1: The agentic software factory — what changed and what didn't</h2>
+
+<h3>The pre-AI loop (2022 software factory)</h3>
+<p>CEO/Vision + Product Managers + Engineers → stuff to do → person builds the thing → Pull Request → CI/CD checks, unit testing, static scanning, security checks → human tests + human reviews → rollout/deployment → PROD → MONITORING → incidents/complaints/feature requests → back to stuff to do.</p>
+<p>Key reality: building took hours/days. Reviewing took hours/days. We invested in meetings and alignment upfront to save review time on the back end.</p>
+
+<h3>The post-AI loop (agent builds the thing)</h3>
+<p>First substitution: replace "person builds the thing" with "agent builds the thing."</p>
+<ul>
+<li><span class="pill pill-s">fast now</span> Building drops from hours/days to <strong>minutes or hours</strong></li>
+<li><span class="pill pill-d">still slow</span> Review STILL takes hours or days</li>
+<li>A human still has to read the code and test the change</li>
+</ul>
+<div class="bq">Review is now the bottleneck.</div>
+
+<h3>Speeding up review (but not eliminating it)</h3>
+<p>Next steps most teams take: agentic code review (throw Codex and Opus at it, fix what they find), agentic regression testing (browser testing, computer use), better CI/CD checks, linters, complexity monitoring.</p>
+<p>This raises the floor. It catches the small stuff. But the hard judgment calls — "is this going to slow us down in a month?" — still require a human who understands the codebase.</p>
+
+<h3>Routing feedback into the factory</h3>
+<p>The most mature version: user complaints, feature requests, and monitoring incidents get triaged directly into the agent queue. An incident at 3 AM doesn't wake you up to an alert — it wakes you up to a pull request.</p>
+<p>Dex is already doing this: GLM 5.2 reviews every uptime incident for Deep API. Agent determines if it's the provider's fault or theirs. If theirs: here's the fix. If the provider: here's a draft message for Discord. Running on Render.com + cron jobs on Vercel + GitHub Actions.</p>
+
+<h2>Part 2: The "lights-off" factory — why it failed</h2>
+
+<h3>The experiment (July 2025)</h3>
+<p>Dex's team tried running a fully autonomous factory: agents build everything, reviewed plans and tickets but NOT code, collaboration on what went into the to-do list, but zero code reading. All trust placed in automated testing, code review agents, CI/CD.</p>
+
+<h3>What happened</h3>
+<p>They hit a bug the agents couldn't solve. Multiple frontier models in council couldn't diagnose it. They kept "thinking it's something that it's not" and shipping fixes that didn't fix it.</p>
+<ul>
+<li>Weeks spent reading through sloppy code they hadn't looked at in months</li>
+<li>Desktop app was buggy, users were angry</li>
+<li>Complete loss of codebase understanding made debugging exponentially harder</li>
+</ul>
+
+<div class="bq">The odds of hitting a bug you can't solve if you stop reading code are much higher than the odds that models will get smart enough to solve it before it happens.</div>
+
+<p>This is not a temporary limitation. It's structural, rooted in how models are trained.</p>
+
+<h3>The correction: stay in the loop</h3>
+<p>Instead of lights-off, the right model is the agent educating YOU: agent quizzes you on the current state of the codebase, HTML visualizations of how the new implementation changes things, multiple choice questions with mermaid diagrams, intentionally slowing down when you start to lose grip.</p>
+
+<div class="bq2">The word isn't "code" — it's "logic." You need to understand the logic: what does onboarding look like? What happens when someone cancels? What fires when this endpoint is called?</div>
+
+<h2>Part 3: Why coding agents write slop — the RL problem</h2>
+
+<h3>How models get better at coding</h3>
+<p>The reinforcement learning loop:</p>
+<ol>
+<li>Generate agent traces to solve a problem (e.g. fix my tests)</li>
+<li>Score the traces based on criteria (verifier)</li>
+<li>Update model weights — good traces more likely, bad traces less likely</li>
+<li>Repeat millions of times over weeks/months</li>
+</ol>
+
+<h3>How benchmarks grade (SWE-bench Multilingual)</h3>
+<p>Bug report + codebase checked out to pre-fix SHA → agent tries to solve it → produces a patch → graded in sandbox (agent never sees this): throw away agent's test edits, apply the golden test patch → did it fix the new problem? (FAIL_TO_PASS) + did it break anything else? (PASS_TO_PASS) → fixed it + broke nothing = <span class="pill pill-s">1</span>, anything else = <span class="pill pill-d">0</span></p>
+
+<div class="bq" style="border-left-color:var(--border-danger);background:var(--bg-danger);color:var(--text-danger)">The critical gap: there is no penalty for bad design.</div>
+
+<p>If the model solves the problem with unnecessary try-catches wrapping everything, lazy type casts, or 10x more code than needed — it still gets a 1.</p>
+
+<h3>Why quality can't be verified during RL</h3>
+<div class="bq">Running the tests gets you a clean pass or fail in seconds. That's why RL can run millions of loops. But the cost function of bad architecture is measured in weeks and months.</div>
+<ul>
+<li>A bad decision now leads to a bug/incident weeks later due to accumulated spaghetti</li>
+<li>There is no way to backpropagate this signal during a training run</li>
+<li>There is no fast oracle for maintainability</li>
+<li>If the model could tell good code from bad code, it would write good code in the first place</li>
+</ul>
+
+<h3>Concrete slop patterns</h3>
+<p>Try-catches that do nothing:</p>
+<pre>function getUserConfig(jsonString: string) {
+    try {
+        const config = JSON.parse(jsonString);
+        return config;
+    } catch (error) {
+        console.log("Failed to parse user config JSON");
+        return undefined;
+    }
+}</pre>
+<p>Lazy type casts that defeat the type system:</p>
+<pre>function updateProfile(userData: { name: string }) {
+    try {
+        const customData = userData as unknown as any;
+        customData.legacyId = 999;
+        return customData;
+    }
+}</pre>
+<p>These patterns emerge because the model is optimizing for "make tests pass" not "write maintainable code."</p>
+
+<h3>The missing benchmark</h3>
+<div class="bq2">Software is "discovering problems as you go." Every benchmark gives the model the whole problem up front. No benchmark feeds the model 5 features in a row and measures whether the codebase stays easy to change.</div>
+
+<h2>Part 4: The frontier is getting better, slowly</h2>
+
+<p><span class="pill pill-p">SWE-Marathon</span> (Abundant AI) — ~400-hour tasks like "clone all of Excel, every feature." Compound reward channel instead of single pass/fail.</p>
+<p><span class="pill pill-p">DeepSWE</span> (Datacurve) — big tasks on OSS repos that were never actually built in the real world. By construction, can't be in the training set.</p>
+<p><span class="pill pill-a">Frontier Code</span> (Cognition) — most interesting: multi-PR tasks, LLM judge model (does the solution functionally match the golden solution even if shaped differently?), LLM quality judge (given code quality rules, did the patch follow them?), mutation testing (remove the model's patch, run the model's tests against pre-patch code — if the tests DON'T fail, the model wrote tests that test nothing).</p>
+
+<div class="bq2">The hype is outrunning the discipline.</div>
+
+<h2>Part 5: The 4-stage program design system</h2>
+<p>Each stage is context-cheap (small token count, high model intelligence) and front-loads the decisions that are expensive to change later.</p>
+
+<div class="card">
+<h3><span class="pill pill-a">Stage 1</span> Product — what are we building and why?</h3>
+<p>Before any code or architecture: what user problem are we trying to solve? How do we measure success? Write the blog post BEFORE you build the feature (Amazon method). HTML mockups of what the user will see. No tech, no databases, no schemas — just what does the user experience?</p>
+<p>If you can define a measurable output, the agent will move mountains for you. Agent can A/B test three approaches, check the data daily, pick the winner. Models never call you out: "you've been working on this for days with zero progress and zero users."</p>
+</div>
+
+<div class="card">
+<h3><span class="pill pill-a">Stage 2</span> System architecture — how services fit together</h3>
+<p>How servicesnes. High-level design that the PR reviewer would want to see BEFORE the code. Most builders are comfortable here. This is where the majority stop.</p>
+</div>
+
+<div class="card" style="border-color:var(--border-accent)">
+<h3><span class="pill pill-d">Stage 3</span> Program design — the layer most people skip</h3>
+<div class="bq">The thing that I think most people skip is actually what I call program design — before you let the agent go cook, there are decisions that it's going to make that you might not like.</div>
+<p>What this looks like: where do the files go? What does the call stack look like? Define the types and method signatures (NOT the implementation). What will the tests look like?</p>
+<pre>// Define types and signatures, NOT implementation
+interface ContentChunk {
+  id: string;
+  source_id: string;
+  text: string;
+  embedding: number[];
+  metadata: Record&lt;string, unknown&gt;;
+}
+
+function chunkDocument(doc: Document, strategy: ChunkStrategy): ContentChunk[];
+function embedChunks(chunks: ContentChunk[], model: EmbeddingModel): Promise&lt;ContentChunk[]&gt;;
+function similaritySearch(query: string, topK: number): Promise&lt;ContentChunk[]&gt;;</pre>
+<p>Once the model has written thousands of lines, it's harder to change direction. You're deep in a context window, biased by what the model already chose. These design sessions are very token-efficient — high intelligence per token.</p>
+<p><strong>Dylan Mroy (Cloudflare):</strong> plans end with "here's what the tests will look like" and "here's what the call stack will look like."</p>
+<p><strong>Victor Talin (inverse):</strong> after the model runs, ask "which choices did you make that you're not confident of?" — Dex's approach does this BEFORE the model runs, when it's cheaper to change.</p>
+</div>
+
+<div class="card">
+<h3><span class="pill pill-s">Stage 4</span> Vertical slices — build end-to-end first</h3>
+<p>Models build horizontally by default: all DB first (phase 1, 200 loc) → all services (phase 2, 200 loc) → all API + wire (phase 3, 400 loc) → all frontend (phase 4, 400 loc) = 1200 LoC total with nothing testable until the end.</p>
+<p>The vertical approach:</p>
+<ol>
+<li>Build a mock API endpoint → test it</li>
+<li>Stub out the front end → test it</li>
+<li>Wire the front end to the mock → test it</li>
+<li>Do the migration → test it</li>
+<li>Add business logic → test it</li>
+<li>Add error handling → test it</li>
+</ol>
+<div class="bq">Get it working end-to-end first, then go add logic, then go add business cases.</div>
+<p>This is how experienced engineers built software before AI. Hello world → change it until it looks like what you want → push boundaries as you go. You can test at each step, cheaper to resteer early when the code is small.</p>
+</div>
+
+<h2>Part 6: Context engineering — the physics of it</h2>
+
+<h3>The core principle (12 Factor Agents, March/April 2025)</h3>
+<div class="bq">Own your context window.</div>
+<p>Everything you do with LLMs is tokens in, tokens out. The only way to get better results is to put the RIGHT tokens in. Not more — right.</p>
+<p>Three rules for context windows:</p>
+<ol>
+<li><strong>No wrong information</strong> — anything incorrect degrades everything</li>
+<li><strong>No missing information</strong> — the model can't use what it doesn't have</li>
+<li><strong>As small as possible</strong> within those constraints</li>
+</ol>
+<p>XML is more token-efficient than JSON for context. This matters at scale.</p>
+
+<h3>The dumb zone</h3>
+<p>At roughly 50-60% of context window capacity, model performance starts degrading. The metaphor: a student taking an exam who realizes they have 5 minutes left and starts rushing. Observed behaviors: "context anxiety," cutting corners, scrambling, giving up. Opus 4.5 and Sonnet 4.5 were particularly prone.</p>
+<p>The fix: when you hit the dumb zone, compact everything into a document, start a new session from that document. With better models you can push further (200-300k tokens), but the principle holds.</p>
+<div class="bq2">This is training wheels. After ~70 hours of talking to Claude per week for 3 weeks, you develop intuition for when the session is off the rails.</div>
+
+<h3>Context in the codebase</h3>
+<p>Put as much as possible into the file system so the model can access it natively (read, write, edit, grep, bash):</p>
+<ul>
+<li><code>/doc/ADR/</code> — Architecture Decision Records. "We're launching pricing this way." "We never change the API schema; if there's a massive change, ship v2."</li>
+<li><code>/doc/external/</code> — What environment variables exist (not values). Payment processor setup. Which emails for testing. Where customers contact you.</li>
+</ul>
+<p>Why files beat MCP servers and instructions: instructions about HOW to get context waste attention tokens while the model is trying to do work. Deterministic context injection is free — a hook that pulls the last 10 Sentry issues at session start costs CPU cycles, not inference. Save inference for reasoning through complex problems.</p>
+
+<h3>The signal-to-noise expertise curve</h3>
+<p><span class="pill pill-d">Beginner:</span> "fix this" (no context, no logs, no screenshot)</p>
+<p><span class="pill pill-w">Midwit:</span> spends 30 minutes writing the perfect prompt</p>
+<p><span class="pill pill-s">Expert:</span> "It's in that file. Read it and fix it." (one screenshot)</p>
+
+<h3>Steering vs context</h3>
+<p>Two separate concerns: context engineering (what information goes into the window) vs steering/prompting (how much you prescribe the solution). Telling the model exactly how you want it done hits your target precisely. NOT telling it opens a broader probability space — might be terrible, might find a better approach you never considered.</p>
+
+<h2>Part 7: Bottleneck theory — The Goal (Eli Goldratt)</h2>
+
+<p>From "The Goal" (1970s book): factory has multiple stations, each with different processing times. MBAs optimize utilization of individual stations. This creates work-in-progress pileups in front of the bottleneck. Optimizing a non-bottleneck station does NOT improve total throughput.</p>
+
+<div class="bq" style="border-left-color:var(--border-danger);background:var(--bg-danger);color:var(--text-danger)">Stop playing with your coding agents and get back to work.</div>
+
+<p>The trap: it's fun to build the thing that builds the thing. Token-maxing culture. Building fancy multi-agent routing and delegation. Meanwhile: production is down, or you have zero customers.</p>
+
+<div class="bq">There are inefficiencies that are not bottlenecks. You may see things that make your skin crawl. And if you care about entrepreneurship, the most important skill is: zoom out, ask yourself, is this a bottleneck? Can I just hold my nose and focus on the thing that really matters?</div>
+
+<h3>The Starcraft analogy</h3>
+<p>Running a software factory is like Starcraft: constantly making hundreds of decisions with incomplete information. You only know what you've seen. Stacking probabilities. Knowing what you've seen, making bets, calculating expected value.</p>
+<div class="bq2">We are all gambling. We are all gambling all day every day trying to figure out what's the highest expected value.</div>
+
+<h2>Part 8: When to vibe code vs. when to engineer</h2>
+
+<p><span class="pill pill-w">Vibe code when:</span> pre-product-market-fit, figuring out what's worth building, putting different things in front of customers to see what they'll pay for, solo or very small team exploring.</p>
+
+<p><span class="pill pill-a">Engineer when:</span> you know what you're building, people are paying for it, you need it around in 6 months, maintainability matters (5+ engineers), regulated industries where bugs = fines (fintech, legal).</p>
+
+<div class="bq2">Still try to architect it in a way that scales. Still try to keep your grip on the codebase. But ultimately, if you have zero customers, first figure out if you're building a thing that's even worth building.</div>
+
+<h2>Part 9: Key quotes worth keeping</h2>
+
+<div class="bq">If the model knew what good code looked like, then it would be able to write it in the first place. We're all using the same freaking models.</div>
+
+<div class="bq">How can you spend a little bit of time upfront to increase the odds that the thing that comes out is not going to need a lot of fixes and changes before you can merge it?</div>
+
+<div class="bq2">I can easily find myself working for 3 hours on some problem, then I go on a long walk and I'm like, man, this doesn't matter to the business at all. And that was MY dumb zone.</div>
+
+<div class="bq">You're not actually competing against Anthropic. You're competing against a product manager at Anthropic. A small founder who really gives a shit can out-execute most teams inside a giant enterprise.</div>
+
+<div class="bq2">I like to build things in the vein of they're aligned with the world I want to live in.</div>
+
+<h2>Part 10: Application to Tehuti Lab systems</h2>
+
+<div class="card">
+<h3><i class="ti ti-scale" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>MAAT legal AI (Jarvis mode)</h3>
+<p>Your system already demonstrates several of Dex's principles:</p>
+<ul>
+<li><strong>Program design discipline:</strong> UPL Guard as a governance layer, Ma'at Audit scoring (TR, JU, HA, BA, OR, RE, PR, RI, CO), structured matter management</li>
+<li><strong>Vertical slicing naturally:</strong> each matter is a vertical slice — case loaded → context retrieved → RAG inject → drafts → attorney review</li>
+<li><strong>Context engineering:</strong> quick access panel for statutes, clerk systems, CourtListener — deterministic context injection, not wasting inference</li>
+<li><strong>Human in the loop by design:</strong> "ALL WORK PRODUCT → ATTORNEY REVIEW" — UPL Guard IS the "don't go lights-off" principle applied to legal</li>
+</ul>
+<p>Where Dex's lessons apply: as you scale matters, the bottleneck shifts from "can the agent draft" to "can the attorney review fast enough." Document ADRs for citation patterns, RAG strategies, audit thresholds. Keep Ma'at Audit scoring deterministic.</p>
+</div>
+
+<div class="card">
+<h3><i class="ti ti-chart-candle" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>Trading agent (Alpaca options)</h3>
+<p>Your exhaustive search (533 configurations, zero positive out-of-sample) is the RIGHT application of Dex's measurable-output principle: you defined a measurable goal, the agent searched exhaustively, the result was definitive. That's valuable — it prevents deploying a losing strategy.</h3>
+<p>Where Dex's lessons apply: vertical slicing for new strategies (get ONE signal end-to-end first). The bottleneck question — if 533 configs produce nothing, more configs won't help; the bottleneck is the signal hypothesis itself. Code maintainability in risk management is where "weeks later" bugs would be catastrophic.</p>
+</div>
+
+<div class="card" style="border-color:var(--border-accent)">
+<h3><i class="ti ti-database" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>Information department / RAG system (current build)</h3>
+<p>This is where the program design methodology applies most directly RIGHT NOW:</p>
+<ul>
+<li><span class="pill pill-a">Stage 1</span> What does the content creator (you) need from the system? How do you measure success?</li>
+<li><span class="pill pill-a">Stage 2</span> How do OCR, PostgreSQL, pgai, Ollama, and the content pipeline fit together across three machines?</li>
+<li><span class="pill pill-d">Stage 3</span> Before letting agents build the ingestion pipeline — define table schemas, chunking strategy, types for ContentPiece, Chunk, SearchResult</li>
+<li><span class="pill pill-s">Stage 4</span> Get ONE book chapter → OCR → clean text → stored in Postgres → retrievable by semantic search. Test it. THEN add metadata extraction, multi-category routing, automated classification.</li>
+</ul>
+</div>
+
+<h2>Summary: the workflow in one page</h2>
+
+<div class="sum">
+<pre style="font-size:13px;background:transparent;border:none;padding:0;margin:0">1. PRODUCT DESIGN (no code)
+   What problem? How do we measure? What does the user see?
+   Write the blog post before building the feature.
+
+2. SYSTEM ARCHITECTURE
+   How services fit. Endpoints. Tables. Query outlines.
+   This is what the reviewer would want to see first.
+
+3. PROGRAM DESIGN (most people skip this)
+   Call stack. File placement. Types and method signatures.
+   What the tests will look like. NO implementation yet.
+   → This is where you bring your hard-earned intuition
+     to leverage.
+
+4. VERTICAL SLICES
+   Build end-to-end first with stubs/mocks.
+   Test at each step. Add logic incrementally.
+   → Cheaper to resteer early than to rewrite at the end.
+
+5. BUILD (let the agent cook)
+   The agent is now working within your constraints.
+   It solves problems well. It writes slop if you let it.
+
+6. REVIEW (the bottleneck)
+   You read the code. You understand the logic.
+   Agent code review catches the small stuff.
+   Your intuition catches the design problems.
+
+<h2>Part 10: Application to Tehuti Lab systems</h2>
+
+<div class="card">
+<h3><i class="ti ti-scale" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>MAAT legal AI (Jarvis mode)</h3>
+<p>Your system already demonstrates several of Dex's principles:</p>
+<ul>
+<li><strong>Program design discipline:</strong> UPL Guard as a governance layer, Ma'at Audit scoring (TR, JU, HA, BA, OR, RE, PR, RI, CO), structured matter management</li>
+<li><strong>Vertical slicing naturally:</strong> each matter is a vertical slice — case loaded → context retrieved → RAG inject → drafts → attorney review</li>
+<li><strong>Context engineering:</strong> quick access panel for statutes, clerk systems, CourtListener — deterministic context injection, not wasting inference</li>
+<li><strong>Human in the loop by design:</strong> "ALL WORK PRODUCT → ATTORNEY REVIEW" — UPL Guard IS the "don't go lights-off" principle applied to legal</li>
+</ul>
+<p>Where Dex's lessons apply: as you scale matters, the bottleneck shifts from "can the agent draft" to "can the attorney review fast enough." Document ADRs for citation patterns, RAG strategies, audit thresholds. Keep Ma'at Audit scoring deterministic.</p>
+</div>
+
+<div class="card">
+<h3><i class="ti ti-chart-candle" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>Trading agent (Alpaca options)</h3>
+<p>Your exhaustive search (533 configurations, zero positive out-of-sample) is the RIGHT application of Dex's measurable-output principle: you defined a measurable goal, the agent searched exhaustively, the result was definitive. That's valuable — it prevents deploying a losing strategy.</p>
+<p>Where Dex's lessons apply: vertical slicing for new strategies (get ONE signal end-to-end first). The bottleneck question — if 533 configs produce nothing, more configs won't help; the bottleneck is the signal hypothesis itself. Code maintainability in risk management is where "weeks later" bugs would be catastrophic.</p>
+</div>
+
+<div class="card" style="border-color:var(--border-accent)">
+<h3><i class="ti ti-database" style="font-size:18px;margin-right:6px" aria-hidden="true"></i>Information department / RAG system (current build)</h3>
+<p>This is where the program design methodology applies most directly RIGHT NOW:</p>
+<ul>
+<li><span class="pill pill-a">Stage 1</span> What does the content creator (you) need from the system? How do you measure success?</li>
+<li><span class="pill pill-a">Stage 2</span> How do OCR, PostgreSQL, pgai, Ollama, and the content pipeline fit together across three machines?</li>
+<li><span class="pill pill-d">Stage 3</span> Before letting agents build the ingestion pipeline — define table schemas, chunking strategy, types for ContentPiece, Chunk, SearchResult</li>
+<li><span class="pill pill-s">Stage 4</span> Get ONE book chapter → OCR → clean text → stored in Postgres → retrievable by semantic search. Test it. THEN add metadata extraction, multi-category routing, automated classification.</li>
+</ul>
+</div>
+
+<h2>Summary: the workflow in one page</h2>
+
+<div class="sum">
+<pre style="font-size:13px;background:transparent;border:none;padding:0;margin:0">1. PRODUCT DESIGN (no code)
+   What problem? How do we measure? What does the user see?
+   Write the blog post before building the feature.
+
+2. SYSTEM ARCHITECTURE
+   How services fit. Endpoints. Tables. Query outlines.
+   This is what the reviewer would want to see first.
+
+3. PROGRAM DESIGN (most people skip this)
+   Call stack. File placement. Types and method signatures.
+   What the tests will look like. NO implementation yet.
+   → This is where you bring your hard-earned intuition
+     to leverage.
+
+4. VERTICAL SLICES
+   Build end-to-end first with stubs/mocks.
+   Test at each step. Add logic incrementally.
+   → Cheaper to resteer early than the code is small.
+
+5. BUILD (let the agent cook)
+   The agent is now working within your constraints.
+   It solves problems well. It writes slop if you let it.
+
+6. REVIEW (the bottleneck)
+   You read the code. You understand the logic.
+   Agent code review catches the small stuff.
+   Your intuition catches the design problems.
+
+7. SHIP + MONITOR
+   Route incidents and feedback back into the factory.
+   Identify the actual bottleneck. Optimize THAT.
+   Everything else: hold your nose.</pre>
+</div>
+
+<hr>
+<p style="font-size:12px;color:var(--text-muted)">Filed under: Tehuti Lab / References / Agentic Engineering<br>
+Full podcast: "Ex-NASA dev reveals his Agentic Engineering Workflow" — David Ondrej, Aug 7 2026<br>
+Companion blog post: hlyr.dev/wsff-gh</p>
+
+</div>

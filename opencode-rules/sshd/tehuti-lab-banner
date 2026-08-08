@@ -1,0 +1,3 @@
+Tehuti Lab — hardened OpenSSH
+Tailscale-only ingress. Password auth disabled. Key auth only.
+Lost your key? See ~/.opencode-rules/40-ssh-topology.md for recovery.
