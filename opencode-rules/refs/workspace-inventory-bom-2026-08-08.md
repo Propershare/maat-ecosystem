@@ -242,12 +242,13 @@ Scored against the canonical 7-pillar rubric (`refs/maat-scoring-canon-2026-08-0
 Remediation backlog (must complete before next re-audit):
 
 1. **Move or delete `~/.n8n/staydangerous/`** (157 GB). It is a snapshot of `~/` inside the lab repo. Either move to a non-repo location, or split into lab-doctrine files (move to `~/.opencode-rules/`) and personal data (move to `~/`).
-2. **Delete `tehuti-lab-webui-venv.backup.20260102_202352/`** (9.4 GB) if the working venv is intact.
+2. ~~**Delete `tehuti-lab-webui-venv.backup.20260102_202352/`** (9.4 GB)~~ — **RESOLVED 2026-08-08.** Operator ran `sudo rm -rf`. 8 GB reclaimed (234→242 GB free); working venv intact.
 3. **Move `open-webui/data/` root-owned empty dir** (sudo rmdir).
 4. **Categorize and relocate the 41 root `.md` files.** Move project-level docs into their projects (e.g. `GITMAAT-OPENCODE-STARTUP.md` → `maatlangchain/`); delete one-off debug logs.
 5. **Decide on the `maat-runtime` (lowercase) vs `Maat-runtime` (capitalized) duplication.** Either consolidate to one path, or document which is the live one.
 6. **Add an inventory script** (the one in `/tmp/workspace-inventory.sh` here) to a reproducible location, e.g. `maatlangchain/scripts/workspace_inventory.py`.
 7. **Decide on stale entries**: `Hood_Memes/` (17 months old), `solana/` (17 months old) — review for archival.
+8. ~~**Investigate `maatlangchain/api/main*.py` redundancy**~~ — **RESOLVED 2026-08-08.** Investigation revealed the naming was reversed: `main_original.py` was the live code (imported by 7+ files via `from api.main import app, get_rag_instance, get_vector_store`), `main_backup.py` and `main_backup_rag.py` were old snapshots, and `main.py` was a 6-line shim. Resolution: `main_original.py` → `main.py` (canonical), shim + old backups deleted. Verified: imports resolve; 15/15 unit tests pass. Commit `587be65`.
 
 ## 8. Recommendations (in priority order)
 
