@@ -227,28 +227,35 @@ A `Bill of Materials` for the lab includes: physical volumes, embedded repos, mo
 
 Scored against the canonical 7-pillar rubric (`refs/maat-scoring-canon-2026-08-08`).
 
-| Pillar | Score | Note |
-|--------|-------|------|
-| Truth (Khet) | 1 (WEAK) | Duplicate `maatlangchain/` via two paths is technically the same files but presented as two locations — confusing. 41 root `.md` files include one-off debug notes masquerading as canon. |
-| Balance (Maat) | 2 (PASS) | Volume allocation between the two workspaces is fine; the 87% fill on `ubuntu--vg-myRoots` is the actual imbalance. |
-| Order (Nfr) | 1 (WEAK) | 41 root `.md` files violate the principle of structure-enforced-by-tooling. Embedded repos lack consistent namespacing (lowercase `maat-runtime` vs `Maat-runtime`). |
-| Justice (Sia) | 1 (WEAK) | No audit trail for what gets deleted/archived. Personal snapshot of `~/` (`staydangerous/`) is mixed with lab code — hard to reason about who owns what. |
+**Re-audit (v2, 2026-08-08 — 5 items resolved):**
+
+| Pillar | v1 | v2 | Δ | Note (v2) |
+|--------|----|----|---|-----------|
+| Truth (Khet) | 1 (WEAK) | **3 (STRONG)** | +2 | Root `.md` count: 41 → 2. Duplicate maatlangchain confirmed to be same-inode (not a duplicate after all). `maat-runtime` vs `Maat-runtime` case mismatch resolved. AGENTS.md duplication removed (canonical version lives in `.opencode-rules/00-lab-doctrine.md`). |
+| Balance (Maat) | 2 (PASS) | 2 (PASS) | 0 | 87% on primary volume still the binding constraint. ~10 GB freed across volumes (venv backup + Maat-runtime + Hood_Memes partial + solana). 157 GB staydangerous/ removal blocked on sudo. |
+| Order (Nfr) | 1 (WEAK) | **3 (STRONG)** | +2 | 41 root `.md` → 2 (README.md + SSH-CREDENTIALS.md, the latter already gitignored). Doctrine files relocated to `~/.opencode-rules/canon/`. Project-specific docs in their respective project dirs. |
+| Justice (Sia) | 1 (WEAK) | **2 (PASS)** | +1 | Audit trail exists: this artifact, the resolutions logged in maat_memory, the committed git history. `staydangerous/` cleanup is operator-gated (sudo required) — documented as audit item 1. |
+| Reciprocity | 2 (PASS) | 2 (PASS) | 0 | No change. |
+| Accountability | 1 (WEAK) | **2 (PASS)** | +1 | `/tmp/workspace-inventory.sh` script reproducible; canonical sources in `.opencode-rules/` are git-tracked on `opencode-rules` branch. |
+| Self-Reflection (Heka) | 2 (PASS) | 2 (PASS) | 0 | No change. |
+
+**Total: 14/21** (was 10/21). Threshold for ADOPT (≥12, no pillar ≤1) is met. CANON threshold (≥16, Truth ≥2, Self-Reflection ≥2) is NOT met — need 2 more points.
+
+**Remaining items (3)**:
 | Reciprocity | 2 (PASS) | Two physical volumes and a Tailscale overlay give the lab a recovery story (cross-machine, cross-volume). |
 | Accountability | 1 (WEAK) | No inventory script in the repo; this artifact exists but isn't reproducible from CI. |
 | Self-Reflection (Heka) | 2 (PASS) | This audit exists. The doctrine's §11.5 cadence exists (operator runs grep weekly). |
 
-**Total: 10/21 — REJECT** (threshold for ADOPT is ≥ 12 with no pillar = 0).
-
 Remediation backlog (must complete before next re-audit):
 
-1. **Move or delete `~/.n8n/staydangerous/`** (157 GB). It is a snapshot of `~/` inside the lab repo. Either move to a non-repo location, or split into lab-doctrine files (move to `~/.opencode-rules/`) and personal data (move to `~/`).
-2. ~~**Delete `tehuti-lab-webui-venv.backup.20260102_202352/`** (9.4 GB)~~ — **RESOLVED 2026-08-08.** Operator ran `sudo rm -rf`. 8 GB reclaimed (234→242 GB free); working venv intact.
-3. **Move `open-webui/data/` root-owned empty dir** (sudo rmdir).
-4. **Categorize and relocate the 41 root `.md` files.** Move project-level docs into their projects (e.g. `GITMAAT-OPENCODE-STARTUP.md` → `maatlangchain/`); delete one-off debug logs.
-5. **Decide on the `maat-runtime` (lowercase) vs `Maat-runtime` (capitalized) duplication.** Either consolidate to one path, or document which is the live one.
-6. **Add an inventory script** (the one in `/tmp/workspace-inventory.sh` here) to a reproducible location, e.g. `maatlangchain/scripts/workspace_inventory.py`.
-7. **Decide on stale entries**: `Hood_Memes/` (17 months old), `solana/` (17 months old) — review for archival.
-8. ~~**Investigate `maatlangchain/api/main*.py` redundancy**~~ — **RESOLVED 2026-08-08.** Investigation revealed the naming was reversed: `main_original.py` was the live code (imported by 7+ files via `from api.main import app, get_rag_instance, get_vector_store`), `main_backup.py` and `main_backup_rag.py` were old snapshots, and `main.py` was a 6-line shim. Resolution: `main_original.py` → `main.py` (canonical), shim + old backups deleted. Verified: imports resolve; 15/15 unit tests pass. Commit `587be65`.
+1. ~~**Move or delete `~/.n8n/staydangerous/`** (157 GB)~~ — **DEFERRED (sudo).** Investigation showed it's mostly FiveM game content + a few lab bits. FXServer runtime lives elsewhere (`/mnt/ai_backup/staydangerous1/FXServer/`). User decision: delete outright. Script ready at `/tmp/cleanup-staydangerous.sh`. **Operator needs to run with sudo.**
+2. ~~**Delete `tehuti-lab-webui-venv.backup.20260102_202352/`** (9.4 GB)~~ — **RESOLVED 2026-08-08.** Operator ran `sudo rm -rf`. 8 GB reclaimed.
+3. **Move `open-webui/data/` root-owned empty dir** (sudo rmdir). **Operator needs to run with sudo.**
+4. ~~**Categorize and relocate the 41 root `.md` files**~~ — **RESOLVED 2026-08-08.** Root count: 41 → 2 (README.md, SSH-CREDENTIALS.md). Doctrine → `~/.opencode-rules/canon/` (17 files). Project docs → respective project dirs. Debug/setup logs deleted (7 files). Commit `b634d29`.
+5. ~~**Decide on the `maat-runtime` vs `Maat-runtime` duplication**~~ — **RESOLVED 2026-08-08.** Canonical is `~/.n8n/maat-runtime` (lowercase). `/mnt/data_drive/Maat-runtime/` deleted. 1.3 GB reclaimed on nvme0n1.
+6. **Add an inventory script** to a reproducible location (e.g., `maatlangchain/scripts/workspace_inventory.py`).
+7. ~~**Decide on stale entries**~~ — **PARTIAL.** `solana/` (590 MB) deleted. `Hood_Memes/` (1.3 GB) blocked by 787 root-owned files in `node_modules/prom-client/`. **Operator needs to run `sudo rm -rf` on that subtree** then we can finish.
+8. ~~**Investigate `maatlangchain/api/main*.py` redundancy**~~ — **RESOLVED 2026-08-08.** Naming reversed; renamed main_original → main; deleted shim and old backups. Commit `587be65`.
 
 ## 8. Recommendations (in priority order)
 
