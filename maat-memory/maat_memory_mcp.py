@@ -294,17 +294,28 @@ def tool_write_artifact(args: dict) -> dict:
         content = args.get("content", None)
         content_type = args.get("content_type", "text/plain")
 
+        # content_origin and storage_class are NOT NULL without defaults —
+        # set them explicitly so writes don't violate the schema.
+        content_origin = args.get("content_origin", "agent_authored")
+        storage_class = args.get("storage_class", "object_backed" if content is not None else "reference_only")
+
+        # The storage_coherence check requires object_backed artifacts to
+        # carry content_sha256 — compute it up front so the INSERT passes.
+        content_sha256 = None
+        if content is not None:
+            content_bytes = content.encode("utf-8") if isinstance(content, str) else content
+            content_sha256 = hashlib.sha256(content_bytes).hexdigest()
+
         cur.execute(
             "INSERT INTO maat_artifacts "
-            "(id, uri, title, artifact_type, status, agent, produced_at, created_at, updated_at, description) "
-            "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+            "(id, uri, title, artifact_type, status, agent, produced_at, created_at, updated_at, "
+            "description, content_origin, storage_class, content_sha256) "
+            "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
             (artifact_id, uri, title, artifact_type, status, agent,
-             now, now, now, description),
+             now, now, now, description, content_origin, storage_class, content_sha256),
         )
 
         if content is not None:
-            content_bytes = content.encode("utf-8") if isinstance(content, str) else content
-            sha256 = hashlib.sha256(content_bytes).hexdigest()
             slug = title.lower().replace(" ", "-").replace("/", "-")[:64] or artifact_id[:8]
 
             cur.execute(
@@ -314,7 +325,7 @@ def tool_write_artifact(args: dict) -> dict:
                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
                 (slug, args.get("logical_path", slug),
                  content_bytes, content_type, len(content_bytes),
-                 sha256, agent, now, now),
+                 content_sha256, agent, now, now),
             )
 
         conn.commit()
