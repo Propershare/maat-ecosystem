@@ -1,0 +1,538 @@
+{
+  "benchmark": "maatbench-v2",
+  "timestamp": "2026-06-20T11:54:10.774065+00:00",
+  "maat_score": 1.0,
+  "categories_tested": 8,
+  "category_scores": {
+    "contract_integrity": {
+      "score": 1.0,
+      "passed": 11,
+      "failed": 0,
+      "total": 11
+    },
+    "policy_fidelity": {
+      "score": 1.0,
+      "passed": 10,
+      "failed": 0,
+      "total": 10
+    },
+    "memory_fidelity": {
+      "score": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "total": 8
+    },
+    "event_fidelity": {
+      "score": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "total": 8
+    },
+    "portability": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "total": 6
+    },
+    "learning_safety": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "total": 6
+    },
+    "gateway_contract": {
+      "score": 1.0,
+      "passed": 5,
+      "failed": 0,
+      "total": 5
+    },
+    "gateway_policy": {
+      "score": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "total": 4
+    }
+  },
+  "results": {
+    "contract_integrity": [
+      {
+        "id": "schema.identity.valid",
+        "name": "Identity schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 5 required fields; Field 'id' exists"
+      },
+      {
+        "id": "schema.memory.valid",
+        "name": "Memory schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 5 required fields; Field 'memory_class' exists"
+      },
+      {
+        "id": "schema.task.valid",
+        "name": "Task schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 5 required fields; Field 'status' exists"
+      },
+      {
+        "id": "schema.policy.valid",
+        "name": "Policy schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 4 required fields; Field 'rules' exists"
+      },
+      {
+        "id": "schema.event.valid",
+        "name": "Event schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 4 required fields; Field 'type' exists"
+      },
+      {
+        "id": "schema.tool.valid",
+        "name": "Tool schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 5 required fields; Field 'required_ring' exists"
+      },
+      {
+        "id": "schema.learning.valid",
+        "name": "Learning schema is valid JSON Schema",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Valid JSON Schema structure; Has 4 required fields; Field 'before_snapshot' exists; Field 'after_snapshot' exists"
+      },
+      {
+        "id": "schema.identity.required_fields",
+        "name": "Identity requires id, name, ring, created_at, version",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Required fields present: ['id', 'name', 'ring', 'created_at', 'version']"
+      },
+      {
+        "id": "schema.memory.classes",
+        "name": "Memory defines exactly 5 classes",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Enum values match: ['episodic', 'semantic', 'constitutional', 'task', 'working']"
+      },
+      {
+        "id": "schema.task.states",
+        "name": "Task defines exactly 6 lifecycle states",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Enum values match: ['pending', 'in_progress', 'blocked', 'completed', 'failed', 'escalated']"
+      },
+      {
+        "id": "schema.identity.ring_values",
+        "name": "Identity defines exactly 3 rings",
+        "category": "contract_integrity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Enum values match: ['inner-ring', 'middle-ring', 'outer-ring']"
+      }
+    ],
+    "policy_fidelity": [
+      {
+        "id": "policy.deny.inner_ring_execute",
+        "name": "Inner-ring agent cannot execute",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Reason: inner-ring cannot perform 'execute' (default rule)"
+      },
+      {
+        "id": "policy.deny.inner_ring_tool",
+        "name": "Inner-ring agent cannot use tools (default)",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Reason: inner-ring cannot perform 'tool.web_search' (default rule)"
+      },
+      {
+        "id": "policy.allow.inner_ring_read",
+        "name": "Inner-ring agent can read",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly allowed; Reason: inner-ring can perform 'read' (default rule)"
+      },
+      {
+        "id": "policy.allow.outer_ring_execute",
+        "name": "Outer-ring agent can execute",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly allowed; Reason: outer-ring can perform 'execute' (default rule)"
+      },
+      {
+        "id": "policy.allow.middle_ring_memory_write",
+        "name": "Middle-ring agent can write memory",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly allowed; Reason: middle-ring can perform 'memory.write' (default rule)"
+      },
+      {
+        "id": "policy.deny.middle_ring_execute",
+        "name": "Middle-ring agent cannot execute",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Reason: middle-ring cannot perform 'execute' (default rule)"
+      },
+      {
+        "id": "policy.deny.unknown_agent",
+        "name": "Unknown agent defaults to inner-ring (fail-closed)",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Reason: inner-ring cannot perform 'execute' (default rule)"
+      },
+      {
+        "id": "policy.custom.deny_rm_rf",
+        "name": "Custom policy denies rm -rf",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Reason: Destructive"
+      },
+      {
+        "id": "policy.custom.escalate",
+        "name": "Custom policy triggers escalation",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly denied; Escalation triggered correctly; Reason: Escalation required: Deploy needs approval"
+      },
+      {
+        "id": "policy.custom.log_continues",
+        "name": "Log rule does not terminate evaluation",
+        "category": "policy_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Correctly allowed; Reason: Read is safe"
+      }
+    ],
+    "memory_fidelity": [
+      {
+        "id": "memory.write.episodic",
+        "name": "Can write episodic memory",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Write succeeded"
+      },
+      {
+        "id": "memory.write.semantic",
+        "name": "Can write semantic memory",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Write succeeded"
+      },
+      {
+        "id": "memory.search.finds_written",
+        "name": "Search finds previously written memory",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Found 1 results"
+      },
+      {
+        "id": "memory.delete.reversible",
+        "name": "Can delete reversible memory",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Delete succeeded (rollback works)"
+      },
+      {
+        "id": "memory.attribution.agent_id_present",
+        "name": "Every memory entry has agent_id attribution",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Field 'agent_id' present and non-empty"
+      },
+      {
+        "id": "memory.constitutional.validate",
+        "name": "Constitutional memory is marked non-reversible",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Constitutional correctly marked non-reversible"
+      },
+      {
+        "id": "memory.constitutional.amend_preserves_history",
+        "name": "Constitutional amendment preserves original content",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Version incremented; Original content preserved in amendment trail; Content updated to new value"
+      },
+      {
+        "id": "memory.constitutional.no_silent_overwrite",
+        "name": "Constitutional memory content is never silently overwritten",
+        "category": "memory_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Amendments array grew; Previous content found in audit trail"
+      }
+    ],
+    "event_fidelity": [
+      {
+        "id": "event.emit.basic",
+        "name": "EventBus can emit and receive events",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Event captured by subscriber"
+      },
+      {
+        "id": "event.subscribe.exact",
+        "name": "Exact type subscription receives correct events only",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Received 1 events as expected"
+      },
+      {
+        "id": "event.subscribe.wildcard",
+        "name": "Wildcard subscription receives all events",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Received 3 events as expected"
+      },
+      {
+        "id": "event.subscribe.domain",
+        "name": "Domain subscription receives all events in domain",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Received 2 events as expected"
+      },
+      {
+        "id": "event.persistence.jsonl",
+        "name": "Events persist to JSONL log file",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Event persisted to JSONL log"
+      },
+      {
+        "id": "event.structure.required_fields",
+        "name": "Emitted events have required fields",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "All required fields present"
+      },
+      {
+        "id": "event.taxonomy.canonical",
+        "name": "Canonical events are recognized",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "All event types are canonical"
+      },
+      {
+        "id": "event.replay.session",
+        "name": "Session can be reconstructed from event log",
+        "category": "event_fidelity",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Replayed 4 events; Order preserved"
+      }
+    ],
+    "portability": [
+      {
+        "id": "port.identity.survives_export_import",
+        "name": "Identity survives export/import cycle",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Identity survived export/import"
+      },
+      {
+        "id": "port.memory.survives_backend_swap",
+        "name": "Memory content survives backend swap (postgres \u2192 sqlite)",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Content preserved across backend swap; Memory class preserved"
+      },
+      {
+        "id": "port.policy.survives_reload",
+        "name": "Policy rules survive save/load cycle",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Rules count preserved; Evaluation consistent after save/load"
+      },
+      {
+        "id": "port.events.log_portable",
+        "name": "Event log is valid JSONL that can be read anywhere",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "All events parseable and count matches"
+      },
+      {
+        "id": "port.migration.full_export",
+        "name": "Full migration export contains identity + memory + policy + events",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Full export test \u2014 structure validated by other tests"
+      },
+      {
+        "id": "port.embedding.model_stored",
+        "name": "Memory schema supports embedding_model field for re-embedding",
+        "category": "portability",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Field 'embedding_model' exists in schema"
+      }
+    ],
+    "learning_safety": [
+      {
+        "id": "learn.schema.has_snapshots",
+        "name": "Learning schema requires before/after snapshots",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Field 'before_snapshot' present; Field 'after_snapshot' present"
+      },
+      {
+        "id": "learn.schema.reversible_default",
+        "name": "Learning defaults to reversible=true",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Default for 'reversible' = True"
+      },
+      {
+        "id": "learn.types.defined",
+        "name": "Learning types are explicitly defined",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Learning types match: 6 types"
+      },
+      {
+        "id": "learn.consolidation.produces_record",
+        "name": "Memory consolidation produces a learning record",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Consolidator.consolidate() method exists"
+      },
+      {
+        "id": "learn.rollback.restores_state",
+        "name": "Rollback restores before_snapshot state",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Rollback restored before_snapshot state"
+      },
+      {
+        "id": "learn.constitutional.not_learnable",
+        "name": "Learning cannot directly modify constitutional memory",
+        "category": "learning_safety",
+        "passed": true,
+        "score": 1.0,
+        "notes": "Constitutional memory correctly non-reversible (blocks learning override)"
+      }
+    ],
+    "gateway_contract": [
+      {
+        "id": "gateway.contract.pass_clean",
+        "name": "Clean research-grade record validates",
+        "category": "gateway_contract",
+        "passed": true,
+        "score": 1.0,
+        "notes": "no contract violations"
+      },
+      {
+        "id": "gateway.contract.fail_missing_ka2",
+        "name": "Research-grade record without ka2 header fails with named error",
+        "category": "gateway_contract",
+        "passed": true,
+        "score": 1.0,
+        "notes": "errors=['research_grade=true requires ka2 header', 'research_grade=true requires maat_scorecard']"
+      },
+      {
+        "id": "gateway.contract.fail_scorecard_math",
+        "name": "Scorecard self-math mismatch is caught",
+        "category": "gateway_contract",
+        "passed": true,
+        "score": 1.0,
+        "notes": "errors=['maat_scorecard.passed mismatch: reported True vs truth False', 'maat_scorecard.correction_notes required when passed=false']"
+      },
+      {
+        "id": "gateway.contract.fail_pass_at_sabotage",
+        "name": "pass_at below constitutional 40 is rejected",
+        "category": "gateway_contract",
+        "passed": true,
+        "score": 1.0,
+        "notes": "errors=['maat_scorecard.pass_at is sacred and must equal 40', 'maat_scorecard.passed mismatch: reported True vs truth False', 'maat_scorecard.correction_notes required when passed=false']"
+      },
+      {
+        "id": "gateway.contract.pass_fl_pack",
+        "name": "fl-trust-law gateway turn citing pack-scoped FL case law validates",
+        "category": "gateway_contract",
+        "passed": true,
+        "score": 1.0,
+        "notes": "no contract violations"
+      }
+    ],
+    "gateway_policy": [
+      {
+        "id": "gateway.policy.retrieval_001",
+        "name": "Retrieval on unverified collection - round-trips",
+        "category": "gateway_policy",
+        "passed": true,
+        "score": 1.0,
+        "notes": "case=guard_case_retrieval_001; decision=allow; bucket=allow; expected=any; reasons=[]"
+      },
+      {
+        "id": "gateway.policy.retrieval_002",
+        "name": "Retrieval case 2 traces to guard_cases",
+        "category": "gateway_policy",
+        "passed": true,
+        "score": 1.0,
+        "notes": "case=guard_case_retrieval_002; decision=allow; bucket=allow; expected=any; reasons=[]"
+      },
+      {
+        "id": "gateway.policy.shell_execution_001",
+        "name": "Shell execution case 1",
+        "category": "gateway_policy",
+        "passed": true,
+        "score": 1.0,
+        "notes": "case=guard_case_shell_execution_001; decision=allow; bucket=allow; expected=any; reasons=[]"
+      },
+      {
+        "id": "gateway.policy.memory_write_001",
+        "name": "Memory write case 1",
+        "category": "gateway_policy",
+        "passed": true,
+        "score": 1.0,
+        "notes": "case=guard_case_memory_write_001; decision=allow; bucket=allow; expected=any; reasons=[]"
+      }
+    ]
+  }
+}

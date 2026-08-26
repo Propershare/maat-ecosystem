@@ -88,7 +88,7 @@ def run_memory_tests(test_defs: list[dict]) -> list[dict]:
                     notes.append(f"Field '{field}' missing or empty")
 
             elif op == "validate_constitutional":
-                from maat_memory.constitutional.handler import validate_constitutional
+                from memory.constitutional_handler import validate_constitutional
                 entry = test["entry"].copy()
                 entry["id"] = str(uuid.uuid4())
                 entry["timestamp"] = datetime.now(timezone.utc).isoformat()
@@ -100,7 +100,7 @@ def run_memory_tests(test_defs: list[dict]) -> list[dict]:
                     notes.append("Constitutional memory was not marked non-reversible")
 
             elif op == "amend_constitutional":
-                from maat_memory.constitutional.handler import amend_constitutional
+                from memory.constitutional_handler import amend_constitutional
                 original = test["original"].copy()
                 amended = amend_constitutional(original, test["amendment"], test["reason"])
                 expected = test["expected"]

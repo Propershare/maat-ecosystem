@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-07T13:34:11.663Z",
+  "entries": {
+    "memory:memory/2026-04-07.md:28:38": {
+      "key": "memory:memory/2026-04-07.md:28:38",
+      "path": "memory/2026-04-07.md",
+      "startLine": 28,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "- **Primary holder of repo:** operator / machine that **runs and maintains** the body (system of record). **Agents** usually need **endpoints + trust**, not the monorepo. Optional: second device, reinstall, backup — still **same operator**. ## Tehuti Guard vs bootstrap UX - **Guard** = governance (**approve/block/propose**, three-ring) — **not** key generation or one-click client wiring. - **Stated product gap:** **local** API **key issue + rotation**, minimal / **non-dev** setup (“put it in place” on **own LAN**), appliance-style — **friction = debt** to remove over time. ## North star - **Maat Ecosystem** should **behave as Maat**: honest about state, **single spine**, memory that **co",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-15T20:15:56.068Z",
+      "lastRecalledAt": "2026-05-07T13:34:11.663Z",
+      "queryHashes": [
+        "8eb5938f604e",
+        "ae9f3a9bb5a8"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "backup",
+        "approve/block/propose",
+        "three-ring",
+        "one-click",
+        "non-dev",
+        "appliance-style",
+        "primary",
+        "holder"
+      ]
+    },
+    "memory:memory/2026-04-07.md:13:32": {
+      "key": "memory:memory/2026-04-07.md:13:32",
+      "path": "memory/2026-04-07.md",
+      "startLine": 13,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "- **Upstream OpenClaw** install docs = wizard/onboard; **lab** connect steps = **`docs/GITMAAT-CONNECT.md`**, **`CLAWD-MCP-ACCESS.md`** (LAN expose 8011–8021). ## Architecture (mental model) - **Layers:** OpenClaw = client/runtime (channels, gateway, model); ecosystem = Discovery + organ MCPs + Postgres + soul files. - **Learning:** Persists when tools hit **gitMaat / memory** (`log_*`, `query_*`), not “model memory” alone. - **Heartbeat:** (A) **`/health`** = organ liveness; (B) **agent HEARTBEAT.md / gitMaat task poll** = coordination attention — complementary, not one daemon. ## MaatBench - Lives in **`maat-ecosystem/maatbench/`** — **contract/system doctor**, not an HTTP organ on Dis",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-15T20:15:56.068Z",
+      "lastRecalledAt": "2026-05-07T13:34:11.663Z",
+      "queryHashes": [
+        "8eb5938f604e",
+        "ae9f3a9bb5a8"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "gateway",
+        "wizard/onboard",
+        "docs/gitmaat-connect.md",
+        "clawd-mcp-access.md",
+        "client/runtime",
+        "heartbeat.md",
+        "maat-ecosystem/maatbench",
+        "contract/system"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "maat.community_session.v1",
+  "record_id": "d4e5f6a7-b8c9-0123-def0-234567890123",
+  "created_at": "2026-06-26T20:00:00Z",
+  "agent_id": "cursor_staydangerous",
+  "session_date": "2026-06-26",
+  "attendee_count": 8,
+  "sharp_question": "What is the smallest agent rep you would run daily without fear?",
+  "recap": {
+    "best_ideas": [
+      "Daily briefing with sources before action beats generic chat",
+      "Approval gates matter more than model size for trust"
+    ],
+    "best_quotes": [
+      "I do not need smarter AI. I need AI that waits for me."
+    ],
+    "follow_up": "Each attendee ships one 48h loop artifact and logs confusion in gitMaat."
+  },
+  "external_send": false,
+  "tags": ["irl:community", "topic:local-agents"]
+}

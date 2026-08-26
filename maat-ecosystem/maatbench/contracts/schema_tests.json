@@ -76,6 +76,39 @@
         "field": "ring",
         "values": ["inner-ring", "middle-ring", "outer-ring"]
       }
+    },
+    {
+      "id": "schema.distribution_map.valid",
+      "name": "Distribution map schema is valid JSON Schema",
+      "schema": "maat_distribution_map.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_id_field"]
+    },
+    {
+      "id": "schema.build_loop_state.valid",
+      "name": "Build loop state schema is valid JSON Schema",
+      "schema": "maat_build_loop_state.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_id_field"]
+    },
+    {
+      "id": "schema.content_sprint.valid",
+      "name": "Content sprint schema is valid JSON Schema",
+      "schema": "maat_content_sprint.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_id_field"]
+    },
+    {
+      "id": "schema.community_session.valid",
+      "name": "Community session schema is valid JSON Schema",
+      "schema": "maat_community_session.schema.json",
+      "assertions": ["valid_json_schema", "has_required_fields", "has_id_field"]
+    },
+    {
+      "id": "schema.build_loop_state.phases",
+      "name": "Build loop defines exactly 4 phases",
+      "schema": "maat_build_loop_state.schema.json",
+      "expected_enum": {
+        "field": "phase",
+        "values": ["build_tiny", "show_100", "watch_confusion", "change_story"]
+      }
     }
   ]
 }

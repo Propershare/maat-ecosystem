@@ -64,3 +64,4 @@ Use these as the **conventional** internal/LAN ports so operators and agents sha
 - [`docs/TEHUTI-LAB-TREE.md`](TEHUTI-LAB-TREE.md) — visual tree of `~/.n8n`.
 - [`docs/LAB-CANONICAL-TREE-AND-STACK.md`](LAB-CANONICAL-TREE-AND-STACK.md) — **canonical** folder tree, symlinks, tech stack, `maat-apps` vs `hands/apps`.
 - [`docs/TEHUTI-GUARD-PRODUCTS.md`](TEHUTI-GUARD-PRODUCTS.md) — npm MCP repo vs Python Guard API vs lab package name.
+- [`maat-ecosystem/docs/COMPOUNDING-SKILL-STACK.md`](../maat-ecosystem/docs/COMPOUNDING-SKILL-STACK.md) — **compounding skill stack**: distribution, curation, builder-distributor loops; JSON schemas + maat-runtime skills/extension.

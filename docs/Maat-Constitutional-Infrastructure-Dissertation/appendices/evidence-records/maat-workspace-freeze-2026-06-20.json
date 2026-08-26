@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "Maat Workspace Freeze",
+  "freeze_id": "freeze-2026-06-20-staydangerous",
+  "timestamp": "2026-06-20T12:54:24+00:00",
+  "frozen_by": "cursor_staydangerous",
+  "purpose": "Point-in-time Maat audit snapshot before further MaatBench / triad_live work",
+  "lab_root": "/home/suspect/.n8n",
+  "machine_id": "staydangerous",
+  "git_commit": "edef430431198252ba55a47cbdbac6ba31672e2a",
+  "branch": "tehuti-guard/build-and-ci",
+  "canonical_evidence_record": "maatbench-evidence-record-2026-06-20-bench-20260620T125420Z-822554.json",
+  "maatbench_last_run": {
+    "run_id": "bench-20260620T125420Z-822554",
+    "pytest_passed": 81,
+    "maatbench_passed": 68,
+    "maatbench_categories": 9,
+    "report_hash": "7920bb78bc7bd9828515897ca06e5b46264912a2c0c5b542b3ee15751d1bfc4e",
+    "workflow_status": "ok"
+  },
+  "liveness_at_freeze": {
+    "critical_up": ["8010", "8014", "8022", "5432", "18790", "8040"],
+    "optional_down": ["8013", "4242"],
+    "live_model_tier": "skipped (LAB_BENCH_LIVE=0)"
+  },
+  "product_boundaries": {
+    "maatbench": "maat-ecosystem/maatbench/ → future standalone repo",
+    "lab_runner": "scripts/run-lab-bench-workflow.sh",
+    "ka_education": "separate — /mnt/data_drive/ka-education (display only, last priority)",
+    "n8n": "retired 2026-06-18"
+  },
+  "audit_verdict": "conditional_pass",
+  "audit_summary": "Constitutional verification harness operational; MCP spine live; Guard/Sentinel offline; uncommitted MaatBench freeze work on branch; ka-education must not host bench runner."
+}

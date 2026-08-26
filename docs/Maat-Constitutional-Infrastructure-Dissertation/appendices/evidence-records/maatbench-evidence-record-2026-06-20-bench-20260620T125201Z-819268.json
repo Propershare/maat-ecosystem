@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "MaatBench Evidence Record",
+  "run_id": "bench-20260620T125201Z-819268",
+  "timestamp": "2026-06-20T12:52:06.912159+00:00",
+  "started_at": "2026-06-20T12:52:01+00:00",
+  "duration_seconds": 5.912,
+  "git_commit": "edef430431198252ba55a47cbdbac6ba31672e2a",
+  "branch": "tehuti-guard/build-and-ci",
+  "machine_id": "staydangerous",
+  "operator": "suspect",
+  "script_invoked": "scripts/run-lab-bench-workflow.sh",
+  "environment": {
+    "lab_root": "/home/suspect/.n8n",
+    "lab_host": "127.0.0.1",
+    "platform": "Linux-5.15.0-179-generic-x86_64-with-glibc2.35",
+    "python": "3.12.12",
+    "hostname": "staydangerous",
+    "lab_bench_live": false
+  },
+  "services_checked": [
+    {
+      "service": "ka_discovery",
+      "url": "http://127.0.0.1:8010/manifest",
+      "critical": true,
+      "status": "up",
+      "http_code": 200
+    },
+    {
+      "service": "tehuti_core",
+      "url": "http://127.0.0.1:8014/openapi.json",
+      "critical": true,
+      "status": "up",
+      "http_code": 200
+    },
+    {
+      "service": "maat_memory_mcp",
+      "url": "http://127.0.0.1:8022/docs",
+      "critical": true,
+      "status": "up",
+      "http_code": 200
+    },
+    {
+      "service": "tehuti_guard",
+      "url": "http://127.0.0.1:8013/health",
+      "critical": false,
+      "status": "down",
+      "http_code": null
+    },
+    {
+      "service": "maat_sentinel",
+      "url": "http://127.0.0.1:4242/machines",
+      "critical": false,
+      "status": "down",
+      "http_code": null
+    },
+    {
+      "service": "openclaw_gateway",
+      "url": "http://127.0.0.1:18790/",
+      "critical": false,
+      "status": "up",
+      "http_code": 200
+    },
+    {
+      "service": "maat_gateway",
+      "url": "http://127.0.0.1:8040/health",
+      "critical": false,
+      "status": "up",
+      "http_code": 200
+    },
+    {
+      "service": "ollama",
+      "url": "http://127.0.0.1:11434/api/tags",
+      "critical": false,
+      "status": "up",
+      "http_code": 200
+    }
+  ],
+  "optional_services_down": [
+    {
+      "service": "tehuti_guard",
+      "rationale": "Guard optional for offline contract tests; required for live policy E2E."
+    },
+    {
+      "service": "maat_sentinel",
+      "rationale": "Sentinel optional for schema tests; required for posture-aware Guard E2E."
+    },
+    {
+      "service": "live_model_tier",
+      "rationale": "LAB_BENCH_LIVE=0; Gemma/Ollama smoke intentionally skipped."
+    }
+  ],
+  "pytest": {
+    "passed": 81,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "maatbench": {
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "skip_notes": [],
+    "categories_tested": 9,
+    "maat_score": 1.0,
+    "category_ids": [
+      "contract_integrity",
+      "policy_fidelity",
+      "memory_fidelity",
+      "event_fidelity",
+      "portability",
+      "learning_safety",
+      "gateway_contract",
+      "gateway_policy",
+      "lab_spine"
+    ]
+  },
+  "categories_tested": [
+    "contract_integrity",
+    "policy_fidelity",
+    "memory_fidelity",
+    "event_fidelity",
+    "portability",
+    "learning_safety",
+    "gateway_contract",
+    "gateway_policy",
+    "lab_spine"
+  ],
+  "artifact_paths": {
+    "maatbench_report": "/home/suspect/.n8n/docs/Maat-Constitutional-Infrastructure-Dissertation/appendices/lab-bench-2026-06-20.json",
+    "workflow_log": "/home/suspect/.n8n/logs/lab-bench-2026-06-20.log",
+    "workflow_state": "/home/suspect/.n8n/logs/lab-bench-2026-06-20-state.json",
+    "evidence_record": "/home/suspect/.n8n/docs/Maat-Constitutional-Infrastructure-Dissertation/appendices/evidence-records/maatbench-evidence-record-2026-06-20-bench-20260620T125201Z-819268.json"
+  },
+  "report_hash": "e3c211bb05411079d65f27efa79e156040f56313140cb417949defa1bb5451f4",
+  "maat_interpretation": {
+    "truth": "MaatBench 68 passed, 0 failed, 0 optional skips; pytest 81 passed. Counts and report_hash support reproducibility.",
+    "balance": "3 optional service(s) down or tier skipped with explicit rationale; optional organs do not force false failure when categories are marked optional.",
+    "order": "Tiered workflow; 9 MaatBench categories; critical MCP spine reachable.",
+    "justice": "Guard/Gateway/scorecard named in bench; justice_exemplars attach allow/review/deny samples when gitMaat or static controls available.",
+    "reciprocity": "Not fully exercised in this run \u2014 reciprocity category pending. Hermes skills path checked when mounted.",
+    "accountability": "Dated artifacts under appendices/evidence-records/; workflow_status=ok; git_commit and machine_id bind run to code and host."
+  },
+  "justice_exemplars": [
+    {
+      "kind": "allow",
+      "correlation_id": "maat-security-stack:20260606T144720Z:3efa879b:guard-sentinel-smoke",
+      "decision": "allow",
+      "matched_rule": null,
+      "source": "gitMaat maat_governance_events",
+      "timestamp": "2026-06-06 14:52:03.698102+00:00"
+    },
+    {
+      "kind": "review",
+      "correlation_id": "maat-security-stack:20260606T144720Z:3efa879b:guard-smoke",
+      "decision": "review",
+      "matched_rule": null,
+      "source": "gitMaat maat_governance_events",
+      "timestamp": "2026-06-06 14:51:21.785972+00:00"
+    }
+  ],
+  "limitations": [
+    "MaatBench score reflects implemented contract tests only, not universal system proof.",
+    "behavior_balance and triad_live categories not included unless explicitly run.",
+    "RAG citation-fidelity audit deferred per dissertation Ch. 7.3.",
+    "Reciprocity tests not yet implemented as a MaatBench category.",
+    "Live Ollama/Gemma tier skipped (LAB_BENCH_LIVE=0)."
+  ],
+  "workflow_status": "ok"
+}

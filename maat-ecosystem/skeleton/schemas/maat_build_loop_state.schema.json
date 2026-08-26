@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "maat:build_loop_state:v1",
+  "title": "MAAT Build Loop State Contract",
+  "description": "Builder-distributor 48h loop state: build tiny, show 100, watch confusion, change product and story.",
+  "type": "object",
+  "required": [
+    "schema",
+    "record_id",
+    "created_at",
+    "agent_id",
+    "phase",
+    "product_name"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "maat.build_loop_state.v1"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string",
+      "enum": ["build_tiny", "show_100", "watch_confusion", "change_story"]
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tool_url": { "type": "string" },
+        "landing_page_url": { "type": "string" },
+        "demo_video_url": { "type": "string" },
+        "repo_path": { "type": "string" }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "audience_size": { "type": "integer", "minimum": 0 },
+        "channels": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "clips_posted": { "type": "integer", "minimum": 0 },
+        "posts_made": { "type": "integer", "minimum": 0 },
+        "dms_sent": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "confusion_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "signal": { "type": "string" },
+          "source": { "type": "string" },
+          "verbatim": { "type": "string" }
+        }
+      }
+    },
+    "story_revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "before": { "type": "string" },
+        "after": { "type": "string" },
+        "rationale": { "type": "string" }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

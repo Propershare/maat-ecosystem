@@ -22,7 +22,9 @@ def run_learning_tests(test_defs: list[dict]) -> list[dict]:
 
         try:
             if op == "check_schema":
-                schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
+                schema_path = ECOSYSTEM / "skeleton" / "schemas" / test["schema"]
+                if not schema_path.is_file():
+                    schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
                 schema = json.loads(schema_path.read_text())
                 props = schema.get("properties", {})
 
@@ -44,7 +46,9 @@ def run_learning_tests(test_defs: list[dict]) -> list[dict]:
                             notes.append(f"Default for '{field}': expected {expected_val}, got {actual}")
 
             elif op == "check_schema_enum":
-                schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
+                schema_path = ECOSYSTEM / "skeleton" / "schemas" / test["schema"]
+                if not schema_path.is_file():
+                    schema_path = ECOSYSTEM / "maat-core" / "schemas" / test["schema"]
                 schema = json.loads(schema_path.read_text())
                 field = test["field"]
                 actual = schema.get("properties", {}).get(field, {}).get("enum", [])
@@ -61,9 +65,10 @@ def run_learning_tests(test_defs: list[dict]) -> list[dict]:
                         notes.append(f"Unexpected types: {extra}")
 
             elif op == "run_consolidation":
-                from maat_packs import __init__  # noqa: just ensure importable
-                # Simple check: consolidation module exists and produces output
-                from maat_memory.consolidation.consolidator import Consolidator
+                try:
+                    from maat_memory.consolidation.consolidator import Consolidator
+                except ImportError:
+                    from memory.patterns.consolidator import Consolidator
                 # We can't run full consolidation without a real adapter,
                 # but we verify the class exists and has the right interface
                 has_method = hasattr(Consolidator, 'consolidate')
@@ -94,7 +99,7 @@ def run_learning_tests(test_defs: list[dict]) -> list[dict]:
             elif op == "attempt_constitutional_learning":
                 # Constitutional memory should not be modifiable via learning
                 # It requires formal amendment
-                from maat_memory.constitutional.handler import validate_constitutional
+                from memory.constitutional_handler import validate_constitutional
                 entry = {
                     "agent_id": "test",
                     "memory_class": "constitutional",
