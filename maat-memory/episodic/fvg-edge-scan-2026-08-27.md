@@ -1,5 +1,5 @@
 # FVG Edge Scan — 2026-08-27
-timestamp: 2026-08-27T19:33:19.362318+00:00
+timestamp: 2026-08-27T19:33:30.298516+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
@@ -15,10 +15,7 @@ Setups found: 15
 - 🐂 SPY: bullish @ $770.29 (yard +0.26%) sweep=✅ retest=2x target=$772.51
 - 🐻 GE: bearish @ $341.57 (yard -2.21%) sweep=✅ retest=2x target=$332.92
 
-Alpaca Account: $79,954.47 equity | $262,820.45 BP | $55,565.62 cash | PnL: $+0.00
-Open positions: 5
-  KO: long 139 @ $85.99 → $89.45 (PnL: $+482.24)
+Alpaca Account: $79,948.69 equity | $305,328.18 BP | $67,893.21 cash | PnL: $+0.00
+Open positions: 2
   KO260828P00086000: long 1 @ $0.47 → $0.00 (PnL: $-47.00)
-  MCD: long 44 @ $268.76 → $260.29 (PnL: $-372.68)
-  PEP: long 86 @ $138.34 → $140.19 (PnL: $+158.74)
-  SPY: short -15 @ $775.93 → $770.30 (PnL: $+84.52)
+  PEP: long 86 @ $138.34 → $140.18 (PnL: $+157.88)
