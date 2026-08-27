@@ -1,5 +1,5 @@
 # FVG Edge Scan — 2026-08-27
-timestamp: 2026-08-27T19:33:30.298516+00:00
+timestamp: 2026-08-27T19:33:40.985049+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
