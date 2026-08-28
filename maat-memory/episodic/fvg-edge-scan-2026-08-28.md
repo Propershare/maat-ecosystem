@@ -1,21 +1,21 @@
 # FVG Edge Scan — 2026-08-28
-timestamp: 2026-08-28T16:00:29.693592+00:00
+timestamp: 2026-08-28T20:15:38.952593+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
 
-- 🐻 XLY: bearish @ $116.50 (yard -0.12%) sweep=✅ retest=8x target=$112.39
-- 🐻 IWM: bearish @ $299.12 (yard -0.15%) sweep=✅ retest=3x target=$301.23
-- 🐂 QQQ: bullish @ $721.12 (yard +0.85%) sweep=✅ retest=7x target=$729.27
-- 🐻 XLRE: bearish @ $44.70 (yard -0.53%) sweep=✅ retest=7x target=$44.35
-- 🐂 XLC: neutral @ $112.30 (yard +0.13%) sweep=✅ retest=5x target=$110.88
-- 🐻 MA: bearish @ $592.85 (yard -0.38%) sweep=✅ retest=0x target=$582.28
-- 🐻 SCHW: bearish @ $108.14 (yard -0.43%) sweep=✅ retest=0x target=$104.79
-- 🐻 XLF: bearish @ $57.97 (yard -0.29%) sweep=✅ retest=0x target=$55.86
-- 🐻 XLU: bearish @ $43.30 (yard -0.03%) sweep=✅ retest=2x target=N/A
-- 🐂 AVGO: bullish @ $374.99 (yard +0.96%) sweep=✅ retest=1x target=$377.01
+- 🐻 RTY=F: bearish @ $2978.00 (yard -0.66%) sweep=✅ retest=16x target=$2960.90
+- 🐻 NQ=F: bearish @ $29486.50 (yard -0.19%) sweep=✅ retest=9x target=$27958.50
+- 🐻 XLRE: bearish @ $44.46 (yard -0.31%) sweep=✅ retest=7x target=$42.81
+- 🐂 XLY: bullish @ $117.20 (yard +0.67%) sweep=✅ retest=8x target=$116.23
+- 🐻 IWM: bearish @ $295.75 (yard -0.75%) sweep=✅ retest=5x target=$291.87
+- 🐻 JNJ: bearish @ $268.00 (yard -0.11%) sweep=✅ retest=1x target=$261.40
+- 🐻 ES=F: bearish @ $7721.00 (yard -0.15%) sweep=✅ retest=3x target=$7588.25
+- 🐂 XLC: bullish @ $112.97 (yard +0.72%) sweep=✅ retest=6x target=$111.72
+- 🐂 AAPL: bullish @ $319.64 (yard +0.77%) sweep=✅ retest=2x target=$329.59
+- 🐂 SCHW: bullish @ $110.16 (yard +0.95%) sweep=✅ retest=1x target=$112.08
 
-Alpaca Account: $80,022.10 equity | $305,533.07 BP | $67,892.66 cash | PnL: $+0.00
+Alpaca Account: $80,044.46 equity | $305,595.68 BP | $67,892.66 cash | PnL: $+0.00
 Open positions: 2
   KO260828P00086000: long 1 @ $0.47 → $0.00 (PnL: $-47.00)
-  PEP: long 86 @ $138.34 → $141.04 (PnL: $+231.84)
+  PEP: long 86 @ $138.34 → $141.30 (PnL: $+254.20)
