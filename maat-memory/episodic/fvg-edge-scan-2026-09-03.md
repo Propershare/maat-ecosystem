@@ -1,5 +1,5 @@
 # FVG Edge Scan — 2026-09-03
-timestamp: 2026-09-03T16:04:13.775340+00:00
+timestamp: 2026-09-03T16:04:31.700950+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
@@ -15,8 +15,8 @@ Setups found: 15
 - 🐂 DIS: bullish @ $107.97 (yard +0.49%) sweep=✅ retest=3x target=$109.45
 - 🐂 XLB: bullish @ $52.96 (yard +0.60%) sweep=✅ retest=5x target=N/A
 
-Alpaca Account: $80,721.99 equity | $222.67 BP | $-19,118.27 cash | PnL: $+0.00
+Alpaca Account: $80,729.27 equity | $243.06 BP | $-19,118.27 cash | PnL: $+0.00
 Open positions: 3
   ETHUSD: long 29 @ $2471.60 → $2504.50 (PnL: $+951.75)
-  PEP: long 86 @ $138.34 → $139.74 (PnL: $+120.04)
-  XOM: long 94 @ $163.15 → $163.55 (PnL: $+37.65)
+  PEP: long 86 @ $138.34 → $139.77 (PnL: $+122.62)
+  XOM: long 94 @ $163.15 → $163.60 (PnL: $+42.35)
