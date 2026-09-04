@@ -1,22 +1,22 @@
 # FVG Edge Scan — 2026-09-04
-timestamp: 2026-09-04T16:00:29.566407+00:00
+timestamp: 2026-09-04T20:15:36.386793+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
 
-- 🐂 XLRE: bullish @ $44.25 (yard +0.55%) sweep=✅ retest=8x target=$44.44
-- 🐂 XLI: bullish @ $174.54 (yard +0.53%) sweep=✅ retest=6x target=$174.91
-- 🐂 DIA: bullish @ $536.93 (yard +0.59%) sweep=✅ retest=5x target=$542.71
-- 🐂 QQQ: bullish @ $717.61 (yard +0.61%) sweep=✅ retest=5x target=$729.27
-- 🐻 FIL/USD: bearish @ $0.75 (yard -4.82%) sweep=✅ retest=4x target=N/A
-- 🐂 VOO: bullish @ $710.68 (yard +0.49%) sweep=✅ retest=3x target=$712.80
-- 🐂 SPY: bullish @ $773.11 (yard +0.49%) sweep=✅ retest=3x target=$775.43
-- 🐂 XLC: bullish @ $113.40 (yard +0.24%) sweep=✅ retest=2x target=$115.61
-- 🐂 VTI: bullish @ $380.97 (yard +0.51%) sweep=✅ retest=3x target=$382.48
-- 🐻 XLP: bearish @ $85.25 (yard -0.74%) sweep=✅ retest=5x target=N/A
+- 🐻 ES=F: bearish @ $7725.00 (yard -0.32%) sweep=✅ retest=14x target=$7694.50
+- 🐻 YM=F: bearish @ $53457.00 (yard -0.30%) sweep=✅ retest=7x target=$52924.00
+- 🐻 GC=F: bearish @ $4481.70 (yard -0.44%) sweep=✅ retest=6x target=$4414.30
+- 🐻 XRP/USD: bearish @ $1.40 (yard -1.37%) sweep=✅ retest=5x target=$1.27
+- 🐻 LTC/USD: bearish @ $50.67 (yard -0.35%) sweep=✅ retest=3x target=$49.18
+- 🐂 LOW: neutral @ $203.94 (yard +0.44%) sweep=✅ retest=2x target=$204.60
+- 🐻 ETH/USD: bearish @ $2456.72 (yard -1.09%) sweep=✅ retest=2x target=$2338.37
+- 🐻 FIL/USD: bearish @ $0.75 (yard -1.14%) sweep=✅ retest=4x target=N/A
+- 🐻 ABT: bearish @ $109.44 (yard -0.21%) sweep=✅ retest=0x target=$89.88
+- 🐻 LDO/USD: bearish @ $0.38 (yard -0.71%) sweep=✅ retest=2x target=$0.34
 
-Alpaca Account: $78,804.73 equity | $0.00 BP | $-19,118.27 cash | PnL: $+0.00
+Alpaca Account: $78,257.96 equity | $257,709.27 BP | $32,155.82 cash | PnL: $+0.00
 Open positions: 3
-  ETHUSD: long 29 @ $2471.60 → $2453.22 (PnL: $-531.71)
-  PEP: long 86 @ $138.34 → $138.27 (PnL: $-6.38)
-  XOM: long 94 @ $163.15 → $160.28 (PnL: $-269.73)
+  LOW: long 76 @ $205.00 → $203.50 (PnL: $-114.00)
+  SCHW: long 143 @ $109.53 → $109.34 (PnL: $-27.17)
+  XOM: long 94 @ $163.15 → $159.58 (PnL: $-335.53)
