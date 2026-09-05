@@ -1,19 +1,19 @@
 # FVG Edge Scan — 2026-09-05
-timestamp: 2026-09-05T19:39:31.029334+00:00
+timestamp: 2026-09-05T23:42:44.657132+00:00
 source: fvg-edge-pipeline
 
 Setups found: 15
 
-- 🐻 XRP/USD: bearish @ $1.42 (yard -0.13%) sweep=✅ retest=6x target=$1.27
+- 🐻 XRP/USD: bearish @ $1.42 (yard -0.22%) sweep=✅ retest=5x target=$1.27
 - 🐻 GC=F: bearish @ $4476.60 (yard -0.55%) sweep=✅ retest=6x target=$4414.30
 - 🐻 VOO: bearish @ $708.05 (yard -0.17%) sweep=✅ retest=6x target=$710.26
+- 🐂 ETH/USD: bullish @ $2489.56 (yard +0.84%) sweep=✅ retest=2x target=$2503.30
 - 🐻 XLP: bearish @ $84.59 (yard -0.45%) sweep=✅ retest=6x target=N/A
 - 🐻 SPY: bearish @ $770.24 (yard -0.17%) sweep=✅ retest=6x target=$772.65
-- 🐂 LTC/USD: bullish @ $54.91 (yard +6.25%) sweep=✅ retest=1x target=$55.65
+- 🐂 LTC/USD: bullish @ $54.44 (yard +5.35%) sweep=✅ retest=1x target=$55.65
 - 🐻 KO: bearish @ $88.08 (yard -0.39%) sweep=✅ retest=3x target=$82.33
-- 🐻 ETH/USD: bearish @ $2478.55 (yard -0.21%) sweep=✅ retest=2x target=$2338.37
-- 🐂 DOGE/USD: bullish @ $0.09 (yard +3.03%) sweep=✅ retest=1x target=$0.09
-- 🐂 AAVE/USD: bullish @ $132.59 (yard +1.04%) sweep=✅ retest=1x target=$138.84
+- 🐂 DOGE/USD: bullish @ $0.09 (yard +1.62%) sweep=✅ retest=1x target=$0.09
+- 🐂 XTZ/USD: bullish @ $0.24 (yard +1.22%) sweep=✅ retest=1x target=$0.27
 
 Alpaca Account: $78,312.39 equity | $257,861.34 BP | $32,155.54 cash | PnL: $+0.00
 Open positions: 3
